@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><preferences stamp="13">
+	<com.4d>
+		<web>
+			<standalone_server>
+				<options>
+					<cache cache_max_size="524288"/>
+				</options>
+				<configuration port_number="80">
+					<hosts>
+						<host html_root="./WebForlderQuoiotek/" id="0" name="default"/>
+					</hosts>
+				</configuration>
+				<webservices>
+					<server name="A_WebService"/>
+				</webservices>
+			</standalone_server>
+		</web>
+		<sql>
+			<publication port_number="19812"/>
+		</sql>
+		<php ip_address="127.0.0.1"/>
+		<server>
+			<network>
+				<options publication_name="Quoiotek"/>
+			</network>
+		</server>
+		<interface>
+			<user splash_screen="true"/>
+			<developper display_toolbar="true"/>
+		</interface>
+		<general startup_environnement="1"/>
+	</com.4d>
+</preferences>

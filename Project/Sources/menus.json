@@ -1,0 +1,83 @@
+{
+	"bars": [
+		{
+			"id": 1,
+			"name": "Barre #1",
+			"items": [
+				{
+					"link": 32001
+				},
+				{
+					"link": 32003
+				},
+				{
+					"link": 32000
+				}
+			]
+		},
+		{
+			"id": 2,
+			"name": "Barre #2",
+			"items": [
+				{
+					"link": 32001
+				},
+				{
+					"link": 32002
+				}
+			]
+		}
+	],
+	"menus": [
+		{
+			"link": 32001,
+			"title": ":xliff:CommonMenuFile",
+			"items": [
+				{
+					"title": ":xliff:CommonMenuItemQuit",
+					"shortcutAccel": true,
+					"shortcutKey": "Q",
+					"action": "quit"
+				}
+			]
+		},
+		{
+			"link": 32003,
+			"title": ":xliff:CommonMenuMode",
+			"items": [
+				{
+					"title": ":xliff:CommonMenuItemDesign",
+					"action": "design"
+				}
+			]
+		},
+		{
+			"link": 32000,
+			"title": "Afficher",
+			"items": [
+				{
+					"title": "Accueil",
+					"method": "afficherAccueil"
+				}
+			]
+		},
+		{
+			"link": 32002,
+			"title": "Edition",
+			"items": [
+				{
+					"title": "copier",
+					"shortcutAccel": true,
+					"shortcutKey": "c",
+					"action": "copy"
+				},
+				{
+					"title": "coller",
+					"shortcutAccel": true,
+					"shortcutKey": "v",
+					"action": "paste"
+				}
+			]
+		}
+	]
+}

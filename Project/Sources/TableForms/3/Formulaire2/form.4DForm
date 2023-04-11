@@ -1,0 +1,160 @@
+{
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"windowSizingX": "variable",
+	"windowSizingY": "variable",
+	"windowMinWidth": 0,
+	"windowMinHeight": 0,
+	"windowMaxWidth": 32767,
+	"windowMaxHeight": 32767,
+	"rightMargin": 20,
+	"bottomMargin": 20,
+	"events": [
+		"onLoad",
+		"onPageChange",
+		"onValidate",
+		"onClick",
+		"onDoubleClick",
+		"onOutsideCall",
+		"onBeginDragOver",
+		"onDragOver",
+		"onDrop",
+		"onAfterKeystroke",
+		"onMenuSelect",
+		"onPluginArea",
+		"onAfterEdit",
+		"onTimer",
+		"onBoundVariableChange"
+	],
+	"windowTitle": "window title",
+	"destination": "detailScreen",
+	"pages": [
+		{
+			"objects": {}
+		},
+		{
+			"objects": {
+				"label_ID": {
+					"type": "text",
+					"text": "ID:",
+					"top": 10,
+					"left": 10,
+					"width": 100,
+					"height": 17
+				},
+				"field_ID": {
+					"type": "input",
+					"dataSource": "[Role:3]ID:1",
+					"top": 10,
+					"left": 120,
+					"width": 250,
+					"height": 17
+				},
+				"label_ID_Qui": {
+					"type": "text",
+					"text": "ID_Qui:",
+					"top": 47,
+					"left": 10,
+					"width": 100,
+					"height": 17
+				},
+				"field_ID_Qui": {
+					"type": "input",
+					"dataSource": "[Role:3]ID_Qui:2",
+					"top": 47,
+					"left": 120,
+					"width": 250,
+					"height": 17
+				},
+				"label_ID_Quoi": {
+					"type": "text",
+					"text": "ID_Quoi:",
+					"top": 84,
+					"left": 10,
+					"width": 100,
+					"height": 17
+				},
+				"field_ID_Quoi": {
+					"type": "input",
+					"dataSource": "[Role:3]ID_Quoi:3",
+					"top": 84,
+					"left": 120,
+					"width": 250,
+					"height": 17
+				},
+				"label_Descr": {
+					"type": "text",
+					"text": "Descr:",
+					"top": 121,
+					"left": 10,
+					"width": 100,
+					"height": 17
+				},
+				"field_Descr": {
+					"type": "input",
+					"dataSource": "[Role:3]Descr:4",
+					"top": 121,
+					"left": 120,
+					"width": 250,
+					"height": 17
+				},
+				"label_Photo": {
+					"type": "text",
+					"text": "Photo:",
+					"top": 158,
+					"left": 10,
+					"width": 100,
+					"height": 17
+				},
+				"field_Photo": {
+					"type": "input",
+					"dataSource": "[Role:3]Photo:5",
+					"top": 158,
+					"left": 120,
+					"width": 200,
+					"height": 160,
+					"dataSourceTypeHint": "picture"
+				},
+				"Bouton": {
+					"type": "button",
+					"text": "Supprimer",
+					"top": 327,
+					"left": 251,
+					"width": 83,
+					"height": 23,
+					"events": [
+						"onClick"
+					],
+					"action": "deleteRecord"
+				},
+				"btSuivant": {
+					"type": "button",
+					"text": "Suivant",
+					"top": 328,
+					"left": 65,
+					"width": 77,
+					"height": 24,
+					"events": [
+						"onClick"
+					],
+					"action": "nextRecord"
+				},
+				"btPreced": {
+					"type": "button",
+					"text": "Précédent",
+					"top": 328,
+					"left": 162,
+					"width": 77,
+					"height": 24,
+					"events": [
+						"onClick"
+					],
+					"action": "previousRecord"
+				}
+			}
+		}
+	],
+	"geometryStamp": 43
+}

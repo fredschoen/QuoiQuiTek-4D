@@ -1,0 +1,16 @@
+{
+	"forms": {
+		"Entree": {
+			"timeStamp": "2022-12-11T17:12:36.623Z",
+			"destination": "detailScreen"
+		},
+		"Sortie": {
+			"timeStamp": "2022-12-11T10:39:36.182Z",
+			"destination": "listScreen"
+		},
+		"zzz": {
+			"timeStamp": "2022-04-13T08:37:44.353Z",
+			"destination": "detailScreen"
+		}
+	}
+}

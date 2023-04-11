@@ -1,0 +1,38 @@
+{
+	"GenreQuoi": {
+		"editable": true
+	},
+	"PaysQuoi": {
+		"editable": true
+	},
+	"GenreQui": {
+		"editable": true,
+		"items": [
+			{
+				"text": "M",
+				"ref": 1,
+				"editable": true
+			},
+			{
+				"text": "F",
+				"ref": 2,
+				"editable": true
+			}
+		]
+	},
+	"PaysQui": {
+		"editable": true
+	},
+	"StockQuoi": {
+		"editable": true
+	},
+	"DomaineQuoi": {
+		"editable": true
+	},
+	"DomaineQui": {
+		"editable": true
+	},
+	"StyleQui": {
+		"editable": true
+	}
+}

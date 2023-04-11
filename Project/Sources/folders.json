@@ -1,0 +1,89 @@
+{
+	"1.Appli": {
+		"tables": [
+			"Qui",
+			"Quoi",
+			"Role"
+		],
+		"methods": [
+			"_anneeDeDateText",
+			"_f_traduireArgQuery",
+			"afficherAccueil",
+			"afficherErreur",
+			"afficherQuiListe",
+			"afficherQuoiListe",
+			"ajouterQui",
+			"anneeMoins",
+			"anneePlus",
+			"atteindrePageDetail",
+			"atteindrePageListe",
+			"charger_LesQuis",
+			"charger_lesQuois",
+			"charger_lesRolesDeQuoi",
+			"charger_unQui",
+			"charger_unQuoi",
+			"charger_unRoleDeQui",
+			"charger_unRoleDeQuoi",
+			"Compiler_Methods",
+			"Compiler_Variables",
+			"naviguer_unRoleDeQui",
+			"naviguer_unRoleDeQuoi",
+			"sauverQui",
+			"sauverQuoi",
+			"sauverRole",
+			"sauverRoleNouveau",
+			"supprimerQui",
+			"supprimerQuoi",
+			"supprimerRole",
+			"visibleBtNavig"
+		],
+		"forms": [
+			"quiListe",
+			"quoiListe"
+		]
+	},
+	"2.Export": {
+		"methods": [
+			"zExport",
+			"zExport_QUI",
+			"zExport_QUOI",
+			"zExport_ROLE"
+		]
+	},
+	"3.Outils": {
+		"methods": [
+			"_test",
+			"_test2",
+			"z_import_quoi",
+			"zzz_ModifDeMasse_Quoi",
+			"zzzViderPourPublier"
+		]
+	},
+	"Classes par défaut": {},
+	"Dossier par défaut": {
+		"groups": [
+			"Classes par défaut",
+			"Formulaires par défaut",
+			"Méthodes projet par défaut",
+			"Tables par défaut"
+		],
+		"methods": [
+			"charger_lesRolesDeQui"
+		],
+		"forms": [
+			"[Qui]Entree",
+			"[Qui]Formulaire1",
+			"[Qui]Sortie",
+			"[Quoi]Entree",
+			"[Quoi]Sortie",
+			"[Quoi]zzz",
+			"[Role]Formulaire1",
+			"[Role]Formulaire2",
+			"accueil"
+		]
+	},
+	"Formulaires par défaut": {},
+	"Méthodes projet par défaut": {},
+	"Tables par défaut": {},
+	"trash": {}
+}

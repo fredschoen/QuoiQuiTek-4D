@@ -1,0 +1,2 @@
+// sur ouverture
+afficherAccueil
