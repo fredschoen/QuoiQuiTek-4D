@@ -2,8 +2,6 @@
 // afficherAccueil
 //ON ERR CALL("afficherErreur")
 
-_utilisationListe:=""
-
 SET MENU BAR:C67(2)  // juste "quitter"
 HIDE TOOL BAR:C434
 

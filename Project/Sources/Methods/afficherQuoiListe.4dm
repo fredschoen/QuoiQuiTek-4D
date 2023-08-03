@@ -1,24 +1,18 @@
 //%attributes = {}
 // afficherQuoiListe
-
+//$S:  utilisationListe
 C_OBJECT:C1216($form_obj)
 $form_obj:=New object:C1471
 $form_obj.action:="INIT"  // chargement initial
-$form_obj.page:=1  // afficher la page 1
-//criteres d'affichage :
-$form_obj.critereQuoiListe:=New object:C1471
-$form_obj.critereQuoiListe.Nom:=""
-$form_obj.critereQuoiListe.Genre:=""
-$form_obj.critereQuoiListe.Pays:=""
-$form_obj.critereQuoiListe.Stock:=""
-$form_obj.critereQuoiListe.Annee:=""
-$form_obj.critereQuoiListe.Real:=""
-$form_obj.critereQuoiListe.DateDernVisu:=""
-$form_obj.critereQuoiListe.Domaine:=""
-$form_obj.critereQuoiListe.Qualif:=""
-
+$form_obj.page:=1  // afficher page 1 pour commencer
+If ($1>"")
+	Form:C1466.utilisationListe:=$1
+Else 
+	Form:C1466.utilisationListe:=""
+End if 
 //cas où on utilise la liste quis pour ajouter un role à un quoi
-If (_utilisationListe="AJOUTER_ROLE")
+
+If (Form:C1466.utilisationListe="AJOUTER_ROLE")
 	$form_obj.eleCouQui:=New object:C1471
 	$form_obj.eleCouQui:=Form:C1466.eleCouQui
 End if 

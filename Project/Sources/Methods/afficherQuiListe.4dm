@@ -5,6 +5,11 @@ C_OBJECT:C1216($form_obj)
 $form_obj:=New object:C1471
 $form_obj.action:="INIT"  // chargement initial
 $form_obj.page:=1
+If ($1>"")
+	Form:C1466.utilisationListe:=$1
+Else 
+	Form:C1466.utilisationListe:=""
+End if 
 
 //criteres d'affichage :
 $form_obj.critereQuiListe:=New object:C1471

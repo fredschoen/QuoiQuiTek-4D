@@ -26,6 +26,26 @@ Case of
 		
 	: (Form event code:C388=On Load:K2:1)
 		
+		If (Undefined:C82(Form:C1466.action))  //ouvrir le formulaire sans passer par _afficherQuoiListe
+			Form:C1466.action:="INIT"
+			Form:C1466.page:=1  // afficher la page 1
+			Form:C1466.utilisationListe:=""
+			
+		End if 
+		If (Undefined:C82(Form:C1466.critereQuoiListe))  //ouvrir le formulaire sans passer par _afficherQuoiListe
+			//criteres d'affichage :
+			Form:C1466.critereQuoiListe:=New object:C1471
+			Form:C1466.critereQuoiListe.Nom:=""
+			Form:C1466.critereQuoiListe.Genre:=""
+			Form:C1466.critereQuoiListe.Pays:=""
+			Form:C1466.critereQuoiListe.Stock:=""
+			Form:C1466.critereQuoiListe.Annee:=""
+			Form:C1466.critereQuoiListe.Real:=""
+			Form:C1466.critereQuoiListe.DateDernVisu:=""
+			Form:C1466.critereQuoiListe.Domaine:=""
+			Form:C1466.critereQuoiListe.Qualif:=""
+		End if 
+		
 		If (Form:C1466.action="INIT")
 			charger_lesQuois
 		End if 

@@ -34,8 +34,9 @@ $status_o:=$enreg_o.save()
 If ($status_o.success)
 	If (Form:C1466.action="AJOUTER")
 		//btSelectionnerQui   
-		OBJECT SET VISIBLE:C603(*; "btSelectionnerQui"; (_utilisationListe="AJOUTER_ROLE"))
+		OBJECT SET VISIBLE:C603(*; "btSelectionnerQui"; (Form:C1466.utilisationListe="AJOUTER_ROLE"))
 		//passer en mode modif
+		
 		ALERT:C41("Enreg Qui ajouté")
 		Form:C1466.action:="MODIFIER"  // on passe de "ajouter" à "modifier"
 	Else 

@@ -207,7 +207,8 @@
 						"onClick"
 					],
 					"defaultButton": false,
-					"method": "ObjectMethods/btAjouterQuoi.4dm"
+					"method": "ObjectMethods/btAjouterQuoi.4dm",
+					"style": "regular"
 				},
 				"Texte": {
 					"type": "text",
@@ -219,40 +220,44 @@
 				},
 				"zCritereNom": {
 					"type": "input",
-					"left": 60,
-					"top": 9,
-					"width": 152,
-					"height": 16,
-					"dataSource": "Form:C1466.critereQuoiListe.Nom"
+					"left": 67,
+					"top": 7,
+					"width": 249,
+					"height": 18,
+					"dataSource": "Form:C1466.critereQuoiListe.Nom",
+					"bottom": 25
 				},
 				"btAppliquerFiltreQuoi": {
 					"type": "button",
 					"text": "Filtrer",
-					"top": 9,
-					"left": 927,
-					"width": 50,
-					"height": 24,
+					"top": 6,
+					"left": 945,
+					"width": 60,
+					"height": 20,
 					"events": [
 						"onClick"
 					],
 					"method": "ObjectMethods/btAppliquerFiltreQuoi.4dm",
-					"defaultButton": true
+					"defaultButton": true,
+					"bottom": 26
 				},
 				"zCritereStock": {
 					"type": "input",
 					"left": 498,
-					"top": 9,
+					"top": 7,
 					"width": 55,
-					"height": 16,
-					"dataSource": "Form:C1466.critereQuoiListe.Stock"
+					"height": 18,
+					"dataSource": "Form:C1466.critereQuoiListe.Stock",
+					"bottom": 25
 				},
 				"zCritereAnnee": {
 					"type": "input",
 					"left": 558,
-					"top": 9,
+					"top": 7,
 					"width": 55,
-					"height": 16,
-					"dataSource": "Form:C1466.critereQuoiListe.Annee"
+					"height": 18,
+					"dataSource": "Form:C1466.critereQuoiListe.Annee",
+					"bottom": 25
 				},
 				"btValider": {
 					"type": "button",
@@ -265,88 +270,96 @@
 						"onClick"
 					],
 					"defaultButton": false,
-					"method": "ObjectMethods/btValider.4dm"
+					"method": "ObjectMethods/btValider.4dm",
+					"style": "regular"
 				},
 				"zCritereAnnee1": {
 					"type": "input",
 					"left": 658,
-					"top": 9,
+					"top": 7,
 					"width": 53,
-					"height": 16,
-					"dataSource": "Form:C1466.critereQuoiListe.Real"
+					"height": 18,
+					"dataSource": "Form:C1466.critereQuoiListe.Real",
+					"bottom": 25
 				},
 				"zDateDernVisu": {
 					"type": "input",
 					"left": 738,
-					"top": 9,
+					"top": 7,
 					"width": 68,
-					"height": 16,
-					"dataSource": "Form:C1466.critereQuoiListe.DateDernVisu"
+					"height": 18,
+					"dataSource": "Form:C1466.critereQuoiListe.DateDernVisu",
+					"bottom": 25
 				},
 				"bAnneePlus": {
 					"type": "button",
 					"text": "+",
-					"top": 12,
-					"left": 872,
-					"width": 19,
-					"height": 18,
+					"top": 6,
+					"left": 877,
+					"width": 33,
+					"height": 20,
 					"events": [
 						"onClick"
 					],
-					"method": "anneePlus"
+					"method": "anneePlus",
+					"bottom": 26
 				},
 				"bAnneeMoins": {
 					"type": "button",
 					"text": "-",
-					"top": 12,
-					"left": 894,
-					"width": 19,
-					"height": 18,
+					"top": 6,
+					"left": 911,
+					"width": 33,
+					"height": 20,
 					"events": [
 						"onClick"
 					],
-					"method": "anneeMoins"
+					"method": "anneeMoins",
+					"bottom": 26
 				},
 				"bTest": {
 					"type": "button",
 					"text": "test",
-					"top": 12,
+					"top": 6,
 					"left": 826,
-					"width": 42,
-					"height": 18,
+					"width": 50,
+					"height": 20,
 					"events": [
 						"onClick"
 					],
-					"method": "_test"
+					"method": "_test",
+					"bottom": 26
 				},
 				"zCritereAnnee2": {
 					"type": "input",
 					"left": 616,
-					"top": 9,
+					"top": 7,
 					"width": 38,
-					"height": 16,
-					"dataSource": "Form:C1466.critereQuoiListe.Qualif"
+					"height": 18,
+					"dataSource": "Form:C1466.critereQuoiListe.Qualif",
+					"bottom": 25
 				},
 				"bTrace": {
 					"type": "checkbox",
 					"text": "Trace",
-					"top": 4,
+					"top": 6,
 					"left": 6,
-					"width": 49,
-					"height": 16,
+					"width": 56,
+					"height": 20,
 					"events": [
 						"onClick"
 					],
 					"method": "ObjectMethods/bTrace.4dm",
 					"dataSource": "vTrace",
-					"dataSourceTypeHint": "boolean"
+					"dataSourceTypeHint": "boolean",
+					"bottom": 26
 				},
 				"zCritereGenre1": {
 					"type": "combo",
 					"left": 379,
-					"top": 8,
+					"top": 5,
 					"width": 55,
-					"height": 19,
+					"height": 21,
 					"events": [
 						"onDataChange"
 					],
@@ -354,14 +367,15 @@
 						"$ref": "/SOURCES/lists.json#/GenreQuoi"
 					},
 					"dataSource": "Form:C1466.critereQuoiListe.Genre",
-					"dataSourceTypeHint": "text"
+					"dataSourceTypeHint": "text",
+					"bottom": 26
 				},
 				"zCriterePays1": {
 					"type": "combo",
 					"left": 440,
-					"top": 9,
+					"top": 5,
 					"width": 55,
-					"height": 18,
+					"height": 21,
 					"events": [
 						"onDataChange"
 					],
@@ -369,14 +383,15 @@
 					"choiceList": {
 						"$ref": "/SOURCES/lists.json#/PaysQuoi"
 					},
-					"dataSource": "Form:C1466.critereQuoiListe.Pays"
+					"dataSource": "Form:C1466.critereQuoiListe.Pays",
+					"bottom": 26
 				},
 				"zCritereDomaine1": {
 					"type": "combo",
 					"left": 319,
-					"top": 9,
+					"top": 5,
 					"width": 57,
-					"height": 18,
+					"height": 21,
 					"events": [
 						"onDataChange"
 					],
@@ -384,7 +399,8 @@
 					"choiceList": {
 						"$ref": "/SOURCES/lists.json#/DomaineQuoi"
 					},
-					"dataSource": "Form:C1466.critereQuoiListe.Domaine"
+					"dataSource": "Form:C1466.critereQuoiListe.Domaine",
+					"bottom": 26
 				}
 			},
 			"entryOrder": [
@@ -1611,7 +1627,7 @@
 			]
 		}
 	],
-	"geometryStamp": 3144,
+	"geometryStamp": 3287,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",

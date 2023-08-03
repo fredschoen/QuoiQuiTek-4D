@@ -1,9 +1,25 @@
 {
 	"GenreQuoi": {
-		"editable": true
+		"editable": true,
+		"items": [
+			{
+				"text": "Action",
+				"ref": 1,
+				"editable": true,
+				"collapsed": true
+			}
+		]
 	},
 	"PaysQuoi": {
-		"editable": true
+		"editable": true,
+		"items": [
+			{
+				"text": "FR",
+				"ref": 1,
+				"editable": true,
+				"collapsed": true
+			}
+		]
 	},
 	"GenreQui": {
 		"editable": true,
@@ -24,10 +40,26 @@
 		"editable": true
 	},
 	"StockQuoi": {
-		"editable": true
+		"editable": true,
+		"items": [
+			{
+				"text": "XX",
+				"ref": 1,
+				"editable": true,
+				"collapsed": true
+			}
+		]
 	},
 	"DomaineQuoi": {
-		"editable": true
+		"editable": true,
+		"items": [
+			{
+				"text": "CINE",
+				"ref": 1,
+				"editable": true,
+				"collapsed": true
+			}
+		]
 	},
 	"DomaineQui": {
 		"editable": true
