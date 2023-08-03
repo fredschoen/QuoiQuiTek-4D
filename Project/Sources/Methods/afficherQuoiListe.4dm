@@ -5,14 +5,14 @@ C_OBJECT:C1216($form_obj)
 $form_obj:=New object:C1471
 $form_obj.action:="INIT"  // chargement initial
 $form_obj.page:=1  // afficher page 1 pour commencer
-If ($1>"")
-	Form:C1466.utilisationListe:=$1
+If (Count parameters:C259>0)
+	$form_obj.utilisationListe:=$1
 Else 
-	Form:C1466.utilisationListe:=""
+	$form_obj.utilisationListe:=""
 End if 
 //cas où on utilise la liste quis pour ajouter un role à un quoi
 
-If (Form:C1466.utilisationListe="AJOUTER_ROLE")
+If ($form_obj.utilisationListe="AJOUTER_ROLE")
 	$form_obj.eleCouQui:=New object:C1471
 	$form_obj.eleCouQui:=Form:C1466.eleCouQui
 End if 

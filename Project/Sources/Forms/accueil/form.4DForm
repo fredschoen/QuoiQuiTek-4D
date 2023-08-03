@@ -81,7 +81,7 @@
 					"events": [
 						"onClick"
 					],
-					"method": "afficherQuoiListe"
+					"method": "ObjectMethods/bQuoi.4dm"
 				},
 				"bTrace": {
 					"type": "checkbox",

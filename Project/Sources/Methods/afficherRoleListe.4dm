@@ -19,6 +19,12 @@ $form_obj.critereRoleListe.Domaine:=""
 $form_obj.critereRoleListe.Style:=""
 $form_obj.critereRoleListe.Age:=""
 
+If (Count parameters:C259>0)
+	$form_obj.utilisationListe:=$1
+Else 
+	$form_obj.utilisationListe:=""
+End if 
+
 $win_l:=Open form window:C675("roleListe")
 
 While ($form_obj.page>0)  // 0 :quitter

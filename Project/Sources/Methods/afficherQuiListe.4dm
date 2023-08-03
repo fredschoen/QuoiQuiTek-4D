@@ -1,15 +1,10 @@
 //%attributes = {}
 // afficherQuiListe
-
+// $1: type d'utilisation de la liste
 C_OBJECT:C1216($form_obj)
 $form_obj:=New object:C1471
 $form_obj.action:="INIT"  // chargement initial
 $form_obj.page:=1
-If ($1>"")
-	Form:C1466.utilisationListe:=$1
-Else 
-	Form:C1466.utilisationListe:=""
-End if 
 
 //criteres d'affichage :
 $form_obj.critereQuiListe:=New object:C1471
@@ -21,8 +16,14 @@ $form_obj.critereQuiListe.AnneeDeces:=""
 $form_obj.critereQuiListe.Domaine:=""
 $form_obj.critereQuiListe.Style:=""
 
+If (Count parameters:C259>0)
+	$form_obj.utilisationListe:=$1
+Else 
+	$form_obj.utilisationListe:=""
+End if 
+
 //cas où on utilise la liste quis pour ajouter un role à un quoi
-If (_utilisationListe="AJOUTER_ROLE")
+If ($form_obj.utilisationListe="AJOUTER_ROLE")
 	If (Form:C1466.eleCouQuoi=Null:C1517)
 		CONFIRM:C162("afficherquiliste: (Form.eleCouQuoi=null)")
 	Else 
