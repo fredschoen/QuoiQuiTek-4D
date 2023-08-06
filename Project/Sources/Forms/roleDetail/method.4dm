@@ -1,6 +1,12 @@
 //formulaire roleListe
 Case of 
 		
+	: (Form event code:C388=On Load:K2:1)
+		
+		Form:C1466.quoiDeQui:=charger_lesRolesDeQui(Form:C1466.qui)
+		Form:C1466.quiDeQuoi:=charger_lesRolesDeQuoi(Form:C1466.quoi)
+		
+		
 	: (Form event code:C388=On Unload:K2:2)
 		CONFIRM:C162("sortir du détail du role ?")
 		If (OK=1)
