@@ -1,0 +1,580 @@
+{
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"windowSizingX": "variable",
+	"windowSizingY": "variable",
+	"windowMinWidth": 0,
+	"windowMinHeight": 0,
+	"windowMaxWidth": 32767,
+	"windowMaxHeight": 32767,
+	"rightMargin": 20,
+	"bottomMargin": 20,
+	"events": [
+		"onLoad",
+		"onPageChange",
+		"onValidate",
+		"onClick",
+		"onDoubleClick",
+		"onOutsideCall",
+		"onBeginDragOver",
+		"onDragOver",
+		"onDrop",
+		"onAfterKeystroke",
+		"onMenuSelect",
+		"onPluginArea",
+		"onAfterEdit",
+		"onTimer",
+		"onBoundVariableChange"
+	],
+	"windowTitle": "window title",
+	"destination": "detailScreen",
+	"pages": [
+		{
+			"objects": {}
+		},
+		{
+			"objects": {
+				"lb_lesRolesDeQuoi": {
+					"type": "listbox",
+					"dataSource": "Form:C1466.roleListe",
+					"top": 80,
+					"left": 343,
+					"width": 490,
+					"height": 300,
+					"visibility": "visible",
+					"sizingX": "fixed",
+					"sizingY": "fixed",
+					"headerHeight": "2em",
+					"listboxType": "collection",
+					"scrollbarHorizontal": "automatic",
+					"scrollbarVertical": "automatic",
+					"resizingMode": "legacy",
+					"method": "ObjectMethods/lb_lesRolesDeQuoi.4dm",
+					"currentItemSource": "Form:C1466.eleCouRole",
+					"events": [
+						"onClick",
+						"onAfterKeystroke"
+					],
+					"currentItemPositionSource": "Form:C1466.eleCouRolePos",
+					"selectionMode": "single",
+					"columns": [
+						{
+							"header": {
+								"name": "Role",
+								"text": "Role"
+							},
+							"name": "DescrRole",
+							"dataSource": "This:C1470.role.Descr",
+							"footer": {
+								"name": "Pied3"
+							},
+							"events": [],
+							"method": "",
+							"width": 145
+						},
+						{
+							"name": "AnneeNaiss",
+							"dataSource": "This:C1470.qui.AnneeNaiss",
+							"width": 56,
+							"enterable": true,
+							"header": {
+								"text": "Annee Naiss",
+								"name": "Entête2"
+							},
+							"footer": {
+								"name": "16"
+							},
+							"events": [],
+							"method": ""
+						},
+						{
+							"name": "AgeDansQuoi",
+							"dataSource": "This:C1470.AgeQui",
+							"width": 56,
+							"enterable": false,
+							"header": {
+								"text": "Age dans quoi",
+								"name": "Entête3"
+							},
+							"footer": {
+								"name": "17"
+							},
+							"events": []
+						},
+						{
+							"name": "Genre",
+							"dataSource": "This:C1470.qui.Genre",
+							"width": 37,
+							"enterable": true,
+							"header": {
+								"text": "Genre",
+								"name": "18"
+							},
+							"footer": {
+								"name": "19"
+							},
+							"method": "",
+							"events": []
+						},
+						{
+							"name": "Pays1",
+							"dataSource": "This:C1470.qui.Pays",
+							"width": 43,
+							"enterable": true,
+							"header": {
+								"text": "Pays",
+								"name": "20"
+							},
+							"footer": {
+								"name": "21"
+							},
+							"events": [],
+							"method": ""
+						},
+						{
+							"name": "Nom1",
+							"dataSource": "This:C1470.qui.Nom",
+							"width": 120,
+							"enterable": true,
+							"header": {
+								"text": "Nom",
+								"name": "22"
+							},
+							"footer": {
+								"name": "23"
+							},
+							"events": [],
+							"method": ""
+						}
+					]
+				},
+				"label_Nom": {
+					"type": "text",
+					"text": "Nom:",
+					"top": 75,
+					"left": 10,
+					"width": 60,
+					"height": 17
+				},
+				"field_Nom": {
+					"type": "input",
+					"dataSource": "Form:C1466.quoi.Nom",
+					"top": 75,
+					"left": 73,
+					"width": 250,
+					"height": 17
+				},
+				"label_Genre": {
+					"type": "text",
+					"text": "Genre:",
+					"top": 125,
+					"left": 10,
+					"width": 60,
+					"height": 17
+				},
+				"label_Pays": {
+					"type": "text",
+					"text": "Pays:",
+					"top": 147,
+					"left": 10,
+					"width": 60,
+					"height": 17
+				},
+				"label_Stock": {
+					"type": "text",
+					"text": "Stock:",
+					"top": 174,
+					"left": 10,
+					"width": 60,
+					"height": 17
+				},
+				"label_Real": {
+					"type": "text",
+					"text": "Real:",
+					"top": 204,
+					"left": 10,
+					"width": 60,
+					"height": 17
+				},
+				"field_Real": {
+					"type": "input",
+					"dataSource": "Form:C1466.quoi.Real",
+					"top": 204,
+					"left": 73,
+					"width": 250,
+					"height": 17
+				},
+				"label_Annee": {
+					"type": "text",
+					"text": "Annee:",
+					"top": 234,
+					"left": 10,
+					"width": 60,
+					"height": 17
+				},
+				"field_Annee": {
+					"type": "input",
+					"dataSource": "Form:C1466.quoi.Annee",
+					"top": 233,
+					"left": 73,
+					"width": 100,
+					"height": 17
+				},
+				"label_Domaine": {
+					"type": "text",
+					"text": "Domaine:",
+					"top": 99,
+					"left": 10,
+					"width": 60,
+					"height": 17
+				},
+				"label_Prod": {
+					"type": "text",
+					"text": "Prod:",
+					"top": 294,
+					"left": 10,
+					"width": 60,
+					"height": 17
+				},
+				"field_Prod": {
+					"type": "input",
+					"dataSource": "Form:C1466.quoi.Prod",
+					"top": 294,
+					"left": 73,
+					"width": 250,
+					"height": 17
+				},
+				"btSauverQuoi": {
+					"type": "button",
+					"text": "Sauver",
+					"top": 82,
+					"left": 853,
+					"width": 66,
+					"height": 22,
+					"events": [
+						"onClick"
+					],
+					"defaultButton": true,
+					"method": "sauverQuoi",
+					"shortcutAccel": true,
+					"shortcutControl": false,
+					"shortcutShift": false,
+					"shortcutAlt": false,
+					"shortcutKey": "w",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/RaccourciSauver"
+					}
+				},
+				"btAjouterRole": {
+					"type": "button",
+					"text": "Ajouter un rôle dans ce quoi",
+					"top": 143,
+					"left": 853,
+					"width": 158,
+					"height": 22,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/btAjouterRole.4dm"
+				},
+				"btSupprimerQuoi": {
+					"type": "button",
+					"text": "Suprimer le quoi",
+					"top": 112,
+					"left": 853,
+					"width": 100,
+					"height": 22,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/btSupprimerQuoi.4dm"
+				},
+				"btSuivantQuoi": {
+					"type": "button",
+					"text": "Suivant",
+					"top": 5,
+					"left": 16,
+					"width": 70,
+					"height": 24,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/btSuivantQuoi.4dm",
+					"shortcutAccel": true,
+					"shortcutControl": false,
+					"shortcutShift": false,
+					"shortcutAlt": false,
+					"shortcutKey": "s",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/RaccourciSuivant"
+					}
+				},
+				"btPrecedentQuoi": {
+					"type": "button",
+					"text": "Précédent",
+					"top": 5,
+					"left": 86,
+					"width": 70,
+					"height": 24,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/btPrecedentQuoi.4dm",
+					"shortcutAccel": true,
+					"shortcutControl": false,
+					"shortcutShift": false,
+					"shortcutAlt": false,
+					"shortcutKey": "p",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/RaccourciPreced"
+					}
+				},
+				"btPremierQuoi": {
+					"type": "button",
+					"text": "Premier",
+					"top": 5,
+					"left": 158,
+					"width": 70,
+					"height": 24,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/btPremierQuoi.4dm"
+				},
+				"btDernierQuoi": {
+					"type": "button",
+					"text": "Dernier",
+					"top": 5,
+					"left": 228,
+					"width": 70,
+					"height": 24,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/btDernierQuoi.4dm"
+				},
+				"btRevenirListe": {
+					"type": "button",
+					"text": "Revenir à la liste des quois",
+					"top": 205,
+					"left": 853,
+					"width": 140,
+					"height": 22,
+					"events": [
+						"onClick"
+					],
+					"method": "atteindrePageListe"
+				},
+				"Genre_CB": {
+					"type": "combo",
+					"left": 73,
+					"top": 122,
+					"width": 150,
+					"height": 20,
+					"events": [
+						"onDataChange"
+					],
+					"choiceList": {
+						"$ref": "/SOURCES/lists.json#/GenreQuoi"
+					},
+					"dataSource": "Form:C1466.quoi.Genre",
+					"dataSourceTypeHint": "text"
+				},
+				"paysQuoi_CB": {
+					"type": "combo",
+					"left": 73,
+					"top": 146,
+					"width": 80,
+					"height": 18,
+					"events": [
+						"onDataChange"
+					],
+					"dataSourceTypeHint": "text",
+					"choiceList": {
+						"$ref": "/SOURCES/lists.json#/PaysQuoi"
+					},
+					"dataSource": "Form:C1466.quoi.Pays"
+				},
+				"field_Info": {
+					"type": "input",
+					"left": 74,
+					"top": 401,
+					"width": 409,
+					"height": 176,
+					"dataSource": "Form:C1466.infoQuoi"
+				},
+				"label_Info": {
+					"type": "text",
+					"text": "Info:",
+					"top": 388,
+					"left": 10,
+					"width": 60,
+					"height": 17
+				},
+				"field_ID": {
+					"type": "input",
+					"dataSource": "Form:C1466.quoi.ID",
+					"top": 32,
+					"left": 888,
+					"width": 78,
+					"height": 16,
+					"enterable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"textAlign": "left"
+				},
+				"label4": {
+					"type": "text",
+					"text": "F:",
+					"top": 32,
+					"left": 875,
+					"width": 12,
+					"height": 16
+				},
+				"zeleCouQuoiPos": {
+					"type": "input",
+					"left": 889,
+					"top": 7,
+					"width": 31,
+					"height": 16,
+					"dataSource": "Form:C1466.eleCouQuoiPos",
+					"enterable": false,
+					"dataSourceTypeHint": "integer",
+					"focusable": false,
+					"borderStyle": "none",
+					"textAlign": "right"
+				},
+				"label1": {
+					"type": "text",
+					"text": "/",
+					"top": 7,
+					"left": 927,
+					"width": 12,
+					"height": 16
+				},
+				"zFormquoiListelength": {
+					"type": "input",
+					"left": 940,
+					"top": 7,
+					"width": 31,
+					"height": 16,
+					"dataSource": "Form:C1466.quoiListe.length",
+					"enterable": false,
+					"dataSourceTypeHint": "integer",
+					"focusable": false,
+					"borderStyle": "none",
+					"textAlign": "right"
+				},
+				"btSelectionnerQuoi": {
+					"type": "button",
+					"text": "Selectionner le quoi",
+					"top": 174,
+					"left": 853,
+					"width": 120,
+					"height": 22,
+					"events": [
+						"onClick"
+					],
+					"defaultButton": false,
+					"method": "ObjectMethods/btSelectionnerQuoi.4dm"
+				},
+				"StockQuoi_CB": {
+					"type": "combo",
+					"left": 73,
+					"top": 173,
+					"width": 150,
+					"height": 18,
+					"events": [
+						"onDataChange"
+					],
+					"dataSourceTypeHint": "text",
+					"choiceList": {
+						"$ref": "/SOURCES/lists.json#/StockQuoi"
+					},
+					"dataSource": "Form:C1466.quoi.Stock"
+				},
+				"DomaineQuoi_CB": {
+					"type": "combo",
+					"left": 73,
+					"top": 99,
+					"width": 150,
+					"height": 18,
+					"events": [
+						"onDataChange"
+					],
+					"dataSourceTypeHint": "text",
+					"choiceList": {
+						"$ref": "/SOURCES/lists.json#/DomaineQuoi"
+					},
+					"dataSource": "Form:C1466.quoi.Domaine"
+				},
+				"zForm_eleCouQuoi_ID": {
+					"type": "input",
+					"dataSource": "Form:C1466.eleCouQuoi.ID",
+					"top": 493,
+					"left": 885,
+					"width": 78,
+					"height": 16,
+					"enterable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"textAlign": "left"
+				},
+				"label3": {
+					"type": "text",
+					"text": "F(ec):",
+					"top": 493,
+					"left": 853,
+					"width": 30,
+					"height": 15
+				},
+				"label_DateDernVisu": {
+					"type": "text",
+					"text": "DateDernVisu:",
+					"top": 323,
+					"left": 10,
+					"width": 60,
+					"height": 17
+				},
+				"field_Prod1": {
+					"type": "input",
+					"dataSource": "Form:C1466.quoi.DateDernVisu",
+					"top": 323,
+					"left": 73,
+					"width": 250,
+					"height": 17,
+					"entryFilter": "!0&9##/##/##"
+				},
+				"label_Qualif": {
+					"type": "text",
+					"text": "Qualif:",
+					"top": 257,
+					"left": 10,
+					"width": 60,
+					"height": 17
+				},
+				"field_Annee1": {
+					"type": "input",
+					"dataSource": "Form:C1466.quoi.Qualif",
+					"top": 256,
+					"left": 73,
+					"width": 100,
+					"height": 17
+				},
+				"Zone de saisie": {
+					"type": "input",
+					"left": 529,
+					"top": 406,
+					"width": 258,
+					"height": 176,
+					"dataSourceTypeHint": "picture",
+					"pictureFormat": "proportionalCenter",
+					"dataSource": "Form:C1466.quoi.Photo"
+				}
+			}
+		}
+	],
+	"geometryStamp": 1
+}

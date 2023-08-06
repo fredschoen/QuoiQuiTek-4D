@@ -1,4 +1,6 @@
-//listbox roleListe
+// page 2 de quoiListe : roleListeDeQuoi_LB
+
+C_BOOLEAN:C305($pourSelectionner)
 
 $pourSelectionner:=False:C215
 
@@ -20,14 +22,9 @@ End case
 
 If ($pourSelectionner=True:C214)
 	Form:C1466.action:="MODIFIER"
-	charger_unRole
-	
-	C_LONGINT:C283($win_l)
-	$win_l:=Open form window:C675("roleDetail")
-	MAXIMIZE WINDOW:C453($win_l)
-	While (Form:C1466.page>0)  // 0 :quitter
-		DIALOG:C40("roleDetail"; Form:C1466)
-	End while 
-	CLOSE WINDOW:C154($win_l)
-	
+	//Form.qui:=Form.eleCouRole.qui
+	//Form.role:=Form.eleCouRole.role
+	charger_unRoleDeQuoi
+	Form:C1466.page:=3
+	FORM GOTO PAGE:C247(Form:C1466.page)
 End if 
