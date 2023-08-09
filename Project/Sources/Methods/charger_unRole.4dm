@@ -62,17 +62,11 @@ Else
 	$role_es:=ds:C1482.Role.query("ID=:1"; Form:C1466.roleListe[$ind].ID)
 	$role_e:=$role_es.first()
 	Form:C1466.role:=$role_e
-	//qui
-	$qui_es:=ds:C1482.Qui.query("ID=:1"; Form:C1466.roleListe[$ind].leQuiDuRole.ID)
-	$qui_e:=$qui_es.first()
-	Form:C1466.qui:=$qui_e
-	//quoi
-	$quoi_es:=ds:C1482.Quoi.query("ID=:1"; Form:C1466.roleListe[$ind].leQuoiDuRole.ID)
-	$quoi_e:=$quoi_es.first()
-	Form:C1466.quoi:=$quoi_e
+	//dépendances
+	Form:C1466.qui:=Form:C1466.role.qui
+	Form:C1466.quoi:=Form:C1466.role.quoi
 	
 End if 
-
 
 $anneeQuoi:=_anneeDeDateText(Form:C1466.quoi.Annee)
 

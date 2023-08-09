@@ -177,18 +177,6 @@
 					],
 					"method": "ObjectMethods/btDernierRole.4dm"
 				},
-				"btRevenirListe": {
-					"type": "button",
-					"text": "Revenir à la liste des roles",
-					"top": 3,
-					"left": 309,
-					"width": 152,
-					"height": 24,
-					"events": [
-						"onClick"
-					],
-					"method": "ObjectMethods/btRevenirListe.4dm"
-				},
 				"cb_GenreQui": {
 					"type": "combo",
 					"left": 57,
@@ -476,20 +464,6 @@
 					"tooltip": {
 						"$ref": "/SOURCES/tips.json#/RaccourciSauver"
 					},
-					"style": "custom",
-					"borderStyle": "raised"
-				},
-				"btRevenirListe1": {
-					"type": "button",
-					"text": "Revenir à la liste",
-					"top": 5,
-					"left": 664,
-					"width": 103,
-					"height": 22,
-					"events": [
-						"onClick"
-					],
-					"method": "atteindrePageListe",
 					"style": "custom",
 					"borderStyle": "raised"
 				},
@@ -1033,9 +1007,49 @@
 					"width": 165,
 					"height": 17
 				}
-			}
+			},
+			"entryOrder": [
+				"fieldDescrNom",
+				"zQuiNom",
+				"zQuiPrenom",
+				"cb_GenreQui",
+				"zAnneeNaiss",
+				"zAnneeDeces",
+				"cb_DomaineQui",
+				"cb_PaysQui",
+				"cb_StyleQui",
+				"zInfo",
+				"iQuiPhoto",
+				"lb_roleListeDeQuiDeQuoi",
+				"field_Nom",
+				"Genre_CB",
+				"field_Real",
+				"DomaineQuoi_CB",
+				"paysQuoi_CB",
+				"field_Annee",
+				"StockQuoi_CB",
+				"field_Annee1",
+				"field_Prod",
+				"field_Prod1",
+				"field_Info",
+				"rolePhoto_ZS",
+				"lb_lesRolesDeQuoiDeQui",
+				"btSuivantRole",
+				"btPrecedentRole",
+				"btPremierRole",
+				"btDernierRole",
+				"btSauver",
+				"btSupprimerRole",
+				"zEleCouQuiPos",
+				"zQuiListelength",
+				"zQuiID",
+				"btTrace",
+				"zForm_eleCouQui_ID",
+				"zForm_eleCouQuoi_ID",
+				"ge"
+			]
 		}
 	],
-	"geometryStamp": 266,
+	"geometryStamp": 268,
 	"method": "method.4dm"
 }

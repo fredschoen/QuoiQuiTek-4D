@@ -21,7 +21,13 @@ Case of
 				Form:C1466.page:=2
 		End case 
 		
+		
 	: (Form event code:C388=On Load:K2:1)
+		If (Undefined:C82(Form:C1466.action))
+			Form:C1466.action:="INIT"
+			Form:C1466.utilisationListe:=""
+			Form:C1466.page:=1
+		End if 
 		
 		If (Form:C1466.action="INIT")
 			charger_LesQuis

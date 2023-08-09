@@ -55,7 +55,7 @@
 					"columns": [
 						{
 							"name": "c_Nom1",
-							"dataSource": "This:C1470.leQuiDuRole.Nom",
+							"dataSource": "This:C1470.qui.Nom",
 							"width": 230,
 							"enterable": true,
 							"header": {
@@ -81,7 +81,7 @@
 						},
 						{
 							"name": "cGenre1",
-							"dataSource": "This:C1470.leQuiDuRole.Genre",
+							"dataSource": "This:C1470.qui.Genre",
 							"width": 20,
 							"enterable": true,
 							"header": {
@@ -95,7 +95,7 @@
 						},
 						{
 							"name": "cPays1",
-							"dataSource": "This:C1470.leQuiDuRole.Pays",
+							"dataSource": "This:C1470.qui.Pays",
 							"width": 80,
 							"enterable": true,
 							"header": {
@@ -109,7 +109,7 @@
 						},
 						{
 							"name": "cAnneeNaiss1",
-							"dataSource": "This:C1470.leQuiDuRole.AnneeNaiss",
+							"dataSource": "This:C1470.qui.AnneeNaiss",
 							"width": 50,
 							"enterable": true,
 							"header": {
@@ -123,7 +123,7 @@
 						},
 						{
 							"name": "cAnneeDeces1",
-							"dataSource": "This:C1470.leQuiDuRole.AnneeDeces",
+							"dataSource": "This:C1470.qui.AnneeDeces",
 							"width": 50,
 							"enterable": true,
 							"header": {
@@ -137,7 +137,7 @@
 						},
 						{
 							"name": "cDomaine1",
-							"dataSource": "This:C1470.leQuiDuRole.Domaine",
+							"dataSource": "This:C1470.qui.Domaine",
 							"width": 50,
 							"enterable": true,
 							"header": {
@@ -151,7 +151,7 @@
 						},
 						{
 							"name": "cStyle1",
-							"dataSource": "This:C1470.leQuiDuRole.Style",
+							"dataSource": "This:C1470.qui.Style",
 							"width": 70,
 							"enterable": true,
 							"header": {
@@ -173,7 +173,7 @@
 								"name": "Pied1"
 							},
 							"width": 210,
-							"dataSource": "This:C1470.leQuoiDuRole.Nom"
+							"dataSource": "This:C1470.quoi.Nom"
 						},
 						{
 							"header": {
@@ -198,7 +198,7 @@
 								"name": "Pied2"
 							},
 							"width": 50,
-							"dataSource": "This:C1470.leQuoiDuRole.Genre"
+							"dataSource": "This:C1470.quoi.Genre"
 						},
 						{
 							"header": {
@@ -210,7 +210,7 @@
 								"name": "Pied3"
 							},
 							"width": 60,
-							"dataSource": "This:C1470.leQuoiDuRole.Pays"
+							"dataSource": "This:C1470.quoi.Pays"
 						},
 						{
 							"header": {
@@ -222,7 +222,7 @@
 								"name": "Pied4"
 							},
 							"width": 50,
-							"dataSource": "This:C1470.leQuoiDuRole.Domaine"
+							"dataSource": "This:C1470.quoi.Domaine"
 						},
 						{
 							"header": {
@@ -234,7 +234,7 @@
 								"name": "Pied5"
 							},
 							"width": 30,
-							"dataSource": "This:C1470.leQuoiDuRole.Annee"
+							"dataSource": "This:C1470.quoi.Annee"
 						}
 					]
 				},

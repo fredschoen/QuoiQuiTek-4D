@@ -210,7 +210,7 @@
 					"top": 57,
 					"left": 10,
 					"width": 76,
-					"height": 17,
+					"height": 18,
 					"textAlign": "right"
 				},
 				"zNomQui": {
@@ -227,7 +227,7 @@
 					"top": 103,
 					"left": 10,
 					"width": 76,
-					"height": 17,
+					"height": 18,
 					"textAlign": "right"
 				},
 				"label_AnneeNaiss": {
@@ -236,7 +236,7 @@
 					"top": 129,
 					"left": 10,
 					"width": 76,
-					"height": 17,
+					"height": 18,
 					"textAlign": "right"
 				},
 				"zAnneeNaiss": {
@@ -276,8 +276,8 @@
 				"btSauverQui": {
 					"type": "button",
 					"text": "Sauver info qui",
-					"top": 146,
-					"left": 736,
+					"top": 6,
+					"left": 774,
 					"width": 141,
 					"height": 23,
 					"events": [
@@ -296,10 +296,10 @@
 				},
 				"iQuiPhoto": {
 					"type": "input",
-					"left": 527,
-					"top": 75,
-					"width": 160,
-					"height": 160,
+					"left": 542,
+					"top": 57,
+					"width": 313,
+					"height": 193,
 					"dataSourceTypeHint": "picture",
 					"dataSource": "Form:C1466.qui.Photo",
 					"enterable": true,
@@ -314,8 +314,8 @@
 				"btSupprimerQui": {
 					"type": "button",
 					"text": "Supprimer le qui",
-					"top": 117,
-					"left": 736,
+					"top": 6,
+					"left": 656,
 					"width": 111,
 					"height": 22,
 					"events": [
@@ -395,24 +395,12 @@
 					],
 					"method": "ObjectMethods/btDernierQui.4dm"
 				},
-				"btRevenirListe": {
-					"type": "button",
-					"text": "Revenir à la liste des quis",
-					"top": 3,
-					"left": 309,
-					"width": 152,
-					"height": 24,
-					"events": [
-						"onClick"
-					],
-					"method": "ObjectMethods/btRevenirListe.4dm"
-				},
 				"cb_GenreQui": {
 					"type": "combo",
 					"left": 94,
-					"top": 103,
+					"top": 105,
 					"width": 100,
-					"height": 18,
+					"height": 22,
 					"events": [
 						"onDataChange"
 					],
@@ -428,7 +416,7 @@
 					"left": 264,
 					"top": 103,
 					"width": 150,
-					"height": 18,
+					"height": 22,
 					"events": [
 						"onDataChange"
 					],
@@ -441,8 +429,8 @@
 				"zQuiID": {
 					"type": "input",
 					"dataSource": "Form:C1466.qui.ID",
-					"top": 48,
-					"left": 752,
+					"top": 75,
+					"left": 1015,
 					"width": 78,
 					"height": 16,
 					"enterable": false,
@@ -454,15 +442,15 @@
 				"label5": {
 					"type": "text",
 					"text": "A:",
-					"top": 48,
-					"left": 739,
+					"top": 75,
+					"left": 1002,
 					"width": 12,
 					"height": 16
 				},
 				"zEleCouQuiPos": {
 					"type": "input",
-					"left": 782,
-					"top": 7,
+					"left": 1004,
+					"top": 48,
 					"width": 31,
 					"height": 16,
 					"dataSource": "Form:C1466.eleCouQuiPos",
@@ -475,15 +463,15 @@
 				"label6": {
 					"type": "text",
 					"text": "/",
-					"top": 7,
-					"left": 820,
+					"top": 48,
+					"left": 1042,
 					"width": 12,
 					"height": 16
 				},
 				"zQuiListelength": {
 					"type": "input",
-					"left": 833,
-					"top": 7,
+					"left": 1055,
+					"top": 48,
 					"width": 31,
 					"height": 16,
 					"dataSource": "Form:C1466.quiListe.length",
@@ -496,8 +484,8 @@
 				"btSelectionnerQui": {
 					"type": "button",
 					"text": "Selectionner le qui",
-					"top": 3,
-					"left": 469,
+					"top": 2,
+					"left": 324,
 					"width": 120,
 					"height": 24,
 					"events": [
@@ -510,7 +498,7 @@
 					"type": "button",
 					"text": "Ajouter un rôle pour cet qui",
 					"top": 4,
-					"left": 598,
+					"left": 464,
 					"width": 180,
 					"height": 23,
 					"events": [
@@ -521,8 +509,8 @@
 				"zForm_eleCouQui_ID": {
 					"type": "input",
 					"dataSource": "Form:C1466.eleCouQui.ID",
-					"top": 232,
-					"left": 847,
+					"top": 96,
+					"left": 1008,
 					"width": 78,
 					"height": 16,
 					"enterable": false,
@@ -533,8 +521,8 @@
 				"label8": {
 					"type": "text",
 					"text": "A(ec):",
-					"top": 232,
-					"left": 815,
+					"top": 96,
+					"left": 976,
 					"width": 30,
 					"height": 15
 				},
@@ -544,7 +532,7 @@
 					"top": 153,
 					"left": 10,
 					"width": 76,
-					"height": 15,
+					"height": 18,
 					"textAlign": "right"
 				},
 				"cb_DomaineQui": {
@@ -552,7 +540,7 @@
 					"left": 94,
 					"top": 153,
 					"width": 100,
-					"height": 18,
+					"height": 22,
 					"events": [
 						"onDataChange"
 					],
@@ -576,7 +564,7 @@
 					"left": 264,
 					"top": 153,
 					"width": 150,
-					"height": 18,
+					"height": 22,
 					"events": [
 						"onDataChange"
 					],
@@ -608,7 +596,7 @@
 					"left": 417,
 					"top": 130,
 					"width": 79,
-					"height": 16,
+					"height": 18,
 					"enterable": false,
 					"dataSource": "Form:C1466.ageQui",
 					"borderStyle": "none"
@@ -619,7 +607,7 @@
 					"top": 80,
 					"left": 10,
 					"width": 76,
-					"height": 17,
+					"height": 18,
 					"textAlign": "right"
 				},
 				"zPreNomQui": {
@@ -638,8 +626,35 @@
 					"width": 80,
 					"height": 18
 				}
-			}
+			},
+			"entryOrder": [
+				"zNomQui",
+				"zPreNomQui",
+				"cb_GenreQui",
+				"cb_PaysQui",
+				"zAnneeNaiss",
+				"zDateeNaiss",
+				"zAnneeDeces",
+				"zAgeQui",
+				"cb_DomaineQui",
+				"cb_StyleQui",
+				"zInfo",
+				"iQuiPhoto",
+				"lb_lesRolesDeQui",
+				"btSupprimerQui",
+				"btSauverQui",
+				"btSuivantQui",
+				"btPrecedentQui",
+				"btPremierQui",
+				"btDernierQui",
+				"btSelectionnerQui",
+				"btAjouterRole",
+				"zEleCouQuiPos",
+				"zQuiListelength",
+				"zQuiID",
+				"zForm_eleCouQui_ID"
+			]
 		}
 	],
-	"geometryStamp": 1
+	"geometryStamp": 82
 }

@@ -32,6 +32,7 @@ Case of
 			Form:C1466.utilisationListe:=""
 			
 		End if 
+		
 		If (Undefined:C82(Form:C1466.critereQuoiListe))  //ouvrir le formulaire sans passer par _afficherQuoiListe
 			//criteres d'affichage :
 			Form:C1466.critereQuoiListe:=New object:C1471

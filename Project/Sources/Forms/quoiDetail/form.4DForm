@@ -573,7 +573,35 @@
 					"pictureFormat": "proportionalCenter",
 					"dataSource": "Form:C1466.quoi.Photo"
 				}
-			}
+			},
+			"entryOrder": [
+				"field_Nom",
+				"DomaineQuoi_CB",
+				"Genre_CB",
+				"paysQuoi_CB",
+				"StockQuoi_CB",
+				"field_Real",
+				"field_Annee",
+				"field_Annee1",
+				"field_Prod",
+				"field_Prod1",
+				"field_Info",
+				"lb_lesRolesDeQuoi",
+				"Zone de saisie",
+				"btSuivantQuoi",
+				"btPrecedentQuoi",
+				"btPremierQuoi",
+				"btDernierQuoi",
+				"btSauverQuoi",
+				"btSupprimerQuoi",
+				"btAjouterRole",
+				"btSelectionnerQuoi",
+				"btRevenirListe",
+				"field_ID",
+				"zeleCouQuoiPos",
+				"zFormquoiListelength",
+				"zForm_eleCouQuoi_ID"
+			]
 		}
 	],
 	"geometryStamp": 1
