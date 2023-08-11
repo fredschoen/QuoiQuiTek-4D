@@ -1,12 +1,13 @@
-<?xml version="1.0" encoding="UTF-8"?><preferences stamp="5">
+<?xml version="1.0" encoding="UTF-8"?><preferences stamp="33">
 	<com.4d>
 		<database>
-			<data_storage data_path="C:/Users/frede/Documents/FSC 2023/z-projetsInfo 2023/4D_FSC_2023/4Dv19_QuoiQuiTek/data/QuoiQuiTek.4DD"/>
+			<data_storage data_path="C:/Users/frede/Documents/GitHub/QuoiQuiTek-4D_Data/data.4DD"/>
 		</database>
+		<general last_opening_mode="0"/>
 	</com.4d>
 	<internal_prefs_4d>
 		<windows>
-			<window name="main" left="48" top="91" width="600" height="450"/>
+			<window name="main" left="0" top="109" width="1366" height="685"/>
 		</windows>
 		<explorer default_page="2"/>
 	</internal_prefs_4d>

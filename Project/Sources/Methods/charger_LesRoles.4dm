@@ -4,7 +4,7 @@ var $age : Integer
 var $anneeQuoi : Integer
 var $liste : Collection
 var $toto : Object
-Form:C1466..role_es:=New collection:C1472
+Form:C1466.role_es:=New collection:C1472
 var $quiAjout : Object
 var $quoiAjout : Object
 var $go : Boolean
@@ -23,7 +23,7 @@ For each ($role_e; $role_es)
 	$selection:=verifierSelectionRole(Form:C1466.critere.role_es.Genre; $role_e.qui.Genre; $selection)
 	$selection:=verifierSelectionRole(Form:C1466.critere.role_es.Age; String:C10($role_e.Age; "00"); $selection)
 	If ($selection)
-		Form:C1466..role_es.push($role_e)
+		Form:C1466.role_es.push($role_e)
 	End if 
 	
 	

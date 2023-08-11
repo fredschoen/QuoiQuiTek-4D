@@ -6,7 +6,7 @@ var $anneeQuoi : Integer
 visibleBtNavig
 
 // en plus: ne pas afficher les boutons si la liste = 0 ou 1 element, ou si on a ajouté cet role
-If ((Form:C1466..role_es.length<2)\
+If ((Form:C1466.role_es.length<2)\
  | (Form:C1466.posRoleSel_i=0))
 	OBJECT SET VISIBLE:C603(*; "btSuivant@"; False:C215)
 	OBJECT SET VISIBLE:C603(*; "btPrecedent@"; False:C215)
@@ -14,8 +14,6 @@ If ((Form:C1466..role_es.length<2)\
 	OBJECT SET VISIBLE:C603(*; "btDernier@"; False:C215)
 	
 End if 
-
-
 
 //se déplacer dans la liste box de page  1
 
@@ -30,50 +28,42 @@ Case of
 		If (Form:C1466.posRoleSel_i>1)
 			Form:C1466.posRoleSel_i:=Form:C1466.posRoleSel_i-1
 		Else 
-			Form:C1466.posRoleSel_i:=Form:C1466..role_es.length
+			Form:C1466.posRoleSel_i:=Form:C1466.role_es.length
 		End if 
 		
 	: (Form:C1466.action="SUIVANT")
-		If (Form:C1466.posRoleSel_i<Form:C1466..role_es.length)
+		If (Form:C1466.posRoleSel_i<Form:C1466.role_es.length)
 			Form:C1466.posRoleSel_i:=Form:C1466.posRoleSel_i+1
 		Else 
 			Form:C1466.posRoleSel_i:=1
 		End if 
 		
 	: (Form:C1466.action="DERNIER")
-		Form:C1466.posRoleSel_i:=Form:C1466..role_es.length
+		Form:C1466.posRoleSel_i:=Form:C1466.role_es.length
 		
 End case 
 
 // après mise à jour du "Form.eleCou...Pos", blanchir "Form.action" (car utilisé dans déplacement pg2 et pg3)
 Form:C1466.action:="MODIFIER"
 
-//"Form..role_es" est vide: aucun role trouvé suivant les critères, \
+//"Form.role_es" est vide: aucun role trouvé suivant les critères, \
 du coup l'utilisateur en crée un mais la liste reste vide.... CQFD 
-If ((Form:C1466..role_es.length=0)\
+If ((Form:C1466.role_es.length=0)\
  | (Form:C1466.posRoleSel_i=0))
 Else 
 	//les info sur le role sélectionné: pour affichage détail
 	C_LONGINT:C283($ind)
 	$ind:=Form:C1466.posRoleSel_i-1  //si position=1, alors indice=0
 	//role
-	$role_es:=ds:C1482.Role.query("ID=:1"; Form:C1466..role_es[$ind].ID)
+	$role_es:=ds:C1482.Role.query("ID=:1"; Form:C1466.role_es[$ind].ID)
 	$role_e:=$role_es.first()
 	Form:C1466.role:=$role_e
 	//dépendances
 	Form:C1466.qui:=Form:C1466.role.qui
 	Form:C1466.quoi:=Form:C1466.role.quoi
-	
-End if 
-
-$anneeQuoi:=_anneeDeDateText(Form:C1466.quoi.Annee)
-
-If ((Form:C1466.qui.AnneeNaiss=0) | ($anneeQuoi=0))
-	Form:C1466.age:=0
-Else 
-	Form:C1466.age:=$anneeQuoi-Form:C1466.qui.AnneeNaiss
+	Form:C1466.rolesDuQui:=Form:C1466.qui.roles
+	Form:C1466.rolesDuQuoi:=Form:C1466.quoi.roles
 End if 
 
 //mémoriser le nouvel élément courant
-Form:C1466.roleSel_e:=Form:C1466..role_es[$ind]
-
+Form:C1466.roleSel_e:=Form:C1466.role_es[$ind]

@@ -27,7 +27,7 @@
 			"objects": {
 				"lb_lesQuoisDuQui": {
 					"type": "listbox",
-					"dataSource": "Form:C1466..role_es",
+					"dataSource": "Form:C1466.role_es",
 					"top": 255,
 					"left": 3,
 					"width": 1090,

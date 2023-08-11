@@ -1,6 +1,6 @@
 Class extends Entity
 
-local Function getAge : Integer
+local Function getAge->$age : Integer
 	
 	
 	var $age : Integer
@@ -13,7 +13,5 @@ local Function getAge : Integer
 	Else 
 		$age:=$anneeQuoi-This:C1470.qui.AnneeNaiss
 	End if 
-	
-	return $age
 	
 	

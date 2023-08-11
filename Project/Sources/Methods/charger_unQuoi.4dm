@@ -77,7 +77,7 @@ Form:C1466.infoQuoi:=$quoi[0].Info
 C_OBJECT:C1216($role_liste; $role_ele; $qui_ele; $obj)
 C_LONGINT:C283($ageQui)
 $role_liste:=ds:C1482.Role.query("ID_Quoi=:1"; Form:C1466.quoi.ID).orderBy("Descr")
-Form:C1466..role_es:=New collection:C1472
+Form:C1466.role_es:=New collection:C1472
 For each ($role_ele; $role_liste)
 	$qui_ele:=ds:C1482.Qui.query("ID=:1"; $role_ele.ID_Qui)
 	If ($qui_ele.length=0)
@@ -92,7 +92,7 @@ For each ($role_ele; $role_liste)
 		$obj:=New object:C1471("AgeQui"; $ageQui; \
 			"role"; $role_ele.toObject("Descr,ID,ID_Qui,ID_Quoi,Photo"); \
 			"qui"; $qui_ele[0].toObject("Nom,AnneeNaiss,AnneeDeces,Genre,Pays,ID,Photo"))
-		Form:C1466..role_es.push($obj)
+		Form:C1466.role_es.push($obj)
 	End if 
 End for each 
 

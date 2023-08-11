@@ -28,9 +28,9 @@
 		},
 		{
 			"objects": {
-				"lb_.role_es": {
+				"lb_roleListe": {
 					"type": "listbox",
-					"dataSource": "Form:C1466..role_es",
+					"dataSource": "Form:C1466.role_es",
 					"top": 61,
 					"left": 10,
 					"width": 1105,
@@ -49,7 +49,7 @@
 						"onClick",
 						"onAfterKeystroke"
 					],
-					"method": "ObjectMethods/lb_.role_es.4dm",
+					"method": "ObjectMethods/lb_roleListe.4dm",
 					"currentItemPositionSource": "Form:C1466.posRoleSel_i",
 					"selectionMode": "single",
 					"columns": [
@@ -376,13 +376,13 @@
 				"zCritereStyle",
 				"btAppliquerFiltreRole",
 				"btValider",
-				"lb_.role_es",
+				"lb_roleListe",
 				"bTrace",
 				"btTrace"
 			]
 		}
 	],
-	"geometryStamp": 757,
+	"geometryStamp": 761,
 	"method": "method.4dm",
 	"editor": {
 		"activeView": "View 1",
