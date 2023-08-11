@@ -20,7 +20,7 @@
 		"onAfterKeystroke",
 		"onPageChange"
 	],
-	"windowTitle": "window title",
+	"windowTitle": "Liste des Roles",
 	"destination": "detailScreen",
 	"pages": [
 		{
@@ -28,9 +28,9 @@
 		},
 		{
 			"objects": {
-				"lb_roleListe": {
+				"lb_.role_es": {
 					"type": "listbox",
-					"dataSource": "Form:C1466.roleListe",
+					"dataSource": "Form:C1466..role_es",
 					"top": 61,
 					"left": 10,
 					"width": 1105,
@@ -44,22 +44,22 @@
 					"scrollbarVertical": "automatic",
 					"resizingMode": "legacy",
 					"selectedItemsSource": "",
-					"currentItemSource": "Form:C1466.eleCouRole",
+					"currentItemSource": "Form:C1466.roleSel_e",
 					"events": [
 						"onClick",
 						"onAfterKeystroke"
 					],
-					"method": "ObjectMethods/lb_roleListe.4dm",
-					"currentItemPositionSource": "Form:C1466.eleCouRolePos",
+					"method": "ObjectMethods/lb_.role_es.4dm",
+					"currentItemPositionSource": "Form:C1466.posRoleSel_i",
 					"selectionMode": "single",
 					"columns": [
 						{
-							"name": "c_Nom1",
-							"dataSource": "This:C1470.qui.Nom",
+							"name": "c_FullName",
+							"dataSource": "This:C1470.qui.FullName",
 							"width": 230,
 							"enterable": true,
 							"header": {
-								"text": "Nom",
+								"text": "Nom Qui",
 								"name": "eNomQui"
 							},
 							"footer": {
@@ -166,7 +166,7 @@
 						{
 							"header": {
 								"name": "ezNom",
-								"text": "nomO"
+								"text": "nom Quoi"
 							},
 							"name": "cNomO1",
 							"footer": {
@@ -241,16 +241,16 @@
 				"Texte": {
 					"type": "text",
 					"text": "pour voir détail: Click ou Flèche droite ",
-					"top": 16,
-					"left": 986,
-					"width": 115,
-					"height": 45
+					"top": 12,
+					"left": 837,
+					"width": 134,
+					"height": 31
 				},
 				"btValider": {
 					"type": "button",
 					"text": "Quitter",
-					"top": 26,
-					"left": 906,
+					"top": 19,
+					"left": 757,
 					"width": 60,
 					"height": 24,
 					"events": [
@@ -265,7 +265,7 @@
 					"top": 27,
 					"width": 220,
 					"height": 16,
-					"dataSource": "Form:C1466.critereRoleListe.Nom"
+					"dataSource": "Form:C1466.critere.role_es.Nom"
 				},
 				"zCritereGenre": {
 					"type": "input",
@@ -273,7 +273,7 @@
 					"top": 26,
 					"width": 30,
 					"height": 16,
-					"dataSource": "Form:C1466.critereRoleListe.Genre"
+					"dataSource": "Form:C1466.critere.role_es.Genre"
 				},
 				"zCriterePays": {
 					"type": "input",
@@ -281,7 +281,7 @@
 					"top": 25,
 					"width": 37,
 					"height": 16,
-					"dataSource": "Form:C1466.critereRoleListe.Pays"
+					"dataSource": "Form:C1466.critere.role_es.Pays"
 				},
 				"zCritereAnneeNaiss": {
 					"type": "input",
@@ -289,7 +289,7 @@
 					"top": 27,
 					"width": 41,
 					"height": 16,
-					"dataSource": "Form:C1466.critereRoleListe.AnneeNaiss"
+					"dataSource": "Form:C1466.critere.role_es.AnneeNaiss"
 				},
 				"zCritereAnneeDeces": {
 					"type": "input",
@@ -297,7 +297,7 @@
 					"top": 27,
 					"width": 50,
 					"height": 16,
-					"dataSource": "Form:C1466.critereRoleListe.AnneeDeces"
+					"dataSource": "Form:C1466.critere.role_es.AnneeDeces"
 				},
 				"zCritereDomaine": {
 					"type": "input",
@@ -305,7 +305,7 @@
 					"top": 27,
 					"width": 45,
 					"height": 16,
-					"dataSource": "Form:C1466.critereRoleListe.Domaine"
+					"dataSource": "Form:C1466.critere.role_es.Domaine"
 				},
 				"zCritereStyle": {
 					"type": "input",
@@ -313,13 +313,13 @@
 					"top": 27,
 					"width": 60,
 					"height": 16,
-					"dataSource": "Form:C1466.critereRoleListe.Style"
+					"dataSource": "Form:C1466.critere.role_es.Style"
 				},
 				"btAppliquerFiltreRole": {
 					"type": "button",
 					"text": "Appliquer le filtre",
-					"top": 23,
-					"left": 730,
+					"top": 21,
+					"left": 624,
 					"width": 113,
 					"height": 24,
 					"events": [
@@ -334,7 +334,7 @@
 					"top": 27,
 					"width": 30,
 					"height": 16,
-					"dataSource": "Form:C1466.critereRoleListe.Age"
+					"dataSource": "Form:C1466.critere.role_es.Age"
 				},
 				"bTrace": {
 					"type": "checkbox",
@@ -349,6 +349,20 @@
 					"method": "ObjectMethods/bTrace.4dm",
 					"dataSource": "vTrace",
 					"dataSourceTypeHint": "boolean"
+				},
+				"btTrace": {
+					"type": "button",
+					"text": "trace",
+					"top": 21,
+					"left": 1064,
+					"width": 40,
+					"height": 15,
+					"events": [
+						"onClick"
+					],
+					"style": "custom",
+					"method": "ObjectMethods/btTrace.4dm",
+					"borderStyle": "solid"
 				}
 			},
 			"entryOrder": [
@@ -362,12 +376,13 @@
 				"zCritereStyle",
 				"btAppliquerFiltreRole",
 				"btValider",
-				"lb_roleListe",
-				"bTrace"
+				"lb_.role_es",
+				"bTrace",
+				"btTrace"
 			]
 		}
 	],
-	"geometryStamp": 746,
+	"geometryStamp": 757,
 	"method": "method.4dm",
 	"editor": {
 		"activeView": "View 1",

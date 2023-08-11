@@ -1,12 +1,10 @@
 //%attributes = {}
-//charger_LesRoles
-var $role_es : 4D:C1709.EntitySelection
-var $role_e : 4D:C1709.Entity
+//charger_lesRoles
 var $age : Integer
 var $anneeQuoi : Integer
 var $liste : Collection
 var $toto : Object
-Form:C1466.roleListe:=New collection:C1472
+Form:C1466..role_es:=New collection:C1472
 var $quiAjout : Object
 var $quoiAjout : Object
 var $go : Boolean
@@ -19,24 +17,13 @@ var $role_e : cs:C1710.RoleEntity
 $role_es:=ds:C1482.Role.all()
 
 For each ($role_e; $role_es)
-	$anneeQuoi:=_anneeDeDateText($role_e.quoi.Annee)
-	
-	If (($role_e.qui.AnneeNaiss=0) | ($anneeQuoi=0))
-		$age:=0
-	Else 
-		$age:=$anneeQuoi-$role_e.qui.AnneeNaiss
-	End if 
-	
-	$toto:=New object:C1471("ID"; $role_e.ID; "Age"; $age; "Descr"; $role_e.Descr; \
-		"qui"; $role_e.qui.toObject(""); \
-		"quoi"; $role_e.quoi.toObject(""))
 	
 	$selection:=True:C214
-	$selection:=verifierSelectionRole(Form:C1466.critereRoleListe.Nom; $toto.qui.Nom; $selection)
-	$selection:=verifierSelectionRole(Form:C1466.critereRoleListe.Genre; $toto.qui.Genre; $selection)
-	$selection:=verifierSelectionRole(Form:C1466.critereRoleListe.Age; String:C10($toto.Age; "00"); $selection)
+	$selection:=verifierSelectionRole(Form:C1466.critere.role_es.Nom; $role_e.qui.Nom; $selection)
+	$selection:=verifierSelectionRole(Form:C1466.critere.role_es.Genre; $role_e.qui.Genre; $selection)
+	$selection:=verifierSelectionRole(Form:C1466.critere.role_es.Age; String:C10($role_e.Age; "00"); $selection)
 	If ($selection)
-		Form:C1466.roleListe.push($toto)
+		Form:C1466..role_es.push($role_e)
 	End if 
 	
 	

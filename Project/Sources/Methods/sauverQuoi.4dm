@@ -28,7 +28,7 @@ $enreg_e.Photo:=Form:C1466.quoi.Photo
 $status_o:=$enreg_e.save()
 
 //actualiser l'element courant
-Form:C1466.eleCouQuoi:=Form:C1466.quoi
+Form:C1466.quoiSel_e:=Form:C1466.quoi
 
 If ($status_o.success)
 	

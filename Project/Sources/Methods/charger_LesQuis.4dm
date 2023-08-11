@@ -1,5 +1,5 @@
 //%attributes = {}
-// charger_LesQuis
+// charger_lesQuis
 C_TEXT:C284($texteQuery)
 $texteQuery:=_f_traduireArgQuery("Nom"; "texte"; Form:C1466.critereQuiListe.Nom)
 $texteQuery:=$texteQuery+_f_traduireArgQuery("Genre"; "texte"; Form:C1466.critereQuiListe.Genre; Length:C16($texteQuery))
@@ -50,4 +50,4 @@ Else
 	$liste:=ds:C1482.Qui.all().orderBy("Nom")
 End if 
 
-Form:C1466.quiListe:=$liste
+Form:C1466.qui_es:=$liste

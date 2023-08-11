@@ -83,20 +83,6 @@
 					],
 					"method": "ObjectMethods/bQuoi.4dm"
 				},
-				"bTrace": {
-					"type": "checkbox",
-					"text": "Trace",
-					"top": 230,
-					"left": 23,
-					"width": 66,
-					"height": 16,
-					"events": [
-						"onClick"
-					],
-					"method": "ObjectMethods/bTrace.4dm",
-					"dataSource": "vTrace",
-					"dataSourceTypeHint": "boolean"
-				},
 				"bRole": {
 					"type": "button",
 					"text": "Role",
@@ -107,18 +93,32 @@
 					"events": [
 						"onClick"
 					],
-					"method": "afficherRoleListe"
+					"method": "afficher.role_es"
+				},
+				"btTrace": {
+					"type": "button",
+					"text": "trace",
+					"top": 301,
+					"left": 31,
+					"width": 40,
+					"height": 15,
+					"events": [
+						"onClick"
+					],
+					"style": "custom",
+					"method": "ObjectMethods/btTrace.4dm",
+					"borderStyle": "solid"
 				}
 			},
 			"entryOrder": [
 				"bQuoi",
 				"bQui",
-				"bTrace",
-				"bRole"
+				"bRole",
+				"btTrace"
 			]
 		}
 	],
-	"geometryStamp": 329,
+	"geometryStamp": 346,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",

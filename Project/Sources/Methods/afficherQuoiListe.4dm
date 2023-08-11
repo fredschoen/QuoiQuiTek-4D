@@ -13,8 +13,8 @@ End if
 //cas où on utilise la liste quis pour ajouter un role à un quoi
 
 If ($form_obj.utilisationListe="AJOUTER_ROLE")
-	$form_obj.eleCouQui:=New object:C1471
-	$form_obj.eleCouQui:=Form:C1466.eleCouQui
+	$form_obj.quiSel_e:=New object:C1471
+	$form_obj.quiSel_e:=Form:C1466.quiSel_e
 End if 
 
 C_LONGINT:C283($win_l)

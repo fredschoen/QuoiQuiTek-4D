@@ -45,6 +45,6 @@ If ($status_o.success)
 	$0:=$enreg_o
 Else 
 	ALERT:C41("erreur se sauegarde de l'enreg")
-	TRACE:C157
+	TRACE:C157  // pour étude erreur
 	$0:=Null:C1517
 End if 

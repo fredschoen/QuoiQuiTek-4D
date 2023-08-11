@@ -24,11 +24,11 @@ End if
 
 //cas où on utilise la liste quis pour ajouter un role à un quoi
 If ($form_obj.utilisationListe="AJOUTER_ROLE")
-	If (Form:C1466.eleCouQuoi=Null:C1517)
-		CONFIRM:C162("afficherquiliste: (Form.eleCouQuoi=null)")
+	If (Form:C1466.quoiSel_e=Null:C1517)
+		CONFIRM:C162("afficherquiliste: (Form.quoiSel_e=null)")
 	Else 
-		$form_obj.eleCouQuoi:=New object:C1471
-		$form_obj.eleCouQuoi:=Form:C1466.eleCouQuoi
+		$form_obj.quoiSel_e:=New object:C1471
+		$form_obj.quoiSel_e:=Form:C1466.quoiSel_e
 	End if 
 End if 
 

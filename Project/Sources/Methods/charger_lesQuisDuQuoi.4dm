@@ -1,7 +1,7 @@
 //%attributes = {}
-// charger_lesRolesDeQuoi : liste des roles du quoi 
+// charger_lesQuisDuQuoi : liste des roles du quoi 
 //$1: quoi: object
-//$0: lesRolesDeQuoi: collection
+//$0: lesQuisDuQuoi: collection
 var $1 : Object
 var $0 : Collection
 
@@ -12,8 +12,8 @@ var $qui_es : 4D:C1709.EntitySelection
 var $qui_e : 4D:C1709.Entity
 var $qui_ele : Object
 var $unRoleDeQuoi : Object
-var $lesRolesDeQuoi : Collection
-var $lesRolesDeQuoiTrie : Collection
+var $lesQuisDuQuoi : Collection
+var $lesQuisDuQuoiTrie : Collection
 var $ageQui : Integer
 var $anneeQuoi : Integer
 
@@ -22,7 +22,7 @@ $quoi:=$1
 $role_es:=ds:C1482.Role.query("ID_Quoi=:1"; $quoi.ID)
 
 //liste des roles du quoi
-$lesRolesDeQuoi:=New collection:C1472
+$lesQuisDuQuoi:=New collection:C1472
 For each ($role_e; $role_es)
 	$qui_es:=ds:C1482.Qui.query("ID=:1"; $role_e.ID_Qui)
 	$qui_e:=$qui_es.first()
@@ -33,14 +33,14 @@ For each ($role_e; $role_es)
 		$ageQui:=$anneeQuoi-$qui_e.AnneeNaiss
 	End if 
 	
-	$unRoleDeQuoi:=New object:C1471("AgeQuiDeQuoi"; $ageQui; "DescrRole"; $role_e.Descr; \
+	$unRoleDeQuoi:=New object:C1471("AgeQuiDuQuoi"; $ageQui; "DescrRole"; $role_e.Descr; \
 		"qui"; $qui_e.toObject("Nom,AnneeNaiss,Genre,Pays,AnneeDeces,Photo"))
-	$lesRolesDeQuoi.push($unRoleDeQuoi)
+	$lesQuisDuQuoi.push($unRoleDeQuoi)
 End for each 
 
 //tri par age
-$lesRolesDeQuoiTrie:=New collection:C1472
-$lesRolesDeQuoiTrie:=$lesRolesDeQuoi.orderBy("AgeQuiDeQuoi asc")
+$lesQuisDuQuoiTrie:=New collection:C1472
+$lesQuisDuQuoiTrie:=$lesQuisDuQuoi.orderBy("AgeQuiDuQuoi asc")
 
 //sortie
-$0:=$lesRolesDeQuoiTrie
+$0:=$lesQuisDuQuoiTrie

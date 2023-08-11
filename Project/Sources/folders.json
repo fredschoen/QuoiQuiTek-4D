@@ -17,9 +17,8 @@
 			"anneePlus",
 			"atteindrePageDetail",
 			"atteindrePageListe",
-			"charger_LesQuis",
+			"charger_lesQuis",
 			"charger_lesQuois",
-			"charger_lesRolesDeQuoi",
 			"charger_unQui",
 			"charger_unQuoi",
 			"charger_unRoleDeQui",
@@ -68,7 +67,7 @@
 			"Tables par défaut"
 		],
 		"methods": [
-			"charger_lesRolesDeQui"
+			"charger_lesQuoisDuQui"
 		],
 		"forms": [
 			"[Qui]Entree",

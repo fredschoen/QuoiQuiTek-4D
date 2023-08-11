@@ -13,22 +13,11 @@
 	"bottomMargin": 20,
 	"events": [
 		"onLoad",
-		"onPageChange",
-		"onValidate",
-		"onClick",
-		"onDoubleClick",
-		"onOutsideCall",
-		"onBeginDragOver",
-		"onDragOver",
-		"onDrop",
+		"onUnload",
 		"onAfterKeystroke",
-		"onMenuSelect",
-		"onPluginArea",
-		"onAfterEdit",
-		"onTimer",
 		"onBoundVariableChange"
 	],
-	"windowTitle": "window title",
+	"windowTitle": "Détail du qui",
 	"destination": "detailScreen",
 	"pages": [
 		{
@@ -36,9 +25,9 @@
 		},
 		{
 			"objects": {
-				"lb_lesRolesDeQui": {
+				"lb_lesQuoisDuQui": {
 					"type": "listbox",
-					"dataSource": "Form:C1466.roleListe",
+					"dataSource": "Form:C1466..role_es",
 					"top": 255,
 					"left": 3,
 					"width": 1090,
@@ -51,13 +40,13 @@
 					"scrollbarHorizontal": "automatic",
 					"scrollbarVertical": "automatic",
 					"resizingMode": "legacy",
-					"method": "ObjectMethods/lb_lesRolesDeQui.4dm",
+					"method": "ObjectMethods/lb_lesQuoisDuQui.4dm",
 					"events": [
 						"onClick",
 						"onAfterKeystroke"
 					],
-					"currentItemPositionSource": "Form:C1466.eleCouRolePos",
-					"currentItemSource": "Form:C1466.eleCouRole",
+					"currentItemPositionSource": "Form:C1466.posRoleSel_i",
+					"currentItemSource": "Form:C1466.roleSel_e",
 					"selectionMode": "single",
 					"columns": [
 						{
@@ -331,7 +320,7 @@
 					"width": 79,
 					"height": 15
 				},
-				"btSuivantQui": {
+				"btSuivant": {
 					"type": "button",
 					"text": "Suivant",
 					"top": 4,
@@ -341,7 +330,7 @@
 					"events": [
 						"onClick"
 					],
-					"method": "ObjectMethods/btSuivantQui.4dm",
+					"method": "ObjectMethods/btSuivant.4dm",
 					"tooltip": {
 						"$ref": "/SOURCES/tips.json#/RaccourciSuivant"
 					},
@@ -351,7 +340,7 @@
 					"shortcutAlt": false,
 					"shortcutKey": "s"
 				},
-				"btPrecedentQui": {
+				"btPrecedent": {
 					"type": "button",
 					"text": "Précédent",
 					"top": 3,
@@ -361,7 +350,7 @@
 					"events": [
 						"onClick"
 					],
-					"method": "ObjectMethods/btPrecedentQui.4dm",
+					"method": "ObjectMethods/btPrecedent.4dm",
 					"tooltip": {
 						"$ref": "/SOURCES/tips.json#/RaccourciPreced"
 					},
@@ -371,7 +360,7 @@
 					"shortcutAlt": false,
 					"shortcutKey": "p"
 				},
-				"btPremierQui": {
+				"btPremier": {
 					"type": "button",
 					"text": "Premier",
 					"top": 3,
@@ -381,9 +370,9 @@
 					"events": [
 						"onClick"
 					],
-					"method": "ObjectMethods/btPremierQui.4dm"
+					"method": "ObjectMethods/btPremier.4dm"
 				},
-				"btDernierQui": {
+				"btDernier": {
 					"type": "button",
 					"text": "Dernier",
 					"top": 3,
@@ -393,7 +382,7 @@
 					"events": [
 						"onClick"
 					],
-					"method": "ObjectMethods/btDernierQui.4dm"
+					"method": "ObjectMethods/btDernier.4dm"
 				},
 				"cb_GenreQui": {
 					"type": "combo",
@@ -429,8 +418,8 @@
 				"zQuiID": {
 					"type": "input",
 					"dataSource": "Form:C1466.qui.ID",
-					"top": 75,
-					"left": 1015,
+					"top": 35,
+					"left": 998,
 					"width": 78,
 					"height": 16,
 					"enterable": false,
@@ -442,18 +431,18 @@
 				"label5": {
 					"type": "text",
 					"text": "A:",
-					"top": 75,
-					"left": 1002,
+					"top": 35,
+					"left": 985,
 					"width": 12,
 					"height": 16
 				},
-				"zEleCouQuiPos": {
+				"zposQuiSel_i": {
 					"type": "input",
-					"left": 1004,
-					"top": 48,
+					"left": 987,
+					"top": 8,
 					"width": 31,
 					"height": 16,
-					"dataSource": "Form:C1466.eleCouQuiPos",
+					"dataSource": "Form:C1466.posQuiSel_i",
 					"enterable": false,
 					"dataSourceTypeHint": "integer",
 					"focusable": false,
@@ -463,18 +452,18 @@
 				"label6": {
 					"type": "text",
 					"text": "/",
-					"top": 48,
-					"left": 1042,
+					"top": 8,
+					"left": 1025,
 					"width": 12,
 					"height": 16
 				},
 				"zQuiListelength": {
 					"type": "input",
-					"left": 1055,
-					"top": 48,
+					"left": 1038,
+					"top": 8,
 					"width": 31,
 					"height": 16,
-					"dataSource": "Form:C1466.quiListe.length",
+					"dataSource": "Form:C1466.qui_es.length",
 					"enterable": false,
 					"dataSourceTypeHint": "integer",
 					"focusable": false,
@@ -508,9 +497,9 @@
 				},
 				"zForm_eleCouQui_ID": {
 					"type": "input",
-					"dataSource": "Form:C1466.eleCouQui.ID",
-					"top": 96,
-					"left": 1008,
+					"dataSource": "Form:C1466.quiSel_e.ID",
+					"top": 56,
+					"left": 991,
 					"width": 78,
 					"height": 16,
 					"enterable": false,
@@ -521,8 +510,8 @@
 				"label8": {
 					"type": "text",
 					"text": "A(ec):",
-					"top": 96,
-					"left": 976,
+					"top": 56,
+					"left": 959,
 					"width": 30,
 					"height": 15
 				},
@@ -625,6 +614,20 @@
 					"left": 140,
 					"width": 80,
 					"height": 18
+				},
+				"btTrace": {
+					"type": "button",
+					"text": "trace",
+					"top": 83,
+					"left": 1025,
+					"width": 40,
+					"height": 15,
+					"events": [
+						"onClick"
+					],
+					"style": "custom",
+					"method": "ObjectMethods/btTrace.4dm",
+					"borderStyle": "solid"
 				}
 			},
 			"entryOrder": [
@@ -640,21 +643,23 @@
 				"cb_StyleQui",
 				"zInfo",
 				"iQuiPhoto",
-				"lb_lesRolesDeQui",
+				"lb_lesQuoisDuQui",
 				"btSupprimerQui",
 				"btSauverQui",
-				"btSuivantQui",
-				"btPrecedentQui",
-				"btPremierQui",
-				"btDernierQui",
+				"btSuivant",
+				"btPrecedent",
+				"btPremier",
+				"btDernier",
 				"btSelectionnerQui",
 				"btAjouterRole",
-				"zEleCouQuiPos",
+				"zposQuiSel_i",
 				"zQuiListelength",
 				"zQuiID",
-				"zForm_eleCouQui_ID"
+				"zForm_eleCouQui_ID",
+				"btTrace"
 			]
 		}
 	],
-	"geometryStamp": 82
+	"geometryStamp": 92,
+	"method": "method.4dm"
 }

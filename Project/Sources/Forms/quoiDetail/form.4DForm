@@ -19,7 +19,7 @@
 		"onAfterKeystroke",
 		"onBoundVariableChange"
 	],
-	"windowTitle": "window title",
+	"windowTitle": "Détail du Quoi",
 	"destination": "detailScreen",
 	"pages": [
 		{
@@ -27,9 +27,9 @@
 		},
 		{
 			"objects": {
-				"lb_lesRolesDeQuoi": {
+				"lb_lesQuisDuQuoi": {
 					"type": "listbox",
-					"dataSource": "Form:C1466.roleListe",
+					"dataSource": "Form:C1466..role_es",
 					"top": 80,
 					"left": 343,
 					"width": 615,
@@ -42,13 +42,13 @@
 					"scrollbarHorizontal": "automatic",
 					"scrollbarVertical": "automatic",
 					"resizingMode": "legacy",
-					"method": "ObjectMethods/lb_lesRolesDeQuoi.4dm",
-					"currentItemSource": "Form:C1466.eleCouRole",
+					"method": "ObjectMethods/lb_lesQuisDuQuoi.4dm",
+					"currentItemSource": "Form:C1466.roleSel_e",
 					"events": [
 						"onClick",
 						"onAfterKeystroke"
 					],
-					"currentItemPositionSource": "Form:C1466.eleCouRolePos",
+					"currentItemPositionSource": "Form:C1466.posRoleSel_i",
 					"selectionMode": "single",
 					"columns": [
 						{
@@ -283,7 +283,7 @@
 					"method": "ObjectMethods/btSupprimerQuoi.4dm",
 					"right": 517
 				},
-				"btSuivantQuoi": {
+				"btSuivant": {
 					"type": "button",
 					"text": "Suivant",
 					"top": 5,
@@ -293,7 +293,7 @@
 					"events": [
 						"onClick"
 					],
-					"method": "ObjectMethods/btSuivantQuoi.4dm",
+					"method": "ObjectMethods/btSuivant.4dm",
 					"shortcutAccel": true,
 					"shortcutControl": false,
 					"shortcutShift": false,
@@ -323,7 +323,7 @@
 						"$ref": "/SOURCES/tips.json#/RaccourciPreced"
 					}
 				},
-				"btPremierQuoi": {
+				"btPremier": {
 					"type": "button",
 					"text": "Premier",
 					"top": 5,
@@ -333,9 +333,9 @@
 					"events": [
 						"onClick"
 					],
-					"method": "ObjectMethods/btPremierQuoi.4dm"
+					"method": "ObjectMethods/btPremier.4dm"
 				},
-				"btDernierQuoi": {
+				"btDernier": {
 					"type": "button",
 					"text": "Dernier",
 					"top": 5,
@@ -345,7 +345,7 @@
 					"events": [
 						"onClick"
 					],
-					"method": "ObjectMethods/btDernierQuoi.4dm"
+					"method": "ObjectMethods/btDernier.4dm"
 				},
 				"Genre_CB": {
 					"type": "combo",
@@ -396,8 +396,8 @@
 				"field_ID": {
 					"type": "input",
 					"dataSource": "Form:C1466.quoi.ID",
-					"top": 546,
-					"left": 893,
+					"top": 371,
+					"left": 887,
 					"width": 78,
 					"height": 16,
 					"enterable": false,
@@ -408,18 +408,18 @@
 				"label4": {
 					"type": "text",
 					"text": "F:",
-					"top": 546,
-					"left": 880,
+					"top": 371,
+					"left": 874,
 					"width": 12,
 					"height": 16
 				},
-				"zeleCouQuoiPos": {
+				"zposQuoiSel_i": {
 					"type": "input",
 					"left": 889,
 					"top": 7,
 					"width": 31,
 					"height": 16,
-					"dataSource": "Form:C1466.eleCouQuoiPos",
+					"dataSource": "Form:C1466.posQuoiSel_i",
 					"enterable": false,
 					"dataSourceTypeHint": "integer",
 					"focusable": false,
@@ -440,7 +440,7 @@
 					"top": 7,
 					"width": 31,
 					"height": 16,
-					"dataSource": "Form:C1466.quoiListe.length",
+					"dataSource": "Form:C1466.quoi_es.length",
 					"enterable": false,
 					"dataSourceTypeHint": "integer",
 					"focusable": false,
@@ -492,9 +492,9 @@
 				},
 				"zForm_eleCouQuoi_ID": {
 					"type": "input",
-					"dataSource": "Form:C1466.eleCouQuoi.ID",
-					"top": 566,
-					"left": 893,
+					"dataSource": "Form:C1466.quoiSel_e.ID",
+					"top": 391,
+					"left": 887,
 					"width": 78,
 					"height": 16,
 					"enterable": false,
@@ -505,8 +505,8 @@
 				"label3": {
 					"type": "text",
 					"text": "F(ec):",
-					"top": 566,
-					"left": 855,
+					"top": 391,
+					"left": 849,
 					"width": 36,
 					"height": 16
 				},
@@ -552,6 +552,20 @@
 					"dataSourceTypeHint": "picture",
 					"pictureFormat": "proportionalCenter",
 					"dataSource": "Form:C1466.quoi.Photo"
+				},
+				"btTrace": {
+					"type": "button",
+					"text": "trace",
+					"top": 45,
+					"left": 940,
+					"width": 40,
+					"height": 15,
+					"events": [
+						"onClick"
+					],
+					"style": "custom",
+					"method": "ObjectMethods/btTrace.4dm",
+					"borderStyle": "solid"
 				}
 			},
 			"entryOrder": [
@@ -566,23 +580,24 @@
 				"field_Prod",
 				"field_Prod1",
 				"field_Info",
-				"lb_lesRolesDeQuoi",
+				"lb_lesQuisDuQuoi",
 				"Zone de saisie",
-				"btSuivantQuoi",
+				"btSuivant",
 				"btPrecedentQuoi",
-				"btPremierQuoi",
-				"btDernierQuoi",
+				"btPremier",
+				"btDernier",
 				"btSauverQuoi",
 				"btSupprimerQuoi",
 				"btAjouterRole",
 				"btSelectionnerQuoi",
 				"field_ID",
-				"zeleCouQuoiPos",
+				"zposQuoiSel_i",
 				"zFormquoiListelength",
-				"zForm_eleCouQuoi_ID"
+				"zForm_eleCouQuoi_ID",
+				"btTrace"
 			]
 		}
 	],
-	"geometryStamp": 143,
+	"geometryStamp": 151,
 	"method": "method.4dm"
 }

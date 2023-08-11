@@ -3,5 +3,5 @@
 CONFIRM:C162("voulez-vous ajouter ce quoi à la carrière du qui ?")
 If (OK=1)
 	sauverRoleNouveau
-	atteindrePageListe
+	ACCEPT:C269
 End if 

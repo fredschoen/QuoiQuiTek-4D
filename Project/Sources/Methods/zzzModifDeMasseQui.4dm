@@ -41,7 +41,8 @@ For each ($e; $es)
 		$o:=$e.save()
 		If (Not:C34($o.success))
 			ALERT:C41("ko")
-			TRACE:C157
+			TRACE:C157  // pour étude erreur
+			
 		End if 
 	End if 
 	

@@ -2,4 +2,4 @@
 //afficherErreur
 
 ALERT:C41("erreur ")
-TRACE:C157
+TRACE:C157  // pour étude erreur

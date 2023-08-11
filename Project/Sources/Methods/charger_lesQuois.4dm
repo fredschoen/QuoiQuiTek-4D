@@ -1,7 +1,8 @@
 //%attributes = {}
 // charger_LesQuois
 
-C_TEXT:C284($texteQuery)
+var $quoi_es : cs:C1710.QuoiSelection
+var $texteQuery : Text
 
 If (Form:C1466.critereQuoiListe.Nom>"")
 	$texteQuery:="Nom=:1"
@@ -19,7 +20,6 @@ $texteQuery:=$texteQuery+_f_traduireArgQuery("DateDernVisu"; "texte"; Form:C1466
 $texteQuery:=$texteQuery+_f_traduireArgQuery("Domaine"; "texte"; Form:C1466.critereQuoiListe.Domaine; Length:C16($texteQuery))
 $texteQuery:=$texteQuery+_f_traduireArgQuery("Qualif"; "texte"; Form:C1466.critereQuoiListe.Qualif; Length:C16($texteQuery))
 
-C_OBJECT:C1216($liste)
 If ($texteQuery>"")
 	//$liste:=ds.Quoi.query($texteQuery).orderBy("Nom")
 	If (Form:C1466.critereQuoiListe.Nom>"")
@@ -53,15 +53,15 @@ If ($texteQuery>"")
 			$valeurCritereNom:=$valeurCritereNom+"@"
 		End if 
 		
-		$liste:=ds:C1482.Quoi.query($texteQuery; $valeurCritereNom).orderBy("Nom")
+		$quoi_es:=ds:C1482.Quoi.query($texteQuery; $valeurCritereNom).orderBy("Nom")
 	Else 
-		$liste:=ds:C1482.Quoi.query($texteQuery).orderBy("Nom").orderBy("Nom")
+		$quoi_es:=ds:C1482.Quoi.query($texteQuery).orderBy("Nom").orderBy("Nom")
 	End if 
 	
 Else 
-	$liste:=ds:C1482.Quoi.all().orderBy("Nom")
+	$quoi_es:=ds:C1482.Quoi.all().orderBy("Nom")
 End if 
 
 
-Form:C1466.quoiListe:=$liste
+Form:C1466.quoi_es:=$quoi_es
 // pour test: LISTBOX TRIER COLONNES(*; "quoiListe_LB"; (2); >)

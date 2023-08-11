@@ -1,4 +1,0 @@
-// btSauverQuoiEtRole
-
-sauverQuoi
-sauverRole
