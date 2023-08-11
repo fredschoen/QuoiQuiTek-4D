@@ -13,19 +13,10 @@
 	"bottomMargin": 20,
 	"events": [
 		"onLoad",
-		"onPageChange",
 		"onValidate",
 		"onClick",
-		"onDoubleClick",
-		"onOutsideCall",
-		"onBeginDragOver",
-		"onDragOver",
-		"onDrop",
+		"onUnload",
 		"onAfterKeystroke",
-		"onMenuSelect",
-		"onPluginArea",
-		"onAfterEdit",
-		"onTimer",
 		"onBoundVariableChange"
 	],
 	"windowTitle": "window title",
@@ -41,8 +32,8 @@
 					"dataSource": "Form:C1466.roleListe",
 					"top": 80,
 					"left": 343,
-					"width": 490,
-					"height": 300,
+					"width": 615,
+					"height": 271,
 					"visibility": "visible",
 					"sizingX": "fixed",
 					"sizingY": "fixed",
@@ -134,8 +125,8 @@
 							"method": ""
 						},
 						{
-							"name": "Nom1",
-							"dataSource": "This:C1470.qui.Nom",
+							"name": "FullName",
+							"dataSource": "This:C1470.qui.FullName",
 							"width": 120,
 							"enterable": true,
 							"header": {
@@ -156,7 +147,7 @@
 					"top": 75,
 					"left": 10,
 					"width": 60,
-					"height": 17
+					"height": 18
 				},
 				"field_Nom": {
 					"type": "input",
@@ -164,7 +155,7 @@
 					"top": 75,
 					"left": 73,
 					"width": 250,
-					"height": 17
+					"height": 18
 				},
 				"label_Genre": {
 					"type": "text",
@@ -172,7 +163,7 @@
 					"top": 125,
 					"left": 10,
 					"width": 60,
-					"height": 17
+					"height": 18
 				},
 				"label_Pays": {
 					"type": "text",
@@ -180,7 +171,7 @@
 					"top": 147,
 					"left": 10,
 					"width": 60,
-					"height": 17
+					"height": 18
 				},
 				"label_Stock": {
 					"type": "text",
@@ -188,7 +179,7 @@
 					"top": 174,
 					"left": 10,
 					"width": 60,
-					"height": 17
+					"height": 18
 				},
 				"label_Real": {
 					"type": "text",
@@ -196,7 +187,7 @@
 					"top": 204,
 					"left": 10,
 					"width": 60,
-					"height": 17
+					"height": 18
 				},
 				"field_Real": {
 					"type": "input",
@@ -204,7 +195,7 @@
 					"top": 204,
 					"left": 73,
 					"width": 250,
-					"height": 17
+					"height": 18
 				},
 				"label_Annee": {
 					"type": "text",
@@ -212,7 +203,7 @@
 					"top": 234,
 					"left": 10,
 					"width": 60,
-					"height": 17
+					"height": 18
 				},
 				"field_Annee": {
 					"type": "input",
@@ -220,7 +211,7 @@
 					"top": 233,
 					"left": 73,
 					"width": 100,
-					"height": 17
+					"height": 18
 				},
 				"label_Domaine": {
 					"type": "text",
@@ -228,7 +219,7 @@
 					"top": 99,
 					"left": 10,
 					"width": 60,
-					"height": 17
+					"height": 18
 				},
 				"label_Prod": {
 					"type": "text",
@@ -236,7 +227,7 @@
 					"top": 294,
 					"left": 10,
 					"width": 60,
-					"height": 17
+					"height": 18
 				},
 				"field_Prod": {
 					"type": "input",
@@ -244,15 +235,15 @@
 					"top": 294,
 					"left": 73,
 					"width": 250,
-					"height": 17
+					"height": 18
 				},
 				"btSauverQuoi": {
 					"type": "button",
 					"text": "Sauver",
-					"top": 82,
-					"left": 853,
+					"top": 5,
+					"left": 343,
 					"width": 66,
-					"height": 22,
+					"height": 24,
 					"events": [
 						"onClick"
 					],
@@ -270,10 +261,10 @@
 				"btAjouterRole": {
 					"type": "button",
 					"text": "Ajouter un rôle dans ce quoi",
-					"top": 143,
-					"left": 853,
-					"width": 158,
-					"height": 22,
+					"top": 5,
+					"left": 522,
+					"width": 180,
+					"height": 24,
 					"events": [
 						"onClick"
 					],
@@ -282,14 +273,15 @@
 				"btSupprimerQuoi": {
 					"type": "button",
 					"text": "Suprimer le quoi",
-					"top": 112,
-					"left": 853,
-					"width": 100,
-					"height": 22,
+					"top": 5,
+					"left": 411,
+					"width": 106,
+					"height": 24,
 					"events": [
 						"onClick"
 					],
-					"method": "ObjectMethods/btSupprimerQuoi.4dm"
+					"method": "ObjectMethods/btSupprimerQuoi.4dm",
+					"right": 517
 				},
 				"btSuivantQuoi": {
 					"type": "button",
@@ -355,24 +347,12 @@
 					],
 					"method": "ObjectMethods/btDernierQuoi.4dm"
 				},
-				"btRevenirListe": {
-					"type": "button",
-					"text": "Revenir à la liste des quois",
-					"top": 205,
-					"left": 853,
-					"width": 140,
-					"height": 22,
-					"events": [
-						"onClick"
-					],
-					"method": "atteindrePageListe"
-				},
 				"Genre_CB": {
 					"type": "combo",
 					"left": 73,
 					"top": 122,
 					"width": 150,
-					"height": 20,
+					"height": 18,
 					"events": [
 						"onDataChange"
 					],
@@ -400,15 +380,15 @@
 				"field_Info": {
 					"type": "input",
 					"left": 74,
-					"top": 401,
+					"top": 376,
 					"width": 409,
-					"height": 176,
+					"height": 193,
 					"dataSource": "Form:C1466.infoQuoi"
 				},
 				"label_Info": {
 					"type": "text",
 					"text": "Info:",
-					"top": 388,
+					"top": 376,
 					"left": 10,
 					"width": 60,
 					"height": 17
@@ -416,8 +396,8 @@
 				"field_ID": {
 					"type": "input",
 					"dataSource": "Form:C1466.quoi.ID",
-					"top": 32,
-					"left": 888,
+					"top": 546,
+					"left": 893,
 					"width": 78,
 					"height": 16,
 					"enterable": false,
@@ -428,8 +408,8 @@
 				"label4": {
 					"type": "text",
 					"text": "F:",
-					"top": 32,
-					"left": 875,
+					"top": 546,
+					"left": 880,
 					"width": 12,
 					"height": 16
 				},
@@ -470,10 +450,10 @@
 				"btSelectionnerQuoi": {
 					"type": "button",
 					"text": "Selectionner le quoi",
-					"top": 174,
-					"left": 853,
-					"width": 120,
-					"height": 22,
+					"top": 5,
+					"left": 711,
+					"width": 130,
+					"height": 24,
 					"events": [
 						"onClick"
 					],
@@ -513,8 +493,8 @@
 				"zForm_eleCouQuoi_ID": {
 					"type": "input",
 					"dataSource": "Form:C1466.eleCouQuoi.ID",
-					"top": 493,
-					"left": 885,
+					"top": 566,
+					"left": 893,
 					"width": 78,
 					"height": 16,
 					"enterable": false,
@@ -525,10 +505,10 @@
 				"label3": {
 					"type": "text",
 					"text": "F(ec):",
-					"top": 493,
-					"left": 853,
-					"width": 30,
-					"height": 15
+					"top": 566,
+					"left": 855,
+					"width": 36,
+					"height": 16
 				},
 				"label_DateDernVisu": {
 					"type": "text",
@@ -536,7 +516,7 @@
 					"top": 323,
 					"left": 10,
 					"width": 60,
-					"height": 17
+					"height": 18
 				},
 				"field_Prod1": {
 					"type": "input",
@@ -544,7 +524,7 @@
 					"top": 323,
 					"left": 73,
 					"width": 250,
-					"height": 17,
+					"height": 18,
 					"entryFilter": "!0&9##/##/##"
 				},
 				"label_Qualif": {
@@ -553,7 +533,7 @@
 					"top": 257,
 					"left": 10,
 					"width": 60,
-					"height": 17
+					"height": 18
 				},
 				"field_Annee1": {
 					"type": "input",
@@ -561,14 +541,14 @@
 					"top": 256,
 					"left": 73,
 					"width": 100,
-					"height": 17
+					"height": 18
 				},
 				"Zone de saisie": {
 					"type": "input",
 					"left": 529,
-					"top": 406,
-					"width": 258,
-					"height": 176,
+					"top": 364,
+					"width": 277,
+					"height": 209,
 					"dataSourceTypeHint": "picture",
 					"pictureFormat": "proportionalCenter",
 					"dataSource": "Form:C1466.quoi.Photo"
@@ -596,7 +576,6 @@
 				"btSupprimerQuoi",
 				"btAjouterRole",
 				"btSelectionnerQuoi",
-				"btRevenirListe",
 				"field_ID",
 				"zeleCouQuoiPos",
 				"zFormquoiListelength",
@@ -604,5 +583,6 @@
 			]
 		}
 	],
-	"geometryStamp": 1
+	"geometryStamp": 143,
+	"method": "method.4dm"
 }
