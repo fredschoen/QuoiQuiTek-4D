@@ -33,12 +33,10 @@ If ($pourSelectionner)
 	$form_o:=Form:C1466
 	$form_o.action:="MODIFIER"
 	$form_o.page:=1
-	While $form_o.page>0)  // 0 :quitter
+	While ($form_o.page>0)  // 0 :quitter
 		DIALOG:C40("quoiDetail"; $form_o)
 	End while 
 	CLOSE WINDOW:C154($win_l)
-	
-	
 	
 	
 End if 

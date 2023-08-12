@@ -27,7 +27,7 @@
 			"objects": {
 				"lb_lesQuoisDuQui": {
 					"type": "listbox",
-					"dataSource": "Form:C1466.role_es",
+					"dataSource": "Form:C1466.qui.roles",
 					"top": 255,
 					"left": 3,
 					"width": 1090,
@@ -60,7 +60,7 @@
 								"name": "Pied1"
 							},
 							"width": 175,
-							"dataSource": "This:C1470.role.Descr"
+							"dataSource": "This:C1470.Descr"
 						},
 						{
 							"name": "cAgeQui",
@@ -587,8 +587,9 @@
 					"width": 79,
 					"height": 18,
 					"enterable": false,
-					"dataSource": "Form:C1466.ageQui",
-					"borderStyle": "none"
+					"dataSource": "Form:C1466.qui.getAge()",
+					"borderStyle": "none",
+					"dataSourceTypeHint": "number"
 				},
 				"label_Nom3": {
 					"type": "text",
@@ -613,7 +614,8 @@
 					"top": 128,
 					"left": 140,
 					"width": 80,
-					"height": 18
+					"height": 18,
+					"dataSourceTypeHint": "date"
 				},
 				"btTrace": {
 					"type": "button",

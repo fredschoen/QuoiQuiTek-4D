@@ -27,7 +27,7 @@ If ($pourSelectionner=True:C214)
 	MAXIMIZE WINDOW:C453($win_l)
 	$form_o:=Form:C1466
 	$form_o.page:=1
-	While $form_o.page>0)  // 0 :quitter
+	While ($form_o.page>0)  // 0 :quitter
 		DIALOG:C40("quiDetail"; $form_o)
 	End while 
 	CLOSE WINDOW:C154($win_l)

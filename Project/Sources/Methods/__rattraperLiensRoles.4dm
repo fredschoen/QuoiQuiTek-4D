@@ -17,7 +17,7 @@ For each ($role_e; $role_es)
 	End if 
 	
 	If (Undefined:C82($role_e.quoi))
-		TRACE:C157/cas anormal
+		TRACE:C157  //cas anormal
 		//pour rattraper le KO!!
 		$quoi_e:=ds:C1482.Quoi.new()
 		$quoi_e.ID:=$role_e.ID_Quoi

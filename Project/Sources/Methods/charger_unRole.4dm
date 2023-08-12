@@ -61,8 +61,8 @@ Else
 	//dépendances
 	Form:C1466.qui:=Form:C1466.role.qui
 	Form:C1466.quoi:=Form:C1466.role.quoi
-	Form:C1466.rolesDuQui:=Form:C1466.qui.roles
-	Form:C1466.rolesDuQuoi:=Form:C1466.quoi.roles
+	Form:C1466.rolesDuQui_es:=Form:C1466.qui.roles
+	Form:C1466.rolesDuQuoi_es:=Form:C1466.quoi.roles
 End if 
 
 //mémoriser le nouvel élément courant

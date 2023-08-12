@@ -1,6 +1,8 @@
 //%attributes = {}
 // afficher.role_es
+// $1: utilisationListe:  text
 
+var $1 : Text
 var $form_obj : Object
 var $win_l : Integer
 

@@ -39,104 +39,104 @@
 				"label_ID": {
 					"type": "text",
 					"text": "ID:",
-					"top": 10,
-					"left": 10,
+					"top": 70,
+					"left": 9,
 					"width": 100,
 					"height": 17
 				},
 				"field_ID": {
 					"type": "input",
 					"dataSource": "[Qui:2]ID:1",
-					"top": 10,
-					"left": 120,
+					"top": 70,
+					"left": 119,
 					"width": 250,
 					"height": 17
 				},
-				"label_Nom": {
+				"label_FullName": {
 					"type": "text",
-					"text": "Nom:",
-					"top": 47,
-					"left": 10,
+					"text": "FullName:",
+					"top": 107,
+					"left": 9,
 					"width": 100,
 					"height": 17
 				},
-				"field_Nom": {
+				"field_FullName": {
 					"type": "input",
-					"dataSource": "[Qui:2]Nom:2",
-					"top": 47,
-					"left": 120,
+					"dataSource": "[Qui:2]FullName:2",
+					"top": 107,
+					"left": 119,
 					"width": 250,
 					"height": 17
 				},
 				"label_Genre": {
 					"type": "text",
 					"text": "Genre:",
-					"top": 84,
-					"left": 10,
+					"top": 144,
+					"left": 9,
 					"width": 100,
 					"height": 17
 				},
 				"field_Genre": {
 					"type": "input",
 					"dataSource": "[Qui:2]Genre:3",
-					"top": 84,
-					"left": 120,
+					"top": 144,
+					"left": 119,
 					"width": 250,
 					"height": 17
 				},
 				"label_AnneeNaiss": {
 					"type": "text",
 					"text": "AnneeNaiss:",
-					"top": 121,
-					"left": 10,
+					"top": 181,
+					"left": 9,
 					"width": 100,
 					"height": 17
 				},
 				"field_AnneeNaiss": {
 					"type": "input",
 					"dataSource": "[Qui:2]AnneeNaiss:4",
-					"top": 121,
-					"left": 120,
+					"top": 181,
+					"left": 119,
 					"width": 250,
 					"height": 17
 				},
 				"label_Pays": {
 					"type": "text",
 					"text": "Pays:",
-					"top": 158,
-					"left": 10,
+					"top": 218,
+					"left": 9,
 					"width": 100,
 					"height": 17
 				},
 				"field_Pays": {
 					"type": "input",
 					"dataSource": "[Qui:2]Pays:5",
-					"top": 158,
-					"left": 120,
+					"top": 218,
+					"left": 119,
 					"width": 250,
 					"height": 17
 				},
 				"label_AnneeDeces": {
 					"type": "text",
 					"text": "AnneeDeces:",
-					"top": 195,
-					"left": 10,
+					"top": 255,
+					"left": 9,
 					"width": 100,
 					"height": 17
 				},
 				"field_AnneeDeces": {
 					"type": "input",
 					"dataSource": "[Qui:2]AnneeDeces:6",
-					"top": 195,
-					"left": 120,
+					"top": 255,
+					"left": 119,
 					"width": 250,
 					"height": 17
 				},
 				"label_Photo": {
 					"type": "text",
 					"text": "Photo:",
-					"top": 232,
-					"left": 10,
+					"top": 292,
+					"left": 9,
 					"width": 100,
 					"height": 17
 				},
@@ -144,13 +144,253 @@
 					"type": "input",
 					"dataSource": "[Qui:2]Photo:7",
 					"dataSourceTypeHint": "picture",
-					"top": 232,
-					"left": 120,
+					"top": 292,
+					"left": 119,
 					"width": 250,
 					"height": 250
+				},
+				"label_Domaine": {
+					"type": "text",
+					"text": "Domaine:",
+					"top": 80,
+					"left": 429,
+					"width": 80,
+					"height": 17,
+					"right": 509
+				},
+				"field_Domaine": {
+					"type": "input",
+					"dataSource": "[Qui:2]Domaine:8",
+					"top": 80,
+					"left": 513,
+					"width": 250,
+					"height": 17
+				},
+				"label_Style": {
+					"type": "text",
+					"text": "Style:",
+					"top": 117,
+					"left": 429,
+					"width": 80,
+					"height": 17,
+					"right": 509
+				},
+				"field_Style": {
+					"type": "input",
+					"dataSource": "[Qui:2]Style:9",
+					"top": 117,
+					"left": 513,
+					"width": 250,
+					"height": 17
+				},
+				"label_Info": {
+					"type": "text",
+					"text": "Info:",
+					"top": 154,
+					"left": 429,
+					"width": 80,
+					"height": 17,
+					"right": 509
+				},
+				"field_Info": {
+					"type": "input",
+					"dataSource": "[Qui:2]Info:10",
+					"top": 154,
+					"left": 513,
+					"width": 250,
+					"height": 17
+				},
+				"label_CreatDate": {
+					"type": "text",
+					"text": "CreatDate:",
+					"top": 191,
+					"left": 429,
+					"width": 80,
+					"height": 17,
+					"right": 509
+				},
+				"field_CreatDate": {
+					"type": "input",
+					"dataSource": "[Qui:2]CreatDate:11",
+					"top": 191,
+					"left": 513,
+					"width": 250,
+					"height": 17
+				},
+				"label_CreatHeure": {
+					"type": "text",
+					"text": "CreatHeure:",
+					"top": 228,
+					"left": 429,
+					"width": 80,
+					"height": 17,
+					"right": 509
+				},
+				"field_CreatHeure": {
+					"type": "input",
+					"dataSource": "[Qui:2]CreatHeure:12",
+					"top": 228,
+					"left": 513,
+					"width": 250,
+					"height": 17
+				},
+				"label_ModifDate": {
+					"type": "text",
+					"text": "ModifDate:",
+					"top": 265,
+					"left": 429,
+					"width": 80,
+					"height": 17,
+					"right": 509
+				},
+				"field_ModifDate": {
+					"type": "input",
+					"dataSource": "[Qui:2]ModifDate:13",
+					"top": 265,
+					"left": 513,
+					"width": 250,
+					"height": 17
+				},
+				"label_ModifHeure": {
+					"type": "text",
+					"text": "ModifHeure:",
+					"top": 302,
+					"left": 429,
+					"width": 80,
+					"height": 17,
+					"right": 509
+				},
+				"field_ModifHeure": {
+					"type": "input",
+					"dataSource": "[Qui:2]ModifHeure:14",
+					"top": 302,
+					"left": 513,
+					"width": 250,
+					"height": 17
+				},
+				"label_Nom": {
+					"type": "text",
+					"text": "Nom:",
+					"top": 339,
+					"left": 429,
+					"width": 80,
+					"height": 17,
+					"right": 509
+				},
+				"field_Nom": {
+					"type": "input",
+					"dataSource": "[Qui:2]Nom:15",
+					"top": 339,
+					"left": 513,
+					"width": 250,
+					"height": 17
+				},
+				"label_Prenom": {
+					"type": "text",
+					"text": "Prenom:",
+					"top": 376,
+					"left": 429,
+					"width": 80,
+					"height": 17,
+					"right": 509
+				},
+				"field_Prenom": {
+					"type": "input",
+					"dataSource": "[Qui:2]Prenom:16",
+					"top": 376,
+					"left": 513,
+					"width": 250,
+					"height": 17
+				},
+				"label_DateNaiss": {
+					"type": "text",
+					"text": "DateNaiss:",
+					"top": 413,
+					"left": 429,
+					"width": 80,
+					"height": 17,
+					"right": 509
+				},
+				"field_DateNaiss": {
+					"type": "input",
+					"dataSource": "[Qui:2]DateNaiss:17",
+					"top": 413,
+					"left": 513,
+					"width": 250,
+					"height": 17
+				},
+				"label_DateDeces": {
+					"type": "text",
+					"text": "DateDeces:",
+					"top": 450,
+					"left": 429,
+					"width": 80,
+					"height": 17,
+					"right": 509
+				},
+				"field_DateDeces": {
+					"type": "input",
+					"dataSource": "[Qui:2]DateDeces:18",
+					"top": 450,
+					"left": 513,
+					"width": 250,
+					"height": 17
+				},
+				"label_zzz": {
+					"type": "text",
+					"text": "zzz:",
+					"top": 487,
+					"left": 429,
+					"width": 80,
+					"height": 17,
+					"right": 509
+				},
+				"field_zzz": {
+					"type": "input",
+					"dataSource": "[Qui:2]zzz:19",
+					"top": 487,
+					"left": 513,
+					"width": 250,
+					"height": 17
+				},
+				"Bouton": {
+					"type": "button",
+					"text": "Supprimer",
+					"top": 16,
+					"left": 195,
+					"width": 83,
+					"height": 23,
+					"events": [
+						"onClick"
+					],
+					"action": "deleteRecord"
+				},
+				"btSuivant": {
+					"type": "button",
+					"text": "Suivant",
+					"top": 17,
+					"left": 9,
+					"width": 77,
+					"height": 24,
+					"events": [
+						"onClick"
+					],
+					"action": "nextRecord"
+				},
+				"btPreced": {
+					"type": "button",
+					"text": "Précédent",
+					"top": 17,
+					"left": 106,
+					"width": 77,
+					"height": 24,
+					"events": [
+						"onClick"
+					],
+					"action": "previousRecord"
 				}
 			}
 		}
 	],
-	"geometryStamp": 4
+	"geometryStamp": 84
 }
