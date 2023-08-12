@@ -286,6 +286,19 @@
 					"dataSource": "Form:C1466.message",
 					"enterable": false,
 					"dataSourceTypeHint": "text"
+				},
+				"fred": {
+					"type": "button",
+					"text": "fred",
+					"top": 235,
+					"left": 802,
+					"width": 113,
+					"height": 24,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/fred.4dm",
+					"defaultButton": true
 				}
 			},
 			"entryOrder": [
@@ -301,11 +314,12 @@
 				"zCritereDomaine",
 				"zCritereStyle",
 				"btTrace",
-				"zMessage"
+				"zMessage",
+				"fred"
 			]
 		}
 	],
-	"geometryStamp": 2589,
+	"geometryStamp": 2592,
 	"method": "method.4dm",
 	"editor": {
 		"activeView": "View 1",

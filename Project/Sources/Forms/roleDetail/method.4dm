@@ -2,11 +2,11 @@
 Case of 
 		
 	: (Form event code:C388=On Load:K2:1)
+		If (Undefined:C82(Form:C1466.utilisationListe))
+			Form:C1466.utilisationListe:=""
+		End if 
 		
-		Form:C1466.page:=1
-		Form:C1466.quoiDeQui:=charger_lesQuoisDuQui(Form:C1466.qui)
-		Form:C1466.quiDeQuoi:=charger_lesQuisDuQuoi(Form:C1466.quoi)
-		
+		charger_unRole
 		
 	: (Form event code:C388=On Unload:K2:2)
 		CONFIRM:C162("sortir du détail du role ?")

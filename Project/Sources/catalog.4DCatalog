@@ -30,7 +30,13 @@
 	</table>
 	<table name="Qui" uuid="7F9A35CDF0EFB6429B6FA24F9D22CD4E" id="2">
 		<field name="ID" uuid="0527D929F2CBE74A886B87DB09906737" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
-		<field name="FullName" uuid="580F460FF27103468AE846AB62100FD7" type="10" limiting_length="255" unique="true" never_null="true" id="2"/>
+		<field name="FullName" uuid="580F460FF27103468AE846AB62100FD7" type="10" limiting_length="255" never_null="true" id="2">
+			<field_extra multi_line="false">
+				<editor_field_info>
+					<color red="255" green="255" blue="255" alpha="0"/>
+				</editor_field_info>
+			</field_extra>
+		</field>
 		<field name="Genre" uuid="15FFEC7B9B271E49B225ED08E50E39A6" type="10" limiting_length="255" never_null="true" id="3"/>
 		<field name="AnneeNaiss" uuid="B2E3AFF86FE1E14CB00CA6509034DBBD" type="3" never_null="true" id="4"/>
 		<field name="Pays" uuid="D3B12BA7EFC074448E23498DE47B6617" type="10" limiting_length="255" never_null="true" id="5">
@@ -49,7 +55,6 @@
 		<field name="Prenom" uuid="A7E0F3308CDD744F86BC0F4B14C82E97" type="10" limiting_length="100" never_null="true" id="16"/>
 		<field name="DateNaiss" uuid="1C16318379BAF84C996857FA8B681A84" type="10" limiting_length="10" never_null="true" id="17"/>
 		<field name="DateDeces" uuid="C9F6C466D22B6948BBEBBA117EA2A3BB" type="10" limiting_length="10" never_null="true" id="18"/>
-		<field name="zzz" uuid="E984BDD645D3E9468530CF1BA26E48AE" type="10" limiting_length="255" never_null="true" id="19"/>
 		<primary_key field_name="ID" field_uuid="0527D929F2CBE74A886B87DB09906737"/>
 		<table_extra output_form="Sortie" input_form="Entree" trigger_delete="true" trigger_update="true" trigger_insert="true">
 			<editor_table_info displayable_fields_count="19">
@@ -87,7 +92,7 @@
 			</editor_table_info>
 		</table_extra>
 	</table>
-	<relation uuid="CB09C89AD05F40F9B927543F1D0AC6FD" name_Nto1="qui" name_1toN="roles" auto_load_Nto1="false" auto_load_1toN="false" foreign_key="false" state="1">
+	<relation uuid="CB09C89AD05F40F9B927543F1D0AC6FD" name_Nto1="qui" name_1toN="roles" auto_load_Nto1="false" auto_load_1toN="false" foreign_key="false" state="1" integrity="delete">
 		<related_field kind="source">
 			<field_ref uuid="33B70CCC0843DE429F0B0C50D132DFE5" name="ID_Qui">
 				<table_ref uuid="36E36289CCCA4644A71A1D2676364BB1" name="Role"/>
@@ -104,7 +109,7 @@
 			</editor_relation_info>
 		</relation_extra>
 	</relation>
-	<relation uuid="4F2CA3DD61884D058D3BCE5C6336FDDB" name_Nto1="quoi" name_1toN="roles" auto_load_Nto1="false" auto_load_1toN="false" foreign_key="false" state="1">
+	<relation uuid="4F2CA3DD61884D058D3BCE5C6336FDDB" name_Nto1="quoi" name_1toN="roles" auto_load_Nto1="false" auto_load_1toN="false" foreign_key="false" state="1" integrity="delete">
 		<related_field kind="source">
 			<field_ref uuid="224E05CCD982514682542710BE59B128" name="ID_Quoi">
 				<table_ref uuid="36E36289CCCA4644A71A1D2676364BB1" name="Role"/>
@@ -141,11 +146,6 @@
 			<table_ref uuid="36E36289CCCA4644A71A1D2676364BB1" name="Role"/>
 		</field_ref>
 	</index>
-	<index kind="regular" unique_keys="true" uuid="C0AE454CBB421B45A8931FFD853EABCD" type="1">
-		<field_ref uuid="580F460FF27103468AE846AB62100FD7" name="FullName">
-			<table_ref uuid="7F9A35CDF0EFB6429B6FA24F9D22CD4E" name="Qui"/>
-		</field_ref>
-	</index>
 	<index kind="regular" unique_keys="true" uuid="D56B79129F466B479B367C3993B6468E" type="7">
 		<field_ref uuid="8A81CA27FD5BC04E9D83D0C7DA23F37A" name="ID">
 			<table_ref uuid="B1B25763C6AF304A82A45FE6D9C2FCC3" name="(zzzzzzzzzzzzzzz)"/>
@@ -159,11 +159,6 @@
 	<index kind="regular" uuid="E8E48E8E2F09954BA153C57EF23B7990" type="1">
 		<field_ref uuid="C398CAEA0AE2F94EA9EA19DE10AC847C" name="Nom">
 			<table_ref uuid="1AA34083D0527E4F91A17E4D5A70AA8D" name="Quoi"/>
-		</field_ref>
-	</index>
-	<index kind="keywords" unique_keys="true" uuid="FE9079C4807D824085B297FDE66334CB" type="3">
-		<field_ref uuid="580F460FF27103468AE846AB62100FD7" name="FullName">
-			<table_ref uuid="7F9A35CDF0EFB6429B6FA24F9D22CD4E" name="Qui"/>
 		</field_ref>
 	</index>
 	<base_extra __stringCompHash="icu:68.1.0" __keywordBuildingHash="icu:68.1.0">

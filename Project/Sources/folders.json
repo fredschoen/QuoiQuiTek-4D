@@ -17,12 +17,9 @@
 			"anneePlus",
 			"atteindrePageDetail",
 			"atteindrePageListe",
-			"charger_lesQuis",
 			"charger_lesQuois",
 			"charger_unQui",
 			"charger_unQuoi",
-			"charger_unRoleDeQui",
-			"charger_unRoleDeQuoi",
 			"Compiler_Methods",
 			"Compiler_Variables",
 			"naviguer_unRoleDeQui",
@@ -65,9 +62,6 @@
 			"Formulaires par défaut",
 			"Méthodes projet par défaut",
 			"Tables par défaut"
-		],
-		"methods": [
-			"charger_lesQuoisDuQui"
 		],
 		"forms": [
 			"[Qui]Entree",

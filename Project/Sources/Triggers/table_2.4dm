@@ -1,15 +1,15 @@
 //Trigger sur Qui
 
 Case of 
-		//suppression
-	: (Trigger event:C369=On Deleting Record Event:K3:3)
-		QUERY:C277([Role:3]; [Role:3]ID_Qui:2=[Qui:2]ID:1)
+		////suppression
+		//: (Trigger event=On Deleting Record Event)
+		//QUERY([Role]; [Role]ID_Qui=[Qui]ID)
 		
-		FIRST RECORD:C50([Role:3])
-		For ($Position; 1; Records in selection:C76([Role:3]))
-			DELETE RECORD:C58([Role:3])
-			NEXT RECORD:C51([Role:3])
-		End for 
+		//FIRST RECORD([Role])
+		//For ($Position; 1; Records in selection([Role]))
+		//DELETE RECORD([Role])
+		//NEXT RECORD([Role])
+		//End for 
 		
 	: (Trigger event:C369=On Saving New Record Event:K3:1)
 		[Qui:2]CreatDate:11:=Current date:C33

@@ -24,15 +24,15 @@ End case
 
 //Si ($pourSelectionner=Vrai)
 If ($pourSelectionner)
-	Form:C1466.action:="MODIFIER"
-	Form:C1466.posQuoiSel_i:=Form:C1466.posQuoiSel_iInit
-	charger_unQuoi
 	C_LONGINT:C283($win_l)
-	$win_l:=Open form window:C675("roleDetail")
+	$win_l:=Open form window:C675("quoiDetail")
 	MAXIMIZE WINDOW:C453($win_l)
-	$form_o:=Form:C1466
+	$form_o:=New object:C1471
 	$form_o.action:="MODIFIER"
 	$form_o.page:=1
+	$form_o.quoi_es:=Form:C1466.quoi_es
+	$form_o.posQuoiSel_i:=Form:C1466.posQuoiSel_i
+	
 	While ($form_o.page>0)  // 0 :quitter
 		DIALOG:C40("quoiDetail"; $form_o)
 	End while 

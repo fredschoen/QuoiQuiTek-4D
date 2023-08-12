@@ -1,12 +1,3 @@
 {
-	"editors": [
-		{
-			"type": "form",
-			"id": 220,
-			"formName": "quiListe"
-		},
-		{
-			"type": "explorer"
-		}
-	]
+	"editors": []
 }

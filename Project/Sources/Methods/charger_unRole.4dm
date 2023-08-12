@@ -16,10 +16,6 @@ If ((Form:C1466.role_es.length<2)\
 End if 
 
 //se déplacer dans la liste box de page  1
-
-//par défaut, on ne bouge pas
-Form:C1466.posRoleSel_i:=Form:C1466.posRoleSel_i
-
 Case of 
 	: (Form:C1466.action="PREMIER")
 		Form:C1466.posRoleSel_i:=1

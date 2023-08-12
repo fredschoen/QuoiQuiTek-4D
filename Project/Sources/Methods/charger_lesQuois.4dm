@@ -53,15 +53,15 @@ If ($texteQuery>"")
 			$valeurCritereNom:=$valeurCritereNom+"@"
 		End if 
 		
-		$quoi_es:=ds:C1482.Quoi.query($texteQuery; $valeurCritereNom).orderBy("Nom")
+		$quoi_es:=ds:C1482.Quoi.query($texteQuery; $valeurCritereNom)
 	Else 
-		$quoi_es:=ds:C1482.Quoi.query($texteQuery).orderBy("Nom").orderBy("Nom")
+		$quoi_es:=ds:C1482.Quoi.query($texteQuery)
 	End if 
 	
 Else 
-	$quoi_es:=ds:C1482.Quoi.all().orderBy("Nom")
+	$quoi_es:=ds:C1482.Quoi.all()
 End if 
 
 
-Form:C1466.quoi_es:=$quoi_es
+Form:C1466.quoi_es:=$quoi_es.orderBy("Nom")
 // pour test: LISTBOX TRIER COLONNES(*; "quoiListe_LB"; (2); >)

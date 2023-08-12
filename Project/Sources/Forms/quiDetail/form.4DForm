@@ -14,8 +14,7 @@
 	"events": [
 		"onLoad",
 		"onUnload",
-		"onAfterKeystroke",
-		"onBoundVariableChange"
+		"onAfterKeystroke"
 	],
 	"windowTitle": "Détail du qui",
 	"destination": "detailScreen",
@@ -615,7 +614,8 @@
 					"left": 140,
 					"width": 80,
 					"height": 18,
-					"dataSourceTypeHint": "date"
+					"dataSourceTypeHint": "date",
+					"events": []
 				},
 				"btTrace": {
 					"type": "button",

@@ -29,7 +29,7 @@
 			"objects": {
 				"lb_lesQuisDuQuoi": {
 					"type": "listbox",
-					"dataSource": "Form:C1466.role_es",
+					"dataSource": "Form:C1466.quoi.roles",
 					"top": 80,
 					"left": 343,
 					"width": 615,
@@ -57,7 +57,7 @@
 								"text": "Role"
 							},
 							"name": "DescrRole",
-							"dataSource": "This:C1470.role.Descr",
+							"dataSource": "This:C1470.Descr",
 							"footer": {
 								"name": "Pied3"
 							},
@@ -82,7 +82,7 @@
 						},
 						{
 							"name": "AgeDansQuoi",
-							"dataSource": "This:C1470.AgeQui",
+							"dataSource": "This:C1470.getAge()",
 							"width": 56,
 							"enterable": false,
 							"header": {
@@ -303,7 +303,7 @@
 						"$ref": "/SOURCES/tips.json#/RaccourciSuivant"
 					}
 				},
-				"btPrecedentQuoi": {
+				"btPrecedent": {
 					"type": "button",
 					"text": "Précédent",
 					"top": 5,
@@ -313,7 +313,7 @@
 					"events": [
 						"onClick"
 					],
-					"method": "ObjectMethods/btPrecedentQuoi.4dm",
+					"method": "ObjectMethods/btPrecedent.4dm",
 					"shortcutAccel": true,
 					"shortcutControl": false,
 					"shortcutShift": false,
@@ -583,7 +583,7 @@
 				"lb_lesQuisDuQuoi",
 				"Zone de saisie",
 				"btSuivant",
-				"btPrecedentQuoi",
+				"btPrecedent",
 				"btPremier",
 				"btDernier",
 				"btSauverQuoi",
@@ -598,6 +598,13 @@
 			]
 		}
 	],
-	"geometryStamp": 151,
-	"method": "method.4dm"
+	"geometryStamp": 153,
+	"method": "method.4dm",
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {}
+		}
+	}
 }

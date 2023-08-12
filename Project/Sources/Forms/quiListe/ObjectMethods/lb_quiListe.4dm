@@ -19,14 +19,16 @@ Case of
 End case 
 
 If ($pourSelectionner=True:C214)
-	Form:C1466.action:="MODIFIER"
-	charger_unQui
+	
+	$form_o:=New object:C1471
+	$form_o.page:=1
+	$form_o.action:="MODIFIER"
+	$form_o.qui_es:=Form:C1466.qui_es
+	$form_o.posQuiSel_i:=Form:C1466.posQuiSel_i
 	
 	C_LONGINT:C283($win_l)
 	$win_l:=Open form window:C675("quiDetail")
 	MAXIMIZE WINDOW:C453($win_l)
-	$form_o:=Form:C1466
-	$form_o.page:=1
 	While ($form_o.page>0)  // 0 :quitter
 		DIALOG:C40("quiDetail"; $form_o)
 	End while 
