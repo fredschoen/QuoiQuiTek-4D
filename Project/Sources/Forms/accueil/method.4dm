@@ -3,7 +3,7 @@
 Case of 
 		
 	: (Form event code:C388=On Load:K2:1)
-		
+		//charger les listes de valeurs
 		//DomaineQui
 		QUERY:C277([Qui:2]; [Qui:2]Domaine:8>"A")
 		DISTINCT VALUES:C339([Qui:2]Domaine:8; $tab)

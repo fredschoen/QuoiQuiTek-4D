@@ -12,21 +12,7 @@
 	"rightMargin": 20,
 	"bottomMargin": 20,
 	"events": [
-		"onLoad",
-		"onPageChange",
-		"onValidate",
-		"onClick",
-		"onDoubleClick",
-		"onOutsideCall",
-		"onBeginDragOver",
-		"onDragOver",
-		"onDrop",
-		"onAfterKeystroke",
-		"onMenuSelect",
-		"onPluginArea",
-		"onAfterEdit",
-		"onTimer",
-		"onBoundVariableChange"
+		"onLoad"
 	],
 	"windowTitle": "window title",
 	"destination": "detailScreen",
@@ -93,7 +79,7 @@
 					"events": [
 						"onClick"
 					],
-					"method": "afficher.role_es"
+					"method": "ObjectMethods/bRole.4dm"
 				},
 				"btTrace": {
 					"type": "button",

@@ -10,26 +10,27 @@ var $0 : Object
 var $1 : Object
 $qui_o:=$1
 
-If (Form:C1466.action="AJOUTER")
-	$enreg_o:=ds:C1482.Qui.new()
-Else 
-	$enregListe_o:=ds:C1482.Qui.query("ID=:1"; $qui_o.ID)
-	$enreg_o:=$enregListe_o.first()
-End if 
+//If (Form.action="AJOUTER")
+//$enreg_o:=ds.Qui.new()
+//Else 
+//$enregListe_o:=ds.Qui.query("ID=:1"; $qui_o.ID)
+//$enreg_o:=$enregListe_o.first()
+//End if 
 
-$enreg_o.AnneeDeces:=$qui_o.AnneeDeces
-$enreg_o.AnneeNaiss:=$qui_o.AnneeNaiss
-$enreg_o.Nom:=$qui_o.Nom
-$enreg_o.Pays:=$qui_o.Pays
-$enreg_o.Genre:=$qui_o.Genre
-$enreg_o.Photo:=$qui_o.Photo
-$enreg_o.Domaine:=$qui_o.Domaine
-$enreg_o.Info:=$qui_o.Info
-$enreg_o.Style:=$qui_o.Style
-$enreg_o.DateNaiss:=$qui_o.DateNaiss
-$enreg_o.Prenom:=$qui_o.Prenom
+//$enreg_o.AnneeDeces:=$qui_o.AnneeDeces
+//$enreg_o.AnneeNaiss:=$qui_o.AnneeNaiss
+//$enreg_o.Nom:=$qui_o.Nom
+//$enreg_o.Pays:=$qui_o.Pays
+//$enreg_o.Genre:=$qui_o.Genre
+//$enreg_o.Photo:=$qui_o.Photo
+//$enreg_o.Domaine:=$qui_o.Domaine
+//$enreg_o.Info:=$qui_o.Info
+//$enreg_o.Style:=$qui_o.Style
+//$enreg_o.DateNaiss:=$qui_o.DateNaiss
+//$enreg_o.Prenom:=$qui_o.Prenom
 
-$status_o:=$enreg_o.save()
+//$status_o:=$enreg_o.save()
+$status_o:=$qui_o.save()
 
 If ($status_o.success)
 	If (Form:C1466.action="AJOUTER")

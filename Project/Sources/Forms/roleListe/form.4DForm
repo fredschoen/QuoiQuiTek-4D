@@ -265,7 +265,7 @@
 					"top": 27,
 					"width": 220,
 					"height": 16,
-					"dataSource": "Form:C1466.critere.role_es.Nom"
+					"dataSource": "Form:C1466.critere.role.Nom"
 				},
 				"zCritereGenre": {
 					"type": "input",
@@ -273,7 +273,7 @@
 					"top": 26,
 					"width": 30,
 					"height": 16,
-					"dataSource": "Form:C1466.critere.role_es.Genre"
+					"dataSource": "Form:C1466.critere.role.Genre"
 				},
 				"zCriterePays": {
 					"type": "input",
@@ -281,7 +281,7 @@
 					"top": 25,
 					"width": 37,
 					"height": 16,
-					"dataSource": "Form:C1466.critere.role_es.Pays"
+					"dataSource": "Form:C1466.critere.role.Pays"
 				},
 				"zCritereAnneeNaiss": {
 					"type": "input",
@@ -289,7 +289,7 @@
 					"top": 27,
 					"width": 41,
 					"height": 16,
-					"dataSource": "Form:C1466.critere.role_es.AnneeNaiss"
+					"dataSource": "Form:C1466.critere.role.AnneeNaiss"
 				},
 				"zCritereAnneeDeces": {
 					"type": "input",
@@ -297,7 +297,7 @@
 					"top": 27,
 					"width": 50,
 					"height": 16,
-					"dataSource": "Form:C1466.critere.role_es.AnneeDeces"
+					"dataSource": "Form:C1466.critere.role.AnneeDeces"
 				},
 				"zCritereDomaine": {
 					"type": "input",
@@ -305,7 +305,7 @@
 					"top": 27,
 					"width": 45,
 					"height": 16,
-					"dataSource": "Form:C1466.critere.role_es.Domaine"
+					"dataSource": "Form:C1466.critere.role.Domaine"
 				},
 				"zCritereStyle": {
 					"type": "input",
@@ -313,7 +313,7 @@
 					"top": 27,
 					"width": 60,
 					"height": 16,
-					"dataSource": "Form:C1466.critere.role_es.Style"
+					"dataSource": "Form:C1466.critere.role.Style"
 				},
 				"btAppliquerFiltreRole": {
 					"type": "button",
@@ -334,7 +334,7 @@
 					"top": 27,
 					"width": 30,
 					"height": 16,
-					"dataSource": "Form:C1466.critere.role_es.Age"
+					"dataSource": "Form:C1466.critere.role.Age"
 				},
 				"bTrace": {
 					"type": "checkbox",

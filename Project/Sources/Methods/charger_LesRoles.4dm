@@ -19,9 +19,9 @@ $role_es:=ds:C1482.Role.all()
 For each ($role_e; $role_es)
 	
 	$selection:=True:C214
-	$selection:=verifierSelectionRole(Form:C1466.critere.role_es.Nom; $role_e.qui.Nom; $selection)
-	$selection:=verifierSelectionRole(Form:C1466.critere.role_es.Genre; $role_e.qui.Genre; $selection)
-	$selection:=verifierSelectionRole(Form:C1466.critere.role_es.Age; String:C10($role_e.Age; "00"); $selection)
+	$selection:=verifierSelectionRole(Form:C1466.critere.role.Nom; $role_e.qui.Nom; $selection)
+	$selection:=verifierSelectionRole(Form:C1466.critere.role.Genre; $role_e.qui.Genre; $selection)
+	$selection:=verifierSelectionRole(Form:C1466.critere.role.Age; String:C10($role_e.Age; "00"); $selection)
 	If ($selection)
 		Form:C1466.role_es.push($role_e)
 	End if 
