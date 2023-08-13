@@ -1,29 +1,11 @@
 {
-	"Sources/Forms/roleListe/form.4DForm": {
-		"left": 0,
-		"top": 78,
-		"width": 1186,
-		"height": 618
-	},
-	"Sources/Forms/roleDetail/form.4DForm": {
-		"left": 0,
-		"top": 78,
-		"width": 1186,
-		"height": 618
-	},
-	"Sources/Forms/quoiDetail/form.4DForm": {
-		"left": 0,
-		"top": 78,
-		"width": 1186,
-		"height": 618
-	},
-	"Sources/Forms/quiListe/form.4DForm": {
-		"left": 0,
-		"top": 78,
-		"width": 1186,
-		"height": 618
-	},
 	"Sources/Forms/quoiListe/form.4DForm": {
+		"left": 0,
+		"top": 78,
+		"width": 1186,
+		"height": 618
+	},
+	"Sources/Forms/accueil/form.4DForm": {
 		"left": 0,
 		"top": 78,
 		"width": 1186,

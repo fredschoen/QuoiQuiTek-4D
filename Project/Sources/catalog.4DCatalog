@@ -9,7 +9,7 @@
 		<field name="Pays" uuid="E4FB40F5F67D1D4191AF0BF3D8535F5B" type="10" limiting_length="255" never_null="true" id="4"/>
 		<field name="Stock" uuid="CD35DC4B033A024D9C4FD5AC5439BAC1" type="10" limiting_length="255" never_null="true" id="5"/>
 		<field name="Real" uuid="EEFC95045653474796AECC0DAA8371CB" type="10" limiting_length="255" never_null="true" id="6"/>
-		<field name="Annee" uuid="7C42769F220BAC4095209E083C17B727" type="10" limiting_length="10" never_null="true" id="7"/>
+		<field name="Date" uuid="7C42769F220BAC4095209E083C17B727" type="10" limiting_length="10" never_null="true" id="7"/>
 		<field name="Domaine" uuid="402F9ECEAE77124F98DB7C18F13C210A" type="10" limiting_length="255" never_null="true" id="8"/>
 		<field name="Prod" uuid="13333BFDCBB765488223A57A973B4517" type="10" limiting_length="255" never_null="true" id="9"/>
 		<field name="Info" uuid="EA2D51B243B04D4CA0DA6425FE90F554" type="10" limiting_length="255" never_null="true" id="10"/>

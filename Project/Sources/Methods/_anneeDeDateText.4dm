@@ -1,6 +1,6 @@
 //%attributes = {}
 //_anneeDeDateText
-//$1: quoi.Annee: Texte : "aaaa-mm-jj"
+//$1: quoi.Date: Texte : "aaaa-mm-jj"
 //$0: année: Integer
 var $1; annee_t : Text
 var $0; annee_i : Integer

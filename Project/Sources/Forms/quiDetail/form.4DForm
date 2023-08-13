@@ -76,7 +76,7 @@
 						},
 						{
 							"name": "cQuoiAnnee",
-							"dataSource": "This:C1470.quoi.Annee",
+							"dataSource": "This:C1470.quoi.Date",
 							"width": 55,
 							"enterable": true,
 							"header": {

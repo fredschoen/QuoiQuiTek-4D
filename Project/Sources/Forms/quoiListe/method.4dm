@@ -29,7 +29,7 @@ Case of
 			Form:C1466.critereQuoiListe.Genre:=""
 			Form:C1466.critereQuoiListe.Pays:=""
 			Form:C1466.critereQuoiListe.Stock:=""
-			Form:C1466.critereQuoiListe.Annee:=""
+			Form:C1466.critereQuoiListe.Date:=""
 			Form:C1466.critereQuoiListe.Real:=""
 			Form:C1466.critereQuoiListe.DateDernVisu:=""
 			Form:C1466.critereQuoiListe.Domaine:=""

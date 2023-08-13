@@ -83,7 +83,7 @@ For each ($role_ele; $role_liste)
 	If ($qui_ele.length=0)
 		ALERT:C41("pb dans chargerQuoiDetail : $qui_ele.length=0")
 	Else 
-		$anneeQuoi:=_anneeDeDateText(Form:C1466.quoi.Annee)
+		$anneeQuoi:=_anneeDeDateText(Form:C1466.quoi.Date)
 		If (($qui_ele[0].AnneeNaiss=0) | ($anneeQuoi=0))
 			$ageQui:=0
 		Else 
