@@ -9,4 +9,7 @@ $enreg.Photo:=Form:C1466.role.Photo
 $status:=$enreg.save()
 If ($status.success)
 	ALERT:C41("role modifié")
+Else 
+	ALERT:C41("sauvegarde role ko")
+	TRACE:C157
 End if 

@@ -17,10 +17,23 @@ Case of
 			Form:C1466.action:="INIT"
 			Form:C1466.utilisationListe:=""
 			Form:C1466.page:=1
+			
+			//criteres d'affichage :
+			Form:C1466.critereQuiListe:=New object:C1471
+			Form:C1466.critereQuiListe.FullName:=""
+			Form:C1466.critereQuiListe.Genre:=""
+			Form:C1466.critereQuiListe.Pays:=""
+			Form:C1466.critereQuiListe.DateNaiss:=""
+			Form:C1466.critereQuiListe.DateDeces:=""
+			Form:C1466.critereQuiListe.Domaine:=""
+			Form:C1466.critereQuiListe.Style:=""
+			
+			
+			
 		End if 
 		
 		If (Form:C1466.action="INIT")
-			charger_lesQuis
+			charger_LesQuis
 		End if 
 		
 		// aller à la page précisée

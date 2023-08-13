@@ -55,7 +55,7 @@ Else
 	
 	// pour nom, laisserD gérer l' injection (cf. l'apostrophe)
 	
-	If (($nomCritere="Nom") & ($valeurCritere>""))  //m30128
+	If (($nomCritere="FullName") & ($valeurCritere>""))  //m30128
 		$valeurCritere:=":1"
 	End if 
 	

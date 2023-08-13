@@ -6,16 +6,6 @@ $form_obj:=New object:C1471
 $form_obj.action:="INIT"  // chargement initial
 $form_obj.page:=1
 
-//criteres d'affichage :
-$form_obj.critereQuiListe:=New object:C1471
-$form_obj.critereQuiListe.Nom:=""
-$form_obj.critereQuiListe.Genre:=""
-$form_obj.critereQuiListe.Pays:=""
-$form_obj.critereQuiListe.AnneeNaiss:=""
-$form_obj.critereQuiListe.AnneeDeces:=""
-$form_obj.critereQuiListe.Domaine:=""
-$form_obj.critereQuiListe.Style:=""
-
 If (Count parameters:C259>0)
 	$form_obj.utilisationListe:=$1
 Else 

@@ -29,7 +29,7 @@
 					"dataSource": "Form:C1466.qui_es",
 					"top": 75,
 					"left": 10,
-					"width": 741,
+					"width": 800,
 					"height": 469,
 					"visibility": "visible",
 					"sizingX": "fixed",
@@ -50,8 +50,8 @@
 					"columns": [
 						{
 							"name": "c_Nom2",
-							"dataSource": "This:C1470.Nom",
-							"width": 150,
+							"dataSource": "This:C1470.FullName",
+							"width": 320,
 							"enterable": true,
 							"header": {
 								"text": "Nom",
@@ -62,22 +62,9 @@
 							}
 						},
 						{
-							"name": "c_Nom1",
-							"dataSource": "This:C1470.Prenom",
-							"width": 150,
-							"enterable": true,
-							"header": {
-								"text": "Prénom",
-								"name": "ePreNomQui"
-							},
-							"footer": {
-								"name": "9"
-							}
-						},
-						{
 							"name": "cGenre1",
 							"dataSource": "This:C1470.Genre",
-							"width": 44,
+							"width": 50,
 							"enterable": true,
 							"header": {
 								"text": "Genre",
@@ -86,7 +73,7 @@
 							"footer": {
 								"name": "5"
 							},
-							"maxWidth": 44
+							"maxWidth": 99
 						},
 						{
 							"name": "cPays1",
@@ -105,7 +92,7 @@
 						{
 							"name": "cAnneeNaiss1",
 							"dataSource": "This:C1470.DateNaiss",
-							"width": 91,
+							"width": 80,
 							"enterable": true,
 							"header": {
 								"text": "Date Naiss",
@@ -119,7 +106,7 @@
 						{
 							"name": "cAnneeDeces1",
 							"dataSource": "This:C1470.AnneeDeces",
-							"width": 50,
+							"width": 80,
 							"enterable": true,
 							"header": {
 								"text": "Deces",
@@ -133,7 +120,7 @@
 						{
 							"name": "cDomaine1",
 							"dataSource": "This:C1470.Domaine",
-							"width": 50,
+							"width": 60,
 							"enterable": true,
 							"header": {
 								"text": "Dom",
@@ -142,7 +129,7 @@
 							"footer": {
 								"name": "35"
 							},
-							"maxWidth": 50
+							"maxWidth": 99
 						},
 						{
 							"name": "cStyle1",
@@ -163,24 +150,24 @@
 				"Texte": {
 					"type": "text",
 					"text": "pour voir détail: Click ou Flèche droite ",
-					"top": 180,
-					"left": 771,
+					"top": 177,
+					"left": 830,
 					"width": 115,
 					"height": 45
 				},
 				"zCritereNom": {
 					"type": "input",
-					"left": 16,
+					"left": 12,
 					"top": 49,
-					"width": 285,
+					"width": 315,
 					"height": 16,
-					"dataSource": "Form:C1466.critereQuiListe.Nom"
+					"dataSource": "Form:C1466.critereQuiListe.FullName"
 				},
 				"btAppliquerFiltreQui": {
 					"type": "button",
 					"text": "Appliquer le filtre",
-					"top": 45,
-					"left": 730,
+					"top": 48,
+					"left": 807,
 					"width": 113,
 					"height": 24,
 					"events": [
@@ -189,56 +176,43 @@
 					"method": "ObjectMethods/btAppliquerFiltreQui.4dm",
 					"defaultButton": true
 				},
-				"btValider": {
-					"type": "button",
-					"text": "Quitter",
-					"top": 130,
-					"left": 771,
-					"width": 60,
-					"height": 24,
-					"events": [
-						"onClick"
-					],
-					"defaultButton": false,
-					"method": "ObjectMethods/btValider.4dm"
-				},
 				"zCritereGenre": {
 					"type": "input",
-					"left": 304,
-					"top": 49,
+					"left": 328,
+					"top": 48,
 					"width": 44,
 					"height": 16,
 					"dataSource": "Form:C1466.critereQuiListe.Genre"
 				},
 				"zCriterePays": {
 					"type": "input",
-					"left": 355,
-					"top": 49,
+					"left": 384,
+					"top": 48,
 					"width": 78,
 					"height": 16,
 					"dataSource": "Form:C1466.critereQuiListe.Pays"
 				},
-				"zCritereAnneeNaiss": {
+				"zCritereDateNaiss": {
 					"type": "input",
-					"left": 442,
+					"left": 476,
 					"top": 49,
 					"width": 75,
 					"height": 16,
-					"dataSource": "Form:C1466.critereQuiListe.AnneeNaiss"
+					"dataSource": "Form:C1466.critereQuiListe.DateNaiss"
 				},
-				"zCritereAnneeDeces": {
+				"zCritereDateDeces": {
 					"type": "input",
-					"left": 532,
+					"left": 557,
 					"top": 49,
-					"width": 75,
+					"width": 70,
 					"height": 16,
-					"dataSource": "Form:C1466.critereQuiListe.AnneeDeces"
+					"dataSource": "Form:C1466.critereQuiListe.DateDeces"
 				},
 				"btAjouterQui": {
 					"type": "button",
 					"text": "Ajouter un qui",
-					"top": 86,
-					"left": 771,
+					"top": 83,
+					"left": 830,
 					"width": 120,
 					"height": 24,
 					"events": [
@@ -249,7 +223,7 @@
 				},
 				"zCritereDomaine": {
 					"type": "input",
-					"left": 610,
+					"left": 635,
 					"top": 49,
 					"width": 45,
 					"height": 16,
@@ -257,17 +231,17 @@
 				},
 				"zCritereStyle": {
 					"type": "input",
-					"left": 658,
-					"top": 49,
-					"width": 45,
+					"left": 695,
+					"top": 52,
+					"width": 80,
 					"height": 16,
 					"dataSource": "Form:C1466.critereQuiListe.Style"
 				},
 				"btTrace": {
 					"type": "button",
 					"text": "trace",
-					"top": 49,
-					"left": 1010,
+					"top": 29,
+					"left": 880,
 					"width": 40,
 					"height": 15,
 					"events": [
@@ -280,7 +254,7 @@
 				"zMessage": {
 					"type": "input",
 					"left": 103,
-					"top": 29,
+					"top": 14,
 					"width": 749,
 					"height": 16,
 					"dataSource": "Form:C1466.message",
@@ -290,8 +264,8 @@
 				"fred": {
 					"type": "button",
 					"text": "fred",
-					"top": 235,
-					"left": 802,
+					"top": 232,
+					"left": 861,
 					"width": 113,
 					"height": 24,
 					"events": [
@@ -305,12 +279,11 @@
 				"zCritereNom",
 				"zCritereGenre",
 				"zCriterePays",
-				"zCritereAnneeNaiss",
-				"zCritereAnneeDeces",
+				"zCritereDateNaiss",
+				"zCritereDateDeces",
 				"btAppliquerFiltreQui",
 				"lb_quiListe",
 				"btAjouterQui",
-				"btValider",
 				"zCritereDomaine",
 				"zCritereStyle",
 				"btTrace",
@@ -319,7 +292,7 @@
 			]
 		}
 	],
-	"geometryStamp": 2592,
+	"geometryStamp": 2685,
 	"method": "method.4dm",
 	"editor": {
 		"activeView": "View 1",

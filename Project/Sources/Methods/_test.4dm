@@ -1,21 +1,19 @@
 //%attributes = {}
-//charger_lesRoles
-var $age : Integer
-var $anneeQuoi : Integer
-var $liste : Collection
-var $toto : Object
-var $quiAjout : Object
-var $quoiAjout : Object
-var $go : Boolean
-var $selection : Boolean
+//changer les quis
 
-$go:=True:C214
+var $qui_es : cs:C1710.QuiSelection
+var $qui_e : cs:C1710.QuiEntity
+$qui_es:=ds:C1482.Qui.query("AnneeNaiss > 0 and DateNaiss < :1"; "0").orderBy("Nom")
 
-var $role_es : cs:C1710.RoleSelection
-var $role_e : cs:C1710.RoleEntity
-$role_es:=ds:C1482.Role.all()
-
-For each ($role_e; $role_es)
+For each ($qui_e; $qui_es)
 	
-	$x:=$role_e.getAge()
+	$qui_e.DateNaiss:=String:C10($qui_e.AnneeNaiss)
+	//$status:=$qui_e.save()
+	//If ($status.success)
+	//Else 
+	//ALERT("sauvegarde role ko")
+	//TRACE
+	//End if 
+	
 End for each 
+ALERT:C41("ok")

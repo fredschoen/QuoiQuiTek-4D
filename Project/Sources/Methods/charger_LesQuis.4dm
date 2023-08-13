@@ -1,53 +1,53 @@
 //%attributes = {}
 // charger_lesQuis
 C_TEXT:C284($texteQuery)
-$texteQuery:=_f_traduireArgQuery("Nom"; "texte"; Form:C1466.critereQuiListe.Nom)
+$texteQuery:=_f_traduireArgQuery("FullName"; "texte"; Form:C1466.critereQuiListe.FullName)
 $texteQuery:=$texteQuery+_f_traduireArgQuery("Genre"; "texte"; Form:C1466.critereQuiListe.Genre; Length:C16($texteQuery))
 $texteQuery:=$texteQuery+_f_traduireArgQuery("Pays"; "texte"; Form:C1466.critereQuiListe.Pays; Length:C16($texteQuery))
-$texteQuery:=$texteQuery+_f_traduireArgQuery("AnneeNaiss"; "nombre"; Form:C1466.critereQuiListe.AnneeNaiss; Length:C16($texteQuery))
-$texteQuery:=$texteQuery+_f_traduireArgQuery("AnneeDeces"; "nombre"; Form:C1466.critereQuiListe.AnneeDeces; Length:C16($texteQuery))
+$texteQuery:=$texteQuery+_f_traduireArgQuery("AnneeNaiss"; "texte"; Form:C1466.critereQuiListe.DateNaiss; Length:C16($texteQuery))
+$texteQuery:=$texteQuery+_f_traduireArgQuery("AnneeDeces"; "texte"; Form:C1466.critereQuiListe.DateDeces; Length:C16($texteQuery))
 $texteQuery:=$texteQuery+_f_traduireArgQuery("Domaine"; "texte"; Form:C1466.critereQuiListe.Domaine; Length:C16($texteQuery))
 $texteQuery:=$texteQuery+_f_traduireArgQuery("Style"; "texte"; Form:C1466.critereQuiListe.Style; Length:C16($texteQuery))
 
 C_OBJECT:C1216($liste)
 If ($texteQuery>"")
 	
-	If (Form:C1466.critereQuiListe.Nom>"")
-		//TODO: créer une fonction avec une sortie = tableau de 2 TEXTE (et urbaniser avec "_f_traduireArgQuery")
-		C_TEXT:C284($operateurCritereNom; $valeurCritereNom)
+	//cas particulier du Fullname (avec apostrophe)
+	If (Form:C1466.critereQuiListe.FullName>"")
+		C_TEXT:C284($operateurCritereFullName; $valeurCritereFullName)
 		Case of 
-			: ((Substring:C12(Form:C1466.critereQuiListe.Nom; 1; 2)="<=")\
-				 | (Substring:C12(Form:C1466.critereQuiListe.Nom; 1; 2)=">="))
-				$operateurCritereNom:=Substring:C12(Form:C1466.critereQuiListe.Nom; 1; 2)
-				$valeurCritereNom:=Substring:C12(Form:C1466.critereQuiListe.Nom; 3; Length:C16(Form:C1466.critereQuiListe.Nom))
+			: ((Substring:C12(Form:C1466.critereQuiListe.FullName; 1; 2)="<=")\
+				 | (Substring:C12(Form:C1466.critereQuiListe.FullName; 1; 2)=">="))
+				$operateurCritereFullName:=Substring:C12(Form:C1466.critereQuiListe.FullName; 1; 2)
+				$valeurCritereFullName:=Substring:C12(Form:C1466.critereQuiListe.FullName; 3; Length:C16(Form:C1466.critereQuiListe.FullName))
 				
-			: ((Substring:C12(Form:C1466.critereQuiListe.Nom; 1; 1)="=")\
-				 | (Substring:C12(Form:C1466.critereQuiListe.Nom; 1; 1)=">")\
-				 | (Substring:C12(Form:C1466.critereQuiListe.Nom; 1; 1)="<")\
-				 | (Substring:C12(Form:C1466.critereQuiListe.Nom; 1; 1)="#")\
+			: ((Substring:C12(Form:C1466.critereQuiListe.FullName; 1; 1)="=")\
+				 | (Substring:C12(Form:C1466.critereQuiListe.FullName; 1; 1)=">")\
+				 | (Substring:C12(Form:C1466.critereQuiListe.FullName; 1; 1)="<")\
+				 | (Substring:C12(Form:C1466.critereQuiListe.FullName; 1; 1)="#")\
 				)
-				$operateurCritereNom:=Substring:C12(Form:C1466.critereQuiListe.Nom; 1; 1)
-				$valeurCritereNom:=Substring:C12(Form:C1466.critereQuiListe.Nom; 2; Length:C16(Form:C1466.critereQuiListe.Nom))
+				$operateurCritereFullName:=Substring:C12(Form:C1466.critereQuiListe.FullName; 1; 1)
+				$valeurCritereFullName:=Substring:C12(Form:C1466.critereQuiListe.FullName; 2; Length:C16(Form:C1466.critereQuiListe.FullName))
 				
 			Else 
-				$operateurCritereNom:="="
-				$valeurCritereNom:=Form:C1466.critereQuiListe.Nom
+				$operateurCritereFullName:="="
+				$valeurCritereFullName:=Form:C1466.critereQuiListe.FullName
 				
 		End case 
 		
-		If ($operateurCritereNom="=")
+		If ($operateurCritereFullName="=")
 			//encadrer le critère texte (début et fin)
 			//(sans le "'" ... KO <= $valeurCritereNom:="'"+$valeurCritereNom+"@'"
-			$valeurCritereNom:=$valeurCritereNom+"@"
+			$valeurCritereFullName:=$valeurCritereFullName+"@"
 		End if 
 		
-		$liste:=ds:C1482.Qui.query($texteQuery; $valeurCritereNom).orderBy("Nom")
+		$liste:=ds:C1482.Qui.query($texteQuery; $valeurCritereFullName)
 	Else 
-		$liste:=ds:C1482.Qui.query($texteQuery).orderBy("Nom").orderBy("Nom")
+		$liste:=ds:C1482.Qui.query($texteQuery)
 	End if 
 	
 Else 
-	$liste:=ds:C1482.Qui.all().orderBy("Nom")
+	$liste:=ds:C1482.Qui.all()
 End if 
 
-Form:C1466.qui_es:=$liste
+Form:C1466.qui_es:=$liste.orderBy("FullName")

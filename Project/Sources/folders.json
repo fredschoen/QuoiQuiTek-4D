@@ -48,8 +48,8 @@
 	},
 	"3.Outils": {
 		"methods": [
+			"_ListeChamps4D",
 			"_test",
-			"_test2",
 			"z_import_quoi",
 			"zzz_ModifDeMasse_Quoi",
 			"zzzViderPourPublier"
