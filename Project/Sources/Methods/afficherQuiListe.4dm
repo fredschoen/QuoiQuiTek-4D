@@ -1,6 +1,8 @@
 //%attributes = {}
 // afficherQuiListe
 // $1: type d'utilisation de la liste
+//FFFFGF TODO POUR AJOUT ROLE
+
 C_OBJECT:C1216($form_obj)
 $form_obj:=New object:C1471
 $form_obj.action:="INIT"  // chargement initial

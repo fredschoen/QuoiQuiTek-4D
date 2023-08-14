@@ -2,9 +2,6 @@
 //charger_unRole
 var $anneeQuoi : Integer
 
-//visibilité des boutons de navigation
-visibleBtNavig
-
 // en plus: ne pas afficher les boutons si la liste = 0 ou 1 element, ou si on a ajouté cet role
 If ((Form:C1466.role_es.length<2)\
  | (Form:C1466.posRoleSel_i=0))

@@ -9,6 +9,10 @@ Case of
 		
 		charger_unQui
 		
+		//visibilité des boutons de navigation
+		visibleBtNavig
+		
+		
 	: (Form event code:C388=On Unload:K2:2)
 		CONFIRM:C162("sortir du détail du qui ?")
 		If (OK=1)

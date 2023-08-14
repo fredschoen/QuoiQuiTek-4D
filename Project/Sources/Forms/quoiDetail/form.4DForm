@@ -383,7 +383,7 @@
 					"top": 376,
 					"width": 409,
 					"height": 193,
-					"dataSource": "Form:C1466.infoQuoi"
+					"dataSource": "Form:C1466.quoi.Info"
 				},
 				"label_Info": {
 					"type": "text",

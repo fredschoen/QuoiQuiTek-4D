@@ -2,25 +2,7 @@
 // charger_unQui
 var $anneeQuoi : Integer
 
-//visibilité des boutons de navigation
-visibleBtNavig
-
-// en plus: ne pas afficher les boutons si la liste = 0 ou 1 element, ou si on a ajouté cet qui
-If ((Form:C1466.qui_es.length<2)\
- | (Form:C1466.posQuiSel_i=0))
-	OBJECT SET VISIBLE:C603(*; "btSuivant@"; False:C215)
-	OBJECT SET VISIBLE:C603(*; "btPrecedent@"; False:C215)
-	OBJECT SET VISIBLE:C603(*; "btPremier@"; False:C215)
-	OBJECT SET VISIBLE:C603(*; "btDernier@"; False:C215)
-	
-End if 
-
-
-
 //se déplacer dans la liste box de page  1
-
-//par défaut, on ne bouge pas
-Form:C1466.posQuiSel_i:=Form:C1466.posQuiSel_i
 
 Case of 
 	: (Form:C1466.action="PREMIER")
