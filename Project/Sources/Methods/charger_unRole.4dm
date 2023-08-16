@@ -1,62 +1,23 @@
 //%attributes = {}
 //charger_unRole
-var $anneeQuoi : Integer
-
-// en plus: ne pas afficher les boutons si la liste = 0 ou 1 element, ou si on a ajouté cet role
-If ((Form:C1466.role_es.length<2)\
- | (Form:C1466.posRoleSel_i=0))
-	OBJECT SET VISIBLE:C603(*; "btSuivant@"; False:C215)
-	OBJECT SET VISIBLE:C603(*; "btPrecedent@"; False:C215)
-	OBJECT SET VISIBLE:C603(*; "btPremier@"; False:C215)
-	OBJECT SET VISIBLE:C603(*; "btDernier@"; False:C215)
-	
-End if 
-
+// $1; $form_o: object
+// $0; $form_o: object
+$form_o:=$1
 //se déplacer dans la liste box de page  1
-Case of 
-	: (Form:C1466.action="PREMIER")
-		Form:C1466.posRoleSel_i:=1
-		
-	: (Form:C1466.action="PRECEDENT")
-		If (Form:C1466.posRoleSel_i>1)
-			Form:C1466.posRoleSel_i:=Form:C1466.posRoleSel_i-1
-		Else 
-			Form:C1466.posRoleSel_i:=Form:C1466.role_es.length
-		End if 
-		
-	: (Form:C1466.action="SUIVANT")
-		If (Form:C1466.posRoleSel_i<Form:C1466.role_es.length)
-			Form:C1466.posRoleSel_i:=Form:C1466.posRoleSel_i+1
-		Else 
-			Form:C1466.posRoleSel_i:=1
-		End if 
-		
-	: (Form:C1466.action="DERNIER")
-		Form:C1466.posRoleSel_i:=Form:C1466.role_es.length
-		
-End case 
+$form_o.posRoleSel_i:=_f_deplacer_curseur($form_o.action; $form_o.role_es.length; $form_o.posRoleSel_i)
 
-// après mise à jour du "Form.eleCou...Pos", blanchir "Form.action" (car utilisé dans déplacement pg2 et pg3)
-Form:C1466.action:="MODIFIER"
+// après mise à jour du "$form_o.eleCou...Pos", blanchir "$form_o.action" (car utilisé dans déplacement pg2 et pg3)
+$form_o.action:="MODIFIER"
 
-//"Form.role_es" est vide: aucun role trouvé suivant les critères, \
-du coup l'utilisateur en crée un mais la liste reste vide.... CQFD 
-If ((Form:C1466.role_es.length=0)\
- | (Form:C1466.posRoleSel_i=0))
-Else 
+If ($form_o.posRoleSel_i>0)
 	//les info sur le role sélectionné: pour affichage détail
-	C_LONGINT:C283($ind)
-	$ind:=Form:C1466.posRoleSel_i-1  //si position=1, alors indice=0
-	//role
-	$role_es:=ds:C1482.Role.query("ID=:1"; Form:C1466.role_es[$ind].ID)
-	$role_e:=$role_es.first()
-	Form:C1466.role:=$role_e
-	//dépendances
-	Form:C1466.qui:=Form:C1466.role.qui
-	Form:C1466.quoi:=Form:C1466.role.quoi
-	Form:C1466.rolesDuQui_es:=Form:C1466.qui.roles
-	Form:C1466.rolesDuQuoi_es:=Form:C1466.quoi.roles
+	//-role
+	$form_o.role_e:=$form_o.role_es[$form_o.posRoleSel_i-1]  //si position=1, alors indice=0
+	//-dépendances du role
+	$form_o.qui_e:=$form_o.role_e.qui
+	$form_o.quoi_e:=$form_o.role_e.quoi
+	$form_o.rolesDuQui_es:=$form_o.qui_e.roles
+	$form_o.rolesDuQuoi_es:=$form_o.quoi_e.roles
+	$form_o.message:="Info sur le role de '"+$form_o.qui_e.Nom+"'"+" dans '"+$form_o.quoi_e.Nom+"'"
 End if 
-
-//mémoriser le nouvel élément courant
-Form:C1466.roleSel_e:=Form:C1466.role_es[$ind]
+$0:=$form_o

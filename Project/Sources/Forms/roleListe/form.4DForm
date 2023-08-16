@@ -246,19 +246,6 @@
 					"width": 134,
 					"height": 31
 				},
-				"btValider": {
-					"type": "button",
-					"text": "Quitter",
-					"top": 19,
-					"left": 757,
-					"width": 60,
-					"height": 24,
-					"events": [
-						"onClick"
-					],
-					"defaultButton": false,
-					"method": "ObjectMethods/btValider.4dm"
-				},
 				"zCritereNom": {
 					"type": "input",
 					"left": 16,
@@ -363,6 +350,18 @@
 					"style": "custom",
 					"method": "ObjectMethods/btTrace.4dm",
 					"borderStyle": "solid"
+				},
+				"btQuitter": {
+					"type": "button",
+					"text": "Quitter",
+					"top": 23,
+					"left": 752,
+					"width": 60,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"action": "cancel"
 				}
 			},
 			"entryOrder": [
@@ -375,14 +374,14 @@
 				"zCritereDomaine",
 				"zCritereStyle",
 				"btAppliquerFiltreRole",
-				"btValider",
 				"lb_roleListe",
 				"bTrace",
-				"btTrace"
+				"btTrace",
+				"btQuitter"
 			]
 		}
 	],
-	"geometryStamp": 761,
+	"geometryStamp": 764,
 	"method": "method.4dm",
 	"editor": {
 		"activeView": "View 1",

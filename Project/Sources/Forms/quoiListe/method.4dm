@@ -1,5 +1,4 @@
 //formulaire quoiListe
-Form:C1466.message:=""
 
 Case of 
 	: (Form event code:C388=On Unload:K2:2)
@@ -10,8 +9,6 @@ Case of
 			Form:C1466.page:=0
 			CANCEL:C270
 		End if 
-		
-		
 		
 	: (Form event code:C388=On Load:K2:1)
 		
@@ -37,11 +34,11 @@ Case of
 		End if 
 		
 		If (Form:C1466.action="INIT")
-			charger_lesQuois
+			charger_LesQuois
 		End if 
 		// aller à la page précisée
 		FORM GOTO PAGE:C247(Form:C1466.page)
 		//si "escape de page 3: perte elecou -> actualiser élément courant
-		Form:C1466.quoiSel_e:=Form:C1466.quoi
+		Form:C1466.quoiSel_e:=Form:C1466.quoi_e
 		
 End case 

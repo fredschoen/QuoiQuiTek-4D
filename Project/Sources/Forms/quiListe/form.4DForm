@@ -27,7 +27,7 @@
 				"lb_quiListe": {
 					"type": "listbox",
 					"dataSource": "Form:C1466.qui_es",
-					"top": 75,
+					"top": 36,
 					"left": 10,
 					"width": 800,
 					"height": 469,
@@ -150,7 +150,7 @@
 				"Texte": {
 					"type": "text",
 					"text": "pour voir détail: Click ou Flèche droite ",
-					"top": 177,
+					"top": 138,
 					"left": 830,
 					"width": 115,
 					"height": 45
@@ -158,7 +158,7 @@
 				"zCritereNom": {
 					"type": "input",
 					"left": 12,
-					"top": 49,
+					"top": 10,
 					"width": 315,
 					"height": 16,
 					"dataSource": "Form:C1466.critereQuiListe.FullName"
@@ -166,7 +166,7 @@
 				"btAppliquerFiltreQui": {
 					"type": "button",
 					"text": "Appliquer le filtre",
-					"top": 48,
+					"top": 9,
 					"left": 807,
 					"width": 113,
 					"height": 24,
@@ -179,7 +179,7 @@
 				"zCritereGenre": {
 					"type": "input",
 					"left": 328,
-					"top": 48,
+					"top": 9,
 					"width": 44,
 					"height": 16,
 					"dataSource": "Form:C1466.critereQuiListe.Genre"
@@ -187,7 +187,7 @@
 				"zCriterePays": {
 					"type": "input",
 					"left": 384,
-					"top": 48,
+					"top": 9,
 					"width": 78,
 					"height": 16,
 					"dataSource": "Form:C1466.critereQuiListe.Pays"
@@ -195,7 +195,7 @@
 				"zCritereDateNaiss": {
 					"type": "input",
 					"left": 476,
-					"top": 49,
+					"top": 10,
 					"width": 75,
 					"height": 16,
 					"dataSource": "Form:C1466.critereQuiListe.DateNaiss"
@@ -203,7 +203,7 @@
 				"zCritereDateDeces": {
 					"type": "input",
 					"left": 557,
-					"top": 49,
+					"top": 10,
 					"width": 70,
 					"height": 16,
 					"dataSource": "Form:C1466.critereQuiListe.DateDeces"
@@ -211,7 +211,7 @@
 				"btAjouterQui": {
 					"type": "button",
 					"text": "Ajouter un qui",
-					"top": 83,
+					"top": 44,
 					"left": 830,
 					"width": 120,
 					"height": 24,
@@ -224,7 +224,7 @@
 				"zCritereDomaine": {
 					"type": "input",
 					"left": 635,
-					"top": 49,
+					"top": 10,
 					"width": 45,
 					"height": 16,
 					"dataSource": "Form:C1466.critereQuiListe.Domaine"
@@ -232,7 +232,7 @@
 				"zCritereStyle": {
 					"type": "input",
 					"left": 695,
-					"top": 52,
+					"top": 13,
 					"width": 80,
 					"height": 16,
 					"dataSource": "Form:C1466.critereQuiListe.Style"
@@ -240,8 +240,8 @@
 				"btTrace": {
 					"type": "button",
 					"text": "trace",
-					"top": 29,
-					"left": 880,
+					"top": 18,
+					"left": 927,
 					"width": 40,
 					"height": 15,
 					"events": [
@@ -251,21 +251,11 @@
 					"method": "ObjectMethods/btTrace.4dm",
 					"borderStyle": "solid"
 				},
-				"zMessage": {
-					"type": "input",
-					"left": 103,
-					"top": 14,
-					"width": 749,
-					"height": 16,
-					"dataSource": "Form:C1466.message",
-					"enterable": false,
-					"dataSourceTypeHint": "text"
-				},
 				"fred": {
 					"type": "button",
 					"text": "fred",
-					"top": 232,
-					"left": 861,
+					"top": 192,
+					"left": 837,
 					"width": 113,
 					"height": 24,
 					"events": [
@@ -273,6 +263,18 @@
 					],
 					"method": "ObjectMethods/fred.4dm",
 					"defaultButton": true
+				},
+				"btQuitter": {
+					"type": "button",
+					"text": "Quitter",
+					"top": 84,
+					"left": 833,
+					"width": 60,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"action": "cancel"
 				}
 			},
 			"entryOrder": [
@@ -281,18 +283,18 @@
 				"zCriterePays",
 				"zCritereDateNaiss",
 				"zCritereDateDeces",
+				"zCritereDomaine",
+				"zCritereStyle",
 				"btAppliquerFiltreQui",
 				"lb_quiListe",
 				"btAjouterQui",
-				"zCritereDomaine",
-				"zCritereStyle",
 				"btTrace",
-				"zMessage",
-				"fred"
+				"fred",
+				"btQuitter"
 			]
 		}
 	],
-	"geometryStamp": 2685,
+	"geometryStamp": 2732,
 	"method": "method.4dm",
 	"editor": {
 		"activeView": "View 1",

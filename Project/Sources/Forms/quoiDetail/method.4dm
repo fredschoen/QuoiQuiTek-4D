@@ -1,4 +1,5 @@
 //formulaire quoiDetail
+var $form_o : Object
 Case of 
 		
 	: (Form event code:C388=On Load:K2:1)
@@ -7,7 +8,9 @@ Case of
 			Form:C1466.utilisationListe:=""
 		End if 
 		
-		charger_unQuoi
+		$form_o:=Form:C1466
+		$form_o:=charger_unQuoi($form_o)
+		Form:C1466:=$form_o
 		
 		//visibilité des boutons de navigation
 		visibleBtNavig

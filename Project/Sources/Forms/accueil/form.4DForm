@@ -94,17 +94,30 @@
 					"style": "custom",
 					"method": "ObjectMethods/btTrace.4dm",
 					"borderStyle": "solid"
+				},
+				"btQuitter": {
+					"type": "button",
+					"text": "Quitter",
+					"top": 296,
+					"left": 494,
+					"width": 60,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"action": "cancel"
 				}
 			},
 			"entryOrder": [
 				"bQuoi",
 				"bQui",
 				"bRole",
-				"btTrace"
+				"btTrace",
+				"btQuitter"
 			]
 		}
 	],
-	"geometryStamp": 346,
+	"geometryStamp": 348,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",

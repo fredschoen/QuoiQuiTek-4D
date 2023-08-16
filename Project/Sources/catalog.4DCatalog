@@ -75,7 +75,7 @@
 		<field name="ModifDate" uuid="3FEB29E774326348A9E9590D7AE7778A" type="8" never_null="true" id="9"/>
 		<field name="ModifHeure" uuid="004FF5EA48D6BC43B756CF96055DF72A" type="9" never_null="true" id="10"/>
 		<primary_key field_name="ID" field_uuid="DDE19C7481C5434A99086AF974399B29"/>
-		<table_extra output_form="Formulaire1" input_form="Formulaire2">
+		<table_extra output_form="Sortie" input_form="Entree">
 			<editor_table_info displayable_fields_count="11">
 				<color red="255" green="255" blue="255" alpha="0"/>
 				<coordinates left="276" top="32" width="130" height="275.33203125"/>

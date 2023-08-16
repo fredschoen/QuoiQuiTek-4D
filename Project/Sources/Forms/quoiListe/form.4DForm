@@ -387,6 +387,18 @@
 					"style": "custom",
 					"method": "ObjectMethods/btTrace.4dm",
 					"borderStyle": "solid"
+				},
+				"btQuitter": {
+					"type": "button",
+					"text": "Quitter",
+					"top": 99,
+					"left": 917,
+					"width": 60,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"action": "cancel"
 				}
 			},
 			"entryOrder": [
@@ -405,11 +417,12 @@
 				"btAppliquerFiltreQuoi",
 				"lb_quoiListe",
 				"btAjouterQuoi",
-				"btTrace"
+				"btTrace",
+				"btQuitter"
 			]
 		}
 	],
-	"geometryStamp": 3345,
+	"geometryStamp": 3347,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",

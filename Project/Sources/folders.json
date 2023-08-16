@@ -17,7 +17,7 @@
 			"anneePlus",
 			"atteindrePageDetail",
 			"atteindrePageListe",
-			"charger_lesQuois",
+			"charger_LesQuois",
 			"charger_unQui",
 			"charger_unQuoi",
 			"Compiler_Methods",
@@ -48,8 +48,8 @@
 	},
 	"3.Outils": {
 		"methods": [
+			"__f_apellant",
 			"_ListeChamps4D",
-			"_test",
 			"z_import_quoi",
 			"zzz_ModifDeMasse_Quoi",
 			"zzzViderPourPublier"
@@ -69,8 +69,8 @@
 			"[Quoi]Entree",
 			"[Quoi]Sortie",
 			"[Quoi]zzz",
-			"[Role]Formulaire1",
-			"[Role]Formulaire2",
+			"[Role]Entree",
+			"[Role]Sortie",
 			"accueil"
 		]
 	},

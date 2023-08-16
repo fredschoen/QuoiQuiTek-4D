@@ -1,54 +1,22 @@
 //%attributes = {}
 // charger_unQuoi
+// $1; $form_o: object
+// $0; $form_o: object
 
-var $anneeQuoi : Integer
-
-Form:C1466.message:=""
+var $0; $1; $form_o : Object
+$form_o:=$1
 
 //se déplacer dans la liste box de page  1
-Case of 
-		
-	: (Form:C1466.action="PRECEDENT")
-		If (Form:C1466.posQuoiSel_i>1)
-			Form:C1466.posQuoiSel_i:=Form:C1466.posQuoiSel_i-1
-		Else 
-			Form:C1466.posQuoiSel_i:=Form:C1466.quoi_es.length
-		End if 
-		
-	: (Form:C1466.action="SUIVANT")
-		If (Form:C1466.posQuoiSel_i<Form:C1466.quoi_es.length)
-			Form:C1466.posQuoiSel_i:=Form:C1466.posQuoiSel_i+1
-		Else 
-			Form:C1466.posQuoiSel_i:=1
-		End if 
-		
-	: (Form:C1466.action="PREMIER")
-		Form:C1466.posQuoiSel_i:=1
-		
-	: (Form:C1466.action="DERNIER")
-		Form:C1466.posQuoiSel_i:=Form:C1466.quoi_es.length
-		
-	Else 
-		
-End case 
+$form_o.posQuoiSel_i:=_f_deplacer_curseur($form_o.action; $form_o.quoi_es.length; $form_o.posQuoiSel_i)
 
-// après mise à jour du "Form.quoiSel_ePos", blanchir "Form.action" (car utilisé dans déplacement pg2 et pg3)
-Form:C1466.action:="MODIFIER"
+// après mise à jour du "$form_o.quoiSel_ePos", blanchir "$form_o.action" (car utilisé dans déplacement pg2 et pg3)
+$form_o.action:="MODIFIER"
 
-//"Form.quoi_es" est vide: aucun quoi trouvé suivant les critères, \
-du coup l'utilisateur en crée un mais la liste reste vide.... CQFD 
-If ((Form:C1466.quoi_es.length=0)\
- | (Form:C1466.posQuoiSel_i=0))
-	// pour test: CONFIRMER("charger_unQuoi: Form.quoi_es.length=0")
-Else 
+If ($form_o.posQuoiSel_i>0))
 	//les info sur le quoi sélectionné: pour affichage détail
-	C_LONGINT:C283($ind)
-	$ind:=Form:C1466.posQuoiSel_i-1  //si position=1, alors indice=0
-	Form:C1466.quoi:=Form:C1466.quoi_es[$ind]
-	
+	$form_o.quoi_e:=$form_o.quoi_es[$form_o.posQuoiSel_i-1]  //si position=1, alors indice=0
+	$form_o.role_es:=$form_o.quoi_e.roles
+	$form_o.message:="Info sur '"+$form_o.quoi_e.Nom+"'"
 End if 
 
-Form:C1466.TitrePage3:="Role dans '"+Form:C1466.quoi.Nom+"'"
-
-//mémoriser le nouvel élément courant
-Form:C1466.quoiSel_e:=Form:C1466.quoi
+$0:=$form_o
