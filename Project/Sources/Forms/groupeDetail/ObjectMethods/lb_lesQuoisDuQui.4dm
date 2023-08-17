@@ -10,8 +10,7 @@ If ($pourSelectionner_b)
 	$form_o.action:="MODIFIER"
 	$form_o.page:=1
 	$form_o.quoi_e:=Form:C1466.rolesDuQuiSel_e.quoi
-	var $role_es : cs:C1710.RoleSelection
-	$role_es:=ds:C1482.Role.query("ID = :1"; $form_o.quoi_e.ID)
-	$form_o.quoi_es:=$role_es
+	$role_es:=$form_o.quoi_e.roles
+	$form_o.quoi_es:=$role_es.orderBy("Descr")
 	dialoguer("quoiDetail"; $form_o)
 End if 

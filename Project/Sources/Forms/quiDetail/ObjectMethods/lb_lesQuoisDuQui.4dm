@@ -11,6 +11,6 @@ If ($pourSelectionner_b)
 	$form_o.role_es:=Form:C1466.role_es
 	$form_o.posRoleSel_i:=Form:C1466.posRoleSel_i
 	
-	dialoguer("roleDetailDuQui"; $form_o)
+	dialoguer("roleDetailQuoi"; $form_o)
 	
 End if 

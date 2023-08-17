@@ -1,16 +1,10 @@
 //%attributes = {}
 // charger_LesQuois
-
 var $quoi_es : cs:C1710.QuoiSelection
 var $texteQuery : Text
 
-If (Form:C1466.critereQuoiListe.Nom>"")
-	$texteQuery:="Nom=:1"
-Else 
-	$texteQuery:=""
-End if 
-
-$texteQuery:=_f_traduireArgQuery("Nom"; "texte"; Form:C1466.critereQuoiListe.Nom)
+$texteQuery:=""
+$texteQuery:=$texteQuery+_f_traduireArgQuery("Nom"; "texte"; Form:C1466.critereQuoiListe.Nom)
 $texteQuery:=$texteQuery+_f_traduireArgQuery("Genre"; "texte"; Form:C1466.critereQuoiListe.Genre; Length:C16($texteQuery))
 $texteQuery:=$texteQuery+_f_traduireArgQuery("Pays"; "texte"; Form:C1466.critereQuoiListe.Pays; Length:C16($texteQuery))
 $texteQuery:=$texteQuery+_f_traduireArgQuery("Stock"; "texte"; Form:C1466.critereQuoiListe.Stock; Length:C16($texteQuery))

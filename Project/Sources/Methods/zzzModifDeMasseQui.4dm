@@ -28,7 +28,7 @@ For each ($e; $es)
 		
 		$e.DateNaiss:=$z_e.c1
 		
-		//$e.DateNaiss:=String($e.AnneeNaiss)
+		//$e.DateNaiss:=String($e.DateNaiss)
 		
 		//$i:=Position(" "; $e.FullName)
 		//If ($i>0)

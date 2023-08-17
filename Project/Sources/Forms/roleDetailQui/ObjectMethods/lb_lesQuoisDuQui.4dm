@@ -9,9 +9,9 @@ If ($pourSelectionner_b)
 	$form_o:=New object:C1471()
 	$form_o.action:="MODIFIER"
 	$form_o.page:=1
-	$form_o.quoi_e:=Form:C1466.rolesDuQuiSel_e.quoi
-	var $role_es : cs:C1710.RoleSelection
-	$role_es:=ds:C1482.Role.query("ID = :1"; $form_o.quoi_e.ID)
-	$form_o.quoi_es:=$role_es
-	dialoguer("quoiDetail"; $form_o)
+	$form_o.role_e:=Form:C1466.rolesDuQuiSel_e
+	$form_o.role_es:=Form:C1466.rolesDuQui_es
+	$form_o.posRoleSel_i:=Form:C1466.posRolesDuQui_i
+	
+	dialoguer("roleDetailQuoi"; $form_o)
 End if 

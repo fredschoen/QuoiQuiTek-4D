@@ -19,7 +19,7 @@
 		"onUnload",
 		"onAfterKeystroke"
 	],
-	"windowTitle": "Détail du Role",
+	"windowTitle": "Détail Quoi du Role",
 	"destination": "detailScreen",
 	"pages": [
 		{
@@ -194,15 +194,15 @@
 					"type": "text",
 					"text": "Nom:",
 					"top": 69,
-					"left": 474,
-					"width": 60,
+					"left": 470,
+					"width": 50,
 					"height": 17
 				},
 				"field_Nom": {
 					"type": "input",
 					"dataSource": "Form:C1466.quoi_e.Nom",
 					"top": 69,
-					"left": 537,
+					"left": 525,
 					"width": 250,
 					"height": 17
 				},
@@ -210,55 +210,55 @@
 					"type": "text",
 					"text": "Genre:",
 					"top": 97,
-					"left": 474,
-					"width": 60,
+					"left": 470,
+					"width": 50,
 					"height": 17
 				},
 				"label_Pays1": {
 					"type": "text",
 					"text": "Pays:",
 					"top": 174,
-					"left": 484,
-					"width": 60,
+					"left": 470,
+					"width": 50,
 					"height": 17
 				},
 				"label_Stock": {
 					"type": "text",
 					"text": "Stock:",
-					"top": 231,
-					"left": 476,
-					"width": 35,
+					"top": 229,
+					"left": 470,
+					"width": 50,
 					"height": 17
 				},
 				"label_Real": {
 					"type": "text",
 					"text": "Real:",
 					"top": 121,
-					"left": 476,
-					"width": 35,
+					"left": 470,
+					"width": 50,
 					"height": 17
 				},
 				"field_Real": {
 					"type": "input",
 					"dataSource": "Form:C1466.quoi_e.Real",
 					"top": 121,
-					"left": 516,
+					"left": 525,
 					"width": 209,
 					"height": 16
 				},
 				"label_Annee": {
 					"type": "text",
-					"text": "Annee:",
-					"top": 203,
-					"left": 473,
-					"width": 60,
+					"text": "Date:",
+					"top": 201,
+					"left": 470,
+					"width": 50,
 					"height": 17
 				},
-				"field_Annee": {
+				"field_Date": {
 					"type": "input",
-					"dataSource": "Form:C1466.quoi_e.Annee",
-					"top": 202,
-					"left": 536,
+					"dataSource": "Form:C1466.quoi_e.Date",
+					"top": 200,
+					"left": 525,
 					"width": 100,
 					"height": 17
 				},
@@ -266,23 +266,23 @@
 					"type": "text",
 					"text": "Domaine:",
 					"top": 147,
-					"left": 474,
-					"width": 60,
+					"left": 470,
+					"width": 50,
 					"height": 17
 				},
 				"label_Prod": {
 					"type": "text",
 					"text": "Prod:",
-					"top": 283,
-					"left": 473,
-					"width": 60,
+					"top": 279,
+					"left": 470,
+					"width": 50,
 					"height": 17
 				},
 				"field_Prod": {
 					"type": "input",
 					"dataSource": "Form:C1466.quoi_e.Prod",
-					"top": 283,
-					"left": 536,
+					"top": 279,
+					"left": 525,
 					"width": 123,
 					"height": 16
 				},
@@ -311,7 +311,7 @@
 				},
 				"Genre_CB": {
 					"type": "combo",
-					"left": 537,
+					"left": 525,
 					"top": 94,
 					"width": 150,
 					"height": 20,
@@ -326,7 +326,7 @@
 				},
 				"paysQuoi_CB": {
 					"type": "combo",
-					"left": 547,
+					"left": 525,
 					"top": 173,
 					"width": 80,
 					"height": 18,
@@ -341,24 +341,24 @@
 				},
 				"field_Info": {
 					"type": "input",
-					"left": 99,
-					"top": 351,
-					"width": 759,
+					"left": 76,
+					"top": 337,
+					"width": 785,
 					"height": 32,
 					"dataSource": "Form:C1466.infoQuoi"
 				},
 				"label_Info": {
 					"type": "text",
 					"text": "Info:",
-					"top": 338,
-					"left": 35,
+					"top": 337,
+					"left": 14,
 					"width": 60,
 					"height": 17
 				},
 				"StockQuoi_CB": {
 					"type": "combo",
-					"left": 516,
-					"top": 229,
+					"left": 525,
+					"top": 227,
 					"width": 150,
 					"height": 18,
 					"events": [
@@ -372,7 +372,7 @@
 				},
 				"DomaineQuoi_CB": {
 					"type": "combo",
-					"left": 537,
+					"left": 525,
 					"top": 147,
 					"width": 150,
 					"height": 18,
@@ -408,16 +408,16 @@
 				"label_DateDernVisu": {
 					"type": "text",
 					"text": "DateDernVisu:",
-					"top": 307,
-					"left": 474,
-					"width": 60,
+					"top": 303,
+					"left": 470,
+					"width": 50,
 					"height": 17
 				},
 				"field_Prod1": {
 					"type": "input",
 					"dataSource": "Form:C1466.quoi_e.DateDernVisu",
-					"top": 307,
-					"left": 537,
+					"top": 303,
+					"left": 525,
 					"width": 117,
 					"height": 16,
 					"entryFilter": "!0&9##/##/##"
@@ -425,16 +425,16 @@
 				"label_Qualif": {
 					"type": "text",
 					"text": "Qualif:",
-					"top": 255,
-					"left": 484,
-					"width": 40,
+					"top": 253,
+					"left": 470,
+					"width": 50,
 					"height": 17
 				},
 				"field_Annee1": {
 					"type": "input",
 					"dataSource": "Form:C1466.quoi_e.Qualif",
-					"top": 255,
-					"left": 522,
+					"top": 253,
+					"left": 525,
 					"width": 46,
 					"height": 16
 				},
@@ -515,24 +515,25 @@
 					"type": "listbox",
 					"dataSource": "Form:C1466.rolesDuQuoi_es",
 					"top": 386,
-					"left": 109,
+					"left": 76,
 					"width": 810,
-					"height": 141,
+					"height": 191,
 					"visibility": "visible",
 					"sizingX": "fixed",
-					"sizingY": "fixed",
+					"sizingY": "grow",
 					"headerHeight": "2em",
 					"listboxType": "collection",
 					"scrollbarHorizontal": "automatic",
 					"scrollbarVertical": "automatic",
 					"resizingMode": "legacy",
 					"method": "ObjectMethods/lb_lesQuisDuQuoi.4dm",
-					"currentItemSource": "Form:C1466.roleQuiSel_e",
+					"currentItemSource": "",
 					"events": [
 						"onClick",
 						"onAfterKeystroke"
 					],
-					"currentItemPositionSource": "Form:C1466.posRoleQuiSel_i",
+					"currentItemPositionSource": "Form:C1466.posRolesDuQuoi_i",
+					"selectedItemsSource": "Form:C1466.rolesDuQuoiSel_e",
 					"columns": [
 						{
 							"name": "cNomQuiDuQuoi",
@@ -552,7 +553,7 @@
 						},
 						{
 							"name": "cAnneeQuiDuQuoi",
-							"dataSource": "This:C1470.qui.AnneeNaiss",
+							"dataSource": "This:C1470.qui.DateNaiss",
 							"width": 80,
 							"enterable": true,
 							"header": {
@@ -634,9 +635,9 @@
 					"type": "text",
 					"text": "roles dans le quoi",
 					"top": 400,
-					"left": 0,
-					"width": 100,
-					"height": 15
+					"left": 14,
+					"width": 52,
+					"height": 60
 				},
 				"btTrace": {
 					"type": "button",
@@ -683,7 +684,7 @@
 				"field_Real",
 				"DomaineQuoi_CB",
 				"paysQuoi_CB",
-				"field_Annee",
+				"field_Date",
 				"StockQuoi_CB",
 				"field_Annee1",
 				"field_Prod",
@@ -709,7 +710,7 @@
 			]
 		}
 	],
-	"geometryStamp": 410,
+	"geometryStamp": 538,
 	"method": "method.4dm",
 	"editor": {
 		"activeView": "View 1",

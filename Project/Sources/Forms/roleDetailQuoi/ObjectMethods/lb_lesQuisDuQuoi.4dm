@@ -10,8 +10,10 @@ If ($pourSelectionner_b)
 	$form_o:=New object:C1471()
 	$form_o.action:="MODIFIER"
 	$form_o.page:=1
-	$form_o.qui_e:=Form:C1466.rolesDuQuoiSel_e.qui
+	$form_o.role_e:=Form:C1466.rolesDuQuoiSel_e
+	$form_o.role_es:=Form:C1466.rolesDuQuoi_es
+	$form_o.posRoleSel_i:=Form:C1466.posRolesDuQuoi_i
 	
-	dialoguer("quiDetail"; $form_o)
+	dialoguer("roleDetailQui"; $form_o)
 	
 End if 

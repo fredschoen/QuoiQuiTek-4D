@@ -1,15 +1,17 @@
 //%attributes = {}
 // charger_lesQuis
-C_TEXT:C284($texteQuery)
-$texteQuery:=_f_traduireArgQuery("FullName"; "texte"; Form:C1466.critereQuiListe.FullName)
+var $qui_es : cs:C1710.QuiSelection
+var $texteQuery : Text
+
+$texteQuery:=""
+$texteQuery:=$texteQuery+_f_traduireArgQuery("FullName"; "texte"; Form:C1466.critereQuiListe.FullName)
 $texteQuery:=$texteQuery+_f_traduireArgQuery("Genre"; "texte"; Form:C1466.critereQuiListe.Genre; Length:C16($texteQuery))
 $texteQuery:=$texteQuery+_f_traduireArgQuery("Pays"; "texte"; Form:C1466.critereQuiListe.Pays; Length:C16($texteQuery))
-$texteQuery:=$texteQuery+_f_traduireArgQuery("AnneeNaiss"; "texte"; Form:C1466.critereQuiListe.DateNaiss; Length:C16($texteQuery))
-$texteQuery:=$texteQuery+_f_traduireArgQuery("AnneeDeces"; "texte"; Form:C1466.critereQuiListe.DateDeces; Length:C16($texteQuery))
+$texteQuery:=$texteQuery+_f_traduireArgQuery("DateNaiss"; "texte"; Form:C1466.critereQuiListe.DateNaiss; Length:C16($texteQuery))
+$texteQuery:=$texteQuery+_f_traduireArgQuery("DateDeces"; "texte"; Form:C1466.critereQuiListe.DateDeces; Length:C16($texteQuery))
 $texteQuery:=$texteQuery+_f_traduireArgQuery("Domaine"; "texte"; Form:C1466.critereQuiListe.Domaine; Length:C16($texteQuery))
 $texteQuery:=$texteQuery+_f_traduireArgQuery("Style"; "texte"; Form:C1466.critereQuiListe.Style; Length:C16($texteQuery))
 
-C_OBJECT:C1216($liste)
 If ($texteQuery>"")
 	
 	//cas particulier du Fullname (avec apostrophe)
@@ -41,13 +43,13 @@ If ($texteQuery>"")
 			$valeurCritereFullName:=$valeurCritereFullName+"@"
 		End if 
 		
-		$liste:=ds:C1482.Qui.query($texteQuery; $valeurCritereFullName)
+		$qui_es:=ds:C1482.Qui.query($texteQuery; $valeurCritereFullName)
 	Else 
-		$liste:=ds:C1482.Qui.query($texteQuery)
+		$qui_es:=ds:C1482.Qui.query($texteQuery)
 	End if 
 	
 Else 
-	$liste:=ds:C1482.Qui.all()
+	$qui_es:=ds:C1482.Qui.all()
 End if 
 
-Form:C1466.qui_es:=$liste.orderBy("FullName")
+Form:C1466.qui_es:=$qui_es.orderBy("FullName")

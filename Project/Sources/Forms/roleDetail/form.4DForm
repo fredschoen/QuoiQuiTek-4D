@@ -715,12 +715,12 @@
 					"scrollbarVertical": "automatic",
 					"resizingMode": "legacy",
 					"method": "ObjectMethods/lb_lesQuisDuQuoi.4dm",
-					"currentItemSource": "Form:C1466.roleQuiSel_e",
+					"currentItemSource": "Form:C1466.rolesDuQuoiSel_e",
 					"events": [
 						"onClick",
 						"onAfterKeystroke"
 					],
-					"currentItemPositionSource": "Form:C1466.posRoleQuiSel_i",
+					"currentItemPositionSource": "Form:C1466.posRolesDuQuoi_i",
 					"columns": [
 						{
 							"name": "cNomQuiDuQuoi",
@@ -740,7 +740,7 @@
 						},
 						{
 							"name": "cAnneeQuiDuQuoi",
-							"dataSource": "This:C1470.qui.AnneeNaiss",
+							"dataSource": "This:C1470.qui.DateNaiss",
 							"width": 80,
 							"enterable": true,
 							"header": {
@@ -873,8 +873,8 @@
 					"resizingMode": "legacy",
 					"dataSource": "Form:C1466.rolesDuQui_es",
 					"selectionMode": "single",
-					"currentItemSource": "Form:C1466.roleQuoiSel_e",
-					"currentItemPositionSource": "Form:C1466.posRoleQuoiSel_i",
+					"currentItemSource": "Form:C1466.rolesDuQuiSel_e",
+					"currentItemPositionSource": "Form:C1466.posRolesDuQui_i",
 					"selectedItemsSource": "",
 					"events": [
 						"onClick",

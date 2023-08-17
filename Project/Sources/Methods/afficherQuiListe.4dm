@@ -16,10 +16,19 @@ End if
 //cas où on utilise la liste des quis pour ajouter un role à un quoi
 If ($form_o.utilisationListe="AJOUTER_ROLE")
 	If (Count parameters:C259<2)
-		ALERT:C41(Current method name:C684()+": manque $2 <=>quoiID_ajouterRole)")
+		ALERT:C41(Current method name:C684()+": manque $2 (quoiID_ajouterRole)")
 		TRACE:C157
 	Else 
 		$form_o.quoiID_ajouterRole:=$2
+	End if 
+End if 
+
+If ($form_o.utilisationListe="AJOUTER_QUI")
+	If (Count parameters:C259<2)
+		ALERT:C41(Current method name:C684()+": manque $2 (groupeID_ajouterQui)")
+		TRACE:C157
+	Else 
+		$form_o.groupeID_ajouterQui:=$2
 	End if 
 End if 
 

@@ -67,11 +67,11 @@
 						},
 						{
 							"name": "AnneeNaiss",
-							"dataSource": "This:C1470.qui.AnneeNaiss",
+							"dataSource": "This:C1470.qui.DateNaiss",
 							"width": 56,
 							"enterable": true,
 							"header": {
-								"text": "Annee Naiss",
+								"text": "Date Naiss",
 								"name": "Entête2"
 							},
 							"footer": {

@@ -22,9 +22,9 @@
 		<field name="ModifHeure" uuid="0605A870E6B1B34AA75C941CCD5F4060" type="9" never_null="true" id="17"/>
 		<primary_key field_name="ID" field_uuid="7D44AEC0186F8341BF2162AF1B5099CF"/>
 		<table_extra output_form="Sortie" input_form="Entree" trigger_delete="true">
-			<editor_table_info displayable_fields_count="17">
+			<editor_table_info displayable_fields_count="18">
 				<color red="255" green="255" blue="255" alpha="0"/>
-				<coordinates left="533" top="0" width="140" height="409.33203125"/>
+				<coordinates left="777" top="0" width="140" height="433.33203125"/>
 			</editor_table_info>
 		</table_extra>
 	</table>
@@ -38,11 +38,9 @@
 			</field_extra>
 		</field>
 		<field name="Genre" uuid="15FFEC7B9B271E49B225ED08E50E39A6" type="10" limiting_length="255" never_null="true" id="3"/>
-		<field name="AnneeNaiss" uuid="B2E3AFF86FE1E14CB00CA6509034DBBD" type="3" never_null="true" id="4"/>
 		<field name="Pays" uuid="D3B12BA7EFC074448E23498DE47B6617" type="10" limiting_length="255" never_null="true" id="5">
 			<field_extra enumeration_id="2"/>
 		</field>
-		<field name="AnneeDeces" uuid="AB20ED680C489A429C207CAD5967E345" type="3" never_null="true" id="6"/>
 		<field name="Photo" uuid="07A493E23C599842A255D01BF28841C0" type="12" never_null="true" id="7"/>
 		<field name="Domaine" uuid="1F05095FF9109747A2176696D42A1048" type="10" limiting_length="255" never_null="true" id="8"/>
 		<field name="Style" uuid="9B90807F5A86ED4E8FCBF46BC066923C" type="10" limiting_length="255" never_null="true" id="9"/>
@@ -57,9 +55,9 @@
 		<field name="DateDeces" uuid="C9F6C466D22B6948BBEBBA117EA2A3BB" type="10" limiting_length="10" never_null="true" id="18"/>
 		<primary_key field_name="ID" field_uuid="0527D929F2CBE74A886B87DB09906737"/>
 		<table_extra output_form="Sortie" input_form="Entree" trigger_delete="true" trigger_update="true" trigger_insert="true">
-			<editor_table_info displayable_fields_count="19">
+			<editor_table_info displayable_fields_count="20">
 				<color red="255" green="255" blue="255" alpha="0"/>
-				<coordinates left="12" top="0" width="155" height="449.33203125"/>
+				<coordinates left="12" top="0" width="155" height="462.33203125"/>
 			</editor_table_info>
 		</table_extra>
 	</table>
@@ -74,11 +72,23 @@
 		<field name="CreatHeure" uuid="58AA4B53EA3D2240B62ED33F1160D6FC" type="9" never_null="true" id="8"/>
 		<field name="ModifDate" uuid="3FEB29E774326348A9E9590D7AE7778A" type="8" never_null="true" id="9"/>
 		<field name="ModifHeure" uuid="004FF5EA48D6BC43B756CF96055DF72A" type="9" never_null="true" id="10"/>
+		<field name="ID_Groupe" uuid="1A1C5EA293E78B4EA2A4A7C5AC48325B" type="4" never_null="true" id="11"/>
 		<primary_key field_name="ID" field_uuid="DDE19C7481C5434A99086AF974399B29"/>
 		<table_extra output_form="Sortie" input_form="Entree">
 			<editor_table_info displayable_fields_count="11">
 				<color red="255" green="255" blue="255" alpha="0"/>
-				<coordinates left="276" top="32" width="130" height="275.33203125"/>
+				<coordinates left="530" top="0" width="130" height="275.33203125"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="Groupe" uuid="D88F0FD61202DA49864CA77FFAC012A0" id="4">
+		<field name="ID" uuid="18B8EA71D3B1ED4B9EB0E1E3676B4B5E" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
+		<field name="Nom" uuid="EFE08309B9F6AF4F8178D993DB700555" type="10" limiting_length="255" never_null="true" id="2"/>
+		<primary_key field_name="ID" field_uuid="18B8EA71D3B1ED4B9EB0E1E3676B4B5E"/>
+		<table_extra>
+			<editor_table_info displayable_fields_count="5">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="529" top="298" width="131" height="165.33203125"/>
 			</editor_table_info>
 		</table_extra>
 	</table>
@@ -89,6 +99,19 @@
 			<editor_table_info fields_ordering="1" displayable_fields_count="6">
 				<color red="255" green="255" blue="255" alpha="0"/>
 				<coordinates left="40" top="287" width="120" height="167.33203125"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="Poste" uuid="381A3D5B3CB3134294F031C4748A5E5E" id="6">
+		<field name="ID" uuid="12C98D30D7058942958D3D7D5552264A" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
+		<field name="ID_Qui" uuid="4C7F0C9CA313B84F8E7DD83637E45835" type="4" never_null="true" id="2"/>
+		<field name="ID_Groupe" uuid="21CE5AE2EA24D149935A7B1964EF2081" type="4" never_null="true" id="3"/>
+		<field name="Descr" uuid="04DF76D6F746304EB49F4F8F566EEF39" type="10" limiting_length="255" never_null="true" id="4"/>
+		<primary_key field_name="ID" field_uuid="12C98D30D7058942958D3D7D5552264A"/>
+		<table_extra>
+			<editor_table_info displayable_fields_count="6">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="259" top="103" width="120" height="167.33203125"/>
 			</editor_table_info>
 		</table_extra>
 	</table>
@@ -126,14 +149,75 @@
 			</editor_relation_info>
 		</relation_extra>
 	</relation>
+	<relation uuid="F81249524E2BE748BA9104E99A8CFB2E" name_Nto1="groupe" name_1toN="role" auto_load_Nto1="false" auto_load_1toN="false" foreign_key="false" state="1">
+		<related_field kind="source">
+			<field_ref uuid="1A1C5EA293E78B4EA2A4A7C5AC48325B" name="ID_Groupe">
+				<table_ref uuid="36E36289CCCA4644A71A1D2676364BB1" name="Role"/>
+			</field_ref>
+		</related_field>
+		<related_field kind="destination">
+			<field_ref uuid="18B8EA71D3B1ED4B9EB0E1E3676B4B5E" name="ID">
+				<table_ref uuid="D88F0FD61202DA49864CA77FFAC012A0" name="Groupe"/>
+			</field_ref>
+		</related_field>
+		<relation_extra entry_wildchar="false" entry_create="false" choice_field="0" entry_autofill="false">
+			<editor_relation_info via_point_x="-1" via_point_y="-1" prefers_left="true" smartlink="true">
+				<color red="240" green="240" blue="240" alpha="0"/>
+			</editor_relation_info>
+		</relation_extra>
+	</relation>
+	<relation uuid="FAEC33C2FAE4DF45AB89072ED8C0B70E" name_Nto1="groupe" name_1toN="postes" auto_load_Nto1="false" auto_load_1toN="false" foreign_key="false" state="1">
+		<related_field kind="source">
+			<field_ref uuid="21CE5AE2EA24D149935A7B1964EF2081" name="ID_Groupe">
+				<table_ref uuid="381A3D5B3CB3134294F031C4748A5E5E" name="Poste"/>
+			</field_ref>
+		</related_field>
+		<related_field kind="destination">
+			<field_ref uuid="18B8EA71D3B1ED4B9EB0E1E3676B4B5E" name="ID">
+				<table_ref uuid="D88F0FD61202DA49864CA77FFAC012A0" name="Groupe"/>
+			</field_ref>
+		</related_field>
+		<relation_extra entry_wildchar="false" entry_create="false" choice_field="0" entry_autofill="false">
+			<editor_relation_info via_point_x="-1" via_point_y="-1" prefers_left="false" smartlink="true">
+				<color red="240" green="240" blue="240" alpha="0"/>
+			</editor_relation_info>
+		</relation_extra>
+	</relation>
+	<relation uuid="CCE17664BBA924479E9EF4C08B5150A5" name_Nto1="qui" name_1toN="postes" auto_load_Nto1="false" auto_load_1toN="false" foreign_key="false" state="1">
+		<related_field kind="source">
+			<field_ref uuid="4C7F0C9CA313B84F8E7DD83637E45835" name="ID_Qui">
+				<table_ref uuid="381A3D5B3CB3134294F031C4748A5E5E" name="Poste"/>
+			</field_ref>
+		</related_field>
+		<related_field kind="destination">
+			<field_ref uuid="0527D929F2CBE74A886B87DB09906737" name="ID">
+				<table_ref uuid="7F9A35CDF0EFB6429B6FA24F9D22CD4E" name="Qui"/>
+			</field_ref>
+		</related_field>
+		<relation_extra entry_wildchar="false" entry_create="false" choice_field="0" entry_autofill="false">
+			<editor_relation_info via_point_x="-1" via_point_y="-1" prefers_left="true" smartlink="true">
+				<color red="240" green="240" blue="240" alpha="0"/>
+			</editor_relation_info>
+		</relation_extra>
+	</relation>
 	<index kind="regular" uuid="08C2E743E2E2A447B215C0EF0AEB345D" type="7">
 		<field_ref uuid="33B70CCC0843DE429F0B0C50D132DFE5" name="ID_Qui">
 			<table_ref uuid="36E36289CCCA4644A71A1D2676364BB1" name="Role"/>
 		</field_ref>
 	</index>
+	<index kind="regular" unique_keys="true" uuid="0C320701EBF89C42BA871488296CD871" type="7">
+		<field_ref uuid="12C98D30D7058942958D3D7D5552264A" name="ID">
+			<table_ref uuid="381A3D5B3CB3134294F031C4748A5E5E" name="Poste"/>
+		</field_ref>
+	</index>
 	<index kind="regular" unique_keys="true" uuid="1348779D39CE504D9F80E95C0E463BD3" type="7">
 		<field_ref uuid="7D44AEC0186F8341BF2162AF1B5099CF" name="ID">
 			<table_ref uuid="1AA34083D0527E4F91A17E4D5A70AA8D" name="Quoi"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="34ED86C8ED4A5D4392818DD317E34510" type="7">
+		<field_ref uuid="1A1C5EA293E78B4EA2A4A7C5AC48325B" name="ID_Groupe">
+			<table_ref uuid="36E36289CCCA4644A71A1D2676364BB1" name="Role"/>
 		</field_ref>
 	</index>
 	<index kind="regular" unique_keys="true" uuid="6364D20D79F0DD4F8BBC79874363AE50" type="7">
@@ -144,6 +228,11 @@
 	<index kind="regular" uuid="7B4E115DE3797841B86FF1E57D282408" type="7">
 		<field_ref uuid="224E05CCD982514682542710BE59B128" name="ID_Quoi">
 			<table_ref uuid="36E36289CCCA4644A71A1D2676364BB1" name="Role"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="7C48022B664C314A9BB1995A9FB0970B" type="7">
+		<field_ref uuid="18B8EA71D3B1ED4B9EB0E1E3676B4B5E" name="ID">
+			<table_ref uuid="D88F0FD61202DA49864CA77FFAC012A0" name="Groupe"/>
 		</field_ref>
 	</index>
 	<index kind="regular" unique_keys="true" uuid="D56B79129F466B479B367C3993B6468E" type="7">

@@ -48,9 +48,9 @@
 	},
 	"3.Outils": {
 		"methods": [
-			"__f_apellant",
 			"_ListeChamps4D",
 			"z_import_quoi",
+			"zzz_f_apellant",
 			"zzz_ModifDeMasse_Quoi",
 			"zzzViderPourPublier"
 		]

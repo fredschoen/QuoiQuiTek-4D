@@ -16,8 +16,8 @@ If ($form_o.posRoleSel_i>0)
 	//-dépendances du role
 	$form_o.qui_e:=$form_o.role_e.qui
 	$form_o.quoi_e:=$form_o.role_e.quoi
-	$form_o.rolesDuQui_es:=$form_o.qui_e.roles
-	$form_o.rolesDuQuoi_es:=$form_o.quoi_e.roles
-	$form_o.message:="Info sur le role de '"+$form_o.qui_e.Nom+"'"+" dans '"+$form_o.quoi_e.Nom+"'"
+	$form_o.rolesDuQui_es:=$form_o.qui_e.roles.orderBy("quoi.Date")
+	$form_o.rolesDuQuoi_es:=$form_o.quoi_e.roles.orderBy("qui.DateNaiss")
+	$form_o.message:="Info sur le role de '"+$form_o.qui_e.FullName+"'"+" dans '"+$form_o.quoi_e.Nom+"'"
 End if 
 $0:=$form_o

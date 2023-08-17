@@ -104,8 +104,8 @@
 							"maxWidth": 100
 						},
 						{
-							"name": "cAnneeDeces1",
-							"dataSource": "This:C1470.AnneeDeces",
+							"name": "cDateDeces",
+							"dataSource": "This:C1470.DateDeces",
 							"width": 80,
 							"enterable": true,
 							"header": {
@@ -294,7 +294,7 @@
 			]
 		}
 	],
-	"geometryStamp": 2732,
+	"geometryStamp": 2733,
 	"method": "method.4dm",
 	"editor": {
 		"activeView": "View 1",

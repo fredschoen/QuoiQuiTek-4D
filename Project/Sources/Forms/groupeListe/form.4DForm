@@ -1,0 +1,148 @@
+{
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"windowSizingX": "variable",
+	"windowSizingY": "variable",
+	"windowMinWidth": 0,
+	"windowMinHeight": 0,
+	"windowMaxWidth": 32767,
+	"windowMaxHeight": 32767,
+	"rightMargin": 20,
+	"bottomMargin": 20,
+	"events": [
+		"onLoad",
+		"onClick",
+		"onAfterKeystroke"
+	],
+	"windowTitle": "window title",
+	"destination": "detailScreen",
+	"pages": [
+		{
+			"objects": {}
+		},
+		{
+			"objects": {
+				"lb_groupeListe": {
+					"type": "listbox",
+					"dataSource": "Form:C1466.groupe_es",
+					"top": 35,
+					"left": 14,
+					"width": 616,
+					"height": 469,
+					"visibility": "visible",
+					"sizingX": "fixed",
+					"sizingY": "grow",
+					"headerHeight": "2em",
+					"listboxType": "collection",
+					"scrollbarHorizontal": "automatic",
+					"scrollbarVertical": "automatic",
+					"resizingMode": "legacy",
+					"selectedItemsSource": "Form:C1466.groupeSel_e",
+					"currentItemSource": "",
+					"events": [
+						"onClick",
+						"onAfterKeystroke"
+					],
+					"method": "ObjectMethods/lb_groupeListe.4dm",
+					"currentItemPositionSource": "Form:C1466.posGroupeSel_i",
+					"columns": [
+						{
+							"name": "c_Nom2",
+							"dataSource": "This:C1470.Nom",
+							"width": 320,
+							"enterable": true,
+							"header": {
+								"text": "Nom",
+								"name": "eNomQui"
+							},
+							"footer": {
+								"name": "7"
+							}
+						}
+					]
+				},
+				"Texte": {
+					"type": "text",
+					"text": "pour voir détail: Click ou Flèche droite ",
+					"top": 138,
+					"left": 650,
+					"width": 115,
+					"height": 45
+				},
+				"btAjouterGroupe": {
+					"type": "button",
+					"text": "Ajouter un groupe",
+					"top": 44,
+					"left": 650,
+					"width": 120,
+					"height": 24,
+					"events": [
+						"onClick"
+					],
+					"defaultButton": false,
+					"method": "ObjectMethods/btAjouterGroupe.4dm"
+				},
+				"btTrace": {
+					"type": "button",
+					"text": "trace",
+					"top": 18,
+					"left": 650,
+					"width": 40,
+					"height": 15,
+					"events": [
+						"onClick"
+					],
+					"style": "custom",
+					"method": "ObjectMethods/btTrace.4dm",
+					"borderStyle": "solid"
+				},
+				"btQuitter": {
+					"type": "button",
+					"text": "Quitter",
+					"top": 84,
+					"left": 650,
+					"width": 60,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"action": "cancel"
+				},
+				"zCritereNom": {
+					"type": "input",
+					"left": 14,
+					"top": 11,
+					"width": 302,
+					"height": 16,
+					"dataSource": "Form:C1466.critereGroupeListe.Nom",
+					"bottom": 27
+				},
+				"btAppliquerFiltreQuoi": {
+					"type": "button",
+					"text": "Filtrer",
+					"top": 9,
+					"left": 570,
+					"width": 60,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/btAppliquerFiltreQuoi.4dm",
+					"defaultButton": true,
+					"bottom": 29
+				}
+			}
+		}
+	],
+	"geometryStamp": 31,
+	"method": "method.4dm",
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {}
+		}
+	}
+}
