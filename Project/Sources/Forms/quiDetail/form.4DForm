@@ -63,7 +63,7 @@
 						},
 						{
 							"name": "cAgeQui",
-							"dataSource": "This:C1470.AgeQui",
+							"dataSource": "This:C1470.getAge()",
 							"width": 55,
 							"enterable": true,
 							"header": {
@@ -77,7 +77,7 @@
 						{
 							"name": "cQuoiAnnee",
 							"dataSource": "This:C1470.quoi.Date",
-							"width": 55,
+							"width": 70,
 							"enterable": true,
 							"header": {
 								"text": "Annee",
@@ -251,7 +251,8 @@
 					"top": 130,
 					"left": 300,
 					"width": 80,
-					"height": 18
+					"height": 18,
+					"textAlign": "left"
 				},
 				"btSauverQui": {
 					"type": "button",

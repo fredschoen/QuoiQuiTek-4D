@@ -11,6 +11,7 @@ If ($pourSelectionner_b)
 	$form_o.qui_es:=Form:C1466.qui_es
 	$form_o.posQuiSel_i:=Form:C1466.posQuiSel_i
 	$form_o.utilisationListe:=Form:C1466.utilisationListe
+	$form_o.quoiID_ajouterRole:=Form:C1466.quoiID_ajouterRole  //pour AJOUTER_ROLE
 	dialoguer("quiDetail"; $form_o)
 	
 End if 

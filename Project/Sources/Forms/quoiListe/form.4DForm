@@ -197,20 +197,6 @@
 						}
 					]
 				},
-				"btAjouterQuoi": {
-					"type": "button",
-					"text": "Ajouter un quoi",
-					"top": 72,
-					"left": 917,
-					"width": 100,
-					"height": 24,
-					"events": [
-						"onClick"
-					],
-					"defaultButton": false,
-					"method": "ObjectMethods/btAjouterQuoi.4dm",
-					"style": "regular"
-				},
 				"Texte": {
 					"type": "text",
 					"text": "pour voir détail: Click ou Flèche droite",
@@ -399,6 +385,19 @@
 						"onClick"
 					],
 					"action": "cancel"
+				},
+				"btAjouterQuoi": {
+					"type": "button",
+					"text": "Ajouter un quoi",
+					"top": 52,
+					"left": 917,
+					"width": 88,
+					"height": 31,
+					"events": [
+						"onClick"
+					],
+					"defaultButton": false,
+					"method": "ObjectMethods/btAjouterQuoi.4dm"
 				}
 			},
 			"entryOrder": [
@@ -416,13 +415,13 @@
 				"bAnneeMoins",
 				"btAppliquerFiltreQuoi",
 				"lb_quoiListe",
-				"btAjouterQuoi",
 				"btTrace",
-				"btQuitter"
+				"btQuitter",
+				"btAjouterQuoi"
 			]
 		}
 	],
-	"geometryStamp": 3347,
+	"geometryStamp": 3352,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",

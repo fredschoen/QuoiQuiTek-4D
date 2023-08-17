@@ -879,80 +879,86 @@
 				"collapsed": true
 			},
 			{
-				"text": "disk-dvd",
+				"text": "Disk (nonZip)",
 				"ref": 8,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "dvd",
+				"text": "disk-dvd",
 				"ref": 9,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "dvd(fin ko)",
+				"text": "dvd",
 				"ref": 10,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "expo",
+				"text": "dvd(fin ko)",
 				"ref": 11,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "Malr",
+				"text": "expo",
 				"ref": 12,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "MAMCS",
+				"text": "Malr",
 				"ref": 13,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "n",
+				"text": "MAMCS",
 				"ref": 14,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "NetFlix",
+				"text": "n",
 				"ref": 15,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "ntz",
+				"text": "NetFlix",
 				"ref": 16,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "pdf",
+				"text": "ntz",
 				"ref": 17,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "pom",
+				"text": "pdf",
 				"ref": 18,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "w",
+				"text": "pom",
 				"ref": 19,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "x",
+				"text": "w",
 				"ref": 20,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "x",
+				"ref": 21,
 				"editable": true,
 				"collapsed": true
 			}
@@ -1134,116 +1140,122 @@
 				"collapsed": true
 			},
 			{
-				"text": "Jazz",
+				"text": "Folk",
 				"ref": 14,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "Jeune",
+				"text": "Jazz",
 				"ref": 15,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "Mrcq",
+				"text": "Jeune",
 				"ref": 16,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "Mrcq; Sch",
+				"text": "Mrcq",
 				"ref": 17,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "Pol",
+				"text": "Mrcq; Sch",
 				"ref": 18,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "Rap",
+				"text": "Pol",
 				"ref": 19,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "Recits",
+				"text": "Rap",
 				"ref": 20,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "Reggae",
+				"text": "Recits",
 				"ref": 21,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "Rock",
+				"text": "Reggae",
 				"ref": 22,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "Rock Lourd",
+				"text": "Rock",
 				"ref": 23,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "RockB",
+				"text": "Rock Lourd",
 				"ref": 24,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "RockBilly",
+				"text": "RockB",
 				"ref": 25,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "Rom",
+				"text": "RockBilly",
 				"ref": 26,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "Salsa",
+				"text": "Rom",
 				"ref": 27,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "sauvage",
+				"text": "Salsa",
 				"ref": 28,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "SF",
+				"text": "sauvage",
 				"ref": 29,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "Soul",
+				"text": "SF",
 				"ref": 30,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "SoulW",
+				"text": "Soul",
 				"ref": 31,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "World",
+				"text": "SoulW",
 				"ref": 32,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "World",
+				"ref": 33,
 				"editable": true,
 				"collapsed": true
 			}

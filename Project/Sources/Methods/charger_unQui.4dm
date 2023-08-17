@@ -16,6 +16,7 @@ If ($form_o.posQuiSel_i>0)
 	//les info sur le qui sélectionné: pour affichage détail
 	$form_o.qui_e:=$form_o.qui_es[$form_o.posQuiSel_i-1]  //si position=1, alors indice=0
 	$form_o.role_es:=$form_o.qui_e.roles
+	$form_o.role_es:=$form_o.role_es.orderBy("quoi.Date")
 	$form_o.message:="Info sur '"+$form_o.qui_e.FullName+"'"
 End if 
 $0:=$form_o

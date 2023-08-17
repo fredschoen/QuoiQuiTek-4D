@@ -27,81 +27,19 @@
 		},
 		{
 			"objects": {
-				"label_Nom": {
-					"type": "text",
-					"text": "Nom:",
-					"top": 127,
-					"left": 0,
-					"width": 50,
-					"height": 17,
-					"textAlign": "right"
-				},
-				"zQuiNom": {
-					"type": "input",
-					"dataSource": "Form:C1466.qui_e.Nom",
-					"top": 126,
-					"left": 57,
-					"width": 165,
-					"height": 17
-				},
-				"label_Genre1": {
-					"type": "text",
-					"text": "Genre:",
-					"top": 152,
-					"left": 0,
-					"width": 50,
-					"height": 17,
-					"textAlign": "right"
-				},
-				"label_AnneeNaiss": {
-					"type": "text",
-					"text": "Date naiss:",
-					"top": 153,
-					"left": 167,
-					"width": 64,
-					"height": 15,
-					"textAlign": "left"
-				},
-				"zDateNaiss": {
-					"type": "input",
-					"dataSource": "Form:C1466.qui_e.DateNaiss",
-					"top": 154,
-					"left": 230,
-					"width": 56,
-					"height": 18
-				},
-				"label_Pays": {
-					"type": "text",
-					"text": "Pays:",
-					"top": 175,
-					"left": 174,
-					"width": 29,
-					"height": 20,
-					"textAlign": "right"
-				},
-				"label_DateDeces": {
-					"type": "text",
-					"text": "Date Décès",
-					"top": 154,
-					"left": 290,
-					"width": 69,
-					"height": 18,
-					"textAlign": "right"
-				},
-				"zDateDeces": {
-					"type": "input",
-					"dataSource": "Form:C1466.qui_e.DateDeces",
-					"top": 153,
-					"left": 368,
-					"width": 56,
-					"height": 18
+				"Rectangle": {
+					"type": "rectangle",
+					"top": 61,
+					"left": 13,
+					"width": 451,
+					"height": 263
 				},
 				"iQuiPhoto": {
 					"type": "input",
-					"left": 864,
+					"left": 751,
 					"top": 99,
-					"width": 196,
-					"height": 144,
+					"width": 309,
+					"height": 224,
 					"dataSourceTypeHint": "picture",
 					"dataSource": "Form:C1466.qui_e.Photo",
 					"enterable": true,
@@ -176,37 +114,6 @@
 						"onClick"
 					],
 					"method": "ObjectMethods/btDernier.4dm"
-				},
-				"cb_GenreQui": {
-					"type": "combo",
-					"left": 57,
-					"top": 152,
-					"width": 100,
-					"height": 18,
-					"events": [
-						"onDataChange"
-					],
-					"dataSource": "Form:C1466.qui_e.Genre",
-					"dataSourceTypeHint": "text",
-					"automaticInsertion": false,
-					"choiceList": {
-						"$ref": "/SOURCES/lists.json#/GenreQui"
-					}
-				},
-				"cb_PaysQui": {
-					"type": "combo",
-					"left": 211,
-					"top": 175,
-					"width": 66,
-					"height": 20,
-					"events": [
-						"onDataChange"
-					],
-					"dataSourceTypeHint": "text",
-					"choiceList": {
-						"$ref": "/SOURCES/lists.json#/PaysQui"
-					},
-					"dataSource": "Form:C1466.qui_e.Pays"
 				},
 				"zQuiID": {
 					"type": "input",
@@ -283,166 +190,101 @@
 					"width": 30,
 					"height": 15
 				},
-				"label_Pays2": {
-					"type": "text",
-					"text": "Domaine:",
-					"top": 175,
-					"left": 11,
-					"width": 50,
-					"height": 20,
-					"textAlign": "right"
-				},
-				"cb_DomaineQui": {
-					"type": "combo",
-					"left": 68,
-					"top": 175,
-					"width": 100,
-					"height": 20,
-					"events": [
-						"onDataChange"
-					],
-					"dataSourceTypeHint": "text",
-					"choiceList": {
-						"$ref": "/SOURCES/lists.json#/DomaineQui"
-					},
-					"dataSource": "Form:C1466.qui_e.Domaine"
-				},
-				"label_Pays3": {
-					"type": "text",
-					"text": "Style:",
-					"top": 175,
-					"left": 290,
-					"width": 52,
-					"height": 20,
-					"textAlign": "right"
-				},
-				"cb_StyleQui": {
-					"type": "combo",
-					"left": 345,
-					"top": 175,
-					"width": 101,
-					"height": 20,
-					"events": [
-						"onDataChange"
-					],
-					"dataSourceTypeHint": "text",
-					"choiceList": {
-						"$ref": "/SOURCES/lists.json#/PaysQui"
-					},
-					"dataSource": "Form:C1466.qui_e.Style"
-				},
-				"label_Rem1": {
-					"type": "text",
-					"text": "Info:",
-					"top": 126,
-					"left": 455,
-					"width": 50,
-					"height": 17,
-					"textAlign": "right"
-				},
-				"zInfo": {
-					"type": "input",
-					"dataSource": "Form:C1466.qui_e.Info",
-					"top": 130,
-					"left": 510,
-					"width": 328,
-					"height": 65
-				},
 				"label_Nom1": {
 					"type": "text",
 					"text": "Nom:",
-					"top": 377,
-					"left": 35,
+					"top": 69,
+					"left": 474,
 					"width": 60,
 					"height": 17
 				},
 				"field_Nom": {
 					"type": "input",
 					"dataSource": "Form:C1466.quoi_e.Nom",
-					"top": 377,
-					"left": 98,
+					"top": 69,
+					"left": 537,
 					"width": 250,
 					"height": 17
 				},
 				"label_Genre": {
 					"type": "text",
 					"text": "Genre:",
-					"top": 380,
-					"left": 361,
+					"top": 97,
+					"left": 474,
 					"width": 60,
 					"height": 17
 				},
 				"label_Pays1": {
 					"type": "text",
 					"text": "Pays:",
-					"top": 403,
-					"left": 255,
+					"top": 174,
+					"left": 484,
 					"width": 60,
 					"height": 17
 				},
 				"label_Stock": {
 					"type": "text",
 					"text": "Stock:",
-					"top": 403,
-					"left": 580,
+					"top": 231,
+					"left": 476,
 					"width": 35,
 					"height": 17
 				},
 				"label_Real": {
 					"type": "text",
 					"text": "Real:",
-					"top": 380,
-					"left": 580,
+					"top": 121,
+					"left": 476,
 					"width": 35,
 					"height": 17
 				},
 				"field_Real": {
 					"type": "input",
 					"dataSource": "Form:C1466.quoi_e.Real",
-					"top": 380,
-					"left": 620,
-					"width": 244,
+					"top": 121,
+					"left": 516,
+					"width": 209,
 					"height": 16
 				},
 				"label_Annee": {
 					"type": "text",
 					"text": "Annee:",
-					"top": 402,
-					"left": 404,
+					"top": 203,
+					"left": 473,
 					"width": 60,
 					"height": 17
 				},
 				"field_Annee": {
 					"type": "input",
 					"dataSource": "Form:C1466.quoi_e.Annee",
-					"top": 401,
-					"left": 467,
+					"top": 202,
+					"left": 536,
 					"width": 100,
 					"height": 17
 				},
 				"label_Domaine": {
 					"type": "text",
 					"text": "Domaine:",
-					"top": 401,
-					"left": 35,
+					"top": 147,
+					"left": 474,
 					"width": 60,
 					"height": 17
 				},
 				"label_Prod": {
 					"type": "text",
 					"text": "Prod:",
-					"top": 424,
-					"left": 35,
+					"top": 283,
+					"left": 473,
 					"width": 60,
 					"height": 17
 				},
 				"field_Prod": {
 					"type": "input",
 					"dataSource": "Form:C1466.quoi_e.Prod",
-					"top": 424,
-					"left": 98,
-					"width": 250,
-					"height": 17
+					"top": 283,
+					"left": 536,
+					"width": 123,
+					"height": 16
 				},
 				"btSauver": {
 					"type": "button",
@@ -469,8 +311,8 @@
 				},
 				"Genre_CB": {
 					"type": "combo",
-					"left": 424,
-					"top": 377,
+					"left": 537,
+					"top": 94,
 					"width": 150,
 					"height": 20,
 					"events": [
@@ -484,8 +326,8 @@
 				},
 				"paysQuoi_CB": {
 					"type": "combo",
-					"left": 318,
-					"top": 402,
+					"left": 547,
+					"top": 173,
 					"width": 80,
 					"height": 18,
 					"events": [
@@ -500,7 +342,7 @@
 				"field_Info": {
 					"type": "input",
 					"left": 99,
-					"top": 451,
+					"top": 351,
 					"width": 759,
 					"height": 32,
 					"dataSource": "Form:C1466.infoQuoi"
@@ -508,15 +350,15 @@
 				"label_Info": {
 					"type": "text",
 					"text": "Info:",
-					"top": 438,
+					"top": 338,
 					"left": 35,
 					"width": 60,
 					"height": 17
 				},
 				"StockQuoi_CB": {
 					"type": "combo",
-					"left": 620,
-					"top": 401,
+					"left": 516,
+					"top": 229,
 					"width": 150,
 					"height": 18,
 					"events": [
@@ -530,8 +372,8 @@
 				},
 				"DomaineQuoi_CB": {
 					"type": "combo",
-					"left": 98,
-					"top": 401,
+					"left": 537,
+					"top": 147,
 					"width": 150,
 					"height": 18,
 					"events": [
@@ -566,42 +408,42 @@
 				"label_DateDernVisu": {
 					"type": "text",
 					"text": "DateDernVisu:",
-					"top": 424,
-					"left": 368,
+					"top": 307,
+					"left": 474,
 					"width": 60,
 					"height": 17
 				},
 				"field_Prod1": {
 					"type": "input",
 					"dataSource": "Form:C1466.quoi_e.DateDernVisu",
-					"top": 424,
-					"left": 431,
-					"width": 250,
-					"height": 17,
+					"top": 307,
+					"left": 537,
+					"width": 117,
+					"height": 16,
 					"entryFilter": "!0&9##/##/##"
 				},
 				"label_Qualif": {
 					"type": "text",
 					"text": "Qualif:",
-					"top": 402,
-					"left": 780,
+					"top": 255,
+					"left": 484,
 					"width": 40,
 					"height": 17
 				},
 				"field_Annee1": {
 					"type": "input",
 					"dataSource": "Form:C1466.quoi_e.Qualif",
-					"top": 402,
-					"left": 818,
+					"top": 255,
+					"left": 522,
 					"width": 46,
 					"height": 16
 				},
 				"rolePhoto_ZS": {
 					"type": "input",
-					"left": 874,
-					"top": 354,
-					"width": 186,
-					"height": 128,
+					"left": 26,
+					"top": 94,
+					"width": 300,
+					"height": 224,
 					"dataSourceTypeHint": "picture",
 					"dataSource": "Form:C1466.role_e.Photo",
 					"pictureFormat": "proportionalCenter"
@@ -625,7 +467,7 @@
 					"type": "input",
 					"dataSource": "Form:C1466.role_e.Descr",
 					"top": 69,
-					"left": 121,
+					"left": 53,
 					"width": 389,
 					"height": 17
 				},
@@ -637,49 +479,19 @@
 					"width": 79,
 					"height": 15
 				},
-				"Ligne1": {
-					"type": "line",
-					"top": 361,
-					"left": 11,
-					"width": 534,
-					"height": 1
-				},
-				"Texte1": {
-					"type": "text",
-					"text": "Info Quoi",
-					"top": 354,
-					"left": 557,
-					"width": 79,
-					"height": 15
-				},
-				"Ligne2": {
-					"type": "line",
-					"top": 105,
-					"left": 6,
-					"width": 595,
-					"height": 1
-				},
-				"Texte3": {
-					"type": "text",
-					"text": "Info Qui",
-					"top": 110,
-					"left": 10,
-					"width": 79,
-					"height": 15
-				},
 				"label_age": {
 					"type": "text",
 					"text": "Age lors du role:",
-					"top": 68,
-					"left": 530,
+					"top": 112,
+					"left": 346,
 					"width": 90,
 					"height": 15
 				},
 				"ge": {
 					"type": "input",
 					"dataSource": "Form:C1466.role_e.getAge()",
-					"top": 68,
-					"left": 617,
+					"top": 135,
+					"left": 378,
 					"width": 30,
 					"height": 16,
 					"enterable": false,
@@ -702,7 +514,7 @@
 				"lb_lesQuisDuQuoi": {
 					"type": "listbox",
 					"dataSource": "Form:C1466.rolesDuQuoi_es",
-					"top": 486,
+					"top": 386,
 					"left": 109,
 					"width": 810,
 					"height": 141,
@@ -724,7 +536,7 @@
 					"columns": [
 						{
 							"name": "cNomQuiDuQuoi",
-							"dataSource": "This:C1470.qui.Nom",
+							"dataSource": "This:C1470.qui.FullName",
 							"width": 250,
 							"enterable": true,
 							"header": {
@@ -821,27 +633,10 @@
 				"Texte4": {
 					"type": "text",
 					"text": "roles dans le quoi",
-					"top": 500,
+					"top": 400,
 					"left": 0,
 					"width": 100,
 					"height": 15
-				},
-				"label_Prenom": {
-					"type": "text",
-					"text": "Prénom:",
-					"top": 127,
-					"left": 228,
-					"width": 50,
-					"height": 17,
-					"textAlign": "right"
-				},
-				"zQuiPrenom": {
-					"type": "input",
-					"dataSource": "Form:C1466.qui_e.Prenom",
-					"top": 126,
-					"left": 285,
-					"width": 165,
-					"height": 17
 				},
 				"btTrace": {
 					"type": "button",
@@ -856,168 +651,6 @@
 					"style": "custom",
 					"method": "ObjectMethods/btTrace.4dm",
 					"borderStyle": "solid"
-				},
-				"lb_lesQuoisDuQui": {
-					"type": "listbox",
-					"top": 205,
-					"left": 6,
-					"width": 850,
-					"height": 142,
-					"visibility": "visible",
-					"sizingX": "fixed",
-					"sizingY": "fixed",
-					"headerHeight": "2em",
-					"listboxType": "collection",
-					"scrollbarHorizontal": "automatic",
-					"scrollbarVertical": "automatic",
-					"resizingMode": "legacy",
-					"dataSource": "Form:C1466.rolesDuQui_es",
-					"selectionMode": "single",
-					"currentItemSource": "Form:C1466.roleQuoiSel_e",
-					"currentItemPositionSource": "Form:C1466.posRoleQuoiSel_i",
-					"selectedItemsSource": "",
-					"events": [
-						"onClick",
-						"onAfterKeystroke"
-					],
-					"method": "ObjectMethods/lb_lesQuoisDuQui.4dm",
-					"columns": [
-						{
-							"name": "Annee1",
-							"width": 60,
-							"enterable": true,
-							"header": {
-								"text": "Annee",
-								"name": "Entête4"
-							},
-							"footer": {
-								"name": "32"
-							},
-							"dataSource": "This:C1470.quoi.Date",
-							"textAlign": "center"
-						},
-						{
-							"header": {
-								"name": "37",
-								"text": "Age"
-							},
-							"name": "Stock3",
-							"dataSource": "This:C1470.getAge()",
-							"width": 60,
-							"footer": {
-								"name": "Pied4"
-							},
-							"textAlign": "center"
-						},
-						{
-							"header": {
-								"name": "Entête5",
-								"text": "Role"
-							},
-							"name": "Colonne1",
-							"dataSource": "This:C1470.Descr",
-							"footer": {
-								"name": "Pied6"
-							}
-						},
-						{
-							"name": "Nom2",
-							"width": 160,
-							"enterable": true,
-							"header": {
-								"text": "Quoi",
-								"name": "24"
-							},
-							"footer": {
-								"name": "25"
-							},
-							"dataSource": "This:C1470.quoi.Nom"
-						},
-						{
-							"name": "Genre1",
-							"width": 60,
-							"enterable": true,
-							"header": {
-								"text": "Genre",
-								"name": "26"
-							},
-							"footer": {
-								"name": "27"
-							},
-							"dataSource": "This:C1470.quoi.Genre",
-							"textAlign": "center"
-						},
-						{
-							"name": "Pays2",
-							"width": 60,
-							"enterable": true,
-							"header": {
-								"text": "Pays",
-								"name": "28"
-							},
-							"footer": {
-								"name": "29"
-							},
-							"dataSource": "This:C1470.quoi.Pays",
-							"textAlign": "center"
-						},
-						{
-							"name": "Domaine",
-							"width": 60,
-							"enterable": true,
-							"header": {
-								"text": "Stock",
-								"name": "30"
-							},
-							"footer": {
-								"name": "31"
-							},
-							"dataSource": "This:C1470.quoi.Stock",
-							"textAlign": "center"
-						},
-						{
-							"name": "ID1",
-							"width": 0,
-							"enterable": false,
-							"header": {
-								"text": "Id",
-								"name": "33"
-							},
-							"footer": {
-								"name": "34"
-							},
-							"dataSource": "This:C1470.ID",
-							"visibility": "hidden"
-						},
-						{
-							"name": "Real1",
-							"width": 170,
-							"enterable": true,
-							"header": {
-								"text": "Real",
-								"name": "35"
-							},
-							"footer": {
-								"name": "36"
-							},
-							"dataSource": "This:C1470.quoi.Real",
-							"events": [
-								"onClick",
-								"onAfterKeystroke"
-							]
-						},
-						{
-							"header": {
-								"name": "38",
-								"text": "Prod"
-							},
-							"name": "Prod1",
-							"dataSource": "This:C1470.quoi.Prod",
-							"footer": {
-								"name": "Pied5"
-							}
-						}
-					]
 				},
 				"zMessage": {
 					"type": "input",
@@ -1040,33 +673,11 @@
 						"onClick"
 					],
 					"action": "cancel"
-				},
-				"zAge": {
-					"type": "input",
-					"dataSource": "Form:C1466.qui_e.getAge()",
-					"top": 153,
-					"left": 439,
-					"width": 56,
-					"height": 18,
-					"enterable": false,
-					"fill": "transparent",
-					"borderStyle": "none",
-					"dataSourceTypeHint": "number"
 				}
 			},
 			"entryOrder": [
 				"fieldDescrNom",
-				"zQuiNom",
-				"zQuiPrenom",
-				"cb_GenreQui",
-				"zDateNaiss",
-				"zDateDeces",
-				"cb_DomaineQui",
-				"cb_PaysQui",
-				"cb_StyleQui",
-				"zInfo",
 				"iQuiPhoto",
-				"lb_lesQuoisDuQui",
 				"field_Nom",
 				"Genre_CB",
 				"field_Real",
@@ -1094,12 +705,11 @@
 				"ge",
 				"btTrace",
 				"zMessage",
-				"btQuitter",
-				"zAge"
+				"btQuitter"
 			]
 		}
 	],
-	"geometryStamp": 394,
+	"geometryStamp": 410,
 	"method": "method.4dm",
 	"editor": {
 		"activeView": "View 1",

@@ -15,6 +15,6 @@ OBJECT SET VISIBLE:C603(*; "btSupprimer@"; (Form:C1466.action#"AJOUTER"))
 // bouton "selectionner qui" uniquement si "ajouter role" (dans page 2 "détail")
 OBJECT SET VISIBLE:C603(*; "btSelectionner@"; ((Form:C1466.utilisationListe="AJOUTER_ROLE") & (Form:C1466.action#"AJOUTER")))
 
-//btAjouterRole présent dans "détail quoie" et "détail qui" : ne pas ajouter role quoi quand on ajoute role qui, 
+//btAjouterRole présent dans "détail quoi" et "détail qui" : ne pas ajouter role quoi quand on ajoute role qui, 
 //et inversement
 OBJECT SET VISIBLE:C603(*; "btAjouterRole"; (Form:C1466.utilisationListe#"AJOUTER_ROLE"))
