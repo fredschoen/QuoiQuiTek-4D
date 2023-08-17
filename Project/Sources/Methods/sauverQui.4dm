@@ -1,9 +1,10 @@
 //%attributes = {}
 // sauverQui
-// Entrée: Form.qui_e et .action
+// Entrée: $qui_e et .action
 var $status_o : Object
-
-$status_o:=Form:C1466.qui_e.save()
+var $1; $qui_e : cs:C1710.QuiEntity
+$qui_e:=$1
+$status_o:=$qui_e.save()
 
 If ($status_o.success)
 	If (Form:C1466.action="AJOUTER")

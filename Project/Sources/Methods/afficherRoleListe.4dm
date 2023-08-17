@@ -3,35 +3,29 @@
 // $1: utilisationListe:  text
 
 var $1 : Text
-var $form_obj : Object
+var $form_o : Object
 var $win_l : Integer
 
-$form_obj:=New object:C1471
-$form_obj.action:="INIT"  // chargement initial
-$form_obj.page:=1
-$form_obj.critere:=New object:C1471
+$form_o:=New object:C1471
+$form_o.action:="INIT"  // chargement initial
+$form_o.page:=1
+$form_o.critere:=New object:C1471
 
 //criteres d'affichage :
-$form_obj.critere.role:=New object:C1471
-$form_obj.critere.role.Nom:=""
-$form_obj.critere.role.Genre:=""
-$form_obj.critere.role.Pays:=""
-$form_obj.critere.role.DateNaiss:=""
-$form_obj.critere.role.DateDeces:=""
-$form_obj.critere.role.Domaine:=""
-$form_obj.critere.role.Style:=""
-$form_obj.critere.role.Age:=""
+$form_o.critere.role:=New object:C1471
+$form_o.critere.role.Nom:=""
+$form_o.critere.role.Genre:=""
+$form_o.critere.role.Pays:=""
+$form_o.critere.role.DateNaiss:=""
+$form_o.critere.role.DateDeces:=""
+$form_o.critere.role.Domaine:=""
+$form_o.critere.role.Style:=""
+$form_o.critere.role.Age:=""
 
 If (Count parameters:C259>0)
-	$form_obj.utilisationListe:=$1
+	$form_o.utilisationListe:=$1
 Else 
-	$form_obj.utilisationListe:=""
+	$form_o.utilisationListe:=""
 End if 
 
-$win_l:=Open form window:C675("roleListe")
-
-While ($form_obj.page>0)  // 0 :quitter
-	DIALOG:C40("roleListe"; $form_obj)
-End while 
-
-CLOSE WINDOW:C154($win_l)
+dialoguer("roleListe"; $form_o)

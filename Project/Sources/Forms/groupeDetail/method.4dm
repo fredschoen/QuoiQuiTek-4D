@@ -8,9 +8,7 @@ Case of
 			Form:C1466.utilisationListe:=""
 		End if 
 		
-		$form_o:=Form:C1466
-		$form_o:=charger_unGroupe($form_o)
-		Form:C1466:=$form_o
+		charger_unGroupe
 		
 		//visibilité des boutons de navigation
 		visibleBtNavig

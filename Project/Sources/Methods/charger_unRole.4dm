@@ -1,23 +1,20 @@
 //%attributes = {}
 //charger_unRole
-// $1; $form_o: object
-// $0; $form_o: object
-$form_o:=$1
+
 //se déplacer dans la liste box de page  1
-$form_o.posRoleSel_i:=_f_deplacer_curseur($form_o.action; $form_o.role_es.length; $form_o.posRoleSel_i)
+Form:C1466.posRoleSel_i:=_f_deplacer_curseur(Form:C1466.action; Form:C1466.role_es.length; Form:C1466.posRoleSel_i)
 
-// après mise à jour du "$form_o.eleCou...Pos", blanchir "$form_o.action" (car utilisé dans déplacement pg2 et pg3)
-$form_o.action:="MODIFIER"
+// après mise à jour du "Form.eleCou...Pos", blanchir "Form.action" (car utilisé dans déplacement pg2 et pg3)
+Form:C1466.action:="MODIFIER"
 
-If ($form_o.posRoleSel_i>0)
+If (Form:C1466.posRoleSel_i>0)
 	//les info sur le role sélectionné: pour affichage détail
 	//-role
-	$form_o.role_e:=$form_o.role_es[$form_o.posRoleSel_i-1]  //si position=1, alors indice=0
+	Form:C1466.role_e:=Form:C1466.role_es[Form:C1466.posRoleSel_i-1]  //si position=1, alors indice=0
 	//-dépendances du role
-	$form_o.qui_e:=$form_o.role_e.qui
-	$form_o.quoi_e:=$form_o.role_e.quoi
-	$form_o.rolesDuQui_es:=$form_o.qui_e.roles.orderBy("quoi.Date")
-	$form_o.rolesDuQuoi_es:=$form_o.quoi_e.roles.orderBy("qui.DateNaiss")
-	$form_o.message:="Info sur le role de '"+$form_o.qui_e.FullName+"'"+" dans '"+$form_o.quoi_e.Nom+"'"
+	Form:C1466.qui_e:=Form:C1466.role_e.qui
+	Form:C1466.quoi_e:=Form:C1466.role_e.quoi
+	Form:C1466.rolesDuQui_es:=Form:C1466.qui_e.roles.orderBy("quoi.Date")
+	Form:C1466.rolesDuQuoi_es:=Form:C1466.quoi_e.roles.orderBy("qui.DateNaiss")
+	Form:C1466.message:="Info sur le role de '"+Form:C1466.qui_e.FullName+"'"+" dans '"+Form:C1466.quoi_e.Nom+"'"
 End if 
-$0:=$form_o

@@ -1,5 +1,17 @@
 {
+	"Sources/Forms/roleDetailQuoi/form.4DForm": {
+		"left": 0,
+		"top": 78,
+		"width": 1366,
+		"height": 627
+	},
 	"Sources/Forms/accueil/form.4DForm": {
+		"left": 0,
+		"top": 109,
+		"width": 1366,
+		"height": 627
+	},
+	"Sources/Forms/groupeListe/form.4DForm": {
 		"left": 0,
 		"top": 78,
 		"width": 1366,
@@ -11,7 +23,7 @@
 		"width": 1366,
 		"height": 627
 	},
-	"Sources/Forms/groupeListe/form.4DForm": {
+	"Sources/Forms/quoiListe/form.4DForm": {
 		"left": 0,
 		"top": 78,
 		"width": 1366,
@@ -23,43 +35,13 @@
 		"width": 1366,
 		"height": 627
 	},
-	"Sources/Forms/quoiListe/form.4DForm": {
-		"left": 0,
-		"top": 78,
-		"width": 1366,
-		"height": 627
-	},
-	"Sources/Forms/roleDetail/form.4DForm": {
-		"left": 0,
-		"top": 78,
-		"width": 1366,
-		"height": 627
-	},
-	"Sources/Forms/roleDetailDuQui/form.4DForm": {
-		"left": 0,
-		"top": 78,
-		"width": 1366,
-		"height": 627
-	},
-	"Sources/Forms/roleDetailDuQuoi/form.4DForm": {
-		"left": 0,
-		"top": 78,
-		"width": 1366,
-		"height": 627
-	},
-	"Sources/Forms/roleDetailQuoi/form.4DForm": {
-		"left": 0,
-		"top": 78,
-		"width": 1366,
-		"height": 627
-	},
 	"Sources/Forms/quiListe/form.4DForm": {
 		"left": 0,
 		"top": 78,
 		"width": 1366,
 		"height": 627
 	},
-	"Sources/Forms/roleDetailQui/form.4DForm": {
+	"Sources/Forms/posteDetailQui/form.4DForm": {
 		"left": 0,
 		"top": 78,
 		"width": 1366,

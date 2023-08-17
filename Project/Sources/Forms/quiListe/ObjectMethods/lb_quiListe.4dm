@@ -11,7 +11,13 @@ If ($pourSelectionner_b)
 	$form_o.qui_es:=Form:C1466.qui_es
 	$form_o.posQuiSel_i:=Form:C1466.posQuiSel_i
 	$form_o.utilisationListe:=Form:C1466.utilisationListe
-	$form_o.quoiID_ajouterRole:=Form:C1466.quoiID_ajouterRole  //pour AJOUTER_ROLE
+	Case of 
+		: ($form_o.utilisationListe="AJOUTER_ROLE")
+			$form_o.quoiID_ajouterRole:=Form:C1466.quoiID_ajouterRole  //pour AJOUTER_ROLE
+		: ($form_o.utilisationListe="AJOUTER_POSTE")
+			$form_o.groupeID_ajouterPoste:=Form:C1466.groupeID_ajouterPoste  //pour AJOUTER_POSTE
+	End case 
+	
 	dialoguer("quiDetail"; $form_o)
 	
 End if 

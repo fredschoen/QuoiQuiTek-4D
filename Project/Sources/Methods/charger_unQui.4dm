@@ -1,22 +1,17 @@
 //%attributes = {}
 // charger_unQui
-// $1; $form_o: object
-// $0; $form_o: object
 
-var $0; $1; $form_o : Object
-$form_o:=$1
 
 //se déplacer dans la liste box de page  1
-$form_o.posQuiSel_i:=_f_deplacer_curseur($form_o.action; $form_o.qui_es.length; $form_o.posQuiSel_i)
+Form:C1466.posQuiSel_i:=_f_deplacer_curseur(Form:C1466.action; Form:C1466.qui_es.length; Form:C1466.posQuiSel_i)
 
-// après mise à jour du "$form_o.eleCouPos", blanchir "$form_o.action" (car utilisé dans déplacement pg2 et pg3)
-$form_o.action:="MODIFIER"
+// après mise à jour du "Form.eleCouPos", blanchir "Form.action" (car utilisé dans déplacement pg2 et pg3)
+Form:C1466.action:="MODIFIER"
 
-If ($form_o.posQuiSel_i>0)
+If (Form:C1466.posQuiSel_i>0)
 	//les info sur le qui sélectionné: pour affichage détail
-	$form_o.qui_e:=$form_o.qui_es[$form_o.posQuiSel_i-1]  //si position=1, alors indice=0
-	$form_o.role_es:=$form_o.qui_e.roles
-	$form_o.role_es:=$form_o.role_es.orderBy("quoi.Date")
-	$form_o.message:="Info sur '"+$form_o.qui_e.FullName+"'"
+	Form:C1466.qui_e:=Form:C1466.qui_es[Form:C1466.posQuiSel_i-1]  //si position=1, alors indice=0
+	Form:C1466.role_es:=Form:C1466.qui_e.roles
+	Form:C1466.role_es:=Form:C1466.role_es.orderBy("quoi.Date")
+	Form:C1466.message:="Info sur '"+Form:C1466.qui_e.FullName+"'"
 End if 
-$0:=$form_o

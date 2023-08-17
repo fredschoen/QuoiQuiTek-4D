@@ -1,8 +1,10 @@
 //%attributes = {}
 // afficherQuiListe
 // $1: type d'utilisation de la liste
+var $form_o : Object
+var $1 : Text
+var $2 : Integer
 
-C_OBJECT:C1216($form_o)
 $form_o:=New object:C1471
 $form_o.action:="INIT"  // chargement initial
 $form_o.page:=1
@@ -23,12 +25,12 @@ If ($form_o.utilisationListe="AJOUTER_ROLE")
 	End if 
 End if 
 
-If ($form_o.utilisationListe="AJOUTER_QUI")
+If ($form_o.utilisationListe="AJOUTER_POSTE")
 	If (Count parameters:C259<2)
-		ALERT:C41(Current method name:C684()+": manque $2 (groupeID_ajouterQui)")
+		ALERT:C41(Current method name:C684()+": manque $2 (groupeID_ajouterPoste)")
 		TRACE:C157
 	Else 
-		$form_o.groupeID_ajouterQui:=$2
+		$form_o.groupeID_ajouterPoste:=$2
 	End if 
 End if 
 

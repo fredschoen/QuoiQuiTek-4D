@@ -1,24 +1,16 @@
 //lb_quiListe
 var $pourSelectionner_b : Boolean
 
-$pourSelectionner_b:=_f_pourSelectionner(FORM Event:C1606.code; Form:C1466.quiSel_e)
+$pourSelectionner_b:=_f_pourSelectionner(FORM Event:C1606.code; Form:C1466.posteSel_e)
 
 If ($pourSelectionner_b)
 	
 	$form_o:=New object:C1471
 	$form_o.page:=1
 	$form_o.action:="MODIFIER"
-	$form_o.qui_es:=Form:C1466.qui_es
-	$form_o.posQuiSel_i:=Form:C1466.posQuiSel_i
-	$form_o.utilisationListe:=Form:C1466.utilisationListe
-	Case of 
-		: $form_o.utilisationListe : "AJOUTER_ROLE"
-			$form_o.quoiID_ajouterRole:=Form:C1466.quoiID_ajouterRole  //pour AJOUTER_ROLE
-		: $form_o.utilisationListe : "AJOUTER_QUI"
-			$form_o.groupeID_ajouterQui:=Form:C1466.groupeID_ajouterQui  //pour AJOUTER_QUI
-			
-	End case 
-	
-	dialoguer("quiDetail"; $form_o)
+	$form_o.poste_e:=Form:C1466.posteSel_e
+	$form_o.poste_es:=Form:C1466.poste_es
+	$form_o.posPosteSel_i:=Form:C1466.posPosteSel_i
+	dialoguer("posteDetailQui"; $form_o)
 	
 End if 

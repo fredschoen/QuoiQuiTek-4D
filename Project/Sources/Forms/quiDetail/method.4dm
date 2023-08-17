@@ -1,5 +1,4 @@
 //formulaire quoiDetail
-var $form_o : Object
 
 Case of 
 		
@@ -10,9 +9,7 @@ Case of
 		End if 
 		
 		//en 3 étapes sinon ça coince
-		$form_o:=Form:C1466
-		$form_o:=charger_unQui($form_o)
-		Form:C1466:=$form_o
+		charger_unQui
 		
 		//visibilité des boutons de navigation
 		visibleBtNavig

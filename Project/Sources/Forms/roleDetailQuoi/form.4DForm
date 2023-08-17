@@ -438,7 +438,7 @@
 					"width": 46,
 					"height": 16
 				},
-				"rolePhoto_ZS": {
+				"iRolePhoto": {
 					"type": "input",
 					"left": 26,
 					"top": 94,
@@ -690,7 +690,7 @@
 				"field_Prod",
 				"field_Prod1",
 				"field_Info",
-				"rolePhoto_ZS",
+				"iRolePhoto",
 				"lb_lesQuisDuQuoi",
 				"btSuivant",
 				"btPrecedent",
@@ -710,7 +710,7 @@
 			]
 		}
 	],
-	"geometryStamp": 538,
+	"geometryStamp": 543,
 	"method": "method.4dm",
 	"editor": {
 		"activeView": "View 1",

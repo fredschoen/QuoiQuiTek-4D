@@ -72,7 +72,7 @@
 				"bRole": {
 					"type": "button",
 					"text": "Role",
-					"top": 296,
+					"top": 269,
 					"left": 271,
 					"width": 105,
 					"height": 20,
@@ -106,6 +106,18 @@
 						"onClick"
 					],
 					"action": "cancel"
+				},
+				"bGroupe": {
+					"type": "button",
+					"text": "Groupe",
+					"top": 298,
+					"left": 271,
+					"width": 105,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/bGroupe.4dm"
 				}
 			},
 			"entryOrder": [
@@ -113,11 +125,12 @@
 				"bQui",
 				"bRole",
 				"btTrace",
-				"btQuitter"
+				"btQuitter",
+				"bGroupe"
 			]
 		}
 	],
-	"geometryStamp": 348,
+	"geometryStamp": 352,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",

@@ -1,5 +1,5 @@
 //%attributes = {}
-// sauverQuiGroupe
+// sauverPosteNouveau
 //$1; $ID_Qui_i:integer
 //$2; $ID_Groupe_i: integer
 
@@ -15,20 +15,20 @@ $ID_Qui_i:=$1
 $ID_Groupe_i:=$2
 
 var $status_o : Object
-var $role_e : cs:C1710.RoleEntity
+var $poste_e : cs:C1710.PosteEntity
 
-$role_e:=ds:C1482.Role.new()
-$role_e.ID_Qui:=$ID_Qui_i
-$role_e.ID_Groupe:=$ID_Groupe_i
-$status_o:=$role_e.save()
+$poste_e:=ds:C1482.Poste.new()
+$poste_e.ID_Qui:=$ID_Qui_i
+$poste_e.ID_Groupe:=$ID_Groupe_i
+$status_o:=$poste_e.save()
 
 If ($status_o.success)
 	
-	ALERT:C41("Role ajouté"+Char:C90(Carriage return:K15:38)+$role_e.qui.FullName+Char:C90(Carriage return:K15:38)+$role_e.groupe.Nom)
+	ALERT:C41("Poste ajouté"+Char:C90(Carriage return:K15:38)+$poste_e.qui.FullName+Char:C90(Carriage return:K15:38)+$poste_e.groupe.Nom)
 	
 Else 
 	
-	ALERT:C41("ajout role ko")
+	ALERT:C41("ajout poste ko")
 	TRACE:C157
 	
 End if 

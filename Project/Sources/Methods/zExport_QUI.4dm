@@ -64,14 +64,14 @@ If (OK=1)
 		$texte:=""
 		$texte:=$texte+String:C10([Qui:2]ID:1)+$tab
 		
-		$prenom:=Substring:C12([Qui:2]Nom:2; 1; Position:C15(" "; [Qui:2]Nom:2)-1)
-		$nom:=Substring:C12([Qui:2]Nom:2; Position:C15(" "; [Qui:2]Nom:2); Length:C16([Qui:2]Nom:2))
+		$prenom:=Substring:C12([Qui:2]FullName:2; 1; Position:C15(" "; [Qui:2]FullName:2)-1)
+		$nom:=Substring:C12([Qui:2]FullName:2; Position:C15(" "; [Qui:2]FullName:2); Length:C16([Qui:2]FullName:2))
 		
 		$texte:=$texte+$prenom+$tab
 		$texte:=$texte+$nom+$tab
 		
-		$texte:=$texte+String:C10([Qui:2]AnneeNaiss:4)+$tab
-		$texte:=$texte+String:C10([Qui:2]AnneeDeces:6)+$tab
+		$texte:=$texte+String:C10([Qui:2]DateNaiss:17)+$tab
+		$texte:=$texte+String:C10([Qui:2]DateDeces:18)+$tab
 		$texte:=$texte+[Qui:2]Domaine:8+$tab
 		$texte:=$texte+[Qui:2]Genre:3+$tab
 		$texte:=$texte+[Qui:2]Pays:5+$tab
@@ -100,7 +100,7 @@ If (OK=1)
 		
 		//photo
 		If (Picture size:C356([Qui:2]Photo:7)>0)
-			$nomFicPhoto:=System folder:C487(Desktop:K41:16)+"_QuoiQuitek"+Folder separator:K24:12+"PhotosQui"+Folder separator:K24:12+[Qui:2]Nom:2+"_"+"Qui_"+String:C10([Qui:2]ID:1)+".jpg"
+			$nomFicPhoto:=System folder:C487(Desktop:K41:16)+"_QuoiQuitek"+Folder separator:K24:12+"PhotosQui"+Folder separator:K24:12+[Qui:2]FullName:2+"_"+"Qui_"+String:C10([Qui:2]ID:1)+".jpg"
 			WRITE PICTURE FILE:C680($nomFicPhoto; [Qui:2]Photo:7)
 		End if 
 		

@@ -247,7 +247,7 @@
 				},
 				"zAnneeDeces": {
 					"type": "input",
-					"dataSource": "Form:C1466.qui_e.AnneeDeces",
+					"dataSource": "Form:C1466.qui_e.DateDeces",
 					"top": 130,
 					"left": 300,
 					"width": 80,

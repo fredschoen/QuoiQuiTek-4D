@@ -76,16 +76,10 @@ If (OK=1)
 		$nomP:=""
 		$nomG:=""
 		$nomO:=""
-		$age:=0
-		If (([Qui:2]AnneeNaiss:4>0) & (Length:C16([Quoi:1]Annee:7)>3))
-			$age:=Num:C11(Substring:C12([Quoi:1]Annee:7; 1; 4))-[Qui:2]AnneeNaiss:4
-		Else 
-			$age:=0
-		End if 
 		//-- assemblage de l'enreg à écrire------------------------------ 
 		$texte:=""
-		$texte:=$texte+String:C10([Qui:2]Nom:2)+$tab
-		$texte:=$texte+String:C10([Qui:2]AnneeNaiss:4)+$tab
+		$texte:=$texte+String:C10([Qui:2]FullName:2)+$tab
+		$texte:=$texte+String:C10([Qui:2]DateNaiss:17)+$tab
 		$texte:=$texte+String:C10([Qui:2]Genre:3)+$tab
 		$texte:=$texte+String:C10([Qui:2]Pays:5)+$tab
 		$texte:=$texte+String:C10([Qui:2]Domaine:8)+$tab
@@ -104,7 +98,7 @@ If (OK=1)
 		
 		$texte:=$texte+"'"+String:C10($age)+$tab
 		$texte:=$texte+String:C10([Quoi:1]Nom:2)+$tab
-		$texte:=$texte+"'"+String:C10([Quoi:1]Annee:7)+$tab
+		$texte:=$texte+"'"+String:C10([Quoi:1]Date:7)+$tab
 		$texte:=$texte+String:C10([Quoi:1]Domaine:8)+$tab
 		$texte:=$texte+String:C10([Quoi:1]Genre:3)+$tab
 		$texte:=$texte+String:C10([Quoi:1]Pays:4)+$tab
@@ -122,7 +116,7 @@ If (OK=1)
 		
 		//photo
 		If (Picture size:C356([Role:3]Photo:5)>0)
-			$nomFicPhoto:=System folder:C487(Desktop:K41:16)+"_QuoiQuitek"+Folder separator:K24:12+"PhotosRole"+Folder separator:K24:12+[Qui:2]Nom:2+"_"+"Role_"+String:C10([Role:3]ID:1)+"_"+[Quoi:1]Nom:2+".jpg"
+			$nomFicPhoto:=System folder:C487(Desktop:K41:16)+"_QuoiQuitek"+Folder separator:K24:12+"PhotosRole"+Folder separator:K24:12+[Qui:2]FullName:2+"_"+"Role_"+String:C10([Role:3]ID:1)+"_"+[Quoi:1]Nom:2+".jpg"
 			//remplacer les car ko dans nom fichier
 			$nomOK:=Change string:C234($nomFicPhoto; "_"; Position:C15("/"; $nomFicPhoto))
 			WRITE PICTURE FILE:C680($nomOK; [Role:3]Photo:5)
