@@ -16,7 +16,7 @@ Else
 End if 
 
 //cas où on utilise la liste des quis pour ajouter un role à un quoi
-If ($form_o.utilisationListe="AJOUTER_ROLE")
+If (Substring:C12($form_o.utilisationListe; 1; 8)="AJOUTER_")
 	If (Count parameters:C259<2)
 		ALERT:C41(Current method name:C684()+": manque $2 (quoiID_ajouterRole)")
 		TRACE:C157

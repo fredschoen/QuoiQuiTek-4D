@@ -17,12 +17,12 @@ Else
 End if 
 
 //cas où on utilise la liste des quois pour ajouter un role à un qui
-If ($form_o.utilisationListe="AJOUTER_ROLE")
+If (Substring:C12($form_o.utilisationListe; 1; 8)="AJOUTER_")
 	If (Count parameters:C259<2)
-		ALERT:C41(Current method name:C684()+": manque $2 <=>quiID_ajouterRole)")
+		ALERT:C41(Current method name:C684()+": manque $2 <=>actID_ajouterRole)")
 		TRACE:C157
 	Else 
-		$form_o.quiID_ajouterRole:=$2
+		$form_o.acteurID_ajouterRole:=$2
 	End if 
 End if 
 

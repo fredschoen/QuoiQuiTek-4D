@@ -65,7 +65,7 @@
 						{
 							"name": "Nom",
 							"width": 305,
-							"enterable": true,
+							"enterable": false,
 							"header": {
 								"text": "Nom",
 								"name": "6"
@@ -86,12 +86,13 @@
 							"footer": {
 								"name": "Pied1"
 							},
-							"textAlign": "center"
+							"textAlign": "center",
+							"enterable": false
 						},
 						{
 							"name": "Genre",
 							"width": 60,
-							"enterable": true,
+							"enterable": false,
 							"header": {
 								"text": "Genre",
 								"name": "2"
@@ -105,7 +106,7 @@
 						{
 							"name": "Pays",
 							"width": 60,
-							"enterable": true,
+							"enterable": false,
 							"header": {
 								"text": "Pays",
 								"name": "8"
@@ -119,7 +120,7 @@
 						{
 							"name": "Stock",
 							"width": 60,
-							"enterable": true,
+							"enterable": false,
 							"header": {
 								"text": "Stock",
 								"name": "12"
@@ -133,7 +134,7 @@
 						{
 							"name": "Date",
 							"width": 60,
-							"enterable": true,
+							"enterable": false,
 							"header": {
 								"text": "Date",
 								"name": "Entête1"
@@ -161,7 +162,7 @@
 						{
 							"name": "Real",
 							"width": 119,
-							"enterable": true,
+							"enterable": false,
 							"header": {
 								"text": "Real",
 								"name": "10"
@@ -181,7 +182,8 @@
 							"width": 66,
 							"footer": {
 								"name": "Pied7"
-							}
+							},
+							"enterable": false
 						},
 						{
 							"header": {
@@ -193,7 +195,8 @@
 							"footer": {
 								"name": "Pied2"
 							},
-							"width": 60
+							"width": 60,
+							"enterable": false
 						}
 					]
 				},

@@ -53,7 +53,7 @@
 							"name": "c_Nom2",
 							"dataSource": "This:C1470.Nom",
 							"width": 320,
-							"enterable": true,
+							"enterable": false,
 							"header": {
 								"text": "Nom",
 								"name": "eNomQui"

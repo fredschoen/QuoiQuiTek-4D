@@ -10,7 +10,7 @@ If ($pourSelectionner_b)
 	$form_o.quoi_es:=Form:C1466.quoi_es
 	$form_o.posQuoiSel_i:=Form:C1466.posQuoiSel_i
 	$form_o.utilisationListe:=Form:C1466.utilisationListe
-	$form_o.quiID_ajouterRole:=Form:C1466.quiID_ajouterRole  //pour AJOUTER_ROLE
+	$form_o.acteurID_ajouterRole:=Form:C1466.acteurID_ajouterRole  //pour AJOUTER_ROLE
 	
 	dialoguer("quoiDetail"; $form_o)
 	

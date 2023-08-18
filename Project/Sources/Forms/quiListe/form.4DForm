@@ -39,8 +39,8 @@
 					"scrollbarHorizontal": "automatic",
 					"scrollbarVertical": "automatic",
 					"resizingMode": "legacy",
-					"selectedItemsSource": "",
-					"currentItemSource": "Form:C1466.quiSel_e",
+					"selectedItemsSource": "Form:C1466.quiSel_e",
+					"currentItemSource": "",
 					"events": [
 						"onClick",
 						"onAfterKeystroke"
@@ -52,7 +52,7 @@
 							"name": "c_Nom2",
 							"dataSource": "This:C1470.FullName",
 							"width": 320,
-							"enterable": true,
+							"enterable": false,
 							"header": {
 								"text": "Nom",
 								"name": "eNomQui"
@@ -65,7 +65,7 @@
 							"name": "cGenre1",
 							"dataSource": "This:C1470.Genre",
 							"width": 50,
-							"enterable": true,
+							"enterable": false,
 							"header": {
 								"text": "Genre",
 								"name": "4"
@@ -79,7 +79,7 @@
 							"name": "cPays1",
 							"dataSource": "This:C1470.Pays",
 							"width": 93,
-							"enterable": true,
+							"enterable": false,
 							"header": {
 								"text": "Pays",
 								"name": "10"
@@ -93,7 +93,7 @@
 							"name": "cAnneeNaiss1",
 							"dataSource": "This:C1470.DateNaiss",
 							"width": 80,
-							"enterable": true,
+							"enterable": false,
 							"header": {
 								"text": "Date Naiss",
 								"name": "2"
@@ -107,7 +107,7 @@
 							"name": "cDateDeces",
 							"dataSource": "This:C1470.DateDeces",
 							"width": 80,
-							"enterable": true,
+							"enterable": false,
 							"header": {
 								"text": "Deces",
 								"name": "Entête7"
@@ -121,7 +121,7 @@
 							"name": "cDomaine1",
 							"dataSource": "This:C1470.Domaine",
 							"width": 60,
-							"enterable": true,
+							"enterable": false,
 							"header": {
 								"text": "Dom",
 								"name": "eDom"
@@ -135,7 +135,7 @@
 							"name": "cStyle1",
 							"dataSource": "This:C1470.Style",
 							"width": 81,
-							"enterable": true,
+							"enterable": false,
 							"header": {
 								"text": "Style",
 								"name": "Style"

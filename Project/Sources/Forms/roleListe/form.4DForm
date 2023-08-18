@@ -57,7 +57,7 @@
 							"name": "c_FullName",
 							"dataSource": "This:C1470.qui.FullName",
 							"width": 230,
-							"enterable": true,
+							"enterable": false,
 							"header": {
 								"text": "Nom Qui",
 								"name": "eNomQui"
@@ -77,13 +77,14 @@
 								"name": "Pied6"
 							},
 							"width": 35,
-							"dataSource": "This:C1470.Age"
+							"dataSource": "This:C1470.Age",
+							"enterable": false
 						},
 						{
 							"name": "cGenre1",
 							"dataSource": "This:C1470.qui.Genre",
 							"width": 20,
-							"enterable": true,
+							"enterable": false,
 							"header": {
 								"text": "Gr",
 								"name": "4"
@@ -97,7 +98,7 @@
 							"name": "cPays1",
 							"dataSource": "This:C1470.qui.Pays",
 							"width": 80,
-							"enterable": true,
+							"enterable": false,
 							"header": {
 								"text": "Pays",
 								"name": "10"
@@ -111,7 +112,7 @@
 							"name": "cAnneeNaiss1",
 							"dataSource": "This:C1470.qui.DateNaiss",
 							"width": 50,
-							"enterable": true,
+							"enterable": false,
 							"header": {
 								"text": "Annee Naiss",
 								"name": "2"
@@ -125,7 +126,7 @@
 							"name": "cAnneeDeces1",
 							"dataSource": "This:C1470.qui.DateDeces",
 							"width": 50,
-							"enterable": true,
+							"enterable": false,
 							"header": {
 								"text": "Annee Deces",
 								"name": "eAnneeDeces"
@@ -139,7 +140,7 @@
 							"name": "cDomaine1",
 							"dataSource": "This:C1470.qui.Domaine",
 							"width": 50,
-							"enterable": true,
+							"enterable": false,
 							"header": {
 								"text": "Dom",
 								"name": "eDom"
@@ -153,7 +154,7 @@
 							"name": "cStyle1",
 							"dataSource": "This:C1470.qui.Style",
 							"width": 70,
-							"enterable": true,
+							"enterable": false,
 							"header": {
 								"text": "Style",
 								"name": "eStyle"
@@ -173,7 +174,8 @@
 								"name": "Pied1"
 							},
 							"width": 210,
-							"dataSource": "This:C1470.quoi.Nom"
+							"dataSource": "This:C1470.quoi.Nom",
+							"enterable": false
 						},
 						{
 							"header": {
@@ -186,7 +188,8 @@
 								"name": "Pied7"
 							},
 							"dataSource": "This:C1470.Descr",
-							"width": 100
+							"width": 100,
+							"enterable": false
 						},
 						{
 							"header": {
@@ -198,7 +201,8 @@
 								"name": "Pied2"
 							},
 							"width": 50,
-							"dataSource": "This:C1470.quoi.Genre"
+							"dataSource": "This:C1470.quoi.Genre",
+							"enterable": false
 						},
 						{
 							"header": {
@@ -210,7 +214,8 @@
 								"name": "Pied3"
 							},
 							"width": 60,
-							"dataSource": "This:C1470.quoi.Pays"
+							"dataSource": "This:C1470.quoi.Pays",
+							"enterable": false
 						},
 						{
 							"header": {
@@ -222,7 +227,8 @@
 								"name": "Pied4"
 							},
 							"width": 50,
-							"dataSource": "This:C1470.quoi.Domaine"
+							"dataSource": "This:C1470.quoi.Domaine",
+							"enterable": false
 						},
 						{
 							"header": {
@@ -234,7 +240,8 @@
 								"name": "Pied5"
 							},
 							"width": 30,
-							"dataSource": "This:C1470.quoi.Date"
+							"dataSource": "This:C1470.quoi.Date",
+							"enterable": false
 						}
 					]
 				},

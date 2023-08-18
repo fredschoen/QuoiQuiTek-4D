@@ -64,7 +64,7 @@
 						"$ref": "/SOURCES/tips.json#/RaccourciSauver"
 					}
 				},
-				"btAjouterRole": {
+				"btAjouterPoste": {
 					"type": "button",
 					"text": "Ajouter un qui dans ce groupe",
 					"top": 124,
@@ -74,7 +74,7 @@
 					"events": [
 						"onClick"
 					],
-					"method": "ObjectMethods/btAjouterRole.4dm"
+					"method": "ObjectMethods/btAjouterPoste.4dm"
 				},
 				"btSupprimer": {
 					"type": "button",
@@ -421,7 +421,7 @@
 						}
 					]
 				},
-				"lb_lesQuoisDuQui": {
+				"lb_lesQuoisDuGroupe": {
 					"type": "listbox",
 					"top": 367,
 					"left": 18,
@@ -435,16 +435,16 @@
 					"scrollbarHorizontal": "automatic",
 					"scrollbarVertical": "automatic",
 					"resizingMode": "legacy",
-					"dataSource": "Form:C1466.rolesDuQui_es",
+					"dataSource": "Form:C1466.roleDuGroupe_es",
 					"selectionMode": "single",
-					"currentItemSource": "Form:C1466.rolesDuQuiSel_e",
-					"currentItemPositionSource": "Form:C1466.posRolesDuQui_i",
-					"selectedItemsSource": "",
+					"currentItemSource": "",
+					"currentItemPositionSource": "Form:C1466.posRoleDuGroupe_i",
+					"selectedItemsSource": "Form:C1466.roleDuGroupeSel_e",
 					"events": [
 						"onClick",
 						"onAfterKeystroke"
 					],
-					"method": "ObjectMethods/lb_lesQuoisDuQui.4dm",
+					"method": "ObjectMethods/lb_lesQuoisDuGroupe.4dm",
 					"columns": [
 						{
 							"name": "Annee1",
@@ -591,6 +591,18 @@
 					"left": 17,
 					"width": 60,
 					"height": 18
+				},
+				"btAjouterQuoi": {
+					"type": "button",
+					"text": "Ajouter un quoi dans ce groupe",
+					"top": 338,
+					"left": 86,
+					"width": 180,
+					"height": 24,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/btAjouterQuoi.4dm"
 				}
 			},
 			"entryOrder": [
@@ -601,7 +613,7 @@
 				"btDernier",
 				"btSauverQuoi",
 				"btSupprimer",
-				"btAjouterRole",
+				"btAjouterPoste",
 				"btSelectionnerQuoi",
 				"field_ID",
 				"zposQuoiSel_i",
@@ -611,11 +623,12 @@
 				"zMessage",
 				"btQuitter",
 				"lb_quiListe",
-				"lb_lesQuoisDuQui"
+				"lb_lesQuoisDuGroupe",
+				"btAjouterQuoi"
 			]
 		}
 	],
-	"geometryStamp": 263,
+	"geometryStamp": 269,
 	"method": "method.4dm",
 	"editor": {
 		"activeView": "View 1",

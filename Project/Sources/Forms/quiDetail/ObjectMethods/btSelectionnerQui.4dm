@@ -21,7 +21,7 @@ Case of
 		Else 
 			CONFIRM:C162("voulez-vous ajouter ce qui aux roles du quoi ?")
 			If (OK=1)
-				sauverRoleNouveau(Form:C1466.qui_e.ID; Form:C1466.quoiID_ajouterRole)
+				sauverRoleNouveau(Form:C1466.qui_e.ID; Form:C1466.quoiID_ajouterRole; Form:C1466.utilisationListe)
 				ACCEPT:C269
 			End if 
 		End if 
