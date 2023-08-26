@@ -17,6 +17,15 @@ Case of
 			Form:C1466.page:=1
 		End if 
 		
+		//criteres d'affichage :
+		Form:C1466.critereRole:=New object:C1471
+		Form:C1466.critereRole.Nom:=""
+		Form:C1466.critereRole.Genre:=""
+		Form:C1466.critereRole.Pays:=""
+		Form:C1466.critereRole.Domaine:=""
+		Form:C1466.critereRole.Age:=""
+		Form:C1466.critereRole.DateO:=""
+		
 		If (Form:C1466.action="INIT")
 			charger_LesRoles
 		End if 

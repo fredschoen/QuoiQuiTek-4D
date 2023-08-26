@@ -1,3 +1,20 @@
 {
-	"editors": []
+	"editors": [
+		{
+			"type": "form",
+			"id": 229,
+			"formName": "roleListe"
+		},
+		{
+			"type": "explorer"
+		},
+		{
+			"type": "method",
+			"id": 2147483608,
+			"codeDescriptor": {
+				"type": 1,
+				"methodName": "yExport_QUI"
+			}
+		}
+	]
 }

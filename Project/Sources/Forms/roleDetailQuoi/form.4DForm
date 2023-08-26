@@ -23,9 +23,6 @@
 	"destination": "detailScreen",
 	"pages": [
 		{
-			"objects": {}
-		},
-		{
 			"objects": {
 				"Rectangle": {
 					"type": "rectangle",
@@ -385,26 +382,6 @@
 					},
 					"dataSource": "Form:C1466.quoi_e.Domaine"
 				},
-				"zForm_eleCouQuoi_ID": {
-					"type": "input",
-					"dataSource": "Form:C1466.quoiSel_e.ID",
-					"top": 30,
-					"left": 911,
-					"width": 78,
-					"height": 16,
-					"enterable": false,
-					"fill": "transparent",
-					"borderStyle": "none",
-					"textAlign": "left"
-				},
-				"label3": {
-					"type": "text",
-					"text": "F(ec):",
-					"top": 30,
-					"left": 858,
-					"width": 43,
-					"height": 16
-				},
 				"label_DateDernVisu": {
 					"type": "text",
 					"text": "DateDernVisu:",
@@ -511,9 +488,52 @@
 					"style": "custom",
 					"borderStyle": "raised"
 				},
+				"btTrace": {
+					"type": "button",
+					"text": "trace",
+					"top": 24,
+					"left": 1009,
+					"width": 40,
+					"height": 15,
+					"events": [
+						"onClick"
+					],
+					"style": "custom",
+					"method": "ObjectMethods/btTrace.4dm",
+					"borderStyle": "solid"
+				},
+				"zMessage": {
+					"type": "input",
+					"left": 11,
+					"top": 29,
+					"width": 749,
+					"height": 16,
+					"dataSource": "Form:C1466.message",
+					"enterable": false,
+					"dataSourceTypeHint": "text",
+					"fill": "#ffff00",
+					"fontWeight": "bold",
+					"textAlign": "center"
+				},
+				"btQuitter": {
+					"type": "button",
+					"text": "Quitter",
+					"top": 3,
+					"left": 685,
+					"width": 60,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"action": "cancel"
+				}
+			}
+		},
+		{
+			"objects": {
 				"lb_lesQuisDuQuoi": {
 					"type": "listbox",
-					"dataSource": "Form:C1466.rolesDuQuoi_es",
+					"dataSource": "Form:C1466.roleDuQuoi_es",
 					"top": 386,
 					"left": 76,
 					"width": 810,
@@ -527,13 +547,13 @@
 					"scrollbarVertical": "automatic",
 					"resizingMode": "legacy",
 					"method": "ObjectMethods/lb_lesQuisDuQuoi.4dm",
-					"currentItemSource": "",
+					"currentItemSource": "Form:C1466.roleDuQuoiSel_e",
 					"events": [
 						"onClick",
 						"onAfterKeystroke"
 					],
-					"currentItemPositionSource": "Form:C1466.posRolesDuQuoi_i",
-					"selectedItemsSource": "Form:C1466.rolesDuQuoiSel_e",
+					"currentItemPositionSource": "Form:C1466.posRoleDuQuoi_i",
+					"selectedItemsSource": "",
 					"columns": [
 						{
 							"name": "cNomQuiDuQuoi",
@@ -633,84 +653,135 @@
 				},
 				"Texte4": {
 					"type": "text",
-					"text": "roles dans le quoi",
+					"text": "quis dans le quoi",
 					"top": 400,
 					"left": 14,
 					"width": 52,
 					"height": 60
-				},
-				"btTrace": {
-					"type": "button",
-					"text": "trace",
-					"top": 24,
-					"left": 1009,
-					"width": 40,
-					"height": 15,
-					"events": [
-						"onClick"
-					],
-					"style": "custom",
-					"method": "ObjectMethods/btTrace.4dm",
-					"borderStyle": "solid"
-				},
-				"zMessage": {
-					"type": "input",
-					"left": 11,
-					"top": 29,
-					"width": 749,
-					"height": 16,
-					"dataSource": "Form:C1466.message",
-					"enterable": false,
-					"dataSourceTypeHint": "text"
-				},
-				"btQuitter": {
-					"type": "button",
-					"text": "Quitter",
-					"top": 3,
-					"left": 685,
-					"width": 60,
-					"height": 20,
-					"events": [
-						"onClick"
-					],
-					"action": "cancel"
 				}
 			},
 			"entryOrder": [
-				"fieldDescrNom",
-				"iQuiPhoto",
-				"field_Nom",
-				"Genre_CB",
-				"field_Real",
-				"DomaineQuoi_CB",
-				"paysQuoi_CB",
-				"field_Date",
-				"StockQuoi_CB",
-				"field_Annee1",
-				"field_Prod",
-				"field_Prod1",
-				"field_Info",
-				"iRolePhoto",
-				"lb_lesQuisDuQuoi",
-				"btSuivant",
-				"btPrecedent",
-				"btPremier",
-				"btDernier",
-				"btSauver",
-				"btSupprimer",
-				"zposQuiSel_i",
-				"zQuiListelength",
-				"zQuiID",
-				"zForm_eleCouQui_ID",
-				"zForm_eleCouQuoi_ID",
-				"ge",
-				"btTrace",
-				"zMessage",
-				"btQuitter"
+				"lb_lesQuisDuQuoi"
 			]
+		},
+		{
+			"objects": {
+				"lb_lesQuisDuQuoi1": {
+					"type": "listbox",
+					"dataSource": "Form:C1466.roleDuQuoi_es",
+					"top": 386,
+					"left": 76,
+					"width": 810,
+					"height": 191,
+					"visibility": "visible",
+					"sizingX": "fixed",
+					"sizingY": "grow",
+					"headerHeight": "2em",
+					"listboxType": "collection",
+					"scrollbarHorizontal": "automatic",
+					"scrollbarVertical": "automatic",
+					"resizingMode": "legacy",
+					"method": "ObjectMethods/lb_lesQuisDuQuoi1.4dm",
+					"currentItemSource": "Form:C1466.roleDuQuoiSel_e",
+					"events": [
+						"onClick",
+						"onAfterKeystroke"
+					],
+					"currentItemPositionSource": "Form:C1466.posRoleDuQuoi_i",
+					"selectedItemsSource": "",
+					"columns": [
+						{
+							"name": "cNomQuiDuQuoi1",
+							"dataSource": "This:C1470.getNom()",
+							"width": 250,
+							"enterable": true,
+							"header": {
+								"text": "Nom",
+								"name": "eNomQuiDuQuoi1"
+							},
+							"footer": {
+								"name": "6"
+							},
+							"events": [],
+							"method": "",
+							"minWidth": 250
+						},
+						{
+							"header": {
+								"name": "eDescrRoleQuiDuQuoi1",
+								"text": "Role"
+							},
+							"name": "cDescrRoleQuiDuQuoi1",
+							"dataSource": "This:C1470.Descr",
+							"footer": {
+								"name": "Pied1"
+							},
+							"events": [],
+							"method": "",
+							"width": 300,
+							"minWidth": 250,
+							"maxWidth": 450
+						},
+						{
+							"name": "cDomaine",
+							"dataSource": "This:C1470.groupe.Domaine",
+							"width": 52,
+							"enterable": true,
+							"header": {
+								"text": "Domaine",
+								"name": "eDomaine"
+							},
+							"footer": {
+								"name": "9"
+							},
+							"method": "",
+							"events": []
+						},
+						{
+							"name": "cGenreQuiDuQuoi2",
+							"dataSource": "This:C1470.groupe.Genre",
+							"width": 52,
+							"enterable": true,
+							"header": {
+								"text": "Genre",
+								"name": "eGenreQuiDuQuoi2"
+							},
+							"footer": {
+								"name": "7"
+							},
+							"method": "",
+							"events": []
+						},
+						{
+							"name": "cPaysQuiDuQuoi1",
+							"dataSource": "This:C1470.groupe.Pays",
+							"width": 159,
+							"enterable": true,
+							"header": {
+								"text": "Pays",
+								"name": "ePaysQuiDuQuoi1"
+							},
+							"footer": {
+								"name": "10"
+							},
+							"events": [],
+							"method": "",
+							"minWidth": 50
+						}
+					]
+				},
+				"Texte1": {
+					"type": "text",
+					"text": "groupes dans le quoi",
+					"top": 400,
+					"left": 14,
+					"width": 52,
+					"height": 60
+				}
+			}
 		}
 	],
-	"geometryStamp": 543,
+	"geometryStamp": 550,
 	"method": "method.4dm",
 	"editor": {
 		"activeView": "View 1",

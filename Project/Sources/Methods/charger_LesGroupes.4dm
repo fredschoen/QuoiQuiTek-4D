@@ -4,29 +4,29 @@ var $groupe_es : cs:C1710.GroupeSelection
 var $texteQuery : Text
 
 $texteQuery:=""
-$texteQuery:=$texteQuery+_f_traduireArgQuery("Nom"; "texte"; Form:C1466.critereGroupeListe.Nom)
+$texteQuery:=$texteQuery+_f_traduireArgQuery("Nom"; "texte"; Form:C1466.critereListe.Nom)
 
 If ($texteQuery>"")
 	//$liste:=ds.Groupe.query($texteQuery).orderBy("Nom")
-	If (Form:C1466.critereGroupeListe.Nom>"")
+	If (Form:C1466.critereListe.Nom>"")
 		C_TEXT:C284($operateurCritereNom; $valeurCritereNom)
 		Case of 
-			: ((Substring:C12(Form:C1466.critereGroupeListe.Nom; 1; 2)="<=")\
-				 | (Substring:C12(Form:C1466.critereGroupeListe.Nom; 1; 2)=">="))
-				$operateurCritereNom:=Substring:C12(Form:C1466.critereGroupeListe.Nom; 1; 2)
-				$valeurCritereNom:=Substring:C12(Form:C1466.critereGroupeListe.Nom; 3; Length:C16(Form:C1466.critereGroupeListe.Nom))
+			: ((Substring:C12(Form:C1466.critereListe.Nom; 1; 2)="<=")\
+				 | (Substring:C12(Form:C1466.critereListe.Nom; 1; 2)=">="))
+				$operateurCritereNom:=Substring:C12(Form:C1466.critereListe.Nom; 1; 2)
+				$valeurCritereNom:=Substring:C12(Form:C1466.critereListe.Nom; 3; Length:C16(Form:C1466.critereListe.Nom))
 				
-			: ((Substring:C12(Form:C1466.critereGroupeListe.Nom; 1; 1)="=")\
-				 | (Substring:C12(Form:C1466.critereGroupeListe.Nom; 1; 1)=">")\
-				 | (Substring:C12(Form:C1466.critereGroupeListe.Nom; 1; 1)="<")\
-				 | (Substring:C12(Form:C1466.critereGroupeListe.Nom; 1; 1)="#")\
+			: ((Substring:C12(Form:C1466.critereListe.Nom; 1; 1)="=")\
+				 | (Substring:C12(Form:C1466.critereListe.Nom; 1; 1)=">")\
+				 | (Substring:C12(Form:C1466.critereListe.Nom; 1; 1)="<")\
+				 | (Substring:C12(Form:C1466.critereListe.Nom; 1; 1)="#")\
 				)
-				$operateurCritereNom:=Substring:C12(Form:C1466.critereGroupeListe.Nom; 1; 1)
-				$valeurCritereNom:=Substring:C12(Form:C1466.critereGroupeListe.Nom; 2; Length:C16(Form:C1466.critereGroupeListe.Nom))
+				$operateurCritereNom:=Substring:C12(Form:C1466.critereListe.Nom; 1; 1)
+				$valeurCritereNom:=Substring:C12(Form:C1466.critereListe.Nom; 2; Length:C16(Form:C1466.critereListe.Nom))
 				
 			Else 
 				$operateurCritereNom:="="
-				$valeurCritereNom:=Form:C1466.critereGroupeListe.Nom
+				$valeurCritereNom:=Form:C1466.critereListe.Nom
 				
 		End case 
 		

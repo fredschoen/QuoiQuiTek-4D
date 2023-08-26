@@ -38,18 +38,10 @@
 			"quoiListe"
 		]
 	},
-	"2.Export": {
-		"methods": [
-			"zExport",
-			"zExport_QUI",
-			"zExport_QUOI",
-			"zExport_ROLE"
-		]
-	},
+	"2.Export": {},
 	"3.Outils": {
 		"methods": [
 			"_ListeChamps4D",
-			"z_import_quoi",
 			"zzz_f_apellant",
 			"zzz_ModifDeMasse_Quoi",
 			"zzzViderPourPublier"

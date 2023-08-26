@@ -5,7 +5,11 @@ Case of
 		If (Undefined:C82(Form:C1466.utilisationListe))
 			Form:C1466.utilisationListe:=""
 		End if 
+		//se déplacer dans la liste
+		Form:C1466.posQuoiSel_i:=_f_deplacer_curseur(Form:C1466.action; Form:C1466.quoi_es.length; Form:C1466.posQuoiSel_i)
+		//charger le quoi
 		charger_unQuoi
+		
 		//visibilité des boutons de navigation
 		visibleBtNavig
 		

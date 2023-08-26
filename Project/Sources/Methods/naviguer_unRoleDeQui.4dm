@@ -24,5 +24,4 @@ Case of
 		
 End case 
 
-// après mise à jour du "Form.eleCouF...Pos", blanchir "Form.action" (car utilisé dans déplacement pg2 et pg3)
 Form:C1466.action:="MODIFIER"

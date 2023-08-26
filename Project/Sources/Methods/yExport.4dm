@@ -20,9 +20,9 @@ End if
 
 If (OK=1)
 	ALERT:C41("ne pas quitter la base avant l'affichage de la fenêtre 'Export terminé'")
-	zExport_QUOI($nomRepertoire)
-	zExport_QUI($nomRepertoire)
-	zExport_ROLE($nomRepertoire)
+	yExport_QUOI($nomRepertoire)
+	yExport_QUI($nomRepertoire)
+	yExport_ROLE($nomRepertoire)
 	
 	ALERT:C41("Export terminé"+Char:C90(Carriage return:K15:38)+"cf. "+$nomRepertoire+"log.txt")
 	

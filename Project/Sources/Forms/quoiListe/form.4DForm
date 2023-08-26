@@ -221,7 +221,7 @@
 					"type": "button",
 					"text": "Filtrer",
 					"top": 22,
-					"left": 918,
+					"left": 885,
 					"width": 60,
 					"height": 20,
 					"events": [
@@ -271,7 +271,7 @@
 					"type": "button",
 					"text": "+",
 					"top": 22,
-					"left": 861,
+					"left": 846,
 					"width": 20,
 					"height": 20,
 					"events": [
@@ -284,7 +284,7 @@
 					"type": "button",
 					"text": "-",
 					"top": 22,
-					"left": 885,
+					"left": 865,
 					"width": 20,
 					"height": 20,
 					"events": [
@@ -401,6 +401,19 @@
 					],
 					"defaultButton": false,
 					"method": "ObjectMethods/btAjouterQuoi.4dm"
+				},
+				"zFormquoiListelength": {
+					"type": "input",
+					"left": 954,
+					"top": 24,
+					"width": 31,
+					"height": 16,
+					"dataSource": "Form:C1466.quoi_es.length",
+					"enterable": false,
+					"dataSourceTypeHint": "integer",
+					"focusable": false,
+					"borderStyle": "none",
+					"textAlign": "right"
 				}
 			},
 			"entryOrder": [
@@ -420,11 +433,12 @@
 				"btAjouterQuoi",
 				"btQuitter",
 				"btTrace",
-				"bTest"
+				"bTest",
+				"zFormquoiListelength"
 			]
 		}
 	],
-	"geometryStamp": 3373,
+	"geometryStamp": 3417,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",

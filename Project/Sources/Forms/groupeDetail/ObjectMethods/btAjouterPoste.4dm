@@ -7,5 +7,6 @@ If (Form:C1466.action="AJOUTER")
 Else 
 	afficherQuiListe("AJOUTER_POSTE"; Form:C1466.groupe_e.ID)
 	//raffraichir l'écran détail
-	charger_unRoleGroupe
+	//charger_unRoleGroupe
+	charger_unGroupe
 End if 

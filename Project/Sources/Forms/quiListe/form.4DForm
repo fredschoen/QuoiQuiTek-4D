@@ -29,7 +29,7 @@
 					"dataSource": "Form:C1466.qui_es",
 					"top": 36,
 					"left": 10,
-					"width": 800,
+					"width": 900,
 					"height": 469,
 					"visibility": "visible",
 					"sizingX": "fixed",
@@ -39,8 +39,8 @@
 					"scrollbarHorizontal": "automatic",
 					"scrollbarVertical": "automatic",
 					"resizingMode": "legacy",
-					"selectedItemsSource": "Form:C1466.quiSel_e",
-					"currentItemSource": "",
+					"selectedItemsSource": "",
+					"currentItemSource": "Form:C1466.quiSel_e",
 					"events": [
 						"onClick",
 						"onAfterKeystroke"
@@ -51,7 +51,7 @@
 						{
 							"name": "c_Nom2",
 							"dataSource": "This:C1470.FullName",
-							"width": 320,
+							"width": 300,
 							"enterable": false,
 							"header": {
 								"text": "Nom",
@@ -78,7 +78,7 @@
 						{
 							"name": "cPays1",
 							"dataSource": "This:C1470.Pays",
-							"width": 93,
+							"width": 70,
 							"enterable": false,
 							"header": {
 								"text": "Pays",
@@ -132,18 +132,44 @@
 							"maxWidth": 99
 						},
 						{
-							"name": "cStyle1",
+							"name": "cStyle2",
 							"dataSource": "This:C1470.Style",
-							"width": 81,
+							"width": 70,
 							"enterable": false,
 							"header": {
 								"text": "Style",
-								"name": "Style"
+								"name": "eStyle"
+							},
+							"footer": {
+								"name": "6"
+							},
+							"maxWidth": 100
+						},
+						{
+							"name": "cInfo",
+							"dataSource": "This:C1470.Info",
+							"width": 130,
+							"enterable": false,
+							"header": {
+								"text": "Info",
+								"name": "eInfo"
 							},
 							"footer": {
 								"name": "1"
 							},
-							"maxWidth": 100
+							"maxWidth": 150
+						},
+						{
+							"header": {
+								"name": "eAge",
+								"text": "Age"
+							},
+							"name": "cAge",
+							"dataSource": "This:C1470.getAge()",
+							"width": 30,
+							"footer": {
+								"name": "Pied1"
+							}
 						}
 					]
 				},
@@ -151,7 +177,7 @@
 					"type": "text",
 					"text": "pour voir détail: Click ou Flèche droite ",
 					"top": 138,
-					"left": 830,
+					"left": 917,
 					"width": 115,
 					"height": 45
 				},
@@ -159,7 +185,7 @@
 					"type": "input",
 					"left": 12,
 					"top": 10,
-					"width": 315,
+					"width": 290,
 					"height": 16,
 					"dataSource": "Form:C1466.critereQuiListe.FullName"
 				},
@@ -167,7 +193,7 @@
 					"type": "button",
 					"text": "Appliquer le filtre",
 					"top": 9,
-					"left": 807,
+					"left": 924,
 					"width": 113,
 					"height": 24,
 					"events": [
@@ -178,7 +204,7 @@
 				},
 				"zCritereGenre": {
 					"type": "input",
-					"left": 328,
+					"left": 309,
 					"top": 9,
 					"width": 44,
 					"height": 16,
@@ -186,15 +212,15 @@
 				},
 				"zCriterePays": {
 					"type": "input",
-					"left": 384,
+					"left": 362,
 					"top": 9,
-					"width": 78,
+					"width": 65,
 					"height": 16,
 					"dataSource": "Form:C1466.critereQuiListe.Pays"
 				},
 				"zCritereDateNaiss": {
 					"type": "input",
-					"left": 476,
+					"left": 430,
 					"top": 10,
 					"width": 75,
 					"height": 16,
@@ -202,7 +228,7 @@
 				},
 				"zCritereDateDeces": {
 					"type": "input",
-					"left": 557,
+					"left": 511,
 					"top": 10,
 					"width": 70,
 					"height": 16,
@@ -212,7 +238,7 @@
 					"type": "button",
 					"text": "Ajouter un qui",
 					"top": 44,
-					"left": 830,
+					"left": 917,
 					"width": 120,
 					"height": 24,
 					"events": [
@@ -223,7 +249,7 @@
 				},
 				"zCritereDomaine": {
 					"type": "input",
-					"left": 635,
+					"left": 589,
 					"top": 10,
 					"width": 45,
 					"height": 16,
@@ -231,17 +257,17 @@
 				},
 				"zCritereStyle": {
 					"type": "input",
-					"left": 695,
-					"top": 13,
-					"width": 80,
+					"left": 649,
+					"top": 9,
+					"width": 70,
 					"height": 16,
 					"dataSource": "Form:C1466.critereQuiListe.Style"
 				},
 				"btTrace": {
 					"type": "button",
 					"text": "trace",
-					"top": 18,
-					"left": 927,
+					"top": 84,
+					"left": 992,
 					"width": 40,
 					"height": 15,
 					"events": [
@@ -255,7 +281,7 @@
 					"type": "button",
 					"text": "fred",
 					"top": 192,
-					"left": 837,
+					"left": 924,
 					"width": 113,
 					"height": 24,
 					"events": [
@@ -268,13 +294,62 @@
 					"type": "button",
 					"text": "Quitter",
 					"top": 84,
-					"left": 833,
+					"left": 920,
 					"width": 60,
 					"height": 20,
 					"events": [
 						"onClick"
 					],
 					"action": "cancel"
+				},
+				"bAnneePlus": {
+					"type": "button",
+					"text": "+",
+					"top": 8,
+					"left": 785,
+					"width": 20,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/bAnneePlus.4dm",
+					"bottom": 28
+				},
+				"bAnneeMoins": {
+					"type": "button",
+					"text": "-",
+					"top": 8,
+					"left": 809,
+					"width": 20,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/bAnneeMoins.4dm",
+					"bottom": 28
+				},
+				"zNbre": {
+					"type": "input",
+					"left": 932,
+					"top": 222,
+					"width": 58,
+					"height": 16,
+					"dataSource": "Form:C1466.qui_es.length",
+					"dataSourceTypeHint": "integer",
+					"enterable": false
+				},
+				"zLength": {
+					"type": "input",
+					"left": 739,
+					"top": 8,
+					"width": 31,
+					"height": 16,
+					"dataSource": "Form:C1466.qui_es.length",
+					"enterable": false,
+					"dataSourceTypeHint": "integer",
+					"focusable": false,
+					"borderStyle": "none",
+					"textAlign": "right"
 				}
 			},
 			"entryOrder": [
@@ -285,16 +360,20 @@
 				"zCritereDateDeces",
 				"zCritereDomaine",
 				"zCritereStyle",
+				"bAnneePlus",
+				"bAnneeMoins",
 				"btAppliquerFiltreQui",
 				"lb_quiListe",
 				"btAjouterQui",
 				"btTrace",
 				"fred",
-				"btQuitter"
+				"btQuitter",
+				"zNbre",
+				"zLength"
 			]
 		}
 	],
-	"geometryStamp": 2733,
+	"geometryStamp": 2893,
 	"method": "method.4dm",
 	"editor": {
 		"activeView": "View 1",

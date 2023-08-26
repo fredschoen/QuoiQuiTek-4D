@@ -14,6 +14,18 @@ Case of
 			Form:C1466.utilisationListe:=""
 			Form:C1466.page:=1
 		End if 
+		If (Undefined:C82(Form:C1466.critereListe))
+			//criteres d'affichage :
+			Form:C1466.critereListe:=New object:C1471
+			Form:C1466.critereListe.FullName:=""
+			Form:C1466.critereListe.Genre:=""
+			Form:C1466.critereListe.Pays:=""
+			Form:C1466.critereListe.DateNaiss:=""
+			Form:C1466.critereListe.DateDeces:=""
+			Form:C1466.critereListe.Domaine:=""
+			Form:C1466.critereListe.Style:=""
+		End if 
+		
 		
 		If (Form:C1466.action="INIT")
 			charger_LesGroupes

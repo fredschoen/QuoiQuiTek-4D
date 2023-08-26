@@ -1,4 +1,4 @@
-//formulaire quoiDetail
+//formulaire quiDetail
 
 Case of 
 		
@@ -12,7 +12,7 @@ Case of
 		charger_unQui
 		
 		//visibilité des boutons de navigation
-		visibleBtNavig
+		visibleBtNavig(Form:C1466.qui_es.length)
 		
 	: (Form event code:C388=On Unload:K2:2)
 		CONFIRM:C162("sortir du détail du qui ?")

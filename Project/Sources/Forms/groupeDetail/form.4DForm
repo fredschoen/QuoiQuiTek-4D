@@ -31,9 +31,9 @@
 					"type": "text",
 					"text": "Nom:",
 					"top": 75,
-					"left": 10,
-					"width": 60,
-					"height": 18
+					"left": 37,
+					"width": 35,
+					"height": 20
 				},
 				"field_Nom": {
 					"type": "input",
@@ -41,7 +41,7 @@
 					"top": 75,
 					"left": 73,
 					"width": 250,
-					"height": 18
+					"height": 20
 				},
 				"btSauverQuoi": {
 					"type": "button",
@@ -153,33 +153,13 @@
 					],
 					"method": "ObjectMethods/btDernier.4dm"
 				},
-				"field_ID": {
-					"type": "input",
-					"dataSource": "Form:C1466.quoi_e.ID",
-					"top": 372,
-					"left": 940,
-					"width": 40,
-					"height": 16,
-					"enterable": false,
-					"fill": "transparent",
-					"borderStyle": "none",
-					"textAlign": "left"
-				},
-				"label4": {
-					"type": "text",
-					"text": "F:",
-					"top": 372,
-					"left": 927,
-					"width": 12,
-					"height": 16
-				},
-				"zposQuoiSel_i": {
+				"zPosSel": {
 					"type": "input",
 					"left": 901,
 					"top": 7,
 					"width": 31,
 					"height": 16,
-					"dataSource": "Form:C1466.posQuoiSel_i",
+					"dataSource": "Form:C1466.posGroupeSel_i",
 					"enterable": false,
 					"dataSourceTypeHint": "integer",
 					"focusable": false,
@@ -194,13 +174,13 @@
 					"width": 12,
 					"height": 16
 				},
-				"zFormquoiListelength": {
+				"zLength": {
 					"type": "input",
 					"left": 952,
 					"top": 7,
 					"width": 31,
 					"height": 16,
-					"dataSource": "Form:C1466.quoi_es.length",
+					"dataSource": "Form:C1466.groupe_es.length",
 					"enterable": false,
 					"dataSourceTypeHint": "integer",
 					"focusable": false,
@@ -220,31 +200,11 @@
 					"defaultButton": false,
 					"method": "ObjectMethods/btSelectionnerQuoi.4dm"
 				},
-				"zForm_eleCouQuoi_ID": {
-					"type": "input",
-					"dataSource": "Form:C1466.quoiSel_e.ID",
-					"top": 392,
-					"left": 940,
-					"width": 40,
-					"height": 16,
-					"enterable": false,
-					"fill": "transparent",
-					"borderStyle": "none",
-					"textAlign": "left"
-				},
-				"label3": {
-					"type": "text",
-					"text": "F(ec):",
-					"top": 392,
-					"left": 902,
-					"width": 36,
-					"height": 16
-				},
 				"btTrace": {
 					"type": "button",
 					"text": "trace",
-					"top": 45,
-					"left": 940,
+					"top": 78,
+					"left": 943,
 					"width": 40,
 					"height": 15,
 					"events": [
@@ -299,8 +259,8 @@
 					"scrollbarHorizontal": "automatic",
 					"scrollbarVertical": "automatic",
 					"resizingMode": "legacy",
-					"selectedItemsSource": "Form:C1466.posteSel_e",
-					"currentItemSource": "",
+					"selectedItemsSource": "",
+					"currentItemSource": "Form:C1466.posteSel_e",
 					"events": [
 						"onClick",
 						"onAfterKeystroke"
@@ -312,7 +272,7 @@
 							"name": "c_Nom2",
 							"dataSource": "This:C1470.qui.FullName",
 							"width": 320,
-							"enterable": true,
+							"enterable": false,
 							"header": {
 								"text": "Nom",
 								"name": "eNomQui"
@@ -325,7 +285,7 @@
 							"name": "cGenre1",
 							"dataSource": "This:C1470.qui.Genre",
 							"width": 50,
-							"enterable": true,
+							"enterable": false,
 							"header": {
 								"text": "Genre",
 								"name": "4"
@@ -339,7 +299,7 @@
 							"name": "cPays1",
 							"dataSource": "This:C1470.qui.Pays",
 							"width": 93,
-							"enterable": true,
+							"enterable": false,
 							"header": {
 								"text": "Pays",
 								"name": "10"
@@ -353,7 +313,7 @@
 							"name": "cAnneeNaiss2",
 							"dataSource": "This:C1470.qui.DateNaiss",
 							"width": 80,
-							"enterable": true,
+							"enterable": false,
 							"header": {
 								"text": "Date Naiss",
 								"name": "9"
@@ -367,7 +327,7 @@
 							"name": "cAnneeNaiss1",
 							"dataSource": "This:C1470.qui.getAge()",
 							"width": 80,
-							"enterable": true,
+							"enterable": false,
 							"header": {
 								"text": "Age",
 								"name": "2"
@@ -381,7 +341,7 @@
 							"name": "cAnneeDeces1",
 							"dataSource": "This:C1470.qui.DateDeces",
 							"width": 80,
-							"enterable": true,
+							"enterable": false,
 							"header": {
 								"text": "Deces",
 								"name": "Entête7"
@@ -395,7 +355,7 @@
 							"name": "cDomaine1",
 							"dataSource": "This:C1470.qui.Domaine",
 							"width": 60,
-							"enterable": true,
+							"enterable": false,
 							"header": {
 								"text": "Dom",
 								"name": "eDom"
@@ -409,7 +369,7 @@
 							"name": "cStyle1",
 							"dataSource": "This:C1470.qui.Style",
 							"width": 81,
-							"enterable": true,
+							"enterable": false,
 							"header": {
 								"text": "Style",
 								"name": "Style"
@@ -437,9 +397,9 @@
 					"resizingMode": "legacy",
 					"dataSource": "Form:C1466.roleDuGroupe_es",
 					"selectionMode": "single",
-					"currentItemSource": "",
-					"currentItemPositionSource": "Form:C1466.posRoleDuGroupe_i",
-					"selectedItemsSource": "Form:C1466.roleDuGroupeSel_e",
+					"currentItemSource": "Form:C1466.roleDuGroupeSel_e",
+					"currentItemPositionSource": "Form:C1466.posRoleDuGroupeSel_i",
+					"selectedItemsSource": "",
 					"events": [
 						"onClick",
 						"onAfterKeystroke"
@@ -449,7 +409,7 @@
 						{
 							"name": "Annee1",
 							"width": 60,
-							"enterable": true,
+							"enterable": false,
 							"header": {
 								"text": "Annee",
 								"name": "Entête4"
@@ -462,19 +422,6 @@
 						},
 						{
 							"header": {
-								"name": "37",
-								"text": "Age"
-							},
-							"name": "Stock3",
-							"dataSource": "This:C1470.getAge()",
-							"width": 60,
-							"footer": {
-								"name": "Pied4"
-							},
-							"textAlign": "center"
-						},
-						{
-							"header": {
 								"name": "Entête5",
 								"text": "Role"
 							},
@@ -482,12 +429,13 @@
 							"dataSource": "This:C1470.Descr",
 							"footer": {
 								"name": "Pied6"
-							}
+							},
+							"enterable": false
 						},
 						{
 							"name": "Nom2",
-							"width": 160,
-							"enterable": true,
+							"width": 200,
+							"enterable": false,
 							"header": {
 								"text": "Quoi",
 								"name": "24"
@@ -500,7 +448,7 @@
 						{
 							"name": "Genre1",
 							"width": 60,
-							"enterable": true,
+							"enterable": false,
 							"header": {
 								"text": "Genre",
 								"name": "26"
@@ -514,7 +462,7 @@
 						{
 							"name": "Pays2",
 							"width": 60,
-							"enterable": true,
+							"enterable": false,
 							"header": {
 								"text": "Pays",
 								"name": "28"
@@ -528,7 +476,7 @@
 						{
 							"name": "Domaine",
 							"width": 60,
-							"enterable": true,
+							"enterable": false,
 							"header": {
 								"text": "Stock",
 								"name": "30"
@@ -556,7 +504,7 @@
 						{
 							"name": "Real1",
 							"width": 170,
-							"enterable": true,
+							"enterable": false,
 							"header": {
 								"text": "Real",
 								"name": "8"
@@ -580,7 +528,8 @@
 							"footer": {
 								"name": "Pied5"
 							},
-							"width": 100
+							"width": 100,
+							"enterable": false
 						}
 					]
 				},
@@ -603,10 +552,112 @@
 						"onClick"
 					],
 					"method": "ObjectMethods/btAjouterQuoi.4dm"
+				},
+				"label_Genre1": {
+					"type": "text",
+					"text": "Genre:",
+					"top": 75,
+					"left": 521,
+					"width": 35,
+					"height": 20,
+					"textAlign": "right"
+				},
+				"label_Pays": {
+					"type": "text",
+					"text": "Pays:",
+					"top": 75,
+					"left": 676,
+					"width": 35,
+					"height": 20,
+					"textAlign": "right"
+				},
+				"cb_Genre": {
+					"type": "combo",
+					"left": 564,
+					"top": 75,
+					"width": 100,
+					"height": 20,
+					"events": [
+						"onDataChange"
+					],
+					"dataSource": "Form:C1466.groupe_e.Genre",
+					"dataSourceTypeHint": "text",
+					"automaticInsertion": false,
+					"choiceList": {
+						"$ref": "/SOURCES/lists.json#/GenreQuoi"
+					}
+				},
+				"cb_PaysQui": {
+					"type": "combo",
+					"left": 719,
+					"top": 75,
+					"width": 150,
+					"height": 20,
+					"events": [
+						"onDataChange"
+					],
+					"dataSourceTypeHint": "text",
+					"choiceList": {
+						"$ref": "/SOURCES/lists.json#/PaysQui"
+					},
+					"dataSource": "Form:C1466.groupe_e.Pays"
+				},
+				"label_Fomaine": {
+					"type": "text",
+					"text": "Domaine:",
+					"top": 75,
+					"left": 338,
+					"width": 55,
+					"height": 15,
+					"textAlign": "right"
+				},
+				"cb_Domaine": {
+					"type": "combo",
+					"left": 401,
+					"top": 75,
+					"width": 100,
+					"height": 20,
+					"events": [
+						"onDataChange"
+					],
+					"dataSource": "Form:C1466.groupe_e.Domaine",
+					"dataSourceTypeHint": "text",
+					"automaticInsertion": false,
+					"choiceList": {
+						"$ref": "/SOURCES/lists.json#/DomaineQuoi"
+					}
+				},
+				"zID": {
+					"type": "input",
+					"left": 901,
+					"top": 33,
+					"width": 31,
+					"height": 16,
+					"dataSource": "Form:C1466.groupe_e.ID",
+					"enterable": false,
+					"dataSourceTypeHint": "integer",
+					"focusable": false,
+					"borderStyle": "none",
+					"textAlign": "right"
+				},
+				"btExploser": {
+					"type": "button",
+					"text": "Exploser les quois du groupe",
+					"top": 338,
+					"left": 275,
+					"width": 180,
+					"height": 24,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/btExploser.4dm"
 				}
 			},
 			"entryOrder": [
 				"field_Nom",
+				"cb_Domaine",
+				"cb_Genre",
+				"cb_PaysQui",
 				"btSuivant",
 				"btPrecedent",
 				"btPremier",
@@ -615,20 +666,20 @@
 				"btSupprimer",
 				"btAjouterPoste",
 				"btSelectionnerQuoi",
-				"field_ID",
-				"zposQuoiSel_i",
-				"zFormquoiListelength",
-				"zForm_eleCouQuoi_ID",
+				"zPosSel",
+				"zLength",
 				"btTrace",
 				"zMessage",
 				"btQuitter",
 				"lb_quiListe",
 				"lb_lesQuoisDuGroupe",
-				"btAjouterQuoi"
+				"btAjouterQuoi",
+				"zID",
+				"btExploser"
 			]
 		}
 	],
-	"geometryStamp": 269,
+	"geometryStamp": 521,
 	"method": "method.4dm",
 	"editor": {
 		"activeView": "View 1",

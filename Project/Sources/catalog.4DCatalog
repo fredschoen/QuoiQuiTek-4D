@@ -5,26 +5,24 @@
 	<table name="Quoi" uuid="1AA34083D0527E4F91A17E4D5A70AA8D" id="1">
 		<field name="ID" uuid="7D44AEC0186F8341BF2162AF1B5099CF" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
 		<field name="Nom" uuid="C398CAEA0AE2F94EA9EA19DE10AC847C" type="10" limiting_length="255" not_null="true" never_null="true" id="2"/>
-		<field name="Genre" uuid="2FE2A974B09BC645B6A53955FE1C4B61" type="10" limiting_length="255" never_null="true" id="3"/>
-		<field name="Pays" uuid="E4FB40F5F67D1D4191AF0BF3D8535F5B" type="10" limiting_length="255" never_null="true" id="4"/>
-		<field name="Stock" uuid="CD35DC4B033A024D9C4FD5AC5439BAC1" type="10" limiting_length="255" never_null="true" id="5"/>
-		<field name="Real" uuid="EEFC95045653474796AECC0DAA8371CB" type="10" limiting_length="255" never_null="true" id="6"/>
+		<field name="Genre" uuid="2FE2A974B09BC645B6A53955FE1C4B61" type="10" limiting_length="100" never_null="true" id="3"/>
+		<field name="Pays" uuid="E4FB40F5F67D1D4191AF0BF3D8535F5B" type="10" limiting_length="100" never_null="true" id="4"/>
+		<field name="Stock" uuid="CD35DC4B033A024D9C4FD5AC5439BAC1" type="10" limiting_length="50" never_null="true" id="5"/>
+		<field name="Real" uuid="EEFC95045653474796AECC0DAA8371CB" type="10" limiting_length="100" never_null="true" id="6"/>
 		<field name="Date" uuid="7C42769F220BAC4095209E083C17B727" type="10" limiting_length="10" never_null="true" id="7"/>
 		<field name="Domaine" uuid="402F9ECEAE77124F98DB7C18F13C210A" type="10" limiting_length="255" never_null="true" id="8"/>
-		<field name="Prod" uuid="13333BFDCBB765488223A57A973B4517" type="10" limiting_length="255" never_null="true" id="9"/>
+		<field name="Prod" uuid="13333BFDCBB765488223A57A973B4517" type="10" limiting_length="100" never_null="true" id="9"/>
 		<field name="Info" uuid="EA2D51B243B04D4CA0DA6425FE90F554" type="10" limiting_length="255" never_null="true" id="10"/>
 		<field name="DateDernVisu" uuid="174F3C522464E7498A51F1F3E79B0BCD" type="8" never_null="true" id="11"/>
 		<field name="Qualif" uuid="EDFC268B6F24424694B8CE014976C7ED" type="10" limiting_length="10" never_null="true" id="12"/>
 		<field name="Photo" uuid="5CC11F4471F08D499B5412E00286BD2E" type="12" never_null="true" id="13"/>
-		<field name="CreatDate" uuid="7A2CF25E62700B4F8FC20F46A3E0540C" type="8" never_null="true" id="14"/>
-		<field name="CreatHeure" uuid="F9D2CBE84792DC468DCFCC80CEF52CCD" type="9" never_null="true" id="15"/>
-		<field name="ModifDate" uuid="DFA771CE10838543ADFF8D19AF919006" type="8" never_null="true" id="16"/>
-		<field name="ModifHeure" uuid="0605A870E6B1B34AA75C941CCD5F4060" type="9" never_null="true" id="17"/>
+		<field name="CreatTS" uuid="7A2CF25E62700B4F8FC20F46A3E0540C" type="10" limiting_length="19" never_null="true" id="14" hide_in_REST="true"/>
+		<field name="ModifTS" uuid="F9D2CBE84792DC468DCFCC80CEF52CCD" type="10" limiting_length="19" never_null="true" id="15"/>
 		<primary_key field_name="ID" field_uuid="7D44AEC0186F8341BF2162AF1B5099CF"/>
-		<table_extra output_form="Sortie" input_form="Entree" trigger_delete="true">
-			<editor_table_info displayable_fields_count="18">
+		<table_extra output_form="Sortie" input_form="Entree" trigger_update="true" trigger_insert="true">
+			<editor_table_info displayable_fields_count="17">
 				<color red="255" green="255" blue="255" alpha="0"/>
-				<coordinates left="889" top="19" width="140" height="433.33203125"/>
+				<coordinates left="889" top="19" width="140" height="416.33203125"/>
 			</editor_table_info>
 		</table_extra>
 	</table>
@@ -37,27 +35,25 @@
 				</editor_field_info>
 			</field_extra>
 		</field>
-		<field name="Genre" uuid="15FFEC7B9B271E49B225ED08E50E39A6" type="10" limiting_length="255" never_null="true" id="3"/>
-		<field name="Pays" uuid="D3B12BA7EFC074448E23498DE47B6617" type="10" limiting_length="255" never_null="true" id="5">
+		<field name="Genre" uuid="15FFEC7B9B271E49B225ED08E50E39A6" type="10" limiting_length="100" never_null="true" id="3"/>
+		<field name="Pays" uuid="D3B12BA7EFC074448E23498DE47B6617" type="10" limiting_length="100" never_null="true" id="5">
 			<field_extra enumeration_id="2"/>
 		</field>
 		<field name="Photo" uuid="07A493E23C599842A255D01BF28841C0" type="12" never_null="true" id="7"/>
-		<field name="Domaine" uuid="1F05095FF9109747A2176696D42A1048" type="10" limiting_length="255" never_null="true" id="8"/>
+		<field name="Domaine" uuid="1F05095FF9109747A2176696D42A1048" type="10" limiting_length="100" never_null="true" id="8"/>
 		<field name="Style" uuid="9B90807F5A86ED4E8FCBF46BC066923C" type="10" limiting_length="255" never_null="true" id="9"/>
 		<field name="Info" uuid="EC9B8E7A9A48A444A691DAEF101D2996" type="10" limiting_length="255" never_null="true" id="10"/>
-		<field name="CreatDate" uuid="B6202F66B0232044811AD2651FD5AACA" type="8" never_null="true" id="11"/>
-		<field name="CreatHeure" uuid="4DC4F4C64D611A4BBE8D490033B3E707" type="9" never_null="true" id="12"/>
-		<field name="ModifDate" uuid="FFD32F6D74B4F544BD51D2CBB81B82F9" type="8" never_null="true" id="13"/>
-		<field name="ModifHeure" uuid="7FA43E8F9F4F1D4BA84C84650B5BDBFC" type="9" never_null="true" id="14"/>
+		<field name="CreatTS" uuid="B6202F66B0232044811AD2651FD5AACA" type="10" limiting_length="19" never_null="true" id="11"/>
+		<field name="ModifTS" uuid="4DC4F4C64D611A4BBE8D490033B3E707" type="10" limiting_length="19" never_null="true" id="12"/>
 		<field name="Nom" uuid="BBF2D8C7AE4BE34A845614F2614599FA" type="10" limiting_length="100" never_null="true" id="15"/>
 		<field name="Prenom" uuid="A7E0F3308CDD744F86BC0F4B14C82E97" type="10" limiting_length="100" never_null="true" id="16"/>
 		<field name="DateNaiss" uuid="1C16318379BAF84C996857FA8B681A84" type="10" limiting_length="10" never_null="true" id="17"/>
 		<field name="DateDeces" uuid="C9F6C466D22B6948BBEBBA117EA2A3BB" type="10" limiting_length="10" never_null="true" id="18"/>
 		<primary_key field_name="ID" field_uuid="0527D929F2CBE74A886B87DB09906737"/>
-		<table_extra output_form="Sortie" input_form="Entree" trigger_delete="true" trigger_update="true" trigger_insert="true">
-			<editor_table_info displayable_fields_count="20">
+		<table_extra output_form="Sortie" input_form="Entree" trigger_update="true" trigger_insert="true">
+			<editor_table_info displayable_fields_count="17">
 				<color red="255" green="255" blue="255" alpha="0"/>
-				<coordinates left="12" top="0" width="155" height="462.33203125"/>
+				<coordinates left="12" top="0" width="155" height="407.33203125"/>
 			</editor_table_info>
 		</table_extra>
 	</table>
@@ -68,27 +64,30 @@
 		<field name="Descr" uuid="9FD4850839E84247A25DF708935A693B" type="10" limiting_length="255" never_null="true" id="4"/>
 		<field name="Photo" uuid="935626902FE56149BF3B8608314832A9" type="12" never_null="true" id="5"/>
 		<field name="Info" uuid="92558612E2C24C4CB5ACF7F77463A808" type="10" limiting_length="255" never_null="true" id="6"/>
-		<field name="CreatDate" uuid="9AF16C5C0F7B92478FEA217628F03818" type="8" never_null="true" id="7"/>
-		<field name="CreatHeure" uuid="58AA4B53EA3D2240B62ED33F1160D6FC" type="9" never_null="true" id="8"/>
-		<field name="ModifDate" uuid="3FEB29E774326348A9E9590D7AE7778A" type="8" never_null="true" id="9"/>
-		<field name="ModifHeure" uuid="004FF5EA48D6BC43B756CF96055DF72A" type="9" never_null="true" id="10"/>
+		<field name="CreatTS" uuid="9AF16C5C0F7B92478FEA217628F03818" type="10" limiting_length="19" never_null="true" id="7"/>
+		<field name="ModifTS" uuid="58AA4B53EA3D2240B62ED33F1160D6FC" type="10" limiting_length="19" never_null="true" id="8"/>
 		<field name="ID_Groupe" uuid="1A1C5EA293E78B4EA2A4A7C5AC48325B" type="4" never_null="true" id="11"/>
 		<primary_key field_name="ID" field_uuid="DDE19C7481C5434A99086AF974399B29"/>
-		<table_extra output_form="Sortie" input_form="Entree">
+		<table_extra output_form="Sortie" input_form="Entree" trigger_update="true" trigger_insert="true">
 			<editor_table_info displayable_fields_count="11">
 				<color red="255" green="255" blue="255" alpha="0"/>
-				<coordinates left="628" top="4" width="130" height="275.33203125"/>
+				<coordinates left="628" top="4" width="130" height="291.33203125"/>
 			</editor_table_info>
 		</table_extra>
 	</table>
 	<table name="Groupe" uuid="D88F0FD61202DA49864CA77FFAC012A0" id="4">
 		<field name="ID" uuid="18B8EA71D3B1ED4B9EB0E1E3676B4B5E" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
 		<field name="Nom" uuid="EFE08309B9F6AF4F8178D993DB700555" type="10" limiting_length="255" never_null="true" id="2"/>
+		<field name="Genre" uuid="3DC3C69F5C1EC04A83AB7BE802402C9A" type="10" limiting_length="100" never_null="true" id="3"/>
+		<field name="Pays" uuid="CDBB18DEFED5B240A20121A9B1B756C7" type="10" limiting_length="100" never_null="true" id="4"/>
+		<field name="Domaine" uuid="682B39C533B75E4FB08137DAB2B386C0" type="10" limiting_length="100" never_null="true" id="5"/>
+		<field name="CreatTS" uuid="208F46666055AC4998383FF8859B4B51" type="10" limiting_length="19" never_null="true" id="6"/>
+		<field name="ModifTS" uuid="9BE27EC79216654BAC6B49E46456EECF" type="10" limiting_length="19" never_null="true" id="7"/>
 		<primary_key field_name="ID" field_uuid="18B8EA71D3B1ED4B9EB0E1E3676B4B5E"/>
-		<table_extra>
-			<editor_table_info displayable_fields_count="5">
+		<table_extra trigger_insert="true" trigger_update="true">
+			<editor_table_info displayable_fields_count="7">
 				<color red="255" green="255" blue="255" alpha="0"/>
-				<coordinates left="439" top="177" width="131" height="165.33203125"/>
+				<coordinates left="439" top="177" width="131" height="207.33203125"/>
 			</editor_table_info>
 		</table_extra>
 	</table>
@@ -107,11 +106,13 @@
 		<field name="ID_Qui" uuid="4C7F0C9CA313B84F8E7DD83637E45835" type="4" never_null="true" id="2"/>
 		<field name="ID_Groupe" uuid="21CE5AE2EA24D149935A7B1964EF2081" type="4" never_null="true" id="3"/>
 		<field name="Descr" uuid="04DF76D6F746304EB49F4F8F566EEF39" type="10" limiting_length="255" never_null="true" id="4"/>
+		<field name="CreatTS" uuid="8C369C2440A18A4F85D6CB913B5E4ACE" type="10" limiting_length="19" never_null="true" id="5"/>
+		<field name="ModifTS" uuid="134712C0D4734745B475487C9D9F4EEC" type="10" limiting_length="19" never_null="true" id="6"/>
 		<primary_key field_name="ID" field_uuid="12C98D30D7058942958D3D7D5552264A"/>
-		<table_extra>
-			<editor_table_info displayable_fields_count="6">
+		<table_extra trigger_insert="true" trigger_update="true">
+			<editor_table_info displayable_fields_count="7">
 				<color red="255" green="255" blue="255" alpha="0"/>
-				<coordinates left="253" top="135" width="120" height="167.33203125"/>
+				<coordinates left="253" top="135" width="120" height="208.33203125"/>
 			</editor_table_info>
 		</table_extra>
 	</table>
@@ -149,7 +150,7 @@
 			</editor_relation_info>
 		</relation_extra>
 	</relation>
-	<relation uuid="F81249524E2BE748BA9104E99A8CFB2E" name_Nto1="groupe" name_1toN="roles" auto_load_Nto1="false" auto_load_1toN="false" foreign_key="false" state="1">
+	<relation uuid="F81249524E2BE748BA9104E99A8CFB2E" name_Nto1="groupe" name_1toN="roles" auto_load_Nto1="false" auto_load_1toN="false" foreign_key="false" state="1" integrity="delete">
 		<related_field kind="source">
 			<field_ref uuid="1A1C5EA293E78B4EA2A4A7C5AC48325B" name="ID_Groupe">
 				<table_ref uuid="36E36289CCCA4644A71A1D2676364BB1" name="Role"/>
@@ -166,7 +167,7 @@
 			</editor_relation_info>
 		</relation_extra>
 	</relation>
-	<relation uuid="FAEC33C2FAE4DF45AB89072ED8C0B70E" name_Nto1="groupe" name_1toN="postes" auto_load_Nto1="false" auto_load_1toN="false" foreign_key="false" state="1">
+	<relation uuid="FAEC33C2FAE4DF45AB89072ED8C0B70E" name_Nto1="groupe" name_1toN="postes" auto_load_Nto1="false" auto_load_1toN="false" foreign_key="false" state="1" integrity="delete">
 		<related_field kind="source">
 			<field_ref uuid="21CE5AE2EA24D149935A7B1964EF2081" name="ID_Groupe">
 				<table_ref uuid="381A3D5B3CB3134294F031C4748A5E5E" name="Poste"/>
@@ -183,7 +184,7 @@
 			</editor_relation_info>
 		</relation_extra>
 	</relation>
-	<relation uuid="CCE17664BBA924479E9EF4C08B5150A5" name_Nto1="qui" name_1toN="postes" auto_load_Nto1="false" auto_load_1toN="false" foreign_key="false" state="1">
+	<relation uuid="CCE17664BBA924479E9EF4C08B5150A5" name_Nto1="qui" name_1toN="postes" auto_load_Nto1="false" auto_load_1toN="false" foreign_key="false" state="1" integrity="delete">
 		<related_field kind="source">
 			<field_ref uuid="4C7F0C9CA313B84F8E7DD83637E45835" name="ID_Qui">
 				<table_ref uuid="381A3D5B3CB3134294F031C4748A5E5E" name="Poste"/>

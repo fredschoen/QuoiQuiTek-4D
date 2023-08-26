@@ -212,7 +212,7 @@
 				"label_Genre1": {
 					"type": "text",
 					"text": "Genre:",
-					"top": 103,
+					"top": 105,
 					"left": 10,
 					"width": 76,
 					"height": 18,
@@ -395,7 +395,7 @@
 				"cb_PaysQui": {
 					"type": "combo",
 					"left": 300,
-					"top": 103,
+					"top": 105,
 					"width": 150,
 					"height": 22,
 					"events": [
@@ -678,7 +678,7 @@
 			]
 		}
 	],
-	"geometryStamp": 309,
+	"geometryStamp": 314,
 	"method": "method.4dm",
 	"editor": {
 		"activeView": "View 1",

@@ -15,15 +15,17 @@ Case of
 			Form:C1466.page:=1
 		End if 
 		
-		//criteres d'affichage :
-		Form:C1466.critereQuiListe:=New object:C1471
-		Form:C1466.critereQuiListe.FullName:=""
-		Form:C1466.critereQuiListe.Genre:=""
-		Form:C1466.critereQuiListe.Pays:=""
-		Form:C1466.critereQuiListe.DateNaiss:=""
-		Form:C1466.critereQuiListe.DateDeces:=""
-		Form:C1466.critereQuiListe.Domaine:=""
-		Form:C1466.critereQuiListe.Style:=""
+		If (Undefined:C82(Form:C1466.critereQuiListe))
+			//criteres d'affichage :
+			Form:C1466.critereQuiListe:=New object:C1471
+			Form:C1466.critereQuiListe.FullName:=""
+			Form:C1466.critereQuiListe.Genre:=""
+			Form:C1466.critereQuiListe.Pays:=""
+			Form:C1466.critereQuiListe.DateNaiss:=""
+			Form:C1466.critereQuiListe.DateDeces:=""
+			Form:C1466.critereQuiListe.Domaine:=""
+			Form:C1466.critereQuiListe.Style:=""
+		End if 
 		
 		If (Form:C1466.action="INIT")
 			charger_LesQuis

@@ -33,7 +33,7 @@
 					"top": 80,
 					"left": 343,
 					"width": 615,
-					"height": 271,
+					"height": 157,
 					"visibility": "visible",
 					"sizingX": "fixed",
 					"sizingY": "fixed",
@@ -130,7 +130,7 @@
 							"width": 120,
 							"enterable": true,
 							"header": {
-								"text": "Nom",
+								"text": "Qui",
 								"name": "22"
 							},
 							"footer": {
@@ -205,9 +205,9 @@
 					"width": 60,
 					"height": 18
 				},
-				"field_Annee": {
+				"field_Date": {
 					"type": "input",
-					"dataSource": "Form:C1466.quoi_e.Annee",
+					"dataSource": "Form:C1466.quoi_e.Date",
 					"top": 233,
 					"left": 73,
 					"width": 100,
@@ -490,26 +490,6 @@
 					},
 					"dataSource": "Form:C1466.quoi_e.Domaine"
 				},
-				"zForm_eleCouQuoi_ID": {
-					"type": "input",
-					"dataSource": "Form:C1466.quoiSel_e.ID",
-					"top": 391,
-					"left": 887,
-					"width": 78,
-					"height": 16,
-					"enterable": false,
-					"fill": "transparent",
-					"borderStyle": "none",
-					"textAlign": "left"
-				},
-				"label3": {
-					"type": "text",
-					"text": "F(ec):",
-					"top": 391,
-					"left": 849,
-					"width": 36,
-					"height": 16
-				},
 				"label_DateDernVisu": {
 					"type": "text",
 					"text": "DateDernVisu:",
@@ -588,6 +568,105 @@
 						"onClick"
 					],
 					"action": "cancel"
+				},
+				"lb_lesGroupesDuQuoi": {
+					"type": "listbox",
+					"dataSource": "Form:C1466.roleGroupe_es",
+					"top": 245,
+					"left": 343,
+					"width": 615,
+					"height": 91,
+					"visibility": "visible",
+					"sizingX": "fixed",
+					"sizingY": "fixed",
+					"headerHeight": "2em",
+					"listboxType": "collection",
+					"scrollbarHorizontal": "automatic",
+					"scrollbarVertical": "automatic",
+					"resizingMode": "legacy",
+					"method": "ObjectMethods/lb_lesGroupesDuQuoi.4dm",
+					"currentItemSource": "Form:C1466.roleGroupeSel_e",
+					"events": [
+						"onClick",
+						"onAfterKeystroke"
+					],
+					"currentItemPositionSource": "Form:C1466.posRoleGroupeSel_i",
+					"selectionMode": "single",
+					"columns": [
+						{
+							"header": {
+								"name": "Role1",
+								"text": "Role"
+							},
+							"name": "DescrRole1",
+							"dataSource": "This:C1470.Descr",
+							"footer": {
+								"name": "Pied1"
+							},
+							"events": [],
+							"method": "",
+							"width": 145
+						},
+						{
+							"name": "AgeDansQuoi1",
+							"dataSource": "This:C1470.groupe.Domaine",
+							"width": 56,
+							"enterable": false,
+							"header": {
+								"text": "Domaine",
+								"name": "Entête4"
+							},
+							"footer": {
+								"name": "2"
+							},
+							"events": []
+						},
+						{
+							"name": "Genre1",
+							"dataSource": "This:C1470.groupe.Genre",
+							"width": 37,
+							"enterable": true,
+							"header": {
+								"text": "Genre",
+								"name": "3"
+							},
+							"footer": {
+								"name": "4"
+							},
+							"method": "",
+							"events": []
+						},
+						{
+							"name": "Pays2",
+							"dataSource": "This:C1470.groupe.Pays",
+							"width": 43,
+							"enterable": true,
+							"header": {
+								"text": "Pays",
+								"name": "5"
+							},
+							"footer": {
+								"name": "6"
+							},
+							"events": [],
+							"method": ""
+						},
+						{
+							"name": "FullName1",
+							"dataSource": "This:C1470.groupe.Nom",
+							"width": 120,
+							"enterable": true,
+							"header": {
+								"text": "Groupe",
+								"name": "7"
+							},
+							"footer": {
+								"name": "8"
+							},
+							"events": [],
+							"method": ""
+						}
+					]
 				}
 			},
 			"entryOrder": [
@@ -597,7 +676,7 @@
 				"paysQuoi_CB",
 				"StockQuoi_CB",
 				"field_Real",
-				"field_Annee",
+				"field_Date",
 				"field_Annee1",
 				"field_Prod",
 				"field_Prod1",
@@ -615,14 +694,14 @@
 				"field_ID",
 				"zposQuoiSel_i",
 				"zFormquoiListelength",
-				"zForm_eleCouQuoi_ID",
 				"btTrace",
 				"zMessage",
-				"btQuitter"
+				"btQuitter",
+				"lb_lesGroupesDuQuoi"
 			]
 		}
 	],
-	"geometryStamp": 187,
+	"geometryStamp": 195,
 	"method": "method.4dm",
 	"editor": {
 		"activeView": "View 1",

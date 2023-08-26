@@ -40,8 +40,8 @@
 					"scrollbarHorizontal": "automatic",
 					"scrollbarVertical": "automatic",
 					"resizingMode": "legacy",
-					"selectedItemsSource": "Form:C1466.groupeSel_e",
-					"currentItemSource": "",
+					"selectedItemsSource": "",
+					"currentItemSource": "Form:C1466.groupeSel_e",
 					"events": [
 						"onClick",
 						"onAfterKeystroke"
@@ -117,7 +117,7 @@
 					"top": 11,
 					"width": 302,
 					"height": 16,
-					"dataSource": "Form:C1466.critereGroupeListe.Nom",
+					"dataSource": "Form:C1466.critereListe.Nom",
 					"bottom": 27
 				},
 				"btAppliquerFiltreQuoi": {
@@ -133,11 +133,33 @@
 					"method": "ObjectMethods/btAppliquerFiltreQuoi.4dm",
 					"defaultButton": true,
 					"bottom": 29
+				},
+				"zLength": {
+					"type": "input",
+					"left": 734,
+					"top": 8,
+					"width": 31,
+					"height": 16,
+					"dataSource": "Form:C1466.groupe_es.length",
+					"enterable": false,
+					"dataSourceTypeHint": "integer",
+					"focusable": false,
+					"borderStyle": "none",
+					"textAlign": "right"
 				}
-			}
+			},
+			"entryOrder": [
+				"zCritereNom",
+				"btAppliquerFiltreQuoi",
+				"lb_groupeListe",
+				"btAjouterGroupe",
+				"btQuitter",
+				"btTrace",
+				"zLength"
+			]
 		}
 	],
-	"geometryStamp": 31,
+	"geometryStamp": 33,
 	"method": "method.4dm",
 	"editor": {
 		"activeView": "View 1",

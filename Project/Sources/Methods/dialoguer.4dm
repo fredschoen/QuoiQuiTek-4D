@@ -13,7 +13,7 @@ End if
 
 C_LONGINT:C283($win_l)
 $win_l:=Open form window:C675($form_t)
-MAXIMIZE WINDOW:C453($win_l)
+//MAXIMIZE WINDOW($win_l)
 While ($form_o.page>0)  // 0 :quitter
 	DIALOG:C40($form_t; $form_o)
 End while 

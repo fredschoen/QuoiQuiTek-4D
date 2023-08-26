@@ -359,26 +359,6 @@
 					"style": "custom",
 					"borderStyle": "raised"
 				},
-				"zForm_eleCouQuoi_ID": {
-					"type": "input",
-					"dataSource": "Form:C1466.quoiSel_e.ID",
-					"top": 30,
-					"left": 911,
-					"width": 78,
-					"height": 16,
-					"enterable": false,
-					"fill": "transparent",
-					"borderStyle": "none",
-					"textAlign": "left"
-				},
-				"label3": {
-					"type": "text",
-					"text": "F(ec):",
-					"top": 30,
-					"left": 858,
-					"width": 43,
-					"height": 16
-				},
 				"btSupprimer": {
 					"type": "button",
 					"text": "Supprimer rôle",
@@ -438,11 +418,11 @@
 					"scrollbarHorizontal": "automatic",
 					"scrollbarVertical": "automatic",
 					"resizingMode": "legacy",
-					"dataSource": "Form:C1466.rolesDuQui_es",
+					"dataSource": "Form:C1466.roleDuQui_es",
 					"selectionMode": "single",
-					"currentItemSource": "",
-					"currentItemPositionSource": "Form:C1466.posRolesDuQui_i",
-					"selectedItemsSource": "Form:C1466.rolesDuQuiSel_e",
+					"currentItemSource": "Form:C1466.roleDuQuiSel_e",
+					"currentItemPositionSource": "Form:C1466.posRoleDuQui_i",
+					"selectedItemsSource": "",
 					"events": [
 						"onClick",
 						"onAfterKeystroke"
@@ -572,16 +552,6 @@
 						}
 					]
 				},
-				"zMessage": {
-					"type": "input",
-					"left": 11,
-					"top": 29,
-					"width": 749,
-					"height": 16,
-					"dataSource": "Form:C1466.message",
-					"enterable": false,
-					"dataSourceTypeHint": "text"
-				},
 				"btQuitter": {
 					"type": "button",
 					"text": "Quitter",
@@ -671,6 +641,19 @@
 					"dataSource": "Form:C1466.qui_e.getAge()",
 					"borderStyle": "none",
 					"dataSourceTypeHint": "number"
+				},
+				"zMessage": {
+					"type": "input",
+					"left": 11,
+					"top": 29,
+					"width": 749,
+					"height": 16,
+					"dataSource": "Form:C1466.message",
+					"enterable": false,
+					"dataSourceTypeHint": "text",
+					"fill": "#ffff00",
+					"fontWeight": "bold",
+					"textAlign": "center"
 				}
 			},
 			"entryOrder": [
@@ -695,18 +678,17 @@
 				"zQuiListelength",
 				"zQuiID",
 				"zForm_eleCouQui_ID",
-				"zForm_eleCouQuoi_ID",
 				"btTrace",
-				"zMessage",
 				"btQuitter",
 				"rolePhoto_ZS",
 				"fieldDescrNom",
 				"ge",
-				"zAgeQui"
+				"zAgeQui",
+				"zMessage"
 			]
 		}
 	],
-	"geometryStamp": 734,
+	"geometryStamp": 738,
 	"method": "method.4dm",
 	"editor": {
 		"activeView": "View 1",

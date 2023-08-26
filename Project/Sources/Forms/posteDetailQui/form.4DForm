@@ -506,26 +506,167 @@
 				"Texte3": {
 					"type": "text",
 					"text": "Info Groupe",
-					"top": 433,
-					"left": 18,
+					"top": 60,
+					"left": 493,
 					"width": 79,
 					"height": 15
-				},
-				"Ligne1": {
-					"type": "line",
-					"top": 430,
-					"left": 16,
-					"width": 882,
-					"height": 1
 				},
 				"zGroupeNom": {
 					"type": "input",
 					"dataSource": "Form:C1466.groupe_e.Nom",
-					"top": 451,
-					"left": 18,
+					"top": 80,
+					"left": 493,
 					"width": 355,
 					"height": 16,
 					"enterable": false
+				},
+				"lb_lesQuoisDuQui": {
+					"type": "listbox",
+					"top": 425,
+					"left": 16,
+					"width": 914,
+					"height": 117,
+					"visibility": "visible",
+					"sizingX": "fixed",
+					"sizingY": "grow",
+					"headerHeight": "2em",
+					"listboxType": "collection",
+					"scrollbarHorizontal": "automatic",
+					"scrollbarVertical": "automatic",
+					"resizingMode": "legacy",
+					"dataSource": "Form:C1466.role_es",
+					"selectionMode": "single",
+					"currentItemSource": "Form:C1466.roleSel_e",
+					"currentItemPositionSource": "Form:C1466.posRole_i",
+					"selectedItemsSource": "",
+					"events": [
+						"onClick",
+						"onAfterKeystroke"
+					],
+					"method": "ObjectMethods/lb_lesQuoisDuQui.4dm",
+					"columns": [
+						{
+							"name": "Annee1",
+							"width": 60,
+							"enterable": true,
+							"header": {
+								"text": "Annee",
+								"name": "Entête4"
+							},
+							"footer": {
+								"name": "32"
+							},
+							"dataSource": "This:C1470.quoi.Date",
+							"textAlign": "center"
+						},
+						{
+							"header": {
+								"name": "37",
+								"text": "Age"
+							},
+							"name": "Stock3",
+							"dataSource": "This:C1470.getAge()",
+							"width": 60,
+							"footer": {
+								"name": "Pied4"
+							},
+							"textAlign": "center"
+						},
+						{
+							"header": {
+								"name": "Entête5",
+								"text": "Role"
+							},
+							"name": "Colonne1",
+							"dataSource": "This:C1470.Descr",
+							"footer": {
+								"name": "Pied6"
+							}
+						},
+						{
+							"name": "Nom2",
+							"width": 160,
+							"enterable": true,
+							"header": {
+								"text": "Quoi",
+								"name": "24"
+							},
+							"footer": {
+								"name": "25"
+							},
+							"dataSource": "This:C1470.quoi.Nom"
+						},
+						{
+							"name": "Genre1",
+							"width": 60,
+							"enterable": true,
+							"header": {
+								"text": "Genre",
+								"name": "26"
+							},
+							"footer": {
+								"name": "27"
+							},
+							"dataSource": "This:C1470.quoi.Genre",
+							"textAlign": "center"
+						},
+						{
+							"name": "Pays2",
+							"width": 60,
+							"enterable": true,
+							"header": {
+								"text": "Pays",
+								"name": "28"
+							},
+							"footer": {
+								"name": "29"
+							},
+							"dataSource": "This:C1470.quoi.Pays",
+							"textAlign": "center"
+						},
+						{
+							"name": "Domaine",
+							"width": 60,
+							"enterable": true,
+							"header": {
+								"text": "Stock",
+								"name": "30"
+							},
+							"footer": {
+								"name": "31"
+							},
+							"dataSource": "This:C1470.quoi.Stock",
+							"textAlign": "center"
+						},
+						{
+							"name": "Real1",
+							"width": 170,
+							"enterable": true,
+							"header": {
+								"text": "Real",
+								"name": "35"
+							},
+							"footer": {
+								"name": "36"
+							},
+							"dataSource": "This:C1470.quoi.Real",
+							"events": [
+								"onClick",
+								"onAfterKeystroke"
+							]
+						},
+						{
+							"header": {
+								"name": "38",
+								"text": "Prod"
+							},
+							"name": "Prod1",
+							"dataSource": "This:C1470.quoi.Prod",
+							"footer": {
+								"name": "Pied5"
+							}
+						}
+					]
 				}
 			},
 			"entryOrder": [
@@ -555,11 +696,12 @@
 				"btQuitter",
 				"fieldDescrNom",
 				"zAgeQui",
-				"zGroupeNom"
+				"zGroupeNom",
+				"lb_lesQuoisDuQui"
 			]
 		}
 	],
-	"geometryStamp": 787,
+	"geometryStamp": 796,
 	"method": "method.4dm",
 	"editor": {
 		"activeView": "View 1",

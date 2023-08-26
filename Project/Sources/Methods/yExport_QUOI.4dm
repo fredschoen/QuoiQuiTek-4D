@@ -76,7 +76,7 @@ If (OK=1)
 		$texte:=""
 		$texte:=$texte+String:C10([Quoi:1]ID:1)+$tab
 		$texte:=$texte+[Quoi:1]Nom:2+$tab
-		$texte:=$texte+"'"+[Quoi:1]Annee:7+$tab  //pour être pris en "text" dans excel
+		$texte:=$texte+"'"+[Quoi:1]Date:7+$tab  //pour être pris en "text" dans excel
 		$texte:=$texte+[Quoi:1]Domaine:8+$tab
 		$texte:=$texte+[Quoi:1]Genre:3+$tab
 		$texte:=$texte+[Quoi:1]Pays:4+$tab
@@ -97,10 +97,10 @@ If (OK=1)
 		$texte:=$texte+[Quoi:1]Real:6+$tab
 		$texte:=$texte+[Quoi:1]Prod:9+$tab
 		$texte:=$texte+[Quoi:1]Stock:5+$tab
-		$texte:=$texte+String:C10([Quoi:1]CreatDate:14)+$tab
-		$texte:=$texte+String:C10([Quoi:1]CreatHeure:15)+$tab
-		$texte:=$texte+String:C10([Quoi:1]ModifDate:16)+$tab
-		$texte:=$texte+String:C10([Quoi:1]ModifHeure:17)+$tab
+		$texte:=$texte+String:C10([Quoi:1]CreatTS:14)+$tab
+		$texte:=$texte+String:C10([Quoi:1]ModifTS:15)+$tab
+		$texte:=$texte+String:C10([Quoi:1]CreatTS:14)+$tab
+		$texte:=$texte+String:C10([Quoi:1]ModifTS:15)+$tab
 		$texte:=$texte+$rc
 		
 		SEND PACKET:C103($doc; $texte)

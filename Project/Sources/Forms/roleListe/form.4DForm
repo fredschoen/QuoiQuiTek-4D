@@ -31,7 +31,7 @@
 				"lb_roleListe": {
 					"type": "listbox",
 					"dataSource": "Form:C1466.role_es",
-					"top": 61,
+					"top": 45,
 					"left": 10,
 					"width": 1105,
 					"height": 469,
@@ -54,13 +54,13 @@
 					"selectionMode": "single",
 					"columns": [
 						{
-							"name": "c_FullName",
-							"dataSource": "This:C1470.qui.FullName",
+							"name": "cNom",
+							"dataSource": "This:C1470.getNom()",
 							"width": 230,
 							"enterable": false,
 							"header": {
-								"text": "Nom Qui",
-								"name": "eNomQui"
+								"text": "Nom",
+								"name": "eNom"
 							},
 							"footer": {
 								"name": "9"
@@ -77,13 +77,13 @@
 								"name": "Pied6"
 							},
 							"width": 35,
-							"dataSource": "This:C1470.Age",
+							"dataSource": "This:C1470.getAge()",
 							"enterable": false
 						},
 						{
 							"name": "cGenre1",
 							"dataSource": "This:C1470.qui.Genre",
-							"width": 20,
+							"width": 30,
 							"enterable": false,
 							"header": {
 								"text": "Gr",
@@ -97,7 +97,7 @@
 						{
 							"name": "cPays1",
 							"dataSource": "This:C1470.qui.Pays",
-							"width": 80,
+							"width": 60,
 							"enterable": false,
 							"header": {
 								"text": "Pays",
@@ -153,7 +153,7 @@
 						{
 							"name": "cStyle1",
 							"dataSource": "This:C1470.qui.Style",
-							"width": 70,
+							"width": 60,
 							"enterable": false,
 							"header": {
 								"text": "Style",
@@ -166,6 +166,19 @@
 						},
 						{
 							"header": {
+								"name": "ezDomaine",
+								"text": "DomO"
+							},
+							"name": "cDomaineO1",
+							"footer": {
+								"name": "Pied4"
+							},
+							"width": 50,
+							"dataSource": "This:C1470.quoi.Domaine",
+							"enterable": false
+						},
+						{
+							"header": {
 								"name": "ezNom",
 								"text": "nom Quoi"
 							},
@@ -173,7 +186,7 @@
 							"footer": {
 								"name": "Pied1"
 							},
-							"width": 210,
+							"width": 180,
 							"dataSource": "This:C1470.quoi.Nom",
 							"enterable": false
 						},
@@ -188,7 +201,7 @@
 								"name": "Pied7"
 							},
 							"dataSource": "This:C1470.Descr",
-							"width": 100,
+							"width": 90,
 							"enterable": false
 						},
 						{
@@ -219,25 +232,12 @@
 						},
 						{
 							"header": {
-								"name": "ezDomaine",
-								"text": "Domaine"
+								"name": "ezAnnee1",
+								"text": "DatO"
 							},
-							"name": "cDomaineO1",
+							"name": "cDateO2",
 							"footer": {
-								"name": "Pied4"
-							},
-							"width": 50,
-							"dataSource": "This:C1470.quoi.Domaine",
-							"enterable": false
-						},
-						{
-							"header": {
-								"name": "ezAnnee",
-								"text": "Annee"
-							},
-							"name": "cAnneeO1",
-							"footer": {
-								"name": "Pied5"
+								"name": "Pied8"
 							},
 							"width": 30,
 							"dataSource": "This:C1470.quoi.Date",
@@ -248,72 +248,48 @@
 				"Texte": {
 					"type": "text",
 					"text": "pour voir détail: Click ou Flèche droite ",
-					"top": 12,
-					"left": 837,
+					"top": 9,
+					"left": 872,
 					"width": 134,
 					"height": 31
 				},
 				"zCritereNom": {
 					"type": "input",
 					"left": 16,
-					"top": 27,
+					"top": 12,
 					"width": 220,
 					"height": 16,
-					"dataSource": "Form:C1466.critere.role.Nom"
+					"dataSource": "Form:C1466.critereRole.Nom"
 				},
 				"zCritereGenre": {
 					"type": "input",
 					"left": 271,
-					"top": 26,
+					"top": 12,
 					"width": 30,
 					"height": 16,
-					"dataSource": "Form:C1466.critere.role.Genre"
+					"dataSource": "Form:C1466.critereRole.Genre"
 				},
 				"zCriterePays": {
 					"type": "input",
 					"left": 307,
-					"top": 25,
+					"top": 12,
 					"width": 37,
 					"height": 16,
-					"dataSource": "Form:C1466.critere.role.Pays"
-				},
-				"zCritereAnneeNaiss": {
-					"type": "input",
-					"left": 376,
-					"top": 27,
-					"width": 41,
-					"height": 16,
-					"dataSource": "Form:C1466.critere.role.DateNaiss"
-				},
-				"zCritereAnneeDeces": {
-					"type": "input",
-					"left": 423,
-					"top": 27,
-					"width": 50,
-					"height": 16,
-					"dataSource": "Form:C1466.critere.role.DateDeces"
+					"dataSource": "Form:C1466.critereRole.Pays"
 				},
 				"zCritereDomaine": {
 					"type": "input",
-					"left": 477,
-					"top": 27,
+					"left": 576,
+					"top": 14,
 					"width": 45,
 					"height": 16,
-					"dataSource": "Form:C1466.critere.role.Domaine"
-				},
-				"zCritereStyle": {
-					"type": "input",
-					"left": 525,
-					"top": 27,
-					"width": 60,
-					"height": 16,
-					"dataSource": "Form:C1466.critere.role.Style"
+					"dataSource": "Form:C1466.critereRole.Domaine"
 				},
 				"btAppliquerFiltreRole": {
 					"type": "button",
 					"text": "Appliquer le filtre",
-					"top": 21,
-					"left": 624,
+					"top": 8,
+					"left": 423,
 					"width": 113,
 					"height": 24,
 					"events": [
@@ -325,30 +301,17 @@
 				"zCritereAge": {
 					"type": "input",
 					"left": 240,
-					"top": 27,
+					"top": 12,
 					"width": 30,
 					"height": 16,
-					"dataSource": "Form:C1466.critere.role.Age"
-				},
-				"bTrace": {
-					"type": "checkbox",
-					"text": "Trace",
-					"top": 4,
-					"left": 6,
-					"width": 49,
-					"height": 16,
-					"events": [
-						"onClick"
-					],
-					"method": "ObjectMethods/bTrace.4dm",
-					"dataSource": "vTrace",
-					"dataSourceTypeHint": "boolean"
+					"dataSource": "Form:C1466.critereRole.Age",
+					"dataSourceTypeHint": "integer"
 				},
 				"btTrace": {
 					"type": "button",
 					"text": "trace",
-					"top": 21,
-					"left": 1064,
+					"top": 25,
+					"left": 966,
 					"width": 40,
 					"height": 15,
 					"events": [
@@ -361,14 +324,50 @@
 				"btQuitter": {
 					"type": "button",
 					"text": "Quitter",
-					"top": 23,
-					"left": 752,
+					"top": 12,
+					"left": 784,
 					"width": 60,
 					"height": 20,
 					"events": [
 						"onClick"
 					],
 					"action": "cancel"
+				},
+				"bAgePlus": {
+					"type": "button",
+					"text": "+",
+					"top": 28,
+					"left": 239,
+					"width": 18,
+					"height": 16,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/bAgePlus.4dm",
+					"bottom": 44,
+					"fontSize": 8
+				},
+				"bAgeMoins": {
+					"type": "button",
+					"text": "-",
+					"top": 28,
+					"left": 255,
+					"width": 18,
+					"height": 16,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/bAgeMoins.4dm",
+					"bottom": 44,
+					"fontSize": 8
+				},
+				"zCritereDateO": {
+					"type": "input",
+					"left": 1036,
+					"top": 12,
+					"width": 79,
+					"height": 16,
+					"dataSource": "Form:C1466.critereRole.DateO"
 				}
 			},
 			"entryOrder": [
@@ -376,19 +375,18 @@
 				"zCritereAge",
 				"zCritereGenre",
 				"zCriterePays",
-				"zCritereAnneeNaiss",
-				"zCritereAnneeDeces",
+				"bAgePlus",
+				"bAgeMoins",
 				"zCritereDomaine",
-				"zCritereStyle",
+				"zCritereDateO",
 				"btAppliquerFiltreRole",
+				"btQuitter",
 				"lb_roleListe",
-				"bTrace",
-				"btTrace",
-				"btQuitter"
+				"btTrace"
 			]
 		}
 	],
-	"geometryStamp": 764,
+	"geometryStamp": 852,
 	"method": "method.4dm",
 	"editor": {
 		"activeView": "View 1",
