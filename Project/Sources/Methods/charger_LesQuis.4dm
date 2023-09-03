@@ -4,7 +4,8 @@ var $qui_es : cs:C1710.QuiSelection
 var $texteQuery : Text
 
 $texteQuery:=""
-$texteQuery:=$texteQuery+_f_traduireArgQuery("FullName"; "texte"; Form:C1466.critereQuiListe.FullName)
+$texteQuery:=$texteQuery+_f_traduireArgQuery("Nom"; "texte"; Form:C1466.critereQuiListe.Nom)
+$texteQuery:=$texteQuery+_f_traduireArgQuery("Prenom"; "texte"; Form:C1466.critereQuiListe.Prenom)
 $texteQuery:=$texteQuery+_f_traduireArgQuery("Genre"; "texte"; Form:C1466.critereQuiListe.Genre; Length:C16($texteQuery))
 $texteQuery:=$texteQuery+_f_traduireArgQuery("Pays"; "texte"; Form:C1466.critereQuiListe.Pays; Length:C16($texteQuery))
 $texteQuery:=$texteQuery+_f_traduireArgQuery("DateNaiss"; "texte"; Form:C1466.critereQuiListe.DateNaiss; Length:C16($texteQuery))
@@ -14,26 +15,26 @@ $texteQuery:=$texteQuery+_f_traduireArgQuery("Style"; "texte"; Form:C1466.criter
 
 If ($texteQuery>"")
 	
-	//cas particulier du Fullname (avec apostrophe)
-	If (Form:C1466.critereQuiListe.FullName>"")
+	//cas particulier du Nom (avec apostrophe)
+	If (Form:C1466.critereQuiListe.Nom>"")
 		C_TEXT:C284($operateurCritereFullName; $valeurCritereFullName)
 		Case of 
-			: ((Substring:C12(Form:C1466.critereQuiListe.FullName; 1; 2)="<=")\
-				 | (Substring:C12(Form:C1466.critereQuiListe.FullName; 1; 2)=">="))
-				$operateurCritereFullName:=Substring:C12(Form:C1466.critereQuiListe.FullName; 1; 2)
-				$valeurCritereFullName:=Substring:C12(Form:C1466.critereQuiListe.FullName; 3; Length:C16(Form:C1466.critereQuiListe.FullName))
+			: ((Substring:C12(Form:C1466.critereQuiListe.Nom; 1; 2)="<=")\
+				 | (Substring:C12(Form:C1466.critereQuiListe.Nom; 1; 2)=">="))
+				$operateurCritereFullName:=Substring:C12(Form:C1466.critereQuiListe.Nom; 1; 2)
+				$valeurCritereFullName:=Substring:C12(Form:C1466.critereQuiListe.Nom; 3; Length:C16(Form:C1466.critereQuiListe.Nom))
 				
-			: ((Substring:C12(Form:C1466.critereQuiListe.FullName; 1; 1)="=")\
-				 | (Substring:C12(Form:C1466.critereQuiListe.FullName; 1; 1)=">")\
-				 | (Substring:C12(Form:C1466.critereQuiListe.FullName; 1; 1)="<")\
-				 | (Substring:C12(Form:C1466.critereQuiListe.FullName; 1; 1)="#")\
+			: ((Substring:C12(Form:C1466.critereQuiListe.Nom; 1; 1)="=")\
+				 | (Substring:C12(Form:C1466.critereQuiListe.Nom; 1; 1)=">")\
+				 | (Substring:C12(Form:C1466.critereQuiListe.Nom; 1; 1)="<")\
+				 | (Substring:C12(Form:C1466.critereQuiListe.Nom; 1; 1)="#")\
 				)
-				$operateurCritereFullName:=Substring:C12(Form:C1466.critereQuiListe.FullName; 1; 1)
-				$valeurCritereFullName:=Substring:C12(Form:C1466.critereQuiListe.FullName; 2; Length:C16(Form:C1466.critereQuiListe.FullName))
+				$operateurCritereFullName:=Substring:C12(Form:C1466.critereQuiListe.Nom; 1; 1)
+				$valeurCritereFullName:=Substring:C12(Form:C1466.critereQuiListe.Nom; 2; Length:C16(Form:C1466.critereQuiListe.Nom))
 				
 			Else 
 				$operateurCritereFullName:="="
-				$valeurCritereFullName:=Form:C1466.critereQuiListe.FullName
+				$valeurCritereFullName:=Form:C1466.critereQuiListe.Nom
 				
 		End case 
 		

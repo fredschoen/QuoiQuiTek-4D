@@ -1,14 +1,20 @@
 {
 	"Sources/Forms/roleDetail/form.4DForm": {
 		"left": 0,
-		"top": 78,
+		"top": 20,
 		"width": 1366,
-		"height": 627
+		"height": 685
 	},
-	"Sources/Forms/roleListe/form.4DForm": {
+	"Sources/Forms/quoiDetail/form.4DForm": {
 		"left": 0,
-		"top": 167,
+		"top": 20,
 		"width": 1366,
-		"height": 627
+		"height": 685
+	},
+	"Sources/Forms/quiListe/form.4DForm": {
+		"left": 0,
+		"top": 20,
+		"width": 1366,
+		"height": 685
 	}
 }

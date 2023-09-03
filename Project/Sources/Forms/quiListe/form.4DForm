@@ -49,13 +49,26 @@
 					"currentItemPositionSource": "Form:C1466.posQuiSel_i",
 					"columns": [
 						{
-							"name": "c_Nom2",
-							"dataSource": "This:C1470.FullName",
-							"width": 300,
+							"name": "c_Nom",
+							"dataSource": "This:C1470.Nom",
+							"width": 150,
 							"enterable": false,
 							"header": {
 								"text": "Nom",
-								"name": "eNomQui"
+								"name": "eNomQui1"
+							},
+							"footer": {
+								"name": "8"
+							}
+						},
+						{
+							"name": "c_PreNom",
+							"dataSource": "This:C1470.Prenom",
+							"width": 150,
+							"enterable": false,
+							"header": {
+								"text": "Prénom",
+								"name": "ePrenomQui"
 							},
 							"footer": {
 								"name": "7"
@@ -185,9 +198,9 @@
 					"type": "input",
 					"left": 12,
 					"top": 10,
-					"width": 290,
+					"width": 145,
 					"height": 16,
-					"dataSource": "Form:C1466.critereQuiListe.FullName"
+					"dataSource": "Form:C1466.critereQuiListe.Nom"
 				},
 				"btAppliquerFiltreQui": {
 					"type": "button",
@@ -204,7 +217,7 @@
 				},
 				"zCritereGenre": {
 					"type": "input",
-					"left": 309,
+					"left": 312,
 					"top": 9,
 					"width": 44,
 					"height": 16,
@@ -350,10 +363,19 @@
 					"focusable": false,
 					"borderStyle": "none",
 					"textAlign": "right"
+				},
+				"zCriterePrenom": {
+					"type": "input",
+					"left": 163,
+					"top": 10,
+					"width": 145,
+					"height": 16,
+					"dataSource": "Form:C1466.critereQuiListe.Prenom"
 				}
 			},
 			"entryOrder": [
 				"zCritereNom",
+				"zCriterePrenom",
 				"zCritereGenre",
 				"zCriterePays",
 				"zCritereDateNaiss",
@@ -365,15 +387,15 @@
 				"btAppliquerFiltreQui",
 				"lb_quiListe",
 				"btAjouterQui",
+				"btQuitter",
 				"btTrace",
 				"fred",
-				"btQuitter",
 				"zNbre",
 				"zLength"
 			]
 		}
 	],
-	"geometryStamp": 2893,
+	"geometryStamp": 3041,
 	"method": "method.4dm",
 	"editor": {
 		"activeView": "View 1",
