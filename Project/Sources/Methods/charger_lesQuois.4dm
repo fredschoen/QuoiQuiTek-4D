@@ -56,6 +56,8 @@ Else
 	$quoi_es:=ds:C1482.Quoi.all()
 End if 
 
+//Charger la liste
+Form:C1466.quoi_es:=$quoi_es
 
-Form:C1466.quoi_es:=$quoi_es.orderBy("Nom")
-// pour test: LISTBOX TRIER COLONNES(*; "quoiListe_LB"; (2); >)
+//trier la liste
+trier_QuoiListe

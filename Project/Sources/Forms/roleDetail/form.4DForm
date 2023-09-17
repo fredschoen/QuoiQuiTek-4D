@@ -642,7 +642,7 @@
 					"enterable": false,
 					"focusable": false
 				},
-				"btSupprimer": {
+				"btSupprimerRole": {
 					"type": "button",
 					"text": "Supprimer rôle",
 					"top": 4,
@@ -652,7 +652,7 @@
 					"events": [
 						"onClick"
 					],
-					"method": "ObjectMethods/btSupprimer.4dm",
+					"method": "ObjectMethods/btSupprimerRole.4dm",
 					"style": "custom",
 					"borderStyle": "raised"
 				},
@@ -1049,7 +1049,7 @@
 				"btPremier",
 				"btDernier",
 				"btSauver",
-				"btSupprimer",
+				"btSupprimerRole",
 				"zposQuiSel_i",
 				"zQuiListelength",
 				"zQuiID",
@@ -1062,7 +1062,7 @@
 			]
 		}
 	],
-	"geometryStamp": 449,
+	"geometryStamp": 450,
 	"method": "method.4dm",
 	"editor": {
 		"activeView": "View 1",

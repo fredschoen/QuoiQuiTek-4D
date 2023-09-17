@@ -63,12 +63,13 @@
 					"method": "ObjectMethods/lb_quoiListe.4dm",
 					"columns": [
 						{
-							"name": "Nom",
+							"name": "cNom",
 							"width": 305,
 							"enterable": false,
 							"header": {
 								"text": "Nom",
-								"name": "6"
+								"name": "eNom",
+								"dataSource": "eNom"
 							},
 							"footer": {
 								"name": "7"
@@ -77,10 +78,11 @@
 						},
 						{
 							"header": {
-								"name": "14",
-								"text": "Domaine"
+								"name": "eDomaine",
+								"text": "Domaine",
+								"dataSource": "eDomaine"
 							},
-							"name": "Stock1",
+							"name": "cDomaine",
 							"dataSource": "This:C1470.Domaine",
 							"width": 60,
 							"footer": {
@@ -90,12 +92,13 @@
 							"enterable": false
 						},
 						{
-							"name": "Genre",
+							"name": "cGenre",
 							"width": 60,
 							"enterable": false,
 							"header": {
 								"text": "Genre",
-								"name": "2"
+								"name": "eGenre",
+								"dataSource": "eGenre"
 							},
 							"footer": {
 								"name": "3"
@@ -104,12 +107,13 @@
 							"textAlign": "center"
 						},
 						{
-							"name": "Pays",
+							"name": "cPays",
 							"width": 60,
 							"enterable": false,
 							"header": {
 								"text": "Pays",
-								"name": "8"
+								"name": "ePays",
+								"dataSource": "ePays"
 							},
 							"footer": {
 								"name": "9"
@@ -118,12 +122,13 @@
 							"textAlign": "center"
 						},
 						{
-							"name": "Stock",
+							"name": "eStock1",
 							"width": 60,
 							"enterable": false,
 							"header": {
 								"text": "Stock",
-								"name": "12"
+								"name": "eStock",
+								"dataSource": "eStock"
 							},
 							"footer": {
 								"name": "13"
@@ -132,12 +137,13 @@
 							"textAlign": "center"
 						},
 						{
-							"name": "Date",
+							"name": "cDate",
 							"width": 60,
 							"enterable": false,
 							"header": {
 								"text": "Date",
-								"name": "Entête1"
+								"name": "eDate",
+								"dataSource": "eDate"
 							},
 							"footer": {
 								"name": "1"
@@ -146,12 +152,13 @@
 							"textAlign": "left"
 						},
 						{
-							"name": "ID",
+							"name": "cQual",
 							"width": 39,
 							"enterable": false,
 							"header": {
 								"text": "Qual",
-								"name": "4"
+								"name": "eQual",
+								"dataSource": "eQual"
 							},
 							"footer": {
 								"name": "5"
@@ -160,12 +167,12 @@
 							"visibility": "visible"
 						},
 						{
-							"name": "Real",
+							"name": "cReal",
 							"width": 119,
 							"enterable": false,
 							"header": {
 								"text": "Real",
-								"name": "10"
+								"name": "eReal"
 							},
 							"footer": {
 								"name": "11"
@@ -174,10 +181,10 @@
 						},
 						{
 							"header": {
-								"name": "Entête6",
+								"name": "eDateDern",
 								"text": "DateDernVisu"
 							},
-							"name": "DateDernVisu",
+							"name": "cDateDernVisu",
 							"dataSource": "This:C1470.DateDernVisu",
 							"width": 66,
 							"footer": {
@@ -187,10 +194,10 @@
 						},
 						{
 							"header": {
-								"name": "15",
+								"name": "eProd",
 								"text": "Prod"
 							},
-							"name": "Prod",
+							"name": "cProd",
 							"dataSource": "This:C1470.Prod",
 							"footer": {
 								"name": "Pied2"
@@ -438,7 +445,7 @@
 			]
 		}
 	],
-	"geometryStamp": 3417,
+	"geometryStamp": 3440,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",

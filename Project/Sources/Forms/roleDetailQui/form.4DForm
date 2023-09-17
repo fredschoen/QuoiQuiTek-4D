@@ -369,9 +369,9 @@
 					"events": [
 						"onClick"
 					],
-					"method": "ObjectMethods/btSupprimer.4dm",
 					"style": "custom",
-					"borderStyle": "raised"
+					"borderStyle": "raised",
+					"method": "ObjectMethods/btSupprimer.4dm"
 				},
 				"label_Prenom": {
 					"type": "text",
@@ -688,7 +688,7 @@
 			]
 		}
 	],
-	"geometryStamp": 738,
+	"geometryStamp": 740,
 	"method": "method.4dm",
 	"editor": {
 		"activeView": "View 1",

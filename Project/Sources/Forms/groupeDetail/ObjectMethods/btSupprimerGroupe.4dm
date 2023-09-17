@@ -1,4 +1,4 @@
-//btSupprimerQuoi
+//btSupprimerGroupe
 CONFIRM:C162("supprimer le groupe ?")
 If (OK=1)
 	supprimerGroupe

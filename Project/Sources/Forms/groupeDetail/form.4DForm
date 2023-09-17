@@ -76,7 +76,7 @@
 					],
 					"method": "ObjectMethods/btAjouterPoste.4dm"
 				},
-				"btSupprimer": {
+				"btSupprimerGroupe": {
 					"type": "button",
 					"text": "Suprimer le groupe",
 					"top": 5,
@@ -86,7 +86,7 @@
 					"events": [
 						"onClick"
 					],
-					"method": "ObjectMethods/btSupprimer.4dm",
+					"method": "ObjectMethods/btSupprimerGroupe.4dm",
 					"right": 517
 				},
 				"btSuivant": {
@@ -663,7 +663,7 @@
 				"btPremier",
 				"btDernier",
 				"btSauverQuoi",
-				"btSupprimer",
+				"btSupprimerGroupe",
 				"btAjouterPoste",
 				"btSelectionnerQuoi",
 				"zPosSel",
@@ -679,7 +679,7 @@
 			]
 		}
 	],
-	"geometryStamp": 521,
+	"geometryStamp": 522,
 	"method": "method.4dm",
 	"editor": {
 		"activeView": "View 1",
