@@ -1,5 +1,6 @@
 //%attributes = {}
 //charger_unRole
+var $img_i : Picture
 
 //se déplacer dans la liste box de page  1
 Form:C1466.posRoleSel_i:=_f_deplacer_curseur(Form:C1466.action; Form:C1466.role_es.length; Form:C1466.posRoleSel_i)
@@ -10,6 +11,15 @@ If (Form:C1466.posRoleSel_i>0)
 	Form:C1466.role_e:=Form:C1466.role_es[Form:C1466.posRoleSel_i-1]  //si position=1, alors indice=0
 	//-dépendances du role
 	Form:C1466.quoi_e:=Form:C1466.role_e.quoi
+	
+	//photo
+	$x:=Folder:C1567(fk data folder:K87:12).platformPath+"Photos"+Folder separator:K24:12+"r"+String:C10(Form:C1466.role_e.ID; "0000000")+".png"
+	READ PICTURE FILE:C678($x; $img_i)
+	If (OK=1)
+		Form:C1466.photoRole_i:=$img_i
+	Else 
+		Form:C1466.photoRole_i:=Null:C1517
+	End if 
 	
 	If (Undefined:C82(Form:C1466.role_e.qui))  //alors in est sur un groupe
 		Form:C1466.groupe_e:=Form:C1466.role_e.groupe

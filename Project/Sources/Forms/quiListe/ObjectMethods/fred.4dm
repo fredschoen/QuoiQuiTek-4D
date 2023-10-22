@@ -1,2 +1,1 @@
-$liste:=ds:C1482.Qui.query("AnneeDeces > 0 and DateDeces < :1"; "0").orderBy("Nom")
-Form:C1466.qui_es:=$liste.orderBy("FullName")
+Form:C1466.qui_es:=ds:C1482.Qui.query("ID = 315").orderBy("Nom")

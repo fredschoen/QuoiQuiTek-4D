@@ -43,7 +43,7 @@
 					"width": 250,
 					"height": 20
 				},
-				"btSauverQuoi": {
+				"btSauverGroupe": {
 					"type": "button",
 					"text": "Sauver",
 					"top": 5,
@@ -54,7 +54,7 @@
 						"onClick"
 					],
 					"defaultButton": true,
-					"method": "ObjectMethods/btSauverQuoi.4dm",
+					"method": "ObjectMethods/btSauverGroupe.4dm",
 					"shortcutAccel": true,
 					"shortcutControl": false,
 					"shortcutShift": false,
@@ -187,9 +187,9 @@
 					"borderStyle": "none",
 					"textAlign": "right"
 				},
-				"btSelectionnerQuoi": {
+				"btSelectionnerGroupe": {
 					"type": "button",
-					"text": "Selectionner le quoi",
+					"text": "Selectionner le groupe",
 					"top": 5,
 					"left": 711,
 					"width": 130,
@@ -198,7 +198,7 @@
 						"onClick"
 					],
 					"defaultButton": false,
-					"method": "ObjectMethods/btSelectionnerQuoi.4dm"
+					"method": "ObjectMethods/btSelectionnerGroupe.4dm"
 				},
 				"btTrace": {
 					"type": "button",
@@ -662,10 +662,10 @@
 				"btPrecedent",
 				"btPremier",
 				"btDernier",
-				"btSauverQuoi",
+				"btSauverGroupe",
 				"btSupprimerGroupe",
 				"btAjouterPoste",
-				"btSelectionnerQuoi",
+				"btSelectionnerGroupe",
 				"zPosSel",
 				"zLength",
 				"btTrace",
@@ -679,7 +679,7 @@
 			]
 		}
 	],
-	"geometryStamp": 522,
+	"geometryStamp": 524,
 	"method": "method.4dm",
 	"editor": {
 		"activeView": "View 1",

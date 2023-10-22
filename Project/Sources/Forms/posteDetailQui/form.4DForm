@@ -100,8 +100,8 @@
 					"type": "input",
 					"left": 16,
 					"top": 138,
-					"width": 330,
-					"height": 240,
+					"width": 159,
+					"height": 96,
 					"dataSourceTypeHint": "picture",
 					"dataSource": "Form:C1466.qui_e.Photo",
 					"enterable": true,
@@ -667,6 +667,20 @@
 							}
 						}
 					]
+				},
+				"iQuiPhoto1": {
+					"type": "input",
+					"left": 184,
+					"top": 138,
+					"width": 159,
+					"height": 96,
+					"dataSourceTypeHint": "picture",
+					"dataSource": "Form:C1466.photoQui_i",
+					"enterable": true,
+					"focusable": false,
+					"contextMenu": "none",
+					"events": [],
+					"pictureFormat": "proportionalCenter"
 				}
 			},
 			"entryOrder": [
@@ -697,11 +711,12 @@
 				"fieldDescrNom",
 				"zAgeQui",
 				"zGroupeNom",
-				"lb_lesQuoisDuQui"
+				"lb_lesQuoisDuQui",
+				"iQuiPhoto1"
 			]
 		}
 	],
-	"geometryStamp": 797,
+	"geometryStamp": 800,
 	"method": "method.4dm",
 	"editor": {
 		"activeView": "View 1",

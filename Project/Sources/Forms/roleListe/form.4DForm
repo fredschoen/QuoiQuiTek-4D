@@ -305,7 +305,8 @@
 					"width": 30,
 					"height": 16,
 					"dataSource": "Form:C1466.critereRole.Age",
-					"dataSourceTypeHint": "integer"
+					"dataSourceTypeHint": "integer",
+					"tooltip": "saisir l'age sur 2 chiffres"
 				},
 				"btTrace": {
 					"type": "button",

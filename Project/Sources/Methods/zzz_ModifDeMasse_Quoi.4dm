@@ -1,50 +1,25 @@
 //%attributes = {}
 //zzz_ModifDeMasse_Quoi
-var $quoi_es : cs:C1710.QuoiSelection
-var $quoi_e : cs:C1710.QuoiEntity
-var $nbr_i : Integer
-var $txt : Text
-
-$txt:=""
+$execAvecMaj_b:=True:C214
+var $quoi_es : cs:C1710.RoleSelection
+var $quoi_e : cs:C1710.RoleEntity
+var $nbrMaj_i : Integer
+var $nbrLus_i : Integer
 $quoi_es:=ds:C1482.Quoi.all()
-$nbr_i:=0
-CLEAR PASTEBOARD:C402
-$nomPrev:=""
+
 For each ($quoi_e; $quoi_es)
-	$go:=True:C214
-	If ($quoi_e.Domaine#"LIVR")
-		$go:=False:C215
-	End if 
-	If ($go)
-		$pos:=Position:C15(" / "; $quoi_e.Nom)
-		If ($pos=0)
-			$go:=False:C215
-		End if 
+	$x:=Folder:C1567(fk data folder:K87:12).platformPath+"Photos"+Folder separator:K24:12+"o"+String:C10($quoi_e.ID; "0000000")+".png"
+	
+	If (Picture size:C356($quoi_e.Photo)>0)
+		WRITE PICTURE FILE:C680($x; $quoi_e.Photo)
+		$nbrMaj_i:=$nbrMaj_i+1
+		//Else 
+		//If (Test path name($x)#Is a document)
+		//DELETE DOCUMENT($x)
+		//End if 
 	End if 
 	
-	If ($go)
-		$nom:=Substring:C12($quoi_e.Nom; 1; $pos)
-		If ($nom=$nomPrev)
-			$go:=False:C215
-		Else 
-			$nomPrev:=$nom
-		End if 
-	End if 
-	
-	If ($go)
-		$pos2:=Position:C15(" "; $nom)
-		$txt:=$txt+$nom+Char:C90(Tab:K15:37)+Substring:C12($nom; 1; $pos2)+Char:C90(Tab:K15:37)+Substring:C12($nom; $pos2+1; 999)+Char:C90(Carriage return:K15:38)
-		$nbr_i:=$nbr_i+1
-		If (False:C215)
-			$status:=$quoi_e.save()
-			If ($status.success)
-			Else 
-				ALERT:C41("ko")
-				TRACE:C157
-			End if 
-		End if 
-	End if 
+	$nbrLus_i:=$nbrLus_i+1
 	
 End for each 
-SET TEXT TO PASTEBOARD:C523($txt)
-ALERT:C41("ok "+String:C10(($nbr_i)))
+ALERT:C41("ok "+String:C10($nbrMaj_i)+" sur "+String:C10($nbrLus_i))

@@ -98,10 +98,10 @@
 				},
 				"iQuiPhoto": {
 					"type": "input",
-					"left": 864,
+					"left": 876,
 					"top": 385,
-					"width": 196,
-					"height": 144,
+					"width": 111,
+					"height": 64,
 					"dataSourceTypeHint": "picture",
 					"dataSource": "Form:C1466.qui_e.Photo",
 					"enterable": true,
@@ -578,10 +578,10 @@
 				},
 				"rolePhoto_ZS": {
 					"type": "input",
-					"left": 874,
-					"top": 91,
-					"width": 186,
-					"height": 128,
+					"left": 892,
+					"top": 47,
+					"width": 109,
+					"height": 64,
 					"dataSourceTypeHint": "picture",
 					"dataSource": "Form:C1466.role_e.Photo",
 					"pictureFormat": "proportionalCenter"
@@ -1016,6 +1016,33 @@
 					"fill": "#ffff00",
 					"fontWeight": "bold",
 					"textAlign": "center"
+				},
+				"rolePhoto_ZS1": {
+					"type": "input",
+					"left": 892,
+					"top": 128,
+					"width": 109,
+					"height": 64,
+					"dataSourceTypeHint": "picture",
+					"dataSource": "Form:C1466.photoRole_i",
+					"pictureFormat": "proportionalCenter"
+				},
+				"iQuiPhoto1": {
+					"type": "input",
+					"left": 879,
+					"top": 461,
+					"width": 111,
+					"height": 64,
+					"dataSourceTypeHint": "picture",
+					"dataSource": "Form:C1466.photoQui_e",
+					"enterable": true,
+					"focusable": false,
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					],
+					"method": "ObjectMethods/iQuiPhoto1.4dm",
+					"pictureFormat": "proportionalCenter"
 				}
 			},
 			"entryOrder": [
@@ -1058,11 +1085,13 @@
 				"btTrace",
 				"btQuitter",
 				"zAge",
-				"zMessage"
+				"zMessage",
+				"rolePhoto_ZS1",
+				"iQuiPhoto1"
 			]
 		}
 	],
-	"geometryStamp": 450,
+	"geometryStamp": 458,
 	"method": "method.4dm",
 	"editor": {
 		"activeView": "View 1",

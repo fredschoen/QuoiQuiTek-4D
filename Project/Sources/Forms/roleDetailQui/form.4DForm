@@ -100,8 +100,8 @@
 					"type": "input",
 					"left": 470,
 					"top": 62,
-					"width": 330,
-					"height": 240,
+					"width": 138,
+					"height": 96,
 					"dataSourceTypeHint": "picture",
 					"dataSource": "Form:C1466.qui_e.Photo",
 					"enterable": true,
@@ -583,8 +583,8 @@
 					"type": "input",
 					"left": 26,
 					"top": 94,
-					"width": 300,
-					"height": 224,
+					"width": 140,
+					"height": 96,
 					"dataSourceTypeHint": "picture",
 					"dataSource": "Form:C1466.role_e.Photo",
 					"pictureFormat": "proportionalCenter"
@@ -654,6 +654,42 @@
 					"fill": "#ffff00",
 					"fontWeight": "bold",
 					"textAlign": "center"
+				},
+				"btAjouterRole": {
+					"type": "button",
+					"text": "Ajouter un rôle pour ce qui",
+					"top": 55,
+					"left": 820,
+					"width": 180,
+					"height": 23,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/btAjouterRole.4dm"
+				},
+				"rolePhoto_ZS1": {
+					"type": "input",
+					"left": 26,
+					"top": 200,
+					"width": 140,
+					"height": 96,
+					"dataSourceTypeHint": "picture",
+					"dataSource": "Form:C1466.photoRole_i",
+					"pictureFormat": "proportionalCenter"
+				},
+				"iQuiPhoto1": {
+					"type": "input",
+					"left": 470,
+					"top": 178,
+					"width": 138,
+					"height": 96,
+					"dataSourceTypeHint": "picture",
+					"dataSource": "Form:C1466.photoQui_i",
+					"enterable": true,
+					"focusable": false,
+					"contextMenu": "none",
+					"events": [],
+					"pictureFormat": "proportionalCenter"
 				}
 			},
 			"entryOrder": [
@@ -684,11 +720,14 @@
 				"fieldDescrNom",
 				"ge",
 				"zAgeQui",
-				"zMessage"
+				"zMessage",
+				"btAjouterRole",
+				"rolePhoto_ZS1",
+				"iQuiPhoto1"
 			]
 		}
 	],
-	"geometryStamp": 740,
+	"geometryStamp": 748,
 	"method": "method.4dm",
 	"editor": {
 		"activeView": "View 1",

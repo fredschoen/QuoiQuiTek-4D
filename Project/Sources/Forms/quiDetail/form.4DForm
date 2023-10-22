@@ -277,10 +277,10 @@
 				},
 				"iQuiPhoto": {
 					"type": "input",
-					"left": 542,
+					"left": 518,
 					"top": 57,
-					"width": 313,
-					"height": 193,
+					"width": 218,
+					"height": 160,
 					"dataSourceTypeHint": "picture",
 					"dataSource": "Form:C1466.qui_e.Photo",
 					"enterable": true,
@@ -411,8 +411,8 @@
 					"type": "input",
 					"dataSource": "Form:C1466.qui_e.ID",
 					"top": 35,
-					"left": 998,
-					"width": 78,
+					"left": 1022,
+					"width": 60,
 					"height": 16,
 					"enterable": false,
 					"fill": "transparent",
@@ -424,9 +424,11 @@
 					"type": "text",
 					"text": "A:",
 					"top": 35,
-					"left": 985,
-					"width": 12,
-					"height": 16
+					"left": 987,
+					"width": 35,
+					"height": 16,
+					"right": 1022,
+					"textAlign": "right"
 				},
 				"zposQuiSel_i": {
 					"type": "input",
@@ -491,8 +493,8 @@
 					"type": "input",
 					"dataSource": "Form:C1466.quiSel_e.ID",
 					"top": 56,
-					"left": 991,
-					"width": 78,
+					"left": 1022,
+					"width": 60,
 					"height": 16,
 					"enterable": false,
 					"fill": "transparent",
@@ -503,9 +505,11 @@
 					"type": "text",
 					"text": "A(ec):",
 					"top": 56,
-					"left": 959,
-					"width": 30,
-					"height": 15
+					"left": 987,
+					"width": 35,
+					"height": 15,
+					"right": 1022,
+					"textAlign": "right"
 				},
 				"label_Pays2": {
 					"type": "text",
@@ -614,7 +618,7 @@
 					"type": "button",
 					"text": "trace",
 					"top": 83,
-					"left": 1025,
+					"left": 1047,
 					"width": 40,
 					"height": 15,
 					"events": [
@@ -645,6 +649,23 @@
 						"onClick"
 					],
 					"action": "cancel"
+				},
+				"iQuiPhoto1": {
+					"type": "input",
+					"left": 745,
+					"top": 57,
+					"width": 232,
+					"height": 160,
+					"dataSourceTypeHint": "picture",
+					"dataSource": "Form:C1466.photoQui_i",
+					"enterable": true,
+					"focusable": false,
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					],
+					"method": "ObjectMethods/iQuiPhoto1.4dm",
+					"pictureFormat": "proportionalCenter"
 				}
 			},
 			"entryOrder": [
@@ -674,11 +695,12 @@
 				"zForm_eleCouQui_ID",
 				"btTrace",
 				"zMessage",
-				"btQuitter"
+				"btQuitter",
+				"iQuiPhoto1"
 			]
 		}
 	],
-	"geometryStamp": 314,
+	"geometryStamp": 347,
 	"method": "method.4dm",
 	"editor": {
 		"activeView": "View 1",

@@ -3,7 +3,10 @@
 // Entrée: $qui_e et .action
 var $status_o : Object
 var $1; $qui_e : cs:C1710.QuiEntity
+var $2; $photoQui_i : Picture
 $qui_e:=$1
+$photoQui_i:=$2
+
 $status_o:=$qui_e.save()
 
 If ($status_o.success)
@@ -15,6 +18,17 @@ If ($status_o.success)
 		
 	Else 
 		ALERT:C41("Enreg Qui modifié")
+	End if 
+	
+	$x:=Folder:C1567(fk data folder:K87:12).platformPath+"Photos"+Folder separator:K24:12+"i"+String:C10($qui_e.ID; "0000000")+".png"
+	
+	If (Picture size:C356($photoQui_i)>0)
+		WRITE PICTURE FILE:C680($x; $photoQui_i)
+	Else 
+		If (Test path name:C476($x)#Is a document:K24:1)
+			DELETE DOCUMENT:C159($x)
+		End if 
+		
 	End if 
 	
 Else 

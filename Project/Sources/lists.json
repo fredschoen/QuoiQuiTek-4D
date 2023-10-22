@@ -440,230 +440,248 @@
 				"collapsed": true
 			},
 			{
-				"text": "Concert",
+				"text": "Chil",
 				"ref": 10,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "Core",
+				"text": "Concert",
 				"ref": 11,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "Eco",
+				"text": "Core",
 				"ref": 12,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "English",
+				"text": "Eco",
 				"ref": 13,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "Enreg",
+				"text": "English",
 				"ref": 14,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "Esp",
+				"text": "Enreg",
 				"ref": 15,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "Espagne",
+				"text": "Esp",
 				"ref": 16,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "etr",
+				"text": "Espagne",
 				"ref": 17,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "Eve",
+				"text": "etr",
 				"ref": 18,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "Filles",
+				"text": "Eve",
 				"ref": 19,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "Film Musical",
+				"text": "Filles",
 				"ref": 20,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "Form",
+				"text": "Film Musical",
 				"ref": 21,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "Fra",
+				"text": "Form",
 				"ref": 22,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "fran",
+				"text": "Fra",
 				"ref": 23,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "Français",
+				"text": "fran",
 				"ref": 24,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "FredPat",
+				"text": "Français",
 				"ref": 25,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "Garage",
+				"text": "FredPat",
 				"ref": 26,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "Hard",
+				"text": "Garage",
 				"ref": 27,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "Immo",
+				"text": "Hard",
 				"ref": 28,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "Ita",
+				"text": "Immo",
 				"ref": 29,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "Jeunes",
+				"text": "Ita",
 				"ref": 30,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "Lourd",
+				"text": "Jeunes",
 				"ref": 31,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "Mer",
+				"text": "Lourd",
 				"ref": 32,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "Mond",
+				"text": "Mer",
 				"ref": 33,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "MoyAge",
+				"text": "Mex",
 				"ref": 34,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "Muzi",
+				"text": "Mond",
 				"ref": 35,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "quebec",
+				"text": "MoyAge",
 				"ref": 36,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "Reportage",
+				"text": "Muzi",
 				"ref": 37,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "Reportages Jeunes",
+				"text": "quebec",
 				"ref": 38,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "Rock",
+				"text": "Reportage",
 				"ref": 39,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "Rou",
+				"text": "Reportages Jeunes",
 				"ref": 40,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "Santé",
+				"text": "Rock",
 				"ref": 41,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "Sport",
+				"text": "Rou",
 				"ref": 42,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "Techno",
+				"text": "RUS",
 				"ref": 43,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "Terr",
+				"text": "Santé",
 				"ref": 44,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "US",
+				"text": "Sport",
 				"ref": 45,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "Vie",
+				"text": "Techno",
 				"ref": 46,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "x",
+				"text": "Terr",
 				"ref": 47,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "US",
+				"ref": 48,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "Vie",
+				"ref": 49,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "x",
+				"ref": 50,
 				"editable": true,
 				"collapsed": true
 			}
@@ -1118,44 +1136,38 @@
 				"collapsed": true
 			},
 			{
-				"text": "DateDernVisu",
+				"text": "dvd",
 				"ref": 3,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "dvd",
+				"text": "INFO",
 				"ref": 4,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "INFO",
+				"text": "LIVR",
 				"ref": 5,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "LIVR",
+				"text": "MUS",
 				"ref": 6,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "MUS",
+				"text": "PERSO",
 				"ref": 7,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "PERSO",
-				"ref": 8,
-				"editable": true,
-				"collapsed": true
-			},
-			{
 				"text": "VISU",
-				"ref": 9,
+				"ref": 8,
 				"editable": true,
 				"collapsed": true
 			}
@@ -1165,7 +1177,7 @@
 		"editable": true,
 		"items": [
 			{
-				"text": "Affr",
+				"text": "BUZ",
 				"ref": 1,
 				"editable": true,
 				"collapsed": true
@@ -1338,104 +1350,110 @@
 				"collapsed": true
 			},
 			{
-				"text": "pulp",
+				"text": "Policier",
 				"ref": 23,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "Rap",
+				"text": "pulp",
 				"ref": 24,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "Rasta",
+				"text": "Rap",
 				"ref": 25,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "Recits",
+				"text": "Rasta",
 				"ref": 26,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "Reggae",
+				"text": "Recits",
 				"ref": 27,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "Rock",
+				"text": "Reggae",
 				"ref": 28,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "Rock Lourd",
+				"text": "Rock",
 				"ref": 29,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "RockB",
+				"text": "Rock Lourd",
 				"ref": 30,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "RockBilly",
+				"text": "RockB",
 				"ref": 31,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "Rom",
+				"text": "RockBilly",
 				"ref": 32,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "Salsa",
+				"text": "Rom",
 				"ref": 33,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "sauvage",
+				"text": "Salsa",
 				"ref": 34,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "sexy",
+				"text": "sauvage",
 				"ref": 35,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "SF",
+				"text": "sexy",
 				"ref": 36,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "Soul",
+				"text": "SF",
 				"ref": 37,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "SoulW",
+				"text": "Soul",
 				"ref": 38,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "World",
+				"text": "SoulW",
 				"ref": 39,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "World",
+				"ref": 40,
 				"editable": true,
 				"collapsed": true
 			}

@@ -19,10 +19,14 @@ local Function getAge->$age : Integer
 local Function getNom->$nom : Text
 	
 	var $nom : Text
-	If (This:C1470.ID_Qui>0)
-		$nom:=This:C1470.qui.FullName
-	Else 
-		$nom:=This:C1470.groupe.Nom
-	End if 
+	Case of 
+		: (This:C1470.ID_Qui>0)
+			$nom:=This:C1470.qui.FullName
+		: (This:C1470.ID_Groupe>0)
+			$nom:=This:C1470.groupe.Nom
+		Else 
+			$nom:="<ko>"
+	End case 
+	
 	
 	

@@ -248,7 +248,7 @@
 						"onClick"
 					],
 					"defaultButton": true,
-					"method": "sauverQuoi",
+					"method": "ObjectMethods/btSauverQuoi.4dm",
 					"shortcutAccel": true,
 					"shortcutControl": false,
 					"shortcutShift": false,
@@ -527,8 +527,8 @@
 					"type": "input",
 					"left": 529,
 					"top": 364,
-					"width": 277,
-					"height": 209,
+					"width": 153,
+					"height": 112,
 					"dataSourceTypeHint": "picture",
 					"pictureFormat": "proportionalCenter",
 					"dataSource": "Form:C1466.quoi_e.Photo"
@@ -667,6 +667,16 @@
 							"method": ""
 						}
 					]
+				},
+				"Zone de saisie1": {
+					"type": "input",
+					"left": 701,
+					"top": 364,
+					"width": 153,
+					"height": 112,
+					"dataSourceTypeHint": "picture",
+					"pictureFormat": "proportionalCenter",
+					"dataSource": "Form:C1466.photoQuoi_i"
 				}
 			},
 			"entryOrder": [
@@ -697,11 +707,12 @@
 				"btTrace",
 				"zMessage",
 				"btQuitter",
-				"lb_lesGroupesDuQuoi"
+				"lb_lesGroupesDuQuoi",
+				"Zone de saisie1"
 			]
 		}
 	],
-	"geometryStamp": 195,
+	"geometryStamp": 198,
 	"method": "method.4dm",
 	"editor": {
 		"activeView": "View 1",

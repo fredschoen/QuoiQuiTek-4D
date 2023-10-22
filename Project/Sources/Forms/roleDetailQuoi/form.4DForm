@@ -31,21 +31,21 @@
 					"width": 451,
 					"height": 263
 				},
-				"iQuiPhoto": {
+				"iQuoiPhoto": {
 					"type": "input",
 					"left": 751,
 					"top": 99,
-					"width": 309,
-					"height": 224,
+					"width": 168,
+					"height": 96,
 					"dataSourceTypeHint": "picture",
-					"dataSource": "Form:C1466.qui_e.Photo",
+					"dataSource": "Form:C1466.quoi_e.Photo",
 					"enterable": true,
 					"focusable": false,
 					"contextMenu": "none",
 					"events": [
 						"onDataChange"
 					],
-					"method": "ObjectMethods/iQuiPhoto.4dm",
+					"method": "ObjectMethods/iQuoiPhoto.4dm",
 					"pictureFormat": "proportionalCenter"
 				},
 				"btSuivant": {
@@ -419,8 +419,8 @@
 					"type": "input",
 					"left": 26,
 					"top": 94,
-					"width": 300,
-					"height": 224,
+					"width": 153,
+					"height": 96,
 					"dataSourceTypeHint": "picture",
 					"dataSource": "Form:C1466.role_e.Photo",
 					"pictureFormat": "proportionalCenter"
@@ -526,6 +526,33 @@
 						"onClick"
 					],
 					"action": "cancel"
+				},
+				"iRolePhoto1": {
+					"type": "input",
+					"left": 26,
+					"top": 201,
+					"width": 153,
+					"height": 96,
+					"dataSourceTypeHint": "picture",
+					"dataSource": "Form:C1466.photoRole_i",
+					"pictureFormat": "proportionalCenter"
+				},
+				"iQuiPhoto1": {
+					"type": "input",
+					"left": 751,
+					"top": 201,
+					"width": 168,
+					"height": 96,
+					"dataSourceTypeHint": "picture",
+					"dataSource": "Form:C1466.photoQuoi_i",
+					"enterable": true,
+					"focusable": false,
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					],
+					"method": "ObjectMethods/iQuiPhoto1.4dm",
+					"pictureFormat": "proportionalCenter"
 				}
 			}
 		},
@@ -658,10 +685,23 @@
 					"left": 14,
 					"width": 52,
 					"height": 60
+				},
+				"btAjouterRole": {
+					"type": "button",
+					"text": "Ajouter un rôle dans ce quoi",
+					"top": 66,
+					"left": 804,
+					"width": 180,
+					"height": 24,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/btAjouterRole.4dm"
 				}
 			},
 			"entryOrder": [
-				"lb_lesQuisDuQuoi"
+				"lb_lesQuisDuQuoi",
+				"btAjouterRole"
 			]
 		},
 		{
@@ -781,7 +821,7 @@
 			}
 		}
 	],
-	"geometryStamp": 550,
+	"geometryStamp": 559,
 	"method": "method.4dm",
 	"editor": {
 		"activeView": "View 1",

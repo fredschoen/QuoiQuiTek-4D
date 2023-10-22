@@ -7,9 +7,9 @@ Case of
 		Form:C1466.quoi_es:=Form:C1466.quoi_es.orderBy("Nom desc")
 		
 	: (eDomaine=1)
-		Form:C1466.quoi_es:=Form:C1466.quoi_es.orderBy("Domaine")
+		Form:C1466.quoi_es:=Form:C1466.quoi_es.orderBy("Domaine, Genre")
 	: (eDomaine=2)
-		Form:C1466.quoi_es:=Form:C1466.quoi_es.orderBy("Domaine desc")
+		Form:C1466.quoi_es:=Form:C1466.quoi_es.orderBy("Domaine desc, Genre desc")
 		
 	: (eGenre=1)
 		Form:C1466.quoi_es:=Form:C1466.quoi_es.orderBy("Genre")
