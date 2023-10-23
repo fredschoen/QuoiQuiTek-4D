@@ -1,5 +1,5 @@
 //%attributes = {}
-// sauverPosteNouveau
+// ajouterPoste
 //$1; $ID_Qui_i:integer
 //$2; $ID_Groupe_i: integer
 
@@ -23,12 +23,8 @@ $poste_e.ID_Groupe:=$ID_Groupe_i
 $status_o:=$poste_e.save()
 
 If ($status_o.success)
-	
 	ALERT:C41("Poste ajouté"+Char:C90(Carriage return:K15:38)+$poste_e.qui.FullName+Char:C90(Carriage return:K15:38)+$poste_e.groupe.Nom)
-	
 Else 
-	
 	ALERT:C41("ajout poste ko")
 	TRACE:C157
-	
 End if 

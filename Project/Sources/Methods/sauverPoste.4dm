@@ -1,5 +1,5 @@
 //%attributes = {}
-//sauverRole
+//sauverPoste
 
 C_OBJECT:C1216($status)
 $status:=Form:C1466.poste_e.save()

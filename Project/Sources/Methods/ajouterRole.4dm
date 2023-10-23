@@ -1,5 +1,5 @@
 //%attributes = {}
-// sauverRoleNouveau
+// ajouterRole
 //$1; $ID_Acteur_i :integer
 //$2; $ID_Quoi_i: integer
 //$3; $utilisationListe: text

@@ -21,7 +21,7 @@ For each ($qui_e; $qui_es)
 		WRITE PICTURE FILE:C680($x; $qui_e.Photo)
 		$nbrMaj_i:=$nbrMaj_i+1
 		//Else 
-		//If (Test path name($x)#Is a document)
+		//If (Test path name($x)=Is a document)
 		//DELETE DOCUMENT($x)
 		//End if 
 	End if 

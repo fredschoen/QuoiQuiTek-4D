@@ -1,8 +1,12 @@
 //%attributes = {}
 // sauverQuoi
 var $status_o : Object
+var $1; $qui_e : cs:C1710.QuiEntity
+var $2; $photoQui_i : Picture
+$quoi_e:=$1
+$photoQuoi_i:=$2
 
-$status_o:=Form:C1466.quoi_e.save()
+$status_o:=$quoi_e.save()
 
 If ($status_o.success)
 	
@@ -13,8 +17,23 @@ If ($status_o.success)
 		Form:C1466.action:="MODIFIER"  // on passe de "ajouter" à "modifier"
 		visibleBtNavig
 	Else 
-		
 		ALERT:C41("Enreg Quoi modifié")
+	End if 
+	
+	//ajouter, modifier ou supprimer le fichier photo
+	$x:=Folder:C1567(fk data folder:K87:12).platformPath+"Photos"+Folder separator:K24:12+"o"+String:C10($quoi_e.ID; "0000000")+".png"
+	If (Picture size:C356($photoQuoi_i)>0)
+		WRITE PICTURE FILE:C680($x; $photoQuoi_i)
+		If (ok=0)
+			ALERT:C41("échec écriture image")
+			TRACE:C157
+		End if 
+		
+	Else 
+		//abandon de la photo
+		If (Test path name:C476($x)=Is a document:K24:1)
+			DELETE DOCUMENT:C159($x)
+		End if 
 	End if 
 	
 Else 
