@@ -96,23 +96,6 @@
 					"width": 56,
 					"height": 18
 				},
-				"iQuiPhoto": {
-					"type": "input",
-					"left": 876,
-					"top": 385,
-					"width": 111,
-					"height": 64,
-					"dataSourceTypeHint": "picture",
-					"dataSource": "Form:C1466.qui_e.Photo",
-					"enterable": true,
-					"focusable": false,
-					"contextMenu": "none",
-					"events": [
-						"onDataChange"
-					],
-					"method": "ObjectMethods/iQuiPhoto.4dm",
-					"pictureFormat": "proportionalCenter"
-				},
 				"btSuivant": {
 					"type": "button",
 					"text": "Suivant",
@@ -576,16 +559,6 @@
 					"width": 46,
 					"height": 16
 				},
-				"rolePhoto_ZS": {
-					"type": "input",
-					"left": 892,
-					"top": 47,
-					"width": 109,
-					"height": 64,
-					"dataSourceTypeHint": "picture",
-					"dataSource": "Form:C1466.role_e.Photo",
-					"pictureFormat": "proportionalCenter"
-				},
 				"label_Nom2": {
 					"type": "text",
 					"text": "Nom:",
@@ -1019,22 +992,22 @@
 				},
 				"rolePhoto_ZS1": {
 					"type": "input",
-					"left": 892,
-					"top": 128,
-					"width": 109,
-					"height": 64,
+					"left": 869,
+					"top": 60,
+					"width": 185,
+					"height": 160,
 					"dataSourceTypeHint": "picture",
 					"dataSource": "Form:C1466.photoRole_i",
 					"pictureFormat": "proportionalCenter"
 				},
 				"iQuiPhoto1": {
 					"type": "input",
-					"left": 879,
-					"top": 461,
-					"width": 111,
-					"height": 64,
+					"left": 869,
+					"top": 378,
+					"width": 185,
+					"height": 144,
 					"dataSourceTypeHint": "picture",
-					"dataSource": "Form:C1466.photoQui_e",
+					"dataSource": "Form:C1466.photoQui_i",
 					"enterable": true,
 					"focusable": false,
 					"contextMenu": "none",
@@ -1056,7 +1029,6 @@
 				"cb_PaysQui",
 				"cb_StyleQui",
 				"zInfo",
-				"iQuiPhoto",
 				"lb_lesQuoisDuQui",
 				"field_Nom",
 				"Genre_CB",
@@ -1069,7 +1041,6 @@
 				"field_Prod",
 				"field_Prod1",
 				"field_Info",
-				"rolePhoto_ZS",
 				"lb_lesQuisDuQuoi",
 				"btSuivant",
 				"btPrecedent",
@@ -1091,7 +1062,7 @@
 			]
 		}
 	],
-	"geometryStamp": 458,
+	"geometryStamp": 464,
 	"method": "method.4dm",
 	"editor": {
 		"activeView": "View 1",

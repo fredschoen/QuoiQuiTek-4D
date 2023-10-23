@@ -31,23 +31,6 @@
 					"width": 451,
 					"height": 263
 				},
-				"iQuoiPhoto": {
-					"type": "input",
-					"left": 751,
-					"top": 99,
-					"width": 168,
-					"height": 96,
-					"dataSourceTypeHint": "picture",
-					"dataSource": "Form:C1466.quoi_e.Photo",
-					"enterable": true,
-					"focusable": false,
-					"contextMenu": "none",
-					"events": [
-						"onDataChange"
-					],
-					"method": "ObjectMethods/iQuoiPhoto.4dm",
-					"pictureFormat": "proportionalCenter"
-				},
 				"btSuivant": {
 					"type": "button",
 					"text": "Suivant",
@@ -415,16 +398,6 @@
 					"width": 46,
 					"height": 16
 				},
-				"iRolePhoto": {
-					"type": "input",
-					"left": 26,
-					"top": 94,
-					"width": 153,
-					"height": 96,
-					"dataSourceTypeHint": "picture",
-					"dataSource": "Form:C1466.role_e.Photo",
-					"pictureFormat": "proportionalCenter"
-				},
 				"Ligne": {
 					"type": "line",
 					"top": 48,
@@ -530,19 +503,19 @@
 				"iRolePhoto1": {
 					"type": "input",
 					"left": 26,
-					"top": 201,
-					"width": 153,
-					"height": 96,
+					"top": 99,
+					"width": 292,
+					"height": 192,
 					"dataSourceTypeHint": "picture",
 					"dataSource": "Form:C1466.photoRole_i",
 					"pictureFormat": "proportionalCenter"
 				},
 				"iQuiPhoto1": {
 					"type": "input",
-					"left": 751,
-					"top": 201,
-					"width": 168,
-					"height": 96,
+					"left": 754,
+					"top": 104,
+					"width": 289,
+					"height": 208,
 					"dataSourceTypeHint": "picture",
 					"dataSource": "Form:C1466.photoQuoi_i",
 					"enterable": true,
@@ -821,7 +794,7 @@
 			}
 		}
 	],
-	"geometryStamp": 559,
+	"geometryStamp": 564,
 	"method": "method.4dm",
 	"editor": {
 		"activeView": "View 1",

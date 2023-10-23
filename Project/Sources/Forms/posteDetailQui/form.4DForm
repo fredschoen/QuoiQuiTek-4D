@@ -96,20 +96,6 @@
 					"width": 70,
 					"height": 18
 				},
-				"iQuiPhoto": {
-					"type": "input",
-					"left": 16,
-					"top": 138,
-					"width": 159,
-					"height": 96,
-					"dataSourceTypeHint": "picture",
-					"dataSource": "Form:C1466.qui_e.Photo",
-					"enterable": true,
-					"focusable": false,
-					"contextMenu": "none",
-					"events": [],
-					"pictureFormat": "proportionalCenter"
-				},
 				"btSuivant": {
 					"type": "button",
 					"text": "Suivant",
@@ -670,10 +656,10 @@
 				},
 				"iQuiPhoto1": {
 					"type": "input",
-					"left": 184,
+					"left": 16,
 					"top": 138,
-					"width": 159,
-					"height": 96,
+					"width": 327,
+					"height": 224,
 					"dataSourceTypeHint": "picture",
 					"dataSource": "Form:C1466.photoQui_i",
 					"enterable": true,
@@ -693,7 +679,6 @@
 				"cb_PaysQui",
 				"cb_StyleQui",
 				"zInfo",
-				"iQuiPhoto",
 				"btSuivant",
 				"btPrecedent",
 				"btPremier",
@@ -716,7 +701,7 @@
 			]
 		}
 	],
-	"geometryStamp": 800,
+	"geometryStamp": 802,
 	"method": "method.4dm",
 	"editor": {
 		"activeView": "View 1",

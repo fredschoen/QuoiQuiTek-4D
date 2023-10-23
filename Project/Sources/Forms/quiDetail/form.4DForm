@@ -275,23 +275,6 @@
 						"$ref": "/SOURCES/tips.json#/RaccourciSauver"
 					}
 				},
-				"iQuiPhoto": {
-					"type": "input",
-					"left": 518,
-					"top": 57,
-					"width": 218,
-					"height": 160,
-					"dataSourceTypeHint": "picture",
-					"dataSource": "Form:C1466.qui_e.Photo",
-					"enterable": true,
-					"focusable": false,
-					"contextMenu": "none",
-					"events": [
-						"onDataChange"
-					],
-					"method": "ObjectMethods/iQuiPhoto.4dm",
-					"pictureFormat": "proportionalCenter"
-				},
 				"btSupprimerQui": {
 					"type": "button",
 					"text": "Supprimer le qui",
@@ -652,10 +635,10 @@
 				},
 				"iQuiPhoto1": {
 					"type": "input",
-					"left": 745,
+					"left": 554,
 					"top": 57,
-					"width": 232,
-					"height": 160,
+					"width": 423,
+					"height": 176,
 					"dataSourceTypeHint": "picture",
 					"dataSource": "Form:C1466.photoQui_i",
 					"enterable": true,
@@ -679,7 +662,6 @@
 				"cb_DomaineQui",
 				"cb_StyleQui",
 				"zInfo",
-				"iQuiPhoto",
 				"lb_lesQuoisDuQui",
 				"btSupprimerQui",
 				"btSauverQui",
@@ -700,7 +682,7 @@
 			]
 		}
 	],
-	"geometryStamp": 347,
+	"geometryStamp": 349,
 	"method": "method.4dm",
 	"editor": {
 		"activeView": "View 1",

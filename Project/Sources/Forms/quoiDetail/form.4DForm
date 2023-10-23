@@ -523,16 +523,6 @@
 					"width": 100,
 					"height": 18
 				},
-				"Zone de saisie": {
-					"type": "input",
-					"left": 529,
-					"top": 364,
-					"width": 153,
-					"height": 112,
-					"dataSourceTypeHint": "picture",
-					"pictureFormat": "proportionalCenter",
-					"dataSource": "Form:C1466.quoi_e.Photo"
-				},
 				"btTrace": {
 					"type": "button",
 					"text": "trace",
@@ -670,10 +660,10 @@
 				},
 				"Zone de saisie1": {
 					"type": "input",
-					"left": 701,
+					"left": 529,
 					"top": 364,
-					"width": 153,
-					"height": 112,
+					"width": 325,
+					"height": 208,
 					"dataSourceTypeHint": "picture",
 					"pictureFormat": "proportionalCenter",
 					"dataSource": "Form:C1466.photoQuoi_i"
@@ -692,7 +682,6 @@
 				"field_Prod1",
 				"field_Info",
 				"lb_lesQuisDuQuoi",
-				"Zone de saisie",
 				"btSuivant",
 				"btPrecedent",
 				"btPremier",
@@ -712,7 +701,7 @@
 			]
 		}
 	],
-	"geometryStamp": 198,
+	"geometryStamp": 200,
 	"method": "method.4dm",
 	"editor": {
 		"activeView": "View 1",

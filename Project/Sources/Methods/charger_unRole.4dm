@@ -12,7 +12,7 @@ If (Form:C1466.posRoleSel_i>0)
 	//-dépendances du role
 	Form:C1466.quoi_e:=Form:C1466.role_e.quoi
 	
-	//photo
+	//photo du role
 	$x:=Folder:C1567(fk data folder:K87:12).platformPath+"Photos"+Folder separator:K24:12+"r"+String:C10(Form:C1466.role_e.ID; "0000000")+".png"
 	READ PICTURE FILE:C678($x; $img_i)
 	If (OK=1)
@@ -21,17 +21,27 @@ If (Form:C1466.posRoleSel_i>0)
 		Form:C1466.photoRole_i:=Null:C1517
 	End if 
 	
-	If (Undefined:C82(Form:C1466.role_e.qui))  //alors in est sur un groupe
+	If (Undefined:C82(Form:C1466.role_e.qui))
+		//le quoi est sur un groupe
 		Form:C1466.groupe_e:=Form:C1466.role_e.groupe
 		Form:C1466.roleDuQuoi_es:=Form:C1466.quoi_e.roles.orderBy("groupe.Nom")
 		Form:C1466.message:="'"+Form:C1466.groupe_e.Nom+"'"+" dans '"+Form:C1466.quoi_e.Nom+"'"
 		FORM GOTO PAGE:C247(2)
 	Else 
-		FORM GOTO PAGE:C247(1)
+		//le quoi est sur un qui
 		Form:C1466.qui_e:=Form:C1466.role_e.qui
 		Form:C1466.roleDuQui_es:=Form:C1466.qui_e.roles.orderBy("quoi.Date desc")
 		Form:C1466.roleDuQuoi_es:=Form:C1466.quoi_e.roles.orderBy("qui.DateNaiss")
 		Form:C1466.message:="'"+Form:C1466.qui_e.FullName+"'"+" dans '"+Form:C1466.quoi_e.Nom+"'"
+		//photo du qui
+		$x:=Folder:C1567(fk data folder:K87:12).platformPath+"Photos"+Folder separator:K24:12+"i"+String:C10(Form:C1466.qui_e.ID; "0000000")+".png"
+		READ PICTURE FILE:C678($x; $img_i)
+		If (OK=1)
+			Form:C1466.photoQui_i:=$img_i
+		Else 
+			Form:C1466.photoQui_i:=Null:C1517
+		End if 
+		FORM GOTO PAGE:C247(1)
 	End if 
 	
 End if 

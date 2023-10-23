@@ -96,20 +96,6 @@
 					"width": 70,
 					"height": 18
 				},
-				"iQuiPhoto": {
-					"type": "input",
-					"left": 470,
-					"top": 62,
-					"width": 138,
-					"height": 96,
-					"dataSourceTypeHint": "picture",
-					"dataSource": "Form:C1466.qui_e.Photo",
-					"enterable": true,
-					"focusable": false,
-					"contextMenu": "none",
-					"events": [],
-					"pictureFormat": "proportionalCenter"
-				},
 				"btSuivant": {
 					"type": "button",
 					"text": "Suivant",
@@ -579,16 +565,6 @@
 					"width": 451,
 					"height": 263
 				},
-				"rolePhoto_ZS": {
-					"type": "input",
-					"left": 26,
-					"top": 94,
-					"width": 140,
-					"height": 96,
-					"dataSourceTypeHint": "picture",
-					"dataSource": "Form:C1466.role_e.Photo",
-					"pictureFormat": "proportionalCenter"
-				},
 				"label_Nom2": {
 					"type": "text",
 					"text": "Nom:",
@@ -670,9 +646,9 @@
 				"rolePhoto_ZS1": {
 					"type": "input",
 					"left": 26,
-					"top": 200,
-					"width": 140,
-					"height": 96,
+					"top": 97,
+					"width": 280,
+					"height": 192,
 					"dataSourceTypeHint": "picture",
 					"dataSource": "Form:C1466.photoRole_i",
 					"pictureFormat": "proportionalCenter"
@@ -680,9 +656,9 @@
 				"iQuiPhoto1": {
 					"type": "input",
 					"left": 470,
-					"top": 178,
-					"width": 138,
-					"height": 96,
+					"top": 69,
+					"width": 290,
+					"height": 192,
 					"dataSourceTypeHint": "picture",
 					"dataSource": "Form:C1466.photoQui_i",
 					"enterable": true,
@@ -702,7 +678,6 @@
 				"cb_PaysQui",
 				"cb_StyleQui",
 				"zInfo",
-				"iQuiPhoto",
 				"lb_lesQuoisDuQui",
 				"btSuivant",
 				"btPrecedent",
@@ -716,7 +691,6 @@
 				"zForm_eleCouQui_ID",
 				"btTrace",
 				"btQuitter",
-				"rolePhoto_ZS",
 				"fieldDescrNom",
 				"ge",
 				"zAgeQui",
@@ -727,7 +701,7 @@
 			]
 		}
 	],
-	"geometryStamp": 748,
+	"geometryStamp": 752,
 	"method": "method.4dm",
 	"editor": {
 		"activeView": "View 1",
