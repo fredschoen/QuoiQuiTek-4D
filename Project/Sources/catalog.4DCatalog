@@ -15,7 +15,6 @@
 		<field name="Info" uuid="EA2D51B243B04D4CA0DA6425FE90F554" type="10" limiting_length="255" never_null="true" id="10"/>
 		<field name="DateDernVisu" uuid="174F3C522464E7498A51F1F3E79B0BCD" type="8" never_null="true" id="11"/>
 		<field name="Qualif" uuid="EDFC268B6F24424694B8CE014976C7ED" type="10" limiting_length="10" never_null="true" id="12"/>
-		<field name="Photo" uuid="5CC11F4471F08D499B5412E00286BD2E" type="12" never_null="true" id="13"/>
 		<field name="CreatTS" uuid="7A2CF25E62700B4F8FC20F46A3E0540C" type="10" limiting_length="19" never_null="true" id="14" hide_in_REST="true"/>
 		<field name="ModifTS" uuid="F9D2CBE84792DC468DCFCC80CEF52CCD" type="10" limiting_length="19" never_null="true" id="15"/>
 		<primary_key field_name="ID" field_uuid="7D44AEC0186F8341BF2162AF1B5099CF"/>
@@ -39,7 +38,6 @@
 		<field name="Pays" uuid="D3B12BA7EFC074448E23498DE47B6617" type="10" limiting_length="100" never_null="true" id="5">
 			<field_extra enumeration_id="2"/>
 		</field>
-		<field name="Photo" uuid="07A493E23C599842A255D01BF28841C0" type="12" never_null="true" id="7"/>
 		<field name="Domaine" uuid="1F05095FF9109747A2176696D42A1048" type="10" limiting_length="100" never_null="true" id="8"/>
 		<field name="Style" uuid="9B90807F5A86ED4E8FCBF46BC066923C" type="10" limiting_length="255" never_null="true" id="9"/>
 		<field name="Info" uuid="EC9B8E7A9A48A444A691DAEF101D2996" type="10" limiting_length="255" never_null="true" id="10"/>
@@ -62,7 +60,6 @@
 		<field name="ID_Qui" uuid="33B70CCC0843DE429F0B0C50D132DFE5" type="4" never_null="true" id="2"/>
 		<field name="ID_Quoi" uuid="224E05CCD982514682542710BE59B128" type="4" never_null="true" id="3"/>
 		<field name="Descr" uuid="9FD4850839E84247A25DF708935A693B" type="10" limiting_length="255" never_null="true" id="4"/>
-		<field name="Photo" uuid="935626902FE56149BF3B8608314832A9" type="12" never_null="true" id="5"/>
 		<field name="Info" uuid="92558612E2C24C4CB5ACF7F77463A808" type="10" limiting_length="255" never_null="true" id="6"/>
 		<field name="CreatTS" uuid="9AF16C5C0F7B92478FEA217628F03818" type="10" limiting_length="19" never_null="true" id="7"/>
 		<field name="ModifTS" uuid="58AA4B53EA3D2240B62ED33F1160D6FC" type="10" limiting_length="19" never_null="true" id="8"/>
