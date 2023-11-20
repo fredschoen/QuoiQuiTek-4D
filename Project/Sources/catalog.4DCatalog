@@ -248,7 +248,7 @@
 			<table_ref uuid="1AA34083D0527E4F91A17E4D5A70AA8D" name="Quoi"/>
 		</field_ref>
 	</index>
-	<base_extra __stringCompHash="icu:68.1.0" __keywordBuildingHash="icu:68.1.0">
+	<base_extra>
 		<journal_file journal_file_enabled="true"/>
 	</base_extra>
 </base>

@@ -27,10 +27,10 @@
 				"lb_lesQuoisDuQui": {
 					"type": "listbox",
 					"dataSource": "Form:C1466.role_es",
-					"top": 255,
+					"top": 279,
 					"left": 3,
 					"width": 1090,
-					"height": 232,
+					"height": 208,
 					"visibility": "visible",
 					"sizingX": "fixed",
 					"sizingY": "grow",
@@ -290,8 +290,8 @@
 				"Texte4": {
 					"type": "text",
 					"text": "roles du qui",
-					"top": 233,
-					"left": 10,
+					"top": 261,
+					"left": 7,
 					"width": 79,
 					"height": 15
 				},
@@ -615,7 +615,7 @@
 					"type": "input",
 					"left": 18,
 					"top": 30,
-					"width": 749,
+					"width": 524,
 					"height": 16,
 					"dataSource": "Form:C1466.message",
 					"enterable": false,
@@ -636,9 +636,9 @@
 				"iQuiPhoto1": {
 					"type": "input",
 					"left": 554,
-					"top": 57,
+					"top": 30,
 					"width": 423,
-					"height": 176,
+					"height": 240,
 					"dataSourceTypeHint": "picture",
 					"dataSource": "Form:C1466.photoQui_i",
 					"enterable": true,
@@ -682,7 +682,7 @@
 			]
 		}
 	],
-	"geometryStamp": 349,
+	"geometryStamp": 359,
 	"method": "method.4dm",
 	"editor": {
 		"activeView": "View 1",

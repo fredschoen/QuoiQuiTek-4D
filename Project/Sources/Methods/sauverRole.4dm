@@ -2,10 +2,10 @@
 //sauverRole
 
 var $status_o : Object
-var $1; $role_e : cs:C1710.QuiEntity
+var $1; $role_e : cs:C1710.RoleEntity
 var $2; $photoRole_i : Picture
-$quoi_e:=$1
-$photoQuoi_i:=$2
+$role_e:=$1
+$photoRole_i:=$2
 
 $status_o:=$role_e.save()
 If ($status_o.success)
