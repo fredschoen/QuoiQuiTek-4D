@@ -21,6 +21,17 @@ If (Form:C1466.posRoleSel_i>0)
 		Form:C1466.photoRole_i:=Null:C1517
 	End if 
 	
+	//photo du quoi
+	$x:=Folder:C1567(fk data folder:K87:12).platformPath+"Photos"+Folder separator:K24:12+"o"+String:C10(Form:C1466.role_e.quoi.ID; "0000000")+".png"
+	READ PICTURE FILE:C678($x; $img_i)
+	If (OK=1)
+		Form:C1466.photoQuoi_i:=$img_i
+	Else 
+		Form:C1466.photoQuoi_i:=Null:C1517
+	End if 
+	
+	
+	
 	If (Undefined:C82(Form:C1466.role_e.qui))
 		//le quoi est sur un groupe
 		Form:C1466.groupe_e:=Form:C1466.role_e.groupe
@@ -41,6 +52,7 @@ If (Form:C1466.posRoleSel_i>0)
 		Else 
 			Form:C1466.photoQui_i:=Null:C1517
 		End if 
+		
 		FORM GOTO PAGE:C247(1)
 	End if 
 	

@@ -84,8 +84,8 @@
 				"btTrace": {
 					"type": "button",
 					"text": "trace",
-					"top": 301,
-					"left": 31,
+					"top": 306,
+					"left": 13,
 					"width": 40,
 					"height": 15,
 					"events": [
@@ -118,6 +118,18 @@
 						"onClick"
 					],
 					"method": "ObjectMethods/bGroupe.4dm"
+				},
+				"bExpor'tPhotos": {
+					"type": "button",
+					"text": "Export Photos",
+					"top": 301,
+					"left": 85,
+					"width": 105,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/bExpor'tPhotos.4dm"
 				}
 			},
 			"entryOrder": [
@@ -126,11 +138,12 @@
 				"bRole",
 				"bGroupe",
 				"btQuitter",
-				"btTrace"
+				"btTrace",
+				"bExpor'tPhotos"
 			]
 		}
 	],
-	"geometryStamp": 352,
+	"geometryStamp": 356,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",
