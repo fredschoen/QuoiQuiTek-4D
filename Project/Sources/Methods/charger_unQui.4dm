@@ -1,7 +1,10 @@
 //%attributes = {}
 // charger_unQui
 var $img_i : Picture
-If (Form:C1466.posQuiSel_i>0)
+If (Form:C1466.action="AJOUTER")
+	Form:C1466.qui_e:=ds:C1482.Qui.new()
+	Form:C1466.qui_es:=ds:C1482.Qui.newSelection()  // l'entitySelection sera altérable (.add)
+Else 
 	//les info sur le qui sélectionné: pour affichage détail
 	Form:C1466.qui_e:=Form:C1466.qui_es[Form:C1466.posQuiSel_i-1]  //si position=1, alors indice=0
 	Form:C1466.role_es:=Form:C1466.qui_e.roles
