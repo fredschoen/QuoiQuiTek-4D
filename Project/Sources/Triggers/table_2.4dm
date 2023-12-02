@@ -3,7 +3,7 @@
 If ([Qui:2]Prenom:16="")
 	[Qui:2]FullName:2:=[Qui:2]Nom:15
 Else 
-	[Qui:2]FullName:2:=[Qui:2]Nom:15+" "+[Qui:2]Prenom:16
+	[Qui:2]FullName:2:=[Qui:2]Prenom:16+" "+[Qui:2]Nom:15
 End if 
 
 Case of 

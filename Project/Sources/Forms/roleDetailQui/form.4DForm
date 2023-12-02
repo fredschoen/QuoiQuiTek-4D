@@ -27,6 +27,22 @@
 		},
 		{
 			"objects": {
+				"Rectangle2": {
+					"type": "rectangle",
+					"top": 47,
+					"left": 477,
+					"width": 572,
+					"height": 287,
+					"fill": "#ffb6c1"
+				},
+				"Rectangle1": {
+					"type": "rectangle",
+					"top": 47,
+					"left": 10,
+					"width": 462,
+					"height": 288,
+					"fill": "#dda0dd"
+				},
 				"label_Nom": {
 					"type": "text",
 					"text": "Nom:",
@@ -317,8 +333,8 @@
 				"zInfo": {
 					"type": "input",
 					"dataSource": "Form:C1466.qui_e.Info",
-					"top": 313,
-					"left": 505,
+					"top": 296,
+					"left": 485,
 					"width": 557,
 					"height": 32
 				},
@@ -392,7 +408,7 @@
 				},
 				"lb_lesQuoisDuQui": {
 					"type": "listbox",
-					"top": 354,
+					"top": 357,
 					"left": 12,
 					"width": 914,
 					"height": 152,
@@ -550,21 +566,6 @@
 					],
 					"action": "cancel"
 				},
-				"Ligne1": {
-					"type": "line",
-					"top": 346,
-					"left": 6,
-					"width": 436,
-					"height": 1,
-					"startPoint": "bottomLeft"
-				},
-				"Rectangle": {
-					"type": "rectangle",
-					"top": 61,
-					"left": 13,
-					"width": 451,
-					"height": 263
-				},
 				"label_Nom2": {
 					"type": "text",
 					"text": "Nom:",
@@ -584,10 +585,11 @@
 				"Texte2": {
 					"type": "text",
 					"text": "Info Role",
-					"top": 47,
+					"top": 48,
 					"left": 11,
-					"width": 79,
-					"height": 15
+					"width": 55,
+					"height": 15,
+					"borderStyle": "solid"
 				},
 				"label_age": {
 					"type": "text",
@@ -655,10 +657,10 @@
 				},
 				"iQuiPhoto1": {
 					"type": "input",
-					"left": 470,
+					"left": 485,
 					"top": 69,
-					"width": 290,
-					"height": 192,
+					"width": 312,
+					"height": 208,
 					"dataSourceTypeHint": "picture",
 					"dataSource": "Form:C1466.photoQui_i",
 					"enterable": true,
@@ -666,16 +668,36 @@
 					"contextMenu": "none",
 					"events": [],
 					"pictureFormat": "proportionalCenter"
+				},
+				"Texte1": {
+					"type": "text",
+					"text": "Info Qui",
+					"top": 48,
+					"left": 478,
+					"width": 55,
+					"height": 15,
+					"borderStyle": "solid"
+				},
+				"Texte4": {
+					"type": "text",
+					"text": "quis du quoi",
+					"top": 339,
+					"left": 19,
+					"width": 80,
+					"height": 15
 				}
 			},
 			"entryOrder": [
+				"fieldDescrNom",
+				"rolePhoto_ZS1",
+				"iQuiPhoto1",
 				"zQuiNom",
 				"zQuiPrenom",
+				"cb_DomaineQui",
+				"cb_PaysQui",
 				"cb_GenreQui",
 				"zDateNaiss",
 				"zDateDeces",
-				"cb_DomaineQui",
-				"cb_PaysQui",
 				"cb_StyleQui",
 				"zInfo",
 				"lb_lesQuoisDuQui",
@@ -685,23 +707,20 @@
 				"btDernier",
 				"btSauver",
 				"btSupprimer",
+				"btQuitter",
 				"zposQuiSel_i",
 				"zQuiListelength",
 				"zQuiID",
+				"zMessage",
 				"zForm_eleCouQui_ID",
 				"btTrace",
-				"btQuitter",
-				"fieldDescrNom",
 				"ge",
 				"zAgeQui",
-				"zMessage",
-				"btAjouterRole",
-				"rolePhoto_ZS1",
-				"iQuiPhoto1"
+				"btAjouterRole"
 			]
 		}
 	],
-	"geometryStamp": 752,
+	"geometryStamp": 773,
 	"method": "method.4dm",
 	"editor": {
 		"activeView": "View 1",

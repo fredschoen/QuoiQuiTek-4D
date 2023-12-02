@@ -303,7 +303,7 @@
 				"bTest": {
 					"type": "button",
 					"text": "test",
-					"top": 240,
+					"top": 186,
 					"left": 917,
 					"width": 50,
 					"height": 20,
@@ -311,7 +311,7 @@
 						"onClick"
 					],
 					"method": "_test",
-					"bottom": 260
+					"bottom": 206
 				},
 				"zCritereAnnee2": {
 					"type": "input",
@@ -373,7 +373,7 @@
 				"btTrace": {
 					"type": "button",
 					"text": "trace",
-					"top": 213,
+					"top": 280,
 					"left": 917,
 					"width": 40,
 					"height": 15,
@@ -382,7 +382,8 @@
 					],
 					"style": "custom",
 					"method": "ObjectMethods/btTrace.4dm",
-					"borderStyle": "solid"
+					"borderStyle": "solid",
+					"focusable": false
 				},
 				"btQuitter": {
 					"type": "button",
@@ -445,7 +446,7 @@
 			]
 		}
 	],
-	"geometryStamp": 3440,
+	"geometryStamp": 3443,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",

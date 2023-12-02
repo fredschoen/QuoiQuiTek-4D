@@ -24,6 +24,14 @@
 		},
 		{
 			"objects": {
+				"Rectangle": {
+					"type": "rectangle",
+					"top": 186,
+					"left": 917,
+					"width": 121,
+					"height": 83,
+					"fill": "#ffff00"
+				},
 				"lb_quiListe": {
 					"type": "listbox",
 					"dataSource": "Form:C1466.qui_es",
@@ -190,7 +198,7 @@
 					"type": "text",
 					"text": "pour voir détail: Click ou Flèche droite ",
 					"top": 138,
-					"left": 917,
+					"left": 913,
 					"width": 115,
 					"height": 45
 				},
@@ -292,9 +300,9 @@
 				},
 				"fred": {
 					"type": "button",
-					"text": "fred",
-					"top": 192,
-					"left": 924,
+					"text": "FullName",
+					"top": 234,
+					"left": 920,
 					"width": 113,
 					"height": 24,
 					"events": [
@@ -343,8 +351,8 @@
 				},
 				"zNbre": {
 					"type": "input",
-					"left": 932,
-					"top": 222,
+					"left": 852,
+					"top": 10,
 					"width": 58,
 					"height": 16,
 					"dataSource": "Form:C1466.qui_es.length",
@@ -371,6 +379,22 @@
 					"width": 145,
 					"height": 16,
 					"dataSource": "Form:C1466.critereQuiListe.Prenom"
+				},
+				"FullName_t": {
+					"type": "input",
+					"left": 926,
+					"top": 214,
+					"width": 105,
+					"height": 16,
+					"dataSource": "Form:C1466.FullName_t"
+				},
+				"Texte1": {
+					"type": "text",
+					"text": "FullName:",
+					"top": 195,
+					"left": 923,
+					"width": 75,
+					"height": 15
 				}
 			},
 			"entryOrder": [
@@ -388,14 +412,15 @@
 				"lb_quiListe",
 				"btAjouterQui",
 				"btQuitter",
-				"btTrace",
+				"FullName_t",
 				"fred",
+				"btTrace",
 				"zNbre",
 				"zLength"
 			]
 		}
 	],
-	"geometryStamp": 3041,
+	"geometryStamp": 3108,
 	"method": "method.4dm",
 	"editor": {
 		"activeView": "View 1",

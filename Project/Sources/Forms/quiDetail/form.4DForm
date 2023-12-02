@@ -662,23 +662,23 @@
 				"cb_DomaineQui",
 				"cb_StyleQui",
 				"zInfo",
+				"iQuiPhoto1",
 				"lb_lesQuoisDuQui",
-				"btSupprimerQui",
-				"btSauverQui",
 				"btSuivant",
 				"btPrecedent",
 				"btPremier",
 				"btDernier",
 				"btSelectionnerQui",
 				"btAjouterRole",
+				"btSupprimerQui",
+				"btSauverQui",
 				"zposQuiSel_i",
 				"zQuiListelength",
 				"zQuiID",
 				"zForm_eleCouQui_ID",
 				"btTrace",
 				"zMessage",
-				"btQuitter",
-				"iQuiPhoto1"
+				"btQuitter"
 			]
 		}
 	],

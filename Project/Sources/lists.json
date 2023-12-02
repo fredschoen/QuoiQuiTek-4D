@@ -638,50 +638,44 @@
 				"collapsed": true
 			},
 			{
-				"text": "RUS",
+				"text": "Santé",
 				"ref": 43,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "Santé",
+				"text": "Sport",
 				"ref": 44,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "Sport",
+				"text": "Techno",
 				"ref": 45,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "Techno",
+				"text": "Terr",
 				"ref": 46,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "Terr",
+				"text": "US",
 				"ref": 47,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "US",
+				"text": "Vie",
 				"ref": 48,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "Vie",
-				"ref": 49,
-				"editable": true,
-				"collapsed": true
-			},
-			{
 				"text": "x",
-				"ref": 50,
+				"ref": 49,
 				"editable": true,
 				"collapsed": true
 			}
@@ -772,212 +766,224 @@
 				"collapsed": true
 			},
 			{
-				"text": "Cor",
+				"text": "Chin",
 				"ref": 12,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "Cote Iv",
+				"text": "Cor",
 				"ref": 13,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "Cub",
+				"text": "Cote Iv",
 				"ref": 14,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "Dan",
+				"text": "Cub",
 				"ref": 15,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "Esp",
+				"text": "Dan",
 				"ref": 16,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "Fra",
+				"text": "Esp",
 				"ref": 17,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "Holl",
+				"text": "Fra",
 				"ref": 18,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "Hong",
+				"text": "Fra-Alg",
 				"ref": 19,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "Hong Hong",
+				"text": "Holl",
 				"ref": 20,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "Ind",
+				"text": "Hong",
 				"ref": 21,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "Irl",
+				"text": "Hong Hong",
 				"ref": 22,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "Isra",
+				"text": "Ind",
 				"ref": 23,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "Ita",
+				"text": "Irl",
 				"ref": 24,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "Italien",
+				"text": "Isra",
 				"ref": 25,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "Jamaica",
+				"text": "Ita",
 				"ref": 26,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "Mar",
+				"text": "Italien",
 				"ref": 27,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "Maroc",
+				"text": "Jamaica",
 				"ref": 28,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "Mex",
+				"text": "Mar",
 				"ref": 29,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "Nedl",
+				"text": "Maroc",
 				"ref": 30,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "Nigeria",
+				"text": "Mex",
 				"ref": 31,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "Palest",
+				"text": "Nedl",
 				"ref": 32,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "pol",
+				"text": "Nigeria",
 				"ref": 33,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "Port",
+				"text": "Palest",
 				"ref": 34,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "Rock",
+				"text": "pol",
 				"ref": 35,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "Rom",
+				"text": "Port",
 				"ref": 36,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "Rus",
+				"text": "Rock",
 				"ref": 37,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "Serb",
+				"text": "Rom",
 				"ref": 38,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "Suede",
+				"text": "Rus",
 				"ref": 39,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "Sui",
+				"text": "Serb",
 				"ref": 40,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "Ukr",
+				"text": "Suede",
 				"ref": 41,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "US",
+				"text": "Sui",
 				"ref": 42,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "Venezuela",
+				"text": "Ukr",
 				"ref": 43,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "Viet",
+				"text": "US",
 				"ref": 44,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "Yougo",
+				"text": "Venezuela",
 				"ref": 45,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "µ",
+				"text": "Viet",
 				"ref": 46,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "Yougo",
+				"ref": 47,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "µ",
+				"ref": 48,
 				"editable": true,
 				"collapsed": true
 			}
@@ -1047,74 +1053,86 @@
 				"collapsed": true
 			},
 			{
-				"text": "dvd(fin ko)",
+				"text": "dvd (disk vost)",
 				"ref": 11,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "expo",
+				"text": "dvd(fin ko)",
 				"ref": 12,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "Guig",
+				"text": "expo",
 				"ref": 13,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "Malr",
+				"text": "Guig",
 				"ref": 14,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "MAMCS",
+				"text": "Malr",
 				"ref": 15,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "n",
+				"text": "MAMCS",
 				"ref": 16,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "NetFlix",
+				"text": "n",
 				"ref": 17,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "ntz",
+				"text": "NetFlix",
 				"ref": 18,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "pdf",
+				"text": "ntz",
 				"ref": 19,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "pom",
+				"text": "pdf",
 				"ref": 20,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "w",
+				"text": "pom",
 				"ref": 21,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "x",
+				"text": "w",
 				"ref": 22,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "x",
+				"ref": 23,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "Ytb",
+				"ref": 24,
 				"editable": true,
 				"collapsed": true
 			}
@@ -1136,38 +1154,32 @@
 				"collapsed": true
 			},
 			{
-				"text": "dvd",
+				"text": "INFO",
 				"ref": 3,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "INFO",
+				"text": "LIVR",
 				"ref": 4,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "LIVR",
+				"text": "MUS",
 				"ref": 5,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "MUS",
+				"text": "PERSO",
 				"ref": 6,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "PERSO",
-				"ref": 7,
-				"editable": true,
-				"collapsed": true
-			},
-			{
 				"text": "VISU",
-				"ref": 8,
+				"ref": 7,
 				"editable": true,
 				"collapsed": true
 			}

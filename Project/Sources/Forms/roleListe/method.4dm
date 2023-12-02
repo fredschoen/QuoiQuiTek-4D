@@ -1,4 +1,5 @@
-//formulaire .role_es
+//formulaire roleListe
+
 Case of 
 		
 	: (Form event code:C388=On Unload:K2:2)
@@ -27,6 +28,8 @@ Case of
 		Form:C1466.critereRole.DateO:=""
 		
 		If (Form:C1466.action="INIT")
-			charger_LesRoles
+			// trop long à tout charger: 
+			//charger_LesRoles
+			Form:C1466.role_es:=Null:C1517
 		End if 
 End case 

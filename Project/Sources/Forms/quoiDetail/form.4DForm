@@ -380,9 +380,9 @@
 				"field_Info": {
 					"type": "input",
 					"left": 74,
-					"top": 376,
-					"width": 409,
-					"height": 193,
+					"top": 361,
+					"width": 534,
+					"height": 208,
 					"dataSource": "Form:C1466.quoi_e.Info"
 				},
 				"label_Info": {
@@ -396,8 +396,8 @@
 				"field_ID": {
 					"type": "input",
 					"dataSource": "Form:C1466.quoi_e.ID",
-					"top": 371,
-					"left": 887,
+					"top": 33,
+					"left": 816,
 					"width": 78,
 					"height": 16,
 					"enterable": false,
@@ -408,8 +408,8 @@
 				"label4": {
 					"type": "text",
 					"text": "F:",
-					"top": 371,
-					"left": 874,
+					"top": 33,
+					"left": 803,
 					"width": 12,
 					"height": 16
 				},
@@ -526,8 +526,8 @@
 				"btTrace": {
 					"type": "button",
 					"text": "trace",
-					"top": 45,
-					"left": 940,
+					"top": 33,
+					"left": 939,
 					"width": 40,
 					"height": 15,
 					"events": [
@@ -660,8 +660,8 @@
 				},
 				"Zone de saisie1": {
 					"type": "input",
-					"left": 529,
-					"top": 364,
+					"left": 633,
+					"top": 361,
 					"width": 325,
 					"height": 208,
 					"dataSourceTypeHint": "picture",
@@ -681,7 +681,9 @@
 				"field_Prod",
 				"field_Prod1",
 				"field_Info",
+				"Zone de saisie1",
 				"lb_lesQuisDuQuoi",
+				"lb_lesGroupesDuQuoi",
 				"btSuivant",
 				"btPrecedent",
 				"btPremier",
@@ -690,18 +692,16 @@
 				"btSupprimerQuoi",
 				"btAjouterRole",
 				"btSelectionnerQuoi",
+				"btQuitter",
 				"field_ID",
 				"zposQuoiSel_i",
 				"zFormquoiListelength",
 				"btTrace",
-				"zMessage",
-				"btQuitter",
-				"lb_lesGroupesDuQuoi",
-				"Zone de saisie1"
+				"zMessage"
 			]
 		}
 	],
-	"geometryStamp": 200,
+	"geometryStamp": 212,
 	"method": "method.4dm",
 	"editor": {
 		"activeView": "View 1",

@@ -1,35 +1,11 @@
 {
-	"Sources/Forms/posteDetailQui/form.4DForm": {
-		"left": 0,
-		"top": 78,
-		"width": 1366,
-		"height": 627
-	},
-	"Sources/Forms/quiDetail/form.4DForm": {
-		"left": 0,
-		"top": 78,
-		"width": 1366,
-		"height": 627
-	},
 	"Sources/Forms/quoiDetail/form.4DForm": {
 		"left": 0,
-		"top": 78,
+		"top": 20,
 		"width": 1366,
-		"height": 627
+		"height": 685
 	},
 	"Sources/Forms/roleDetail/form.4DForm": {
-		"left": 0,
-		"top": 78,
-		"width": 1366,
-		"height": 627
-	},
-	"Sources/Forms/roleDetailQui/form.4DForm": {
-		"left": 0,
-		"top": 78,
-		"width": 1366,
-		"height": 627
-	},
-	"Sources/Forms/roleDetailQuoi/form.4DForm": {
 		"left": 0,
 		"top": 78,
 		"width": 1366,

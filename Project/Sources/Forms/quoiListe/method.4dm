@@ -1,5 +1,6 @@
 //formulaire quoiListe
-
+var $AfficherListeVide_b : Boolean
+$AfficherListeVide_b:=False:C215
 Case of 
 	: (Form event code:C388=On Unload:K2:2)
 		CONFIRM:C162("sortir de cette liste des quois  ?")
@@ -16,7 +17,7 @@ Case of
 			Form:C1466.action:="INIT"
 			Form:C1466.page:=1  // afficher la page 1
 			Form:C1466.utilisationListe:=""
-			
+			$AfficherListeVide_b:=True:C214
 		End if 
 		
 		If (Undefined:C82(Form:C1466.critereQuoiListe))  //ouvrir le formulaire sans passer par _afficherQuoiListe
@@ -31,10 +32,16 @@ Case of
 			Form:C1466.critereQuoiListe.DateDernVisu:=""
 			Form:C1466.critereQuoiListe.Domaine:=""
 			Form:C1466.critereQuoiListe.Qualif:=""
+			$AfficherListeVide_b:=True:C214
 		End if 
 		
 		If (Form:C1466.action="INIT")
-			charger_LesQuois
+			If ($AfficherListeVide_b)
+				Form:C1466.quoi_es:=Null:C1517
+			Else 
+				charger_LesQuois
+			End if 
+			
 		End if 
 		// aller à la page précisée
 		FORM GOTO PAGE:C247(Form:C1466.page)

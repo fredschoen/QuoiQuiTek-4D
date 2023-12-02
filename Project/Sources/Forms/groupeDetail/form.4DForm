@@ -249,7 +249,7 @@
 					"dataSource": "Form:C1466.poste_es",
 					"top": 153,
 					"left": 19,
-					"width": 856,
+					"width": 740,
 					"height": 173,
 					"visibility": "visible",
 					"sizingX": "fixed",
@@ -284,10 +284,10 @@
 						{
 							"name": "cGenre1",
 							"dataSource": "This:C1470.qui.Genre",
-							"width": 50,
+							"width": 30,
 							"enterable": false,
 							"header": {
-								"text": "Genre",
+								"text": "Gr",
 								"name": "4"
 							},
 							"footer": {
@@ -298,7 +298,7 @@
 						{
 							"name": "cPays1",
 							"dataSource": "This:C1470.qui.Pays",
-							"width": 93,
+							"width": 70,
 							"enterable": false,
 							"header": {
 								"text": "Pays",
@@ -312,7 +312,7 @@
 						{
 							"name": "cAnneeNaiss2",
 							"dataSource": "This:C1470.qui.DateNaiss",
-							"width": 80,
+							"width": 60,
 							"enterable": false,
 							"header": {
 								"text": "Date Naiss",
@@ -326,7 +326,7 @@
 						{
 							"name": "cAnneeNaiss1",
 							"dataSource": "This:C1470.qui.getAge()",
-							"width": 80,
+							"width": 40,
 							"enterable": false,
 							"header": {
 								"text": "Age",
@@ -340,7 +340,7 @@
 						{
 							"name": "cAnneeDeces1",
 							"dataSource": "This:C1470.qui.DateDeces",
-							"width": 80,
+							"width": 60,
 							"enterable": false,
 							"header": {
 								"text": "Deces",
@@ -368,7 +368,7 @@
 						{
 							"name": "cStyle1",
 							"dataSource": "This:C1470.qui.Style",
-							"width": 81,
+							"width": 70,
 							"enterable": false,
 							"header": {
 								"text": "Style",
@@ -651,6 +651,23 @@
 						"onClick"
 					],
 					"method": "ObjectMethods/btExploser.4dm"
+				},
+				"info": {
+					"type": "input",
+					"left": 776,
+					"top": 113,
+					"width": 207,
+					"height": 224,
+					"dataSource": "Form:C1466.groupe_e.Info"
+				},
+				"label_Info": {
+					"type": "text",
+					"text": "Info Groupe:",
+					"top": 118,
+					"left": 690,
+					"width": 76,
+					"height": 15,
+					"textAlign": "right"
 				}
 			},
 			"entryOrder": [
@@ -658,28 +675,29 @@
 				"cb_Domaine",
 				"cb_Genre",
 				"cb_PaysQui",
+				"btAjouterPoste",
+				"lb_quiListe",
+				"btAjouterQuoi",
+				"btExploser",
+				"lb_lesQuoisDuGroupe",
 				"btSuivant",
 				"btPrecedent",
 				"btPremier",
 				"btDernier",
 				"btSauverGroupe",
 				"btSupprimerGroupe",
-				"btAjouterPoste",
 				"btSelectionnerGroupe",
+				"btQuitter",
 				"zPosSel",
 				"zLength",
-				"btTrace",
 				"zMessage",
-				"btQuitter",
-				"lb_quiListe",
-				"lb_lesQuoisDuGroupe",
-				"btAjouterQuoi",
 				"zID",
-				"btExploser"
+				"btTrace",
+				"info"
 			]
 		}
 	],
-	"geometryStamp": 524,
+	"geometryStamp": 582,
 	"method": "method.4dm",
 	"editor": {
 		"activeView": "View 1",

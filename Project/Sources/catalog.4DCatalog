@@ -12,7 +12,7 @@
 		<field name="Date" uuid="7C42769F220BAC4095209E083C17B727" type="10" limiting_length="10" never_null="true" id="7"/>
 		<field name="Domaine" uuid="402F9ECEAE77124F98DB7C18F13C210A" type="10" limiting_length="255" never_null="true" id="8"/>
 		<field name="Prod" uuid="13333BFDCBB765488223A57A973B4517" type="10" limiting_length="100" never_null="true" id="9"/>
-		<field name="Info" uuid="EA2D51B243B04D4CA0DA6425FE90F554" type="10" limiting_length="255" never_null="true" id="10"/>
+		<field name="Info" uuid="EA2D51B243B04D4CA0DA6425FE90F554" type="10" never_null="true" id="10"/>
 		<field name="DateDernVisu" uuid="174F3C522464E7498A51F1F3E79B0BCD" type="8" never_null="true" id="11"/>
 		<field name="Qualif" uuid="EDFC268B6F24424694B8CE014976C7ED" type="10" limiting_length="10" never_null="true" id="12"/>
 		<field name="CreatTS" uuid="7A2CF25E62700B4F8FC20F46A3E0540C" type="10" limiting_length="19" never_null="true" id="14" hide_in_REST="true"/>
@@ -40,7 +40,7 @@
 		</field>
 		<field name="Domaine" uuid="1F05095FF9109747A2176696D42A1048" type="10" limiting_length="100" never_null="true" id="8"/>
 		<field name="Style" uuid="9B90807F5A86ED4E8FCBF46BC066923C" type="10" limiting_length="255" never_null="true" id="9"/>
-		<field name="Info" uuid="EC9B8E7A9A48A444A691DAEF101D2996" type="10" limiting_length="255" never_null="true" id="10"/>
+		<field name="Info" uuid="EC9B8E7A9A48A444A691DAEF101D2996" type="10" never_null="true" id="10"/>
 		<field name="CreatTS" uuid="B6202F66B0232044811AD2651FD5AACA" type="10" limiting_length="19" never_null="true" id="11"/>
 		<field name="ModifTS" uuid="4DC4F4C64D611A4BBE8D490033B3E707" type="10" limiting_length="19" never_null="true" id="12"/>
 		<field name="Nom" uuid="BBF2D8C7AE4BE34A845614F2614599FA" type="10" limiting_length="100" never_null="true" id="15"/>
@@ -60,7 +60,7 @@
 		<field name="ID_Qui" uuid="33B70CCC0843DE429F0B0C50D132DFE5" type="4" never_null="true" id="2"/>
 		<field name="ID_Quoi" uuid="224E05CCD982514682542710BE59B128" type="4" never_null="true" id="3"/>
 		<field name="Descr" uuid="9FD4850839E84247A25DF708935A693B" type="10" limiting_length="255" never_null="true" id="4"/>
-		<field name="Info" uuid="92558612E2C24C4CB5ACF7F77463A808" type="10" limiting_length="255" never_null="true" id="6"/>
+		<field name="Info" uuid="92558612E2C24C4CB5ACF7F77463A808" type="10" never_null="true" id="6"/>
 		<field name="CreatTS" uuid="9AF16C5C0F7B92478FEA217628F03818" type="10" limiting_length="19" never_null="true" id="7"/>
 		<field name="ModifTS" uuid="58AA4B53EA3D2240B62ED33F1160D6FC" type="10" limiting_length="19" never_null="true" id="8"/>
 		<field name="ID_Groupe" uuid="1A1C5EA293E78B4EA2A4A7C5AC48325B" type="4" never_null="true" id="11"/>
@@ -80,11 +80,12 @@
 		<field name="Domaine" uuid="682B39C533B75E4FB08137DAB2B386C0" type="10" limiting_length="100" never_null="true" id="5"/>
 		<field name="CreatTS" uuid="208F46666055AC4998383FF8859B4B51" type="10" limiting_length="19" never_null="true" id="6"/>
 		<field name="ModifTS" uuid="9BE27EC79216654BAC6B49E46456EECF" type="10" limiting_length="19" never_null="true" id="7"/>
+		<field name="Info" uuid="5753ABF4797D054E93270C59C7D69AE1" type="10" never_null="true" id="8"/>
 		<primary_key field_name="ID" field_uuid="18B8EA71D3B1ED4B9EB0E1E3676B4B5E"/>
 		<table_extra trigger_insert="true" trigger_update="true">
-			<editor_table_info displayable_fields_count="7">
+			<editor_table_info displayable_fields_count="8">
 				<color red="255" green="255" blue="255" alpha="0"/>
-				<coordinates left="439" top="177" width="131" height="207.33203125"/>
+				<coordinates left="439" top="177" width="131" height="224.33203125"/>
 			</editor_table_info>
 		</table_extra>
 	</table>

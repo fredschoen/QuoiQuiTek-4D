@@ -59,7 +59,7 @@
 							"width": 230,
 							"enterable": false,
 							"header": {
-								"text": "Nom",
+								"text": "Nom du qui",
 								"name": "eNom"
 							},
 							"footer": {
@@ -180,7 +180,7 @@
 						{
 							"header": {
 								"name": "ezNom",
-								"text": "nom Quoi"
+								"text": "Nom du quoi"
 							},
 							"name": "cNomO1",
 							"footer": {
@@ -233,7 +233,7 @@
 						{
 							"header": {
 								"name": "ezAnnee1",
-								"text": "DatO"
+								"text": "Date quoi"
 							},
 							"name": "cDateO2",
 							"footer": {
@@ -288,8 +288,8 @@
 				"btAppliquerFiltreRole": {
 					"type": "button",
 					"text": "Appliquer le filtre",
-					"top": 8,
-					"left": 423,
+					"top": 9,
+					"left": 364,
 					"width": 113,
 					"height": 24,
 					"events": [
@@ -374,20 +374,20 @@
 			"entryOrder": [
 				"zCritereNom",
 				"zCritereAge",
-				"zCritereGenre",
-				"zCriterePays",
 				"bAgePlus",
 				"bAgeMoins",
-				"zCritereDomaine",
-				"zCritereDateO",
+				"zCritereGenre",
+				"zCriterePays",
 				"btAppliquerFiltreRole",
+				"zCritereDomaine",
 				"btQuitter",
+				"zCritereDateO",
 				"lb_roleListe",
 				"btTrace"
 			]
 		}
 	],
-	"geometryStamp": 852,
+	"geometryStamp": 867,
 	"method": "method.4dm",
 	"editor": {
 		"activeView": "View 1",
