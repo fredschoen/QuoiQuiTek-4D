@@ -4,7 +4,7 @@
 	<schema name="DEFAULT_SCHEMA"/>
 	<table name="Quoi" uuid="1AA34083D0527E4F91A17E4D5A70AA8D" id="1">
 		<field name="ID" uuid="7D44AEC0186F8341BF2162AF1B5099CF" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
-		<field name="Nom" uuid="C398CAEA0AE2F94EA9EA19DE10AC847C" type="10" limiting_length="255" not_null="true" never_null="true" id="2"/>
+		<field name="Nom" uuid="C398CAEA0AE2F94EA9EA19DE10AC847C" type="10" limiting_length="255" not_null="true" id="2"/>
 		<field name="Genre" uuid="2FE2A974B09BC645B6A53955FE1C4B61" type="10" limiting_length="100" never_null="true" id="3"/>
 		<field name="Pays" uuid="E4FB40F5F67D1D4191AF0BF3D8535F5B" type="10" limiting_length="100" never_null="true" id="4"/>
 		<field name="Stock" uuid="CD35DC4B033A024D9C4FD5AC5439BAC1" type="10" limiting_length="50" never_null="true" id="5"/>
@@ -43,7 +43,7 @@
 		<field name="Info" uuid="EC9B8E7A9A48A444A691DAEF101D2996" type="10" never_null="true" id="10"/>
 		<field name="CreatTS" uuid="B6202F66B0232044811AD2651FD5AACA" type="10" limiting_length="19" never_null="true" id="11"/>
 		<field name="ModifTS" uuid="4DC4F4C64D611A4BBE8D490033B3E707" type="10" limiting_length="19" never_null="true" id="12"/>
-		<field name="Nom" uuid="BBF2D8C7AE4BE34A845614F2614599FA" type="10" limiting_length="100" never_null="true" id="15"/>
+		<field name="Nom" uuid="BBF2D8C7AE4BE34A845614F2614599FA" type="10" limiting_length="100" not_null="true" id="15"/>
 		<field name="Prenom" uuid="A7E0F3308CDD744F86BC0F4B14C82E97" type="10" limiting_length="100" never_null="true" id="16"/>
 		<field name="DateNaiss" uuid="1C16318379BAF84C996857FA8B681A84" type="10" limiting_length="10" never_null="true" id="17"/>
 		<field name="DateDeces" uuid="C9F6C466D22B6948BBEBBA117EA2A3BB" type="10" limiting_length="10" never_null="true" id="18"/>
@@ -74,7 +74,7 @@
 	</table>
 	<table name="Groupe" uuid="D88F0FD61202DA49864CA77FFAC012A0" id="4">
 		<field name="ID" uuid="18B8EA71D3B1ED4B9EB0E1E3676B4B5E" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
-		<field name="Nom" uuid="EFE08309B9F6AF4F8178D993DB700555" type="10" limiting_length="255" never_null="true" id="2"/>
+		<field name="Nom" uuid="EFE08309B9F6AF4F8178D993DB700555" type="10" limiting_length="255" not_null="true" id="2"/>
 		<field name="Genre" uuid="3DC3C69F5C1EC04A83AB7BE802402C9A" type="10" limiting_length="100" never_null="true" id="3"/>
 		<field name="Pays" uuid="CDBB18DEFED5B240A20121A9B1B756C7" type="10" limiting_length="100" never_null="true" id="4"/>
 		<field name="Domaine" uuid="682B39C533B75E4FB08137DAB2B386C0" type="10" limiting_length="100" never_null="true" id="5"/>
@@ -219,6 +219,11 @@
 			<table_ref uuid="36E36289CCCA4644A71A1D2676364BB1" name="Role"/>
 		</field_ref>
 	</index>
+	<index kind="regular" uuid="47B94C7378A7484CA528DC67DBB766F2" type="1">
+		<field_ref uuid="C398CAEA0AE2F94EA9EA19DE10AC847C" name="Nom">
+			<table_ref uuid="1AA34083D0527E4F91A17E4D5A70AA8D" name="Quoi"/>
+		</field_ref>
+	</index>
 	<index kind="regular" unique_keys="true" uuid="6364D20D79F0DD4F8BBC79874363AE50" type="7">
 		<field_ref uuid="DDE19C7481C5434A99086AF974399B29" name="ID">
 			<table_ref uuid="36E36289CCCA4644A71A1D2676364BB1" name="Role"/>
@@ -242,11 +247,6 @@
 	<index kind="regular" unique_keys="true" uuid="D6F56717C46B4EC88EE06C4F78B02A18" type="7">
 		<field_ref uuid="0527D929F2CBE74A886B87DB09906737" name="ID">
 			<table_ref uuid="7F9A35CDF0EFB6429B6FA24F9D22CD4E" name="Qui"/>
-		</field_ref>
-	</index>
-	<index kind="regular" uuid="E8E48E8E2F09954BA153C57EF23B7990" type="1">
-		<field_ref uuid="C398CAEA0AE2F94EA9EA19DE10AC847C" name="Nom">
-			<table_ref uuid="1AA34083D0527E4F91A17E4D5A70AA8D" name="Quoi"/>
 		</field_ref>
 	</index>
 	<base_extra>

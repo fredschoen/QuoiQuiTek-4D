@@ -14,6 +14,8 @@ If ($status_o.success)
 		//btSelectionner
 		//passer en mode modif
 		ALERT:C41("Enreg Quoi ajouté")
+		Form:C1466.quoi_es.add(Form:C1466.quoi_e)  // pour navigation OK dans formulaire Détail
+		Form:C1466.addedQuoi_e:=Form:C1466.quoi_e  //pour ajout dans le formulaire liste
 		Form:C1466.action:="MODIFIER"  // on passe de "ajouter" à "modifier"
 		visibleBtNavig
 	Else 

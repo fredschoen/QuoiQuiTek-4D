@@ -2,7 +2,11 @@
 // charger_unQuoi
 var $img_i : Picture
 
-If (Form:C1466.posQuoiSel_i>0)
+
+If (Form:C1466.action="AJOUTER")
+	Form:C1466.quoi_e:=ds:C1482.Quoi.new()
+	Form:C1466.quoi_es:=ds:C1482.Quoi.newSelection()  // l'entitySelection sera altérable (.add)
+Else 
 	//les info sur le quoi sélectionné: pour affichage détail
 	Form:C1466.quoi_e:=Form:C1466.quoi_es[Form:C1466.posQuoiSel_i-1]  //si position=1, alors indice=0
 	Form:C1466.role_es:=Form:C1466.quoi_e.roles.query("ID_Qui > 0")
