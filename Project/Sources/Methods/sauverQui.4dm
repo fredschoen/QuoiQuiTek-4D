@@ -12,7 +12,8 @@ If ($status_o.success)
 	If (Form:C1466.action="AJOUTER")
 		
 		ALERT:C41("Enreg Qui ajouté")
-		Form:C1466.qui_es.add(Form:C1466.qui_e)  // pour navigation OK dans formulaire Détail
+		Form:C1466.qui_es.add(Form:C1466.qui_e)  // pour navigation OK dans formulaire Détail (ici il y aura 1 seul entity dans la sélection)
+		Form:C1466.posQuiSel_i+=1  //éviter posQuoiSel_i=0 (ici il y aura 1 seul entity dans la sélection)
 		Form:C1466.addedQui_e:=Form:C1466.qui_e  //pour ajout dans le formulaire liste
 		Form:C1466.action:="MODIFIER"  // on passe de "ajouter" à "modifier"
 		visibleBtNavig

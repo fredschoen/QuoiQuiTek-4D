@@ -1,4 +1,4 @@
-//formulaire quoiDetail
+//formulaire groupeDetail
 var $form_o : Object
 Case of 
 		
