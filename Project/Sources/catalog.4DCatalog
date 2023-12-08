@@ -114,6 +114,19 @@
 			</editor_table_info>
 		</table_extra>
 	</table>
+	<table name="Parametre" uuid="2FF255EAA1005C49ACCEAA8C816BBACB" id="7">
+		<field name="ID" uuid="D4C5493ABD29884D9428918061CCFED6" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
+		<field name="Nom" uuid="6CDDB6CF93445E4795C49B951322AFB4" type="10" limiting_length="255" never_null="true" id="2"/>
+		<field name="Niv1" uuid="C13AB42FB318E14389D6D0A28D57205F" type="10" limiting_length="255" never_null="true" id="3"/>
+		<field name="Niv2" uuid="B3B6E3F87731F44597245D81EED0DD3C" type="10" limiting_length="255" never_null="true" id="4"/>
+		<primary_key field_name="ID" field_uuid="D4C5493ABD29884D9428918061CCFED6"/>
+		<table_extra output_form="Formulaire1" input_form="Formulaire2">
+			<editor_table_info displayable_fields_count="6">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="1040" top="40" width="120" height="167.33203125"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
 	<relation uuid="CB09C89AD05F40F9B927543F1D0AC6FD" name_Nto1="qui" name_1toN="roles" auto_load_Nto1="false" auto_load_1toN="false" foreign_key="false" state="1" integrity="delete">
 		<related_field kind="source">
 			<field_ref uuid="33B70CCC0843DE429F0B0C50D132DFE5" name="ID_Qui">
@@ -247,6 +260,11 @@
 	<index kind="regular" unique_keys="true" uuid="D6F56717C46B4EC88EE06C4F78B02A18" type="7">
 		<field_ref uuid="0527D929F2CBE74A886B87DB09906737" name="ID">
 			<table_ref uuid="7F9A35CDF0EFB6429B6FA24F9D22CD4E" name="Qui"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="FF97D163F01AB94A91C9770CAB37E829" type="7">
+		<field_ref uuid="D4C5493ABD29884D9428918061CCFED6" name="ID">
+			<table_ref uuid="2FF255EAA1005C49ACCEAA8C816BBACB" name="Parametre"/>
 		</field_ref>
 	</index>
 	<base_extra>

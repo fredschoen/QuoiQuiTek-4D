@@ -119,7 +119,7 @@
 					],
 					"method": "ObjectMethods/bGroupe.4dm"
 				},
-				"bExpor'tPhotos": {
+				"bExportPhotos": {
 					"type": "button",
 					"text": "Export Photos",
 					"top": 273,
@@ -129,7 +129,19 @@
 					"events": [
 						"onClick"
 					],
-					"method": "ObjectMethods/bExpor'tPhotos.4dm"
+					"method": "ObjectMethods/bExportPhotos.4dm"
+				},
+				"bParametres": {
+					"type": "button",
+					"text": "Paramètres",
+					"top": 296,
+					"left": 285,
+					"width": 105,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/bParametres.4dm"
 				}
 			},
 			"entryOrder": [
@@ -137,13 +149,14 @@
 				"bQui",
 				"bGroupe",
 				"bRole",
-				"bExpor'tPhotos",
+				"bExportPhotos",
 				"btQuitter",
-				"btTrace"
+				"btTrace",
+				"bParametres"
 			]
 		}
 	],
-	"geometryStamp": 365,
+	"geometryStamp": 369,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",
