@@ -475,21 +475,6 @@
 					},
 					"dataSource": "Form:C1466.quoi_e.Stock"
 				},
-				"DomaineQuoi_CB": {
-					"type": "combo",
-					"left": 73,
-					"top": 99,
-					"width": 150,
-					"height": 18,
-					"events": [
-						"onDataChange"
-					],
-					"dataSourceTypeHint": "text",
-					"choiceList": {
-						"$ref": "/SOURCES/lists.json#/DomaineQuoi"
-					},
-					"dataSource": "Form:C1466.quoi_e.Domaine"
-				},
 				"label_DateDernVisu": {
 					"type": "text",
 					"text": "DateDernVisu:",
@@ -667,11 +652,38 @@
 					"dataSourceTypeHint": "picture",
 					"pictureFormat": "proportionalCenter",
 					"dataSource": "Form:C1466.photoQuoi_i"
+				},
+				"ld_domaineQuoi": {
+					"type": "dropdown",
+					"left": 74,
+					"top": 97,
+					"width": 100,
+					"height": 22,
+					"events": [
+						"onLoad",
+						"onDataChange"
+					],
+					"dataSourceTypeHint": "object",
+					"dataSource": "",
+					"method": "ObjectMethods/ld_domaineQuoi.4dm"
+				},
+				"bParametres": {
+					"type": "button",
+					"text": "Param",
+					"top": 97,
+					"left": 180,
+					"width": 48,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/bParametres.4dm"
 				}
 			},
 			"entryOrder": [
 				"field_Nom",
-				"DomaineQuoi_CB",
+				"ld_domaineQuoi",
+				"bParametres",
 				"Genre_CB",
 				"paysQuoi_CB",
 				"StockQuoi_CB",
@@ -701,7 +713,7 @@
 			]
 		}
 	],
-	"geometryStamp": 212,
+	"geometryStamp": 219,
 	"method": "method.4dm",
 	"editor": {
 		"activeView": "View 1",

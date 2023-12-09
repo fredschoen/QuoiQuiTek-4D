@@ -20,6 +20,4 @@ If ($pourSelectionner_b)
 	
 	dialoguer("quiDetail"; $form_o)
 	
-	Form:C1466.qui_es:=Form:C1466.qui_es.query("Nom > :1"; " ")  // pour prendre en compte les "supprimer"
-	
 End if 

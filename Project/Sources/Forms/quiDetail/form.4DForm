@@ -503,21 +503,6 @@
 					"height": 18,
 					"textAlign": "right"
 				},
-				"cb_DomaineQui": {
-					"type": "combo",
-					"left": 94,
-					"top": 153,
-					"width": 100,
-					"height": 22,
-					"events": [
-						"onDataChange"
-					],
-					"dataSourceTypeHint": "text",
-					"choiceList": {
-						"$ref": "/SOURCES/lists.json#/DomaineQui"
-					},
-					"dataSource": "Form:C1466.qui_e.Domaine"
-				},
 				"label_Pays3": {
 					"type": "text",
 					"text": "Style:",
@@ -545,7 +530,7 @@
 				"label_Rem1": {
 					"type": "text",
 					"text": "Info:",
-					"top": 182,
+					"top": 181,
 					"left": 10,
 					"width": 76,
 					"height": 17,
@@ -554,10 +539,10 @@
 				"zInfo": {
 					"type": "input",
 					"dataSource": "Form:C1466.qui_e.Info",
-					"top": 182,
+					"top": 181,
 					"left": 94,
 					"width": 404,
-					"height": 48
+					"height": 80
 				},
 				"zAgeQui": {
 					"type": "input",
@@ -649,6 +634,32 @@
 					],
 					"method": "ObjectMethods/iQuiPhoto1.4dm",
 					"pictureFormat": "proportionalCenter"
+				},
+				"ld_domaineQui": {
+					"type": "dropdown",
+					"left": 94,
+					"top": 153,
+					"width": 100,
+					"height": 22,
+					"events": [
+						"onLoad",
+						"onDataChange"
+					],
+					"dataSourceTypeHint": "object",
+					"dataSource": "",
+					"method": "ObjectMethods/ld_domaineQui.4dm"
+				},
+				"bParametres": {
+					"type": "button",
+					"text": "Param",
+					"top": 155,
+					"left": 196,
+					"width": 48,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/bParametres.4dm"
 				}
 			},
 			"entryOrder": [
@@ -659,7 +670,6 @@
 				"zDateeNaiss",
 				"zAnneeDeces",
 				"zAgeQui",
-				"cb_DomaineQui",
 				"cb_StyleQui",
 				"zInfo",
 				"iQuiPhoto1",
@@ -678,11 +688,13 @@
 				"zForm_eleCouQui_ID",
 				"btTrace",
 				"zMessage",
-				"btQuitter"
+				"btQuitter",
+				"ld_domaineQui",
+				"bParametres"
 			]
 		}
 	],
-	"geometryStamp": 359,
+	"geometryStamp": 377,
 	"method": "method.4dm",
 	"editor": {
 		"activeView": "View 1",

@@ -2,7 +2,6 @@
 // charger_unQuoi
 var $img_i : Picture
 
-
 If (Form:C1466.action="AJOUTER")
 	Form:C1466.quoi_e:=ds:C1482.Quoi.new()
 	Form:C1466.quoi_es:=ds:C1482.Quoi.newSelection()  // l'entitySelection sera altérable (.add)
@@ -24,3 +23,13 @@ Else
 	
 End if 
 
+// pour "ld_domaineQuoi"
+$i:=Storage:C1525.domaineQuoi.indexOf(Form:C1466.quoi_e.Domaine)
+If ($i=-1)
+	//valeur non trouvée dans la liste déroulante
+	OBJECT Get pointer:C1124(Object named:K67:5; "ld_domaineQuoi")->index:=-1
+	OBJECT Get pointer:C1124(Object named:K67:5; "ld_domaineQuoi")->currentValue:=Form:C1466.quoi_e.Domaine
+Else 
+	//valeur trouvée dans la liste déroulante
+	OBJECT Get pointer:C1124(Object named:K67:5; "ld_domaineQuoi")->index:=$i
+End if 

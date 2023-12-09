@@ -106,16 +106,6 @@ If (OK=1)
 		SEND PACKET:C103($doc; $texte)
 		$nbrEnrExport:=$nbrEnrExport+1
 		
-		//photo
-		If (Picture size:C356([Role:3]Photo:5)>0)
-			$nomFicPhoto:=System folder:C487(Desktop:K41:16)+"_QuoiQuitek"+Folder separator:K24:12+"PhotosQuoi"+Folder separator:K24:12+[Quoi:1]Nom:2+"_"+"Quoi_"+String:C10([Quoi:1]ID:1)+".jpg"
-			$nomOK:=Change string:C234($nomFicPhoto; "_"; Position:C15("/"; $nomFicPhoto))
-			
-			WRITE PICTURE FILE:C680($nomOK; [Role:3]Photo:5)
-		End if 
-		
-		
-		
 		NEXT RECORD:C51([Quoi:1])
 		
 	End while 

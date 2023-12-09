@@ -9,7 +9,7 @@ Case of
 		End if 
 		
 		//en 3 étapes sinon ça coince
-		charger_unQui
+		charger_unQui()
 		
 		//visibilité des boutons de navigation
 		visibleBtNavig(Form:C1466.qui_es.length)
