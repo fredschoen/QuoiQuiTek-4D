@@ -48,8 +48,8 @@
 					"type": "input",
 					"dataSource": "[Parametre:7]Nom:2",
 					"top": 27,
-					"left": 120,
-					"width": 250,
+					"left": 47,
+					"width": 500,
 					"height": 17
 				},
 				"label_Niv1": {
@@ -64,8 +64,8 @@
 					"type": "input",
 					"dataSource": "[Parametre:7]Niv1:3",
 					"top": 64,
-					"left": 120,
-					"width": 250,
+					"left": 47,
+					"width": 500,
 					"height": 17
 				},
 				"label_Niv2": {
@@ -80,8 +80,8 @@
 					"type": "input",
 					"dataSource": "[Parametre:7]Niv2:4",
 					"top": 101,
-					"left": 120,
-					"width": 250,
+					"left": 47,
+					"width": 500,
 					"height": 17
 				},
 				"Bouton": {
@@ -158,12 +158,13 @@
 			]
 		}
 	],
-	"geometryStamp": 36,
+	"geometryStamp": 43,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",
 		"views": {
 			"View 1": {}
 		}
-	}
+	},
+	"method": "method.4dm"
 }

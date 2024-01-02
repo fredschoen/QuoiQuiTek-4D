@@ -669,8 +669,10 @@
 				"cb_PaysQui",
 				"zDateeNaiss",
 				"zAnneeDeces",
-				"zAgeQui",
+				"ld_domaineQui",
+				"bParametres",
 				"cb_StyleQui",
+				"zAgeQui",
 				"zInfo",
 				"iQuiPhoto1",
 				"lb_lesQuoisDuQui",
@@ -688,9 +690,7 @@
 				"zForm_eleCouQui_ID",
 				"btTrace",
 				"zMessage",
-				"btQuitter",
-				"ld_domaineQui",
-				"bParametres"
+				"btQuitter"
 			]
 		}
 	],

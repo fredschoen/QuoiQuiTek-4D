@@ -680,10 +680,10 @@
 				},
 				"Texte4": {
 					"type": "text",
-					"text": "quis du quoi",
+					"text": "Tous les rôles du Qui :",
 					"top": 339,
 					"left": 19,
-					"width": 80,
+					"width": 150,
 					"height": 15
 				}
 			},
@@ -720,7 +720,7 @@
 			]
 		}
 	],
-	"geometryStamp": 773,
+	"geometryStamp": 775,
 	"method": "method.4dm",
 	"editor": {
 		"activeView": "View 1",

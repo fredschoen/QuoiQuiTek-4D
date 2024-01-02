@@ -351,7 +351,7 @@
 					"top": 285,
 					"width": 496,
 					"height": 32,
-					"dataSource": "Form:C1466.infoQuoi"
+					"dataSource": "Form:C1466.quoi_e.Info"
 				},
 				"label_Info": {
 					"type": "text",
@@ -706,10 +706,10 @@
 				},
 				"Texte4": {
 					"type": "text",
-					"text": "quis du quoi",
+					"text": "Tous les rôles du Quoi :",
 					"top": 348,
 					"left": 76,
-					"width": 80,
+					"width": 150,
 					"height": 15
 				},
 				"btAjouterRole": {
@@ -847,7 +847,7 @@
 			}
 		}
 	],
-	"geometryStamp": 931,
+	"geometryStamp": 932,
 	"method": "method.4dm",
 	"editor": {
 		"activeView": "View 1",

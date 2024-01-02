@@ -6,5 +6,8 @@ If (Test path name:C476($x)#Is a folder:K24:2)
 	CREATE FOLDER:C475($x)
 End if 
 
+//init
+initStorageValueLists()
+
 //accueil
 afficherAccueil

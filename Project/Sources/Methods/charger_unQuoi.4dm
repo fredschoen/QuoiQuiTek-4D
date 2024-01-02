@@ -33,3 +33,7 @@ Else
 	//valeur trouvée dans la liste déroulante
 	OBJECT Get pointer:C1124(Object named:K67:5; "ld_domaineQuoi")->index:=$i
 End if 
+
+
+// pour "ld_stockQuoi"
+// ???

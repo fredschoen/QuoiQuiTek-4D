@@ -5,9 +5,9 @@
 	},
 	"windowSizingX": "variable",
 	"windowSizingY": "variable",
-	"windowMinWidth": 0,
+	"windowMinWidth": 800,
 	"windowMinHeight": 0,
-	"windowMaxWidth": 32767,
+	"windowMaxWidth": 800,
 	"windowMaxHeight": 32767,
 	"rightMargin": 20,
 	"bottomMargin": 20,
@@ -47,7 +47,7 @@
 					"dataSource": "[Parametre:7]Nom:2",
 					"top": 37,
 					"left": 9,
-					"width": 250,
+					"width": 100,
 					"height": 17,
 					"borderStyle": "none"
 				},
@@ -55,22 +55,22 @@
 					"type": "line",
 					"top": 0,
 					"height": 60,
-					"left": 264
+					"left": 117
 				},
 				"label_Niv1": {
 					"type": "text",
 					"text": "Niv1",
 					"top": 10,
-					"left": 269,
-					"width": 100,
+					"left": 122,
+					"width": 350,
 					"height": 17
 				},
 				"field_Niv1": {
 					"type": "input",
 					"dataSource": "[Parametre:7]Niv1:3",
 					"top": 37,
-					"left": 269,
-					"width": 250,
+					"left": 122,
+					"width": 350,
 					"height": 17,
 					"borderStyle": "none"
 				},
@@ -78,13 +78,13 @@
 					"type": "line",
 					"top": 0,
 					"height": 60,
-					"left": 524
+					"left": 476
 				},
 				"label_Niv2": {
 					"type": "text",
 					"text": "Niv2",
 					"top": 10,
-					"left": 529,
+					"left": 481,
 					"width": 100,
 					"height": 17
 				},
@@ -92,8 +92,8 @@
 					"type": "input",
 					"dataSource": "[Parametre:7]Niv2:4",
 					"top": 37,
-					"left": 529,
-					"width": 250,
+					"left": 481,
+					"width": 400,
 					"height": 17,
 					"borderStyle": "none"
 				},
@@ -112,7 +112,7 @@
 			}
 		}
 	],
-	"geometryStamp": 18,
+	"geometryStamp": 61,
 	"method": "method.4dm",
 	"editor": {
 		"activeView": "View 1",
