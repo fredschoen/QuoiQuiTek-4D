@@ -26,6 +26,11 @@ If ($status_o.success)
 	$x:=Folder:C1567(fk data folder:K87:12).platformPath+"Photos"+Folder separator:K24:12+"i"+String:C10($qui_e.ID; "0000000")+".png"
 	If (Picture size:C356($photoQui_i)>0)
 		WRITE PICTURE FILE:C680($x; $photoQui_i)
+		If (OK=0)
+			ALERT:C41("échec WRITE PICTURE FILE")
+			TRACE:C157
+		End if 
+		
 	Else 
 		//abandon de la photo
 		If (Test path name:C476($x)=Is a document:K24:1)

@@ -27,19 +27,20 @@ If ($status_o.success)
 	$x:=Folder:C1567(fk data folder:K87:12).platformPath+"Photos"+Folder separator:K24:12+"o"+String:C10($quoi_e.ID; "0000000")+".png"
 	If (Picture size:C356($photoQuoi_i)>0)
 		WRITE PICTURE FILE:C680($x; $photoQuoi_i)
-		If (ok=0)
-			ALERT:C41("échec écriture image")
+		If (OK=0)
+			ALERT:C41("échec WRITE PICTURE FILE")
 			TRACE:C157
-		End if 
-		
-	Else 
-		//abandon de la photo
-		If (Test path name:C476($x)=Is a document:K24:1)
-			DELETE DOCUMENT:C159($x)
 		End if 
 	End if 
 	
 Else 
-	ALERT:C41($status_o.statusText)
-	TRACE:C157
+	//abandon de la photo
+	If (Test path name:C476($x)=Is a document:K24:1)
+		DELETE DOCUMENT:C159($x)
+	End if 
+End if 
+
+Else 
+ALERT:C41($status_o.statusText)
+TRACE:C157
 End if 

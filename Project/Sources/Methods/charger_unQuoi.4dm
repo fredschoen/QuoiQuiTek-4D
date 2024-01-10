@@ -34,6 +34,19 @@ Else
 	OBJECT Get pointer:C1124(Object named:K67:5; "ld_domaineQuoi")->index:=$i
 End if 
 
-
-// pour "ld_stockQuoi"
-// ???
+//mettre à jour les listes de valeurs dépendante du domaine
+//1. stock
+//1.1. liste complète 
+$ListeStockQuoi_selStorage:=Storage:C1525.stockQuoi.query("type is :1"; Form:C1466.quoi_e.Domaine)
+$ListeStockQuoi_tab:=$ListeStockQuoi_selStorage[0].values
+OBJECT Get pointer:C1124(Object named:K67:5; "ld_stockQuoi")->values:=$ListeStockQuoi_tab
+//1.2. position dans la liste
+$i:=Storage:C1525.stockQuoi.indexOf(Form:C1466.quoi_e.Domaine)
+If ($i=-1)
+	//valeur non trouvée dans la liste déroulante
+	OBJECT Get pointer:C1124(Object named:K67:5; "ld_stockQuoi")->index:=-1
+	OBJECT Get pointer:C1124(Object named:K67:5; "ld_stockQuoi")->currentValue:=Form:C1466.quoi_e.Stock
+Else 
+	//valeur trouvée dans la liste déroulante
+	OBJECT Get pointer:C1124(Object named:K67:5; "ld_stockQuoi")->index:=$i
+End if 

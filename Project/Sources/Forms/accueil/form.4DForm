@@ -134,14 +134,26 @@
 				"bParametres": {
 					"type": "button",
 					"text": "Paramètres",
-					"top": 296,
-					"left": 285,
+					"top": 294,
+					"left": 227,
 					"width": 105,
 					"height": 20,
 					"events": [
 						"onClick"
 					],
 					"method": "ObjectMethods/bParametres.4dm"
+				},
+				"bSauvegarder": {
+					"type": "button",
+					"text": "Sauvegarder",
+					"top": 296,
+					"left": 346,
+					"width": 105,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/bSauvegarder.4dm"
 				}
 			},
 			"entryOrder": [
@@ -152,11 +164,12 @@
 				"bExportPhotos",
 				"btQuitter",
 				"btTrace",
-				"bParametres"
+				"bParametres",
+				"bSauvegarder"
 			]
 		}
 	],
-	"geometryStamp": 369,
+	"geometryStamp": 373,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",

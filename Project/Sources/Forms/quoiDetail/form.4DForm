@@ -160,7 +160,7 @@
 				"label_Genre": {
 					"type": "text",
 					"text": "Genre:",
-					"top": 125,
+					"top": 122,
 					"left": 10,
 					"width": 60,
 					"height": 18
@@ -168,7 +168,7 @@
 				"label_Pays": {
 					"type": "text",
 					"text": "Pays:",
-					"top": 147,
+					"top": 141,
 					"left": 10,
 					"width": 60,
 					"height": 18
@@ -176,7 +176,7 @@
 				"label_Stock": {
 					"type": "text",
 					"text": "Stock:",
-					"top": 174,
+					"top": 160,
 					"left": 10,
 					"width": 60,
 					"height": 18
@@ -351,7 +351,7 @@
 					"type": "combo",
 					"left": 73,
 					"top": 122,
-					"width": 150,
+					"width": 140,
 					"height": 18,
 					"events": [
 						"onDataChange"
@@ -365,8 +365,8 @@
 				"paysQuoi_CB": {
 					"type": "combo",
 					"left": 73,
-					"top": 146,
-					"width": 80,
+					"top": 141,
+					"width": 140,
 					"height": 18,
 					"events": [
 						"onDataChange"
@@ -459,21 +459,6 @@
 					],
 					"defaultButton": false,
 					"method": "ObjectMethods/btSelectionnerQuoi.4dm"
-				},
-				"StockQuoi_CB": {
-					"type": "combo",
-					"left": 73,
-					"top": 173,
-					"width": 117,
-					"height": 18,
-					"events": [
-						"onDataChange"
-					],
-					"dataSourceTypeHint": "text",
-					"choiceList": {
-						"$ref": "/SOURCES/lists.json#/StockQuoi"
-					},
-					"dataSource": "Form:C1466.quoi_e.Stock"
 				},
 				"label_DateDernVisu": {
 					"type": "text",
@@ -657,7 +642,7 @@
 					"type": "dropdown",
 					"left": 74,
 					"top": 97,
-					"width": 100,
+					"width": 140,
 					"height": 22,
 					"events": [
 						"onLoad",
@@ -671,7 +656,7 @@
 					"type": "button",
 					"text": "Param",
 					"top": 97,
-					"left": 180,
+					"left": 228,
 					"width": 48,
 					"height": 20,
 					"events": [
@@ -681,9 +666,9 @@
 				},
 				"ld_stockQuoi": {
 					"type": "dropdown",
-					"left": 223,
-					"top": 174,
-					"width": 100,
+					"left": 74,
+					"top": 160,
+					"width": 140,
 					"height": 22,
 					"events": [
 						"onLoad",
@@ -697,10 +682,10 @@
 			"entryOrder": [
 				"field_Nom",
 				"ld_domaineQuoi",
-				"bParametres",
 				"Genre_CB",
 				"paysQuoi_CB",
-				"StockQuoi_CB",
+				"ld_stockQuoi",
+				"bParametres",
 				"field_Real",
 				"field_Date",
 				"field_Annee1",
@@ -723,12 +708,11 @@
 				"zposQuoiSel_i",
 				"zFormquoiListelength",
 				"btTrace",
-				"zMessage",
-				"ld_stockQuoi"
+				"zMessage"
 			]
 		}
 	],
-	"geometryStamp": 223,
+	"geometryStamp": 249,
 	"method": "method.4dm",
 	"editor": {
 		"activeView": "View 1",

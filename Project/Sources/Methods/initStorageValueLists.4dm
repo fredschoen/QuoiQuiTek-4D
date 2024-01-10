@@ -22,7 +22,8 @@ $stockQuoi_c:=New collection:C1472
 For each ($domaineQuoi_t; $domaineQuoi_c)
 	$stockQuoiListe_t:=ds:C1482.Parametre.query("Nom = :1 and Niv1 = :2"; "stockQuoi"; $domaineQuoi_t).first().Niv2
 	$stockQuoiTmp_c:=Split string:C1554($stockQuoiListe_t; ";")
-	$stockQuoi_c.push(New object:C1471("type"; $domaineQuoi_t; "values"; New collection:C1472($stockQuoiTmp_c)))
+	//$stockQuoi_c.push(New object("type"; $domaineQuoi_t; "values"; New collection($stockQuoiTmp_c)))
+	$stockQuoi_c.push(New object:C1471("type"; $domaineQuoi_t; "values"; $stockQuoiTmp_c))
 	
 End for each 
 Use (Storage:C1525)
