@@ -18,8 +18,9 @@ If ($pourSelectionner_b)
 			$form_o.groupeID_ajouterPoste:=Form:C1466.groupeID_ajouterPoste  //pour AJOUTER_POSTE
 	End case 
 	
+	$form_o.quiDropped_b:=False:C215
 	dialoguer("quiDetail"; $form_o)
-	
-	Form:C1466.qui_es:=Form:C1466.qui_es.query("Nom > :1"; " ")  // pour prendre en compte les "supprimer"
-	
+	If ($form_o.quiDropped_b)
+		Form:C1466.qui_es:=Form:C1466.qui_es.query("Nom > :1"; " ")  // pour prendre en compte les "supprimer"
+	End if 
 End if 

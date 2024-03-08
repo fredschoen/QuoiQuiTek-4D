@@ -2,6 +2,6 @@
 CONFIRM:C162("supprimer le qui?")
 If (OK=1)
 	supprimerQui
-	charger_LesQuis
+	Form:C1466.quiDropped_b:=True:C214
 	ACCEPT:C269
 End if 
