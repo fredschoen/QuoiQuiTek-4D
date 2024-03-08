@@ -10,7 +10,8 @@ Case of
 		charger_unRole
 		
 		//visibilité des boutons de navigation
-		visibleBtNavig
+		visibleBtNavig(Num:C11(Form:C1466.role_es.length))
+		
 		
 	: (Form event code:C388=On Unload:K2:2)
 		CONFIRM:C162("sortir du détail du role ?")
