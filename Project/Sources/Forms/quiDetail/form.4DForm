@@ -572,14 +572,14 @@
 					"width": 404,
 					"height": 18
 				},
-				"zDateeNaiss": {
+				"zDateNaiss": {
 					"type": "input",
 					"dataSource": "Form:C1466.qui_e.DateNaiss",
 					"top": 130,
 					"left": 96,
 					"width": 80,
 					"height": 18,
-					"dataSourceTypeHint": "date",
+					"dataSourceTypeHint": "text",
 					"events": []
 				},
 				"btTrace": {
@@ -667,7 +667,7 @@
 				"zPreNomQui",
 				"cb_GenreQui",
 				"cb_PaysQui",
-				"zDateeNaiss",
+				"zDateNaiss",
 				"zAnneeDeces",
 				"ld_domaineQui",
 				"bParametres",
@@ -694,7 +694,7 @@
 			]
 		}
 	],
-	"geometryStamp": 377,
+	"geometryStamp": 378,
 	"method": "method.4dm",
 	"editor": {
 		"activeView": "View 1",

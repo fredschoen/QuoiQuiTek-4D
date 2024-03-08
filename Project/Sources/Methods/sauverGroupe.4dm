@@ -10,7 +10,8 @@ If ($status_o.success)
 		
 		ALERT:C41("Enreg Groupe ajouté")
 		Form:C1466.action:="MODIFIER"  // on passe de "ajouter" à "modifier"
-		visibleBtNavig
+		visibleBtNavig(Num:C11(Form:C1466.groupe_es.length))
+		
 		
 	Else 
 		ALERT:C41("Enreg Groupe modifié")

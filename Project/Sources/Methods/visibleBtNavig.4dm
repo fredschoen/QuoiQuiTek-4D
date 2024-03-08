@@ -6,7 +6,7 @@ var $1; $length : Integer
 If (Count parameters:C259>0)
 	$length:=$1
 Else 
-	$length:=999
+	$length:=0
 End if 
 
 

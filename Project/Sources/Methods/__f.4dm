@@ -1,14 +1,12 @@
 //%attributes = {}
-$dom_c:=ds:C1482.Quoi.all().distinct("Domaine")
-$x:=""
-For each ($dom_t; $dom_c)
-	
-	$c:=ds:C1482.Quoi.query("Domaine = :1"; $dom_t).distinct("Stock")
-	$x+=$dom_t+Char:C90(Carriage return:K15:38)
-	For each ($t; $c)
-		$x+=$t+";"
-	End for each 
-	$x+=Char:C90(Carriage return:K15:38)
-	
-End for each 
-SET TEXT TO PASTEBOARD:C523($x)
+$DateNaiss:="1942"
+Case of 
+	: (Length:C16($DateNaiss)=8)
+		$DatNaissDisplay:=Substring:C12($DateNaiss; 1; 4)+"-"+Substring:C12($DateNaiss; 5; 2)+"-"+Substring:C12($DateNaiss; 7; 2)
+	: (Length:C16($DateNaiss)=6)
+		$DatNaissDisplay:=Substring:C12($DateNaiss; 1; 4)+"-"+Substring:C12($DateNaiss; 5; 2)
+	Else 
+		$DatNaissDisplay:=$DateNaiss
+End case 
+
+ALERT:C41($DatNaissDisplay)

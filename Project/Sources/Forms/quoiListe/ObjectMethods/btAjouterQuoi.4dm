@@ -5,6 +5,7 @@ $form_o.page:=1
 $form_o.action:="AJOUTER"
 $form_o.utilisationListe:=Form:C1466.utilisationListe
 $form_o.posQuoiSel_i:=0
+$form_o.acteurID_ajouterRole:=Form:C1466.acteurID_ajouterRole
 
 dialoguer("quoiDetail"; $form_o)
 
