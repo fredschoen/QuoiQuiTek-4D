@@ -12,8 +12,10 @@ If ($pourSelectionner_b)
 	$form_o.utilisationListe:=Form:C1466.utilisationListe
 	$form_o.acteurID_ajouterRole:=Form:C1466.acteurID_ajouterRole  //pour AJOUTER_ROLE
 	
+	$form_o.quoiDropped_b:=False:C215
 	dialoguer("quoiDetail"; $form_o)
-	
-	Form:C1466.quoi_es:=Form:C1466.quoi_es.query("Nom > :1"; " ")  // pour prendre en compte les "supprimer"
+	If ($form_o.quoiDropped_b)
+		Form:C1466.quoi_es:=Form:C1466.quoi_es.query("Nom > :1"; " ")  // pour prendre en compte les "supprimer"
+	End if 
 	
 End if 
