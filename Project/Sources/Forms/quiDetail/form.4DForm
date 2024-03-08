@@ -247,12 +247,19 @@
 				},
 				"zAnneeDeces": {
 					"type": "input",
-					"dataSource": "Form:C1466.qui_e.DateDeces",
+					"dataSource": "Form:C1466.DateDeces",
 					"top": 130,
 					"left": 300,
 					"width": 80,
 					"height": 18,
-					"textAlign": "left"
+					"textAlign": "left",
+					"method": "ObjectMethods/zAnneeDeces.4dm",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/dateTexte"
+					},
+					"textFormat": {
+						"$ref": "/SOURCES/filters.json#/dateTexte"
+					}
 				},
 				"btSauverQui": {
 					"type": "button",
@@ -574,13 +581,22 @@
 				},
 				"zDateNaiss": {
 					"type": "input",
-					"dataSource": "Form:C1466.qui_e.DateNaiss",
+					"dataSource": "Form:C1466.DateNaiss",
 					"top": 130,
 					"left": 96,
 					"width": 80,
 					"height": 18,
 					"dataSourceTypeHint": "text",
-					"events": []
+					"events": [
+						"onDataChange"
+					],
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/dateTexte"
+					},
+					"textFormat": {
+						"$ref": "/SOURCES/filters.json#/dateTexte"
+					},
+					"method": "ObjectMethods/zDateNaiss.4dm"
 				},
 				"btTrace": {
 					"type": "button",
