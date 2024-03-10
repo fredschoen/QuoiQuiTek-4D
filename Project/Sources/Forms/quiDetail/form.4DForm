@@ -400,38 +400,30 @@
 				"zQuiID": {
 					"type": "input",
 					"dataSource": "Form:C1466.qui_e.ID",
-					"top": 35,
-					"left": 1022,
-					"width": 60,
+					"top": 9,
+					"left": 1064,
+					"width": 30,
 					"height": 16,
 					"enterable": false,
 					"fill": "transparent",
 					"borderStyle": "none",
 					"textAlign": "left",
-					"focusable": false
-				},
-				"label5": {
-					"type": "text",
-					"text": "A:",
-					"top": 35,
-					"left": 987,
-					"width": 35,
-					"height": 16,
-					"right": 1022,
-					"textAlign": "right"
+					"focusable": false,
+					"fontSize": 9
 				},
 				"zposQuiSel_i": {
 					"type": "input",
 					"left": 987,
 					"top": 8,
-					"width": 31,
+					"width": 30,
 					"height": 16,
 					"dataSource": "Form:C1466.posQuiSel_i",
 					"enterable": false,
 					"dataSourceTypeHint": "integer",
 					"focusable": false,
 					"borderStyle": "none",
-					"textAlign": "right"
+					"textAlign": "right",
+					"fontSize": 9
 				},
 				"label6": {
 					"type": "text",
@@ -445,14 +437,15 @@
 					"type": "input",
 					"left": 1038,
 					"top": 8,
-					"width": 31,
+					"width": 30,
 					"height": 16,
 					"dataSource": "Form:C1466.qui_es.length",
 					"enterable": false,
 					"dataSourceTypeHint": "integer",
 					"focusable": false,
 					"borderStyle": "none",
-					"textAlign": "right"
+					"textAlign": "right",
+					"fontSize": 9
 				},
 				"btSelectionnerQui": {
 					"type": "button",
@@ -478,28 +471,6 @@
 						"onClick"
 					],
 					"method": "ObjectMethods/btAjouterRole.4dm"
-				},
-				"zForm_eleCouQui_ID": {
-					"type": "input",
-					"dataSource": "Form:C1466.quiSel_e.ID",
-					"top": 56,
-					"left": 1022,
-					"width": 60,
-					"height": 16,
-					"enterable": false,
-					"fill": "transparent",
-					"borderStyle": "none",
-					"textAlign": "left"
-				},
-				"label8": {
-					"type": "text",
-					"text": "A(ec):",
-					"top": 56,
-					"left": 987,
-					"width": 35,
-					"height": 15,
-					"right": 1022,
-					"textAlign": "right"
 				},
 				"label_Pays2": {
 					"type": "text",
@@ -601,8 +572,8 @@
 				"btTrace": {
 					"type": "button",
 					"text": "trace",
-					"top": 83,
-					"left": 1047,
+					"top": 31,
+					"left": 1054,
 					"width": 40,
 					"height": 15,
 					"events": [
@@ -676,6 +647,60 @@
 						"onClick"
 					],
 					"method": "ObjectMethods/bParametres.4dm"
+				},
+				"List Box": {
+					"type": "listbox",
+					"left": 999,
+					"top": 105,
+					"width": 114,
+					"height": 156,
+					"events": [
+						"onClick",
+						"onHeaderClick",
+						"onDataChange",
+						"onSelectionChange"
+					],
+					"dataSource": "Form:C1466.relTheme_es",
+					"listboxType": "collection",
+					"currentItemSource": "Form:C1466.relTheme_e",
+					"selectedItemsSource": "Form:C1466.relThemeSel_es",
+					"columns": [
+						{
+							"header": {
+								"text": "Theme",
+								"name": "eNomTheme"
+							},
+							"name": "cNomTheme",
+							"footer": {
+								"name": "Pied3"
+							},
+							"dataSource": "This:C1470.theme.Nom"
+						}
+					]
+				},
+				"bAddTheme": {
+					"type": "button",
+					"text": "+",
+					"top": 78,
+					"left": 1001,
+					"width": 27,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/bAddTheme.4dm"
+				},
+				"bDelTheme": {
+					"type": "button",
+					"text": "-",
+					"top": 78,
+					"left": 1086,
+					"width": 27,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/bDelTheme.4dm"
 				}
 			},
 			"entryOrder": [
@@ -703,14 +728,16 @@
 				"zposQuiSel_i",
 				"zQuiListelength",
 				"zQuiID",
-				"zForm_eleCouQui_ID",
 				"btTrace",
 				"zMessage",
-				"btQuitter"
+				"btQuitter",
+				"List Box",
+				"bAddTheme",
+				"bDelTheme"
 			]
 		}
 	],
-	"geometryStamp": 378,
+	"geometryStamp": 401,
 	"method": "method.4dm",
 	"editor": {
 		"activeView": "View 1",

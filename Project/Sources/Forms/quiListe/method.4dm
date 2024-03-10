@@ -33,12 +33,15 @@ Case of
 			$AfficherListeVide_b:=True:C214
 		End if 
 		
-		If (Form:C1466.action="INIT")
-			If ($AfficherListeVide_b)
-				Form:C1466.qui_es:=Null:C1517
-			Else 
-				charger_LesQuis
-			End if 
-		End if 
+		Case of 
+			: (Form:C1466.action="INIT")
+				If ($AfficherListeVide_b)
+					Form:C1466.qui_es:=Null:C1517
+				Else 
+					charger_LesQuis
+				End if 
+			: (Form:C1466.action="DEPUIS_LISTE_THEME")
+				
+		End case 
 		
 End case 

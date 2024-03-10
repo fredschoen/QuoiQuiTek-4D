@@ -122,8 +122,8 @@
 				"bExportPhotos": {
 					"type": "button",
 					"text": "Export Photos",
-					"top": 273,
-					"left": 346,
+					"top": 294,
+					"left": 280,
 					"width": 105,
 					"height": 20,
 					"events": [
@@ -135,7 +135,7 @@
 					"type": "button",
 					"text": "Paramètres",
 					"top": 294,
-					"left": 227,
+					"left": 155,
 					"width": 105,
 					"height": 20,
 					"events": [
@@ -147,13 +147,25 @@
 					"type": "button",
 					"text": "Sauvegarder",
 					"top": 296,
-					"left": 346,
+					"left": 405,
 					"width": 105,
 					"height": 20,
 					"events": [
 						"onClick"
 					],
 					"method": "ObjectMethods/bSauvegarder.4dm"
+				},
+				"bTheme": {
+					"type": "button",
+					"text": "Theme",
+					"top": 273,
+					"left": 342,
+					"width": 105,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/bTheme.4dm"
 				}
 			},
 			"entryOrder": [
@@ -165,11 +177,12 @@
 				"btQuitter",
 				"btTrace",
 				"bParametres",
-				"bSauvegarder"
+				"bSauvegarder",
+				"bTheme"
 			]
 		}
 	],
-	"geometryStamp": 373,
+	"geometryStamp": 379,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",

@@ -121,9 +121,33 @@
 		<field name="Niv2" uuid="B3B6E3F87731F44597245D81EED0DD3C" type="10" limiting_length="255" never_null="true" id="4"/>
 		<primary_key field_name="ID" field_uuid="D4C5493ABD29884D9428918061CCFED6"/>
 		<table_extra output_form="Formulaire1" input_form="Formulaire2">
+			<editor_table_info displayable_fields_count="4">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="1163" top="18" width="120" height="143.33203125"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="Theme" uuid="243217DE4BE53A4CB5891E7DC0F906CD" id="8">
+		<field name="ID" uuid="BA8B66BE7CFF574583293FC8ACDA18A4" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
+		<field name="Nom" uuid="CA201F6DD7FB3B40BC498EA7DC866F7D" type="10" limiting_length="255" never_null="true" id="2"/>
+		<primary_key field_name="ID" field_uuid="BA8B66BE7CFF574583293FC8ACDA18A4"/>
+		<table_extra>
+			<editor_table_info displayable_fields_count="2">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="1181" top="215" width="120" height="97.33203125"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="RelTheme" uuid="03A69CF54402E54A8FE6F8303ED5C537" id="9">
+		<field name="ID" uuid="3AE1A5FA9D0E5B45BC74CF99BF5678B1" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
+		<field name="ID_Theme" uuid="26F16E77B091124D9602A94C150787BF" type="4" never_null="true" id="2"/>
+		<field name="ID_Qui" uuid="A99D4E7D45F2D04D902F62E03A886399" type="4" never_null="true" id="3"/>
+		<field name="ID_Quoi" uuid="0C24F9C1357D2047BD146B65D4E5173C" type="4" never_null="true" id="4"/>
+		<primary_key field_name="ID" field_uuid="3AE1A5FA9D0E5B45BC74CF99BF5678B1"/>
+		<table_extra>
 			<editor_table_info displayable_fields_count="6">
 				<color red="255" green="255" blue="255" alpha="0"/>
-				<coordinates left="1040" top="40" width="120" height="167.33203125"/>
+				<coordinates left="1173" top="359" width="120" height="167.33203125"/>
 			</editor_table_info>
 		</table_extra>
 	</table>
@@ -212,6 +236,57 @@
 			</editor_relation_info>
 		</relation_extra>
 	</relation>
+	<relation uuid="FCD28C17845D6C4FA0F747DAA323615D" name_Nto1="theme" name_1toN="relThemes" auto_load_Nto1="false" auto_load_1toN="false" foreign_key="false" state="1">
+		<related_field kind="source">
+			<field_ref uuid="26F16E77B091124D9602A94C150787BF" name="ID_Theme">
+				<table_ref uuid="03A69CF54402E54A8FE6F8303ED5C537" name="RelTheme"/>
+			</field_ref>
+		</related_field>
+		<related_field kind="destination">
+			<field_ref uuid="BA8B66BE7CFF574583293FC8ACDA18A4" name="ID">
+				<table_ref uuid="243217DE4BE53A4CB5891E7DC0F906CD" name="Theme"/>
+			</field_ref>
+		</related_field>
+		<relation_extra entry_wildchar="false" entry_create="false" choice_field="0" entry_autofill="false">
+			<editor_relation_info via_point_x="-1" via_point_y="-1" prefers_left="false" smartlink="true">
+				<color red="240" green="240" blue="240" alpha="0"/>
+			</editor_relation_info>
+		</relation_extra>
+	</relation>
+	<relation uuid="884C70B5BDDBDA4EB59B7F2BA903AA13" name_Nto1="qui" name_1toN="relThemes" auto_load_Nto1="false" auto_load_1toN="false" foreign_key="false" state="1">
+		<related_field kind="source">
+			<field_ref uuid="A99D4E7D45F2D04D902F62E03A886399" name="ID_Qui">
+				<table_ref uuid="03A69CF54402E54A8FE6F8303ED5C537" name="RelTheme"/>
+			</field_ref>
+		</related_field>
+		<related_field kind="destination">
+			<field_ref uuid="0527D929F2CBE74A886B87DB09906737" name="ID">
+				<table_ref uuid="7F9A35CDF0EFB6429B6FA24F9D22CD4E" name="Qui"/>
+			</field_ref>
+		</related_field>
+		<relation_extra entry_wildchar="false" entry_create="false" choice_field="0" entry_autofill="false">
+			<editor_relation_info via_point_x="-1" via_point_y="-1" prefers_left="true" smartlink="true">
+				<color red="240" green="240" blue="240" alpha="0"/>
+			</editor_relation_info>
+		</relation_extra>
+	</relation>
+	<relation uuid="64672590B0081048BD31E1B5658F968E" name_Nto1="quoi" name_1toN="relThemes" auto_load_Nto1="false" auto_load_1toN="false" foreign_key="false" state="1">
+		<related_field kind="source">
+			<field_ref uuid="0C24F9C1357D2047BD146B65D4E5173C" name="ID_Quoi">
+				<table_ref uuid="03A69CF54402E54A8FE6F8303ED5C537" name="RelTheme"/>
+			</field_ref>
+		</related_field>
+		<related_field kind="destination">
+			<field_ref uuid="7D44AEC0186F8341BF2162AF1B5099CF" name="ID">
+				<table_ref uuid="1AA34083D0527E4F91A17E4D5A70AA8D" name="Quoi"/>
+			</field_ref>
+		</related_field>
+		<relation_extra entry_wildchar="false" entry_create="false" choice_field="0" entry_autofill="false">
+			<editor_relation_info via_point_x="-1" via_point_y="-1" prefers_left="true" smartlink="true">
+				<color red="240" green="240" blue="240" alpha="0"/>
+			</editor_relation_info>
+		</relation_extra>
+	</relation>
 	<index kind="regular" uuid="08C2E743E2E2A447B215C0EF0AEB345D" type="7">
 		<field_ref uuid="33B70CCC0843DE429F0B0C50D132DFE5" name="ID_Qui">
 			<table_ref uuid="36E36289CCCA4644A71A1D2676364BB1" name="Role"/>
@@ -250,6 +325,16 @@
 	<index kind="regular" unique_keys="true" uuid="7C48022B664C314A9BB1995A9FB0970B" type="7">
 		<field_ref uuid="18B8EA71D3B1ED4B9EB0E1E3676B4B5E" name="ID">
 			<table_ref uuid="D88F0FD61202DA49864CA77FFAC012A0" name="Groupe"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="991278443AD98F449CA61F81F5D12D3A" type="7">
+		<field_ref uuid="3AE1A5FA9D0E5B45BC74CF99BF5678B1" name="ID">
+			<table_ref uuid="03A69CF54402E54A8FE6F8303ED5C537" name="RelTheme"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="CC65B8E87EB229478F8179968628A4D3" type="7">
+		<field_ref uuid="BA8B66BE7CFF574583293FC8ACDA18A4" name="ID">
+			<table_ref uuid="243217DE4BE53A4CB5891E7DC0F906CD" name="Theme"/>
 		</field_ref>
 	</index>
 	<index kind="regular" unique_keys="true" uuid="D56B79129F466B479B367C3993B6468E" type="7">

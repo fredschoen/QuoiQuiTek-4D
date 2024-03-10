@@ -1,0 +1,214 @@
+{
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"windowSizingX": "variable",
+	"windowSizingY": "variable",
+	"windowMinWidth": 0,
+	"windowMinHeight": 0,
+	"windowMaxWidth": 32767,
+	"windowMaxHeight": 32767,
+	"rightMargin": 20,
+	"bottomMargin": 20,
+	"events": [
+		"onLoad"
+	],
+	"windowTitle": "window title",
+	"destination": "detailScreen",
+	"pages": [
+		{
+			"objects": {}
+		},
+		{
+			"objects": {
+				"List Box": {
+					"type": "listbox",
+					"left": 47,
+					"top": 39,
+					"width": 144,
+					"height": 453,
+					"events": [
+						"onDoubleClick",
+						"onDataChange",
+						"onAfterKeystroke",
+						"onSelectionChange",
+						"onHeaderClick"
+					],
+					"dataSource": "Form:C1466.theme_es",
+					"listboxType": "collection",
+					"currentItemSource": "Form:C1466.theme_e",
+					"selectedItemsSource": "Form:C1466.themeSel_es",
+					"selectionMode": "single",
+					"method": "ObjectMethods/List Box.4dm",
+					"sizingY": "grow",
+					"columns": [
+						{
+							"header": {
+								"text": "Theme",
+								"name": "eNomTheme"
+							},
+							"name": "cNomTheme",
+							"footer": {
+								"name": "Pied3"
+							},
+							"dataSource": "This:C1470.Nom",
+							"events": [
+								"onDataChange"
+							],
+							"method": "ObjectMethods/cNomTheme.4dm"
+						}
+					]
+				},
+				"bAddTheme": {
+					"type": "button",
+					"text": "+",
+					"top": 12,
+					"left": 32,
+					"width": 27,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/bAddTheme.4dm"
+				},
+				"bDelTheme": {
+					"type": "button",
+					"text": "-",
+					"top": 12,
+					"left": 106,
+					"width": 27,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/bDelTheme.4dm"
+				},
+				"bOK": {
+					"type": "button",
+					"text": "OK",
+					"top": 12,
+					"left": 134,
+					"width": 27,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/bOK.4dm"
+				},
+				"bAnnul": {
+					"type": "button",
+					"text": "Annul",
+					"top": 12,
+					"left": 67,
+					"width": 40,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/bAnnul.4dm"
+				},
+				"List BoxQui": {
+					"type": "listbox",
+					"left": 206,
+					"top": 39,
+					"width": 300,
+					"height": 453,
+					"events": [
+						"onClick",
+						"onDataChange",
+						"onAfterKeystroke",
+						"onSelectionChange"
+					],
+					"dataSource": "Form:C1466.qui_es",
+					"listboxType": "collection",
+					"currentItemSource": "Form:C1466.quiSel_e",
+					"selectedItemsSource": "Form:C1466.quiSel_es",
+					"selectionMode": "single",
+					"method": "ObjectMethods/List BoxQui.4dm",
+					"sizingY": "grow",
+					"currentItemPositionSource": "Form:C1466.posQuiSel_i",
+					"columns": [
+						{
+							"header": {
+								"text": "Qui",
+								"name": "eFullNameQui"
+							},
+							"name": "cNomQui",
+							"footer": {
+								"name": "Pied1"
+							},
+							"dataSource": "This:C1470.FullName",
+							"events": [
+								"onDataChange"
+							],
+							"width": 299
+						}
+					]
+				},
+				"List BoxQuoi": {
+					"type": "listbox",
+					"left": 521,
+					"top": 39,
+					"width": 300,
+					"height": 453,
+					"events": [
+						"onClick",
+						"onDataChange",
+						"onAfterKeystroke",
+						"onSelectionChange",
+						"onHeaderClick"
+					],
+					"dataSource": "Form:C1466.relThemesQuoi_es",
+					"listboxType": "collection",
+					"currentItemSource": "Form:C1466.quoiSel_e",
+					"selectedItemsSource": "Form:C1466.quoiSel_es",
+					"selectionMode": "single",
+					"method": "ObjectMethods/List BoxQuoi.4dm",
+					"sizingY": "grow",
+					"currentItemPositionSource": "Form:C1466.posQuoiSel_i",
+					"columns": [
+						{
+							"header": {
+								"text": "Quoi",
+								"name": "eNomQuoi"
+							},
+							"name": "cNomQuoi",
+							"footer": {
+								"name": "Pied2"
+							},
+							"dataSource": "This:C1470.quoi.Nom",
+							"events": [
+								"onDataChange"
+							],
+							"width": 299
+						}
+					]
+				},
+				"btTrace": {
+					"type": "button",
+					"text": "trace",
+					"top": 12,
+					"left": 409,
+					"width": 40,
+					"height": 15,
+					"events": [
+						"onClick"
+					],
+					"style": "custom",
+					"method": "ObjectMethods/btTrace.4dm",
+					"borderStyle": "solid"
+				}
+			}
+		}
+	],
+	"geometryStamp": 51,
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {}
+		}
+	},
+	"method": "method.4dm"
+}
