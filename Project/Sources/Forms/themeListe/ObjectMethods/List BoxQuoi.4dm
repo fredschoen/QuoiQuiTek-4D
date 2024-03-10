@@ -1,16 +1,17 @@
 var $pourSelectionner_b : Boolean
 
-$pourSelectionner_b:=_f_pourSelectionner(FORM Event:C1606.code; Form:C1466.theme_e)
+$pourSelectionner_b:=_f_pourSelectionner(FORM Event:C1606.code; Form:C1466.quiSel_e)
 
 If ($pourSelectionner_b)
-	Case of 
-		: (Form:C1466.action="POUR_SELECTION")
-			//rien
-		Else 
-			$form_o:=New object:C1471
-			$form_o.page:=1
-			$form_o.qui_es:=ds:C1482.Qui.all()
-			$form_o.action:="DEPUIS_LISTE_THEME"
-			dialoguer("quiListe"; $form_o)
-	End case 
+	
+	$form_o:=New object:C1471
+	$form_o.page:=1
+	$form_o.action:="MODIFIER"
+	$form_o.quoi_es:=Form:C1466.quoi_es
+	$form_o.posQuoiSel_i:=Form:C1466.posQuoiSel_i
+	$form_o.quoiDropped_b:=False:C215
+	dialoguer("quoiDetail"; $form_o)
+	If ($form_o.quoiDropped_b)
+		Form:C1466.quoi_es:=Form:C1466.quoi_es.query("Nom > :1"; " ")  // pour prendre en compte les "supprimer"
+	End if 
 End if 

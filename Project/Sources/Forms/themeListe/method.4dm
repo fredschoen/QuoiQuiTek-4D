@@ -7,3 +7,9 @@ If (Form event code:C388=On Load:K2:1)
 	OBJECT SET VISIBLE:C603(*; "bAnnul"; Not:C34((Undefined:C82(Form:C1466.ID_Theme))))
 	
 End if 
+If (Form event code:C388=On Unload:K2:2)
+	CONFIRM:C162("OK pour sortir de liste thèmes ?")
+	If (OK=1)
+		Form:C1466.page:=0
+	End if 
+End if 

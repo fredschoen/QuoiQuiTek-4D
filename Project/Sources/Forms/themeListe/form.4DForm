@@ -12,7 +12,8 @@
 	"rightMargin": 20,
 	"bottomMargin": 20,
 	"events": [
-		"onLoad"
+		"onLoad",
+		"onUnload"
 	],
 	"windowTitle": "window title",
 	"destination": "detailScreen",
@@ -112,7 +113,7 @@
 					"type": "listbox",
 					"left": 206,
 					"top": 39,
-					"width": 300,
+					"width": 250,
 					"height": 453,
 					"events": [
 						"onClick",
@@ -148,9 +149,9 @@
 				},
 				"List BoxQuoi": {
 					"type": "listbox",
-					"left": 521,
+					"left": 466,
 					"top": 39,
-					"width": 300,
+					"width": 250,
 					"height": 453,
 					"events": [
 						"onClick",
@@ -159,7 +160,7 @@
 						"onSelectionChange",
 						"onHeaderClick"
 					],
-					"dataSource": "Form:C1466.relThemesQuoi_es",
+					"dataSource": "Form:C1466.quoi_es",
 					"listboxType": "collection",
 					"currentItemSource": "Form:C1466.quoiSel_e",
 					"selectedItemsSource": "Form:C1466.quoiSel_es",
@@ -177,7 +178,7 @@
 							"footer": {
 								"name": "Pied2"
 							},
-							"dataSource": "This:C1470.quoi.Nom",
+							"dataSource": "This:C1470.Nom",
 							"events": [
 								"onDataChange"
 							],
@@ -198,11 +199,61 @@
 					"style": "custom",
 					"method": "ObjectMethods/btTrace.4dm",
 					"borderStyle": "solid"
+				},
+				"List BoxRole": {
+					"type": "listbox",
+					"left": 725,
+					"top": 39,
+					"width": 350,
+					"height": 453,
+					"events": [
+						"onClick",
+						"onDataChange",
+						"onAfterKeystroke",
+						"onSelectionChange",
+						"onHeaderClick"
+					],
+					"dataSource": "Form:C1466.role_es",
+					"listboxType": "collection",
+					"currentItemSource": "Form:C1466.roleSel_e",
+					"selectedItemsSource": "Form:C1466.roleSel_es",
+					"selectionMode": "single",
+					"method": "ObjectMethods/List BoxRole.4dm",
+					"sizingY": "grow",
+					"currentItemPositionSource": "Form:C1466.posRoleSel_i",
+					"columns": [
+						{
+							"header": {
+								"text": "Quoi",
+								"name": "eNomRole"
+							},
+							"name": "cNomQuoi1",
+							"footer": {
+								"name": "Pied4"
+							},
+							"dataSource": "This:C1470.qui.FullName+\" dans \"+This:C1470.quoi.Nom",
+							"events": [
+								"onDataChange"
+							],
+							"width": 299
+						}
+					]
 				}
-			}
+			},
+			"entryOrder": [
+				"List Box",
+				"bAddTheme",
+				"bAnnul",
+				"bDelTheme",
+				"bOK",
+				"List BoxQui",
+				"List BoxQuoi",
+				"btTrace",
+				"List BoxRole"
+			]
 		}
 	],
-	"geometryStamp": 51,
+	"geometryStamp": 65,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",

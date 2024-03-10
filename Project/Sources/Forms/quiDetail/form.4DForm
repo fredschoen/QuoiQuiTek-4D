@@ -399,9 +399,9 @@
 				},
 				"zQuiID": {
 					"type": "input",
-					"dataSource": "Form:C1466.qui_e.ID",
-					"top": 9,
-					"left": 1064,
+					"dataSource": "\"(\"+String:C10(Form:C1466.qui_e.ID)+\")\"",
+					"top": 10,
+					"left": 1052,
 					"width": 30,
 					"height": 16,
 					"enterable": false,
@@ -414,8 +414,8 @@
 				"zposQuiSel_i": {
 					"type": "input",
 					"left": 987,
-					"top": 8,
-					"width": 30,
+					"top": 10,
+					"width": 20,
 					"height": 16,
 					"dataSource": "Form:C1466.posQuiSel_i",
 					"enterable": false,
@@ -428,16 +428,16 @@
 				"label6": {
 					"type": "text",
 					"text": "/",
-					"top": 8,
-					"left": 1025,
+					"top": 10,
+					"left": 1013,
 					"width": 12,
 					"height": 16
 				},
 				"zQuiListelength": {
 					"type": "input",
-					"left": 1038,
-					"top": 8,
-					"width": 30,
+					"left": 1024,
+					"top": 10,
+					"width": 20,
 					"height": 16,
 					"dataSource": "Form:C1466.qui_es.length",
 					"enterable": false,
@@ -737,7 +737,7 @@
 			]
 		}
 	],
-	"geometryStamp": 401,
+	"geometryStamp": 484,
 	"method": "method.4dm",
 	"editor": {
 		"activeView": "View 1",

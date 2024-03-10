@@ -148,7 +148,7 @@
 					"text": "Sauvegarder",
 					"top": 296,
 					"left": 405,
-					"width": 105,
+					"width": 84,
 					"height": 20,
 					"events": [
 						"onClick"
@@ -173,16 +173,16 @@
 				"bQui",
 				"bGroupe",
 				"bRole",
-				"bExportPhotos",
-				"btQuitter",
+				"bTheme",
 				"btTrace",
 				"bParametres",
+				"bExportPhotos",
 				"bSauvegarder",
-				"bTheme"
+				"btQuitter"
 			]
 		}
 	],
-	"geometryStamp": 379,
+	"geometryStamp": 380,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",

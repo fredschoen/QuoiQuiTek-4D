@@ -18,7 +18,8 @@ If (Form event code:C388=On Clicked:K2:4)
 			TRACE:C157
 		End if 
 		
-		Form:C1466.relTheme_es:=Form:C1466.qui_e.relThemes.orderBy("theme.Nom")
+		//KO: le theme ajouté n'apparait pas: Form.relTheme_es:=Form.qui_e.relThemes.orderBy("theme.Nom")
+		Form:C1466.relTheme_es:=ds:C1482.RelTheme.query("ID_Qui = :1"; Form:C1466.qui_e.ID).orderBy("theme.Nom")
 	End if 
 	
 End if 
