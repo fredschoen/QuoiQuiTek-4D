@@ -320,7 +320,8 @@
 					"shortcutControl": false,
 					"shortcutShift": false,
 					"shortcutAlt": false,
-					"shortcutKey": "s"
+					"shortcutKey": "s",
+					"class": ""
 				},
 				"btPrecedent": {
 					"type": "button",
@@ -340,7 +341,8 @@
 					"shortcutControl": false,
 					"shortcutShift": false,
 					"shortcutAlt": false,
-					"shortcutKey": "p"
+					"shortcutKey": "p",
+					"class": ""
 				},
 				"btPremier": {
 					"type": "button",
@@ -458,7 +460,8 @@
 						"onClick"
 					],
 					"defaultButton": false,
-					"method": "ObjectMethods/btSelectionnerQui.4dm"
+					"method": "ObjectMethods/btSelectionnerQui.4dm",
+					"class": "selection"
 				},
 				"btAjouterRole": {
 					"type": "button",
@@ -737,7 +740,7 @@
 			]
 		}
 	],
-	"geometryStamp": 484,
+	"geometryStamp": 508,
 	"method": "method.4dm",
 	"editor": {
 		"activeView": "View 1",

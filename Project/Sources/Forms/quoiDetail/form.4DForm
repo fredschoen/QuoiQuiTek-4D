@@ -458,7 +458,8 @@
 						"onClick"
 					],
 					"defaultButton": false,
-					"method": "ObjectMethods/btSelectionnerQuoi.4dm"
+					"method": "ObjectMethods/btSelectionnerQuoi.4dm",
+					"class": "selection"
 				},
 				"label_DateDernVisu": {
 					"type": "text",
@@ -712,7 +713,7 @@
 			]
 		}
 	],
-	"geometryStamp": 249,
+	"geometryStamp": 251,
 	"method": "method.4dm",
 	"editor": {
 		"activeView": "View 1",
