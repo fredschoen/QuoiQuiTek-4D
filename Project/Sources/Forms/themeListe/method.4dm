@@ -8,8 +8,5 @@ If (Form event code:C388=On Load:K2:1)
 	
 End if 
 If (Form event code:C388=On Unload:K2:2)
-	CONFIRM:C162("OK pour sortir de liste thèmes ?")
-	If (OK=1)
-		Form:C1466.page:=0
-	End if 
+	Form:C1466.page:=0
 End if 

@@ -74,8 +74,8 @@
 				},
 				"label_Nom": {
 					"type": "text",
-					"text": "Nom Qui:",
-					"top": 113,
+					"text": "Nom:",
+					"top": 115,
 					"left": 7,
 					"width": 61,
 					"height": 15,
@@ -84,7 +84,7 @@
 				"zQuiNom": {
 					"type": "input",
 					"dataSource": "Form:C1466.qui_e.Nom",
-					"top": 112,
+					"top": 114,
 					"left": 71,
 					"width": 165,
 					"height": 17
@@ -93,7 +93,7 @@
 					"type": "text",
 					"text": "Genre:",
 					"top": 138,
-					"left": 7,
+					"left": 18,
 					"width": 50,
 					"height": 17,
 					"textAlign": "right"
@@ -378,9 +378,9 @@
 				},
 				"label_Nom1": {
 					"type": "text",
-					"text": "Nom Quoi:",
+					"text": "Nom:",
 					"top": 396,
-					"left": 15,
+					"left": 26,
 					"width": 60,
 					"height": 17
 				},
@@ -622,10 +622,10 @@
 				},
 				"Texte2": {
 					"type": "text",
-					"text": "Info Role",
+					"text": "Role",
 					"top": 47,
-					"left": 11,
-					"width": 55,
+					"left": 10,
+					"width": 30,
 					"height": 15,
 					"borderStyle": "solid"
 				},
@@ -792,7 +792,7 @@
 				"label_Prenom": {
 					"type": "text",
 					"text": "Prénom:",
-					"top": 113,
+					"top": 115,
 					"left": 235,
 					"width": 50,
 					"height": 17,
@@ -801,7 +801,7 @@
 				"zQuiPrenom": {
 					"type": "input",
 					"dataSource": "Form:C1466.qui_e.Prenom",
-					"top": 112,
+					"top": 114,
 					"left": 292,
 					"width": 165,
 					"height": 17
@@ -1099,6 +1099,36 @@
 					"shortcutKey": "",
 					"style": "custom",
 					"borderStyle": "raised"
+				},
+				"Texte1": {
+					"type": "text",
+					"text": "Qui",
+					"top": 96,
+					"left": 10,
+					"width": 30,
+					"height": 15,
+					"borderStyle": "solid"
+				},
+				"Texte3": {
+					"type": "text",
+					"text": "Quoi",
+					"top": 385,
+					"left": 10,
+					"width": 30,
+					"height": 15,
+					"borderStyle": "solid"
+				},
+				"btQui": {
+					"type": "button",
+					"text": "!",
+					"top": 96,
+					"left": 41,
+					"width": 27,
+					"height": 15,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/btQui.4dm"
 				}
 			},
 			"entryOrder": [
@@ -1144,11 +1174,12 @@
 				"btTrace",
 				"btQuitter",
 				"zAge",
-				"zMessage"
+				"zMessage",
+				"btQui"
 			]
 		}
 	],
-	"geometryStamp": 572,
+	"geometryStamp": 606,
 	"method": "method.4dm",
 	"editor": {
 		"groups": {

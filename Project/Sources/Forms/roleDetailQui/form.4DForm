@@ -685,6 +685,18 @@
 					"left": 19,
 					"width": 150,
 					"height": 15
+				},
+				"btQui": {
+					"type": "button",
+					"text": "!",
+					"top": 47,
+					"left": 538,
+					"width": 27,
+					"height": 15,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/btQui.4dm"
 				}
 			},
 			"entryOrder": [
@@ -716,11 +728,12 @@
 				"btTrace",
 				"ge",
 				"zAgeQui",
-				"btAjouterRole"
+				"btAjouterRole",
+				"btQui"
 			]
 		}
 	],
-	"geometryStamp": 775,
+	"geometryStamp": 777,
 	"method": "method.4dm",
 	"editor": {
 		"activeView": "View 1",
