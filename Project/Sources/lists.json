@@ -656,38 +656,44 @@
 				"collapsed": true
 			},
 			{
-				"text": "Sport",
+				"text": "SF",
 				"ref": 45,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "Techno",
+				"text": "Sport",
 				"ref": 46,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "Terr",
+				"text": "Techno",
 				"ref": 47,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "US",
+				"text": "Terr",
 				"ref": 48,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "Vie",
+				"text": "US",
 				"ref": 49,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "x",
+				"text": "Vie",
 				"ref": 50,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "x",
+				"ref": 51,
 				"editable": true,
 				"collapsed": true
 			}

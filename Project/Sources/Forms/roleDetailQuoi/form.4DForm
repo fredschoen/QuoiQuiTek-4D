@@ -714,7 +714,7 @@
 				},
 				"btAjouterRole": {
 					"type": "button",
-					"text": "Ajouter un rôle dans ce quoi",
+					"text": "(A)jouter un rôle dans ce quoi",
 					"top": 66,
 					"left": 804,
 					"width": 180,
@@ -722,7 +722,12 @@
 					"events": [
 						"onClick"
 					],
-					"method": "ObjectMethods/btAjouterRole.4dm"
+					"method": "ObjectMethods/btAjouterRole.4dm",
+					"shortcutAccel": true,
+					"shortcutControl": false,
+					"shortcutShift": false,
+					"shortcutAlt": false,
+					"shortcutKey": "a"
 				}
 			},
 			"entryOrder": [

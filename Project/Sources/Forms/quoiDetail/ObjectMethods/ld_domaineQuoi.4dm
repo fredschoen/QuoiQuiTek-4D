@@ -10,9 +10,9 @@ If (Form event code:C388=On Data Change:K2:15)
 	//mettre à jour les listes de valeurs dépendante du domaine: Stock
 	//1. stock
 	//1.1. liste complète 
-	$ListeStockQuoi_selStorage:=Storage:C1525.stockQuoi.query("type is :1"; Form:C1466.quoi_e.Domaine)
-	$ListeStockQuoi_tab:=$ListeStockQuoi_selStorage[0].values
-	OBJECT Get pointer:C1124(Object named:K67:5; "ld_stockQuoi")->values:=$ListeStockQuoi_tab
+	$storageStockQuoi_o:=Storage:C1525.stockQuoi.query("type is :1"; Form:C1466.quoi_e.Domaine)[0]
+	$storageStockQuoiValues_c:=$storageStockQuoi_o.values
+	OBJECT Get pointer:C1124(Object named:K67:5; "ld_stockQuoi")->values:=$storageStockQuoiValues_c
 	//1.2. position dans la liste
 	$i:=Storage:C1525.stockQuoi.indexOf(Form:C1466.quoi_e.Domaine)
 	If ($i=-1)

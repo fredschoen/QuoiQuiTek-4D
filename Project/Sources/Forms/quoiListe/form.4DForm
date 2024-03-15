@@ -399,7 +399,7 @@
 				},
 				"btAjouterQuoi": {
 					"type": "button",
-					"text": "Ajouter un quoi",
+					"text": "(A)jouter un quoi",
 					"top": 52,
 					"left": 917,
 					"width": 93,
@@ -408,7 +408,12 @@
 						"onClick"
 					],
 					"defaultButton": false,
-					"method": "ObjectMethods/btAjouterQuoi.4dm"
+					"method": "ObjectMethods/btAjouterQuoi.4dm",
+					"shortcutAccel": true,
+					"shortcutControl": false,
+					"shortcutShift": false,
+					"shortcutAlt": false,
+					"shortcutKey": "a"
 				},
 				"zFormquoiListelength": {
 					"type": "input",
@@ -422,6 +427,24 @@
 					"focusable": false,
 					"borderStyle": "none",
 					"textAlign": "right"
+				},
+				"btCopier": {
+					"type": "button",
+					"text": "(C)opier",
+					"top": 213,
+					"left": 917,
+					"width": 93,
+					"height": 31,
+					"events": [
+						"onClick"
+					],
+					"defaultButton": false,
+					"method": "ObjectMethods/btCopier.4dm",
+					"shortcutAccel": true,
+					"shortcutControl": false,
+					"shortcutShift": false,
+					"shortcutAlt": false,
+					"shortcutKey": "c"
 				}
 			},
 			"entryOrder": [
@@ -442,11 +465,12 @@
 				"btQuitter",
 				"btTrace",
 				"bTest",
-				"zFormquoiListelength"
+				"zFormquoiListelength",
+				"btCopier"
 			]
 		}
 	],
-	"geometryStamp": 3443,
+	"geometryStamp": 3446,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",

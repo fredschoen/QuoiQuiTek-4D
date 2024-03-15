@@ -66,15 +66,20 @@
 				},
 				"btAjouterPoste": {
 					"type": "button",
-					"text": "Ajouter un qui dans ce groupe",
-					"top": 124,
+					"text": "(A)jouter un qui dans ce groupe",
+					"top": 128,
 					"left": 86,
 					"width": 180,
 					"height": 24,
 					"events": [
 						"onClick"
 					],
-					"method": "ObjectMethods/btAjouterPoste.4dm"
+					"method": "ObjectMethods/btAjouterPoste.4dm",
+					"shortcutAccel": true,
+					"shortcutControl": false,
+					"shortcutShift": false,
+					"shortcutAlt": false,
+					"shortcutKey": "a"
 				},
 				"btSupprimerGroupe": {
 					"type": "button",
@@ -189,7 +194,7 @@
 				},
 				"btSelectionnerGroupe": {
 					"type": "button",
-					"text": "Selectionner le groupe",
+					"text": "S(e)lectionner le groupe",
 					"top": 5,
 					"left": 711,
 					"width": 130,
@@ -198,7 +203,12 @@
 						"onClick"
 					],
 					"defaultButton": false,
-					"method": "ObjectMethods/btSelectionnerGroupe.4dm"
+					"method": "ObjectMethods/btSelectionnerGroupe.4dm",
+					"shortcutAccel": true,
+					"shortcutControl": false,
+					"shortcutShift": false,
+					"shortcutAlt": false,
+					"shortcutKey": "e"
 				},
 				"btTrace": {
 					"type": "button",
@@ -543,7 +553,7 @@
 				},
 				"btAjouterQuoi": {
 					"type": "button",
-					"text": "Ajouter un quoi dans ce groupe",
+					"text": "A(j)outer un quoi dans ce groupe",
 					"top": 338,
 					"left": 86,
 					"width": 180,
@@ -551,7 +561,12 @@
 					"events": [
 						"onClick"
 					],
-					"method": "ObjectMethods/btAjouterQuoi.4dm"
+					"method": "ObjectMethods/btAjouterQuoi.4dm",
+					"shortcutAccel": true,
+					"shortcutControl": false,
+					"shortcutShift": false,
+					"shortcutAlt": false,
+					"shortcutKey": "j"
 				},
 				"label_Genre1": {
 					"type": "text",
@@ -697,7 +712,7 @@
 			]
 		}
 	],
-	"geometryStamp": 582,
+	"geometryStamp": 586,
 	"method": "method.4dm",
 	"editor": {
 		"activeView": "View 1",

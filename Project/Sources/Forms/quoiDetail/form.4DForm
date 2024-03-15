@@ -260,7 +260,7 @@
 				},
 				"btAjouterRole": {
 					"type": "button",
-					"text": "Ajouter un rôle dans ce quoi",
+					"text": "(A)jouter un rôle dans ce quoi",
 					"top": 5,
 					"left": 522,
 					"width": 180,
@@ -268,7 +268,12 @@
 					"events": [
 						"onClick"
 					],
-					"method": "ObjectMethods/btAjouterRole.4dm"
+					"method": "ObjectMethods/btAjouterRole.4dm",
+					"shortcutAccel": true,
+					"shortcutControl": false,
+					"shortcutShift": false,
+					"shortcutAlt": false,
+					"shortcutKey": "a"
 				},
 				"btSupprimerQuoi": {
 					"type": "button",
@@ -449,7 +454,7 @@
 				},
 				"btSelectionnerQuoi": {
 					"type": "button",
-					"text": "Selectionner le quoi",
+					"text": "S(e)lectionner le quoi",
 					"top": 5,
 					"left": 711,
 					"width": 130,
@@ -459,7 +464,12 @@
 					],
 					"defaultButton": false,
 					"method": "ObjectMethods/btSelectionnerQuoi.4dm",
-					"class": "selection"
+					"class": "selection",
+					"shortcutAccel": true,
+					"shortcutControl": false,
+					"shortcutShift": false,
+					"shortcutAlt": false,
+					"shortcutKey": "e"
 				},
 				"label_DateDernVisu": {
 					"type": "text",

@@ -74,8 +74,8 @@
 				},
 				"btAjouterGroupe": {
 					"type": "button",
-					"text": "Ajouter un groupe",
-					"top": 44,
+					"text": "(A)jouter un groupe",
+					"top": 49,
 					"left": 650,
 					"width": 120,
 					"height": 24,
@@ -83,7 +83,12 @@
 						"onClick"
 					],
 					"defaultButton": false,
-					"method": "ObjectMethods/btAjouterGroupe.4dm"
+					"method": "ObjectMethods/btAjouterGroupe.4dm",
+					"shortcutAccel": true,
+					"shortcutControl": false,
+					"shortcutShift": false,
+					"shortcutAlt": false,
+					"shortcutKey": "a"
 				},
 				"btTrace": {
 					"type": "button",
@@ -159,7 +164,7 @@
 			]
 		}
 	],
-	"geometryStamp": 33,
+	"geometryStamp": 38,
 	"method": "method.4dm",
 	"editor": {
 		"activeView": "View 1",

@@ -259,7 +259,10 @@
 					},
 					"textFormat": {
 						"$ref": "/SOURCES/filters.json#/dateTexte"
-					}
+					},
+					"events": [
+						"onDataChange"
+					]
 				},
 				"btSauverQui": {
 					"type": "button",
@@ -451,7 +454,7 @@
 				},
 				"btSelectionnerQui": {
 					"type": "button",
-					"text": "Selectionner le qui",
+					"text": "S(e)lectionner le qui",
 					"top": 2,
 					"left": 324,
 					"width": 120,
@@ -461,11 +464,16 @@
 					],
 					"defaultButton": false,
 					"method": "ObjectMethods/btSelectionnerQui.4dm",
-					"class": "selection"
+					"class": "selection",
+					"shortcutAccel": true,
+					"shortcutControl": false,
+					"shortcutShift": false,
+					"shortcutAlt": false,
+					"shortcutKey": "e"
 				},
 				"btAjouterRole": {
 					"type": "button",
-					"text": "Ajouter un rôle pour cet qui",
+					"text": "(A)jouter un rôle pour cet qui",
 					"top": 4,
 					"left": 464,
 					"width": 180,
@@ -473,7 +481,12 @@
 					"events": [
 						"onClick"
 					],
-					"method": "ObjectMethods/btAjouterRole.4dm"
+					"method": "ObjectMethods/btAjouterRole.4dm",
+					"shortcutAccel": true,
+					"shortcutControl": false,
+					"shortcutShift": false,
+					"shortcutAlt": false,
+					"shortcutKey": "a"
 				},
 				"label_Pays2": {
 					"type": "text",

@@ -635,7 +635,7 @@
 				},
 				"btAjouterRole": {
 					"type": "button",
-					"text": "Ajouter un rôle pour ce qui",
+					"text": "(A)jouter un rôle pour ce qui",
 					"top": 55,
 					"left": 820,
 					"width": 180,
@@ -643,7 +643,12 @@
 					"events": [
 						"onClick"
 					],
-					"method": "ObjectMethods/btAjouterRole.4dm"
+					"method": "ObjectMethods/btAjouterRole.4dm",
+					"shortcutAccel": true,
+					"shortcutControl": false,
+					"shortcutShift": false,
+					"shortcutAlt": false,
+					"shortcutKey": "a"
 				},
 				"rolePhoto_ZS1": {
 					"type": "input",

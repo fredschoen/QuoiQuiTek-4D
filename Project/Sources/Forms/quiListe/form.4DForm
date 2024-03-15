@@ -257,7 +257,7 @@
 				},
 				"btAjouterQui": {
 					"type": "button",
-					"text": "Ajouter un qui",
+					"text": "(A)jouter un qui",
 					"top": 44,
 					"left": 917,
 					"width": 120,
@@ -266,7 +266,12 @@
 						"onClick"
 					],
 					"defaultButton": false,
-					"method": "ObjectMethods/btAjouterQui.4dm"
+					"method": "ObjectMethods/btAjouterQui.4dm",
+					"shortcutAccel": true,
+					"shortcutControl": false,
+					"shortcutShift": false,
+					"shortcutAlt": false,
+					"shortcutKey": "a"
 				},
 				"zCritereDomaine": {
 					"type": "input",
@@ -395,6 +400,24 @@
 					"left": 923,
 					"width": 75,
 					"height": 15
+				},
+				"btCopier": {
+					"type": "button",
+					"text": "(C)opier",
+					"top": 278,
+					"left": 917,
+					"width": 93,
+					"height": 31,
+					"events": [
+						"onClick"
+					],
+					"defaultButton": false,
+					"method": "ObjectMethods/btCopier.4dm",
+					"shortcutAccel": true,
+					"shortcutControl": false,
+					"shortcutShift": false,
+					"shortcutAlt": false,
+					"shortcutKey": "c"
 				}
 			},
 			"entryOrder": [
@@ -416,11 +439,12 @@
 				"fred",
 				"btTrace",
 				"zNbre",
-				"zLength"
+				"zLength",
+				"btCopier"
 			]
 		}
 	],
-	"geometryStamp": 3108,
+	"geometryStamp": 3110,
 	"method": "method.4dm",
 	"editor": {
 		"activeView": "View 1",
