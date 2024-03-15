@@ -14,7 +14,7 @@ If (Form event code:C388=On Data Change:K2:15)
 	$storageStockQuoiValues_c:=$storageStockQuoi_o.values
 	OBJECT Get pointer:C1124(Object named:K67:5; "ld_stockQuoi")->values:=$storageStockQuoiValues_c
 	//1.2. position dans la liste
-	$i:=Storage:C1525.stockQuoi.indexOf(Form:C1466.quoi_e.Domaine)
+	$i:=Storage:C1525.stockQuoi.indexOf(Form:C1466.quoi_e.Stock)
 	If ($i=-1)
 		//valeur non trouvée dans la liste déroulante
 		OBJECT Get pointer:C1124(Object named:K67:5; "ld_stockQuoi")->index:=-1
