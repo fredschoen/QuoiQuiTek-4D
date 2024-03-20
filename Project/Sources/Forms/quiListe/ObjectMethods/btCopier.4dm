@@ -1,6 +1,15 @@
 //btCopier
 var $e : cs:C1710.QuiEntity
 $t:=""
+$t+="Nom"+Char:C90(Tab:K15:37)
+$t+="G"+Char:C90(Tab:K15:37)
+$t+="Pay"+Char:C90(Tab:K15:37)
+$t+="Naiss"+Char:C90(Tab:K15:37)
+$t+="Deces"+Char:C90(Tab:K15:37)
+$t+="Dom"+Char:C90(Tab:K15:37)
+//$t+="Style"+Char(Tab)
+$t+="Info"+Char:C90(Tab:K15:37)
+$t+=Char:C90(Carriage return:K15:38)
 For each ($e; Form:C1466.qui_es)
 	$t+=$e.Nom+" "+$e.Prenom+Char:C90(Tab:K15:37)
 	$t+=$e.Genre+Char:C90(Tab:K15:37)
@@ -8,7 +17,8 @@ For each ($e; Form:C1466.qui_es)
 	$t+="'"+$e.DateNaiss+Char:C90(Tab:K15:37)
 	$t+="'"+$e.DateDeces+Char:C90(Tab:K15:37)
 	$t+=$e.Domaine+Char:C90(Tab:K15:37)
-	$t+=$e.Style+Char:C90(Tab:K15:37)
+	//$t+=$e.Style+Char(Tab)
+	$t+=Replace string:C233(Substring:C12($e.Info; 1; 20); Char:C90(Carriage return:K15:38); "/ ")+Char:C90(Tab:K15:37)
 	$t+=Char:C90(Carriage return:K15:38)
 End for each 
 SET TEXT TO PASTEBOARD:C523($t)
