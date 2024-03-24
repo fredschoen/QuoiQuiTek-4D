@@ -103,7 +103,7 @@
 					"top": 81,
 					"left": 259,
 					"width": 179,
-					"height": 52,
+					"height": 30,
 					"events": [
 						"onClick"
 					],
@@ -112,7 +112,7 @@
 			}
 		}
 	],
-	"geometryStamp": 61,
+	"geometryStamp": 62,
 	"method": "method.4dm",
 	"editor": {
 		"activeView": "View 1",

@@ -267,7 +267,7 @@
 					"dataSource": "Form:C1466.role_e.ID",
 					"top": 30,
 					"left": 767,
-					"width": 78,
+					"width": 50,
 					"height": 16,
 					"enterable": false,
 					"fill": "transparent",
@@ -702,6 +702,24 @@
 						"onClick"
 					],
 					"method": "ObjectMethods/btQui.4dm"
+				},
+				"btCopier": {
+					"type": "button",
+					"text": "copie(r) remarque",
+					"top": 29,
+					"left": 833,
+					"width": 120,
+					"height": 18,
+					"events": [
+						"onClick"
+					],
+					"shortcutAccel": true,
+					"shortcutControl": false,
+					"shortcutShift": false,
+					"shortcutAlt": false,
+					"shortcutKey": "r",
+					"method": "ObjectMethods/btCopier.4dm",
+					"fontSize": 10
 				}
 			},
 			"entryOrder": [
@@ -734,11 +752,12 @@
 				"ge",
 				"zAgeQui",
 				"btAjouterRole",
-				"btQui"
+				"btQui",
+				"btCopier"
 			]
 		}
 	],
-	"geometryStamp": 777,
+	"geometryStamp": 786,
 	"method": "method.4dm",
 	"editor": {
 		"activeView": "View 1",

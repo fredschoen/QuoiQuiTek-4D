@@ -228,7 +228,7 @@
 					"type": "input",
 					"left": 19,
 					"top": 33,
-					"width": 749,
+					"width": 650,
 					"height": 16,
 					"dataSource": "Form:C1466.message",
 					"enterable": false,
@@ -683,6 +683,24 @@
 					"width": 76,
 					"height": 15,
 					"textAlign": "right"
+				},
+				"btCopier": {
+					"type": "button",
+					"text": "copie(r) remarque",
+					"top": 32,
+					"left": 676,
+					"width": 90,
+					"height": 18,
+					"events": [
+						"onClick"
+					],
+					"shortcutAccel": true,
+					"shortcutControl": false,
+					"shortcutShift": false,
+					"shortcutAlt": false,
+					"shortcutKey": "r",
+					"method": "ObjectMethods/btCopier.4dm",
+					"fontSize": 10
 				}
 			},
 			"entryOrder": [
@@ -708,11 +726,12 @@
 				"zMessage",
 				"zID",
 				"btTrace",
-				"info"
+				"info",
+				"btCopier"
 			]
 		}
 	],
-	"geometryStamp": 586,
+	"geometryStamp": 595,
 	"method": "method.4dm",
 	"editor": {
 		"activeView": "View 1",

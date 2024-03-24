@@ -603,7 +603,7 @@
 					"type": "input",
 					"left": 18,
 					"top": 30,
-					"width": 524,
+					"width": 420,
 					"height": 16,
 					"dataSource": "Form:C1466.message",
 					"enterable": false,
@@ -717,6 +717,24 @@
 						"onClick"
 					],
 					"method": "ObjectMethods/bDelTheme.4dm"
+				},
+				"btCopier": {
+					"type": "button",
+					"text": "copie(r) remarque",
+					"top": 28,
+					"left": 443,
+					"width": 90,
+					"height": 18,
+					"events": [
+						"onClick"
+					],
+					"shortcutAccel": true,
+					"shortcutControl": false,
+					"shortcutShift": false,
+					"shortcutAlt": false,
+					"shortcutKey": "r",
+					"method": "ObjectMethods/btCopier.4dm",
+					"fontSize": 10
 				}
 			},
 			"entryOrder": [
@@ -749,11 +767,12 @@
 				"btQuitter",
 				"List Box",
 				"bAddTheme",
-				"bDelTheme"
+				"bDelTheme",
+				"btCopier"
 			]
 		}
 	],
-	"geometryStamp": 508,
+	"geometryStamp": 520,
 	"method": "method.4dm",
 	"editor": {
 		"activeView": "View 1",

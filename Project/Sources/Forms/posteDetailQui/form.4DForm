@@ -414,7 +414,7 @@
 					"type": "input",
 					"left": 11,
 					"top": 29,
-					"width": 749,
+					"width": 650,
 					"height": 16,
 					"dataSource": "Form:C1466.message",
 					"enterable": false,
@@ -667,6 +667,24 @@
 					"contextMenu": "none",
 					"events": [],
 					"pictureFormat": "proportionalCenter"
+				},
+				"btCopier": {
+					"type": "button",
+					"text": "copie(r) remarque",
+					"top": 27,
+					"left": 670,
+					"width": 90,
+					"height": 18,
+					"events": [
+						"onClick"
+					],
+					"shortcutAccel": true,
+					"shortcutControl": false,
+					"shortcutShift": false,
+					"shortcutAlt": false,
+					"shortcutKey": "r",
+					"method": "ObjectMethods/btCopier.4dm",
+					"fontSize": 10
 				}
 			},
 			"entryOrder": [
@@ -697,11 +715,12 @@
 				"zForm_eleCouQuoi_ID",
 				"btTrace",
 				"zGroupeNom",
-				"zAgeQui"
+				"zAgeQui",
+				"btCopier"
 			]
 		}
 	],
-	"geometryStamp": 802,
+	"geometryStamp": 806,
 	"method": "method.4dm",
 	"editor": {
 		"activeView": "View 1",

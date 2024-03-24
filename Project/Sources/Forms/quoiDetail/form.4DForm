@@ -402,21 +402,13 @@
 					"type": "input",
 					"dataSource": "Form:C1466.quoi_e.ID",
 					"top": 33,
-					"left": 816,
-					"width": 78,
+					"left": 779,
+					"width": 60,
 					"height": 16,
 					"enterable": false,
 					"fill": "transparent",
 					"borderStyle": "none",
 					"textAlign": "left"
-				},
-				"label4": {
-					"type": "text",
-					"text": "F:",
-					"top": 33,
-					"left": 803,
-					"width": 12,
-					"height": 16
 				},
 				"zposQuoiSel_i": {
 					"type": "input",
@@ -522,7 +514,7 @@
 					"type": "input",
 					"left": 19,
 					"top": 33,
-					"width": 749,
+					"width": 650,
 					"height": 16,
 					"dataSource": "Form:C1466.message",
 					"enterable": false,
@@ -688,6 +680,36 @@
 					"dataSourceTypeHint": "object",
 					"dataSource": "",
 					"method": "ObjectMethods/ld_stockQuoi.4dm"
+				},
+				"Bouton": {
+					"type": "button",
+					"text": "hliste",
+					"top": 143,
+					"left": 239,
+					"width": 59,
+					"height": 35,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Bouton.4dm"
+				},
+				"btCopier1": {
+					"type": "button",
+					"text": "copie(r) remarque",
+					"top": 33,
+					"left": 674,
+					"width": 90,
+					"height": 18,
+					"events": [
+						"onClick"
+					],
+					"shortcutAccel": true,
+					"shortcutControl": false,
+					"shortcutShift": false,
+					"shortcutAlt": false,
+					"shortcutKey": "r",
+					"method": "ObjectMethods/btCopier1.4dm",
+					"fontSize": 10
 				}
 			},
 			"entryOrder": [
@@ -719,11 +741,13 @@
 				"zposQuoiSel_i",
 				"zFormquoiListelength",
 				"btTrace",
-				"zMessage"
+				"zMessage",
+				"Bouton",
+				"btCopier1"
 			]
 		}
 	],
-	"geometryStamp": 251,
+	"geometryStamp": 301,
 	"method": "method.4dm",
 	"editor": {
 		"activeView": "View 1",

@@ -181,7 +181,7 @@
 					"dataSource": "Form:C1466.role_e.ID",
 					"top": 30,
 					"left": 767,
-					"width": 78,
+					"width": 60,
 					"height": 16,
 					"enterable": false,
 					"fill": "transparent",
@@ -549,6 +549,24 @@
 					],
 					"method": "ObjectMethods/iQuiPhoto1.4dm",
 					"pictureFormat": "proportionalCenter"
+				},
+				"btCopier": {
+					"type": "button",
+					"text": "copie(r) remarque",
+					"top": 29,
+					"left": 833,
+					"width": 120,
+					"height": 18,
+					"events": [
+						"onClick"
+					],
+					"shortcutAccel": true,
+					"shortcutControl": false,
+					"shortcutShift": false,
+					"shortcutAlt": false,
+					"shortcutKey": "r",
+					"method": "ObjectMethods/btCopier.4dm",
+					"fontSize": 10
 				}
 			},
 			"entryOrder": [
@@ -579,7 +597,8 @@
 				"zMessage",
 				"zForm_eleCouQui_ID",
 				"btTrace",
-				"ge"
+				"ge",
+				"btCopier"
 			]
 		},
 		{
@@ -852,7 +871,7 @@
 			}
 		}
 	],
-	"geometryStamp": 932,
+	"geometryStamp": 936,
 	"method": "method.4dm",
 	"editor": {
 		"activeView": "View 1",
