@@ -7,7 +7,7 @@ If (Test path name:C476($x)#Is a folder:K24:2)
 End if 
 
 //init
-initStorageValueLists()
+initStorage()
 
 //accueil
 afficherAccueil

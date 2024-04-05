@@ -1,3 +1,2 @@
 //bParametre
 afficherParametreListe()
-initStorageValueLists()

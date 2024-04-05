@@ -658,10 +658,10 @@
 				"bParametres": {
 					"type": "button",
 					"text": "Param",
-					"top": 97,
-					"left": 228,
-					"width": 48,
-					"height": 20,
+					"top": 159,
+					"left": 217,
+					"width": 59,
+					"height": 19,
 					"events": [
 						"onClick"
 					],
@@ -684,8 +684,8 @@
 				"Bouton": {
 					"type": "button",
 					"text": "hliste",
-					"top": 143,
-					"left": 239,
+					"top": 122,
+					"left": 217,
 					"width": 59,
 					"height": 35,
 					"events": [
@@ -715,6 +715,7 @@
 			"entryOrder": [
 				"field_Nom",
 				"ld_domaineQuoi",
+				"Bouton",
 				"Genre_CB",
 				"paysQuoi_CB",
 				"ld_stockQuoi",
@@ -725,9 +726,9 @@
 				"field_Prod",
 				"field_Prod1",
 				"field_Info",
-				"Zone de saisie1",
 				"lb_lesQuisDuQuoi",
 				"lb_lesGroupesDuQuoi",
+				"Zone de saisie1",
 				"btSuivant",
 				"btPrecedent",
 				"btPremier",
@@ -742,12 +743,11 @@
 				"zFormquoiListelength",
 				"btTrace",
 				"zMessage",
-				"Bouton",
 				"btCopier1"
 			]
 		}
 	],
-	"geometryStamp": 301,
+	"geometryStamp": 304,
 	"method": "method.4dm",
 	"editor": {
 		"activeView": "View 1",

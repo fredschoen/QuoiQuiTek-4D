@@ -1,0 +1,2 @@
+//bDiaporama
+afficherDiaporama("TOUT")

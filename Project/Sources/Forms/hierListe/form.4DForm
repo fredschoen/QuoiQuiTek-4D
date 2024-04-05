@@ -9,8 +9,8 @@
 	"windowMinHeight": 0,
 	"windowMaxWidth": 32767,
 	"windowMaxHeight": 32767,
-	"rightMargin": 20,
-	"bottomMargin": 20,
+	"rightMargin": 0,
+	"bottomMargin": 0,
 	"events": [
 		"onLoad",
 		"onPageChange",
@@ -38,10 +38,10 @@
 			"objects": {
 				"hlGenreQuoi": {
 					"type": "list",
-					"left": 48,
-					"top": 38,
+					"left": 0,
+					"top": 1,
 					"width": 216,
-					"height": 192,
+					"height": 288,
 					"events": [
 						"onLoad",
 						"onDoubleClick",
@@ -54,5 +54,5 @@
 			}
 		}
 	],
-	"geometryStamp": 1
+	"geometryStamp": 6
 }

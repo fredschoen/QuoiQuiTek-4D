@@ -18,7 +18,8 @@
 	"markerBody": 60,
 	"events": [
 		"onLoad",
-		"onDoubleClick"
+		"onDoubleClick",
+		"onUnload"
 	],
 	"windowTitle": "window title",
 	"destination": "listScreen",

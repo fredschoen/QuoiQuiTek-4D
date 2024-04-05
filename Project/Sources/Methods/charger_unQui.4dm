@@ -16,7 +16,8 @@ Else
 	Form:C1466.message:="Info sur '"+Form:C1466.qui_e.FullName+"'"
 	SET TEXT TO PASTEBOARD:C523(Form:C1466.qui_e.FullName)
 	//photo
-	$x:=Folder:C1567(fk data folder:K87:12).platformPath+"Photos"+Folder separator:K24:12+"i"+String:C10(Form:C1466.qui_e.ID; "0000000")+".png"
+	$y:=Folder:C1567(fk data folder:K87:12).platformPath+"Photos"+Folder separator:K24:12+"i"+String:C10(Form:C1466.qui_e.ID; "0000000")+".png"
+	$x:=Storage:C1525.param.dossierPhotos_t+"i"+String:C10(Form:C1466.qui_e.ID; "0000000")+".png"
 	READ PICTURE FILE:C678($x; $img_i)
 	If (OK=1)
 		Form:C1466.photoQui_i:=$img_i

@@ -1,4 +1,5 @@
 //%attributes = {}
+//yExportPhotos
 var $qui_es : cs:C1710.QuiSelection
 var $qui_e : cs:C1710.QuiEntity
 var $quoi_es : cs:C1710.QuoiSelection
