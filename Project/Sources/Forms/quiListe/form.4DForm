@@ -339,7 +339,12 @@
 						"onClick"
 					],
 					"method": "ObjectMethods/bAnneePlus.4dm",
-					"bottom": 28
+					"bottom": 28,
+					"shortcutAccel": true,
+					"shortcutControl": false,
+					"shortcutShift": false,
+					"shortcutAlt": false,
+					"shortcutKey": "+"
 				},
 				"bAnneeMoins": {
 					"type": "button",
@@ -352,7 +357,12 @@
 						"onClick"
 					],
 					"method": "ObjectMethods/bAnneeMoins.4dm",
-					"bottom": 28
+					"bottom": 28,
+					"shortcutAccel": true,
+					"shortcutControl": false,
+					"shortcutShift": false,
+					"shortcutAlt": false,
+					"shortcutKey": "-"
 				},
 				"zNbre": {
 					"type": "input",
