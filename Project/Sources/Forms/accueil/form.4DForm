@@ -47,7 +47,7 @@
 				},
 				"bQui": {
 					"type": "button",
-					"text": "Qui",
+					"text": "Qu(i)",
 					"top": 247,
 					"left": 280,
 					"width": 105,
@@ -55,11 +55,16 @@
 					"events": [
 						"onClick"
 					],
-					"method": "afficherQuiListe"
+					"method": "afficherQuiListe",
+					"shortcutAccel": true,
+					"shortcutControl": false,
+					"shortcutShift": false,
+					"shortcutAlt": false,
+					"shortcutKey": "i"
 				},
 				"bQuoi": {
 					"type": "button",
-					"text": "Quoi",
+					"text": "Qu(o)i",
 					"top": 247,
 					"left": 155,
 					"width": 105,
@@ -67,11 +72,16 @@
 					"events": [
 						"onClick"
 					],
-					"method": "ObjectMethods/bQuoi.4dm"
+					"method": "ObjectMethods/bQuoi.4dm",
+					"shortcutAccel": true,
+					"shortcutControl": false,
+					"shortcutShift": false,
+					"shortcutAlt": false,
+					"shortcutKey": "o"
 				},
 				"bRole": {
 					"type": "button",
-					"text": "Role",
+					"text": "(R)ole",
 					"top": 273,
 					"left": 227,
 					"width": 105,
@@ -79,21 +89,27 @@
 					"events": [
 						"onClick"
 					],
-					"method": "ObjectMethods/bRole.4dm"
+					"method": "ObjectMethods/bRole.4dm",
+					"shortcutAccel": true,
+					"shortcutControl": false,
+					"shortcutShift": false,
+					"shortcutAlt": false,
+					"shortcutKey": "r"
 				},
 				"btTrace": {
 					"type": "button",
 					"text": "trace",
-					"top": 299,
-					"left": 13,
-					"width": 40,
-					"height": 15,
+					"top": 355,
+					"left": 5,
+					"width": 35,
+					"height": 14,
 					"events": [
 						"onClick"
 					],
 					"style": "custom",
 					"method": "ObjectMethods/btTrace.4dm",
-					"borderStyle": "solid"
+					"borderStyle": "solid",
+					"fontSize": 10
 				},
 				"btQuitter": {
 					"type": "button",
@@ -109,7 +125,7 @@
 				},
 				"bGroupe": {
 					"type": "button",
-					"text": "Groupe",
+					"text": "(G)roupe",
 					"top": 247,
 					"left": 405,
 					"width": 105,
@@ -117,13 +133,18 @@
 					"events": [
 						"onClick"
 					],
-					"method": "ObjectMethods/bGroupe.4dm"
+					"method": "ObjectMethods/bGroupe.4dm",
+					"shortcutAccel": true,
+					"shortcutControl": false,
+					"shortcutShift": false,
+					"shortcutAlt": false,
+					"shortcutKey": "g"
 				},
 				"bExportPhotos": {
 					"type": "button",
 					"text": "Export Photos",
-					"top": 313,
-					"left": 342,
+					"top": 347,
+					"left": 283,
 					"width": 105,
 					"height": 20,
 					"events": [
@@ -133,22 +154,27 @@
 				},
 				"bParametres": {
 					"type": "button",
-					"text": "Paramètres",
-					"top": 347,
-					"left": 155,
+					"text": "(P)aramètres",
+					"top": 299,
+					"left": 342,
 					"width": 105,
 					"height": 20,
 					"events": [
 						"onClick"
 					],
-					"method": "ObjectMethods/bParametres.4dm"
+					"method": "ObjectMethods/bParametres.4dm",
+					"shortcutAccel": true,
+					"shortcutControl": false,
+					"shortcutShift": false,
+					"shortcutAlt": false,
+					"shortcutKey": "p"
 				},
 				"bSauvegarder": {
 					"type": "button",
 					"text": "Sauvegarder",
 					"top": 349,
-					"left": 405,
-					"width": 84,
+					"left": 395,
+					"width": 95,
 					"height": 20,
 					"events": [
 						"onClick"
@@ -157,7 +183,7 @@
 				},
 				"bTheme": {
 					"type": "button",
-					"text": "Theme",
+					"text": "(T)heme",
 					"top": 273,
 					"left": 342,
 					"width": 105,
@@ -165,12 +191,17 @@
 					"events": [
 						"onClick"
 					],
-					"method": "ObjectMethods/bTheme.4dm"
+					"method": "ObjectMethods/bTheme.4dm",
+					"shortcutAccel": true,
+					"shortcutControl": false,
+					"shortcutShift": false,
+					"shortcutAlt": false,
+					"shortcutKey": "t"
 				},
 				"bDiaporama": {
 					"type": "button",
 					"text": "(D)iaporama",
-					"top": 313,
+					"top": 299,
 					"left": 227,
 					"width": 105,
 					"height": 20,
@@ -192,15 +223,15 @@
 				"bRole",
 				"bTheme",
 				"bDiaporama",
-				"bExportPhotos",
 				"bParametres",
+				"bExportPhotos",
 				"bSauvegarder",
 				"btQuitter",
 				"btTrace"
 			]
 		}
 	],
-	"geometryStamp": 425,
+	"geometryStamp": 467,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",
