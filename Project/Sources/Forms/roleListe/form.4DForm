@@ -346,7 +346,12 @@
 					],
 					"method": "ObjectMethods/bAgePlus.4dm",
 					"bottom": 44,
-					"fontSize": 8
+					"fontSize": 8,
+					"shortcutAccel": true,
+					"shortcutControl": false,
+					"shortcutShift": false,
+					"shortcutAlt": false,
+					"shortcutKey": "+"
 				},
 				"bAgeMoins": {
 					"type": "button",
@@ -360,7 +365,12 @@
 					],
 					"method": "ObjectMethods/bAgeMoins.4dm",
 					"bottom": 44,
-					"fontSize": 8
+					"fontSize": 8,
+					"shortcutAccel": true,
+					"shortcutControl": false,
+					"shortcutShift": false,
+					"shortcutAlt": false,
+					"shortcutKey": "-"
 				},
 				"zCritereDateO": {
 					"type": "input",

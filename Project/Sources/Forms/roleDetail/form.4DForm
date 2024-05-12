@@ -1031,7 +1031,11 @@
 					"height": 160,
 					"dataSourceTypeHint": "picture",
 					"dataSource": "Form:C1466.photoRole_i",
-					"pictureFormat": "proportionalCenter"
+					"pictureFormat": "proportionalCenter",
+					"events": [
+						"onDoubleClick"
+					],
+					"method": "ObjectMethods/rolePhoto_ZS1.4dm"
 				},
 				"iQuiPhoto1": {
 					"type": "input",
