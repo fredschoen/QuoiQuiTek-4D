@@ -27,3 +27,7 @@ If (OK=1)
 	ALERT:C41("Export terminé"+Char:C90(Carriage return:K15:38)+"cf. "+$nomRepertoire+"log.txt")
 	
 End if 
+
+If (OK=1)
+	SHOW ON DISK:C922($nomRepertoire)
+End if 

@@ -10,7 +10,8 @@ C_TEXT:C284($nomlog; $texteLog; $statutIntervention)
 C_TEXT:C284($rc; $tab)
 C_LONGINT:C283($nbrEnrHorsExport)  //v2
 $nbrEnrHorsExport:=0  //v2
-
+var $Quoi_e : cs:C1710.QuoiEntity
+var $Quoi_es : cs:C1710.QuoiSelection
 $rc:=Char:C90(Carriage return:K15:38)
 $tab:=Char:C90(Tab:K15:37)
 If ($1=Null:C1517)
@@ -29,7 +30,7 @@ $nom:=$nomDefaut
 CONFIRM:C162("Début création de "+$nom)
 
 If (OK=1)
-	$doc:=Create document:C266($nom; "TEXT")
+	$doc:=Create document:C266($nom; "public.utf8-plain-text")
 	//Ouvrir document($nom;"TEXT";mode ecriture)  ` Ouvrir le document Note 
 End if 
 
@@ -53,15 +54,12 @@ If (OK=1)
 	//ecrire entete
 	SEND PACKET:C103($doc; $texte)
 	
-	ALL RECORDS:C47([Quoi:1])
-	
-	ORDER BY:C49([Quoi:1]; [Quoi:1]ID:1; >)
+	$Quoi_es:=ds:C1482.Quoi.query("Domaine = :1"; "CINE").orderBy("Nom")
 	
 	C_TEXT:C284($vide; $str; $Info)
 	C_LONGINT:C283($pos; $codeCar)
 	
-	While (Not:C34(End selection:C36([Quoi:1])))
-		
+	For each ($Quoi_e; $Quoi_es)
 		//init
 		$Info:=""
 		$pos:=0
@@ -74,14 +72,14 @@ If (OK=1)
 		
 		//-- assemblage de l'enreg à écrire------------------------------ 
 		$texte:=""
-		$texte:=$texte+String:C10([Quoi:1]ID:1)+$tab
-		$texte:=$texte+[Quoi:1]Nom:2+$tab
-		$texte:=$texte+"'"+[Quoi:1]Date:7+$tab  //pour être pris en "text" dans excel
-		$texte:=$texte+[Quoi:1]Domaine:8+$tab
-		$texte:=$texte+[Quoi:1]Genre:3+$tab
-		$texte:=$texte+[Quoi:1]Pays:4+$tab
+		$texte:=$texte+String:C10($Quoi_e.ID)+$tab
+		$texte:=$texte+$Quoi_e.Nom+$tab
+		$texte:=$texte+"'"+$Quoi_e.Date+$tab  //pour être pris en "text" dans excel
+		$texte:=$texte+$Quoi_e.Domaine+$tab
+		$texte:=$texte+$Quoi_e.Genre+$tab
+		$texte:=$texte+$Quoi_e.Pays+$tab
 		
-		$str:=[Quoi:1]Info:10
+		$str:=$Quoi_e.Info
 		For ($pos; 1; Length:C16($str))
 			$codeCar:=Character code:C91($str[[$pos]])
 			Case of 
@@ -93,22 +91,20 @@ If (OK=1)
 		End for 
 		
 		$texte:=$texte+$str+$tab
-		$texte:=$texte+[Quoi:1]Qualif:12+$tab
-		$texte:=$texte+[Quoi:1]Real:6+$tab
-		$texte:=$texte+[Quoi:1]Prod:9+$tab
-		$texte:=$texte+[Quoi:1]Stock:5+$tab
-		$texte:=$texte+String:C10([Quoi:1]CreatTS:14)+$tab
-		$texte:=$texte+String:C10([Quoi:1]ModifTS:15)+$tab
-		$texte:=$texte+String:C10([Quoi:1]CreatTS:14)+$tab
-		$texte:=$texte+String:C10([Quoi:1]ModifTS:15)+$tab
+		$texte:=$texte+$Quoi_e.Qualif+$tab
+		$texte:=$texte+$Quoi_e.Real+$tab
+		$texte:=$texte+$Quoi_e.Prod+$tab
+		$texte:=$texte+$Quoi_e.Stock+$tab
+		$texte:=$texte+String:C10($Quoi_e.CreatTS)+$tab
+		$texte:=$texte+String:C10($Quoi_e.ModifTS)+$tab
+		$texte:=$texte+String:C10($Quoi_e.CreatTS)+$tab
+		$texte:=$texte+String:C10($Quoi_e.ModifTS)+$tab
 		$texte:=$texte+$rc
 		
 		SEND PACKET:C103($doc; $texte)
 		$nbrEnrExport:=$nbrEnrExport+1
 		
-		NEXT RECORD:C51([Quoi:1])
-		
-	End while 
+	End for each 
 	
 	CLOSE DOCUMENT:C267($doc)  // Fermer le document 
 	$texteLog:="Fichier "+$nom+" créé"+$rc+String:C10($nbrEnrExport)+" enreg créés (+ 1 enreg entete)"
