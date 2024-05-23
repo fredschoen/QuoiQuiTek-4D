@@ -1151,6 +1151,23 @@
 					"shortcutKey": "r",
 					"method": "ObjectMethods/btCopier.4dm",
 					"fontSize": 10
+				},
+				"bDiapo": {
+					"type": "button",
+					"text": "(D)iapo",
+					"top": 2,
+					"left": 298,
+					"width": 70,
+					"height": 24,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/bDiapo.4dm",
+					"shortcutAccel": true,
+					"shortcutControl": false,
+					"shortcutShift": false,
+					"shortcutAlt": false,
+					"shortcutKey": "d"
 				}
 			},
 			"entryOrder": [
@@ -1198,11 +1215,12 @@
 				"zAge",
 				"zMessage",
 				"btQui",
-				"btCopier"
+				"btCopier",
+				"bDiapo"
 			]
 		}
 	],
-	"geometryStamp": 608,
+	"geometryStamp": 611,
 	"method": "method.4dm",
 	"editor": {
 		"groups": {

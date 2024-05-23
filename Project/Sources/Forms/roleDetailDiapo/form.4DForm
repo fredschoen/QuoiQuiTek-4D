@@ -1,0 +1,298 @@
+{
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"windowSizingX": "variable",
+	"windowSizingY": "variable",
+	"windowMinWidth": 0,
+	"windowMinHeight": 0,
+	"windowMaxWidth": 32767,
+	"windowMaxHeight": 32767,
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onDoubleClick",
+		"onUnload",
+		"onAfterKeystroke"
+	],
+	"windowTitle": "Détail du Role",
+	"destination": "detailScreen",
+	"pages": [
+		{
+			"objects": {}
+		},
+		{
+			"objects": {
+				"btSuivant": {
+					"type": "button",
+					"text": "Suivant",
+					"top": 3,
+					"left": 1,
+					"width": 100,
+					"height": 24,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/btSuivant.4dm",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/RaccourciSuivant"
+					},
+					"shortcutAccel": true,
+					"shortcutControl": false,
+					"shortcutShift": false,
+					"shortcutAlt": false,
+					"shortcutKey": "s"
+				},
+				"btPrecedent": {
+					"type": "button",
+					"text": "Précédent",
+					"top": 29,
+					"left": 1,
+					"width": 100,
+					"height": 24,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/btPrecedent.4dm",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/RaccourciPreced"
+					},
+					"shortcutAccel": true,
+					"shortcutControl": false,
+					"shortcutShift": false,
+					"shortcutAlt": false,
+					"shortcutKey": "p"
+				},
+				"btPremier": {
+					"type": "button",
+					"text": "Premier",
+					"top": 53,
+					"left": 1,
+					"width": 100,
+					"height": 24,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/btPremier.4dm"
+				},
+				"btDernier": {
+					"type": "button",
+					"text": "Dernier",
+					"top": 80,
+					"left": 1,
+					"width": 100,
+					"height": 24,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/btDernier.4dm"
+				},
+				"zposQuiSel_i": {
+					"type": "input",
+					"left": -2,
+					"top": 339,
+					"width": 31,
+					"height": 16,
+					"dataSource": "Form:C1466.posQuiSel_i",
+					"enterable": false,
+					"dataSourceTypeHint": "integer",
+					"focusable": false,
+					"borderStyle": "none",
+					"textAlign": "right"
+				},
+				"label6": {
+					"type": "text",
+					"text": "/",
+					"top": 339,
+					"left": 36,
+					"width": 12,
+					"height": 16
+				},
+				"zQuiListelength": {
+					"type": "input",
+					"left": 49,
+					"top": 339,
+					"width": 31,
+					"height": 16,
+					"dataSource": "Form:C1466.qui_es.length",
+					"enterable": false,
+					"dataSourceTypeHint": "integer",
+					"focusable": false,
+					"borderStyle": "none",
+					"textAlign": "right"
+				},
+				"btSauver": {
+					"type": "button",
+					"text": "Sauver",
+					"top": 109,
+					"left": 1,
+					"width": 100,
+					"height": 22,
+					"events": [
+						"onClick"
+					],
+					"defaultButton": true,
+					"method": "ObjectMethods/btSauver.4dm",
+					"shortcutAccel": true,
+					"shortcutControl": false,
+					"shortcutShift": false,
+					"shortcutAlt": false,
+					"shortcutKey": "w",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/RaccourciSauver"
+					},
+					"style": "custom",
+					"borderStyle": "raised"
+				},
+				"fieldDescrNom": {
+					"type": "input",
+					"dataSource": "Form:C1466.role_e.Descr",
+					"top": 252,
+					"left": 1,
+					"width": 100,
+					"height": 48
+				},
+				"label_age": {
+					"type": "text",
+					"text": "Age:",
+					"top": 234,
+					"left": 1,
+					"width": 90,
+					"height": 15
+				},
+				"ge": {
+					"type": "input",
+					"dataSource": "Form:C1466.role_e.getAge()",
+					"top": 234,
+					"left": 40,
+					"width": 30,
+					"height": 16,
+					"enterable": false,
+					"focusable": false
+				},
+				"btSupprimerRole": {
+					"type": "button",
+					"text": "Supprimer rôle",
+					"top": 136,
+					"left": 1,
+					"width": 100,
+					"height": 21,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/btSupprimerRole.4dm",
+					"style": "custom",
+					"borderStyle": "raised"
+				},
+				"btTrace": {
+					"type": "button",
+					"text": "(t)race",
+					"top": 320,
+					"left": -1,
+					"width": 40,
+					"height": 15,
+					"events": [
+						"onClick"
+					],
+					"style": "custom",
+					"method": "ObjectMethods/btTrace.4dm",
+					"borderStyle": "solid",
+					"shortcutAccel": true,
+					"shortcutControl": false,
+					"shortcutShift": false,
+					"shortcutAlt": false,
+					"shortcutKey": "t"
+				},
+				"btQuitter": {
+					"type": "button",
+					"text": "Quitter",
+					"top": 161,
+					"left": 1,
+					"width": 100,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"action": "cancel"
+				},
+				"zMessage": {
+					"type": "input",
+					"left": 1,
+					"top": 186,
+					"width": 100,
+					"height": 48,
+					"dataSource": "Form:C1466.message",
+					"enterable": false,
+					"dataSourceTypeHint": "text",
+					"fill": "#ffff00",
+					"fontWeight": "bold",
+					"textAlign": "center"
+				},
+				"rolePhoto_ZS1": {
+					"type": "input",
+					"left": 105,
+					"top": 3,
+					"width": 420,
+					"height": 368,
+					"dataSourceTypeHint": "picture",
+					"dataSource": "Form:C1466.photoRole_i",
+					"pictureFormat": "proportionalCenter",
+					"events": [
+						"onDoubleClick"
+					],
+					"method": "ObjectMethods/rolePhoto_ZS1.4dm",
+					"sizingX": "grow",
+					"sizingY": "grow"
+				},
+				"btCopier": {
+					"type": "button",
+					"text": "copie(r) remarque",
+					"top": 301,
+					"left": 1,
+					"width": 100,
+					"height": 18,
+					"events": [
+						"onClick"
+					],
+					"shortcutAccel": true,
+					"shortcutControl": false,
+					"shortcutShift": false,
+					"shortcutAlt": false,
+					"shortcutKey": "r",
+					"method": "ObjectMethods/btCopier.4dm",
+					"fontSize": 10
+				}
+			},
+			"entryOrder": [
+				"fieldDescrNom",
+				"rolePhoto_ZS1",
+				"btSuivant",
+				"btPrecedent",
+				"btPremier",
+				"btDernier",
+				"btSauver",
+				"btSupprimerRole",
+				"zposQuiSel_i",
+				"zQuiListelength",
+				"ge",
+				"btTrace",
+				"btQuitter",
+				"zMessage",
+				"btCopier"
+			]
+		}
+	],
+	"geometryStamp": 671,
+	"method": "method.4dm",
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {}
+		}
+	}
+}

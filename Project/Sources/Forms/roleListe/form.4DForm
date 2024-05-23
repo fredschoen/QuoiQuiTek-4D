@@ -287,7 +287,7 @@
 				},
 				"btAppliquerFiltreRole": {
 					"type": "button",
-					"text": "Appliquer le filtre",
+					"text": "A(p)pliquer le filtre",
 					"top": 9,
 					"left": 364,
 					"width": 113,
@@ -296,7 +296,12 @@
 						"onClick"
 					],
 					"method": "ObjectMethods/btAppliquerFiltreRole.4dm",
-					"defaultButton": true
+					"defaultButton": true,
+					"shortcutAccel": true,
+					"shortcutControl": false,
+					"shortcutShift": false,
+					"shortcutAlt": false,
+					"shortcutKey": "p"
 				},
 				"zCritereAge": {
 					"type": "input",
@@ -379,6 +384,23 @@
 					"width": 79,
 					"height": 16,
 					"dataSource": "Form:C1466.critereRole.DateO"
+				},
+				"bDiapo": {
+					"type": "button",
+					"text": "(D)iapo",
+					"top": 12,
+					"left": 720,
+					"width": 60,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/bDiapo.4dm",
+					"shortcutAccel": true,
+					"shortcutControl": false,
+					"shortcutShift": false,
+					"shortcutAlt": false,
+					"shortcutKey": "d"
 				}
 			},
 			"entryOrder": [
@@ -393,11 +415,12 @@
 				"btQuitter",
 				"zCritereDateO",
 				"lb_roleListe",
-				"btTrace"
+				"btTrace",
+				"bDiapo"
 			]
 		}
 	],
-	"geometryStamp": 867,
+	"geometryStamp": 872,
 	"method": "method.4dm",
 	"editor": {
 		"activeView": "View 1",
