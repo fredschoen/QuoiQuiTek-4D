@@ -203,9 +203,9 @@
 					"shortcutAlt": false,
 					"shortcutKey": "t"
 				},
-				"bDiaporama": {
+				"btDiaporama": {
 					"type": "button",
-					"text": "(D)iaporama",
+					"text": "(D)iapo",
 					"top": 299,
 					"left": 227,
 					"width": 105,
@@ -213,7 +213,7 @@
 					"events": [
 						"onClick"
 					],
-					"method": "ObjectMethods/bDiaporama.4dm",
+					"method": "ObjectMethods/btDiaporama.4dm",
 					"shortcutAccel": true,
 					"shortcutControl": false,
 					"shortcutShift": false,
@@ -227,7 +227,7 @@
 				"bGroupe",
 				"bRole",
 				"bTheme",
-				"bDiaporama",
+				"btDiaporama",
 				"bParametres",
 				"bExportPhotos",
 				"bSauvegarder",
@@ -236,7 +236,7 @@
 			]
 		}
 	],
-	"geometryStamp": 467,
+	"geometryStamp": 468,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",

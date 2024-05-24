@@ -240,7 +240,7 @@
 					"shortcutShift": false,
 					"shortcutAlt": false,
 					"shortcutKey": "r",
-					"method": "mBtCopier.4dm",
+					"method": "mBtCopier",
 					"fontSize": 10
 				},
 				"zPos": {
@@ -276,6 +276,40 @@
 					"focusable": false,
 					"borderStyle": "none",
 					"textAlign": "left"
+				},
+				"btQuoi": {
+					"type": "button",
+					"text": "Qu(o)i",
+					"top": 414,
+					"left": 1,
+					"width": 43,
+					"height": 21,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/btQuoi.4dm",
+					"shortcutAccel": true,
+					"shortcutControl": false,
+					"shortcutShift": false,
+					"shortcutAlt": false,
+					"shortcutKey": "o"
+				},
+				"btQui": {
+					"type": "button",
+					"text": "Qu(i)",
+					"top": 394,
+					"left": 3,
+					"width": 41,
+					"height": 21,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/btQui.4dm",
+					"shortcutAccel": true,
+					"shortcutControl": false,
+					"shortcutShift": false,
+					"shortcutAlt": false,
+					"shortcutKey": "i"
 				}
 			},
 			"entryOrder": [
@@ -293,11 +327,13 @@
 				"zMessage",
 				"btCopier",
 				"zPos",
-				"zLength"
+				"zLength",
+				"btQuoi",
+				"btQui"
 			]
 		}
 	],
-	"geometryStamp": 897,
+	"geometryStamp": 905,
 	"method": "method.4dm",
 	"editor": {
 		"activeView": "View 1",

@@ -571,7 +571,7 @@
 					"shortcutShift": false,
 					"shortcutAlt": false,
 					"shortcutKey": "r",
-					"method": "mBtCopier.4dm",
+					"method": "mBtCopier",
 					"fontSize": 10
 				}
 			},

@@ -379,15 +379,15 @@
 				"label_Nom1": {
 					"type": "text",
 					"text": "Nom:",
-					"top": 396,
-					"left": 26,
-					"width": 60,
-					"height": 17
+					"top": 400,
+					"left": 41,
+					"width": 37,
+					"height": 15
 				},
 				"field_Nom": {
 					"type": "input",
 					"dataSource": "Form:C1466.quoi_e.Nom",
-					"top": 396,
+					"top": 397,
 					"left": 78,
 					"width": 250,
 					"height": 17
@@ -1110,35 +1110,22 @@
 					"style": "custom",
 					"borderStyle": "raised"
 				},
-				"Texte1": {
-					"type": "text",
-					"text": "Qui",
-					"top": 96,
-					"left": 10,
-					"width": 30,
-					"height": 15,
-					"borderStyle": "solid"
-				},
-				"Texte3": {
-					"type": "text",
-					"text": "Quoi",
-					"top": 385,
-					"left": 10,
-					"width": 30,
-					"height": 15,
-					"borderStyle": "solid"
-				},
 				"btQui": {
 					"type": "button",
-					"text": "!",
+					"text": "Qu(i)",
 					"top": 96,
-					"left": 41,
-					"width": 27,
-					"height": 15,
+					"left": 7,
+					"width": 41,
+					"height": 21,
 					"events": [
 						"onClick"
 					],
-					"method": "ObjectMethods/btQui.4dm"
+					"method": "ObjectMethods/btQui.4dm",
+					"shortcutAccel": true,
+					"shortcutControl": false,
+					"shortcutShift": false,
+					"shortcutAlt": false,
+					"shortcutKey": "i"
 				},
 				"btCopier": {
 					"type": "button",
@@ -1155,25 +1142,42 @@
 					"shortcutShift": false,
 					"shortcutAlt": false,
 					"shortcutKey": "r",
-					"method": "mBtCopier.4dm",
+					"method": "mBtCopier",
 					"fontSize": 10
 				},
-				"bDiapo": {
+				"btDiapo": {
 					"type": "button",
 					"text": "(D)iapo",
-					"top": 2,
+					"top": 4,
 					"left": 298,
 					"width": 70,
 					"height": 24,
 					"events": [
 						"onClick"
 					],
-					"method": "ObjectMethods/bDiapo.4dm",
+					"method": "ObjectMethods/btDiapo.4dm",
 					"shortcutAccel": true,
 					"shortcutControl": false,
 					"shortcutShift": false,
 					"shortcutAlt": false,
 					"shortcutKey": "d"
+				},
+				"btQuoi": {
+					"type": "button",
+					"text": "Qu(o)i",
+					"top": 382,
+					"left": 7,
+					"width": 43,
+					"height": 21,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/btQuoi.4dm",
+					"shortcutAccel": true,
+					"shortcutControl": false,
+					"shortcutShift": false,
+					"shortcutAlt": false,
+					"shortcutKey": "o"
 				}
 			},
 			"entryOrder": [
@@ -1222,11 +1226,12 @@
 				"zMessage",
 				"btQui",
 				"btCopier",
-				"bDiapo"
+				"btDiapo",
+				"btQuoi"
 			]
 		}
 	],
-	"geometryStamp": 622,
+	"geometryStamp": 677,
 	"method": "method.4dm",
 	"editor": {
 		"groups": {

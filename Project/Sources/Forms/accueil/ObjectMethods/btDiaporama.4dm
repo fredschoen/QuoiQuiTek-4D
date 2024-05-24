@@ -1,2 +1,2 @@
-//bDiaporama
+//btDiapo
 afficherDiaporama("TOUT")

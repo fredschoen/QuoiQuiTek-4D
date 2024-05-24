@@ -1,4 +1,4 @@
-//bDiapo
+//btDiapo
 var $pourSelectionner_b : Boolean
 
 If (Form:C1466.roleSel_e=Null:C1517)
@@ -9,6 +9,10 @@ If (Form:C1466.roleSel_e=Null:C1517)
 		return 
 	End if 
 	Form:C1466.roleSel_e:=Form:C1466.role_es.first()
+End if 
+If (Form:C1466.posRoleSel_i<1)
+	Form:C1466.posRoleSel_i:=1
+	
 End if 
 
 $form_o:=New object:C1471

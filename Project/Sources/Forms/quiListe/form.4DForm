@@ -428,7 +428,7 @@
 						"onClick"
 					],
 					"defaultButton": false,
-					"method": "mBtCopier.4dm",
+					"method": "mBtCopier",
 					"shortcutAccel": true,
 					"shortcutControl": false,
 					"shortcutShift": false,
