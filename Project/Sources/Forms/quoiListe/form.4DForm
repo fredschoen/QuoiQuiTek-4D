@@ -381,7 +381,7 @@
 						"onClick"
 					],
 					"style": "custom",
-					"method": "ObjectMethods/btTrace.4dm",
+					"method": "mBtTrace",
 					"borderStyle": "solid",
 					"fontSize": 10,
 					"shortcutAccel": true,
@@ -444,7 +444,7 @@
 						"onClick"
 					],
 					"defaultButton": false,
-					"method": "ObjectMethods/btCopier.4dm",
+					"method": "mBtCopier.4dm",
 					"shortcutAccel": true,
 					"shortcutControl": false,
 					"shortcutShift": false,

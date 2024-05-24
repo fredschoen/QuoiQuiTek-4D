@@ -495,7 +495,7 @@
 						"onClick"
 					],
 					"style": "custom",
-					"method": "ObjectMethods/btTrace.4dm",
+					"method": "mBtTrace",
 					"borderStyle": "solid",
 					"fontSize": 10,
 					"shortcutAccel": true,
@@ -571,7 +571,7 @@
 					"shortcutShift": false,
 					"shortcutAlt": false,
 					"shortcutKey": "r",
-					"method": "ObjectMethods/btCopier.4dm",
+					"method": "mBtCopier.4dm",
 					"fontSize": 10
 				}
 			},

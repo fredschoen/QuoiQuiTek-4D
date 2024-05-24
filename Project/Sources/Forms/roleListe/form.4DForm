@@ -324,7 +324,7 @@
 						"onClick"
 					],
 					"style": "custom",
-					"method": "ObjectMethods/btTrace.4dm",
+					"method": "mBtTrace",
 					"borderStyle": "solid",
 					"fontSize": 10,
 					"shortcutAccel": true,
