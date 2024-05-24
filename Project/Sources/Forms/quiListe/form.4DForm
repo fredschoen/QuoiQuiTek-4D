@@ -291,17 +291,23 @@
 				},
 				"btTrace": {
 					"type": "button",
-					"text": "trace",
+					"text": "(t)race",
 					"top": 84,
 					"left": 992,
-					"width": 40,
+					"width": 35,
 					"height": 15,
 					"events": [
 						"onClick"
 					],
 					"style": "custom",
 					"method": "ObjectMethods/btTrace.4dm",
-					"borderStyle": "solid"
+					"borderStyle": "solid",
+					"fontSize": 10,
+					"shortcutAccel": true,
+					"shortcutControl": false,
+					"shortcutShift": false,
+					"shortcutAlt": false,
+					"shortcutKey": "t"
 				},
 				"fred": {
 					"type": "button",

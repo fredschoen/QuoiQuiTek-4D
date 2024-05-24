@@ -92,17 +92,23 @@
 				},
 				"btTrace": {
 					"type": "button",
-					"text": "trace",
+					"text": "(t)race",
 					"top": 18,
 					"left": 650,
-					"width": 40,
+					"width": 35,
 					"height": 15,
 					"events": [
 						"onClick"
 					],
 					"style": "custom",
 					"method": "ObjectMethods/btTrace.4dm",
-					"borderStyle": "solid"
+					"borderStyle": "solid",
+					"fontSize": 10,
+					"shortcutAccel": true,
+					"shortcutControl": false,
+					"shortcutShift": false,
+					"shortcutAlt": false,
+					"shortcutKey": "t"
 				},
 				"btQuitter": {
 					"type": "button",
@@ -164,7 +170,7 @@
 			]
 		}
 	],
-	"geometryStamp": 38,
+	"geometryStamp": 42,
 	"method": "method.4dm",
 	"editor": {
 		"activeView": "View 1",

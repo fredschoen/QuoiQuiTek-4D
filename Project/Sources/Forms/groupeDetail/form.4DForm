@@ -212,7 +212,7 @@
 				},
 				"btTrace": {
 					"type": "button",
-					"text": "trace",
+					"text": "(t)race",
 					"top": 78,
 					"left": 943,
 					"width": 40,
@@ -222,7 +222,14 @@
 					],
 					"style": "custom",
 					"method": "ObjectMethods/btTrace.4dm",
-					"borderStyle": "solid"
+					"borderStyle": "solid",
+					"fontSize": 10,
+					"shortcutAccel": true,
+					"shortcutControl": false,
+					"shortcutShift": false,
+					"shortcutAlt": false,
+					"shortcutKey": "t"
+
 				},
 				"zMessage": {
 					"type": "input",

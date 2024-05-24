@@ -257,13 +257,13 @@
 					"width": 12,
 					"height": 16
 				},
-				"zposQuiSel_i": {
+				"zPos": {
 					"type": "input",
-					"left": 782,
+					"left": 786,
 					"top": 7,
 					"width": 31,
 					"height": 16,
-					"dataSource": "Form:C1466.posQuiSel_i",
+					"dataSource": "Form:C1466.posRoleSel_i",
 					"enterable": false,
 					"dataSourceTypeHint": "integer",
 					"focusable": false,
@@ -278,18 +278,18 @@
 					"width": 12,
 					"height": 16
 				},
-				"zQuiListelength": {
+				"zLength": {
 					"type": "input",
-					"left": 833,
+					"left": 828,
 					"top": 7,
 					"width": 31,
 					"height": 16,
-					"dataSource": "Form:C1466.qui_es.length",
+					"dataSource": "Form:C1466.role_es.length",
 					"enterable": false,
 					"dataSourceTypeHint": "integer",
 					"focusable": false,
 					"borderStyle": "none",
-					"textAlign": "right"
+					"textAlign": "left"
 				},
 				"zForm_eleCouQui_ID": {
 					"type": "input",
@@ -808,17 +808,23 @@
 				},
 				"btTrace": {
 					"type": "button",
-					"text": "trace",
+					"text": "(t)race",
 					"top": 24,
 					"left": 1009,
-					"width": 40,
+					"width": 35,
 					"height": 15,
 					"events": [
 						"onClick"
 					],
 					"style": "custom",
 					"method": "ObjectMethods/btTrace.4dm",
-					"borderStyle": "solid"
+					"borderStyle": "solid",
+					"fontSize": 10,
+					"shortcutAccel": true,
+					"shortcutControl": false,
+					"shortcutShift": false,
+					"shortcutAlt": false,
+					"shortcutKey": "t"
 				},
 				"lb_lesQuoisDuQui": {
 					"type": "listbox",
@@ -1205,8 +1211,8 @@
 				"btDernier",
 				"btSauver",
 				"btSupprimerRole",
-				"zposQuiSel_i",
-				"zQuiListelength",
+				"zPos",
+				"zLength",
 				"zQuiID",
 				"zForm_eleCouQui_ID",
 				"ge",
@@ -1220,7 +1226,7 @@
 			]
 		}
 	],
-	"geometryStamp": 611,
+	"geometryStamp": 622,
 	"method": "method.4dm",
 	"editor": {
 		"groups": {

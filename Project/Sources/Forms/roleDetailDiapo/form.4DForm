@@ -32,8 +32,8 @@
 					"text": "Suivant",
 					"top": 3,
 					"left": 1,
-					"width": 100,
-					"height": 24,
+					"width": 90,
+					"height": 20,
 					"events": [
 						"onClick"
 					],
@@ -45,15 +45,17 @@
 					"shortcutControl": false,
 					"shortcutShift": false,
 					"shortcutAlt": false,
-					"shortcutKey": "s"
+					"shortcutKey": "s",
+					"style": "regular",
+					"borderStyle": "none"
 				},
 				"btPrecedent": {
 					"type": "button",
 					"text": "Précédent",
-					"top": 29,
+					"top": 23,
 					"left": 1,
-					"width": 100,
-					"height": 24,
+					"width": 90,
+					"height": 20,
 					"events": [
 						"onClick"
 					],
@@ -65,73 +67,45 @@
 					"shortcutControl": false,
 					"shortcutShift": false,
 					"shortcutAlt": false,
-					"shortcutKey": "p"
+					"shortcutKey": "p",
+					"style": "regular",
+					"borderStyle": "none"
 				},
 				"btPremier": {
 					"type": "button",
 					"text": "Premier",
-					"top": 53,
+					"top": 43,
 					"left": 1,
-					"width": 100,
-					"height": 24,
+					"width": 90,
+					"height": 20,
 					"events": [
 						"onClick"
 					],
-					"method": "ObjectMethods/btPremier.4dm"
+					"method": "ObjectMethods/btPremier.4dm",
+					"style": "regular",
+					"borderStyle": "none"
 				},
 				"btDernier": {
 					"type": "button",
 					"text": "Dernier",
-					"top": 80,
+					"top": 63,
 					"left": 1,
-					"width": 100,
-					"height": 24,
+					"width": 90,
+					"height": 20,
 					"events": [
 						"onClick"
 					],
-					"method": "ObjectMethods/btDernier.4dm"
-				},
-				"zposQuiSel_i": {
-					"type": "input",
-					"left": -2,
-					"top": 339,
-					"width": 31,
-					"height": 16,
-					"dataSource": "Form:C1466.posQuiSel_i",
-					"enterable": false,
-					"dataSourceTypeHint": "integer",
-					"focusable": false,
-					"borderStyle": "none",
-					"textAlign": "right"
-				},
-				"label6": {
-					"type": "text",
-					"text": "/",
-					"top": 339,
-					"left": 36,
-					"width": 12,
-					"height": 16
-				},
-				"zQuiListelength": {
-					"type": "input",
-					"left": 49,
-					"top": 339,
-					"width": 31,
-					"height": 16,
-					"dataSource": "Form:C1466.qui_es.length",
-					"enterable": false,
-					"dataSourceTypeHint": "integer",
-					"focusable": false,
-					"borderStyle": "none",
-					"textAlign": "right"
+					"method": "ObjectMethods/btDernier.4dm",
+					"style": "regular",
+					"borderStyle": "none"
 				},
 				"btSauver": {
 					"type": "button",
 					"text": "Sauver",
-					"top": 109,
+					"top": 83,
 					"left": 1,
-					"width": 100,
-					"height": 22,
+					"width": 90,
+					"height": 20,
 					"events": [
 						"onClick"
 					],
@@ -145,21 +119,21 @@
 					"tooltip": {
 						"$ref": "/SOURCES/tips.json#/RaccourciSauver"
 					},
-					"style": "custom",
-					"borderStyle": "raised"
+					"style": "regular",
+					"borderStyle": "none"
 				},
 				"fieldDescrNom": {
 					"type": "input",
 					"dataSource": "Form:C1466.role_e.Descr",
-					"top": 252,
-					"left": 1,
-					"width": 100,
-					"height": 48
+					"top": 248,
+					"left": 0,
+					"width": 90,
+					"height": 80
 				},
 				"label_age": {
 					"type": "text",
 					"text": "Age:",
-					"top": 234,
+					"top": 231,
 					"left": 1,
 					"width": 90,
 					"height": 15
@@ -167,7 +141,7 @@
 				"ge": {
 					"type": "input",
 					"dataSource": "Form:C1466.role_e.getAge()",
-					"top": 234,
+					"top": 231,
 					"left": 40,
 					"width": 30,
 					"height": 16,
@@ -177,23 +151,23 @@
 				"btSupprimerRole": {
 					"type": "button",
 					"text": "Supprimer rôle",
-					"top": 136,
+					"top": 102,
 					"left": 1,
-					"width": 100,
-					"height": 21,
+					"width": 90,
+					"height": 20,
 					"events": [
 						"onClick"
 					],
 					"method": "ObjectMethods/btSupprimerRole.4dm",
-					"style": "custom",
-					"borderStyle": "raised"
+					"style": "regular",
+					"borderStyle": "none"
 				},
 				"btTrace": {
 					"type": "button",
 					"text": "(t)race",
-					"top": 320,
-					"left": -1,
-					"width": 40,
+					"top": 357,
+					"left": 1,
+					"width": 35,
 					"height": 15,
 					"events": [
 						"onClick"
@@ -201,6 +175,7 @@
 					"style": "custom",
 					"method": "ObjectMethods/btTrace.4dm",
 					"borderStyle": "solid",
+					"fontSize": 10,
 					"shortcutAccel": true,
 					"shortcutControl": false,
 					"shortcutShift": false,
@@ -210,21 +185,23 @@
 				"btQuitter": {
 					"type": "button",
 					"text": "Quitter",
-					"top": 161,
+					"top": 122,
 					"left": 1,
-					"width": 100,
+					"width": 90,
 					"height": 20,
 					"events": [
 						"onClick"
 					],
-					"action": "cancel"
+					"action": "cancel",
+					"style": "regular",
+					"borderStyle": "none"
 				},
 				"zMessage": {
 					"type": "input",
 					"left": 1,
-					"top": 186,
-					"width": 100,
-					"height": 48,
+					"top": 147,
+					"width": 90,
+					"height": 80,
 					"dataSource": "Form:C1466.message",
 					"enterable": false,
 					"dataSourceTypeHint": "text",
@@ -234,10 +211,10 @@
 				},
 				"rolePhoto_ZS1": {
 					"type": "input",
-					"left": 105,
+					"left": 94,
 					"top": 3,
-					"width": 420,
-					"height": 368,
+					"width": 571,
+					"height": 432,
 					"dataSourceTypeHint": "picture",
 					"dataSource": "Form:C1466.photoRole_i",
 					"pictureFormat": "proportionalCenter",
@@ -251,9 +228,9 @@
 				"btCopier": {
 					"type": "button",
 					"text": "copie(r) remarque",
-					"top": 301,
+					"top": 336,
 					"left": 1,
-					"width": 100,
+					"width": 90,
 					"height": 18,
 					"events": [
 						"onClick"
@@ -265,6 +242,40 @@
 					"shortcutKey": "r",
 					"method": "ObjectMethods/btCopier.4dm",
 					"fontSize": 10
+				},
+				"zPos": {
+					"type": "input",
+					"left": 1,
+					"top": 379,
+					"width": 31,
+					"height": 16,
+					"dataSource": "Form:C1466.posRoleSel_i",
+					"enterable": false,
+					"dataSourceTypeHint": "integer",
+					"focusable": false,
+					"borderStyle": "none",
+					"textAlign": "right"
+				},
+				"label6": {
+					"type": "text",
+					"text": "/",
+					"top": 379,
+					"left": 35,
+					"width": 12,
+					"height": 16
+				},
+				"zLength": {
+					"type": "input",
+					"left": 43,
+					"top": 379,
+					"width": 31,
+					"height": 16,
+					"dataSource": "Form:C1466.role_es.length",
+					"enterable": false,
+					"dataSourceTypeHint": "integer",
+					"focusable": false,
+					"borderStyle": "none",
+					"textAlign": "left"
 				}
 			},
 			"entryOrder": [
@@ -276,17 +287,17 @@
 				"btDernier",
 				"btSauver",
 				"btSupprimerRole",
-				"zposQuiSel_i",
-				"zQuiListelength",
 				"ge",
 				"btTrace",
 				"btQuitter",
 				"zMessage",
-				"btCopier"
+				"btCopier",
+				"zPos",
+				"zLength"
 			]
 		}
 	],
-	"geometryStamp": 671,
+	"geometryStamp": 897,
 	"method": "method.4dm",
 	"editor": {
 		"activeView": "View 1",

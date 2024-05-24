@@ -98,7 +98,7 @@
 				},
 				"btTrace": {
 					"type": "button",
-					"text": "trace",
+					"text": "(t)race",
 					"top": 355,
 					"left": 5,
 					"width": 35,
@@ -109,7 +109,13 @@
 					"style": "custom",
 					"method": "ObjectMethods/btTrace.4dm",
 					"borderStyle": "solid",
-					"fontSize": 10
+					"fontSize": 10,
+					"shortcutAccel": true,
+					"shortcutControl": false,
+					"shortcutShift": false,
+					"shortcutAlt": false,
+					"shortcutKey": "t"
+
 				},
 				"btQuitter": {
 					"type": "button",

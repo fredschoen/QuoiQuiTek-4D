@@ -315,17 +315,23 @@
 				},
 				"btTrace": {
 					"type": "button",
-					"text": "trace",
+					"text": "(t)race",
 					"top": 25,
 					"left": 966,
-					"width": 40,
+					"width": 35,
 					"height": 15,
 					"events": [
 						"onClick"
 					],
 					"style": "custom",
 					"method": "ObjectMethods/btTrace.4dm",
-					"borderStyle": "solid"
+					"borderStyle": "solid",
+					"fontSize": 10,
+					"shortcutAccel": true,
+					"shortcutControl": false,
+					"shortcutShift": false,
+					"shortcutAlt": false,
+					"shortcutKey": "t"
 				},
 				"btQuitter": {
 					"type": "button",
@@ -401,6 +407,19 @@
 					"shortcutShift": false,
 					"shortcutAlt": false,
 					"shortcutKey": "d"
+				},
+				"zLength": {
+					"type": "input",
+					"left": 669,
+					"top": 12,
+					"width": 31,
+					"height": 16,
+					"dataSource": "Form:C1466.role_es.length",
+					"enterable": false,
+					"dataSourceTypeHint": "integer",
+					"focusable": false,
+					"borderStyle": "none",
+					"textAlign": "right"
 				}
 			},
 			"entryOrder": [
@@ -416,11 +435,12 @@
 				"zCritereDateO",
 				"lb_roleListe",
 				"btTrace",
-				"bDiapo"
+				"bDiapo",
+				"zLength"
 			]
 		}
 	],
-	"geometryStamp": 872,
+	"geometryStamp": 874,
 	"method": "method.4dm",
 	"editor": {
 		"activeView": "View 1",
