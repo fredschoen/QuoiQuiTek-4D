@@ -28,13 +28,14 @@ Else
 End if 
 
 // pour "ld_domaineQui"
-$i:=Storage:C1525.domaineQui.indexOf(Form:C1466.qui_e.Domaine)
-If ($i=-1)
-	//valeur non trouvée dans la liste déroulante
-	OBJECT Get pointer:C1124(Object named:K67:5; "ld_domaineQui")->index:=-1
-	OBJECT Get pointer:C1124(Object named:K67:5; "ld_domaineQui")->currentValue:=Form:C1466.qui_e.Domaine
-Else 
-	//valeur trouvée dans la liste déroulante
-	OBJECT Get pointer:C1124(Object named:K67:5; "ld_domaineQui")->index:=$i
+If (Form:C1466.utilisationListe#"DIAPO")
+	$i:=Storage:C1525.domaineQui.indexOf(Form:C1466.qui_e.Domaine)
+	If ($i=-1)
+		//valeur non trouvée dans la liste déroulante
+		OBJECT Get pointer:C1124(Object named:K67:5; "ld_domaineQui")->index:=-1
+		OBJECT Get pointer:C1124(Object named:K67:5; "ld_domaineQui")->currentValue:=Form:C1466.qui_e.Domaine
+	Else 
+		//valeur trouvée dans la liste déroulante
+		OBJECT Get pointer:C1124(Object named:K67:5; "ld_domaineQui")->index:=$i
+	End if 
 End if 
-

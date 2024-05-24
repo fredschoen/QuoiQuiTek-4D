@@ -1,0 +1,327 @@
+{
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"windowSizingX": "variable",
+	"windowSizingY": "variable",
+	"windowMinWidth": 0,
+	"windowMinHeight": 0,
+	"windowMaxWidth": 32767,
+	"windowMaxHeight": 32767,
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onDoubleClick",
+		"onUnload",
+		"onAfterKeystroke"
+	],
+	"windowTitle": "Détail du Role",
+	"destination": "detailScreen",
+	"pages": [
+		{
+			"objects": {}
+		},
+		{
+			"objects": {
+				"btSuivant": {
+					"type": "button",
+					"text": "Suivant",
+					"top": 3,
+					"left": 1,
+					"width": 90,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/btSuivant.4dm",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/RaccourciSuivant"
+					},
+					"shortcutAccel": true,
+					"shortcutControl": false,
+					"shortcutShift": false,
+					"shortcutAlt": false,
+					"shortcutKey": "s",
+					"style": "regular",
+					"borderStyle": "none"
+				},
+				"btPrecedent": {
+					"type": "button",
+					"text": "Précédent",
+					"top": 23,
+					"left": 1,
+					"width": 90,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/btPrecedent.4dm",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/RaccourciPreced"
+					},
+					"shortcutAccel": true,
+					"shortcutControl": false,
+					"shortcutShift": false,
+					"shortcutAlt": false,
+					"shortcutKey": "p",
+					"style": "regular",
+					"borderStyle": "none"
+				},
+				"btPremier": {
+					"type": "button",
+					"text": "Premier",
+					"top": 43,
+					"left": 1,
+					"width": 90,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/btPremier.4dm",
+					"style": "regular",
+					"borderStyle": "none"
+				},
+				"btDernier": {
+					"type": "button",
+					"text": "Dernier",
+					"top": 63,
+					"left": 1,
+					"width": 90,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/btDernier.4dm",
+					"style": "regular",
+					"borderStyle": "none"
+				},
+				"btSauver": {
+					"type": "button",
+					"text": "Sauver",
+					"top": 83,
+					"left": 1,
+					"width": 90,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"defaultButton": true,
+					"method": "ObjectMethods/btSauver.4dm",
+					"shortcutAccel": true,
+					"shortcutControl": false,
+					"shortcutShift": false,
+					"shortcutAlt": false,
+					"shortcutKey": "w",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/RaccourciSauver"
+					},
+					"style": "regular",
+					"borderStyle": "none"
+				},
+				"label_age": {
+					"type": "text",
+					"text": "Age:",
+					"top": 231,
+					"left": 1,
+					"width": 90,
+					"height": 15
+				},
+				"zAge": {
+					"type": "input",
+					"dataSource": "Form:C1466.qui_e.getAge()",
+					"top": 231,
+					"left": 40,
+					"width": 30,
+					"height": 16,
+					"enterable": false,
+					"focusable": false
+				},
+				"btSupprimer": {
+					"type": "button",
+					"text": "Supprimer qui",
+					"top": 102,
+					"left": 1,
+					"width": 90,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/btSupprimer.4dm",
+					"style": "regular",
+					"borderStyle": "none"
+				},
+				"btTrace": {
+					"type": "button",
+					"text": "(t)race",
+					"top": 357,
+					"left": 1,
+					"width": 35,
+					"height": 15,
+					"events": [
+						"onClick"
+					],
+					"style": "custom",
+					"method": "mBtTrace",
+					"borderStyle": "solid",
+					"fontSize": 10,
+					"shortcutAccel": true,
+					"shortcutControl": false,
+					"shortcutShift": false,
+					"shortcutAlt": false,
+					"shortcutKey": "t"
+				},
+				"btQuitter": {
+					"type": "button",
+					"text": "Quitter",
+					"top": 122,
+					"left": 1,
+					"width": 90,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"action": "cancel",
+					"style": "regular",
+					"borderStyle": "none"
+				},
+				"zMessage": {
+					"type": "input",
+					"left": 1,
+					"top": 147,
+					"width": 90,
+					"height": 80,
+					"dataSource": "Form:C1466.message",
+					"enterable": false,
+					"dataSourceTypeHint": "text",
+					"fill": "#ffff00",
+					"fontWeight": "bold",
+					"textAlign": "center"
+				},
+				"zsPhoto": {
+					"type": "input",
+					"left": 94,
+					"top": 3,
+					"width": 571,
+					"height": 432,
+					"dataSourceTypeHint": "picture",
+					"dataSource": "Form:C1466.photoQui_i",
+					"pictureFormat": "proportionalCenter",
+					"events": [
+						"onDoubleClick"
+					],
+					"method": "ObjectMethods/zsPhoto.4dm",
+					"sizingX": "grow",
+					"sizingY": "grow"
+				},
+				"btCopier": {
+					"type": "button",
+					"text": "copie(r) remarque",
+					"top": 336,
+					"left": 1,
+					"width": 90,
+					"height": 18,
+					"events": [
+						"onClick"
+					],
+					"shortcutAccel": true,
+					"shortcutControl": false,
+					"shortcutShift": false,
+					"shortcutAlt": false,
+					"shortcutKey": "r",
+					"method": "mBtCopier",
+					"fontSize": 10
+				},
+				"zPos": {
+					"type": "input",
+					"left": 1,
+					"top": 379,
+					"width": 31,
+					"height": 16,
+					"dataSource": "Form:C1466.posQuiSel_i",
+					"enterable": false,
+					"dataSourceTypeHint": "integer",
+					"focusable": false,
+					"borderStyle": "none",
+					"textAlign": "right"
+				},
+				"label6": {
+					"type": "text",
+					"text": "/",
+					"top": 379,
+					"left": 35,
+					"width": 12,
+					"height": 16
+				},
+				"zLength": {
+					"type": "input",
+					"left": 43,
+					"top": 379,
+					"width": 31,
+					"height": 16,
+					"dataSource": "Form:C1466.qui_es.length",
+					"enterable": false,
+					"dataSourceTypeHint": "integer",
+					"focusable": false,
+					"borderStyle": "none",
+					"textAlign": "left"
+				},
+				"zInfo": {
+					"type": "input",
+					"dataSource": "Form:C1466.qui_e.Info",
+					"top": 252,
+					"left": 1,
+					"width": 90,
+					"height": 80
+				},
+				"btQui": {
+					"type": "button",
+					"text": "Qu(i)",
+					"top": 394,
+					"left": 3,
+					"width": 41,
+					"height": 21,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/btQui.4dm",
+					"shortcutAccel": true,
+					"shortcutControl": false,
+					"shortcutShift": false,
+					"shortcutAlt": false,
+					"shortcutKey": "i"
+				}
+			},
+			"entryOrder": [
+				"zsPhoto",
+				"btSuivant",
+				"btPrecedent",
+				"btPremier",
+				"btDernier",
+				"btSauver",
+				"btSupprimer",
+				"btQuitter",
+				"zMessage",
+				"zAge",
+				"zInfo",
+				"btCopier",
+				"btTrace",
+				"zPos",
+				"zLength",
+				"btQui"
+			]
+		}
+	],
+	"geometryStamp": 914,
+	"method": "method.4dm",
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {}
+		}
+	}
+}

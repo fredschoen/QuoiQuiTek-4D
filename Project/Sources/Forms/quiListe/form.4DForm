@@ -434,6 +434,23 @@
 					"shortcutShift": false,
 					"shortcutAlt": false,
 					"shortcutKey": "c"
+				},
+				"btDiapo": {
+					"type": "button",
+					"text": "(D)iapo",
+					"top": 106,
+					"left": 920,
+					"width": 60,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/btDiapo.4dm",
+					"shortcutAccel": true,
+					"shortcutControl": false,
+					"shortcutShift": false,
+					"shortcutAlt": false,
+					"shortcutKey": "d"
 				}
 			},
 			"entryOrder": [
@@ -456,11 +473,12 @@
 				"btTrace",
 				"zNbre",
 				"zLength",
-				"btCopier"
+				"btCopier",
+				"btDiapo"
 			]
 		}
 	],
-	"geometryStamp": 3110,
+	"geometryStamp": 3112,
 	"method": "method.4dm",
 	"editor": {
 		"activeView": "View 1",
