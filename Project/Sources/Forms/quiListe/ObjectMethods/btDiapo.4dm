@@ -15,6 +15,10 @@ If (Form:C1466.posQuiSel_i<1)
 	
 End if 
 
+//trier la liste
+trier_QuiListe
+
+//nouvelle fenetre
 $form_o:=New object:C1471
 $form_o.action:="MODIFIER"
 $form_o.page:=1

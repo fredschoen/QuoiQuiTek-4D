@@ -63,7 +63,8 @@
 							"enterable": false,
 							"header": {
 								"text": "Nom",
-								"name": "eNomQui1"
+								"name": "eNom",
+								"dataSource": "eNom"
 							},
 							"footer": {
 								"name": "8"
@@ -76,7 +77,8 @@
 							"enterable": false,
 							"header": {
 								"text": "Prénom",
-								"name": "ePrenomQui"
+								"name": "ePrenom",
+								"dataSource": "ePrenom"
 							},
 							"footer": {
 								"name": "7"
@@ -89,7 +91,8 @@
 							"enterable": false,
 							"header": {
 								"text": "Genre",
-								"name": "4"
+								"name": "eGenre",
+								"dataSource": "eGenre"
 							},
 							"footer": {
 								"name": "5"
@@ -103,7 +106,8 @@
 							"enterable": false,
 							"header": {
 								"text": "Pays",
-								"name": "10"
+								"name": "ePays",
+								"dataSource": "ePays"
 							},
 							"footer": {
 								"name": "11"
@@ -117,7 +121,8 @@
 							"enterable": false,
 							"header": {
 								"text": "Date Naiss",
-								"name": "2"
+								"name": "eDateNaiss",
+								"dataSource": "eDateNaiss"
 							},
 							"footer": {
 								"name": "3"
@@ -131,7 +136,8 @@
 							"enterable": false,
 							"header": {
 								"text": "Deces",
-								"name": "Entête7"
+								"name": "eDateDeces",
+								"dataSource": "eDateDeces"
 							},
 							"footer": {
 								"name": "34"
@@ -145,7 +151,8 @@
 							"enterable": false,
 							"header": {
 								"text": "Dom",
-								"name": "eDom"
+								"name": "eDomaine",
+								"dataSource": "eDomaine"
 							},
 							"footer": {
 								"name": "35"
@@ -159,7 +166,8 @@
 							"enterable": false,
 							"header": {
 								"text": "Style",
-								"name": "eStyle"
+								"name": "eStyle",
+								"dataSource": "eStyle"
 							},
 							"footer": {
 								"name": "6"
@@ -173,7 +181,8 @@
 							"enterable": false,
 							"header": {
 								"text": "Info",
-								"name": "eInfo"
+								"name": "eInfo",
+								"dataSource": "eInfo"
 							},
 							"footer": {
 								"name": "1"
@@ -183,7 +192,8 @@
 						{
 							"header": {
 								"name": "eAge",
-								"text": "Age"
+								"text": "Age",
+								"dataSource": "eAge"
 							},
 							"name": "cAge",
 							"dataSource": "This:C1470.getAge()",
@@ -478,7 +488,7 @@
 			]
 		}
 	],
-	"geometryStamp": 3112,
+	"geometryStamp": 3120,
 	"method": "method.4dm",
 	"editor": {
 		"activeView": "View 1",

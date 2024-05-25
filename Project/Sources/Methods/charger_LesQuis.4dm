@@ -54,3 +54,6 @@ Else
 End if 
 
 Form:C1466.qui_es:=$qui_es.orderBy("Nom")
+
+//trier la liste
+trier_QuiListe

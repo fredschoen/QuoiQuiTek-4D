@@ -17,19 +17,19 @@ Case of
 		Form:C1466.quoi_es:=Form:C1466.quoi_es.orderBy("Genre desc")
 		
 	: (ePays=1)
-		Form:C1466.quoi_es:=Form:C1466.quoi_es.orderBy("Pays")
+		Form:C1466.quoi_es:=Form:C1466.quoi_es.orderBy("Pays; Nom")
 	: (ePays=2)
-		Form:C1466.quoi_es:=Form:C1466.quoi_es.orderBy("Pays desc")
+		Form:C1466.quoi_es:=Form:C1466.quoi_es.orderBy("Pays desc; Nom desc")
 		
 	: (eStock=1)
-		Form:C1466.quoi_es:=Form:C1466.quoi_es.orderBy("Stock")
+		Form:C1466.quoi_es:=Form:C1466.quoi_es.orderBy("Stock; Nom")
 	: (eStock=2)
-		Form:C1466.quoi_es:=Form:C1466.quoi_es.orderBy("Stock desc")
+		Form:C1466.quoi_es:=Form:C1466.quoi_es.orderBy("Stock desc; Nom desc")
 		
 	: (eDate=1)
-		Form:C1466.quoi_es:=Form:C1466.quoi_es.orderBy("Date")
+		Form:C1466.quoi_es:=Form:C1466.quoi_es.orderBy("Date; Nom")
 	: (eDate=2)
-		Form:C1466.quoi_es:=Form:C1466.quoi_es.orderBy("Date desc")
+		Form:C1466.quoi_es:=Form:C1466.quoi_es.orderBy("Date desc; Nom desc")
 		
 	Else 
 		Form:C1466.quoi_es:=Form:C1466.quoi_es.orderBy("Nom")

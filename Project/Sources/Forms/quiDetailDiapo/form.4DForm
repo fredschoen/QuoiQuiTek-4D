@@ -293,6 +293,47 @@
 					"shortcutShift": false,
 					"shortcutAlt": false,
 					"shortcutKey": "i"
+				},
+				"btMaxMin": {
+					"type": "button",
+					"text": "(M)ax/min",
+					"top": 357,
+					"left": 39,
+					"width": 50,
+					"height": 15,
+					"events": [
+						"onClick"
+					],
+					"style": "custom",
+					"method": "ObjectMethods/btMaxMin.4dm",
+					"borderStyle": "solid",
+					"fontSize": 10,
+					"shortcutAccel": true,
+					"shortcutControl": false,
+					"shortcutShift": false,
+					"shortcutAlt": false,
+					"shortcutKey": "m"
+				},
+				"btFiltrePhoto": {
+					"type": "button",
+					"text": "avec (F)iltre",
+					"top": 415,
+					"left": 3,
+					"width": 81,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"style": "regular",
+					"method": "ObjectMethods/btFiltrePhoto.4dm",
+					"borderStyle": "none",
+					"fontSize": 10,
+					"shortcutAccel": true,
+					"shortcutControl": false,
+					"shortcutShift": false,
+					"shortcutAlt": false,
+					"shortcutKey": "f",
+					"stroke": "automatic"
 				}
 			},
 			"entryOrder": [
@@ -311,11 +352,13 @@
 				"btTrace",
 				"zPos",
 				"zLength",
-				"btQui"
+				"btQui",
+				"btMaxMin",
+				"btFiltrePhoto"
 			]
 		}
 	],
-	"geometryStamp": 914,
+	"geometryStamp": 923,
 	"method": "method.4dm",
 	"editor": {
 		"activeView": "View 1",

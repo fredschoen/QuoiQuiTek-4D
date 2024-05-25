@@ -4,7 +4,7 @@ Case of
 	: (Form event code:C388=On Load:K2:1)
 		
 		Form:C1466.utilisationListe:="DIAPO"
-		
+		Form:C1466.filtrePhoto_b:=False:C215
 		charger_unQui()
 		//visibilité des boutons de navigation
 		visibleBtNavig(Num:C11(Form:C1466.qui_es.length))
