@@ -280,8 +280,8 @@
 				"btQuoi": {
 					"type": "button",
 					"text": "Qu(o)i",
-					"top": 414,
-					"left": 1,
+					"top": 394,
+					"left": 41,
 					"width": 43,
 					"height": 21,
 					"events": [
@@ -299,7 +299,7 @@
 					"text": "Qu(i)",
 					"top": 394,
 					"left": 3,
-					"width": 41,
+					"width": 38,
 					"height": 21,
 					"events": [
 						"onClick"
@@ -310,6 +310,47 @@
 					"shortcutShift": false,
 					"shortcutAlt": false,
 					"shortcutKey": "i"
+				},
+				"btFiltrePhoto": {
+					"type": "button",
+					"text": "avec (F)iltre",
+					"top": 415,
+					"left": 3,
+					"width": 81,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"style": "regular",
+					"method": "mBtFiltrePhoto",
+					"borderStyle": "none",
+					"fontSize": 10,
+					"shortcutAccel": true,
+					"shortcutControl": false,
+					"shortcutShift": false,
+					"shortcutAlt": false,
+					"shortcutKey": "f",
+					"stroke": "automatic"
+				},
+				"btMaxMin": {
+					"type": "button",
+					"text": "(M)ax/min",
+					"top": 357,
+					"left": 39,
+					"width": 50,
+					"height": 15,
+					"events": [
+						"onClick"
+					],
+					"style": "custom",
+					"method": "ObjectMethods/btMaxMin.4dm",
+					"borderStyle": "solid",
+					"fontSize": 10,
+					"shortcutAccel": true,
+					"shortcutControl": false,
+					"shortcutShift": false,
+					"shortcutAlt": false,
+					"shortcutKey": "m"
 				}
 			},
 			"entryOrder": [
@@ -329,11 +370,13 @@
 				"zPos",
 				"zLength",
 				"btQuoi",
-				"btQui"
+				"btQui",
+				"btFiltrePhoto",
+				"btMaxMin"
 			]
 		}
 	],
-	"geometryStamp": 905,
+	"geometryStamp": 914,
 	"method": "method.4dm",
 	"editor": {
 		"activeView": "View 1",

@@ -122,24 +122,6 @@
 					"style": "regular",
 					"borderStyle": "none"
 				},
-				"label_age": {
-					"type": "text",
-					"text": "Age:",
-					"top": 231,
-					"left": 1,
-					"width": 90,
-					"height": 15
-				},
-				"zAge": {
-					"type": "input",
-					"dataSource": "Form:C1466.qui_e.getAge()",
-					"top": 231,
-					"left": 40,
-					"width": 30,
-					"height": 16,
-					"enterable": false,
-					"focusable": false
-				},
 				"btSupprimer": {
 					"type": "button",
 					"text": "Supprimer qui",
@@ -232,8 +214,8 @@
 					"shortcutShift": false,
 					"shortcutAlt": false,
 					"shortcutKey": "r",
-					"method": "mBtCopier",
-					"fontSize": 10
+					"fontSize": 10,
+					"method": "mBtCopier"
 				},
 				"zPos": {
 					"type": "input",
@@ -271,11 +253,11 @@
 				},
 				"zInfo": {
 					"type": "input",
-					"dataSource": "Form:C1466.qui_e.Info",
-					"top": 252,
+					"dataSource": "Form:C1466.quoi_e.Info",
+					"top": 231,
 					"left": 1,
 					"width": 90,
-					"height": 80
+					"height": 96
 				},
 				"btQui": {
 					"type": "button",
@@ -346,7 +328,6 @@
 				"btSupprimer",
 				"btQuitter",
 				"zMessage",
-				"zAge",
 				"zInfo",
 				"btCopier",
 				"btTrace",
@@ -358,7 +339,7 @@
 			]
 		}
 	],
-	"geometryStamp": 923,
+	"geometryStamp": 926,
 	"method": "method.4dm",
 	"editor": {
 		"activeView": "View 1",

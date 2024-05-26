@@ -1,6 +1,7 @@
 //btDiapo
 var $pourSelectionner_b : Boolean
 
+//par défaut, sélection de la 1ère entity de la sélection
 If (Form:C1466.roleSel_e=Null:C1517)
 	If (Form:C1466.role_es=Null:C1517)
 		return 

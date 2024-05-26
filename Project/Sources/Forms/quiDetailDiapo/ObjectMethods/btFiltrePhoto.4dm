@@ -1,2 +1,0 @@
-//btFiltrePhoto
-mBtFiltrePhoto

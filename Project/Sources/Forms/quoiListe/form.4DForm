@@ -393,7 +393,7 @@
 				"btQuitter": {
 					"type": "button",
 					"text": "Quitter",
-					"top": 89,
+					"top": 83,
 					"left": 917,
 					"width": 93,
 					"height": 30,
@@ -450,6 +450,23 @@
 					"shortcutShift": false,
 					"shortcutAlt": false,
 					"shortcutKey": "c"
+				},
+				"btDiapo": {
+					"type": "button",
+					"text": "(D)iapo",
+					"top": 115,
+					"left": 917,
+					"width": 60,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/btDiapo.4dm",
+					"shortcutAccel": true,
+					"shortcutControl": false,
+					"shortcutShift": false,
+					"shortcutAlt": false,
+					"shortcutKey": "d"
 				}
 			},
 			"entryOrder": [
@@ -471,11 +488,12 @@
 				"btTrace",
 				"bTest",
 				"zFormquoiListelength",
-				"btCopier"
+				"btCopier",
+				"btDiapo"
 			]
 		}
 	],
-	"geometryStamp": 3446,
+	"geometryStamp": 3449,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",
