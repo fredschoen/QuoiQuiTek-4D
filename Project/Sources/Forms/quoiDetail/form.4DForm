@@ -699,7 +699,7 @@
 					],
 					"method": "ObjectMethods/Bouton.4dm"
 				},
-				"btCopier1": {
+				"btCopier": {
 					"type": "button",
 					"text": "copie(r) remarque",
 					"top": 33,
@@ -714,8 +714,9 @@
 					"shortcutShift": false,
 					"shortcutAlt": false,
 					"shortcutKey": "r",
-					"method": "ObjectMethods/btCopier1.4dm",
-					"fontSize": 10
+					"method": "mBtCopier",
+					"fontSize": 10,
+					"action": ""
 				}
 			},
 			"entryOrder": [
@@ -749,11 +750,11 @@
 				"zFormquoiListelength",
 				"btTrace",
 				"zMessage",
-				"btCopier1"
+				"btCopier"
 			]
 		}
 	],
-	"geometryStamp": 304,
+	"geometryStamp": 305,
 	"method": "method.4dm",
 	"editor": {
 		"activeView": "View 1",

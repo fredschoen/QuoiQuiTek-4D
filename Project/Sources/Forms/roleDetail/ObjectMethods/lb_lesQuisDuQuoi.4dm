@@ -11,7 +11,8 @@ If ($pourSelectionner_b)
 	$form_o.action:="MODIFIER"
 	$form_o.page:=1
 	$form_o.qui_e:=Form:C1466.roleDuQuoiSel_e.qui
-	
+	$form_o.qui_es:=ds:C1482.Qui.query("ID = :1"; $form_o.qui_e.ID)
+	$form_o.posQuiSel_i:=1
 	dialoguer("quiDetail"; $form_o)
 	
 End if 

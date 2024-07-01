@@ -189,8 +189,8 @@
 				"btTrace": {
 					"type": "button",
 					"text": "(t)race",
-					"top": 12,
-					"left": 409,
+					"top": 4,
+					"left": 1040,
 					"width": 35,
 					"height": 15,
 					"events": [
@@ -230,7 +230,7 @@
 					"columns": [
 						{
 							"header": {
-								"text": "Quoi",
+								"text": "Role",
 								"name": "eNomRole"
 							},
 							"name": "cNomQuoi1",
@@ -244,6 +244,23 @@
 							"width": 299
 						}
 					]
+				},
+				"btDiapo": {
+					"type": "button",
+					"text": "(D)iapo",
+					"top": 12,
+					"left": 292,
+					"width": 60,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/btDiapo.4dm",
+					"shortcutAccel": true,
+					"shortcutControl": false,
+					"shortcutShift": false,
+					"shortcutAlt": false,
+					"shortcutKey": "d"
 				}
 			},
 			"entryOrder": [
@@ -255,11 +272,12 @@
 				"List BoxQui",
 				"List BoxQuoi",
 				"btTrace",
-				"List BoxRole"
+				"List BoxRole",
+				"btDiapo"
 			]
 		}
 	],
-	"geometryStamp": 65,
+	"geometryStamp": 76,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",

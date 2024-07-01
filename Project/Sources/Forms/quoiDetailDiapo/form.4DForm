@@ -188,9 +188,9 @@
 					"left": 94,
 					"top": 3,
 					"width": 571,
-					"height": 432,
+					"height": 448,
 					"dataSourceTypeHint": "picture",
-					"dataSource": "Form:C1466.photoQui_i",
+					"dataSource": "Form:C1466.photoQuoi_i",
 					"pictureFormat": "proportionalCenter",
 					"events": [
 						"onDoubleClick"
@@ -316,6 +316,22 @@
 					"shortcutAlt": false,
 					"shortcutKey": "f",
 					"stroke": "automatic"
+				},
+				"label_Annee": {
+					"type": "text",
+					"text": "An:",
+					"top": 436,
+					"left": 3,
+					"width": 20,
+					"height": 18
+				},
+				"field_Date": {
+					"type": "input",
+					"dataSource": "Form:C1466.quoi_e.Date",
+					"top": 436,
+					"left": 23,
+					"width": 67,
+					"height": 17
 				}
 			},
 			"entryOrder": [
@@ -335,11 +351,12 @@
 				"zLength",
 				"btQui",
 				"btMaxMin",
-				"btFiltrePhoto"
+				"btFiltrePhoto",
+				"field_Date"
 			]
 		}
 	],
-	"geometryStamp": 926,
+	"geometryStamp": 979,
 	"method": "method.4dm",
 	"editor": {
 		"activeView": "View 1",

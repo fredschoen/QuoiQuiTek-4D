@@ -285,7 +285,12 @@
 						"onClick"
 					],
 					"method": "anneePlus",
-					"bottom": 42
+					"bottom": 42,
+					"shortcutAccel": true,
+					"shortcutControl": false,
+					"shortcutShift": false,
+					"shortcutAlt": false,
+					"shortcutKey": "+"
 				},
 				"bAnneeMoins": {
 					"type": "button",
@@ -298,7 +303,12 @@
 						"onClick"
 					],
 					"method": "anneeMoins",
-					"bottom": 42
+					"bottom": 42,
+					"shortcutAccel": true,
+					"shortcutControl": false,
+					"shortcutShift": false,
+					"shortcutAlt": false,
+					"shortcutKey": "-"
 				},
 				"bTest": {
 					"type": "button",

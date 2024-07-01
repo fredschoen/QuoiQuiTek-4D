@@ -19,9 +19,9 @@
 		<field name="ModifTS" uuid="F9D2CBE84792DC468DCFCC80CEF52CCD" type="10" limiting_length="19" never_null="true" id="15"/>
 		<primary_key field_name="ID" field_uuid="7D44AEC0186F8341BF2162AF1B5099CF"/>
 		<table_extra output_form="Sortie" input_form="Entree" trigger_update="true" trigger_insert="true">
-			<editor_table_info displayable_fields_count="17">
+			<editor_table_info displayable_fields_count="14">
 				<color red="255" green="255" blue="255" alpha="0"/>
-				<coordinates left="889" top="19" width="140" height="416.33203125"/>
+				<coordinates left="849" top="19" width="140" height="344.33203125"/>
 			</editor_table_info>
 		</table_extra>
 	</table>
@@ -89,16 +89,6 @@
 			</editor_table_info>
 		</table_extra>
 	</table>
-	<table name="(zzzzzzzzzzzzzzz)" uuid="B1B25763C6AF304A82A45FE6D9C2FCC3" id="5" hide_in_REST="true">
-		<field name="ID" uuid="8A81CA27FD5BC04E9D83D0C7DA23F37A" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
-		<primary_key field_name="ID" field_uuid="8A81CA27FD5BC04E9D83D0C7DA23F37A"/>
-		<table_extra trashed="true">
-			<editor_table_info fields_ordering="1" displayable_fields_count="6">
-				<color red="255" green="255" blue="255" alpha="0"/>
-				<coordinates left="40" top="287" width="120" height="167.33203125"/>
-			</editor_table_info>
-		</table_extra>
-	</table>
 	<table name="Poste" uuid="381A3D5B3CB3134294F031C4748A5E5E" id="6">
 		<field name="ID" uuid="12C98D30D7058942958D3D7D5552264A" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
 		<field name="ID_Qui" uuid="4C7F0C9CA313B84F8E7DD83637E45835" type="4" never_null="true" id="2"/>
@@ -123,7 +113,7 @@
 		<table_extra output_form="Formulaire1" input_form="Formulaire2">
 			<editor_table_info displayable_fields_count="4">
 				<color red="255" green="255" blue="255" alpha="0"/>
-				<coordinates left="1163" top="18" width="120" height="143.33203125"/>
+				<coordinates left="1082" top="31" width="120" height="143.33203125"/>
 			</editor_table_info>
 		</table_extra>
 	</table>
@@ -134,7 +124,7 @@
 		<table_extra>
 			<editor_table_info displayable_fields_count="2">
 				<color red="255" green="255" blue="255" alpha="0"/>
-				<coordinates left="1181" top="215" width="120" height="97.33203125"/>
+				<coordinates left="1092" top="222" width="120" height="97.33203125"/>
 			</editor_table_info>
 		</table_extra>
 	</table>
@@ -147,7 +137,7 @@
 		<table_extra>
 			<editor_table_info displayable_fields_count="6">
 				<color red="255" green="255" blue="255" alpha="0"/>
-				<coordinates left="1173" top="359" width="120" height="167.33203125"/>
+				<coordinates left="1094" top="342" width="120" height="167.33203125"/>
 			</editor_table_info>
 		</table_extra>
 	</table>
@@ -335,11 +325,6 @@
 	<index kind="regular" unique_keys="true" uuid="CC65B8E87EB229478F8179968628A4D3" type="7">
 		<field_ref uuid="BA8B66BE7CFF574583293FC8ACDA18A4" name="ID">
 			<table_ref uuid="243217DE4BE53A4CB5891E7DC0F906CD" name="Theme"/>
-		</field_ref>
-	</index>
-	<index kind="regular" unique_keys="true" uuid="D56B79129F466B479B367C3993B6468E" type="7">
-		<field_ref uuid="8A81CA27FD5BC04E9D83D0C7DA23F37A" name="ID">
-			<table_ref uuid="B1B25763C6AF304A82A45FE6D9C2FCC3" name="(zzzzzzzzzzzzzzz)"/>
 		</field_ref>
 	</index>
 	<index kind="regular" unique_keys="true" uuid="D6F56717C46B4EC88EE06C4F78B02A18" type="7">
