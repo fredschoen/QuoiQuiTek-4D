@@ -17,6 +17,7 @@
 		"onClick",
 		"onDoubleClick",
 		"onUnload",
+		"onTimer",
 		"onAfterKeystroke"
 	],
 	"windowTitle": "Détail du Role",
@@ -29,7 +30,7 @@
 			"objects": {
 				"btSuivant": {
 					"type": "button",
-					"text": "Suivant",
+					"text": "(S)uivant",
 					"top": 3,
 					"left": 1,
 					"width": 90,
@@ -51,7 +52,7 @@
 				},
 				"btPrecedent": {
 					"type": "button",
-					"text": "Précédent",
+					"text": "(P)récédent",
 					"top": 23,
 					"left": 1,
 					"width": 90,
@@ -282,7 +283,7 @@
 					"text": "Qu(i)",
 					"top": 394,
 					"left": 3,
-					"width": 41,
+					"width": 35,
 					"height": 21,
 					"events": [
 						"onClick"
@@ -334,6 +335,35 @@
 					"shortcutAlt": false,
 					"shortcutKey": "f",
 					"stroke": "automatic"
+				},
+				"btTimer": {
+					"type": "button",
+					"text": "Tim(e)r",
+					"top": 394,
+					"left": 39,
+					"width": 45,
+					"height": 21,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/btTimer.4dm",
+					"shortcutAccel": true,
+					"shortcutControl": false,
+					"shortcutShift": false,
+					"shortcutAlt": false,
+					"shortcutKey": "e"
+				},
+				"zInfo1": {
+					"type": "input",
+					"dataSource": "Form:C1466.ticksDiapo_i",
+					"top": 442,
+					"left": -1,
+					"width": 90,
+					"height": 20,
+					"events": [
+						"onLoad"
+					],
+					"method": "ObjectMethods/zInfo1.4dm"
 				}
 			},
 			"entryOrder": [
@@ -350,15 +380,17 @@
 				"zInfo",
 				"btCopier",
 				"btTrace",
+				"btMaxMin",
 				"zPos",
 				"zLength",
 				"btQui",
-				"btMaxMin",
-				"btFiltrePhoto"
+				"btTimer",
+				"btFiltrePhoto",
+				"zInfo1"
 			]
 		}
 	],
-	"geometryStamp": 923,
+	"geometryStamp": 943,
 	"method": "method.4dm",
 	"editor": {
 		"activeView": "View 1",

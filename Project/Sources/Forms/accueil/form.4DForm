@@ -83,7 +83,7 @@
 					"type": "button",
 					"text": "(R)ole",
 					"top": 273,
-					"left": 227,
+					"left": 155,
 					"width": 105,
 					"height": 20,
 					"events": [
@@ -99,7 +99,7 @@
 				"btTrace": {
 					"type": "button",
 					"text": "(t)race",
-					"top": 355,
+					"top": 336,
 					"left": 5,
 					"width": 35,
 					"height": 14,
@@ -119,7 +119,7 @@
 				"btQuitter": {
 					"type": "button",
 					"text": "Quitter",
-					"top": 349,
+					"top": 330,
 					"left": 494,
 					"width": 60,
 					"height": 20,
@@ -148,7 +148,7 @@
 				"bExportPhotos": {
 					"type": "button",
 					"text": "Export Photos",
-					"top": 347,
+					"top": 330,
 					"left": 283,
 					"width": 105,
 					"height": 20,
@@ -160,8 +160,8 @@
 				"bParametres": {
 					"type": "button",
 					"text": "(P)aramètres",
-					"top": 299,
-					"left": 342,
+					"top": 273,
+					"left": 405,
 					"width": 105,
 					"height": 20,
 					"events": [
@@ -177,7 +177,7 @@
 				"bSauvegarder": {
 					"type": "button",
 					"text": "Sauvegarder",
-					"top": 349,
+					"top": 330,
 					"left": 395,
 					"width": 95,
 					"height": 20,
@@ -190,7 +190,7 @@
 					"type": "button",
 					"text": "(T)heme",
 					"top": 273,
-					"left": 342,
+					"left": 280,
 					"width": 105,
 					"height": 20,
 					"events": [
@@ -202,23 +202,6 @@
 					"shortcutShift": false,
 					"shortcutAlt": false,
 					"shortcutKey": "t"
-				},
-				"btDiaporama": {
-					"type": "button",
-					"text": "(D)iapo",
-					"top": 299,
-					"left": 227,
-					"width": 105,
-					"height": 20,
-					"events": [
-						"onClick"
-					],
-					"method": "ObjectMethods/btDiaporama.4dm",
-					"shortcutAccel": true,
-					"shortcutControl": false,
-					"shortcutShift": false,
-					"shortcutAlt": false,
-					"shortcutKey": "d"
 				}
 			},
 			"entryOrder": [
@@ -227,7 +210,6 @@
 				"bGroupe",
 				"bRole",
 				"bTheme",
-				"btDiaporama",
 				"bParametres",
 				"bExportPhotos",
 				"bSauvegarder",
@@ -236,7 +218,7 @@
 			]
 		}
 	],
-	"geometryStamp": 468,
+	"geometryStamp": 502,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",

@@ -717,6 +717,71 @@
 					"method": "mBtCopier",
 					"fontSize": 10,
 					"action": ""
+				},
+				"List Box": {
+					"type": "listbox",
+					"left": 978,
+					"top": 105,
+					"width": 114,
+					"height": 156,
+					"events": [
+						"onClick",
+						"onHeaderClick",
+						"onDataChange",
+						"onSelectionChange"
+					],
+					"dataSource": "Form:C1466.relTheme_es",
+					"listboxType": "collection",
+					"currentItemSource": "Form:C1466.relTheme_e",
+					"selectedItemsSource": "Form:C1466.relThemeSel_es",
+					"selectionMode": "single",
+					"sizingX": "move",
+					"sizingY": "move",
+					"columns": [
+						{
+							"header": {
+								"text": "Theme",
+								"name": "eNomTheme"
+							},
+							"name": "cNomTheme",
+							"footer": {
+								"name": "Pied2"
+							},
+							"dataSource": "This:C1470.theme.Nom",
+							"events": [
+								"onDataChange"
+							],
+							"method": "ObjectMethods/cNomTheme.4dm"
+						}
+					]
+				},
+				"bAddTheme": {
+					"type": "button",
+					"text": "+",
+					"top": 78,
+					"left": 980,
+					"width": 27,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/bAddTheme.4dm",
+					"sizingX": "move",
+					"sizingY": "move"
+				},
+				"bDelTheme": {
+					"type": "button",
+					"text": "-",
+					"top": 78,
+					"left": 1065,
+					"width": 27,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/bDelTheme.4dm",
+					"sizingX": "move",
+					"sizingY": "move"
 				}
 			},
 			"entryOrder": [
@@ -750,11 +815,14 @@
 				"zFormquoiListelength",
 				"btTrace",
 				"zMessage",
-				"btCopier"
+				"btCopier",
+				"List Box",
+				"bAddTheme",
+				"bDelTheme"
 			]
 		}
 	],
-	"geometryStamp": 305,
+	"geometryStamp": 333,
 	"method": "method.4dm",
 	"editor": {
 		"activeView": "View 1",

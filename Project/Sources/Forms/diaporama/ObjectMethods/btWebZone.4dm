@@ -1,4 +1,0 @@
-OBJECT SET VISIBLE:C603(*; "WebZone"; True:C214)
-OBJECT SET VISIBLE:C603(*; "InputZone"; False:C215)
-OBJECT SET VISIBLE:C603(*; "btWebZone"; False:C215)
-OBJECT SET VISIBLE:C603(*; "btInputZone"; True:C214)

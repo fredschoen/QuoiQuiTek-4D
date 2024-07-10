@@ -686,6 +686,7 @@
 					"listboxType": "collection",
 					"currentItemSource": "Form:C1466.relTheme_e",
 					"selectedItemsSource": "Form:C1466.relThemeSel_es",
+					"selectionMode": "single",
 					"columns": [
 						{
 							"header": {
@@ -696,7 +697,11 @@
 							"footer": {
 								"name": "Pied3"
 							},
-							"dataSource": "This:C1470.theme.Nom"
+							"dataSource": "This:C1470.theme.Nom",
+							"events": [
+								"onDataChange"
+							],
+							"method": "ObjectMethods/cNomTheme.4dm"
 						}
 					]
 				},
