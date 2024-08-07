@@ -99,8 +99,8 @@
 				"btTrace": {
 					"type": "button",
 					"text": "(t)race",
-					"top": 336,
-					"left": 5,
+					"top": 369,
+					"left": 6,
 					"width": 35,
 					"height": 14,
 					"events": [
@@ -119,8 +119,8 @@
 				"btQuitter": {
 					"type": "button",
 					"text": "Quitter",
-					"top": 330,
-					"left": 494,
+					"top": 366,
+					"left": 493,
 					"width": 60,
 					"height": 20,
 					"events": [
@@ -148,9 +148,9 @@
 				"bExportPhotos": {
 					"type": "button",
 					"text": "Export Photos",
-					"top": 330,
-					"left": 283,
-					"width": 105,
+					"top": 313,
+					"left": 218,
+					"width": 100,
 					"height": 20,
 					"events": [
 						"onClick"
@@ -177,9 +177,9 @@
 				"bSauvegarder": {
 					"type": "button",
 					"text": "Sauvegarder",
-					"top": 330,
-					"left": 395,
-					"width": 95,
+					"top": 313,
+					"left": 330,
+					"width": 100,
 					"height": 20,
 					"events": [
 						"onClick"
@@ -202,6 +202,30 @@
 					"shortcutShift": false,
 					"shortcutAlt": false,
 					"shortcutKey": "t"
+				},
+				"bExportData": {
+					"type": "button",
+					"text": "Export Data",
+					"top": 339,
+					"left": 218,
+					"width": 100,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/bExportData.4dm"
+				},
+				"bImportData": {
+					"type": "button",
+					"text": "Import Data",
+					"top": 339,
+					"left": 330,
+					"width": 100,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/bImportData.4dm"
 				}
 			},
 			"entryOrder": [
@@ -214,11 +238,13 @@
 				"bExportPhotos",
 				"bSauvegarder",
 				"btQuitter",
-				"btTrace"
+				"btTrace",
+				"bExportData",
+				"bImportData"
 			]
 		}
 	],
-	"geometryStamp": 502,
+	"geometryStamp": 629,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",
