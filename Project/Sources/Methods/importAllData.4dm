@@ -2,7 +2,7 @@
 // importAllData
 //
 var $importFile_f : 4D:C1709.File
-var $fileName_t; $fileContent_t; $line_t; $fieldType_t : Text
+var $fileName_t; $fileContent_t; $line_t; $fieldName_t; $fieldType_t; $fieldValue_t : Text
 var $line_c; $column_c; $columnName_c : Collection
 var $lineNumber_i; $columnNumber_i; $tableNumber_i; $ID_Max_i : Integer
 var $tableToSearch_p : Pointer
@@ -67,15 +67,23 @@ For ($tableNumber_i; 1; Get last table number:C254)
 			If ($columnNumber_i=1)  //col 1 = nom table
 				continue
 			End if 
-			$fieldType_t:=ds:C1482[$tableName_t][$columnName_c[$columnNumber_i-1]].type  //="number"
+			$fieldName_t:=$columnName_c[$columnNumber_i-1]
+			$fieldType_t:=ds:C1482[$tableName_t][$fieldName_t].type  //="number"
 			
 			Case of 
 				: ($fieldType_t="number")
-					$e[$columnName_c[$columnNumber_i-1]]:=Num:C11($column_t)
+					$e[$fieldName_t]:=Num:C11($column_t)
 				: ($fieldType_t="date")
-					$e[$columnName_c[$columnNumber_i-1]]:=Date:C102($column_t)
+					$e[$fieldName_t]:=Date:C102($column_t)
 				Else 
-					$e[$columnName_c[$columnNumber_i-1]]:=$column_t
+					//décoder les caractères spéciaux (tab et cr)
+					If ($fieldValue_t="Le Bison") & ($fieldName_t="Info")
+						TRACE:C157
+					End if 
+					
+					$fieldValue_t:=Replace string:C233($column_t; "|"; Char:C90(Carriage return:K15:38))
+					$fieldValue_t:=Replace string:C233($fieldValue_t; "^"; Char:C90(Tab:K15:37))
+					$e[$fieldName_t]:=$fieldValue_t
 			End case 
 			
 		End for each 
@@ -84,7 +92,6 @@ For ($tableNumber_i; 1; Get last table number:C254)
 			ALERT:C41("save KO")
 			TRACE:C157
 		End if 
-		
 		
 	End for each 
 	

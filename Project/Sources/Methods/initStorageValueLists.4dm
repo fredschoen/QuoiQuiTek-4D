@@ -3,11 +3,37 @@
 //objectif: 
 // - initialiser les listes de valeurs des écran (Régie des créances)
 var $qui_es : cs:C1710.QuiSelection
+var $parametre_es : cs:C1710.ParametreSelection
+var $parametre_e : cs:C1710.ParametreEntity
+var $parametreNom_t : Text
 var $qui_e : cs:C1710.QuiEntity
 var $quoi_es : cs:C1710.QuoiSelection
 var $quoi_e : cs:C1710.QuoiEntity
 var $domaineQui_c : Collection
 var $domaineQuoi_c : Collection
+
+//1ère utilisation de la base:
+$parametreNom_t:="domaineQui"
+If (ds:C1482.Parametre.query("Nom = :1"; $parametreNom_t).length=0)
+	$parametre_e:=ds:C1482.Parametre.new()
+	$parametre_e.Nom:=$parametreNom_t
+	$o:=$parametre_e.save()
+	If (Not:C34($o.success))
+		ALERT:C41("save KO")
+		TRACE:C157
+	End if 
+End if 
+$parametreNom_t:="domaineQuoi"
+If (ds:C1482.Parametre.query("Nom = :1"; $parametreNom_t).length=0)
+	$parametre_e:=ds:C1482.Parametre.new()
+	$parametre_e.Nom:=$parametreNom_t
+	$o:=$parametre_e.save()
+	If (Not:C34($o.success))
+		ALERT:C41("save KO")
+		TRACE:C157
+	End if 
+End if 
+
 $domaineQuiListe_t:=ds:C1482.Parametre.query("Nom = :1"; "domaineQui").first().Niv1
 $domaineQui_c:=Split string:C1554($domaineQuiListe_t; ";")
 $domaineQuoiListe_t:=ds:C1482.Parametre.query("Nom = :1"; "domaineQuoi").first().Niv1
