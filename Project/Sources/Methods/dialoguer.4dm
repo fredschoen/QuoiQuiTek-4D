@@ -1,12 +1,7 @@
 //%attributes = {}
 //dialoguer
-//$1 $form_t:text
-//$2 $form_o:object
-var $1; $form_t : Text
-var $2; $form_o : Object
+#DECLARE($form_t : Text; $form_o : Object)
 
-$form_t:=$1
-$form_o:=$2
 If (Undefined:C82($form_o.page))
 	$form_o.page:=1
 End if 

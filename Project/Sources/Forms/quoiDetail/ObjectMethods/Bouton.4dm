@@ -1,5 +1,6 @@
 
 $form_o:=New object:C1471
+$form_o.domaine_t:=Form:C1466.quoi_e.Domaine
 dialoguer("hierListe"; $form_o)
 If ($form_o.Niv0#Null:C1517)
 	Form:C1466.quoi_e.Genre:=$form_o.Niv0

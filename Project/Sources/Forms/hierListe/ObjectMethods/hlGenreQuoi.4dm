@@ -4,7 +4,7 @@ If (Form event code:C388=On Load:K2:1)
 	var $i : Integer
 	hlGenreQuoi:=New list:C375
 	$genreQuoi_c:=New collection:C1472()
-	$es1:=ds:C1482.Parametre.query("Nom = :1 AND Niv1 = :2"; "GenreQuoi"; "")
+	$es1:=ds:C1482.Parametre.query("Nom = :1 AND Niv1 = :2"; "GenreQuoi"+Form:C1466.domaine_t; "")
 	If ($es1.length=0)
 		return 
 	End if 
@@ -28,7 +28,7 @@ If (Form event code:C388=On Load:K2:1)
 	End for each 
 	// Forcer la hauteur de ligne minimale à 14 Pts
 	SET LIST PROPERTIES:C387(hlGenreQuoi; 0; 0; 14)
-	
+	Form:C1466.genreQuoi_c:=$genreQuoi_c
 End if 
 
 If (Form event code:C388=On Double Clicked:K2:5)
@@ -40,8 +40,8 @@ If (Form event code:C388=On Double Clicked:K2:5)
 		If ($x.length=0)
 			return 
 		End if 
-		Form:C1466.Niv0:=$x.first().Niv0
-		Form:C1466.Niv1:=$x.first().Niv1
+		Form:C1466.Niv0:=Form:C1466.genreQuoi_c[$vlElementRef_i-1].Niv0
+		Form:C1466.Niv1:=Form:C1466.genreQuoi_c[$vlElementRef_i-1].Niv1
 		Form:C1466.page:=0  //sortir
 		ACCEPT:C269
 	End if 
