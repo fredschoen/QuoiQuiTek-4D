@@ -226,7 +226,7 @@
 				},
 				"btAppliquerFiltreQuoi": {
 					"type": "button",
-					"text": "Filtrer",
+					"text": "(F)iltrer",
 					"top": 26,
 					"left": 885,
 					"width": 60,
@@ -236,7 +236,12 @@
 					],
 					"method": "ObjectMethods/btAppliquerFiltreQuoi.4dm",
 					"defaultButton": true,
-					"bottom": 44
+					"bottom": 44,
+					"shortcutAccel": true,
+					"shortcutControl": false,
+					"shortcutShift": false,
+					"shortcutAlt": false,
+					"shortcutKey": "f"
 				},
 				"zCritereStock": {
 					"type": "input",
@@ -315,13 +320,13 @@
 					"text": "test",
 					"top": 186,
 					"left": 917,
-					"width": 50,
-					"height": 20,
+					"width": 100,
+					"height": 25,
 					"events": [
 						"onClick"
 					],
 					"method": "_test",
-					"bottom": 206
+					"bottom": 211
 				},
 				"zCritereAnnee2": {
 					"type": "input",
@@ -367,7 +372,7 @@
 				"btTrace": {
 					"type": "button",
 					"text": "(t)race",
-					"top": 280,
+					"top": 296,
 					"left": 917,
 					"width": 35,
 					"height": 15,
@@ -387,10 +392,10 @@
 				"btQuitter": {
 					"type": "button",
 					"text": "Quitter",
-					"top": 83,
+					"top": 79,
 					"left": 917,
-					"width": 93,
-					"height": 30,
+					"width": 100,
+					"height": 25,
 					"events": [
 						"onClick"
 					],
@@ -401,8 +406,8 @@
 					"text": "(A)jouter un quoi",
 					"top": 52,
 					"left": 917,
-					"width": 93,
-					"height": 31,
+					"width": 100,
+					"height": 25,
 					"events": [
 						"onClick"
 					],
@@ -432,8 +437,8 @@
 					"text": "(C)opier",
 					"top": 213,
 					"left": 917,
-					"width": 93,
-					"height": 31,
+					"width": 100,
+					"height": 25,
 					"events": [
 						"onClick"
 					],
@@ -448,10 +453,10 @@
 				"btDiapo": {
 					"type": "button",
 					"text": "(D)iapo",
-					"top": 115,
+					"top": 107,
 					"left": 917,
-					"width": 60,
-					"height": 20,
+					"width": 100,
+					"height": 25,
 					"events": [
 						"onClick"
 					],
@@ -475,6 +480,23 @@
 					"dataSourceTypeHint": "object",
 					"dataSource": "",
 					"method": "ObjectMethods/zCritereDomaine.4dm"
+				},
+				"hListe": {
+					"type": "button",
+					"text": "(h)liste",
+					"top": 242,
+					"left": 918,
+					"width": 100,
+					"height": 25,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/hListe.4dm",
+					"shortcutAccel": true,
+					"shortcutControl": false,
+					"shortcutShift": false,
+					"shortcutAlt": false,
+					"shortcutKey": "h"
 				}
 			},
 			"entryOrder": [
@@ -497,11 +519,12 @@
 				"bTest",
 				"zFormquoiListelength",
 				"btCopier",
-				"btDiapo"
+				"btDiapo",
+				"hListe"
 			]
 		}
 	],
-	"geometryStamp": 3562,
+	"geometryStamp": 3626,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",
