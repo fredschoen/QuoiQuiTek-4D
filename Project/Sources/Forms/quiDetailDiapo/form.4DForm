@@ -30,7 +30,7 @@
 			"objects": {
 				"btSuivant": {
 					"type": "button",
-					"text": "(S)uivant",
+					"text": "Suiva(n)t",
 					"top": 3,
 					"left": 1,
 					"width": 90,
@@ -46,7 +46,7 @@
 					"shortcutControl": false,
 					"shortcutShift": false,
 					"shortcutAlt": false,
-					"shortcutKey": "s",
+					"shortcutKey": "n",
 					"style": "regular",
 					"borderStyle": "none"
 				},
@@ -102,7 +102,7 @@
 				},
 				"btSauver": {
 					"type": "button",
-					"text": "Sauver",
+					"text": "(S)auver",
 					"top": 83,
 					"left": 1,
 					"width": 90,
@@ -116,7 +116,7 @@
 					"shortcutControl": false,
 					"shortcutShift": false,
 					"shortcutAlt": false,
-					"shortcutKey": "w",
+					"shortcutKey": "s",
 					"tooltip": {
 						"$ref": "/SOURCES/tips.json#/RaccourciSauver"
 					},

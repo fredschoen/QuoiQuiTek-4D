@@ -239,7 +239,7 @@
 				},
 				"btSauverQuoi": {
 					"type": "button",
-					"text": "Sauver",
+					"text": "(S)auver",
 					"top": 5,
 					"left": 343,
 					"width": 66,
@@ -253,7 +253,7 @@
 					"shortcutControl": false,
 					"shortcutShift": false,
 					"shortcutAlt": false,
-					"shortcutKey": "w",
+					"shortcutKey": "s",
 					"tooltip": {
 						"$ref": "/SOURCES/tips.json#/RaccourciSauver"
 					}
@@ -290,7 +290,7 @@
 				},
 				"btSuivant": {
 					"type": "button",
-					"text": "Suivant",
+					"text": "Suiva(n)t",
 					"top": 5,
 					"left": 16,
 					"width": 70,
@@ -303,14 +303,14 @@
 					"shortcutControl": false,
 					"shortcutShift": false,
 					"shortcutAlt": false,
-					"shortcutKey": "s",
+					"shortcutKey": "n",
 					"tooltip": {
 						"$ref": "/SOURCES/tips.json#/RaccourciSuivant"
 					}
 				},
 				"btPrecedent": {
 					"type": "button",
-					"text": "Précédent",
+					"text": "(P)récédent",
 					"top": 5,
 					"left": 86,
 					"width": 70,
@@ -528,7 +528,7 @@
 				},
 				"btQuitter": {
 					"type": "button",
-					"text": "Quitter",
+					"text": "(Q)uitter",
 					"top": 9,
 					"left": 841,
 					"width": 60,
@@ -536,7 +536,12 @@
 					"events": [
 						"onClick"
 					],
-					"action": "cancel"
+					"action": "cancel",
+					"shortcutAccel": true,
+					"shortcutControl": false,
+					"shortcutShift": false,
+					"shortcutAlt": false,
+					"shortcutKey": "q"
 				},
 				"lb_lesGroupesDuQuoi": {
 					"type": "listbox",
@@ -689,7 +694,7 @@
 				},
 				"Bouton": {
 					"type": "button",
-					"text": "hliste",
+					"text": "(h)liste",
 					"top": 122,
 					"left": 217,
 					"width": 59,
@@ -697,7 +702,12 @@
 					"events": [
 						"onClick"
 					],
-					"method": "ObjectMethods/Bouton.4dm"
+					"method": "ObjectMethods/Bouton.4dm",
+					"shortcutAccel": true,
+					"shortcutControl": false,
+					"shortcutShift": false,
+					"shortcutAlt": false,
+					"shortcutKey": "h"
 				},
 				"btCopier": {
 					"type": "button",

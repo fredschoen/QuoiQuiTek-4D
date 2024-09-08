@@ -218,74 +218,74 @@
 				"zCritereNom": {
 					"type": "input",
 					"left": 12,
-					"top": 24,
+					"top": 26,
 					"width": 302,
-					"height": 16,
+					"height": 18,
 					"dataSource": "Form:C1466.critereQuoiListe.Nom",
-					"bottom": 40
+					"bottom": 44
 				},
 				"btAppliquerFiltreQuoi": {
 					"type": "button",
 					"text": "Filtrer",
-					"top": 22,
+					"top": 26,
 					"left": 885,
 					"width": 60,
-					"height": 20,
+					"height": 18,
 					"events": [
 						"onClick"
 					],
 					"method": "ObjectMethods/btAppliquerFiltreQuoi.4dm",
 					"defaultButton": true,
-					"bottom": 42
+					"bottom": 44
 				},
 				"zCritereStock": {
 					"type": "input",
 					"left": 496,
-					"top": 24,
+					"top": 26,
 					"width": 55,
 					"height": 18,
 					"dataSource": "Form:C1466.critereQuoiListe.Stock",
-					"bottom": 42
+					"bottom": 44
 				},
 				"zCritereDate": {
 					"type": "input",
 					"left": 556,
-					"top": 24,
+					"top": 26,
 					"width": 55,
 					"height": 18,
 					"dataSource": "Form:C1466.critereQuoiListe.Date",
-					"bottom": 42
+					"bottom": 44
 				},
 				"zCritereReal": {
 					"type": "input",
 					"left": 659,
-					"top": 24,
+					"top": 26,
 					"width": 107,
-					"height": 16,
+					"height": 18,
 					"dataSource": "Form:C1466.critereQuoiListe.Real",
-					"bottom": 40
+					"bottom": 44
 				},
 				"zDateDernVisu": {
 					"type": "input",
 					"left": 774,
-					"top": 22,
+					"top": 26,
 					"width": 68,
 					"height": 18,
 					"dataSource": "Form:C1466.critereQuoiListe.DateDernVisu",
-					"bottom": 40
+					"bottom": 44
 				},
 				"bAnneePlus": {
 					"type": "button",
 					"text": "+",
-					"top": 22,
+					"top": 26,
 					"left": 846,
 					"width": 20,
-					"height": 20,
+					"height": 18,
 					"events": [
 						"onClick"
 					],
 					"method": "anneePlus",
-					"bottom": 42,
+					"bottom": 44,
 					"shortcutAccel": true,
 					"shortcutControl": false,
 					"shortcutShift": false,
@@ -295,15 +295,15 @@
 				"bAnneeMoins": {
 					"type": "button",
 					"text": "-",
-					"top": 22,
+					"top": 26,
 					"left": 865,
 					"width": 20,
-					"height": 20,
+					"height": 18,
 					"events": [
 						"onClick"
 					],
 					"method": "anneeMoins",
-					"bottom": 42,
+					"bottom": 44,
 					"shortcutAccel": true,
 					"shortcutControl": false,
 					"shortcutShift": false,
@@ -326,18 +326,18 @@
 				"zCritereAnnee2": {
 					"type": "input",
 					"left": 614,
-					"top": 24,
+					"top": 26,
 					"width": 38,
 					"height": 18,
 					"dataSource": "Form:C1466.critereQuoiListe.Qualif",
-					"bottom": 42
+					"bottom": 44
 				},
 				"zCritereGenre1": {
 					"type": "combo",
-					"left": 377,
-					"top": 22,
+					"left": 378,
+					"top": 26,
 					"width": 55,
-					"height": 21,
+					"height": 18,
 					"events": [
 						"onDataChange"
 					],
@@ -346,14 +346,14 @@
 					},
 					"dataSource": "Form:C1466.critereQuoiListe.Genre",
 					"dataSourceTypeHint": "text",
-					"bottom": 43
+					"bottom": 44
 				},
 				"zCriterePays1": {
 					"type": "combo",
 					"left": 438,
-					"top": 22,
+					"top": 26,
 					"width": 55,
-					"height": 21,
+					"height": 18,
 					"events": [
 						"onDataChange"
 					],
@@ -362,23 +362,7 @@
 						"$ref": "/SOURCES/lists.json#/PaysQuoi"
 					},
 					"dataSource": "Form:C1466.critereQuoiListe.Pays",
-					"bottom": 43
-				},
-				"zCritereDomaine1": {
-					"type": "combo",
-					"left": 317,
-					"top": 22,
-					"width": 57,
-					"height": 21,
-					"events": [
-						"onDataChange"
-					],
-					"dataSourceTypeHint": "text",
-					"choiceList": {
-						"$ref": "/SOURCES/lists.json#/DomaineQuoi"
-					},
-					"dataSource": "Form:C1466.critereQuoiListe.Domaine",
-					"bottom": 43
+					"bottom": 44
 				},
 				"btTrace": {
 					"type": "button",
@@ -477,11 +461,25 @@
 					"shortcutShift": false,
 					"shortcutAlt": false,
 					"shortcutKey": "d"
+				},
+				"zCritereDomaine": {
+					"type": "dropdown",
+					"left": 317,
+					"top": 26,
+					"width": 58,
+					"height": 18,
+					"events": [
+						"onLoad",
+						"onDataChange"
+					],
+					"dataSourceTypeHint": "object",
+					"dataSource": "",
+					"method": "ObjectMethods/zCritereDomaine.4dm"
 				}
 			},
 			"entryOrder": [
 				"zCritereNom",
-				"zCritereDomaine1",
+				"zCritereDomaine",
 				"zCritereGenre1",
 				"zCriterePays1",
 				"zCritereStock",
@@ -503,7 +501,7 @@
 			]
 		}
 	],
-	"geometryStamp": 3449,
+	"geometryStamp": 3562,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",

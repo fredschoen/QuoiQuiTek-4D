@@ -1,6 +1,6 @@
 {
-	"RaccourciPreced": "Ctrl+\"P\" ou \"p\"",
-	"RaccourciSuivant": "Ctrl+\"S\" ou \"s\"",
 	"Infobulle": "Texte d’infobulle",
-	"RaccourciSauver": "Ctrl+w pour sauver"
+	"RaccourciPreced": "Ctrl+\"p\"",
+	"RaccourciSauver": "Ctrl+\"s\" pour sauver",
+	"RaccourciSuivan": "Ctrl+\"v\" pour suivant"
 }

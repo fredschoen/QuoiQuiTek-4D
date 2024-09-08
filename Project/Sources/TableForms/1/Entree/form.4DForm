@@ -194,7 +194,7 @@
 				},
 				"btSuivant": {
 					"type": "button",
-					"text": "Suivant",
+					"text": "Suiva(n)t",
 					"top": 13,
 					"left": 50,
 					"width": 77,

@@ -110,7 +110,7 @@
 				},
 				"Bouton2": {
 					"type": "button",
-					"text": "suivant",
+					"text": "Suiva(n)t",
 					"top": 177,
 					"left": 80,
 					"width": 60,

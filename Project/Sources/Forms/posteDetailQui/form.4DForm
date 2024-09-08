@@ -98,7 +98,7 @@
 				},
 				"btSuivant": {
 					"type": "button",
-					"text": "Suivant",
+					"text": "Suiva(n)t",
 					"top": 3,
 					"left": 10,
 					"width": 70,
@@ -114,7 +114,7 @@
 					"shortcutControl": false,
 					"shortcutShift": false,
 					"shortcutAlt": false,
-					"shortcutKey": "s"
+					"shortcutKey": "n"
 				},
 				"btPrecedent": {
 					"type": "button",
@@ -324,7 +324,7 @@
 				},
 				"btSauver": {
 					"type": "button",
-					"text": "Sauver",
+					"text": "(S)auver",
 					"top": 3,
 					"left": 491,
 					"width": 60,
@@ -338,7 +338,7 @@
 					"shortcutControl": false,
 					"shortcutShift": false,
 					"shortcutAlt": false,
-					"shortcutKey": "w",
+					"shortcutKey": "s",
 					"tooltip": {
 						"$ref": "/SOURCES/tips.json#/RaccourciSauver"
 					},
