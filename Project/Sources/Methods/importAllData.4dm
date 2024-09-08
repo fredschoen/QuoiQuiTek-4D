@@ -49,6 +49,13 @@ For ($tableNumber_i; 1; Get last table number:C254)
 	For each ($line_t; $line_c)
 		//une ligne d'une table
 		$lineNumber_i+=1
+		
+		//le dernière ligne peut être vide si retravaillée dans excel
+		If (Length:C16($line_t)<2)
+			continue
+		End if 
+		
+		//éclater en colonnes
 		$column_c:=Split string:C1554($line_t; Char:C90(Tab:K15:37))
 		
 		//mémoriser tous les noms de colonnes (=ligne 1)

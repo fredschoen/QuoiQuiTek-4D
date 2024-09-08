@@ -36,10 +36,6 @@ If (Form event code:C388=On Double Clicked:K2:5)
 	If ($vlElementPos_i#0)
 		// récupérer l'ID de la famille cliqué
 		GET LIST ITEM:C378(hlGenreQuoi; $vlElementPos_i; $vlElementRef_i; $vsElementText_t; $vlElementSousListe; $vbElementDéploye_b)
-		$x:=Storage:C1525.genreQuoi.query("ID = :1"; $vlElementRef_i)
-		If ($x.length=0)
-			return 
-		End if 
 		Form:C1466.Niv0:=Form:C1466.genreQuoi_c[$vlElementRef_i-1].Niv0
 		Form:C1466.Niv1:=Form:C1466.genreQuoi_c[$vlElementRef_i-1].Niv1
 		Form:C1466.page:=0  //sortir
