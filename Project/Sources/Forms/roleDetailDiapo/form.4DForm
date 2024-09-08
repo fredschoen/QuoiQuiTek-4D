@@ -51,7 +51,7 @@
 				},
 				"btPrecedent": {
 					"type": "button",
-					"text": "Précédent",
+					"text": "(P)récédent",
 					"top": 23,
 					"left": 1,
 					"width": 90,

@@ -122,7 +122,7 @@
 				},
 				"Bouton3": {
 					"type": "button",
-					"text": "Précédent",
+					"text": "(P)récédent",
 					"top": 177,
 					"left": 148,
 					"width": 60,
