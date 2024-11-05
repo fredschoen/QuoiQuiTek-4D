@@ -420,6 +420,44 @@
 					"focusable": false,
 					"borderStyle": "none",
 					"textAlign": "right"
+				},
+				"bDatePlus": {
+					"type": "button",
+					"text": "+",
+					"top": 28,
+					"left": 1051,
+					"width": 18,
+					"height": 16,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/bDatePlus.4dm",
+					"bottom": 44,
+					"fontSize": 8,
+					"shortcutAccel": true,
+					"shortcutControl": false,
+					"shortcutShift": false,
+					"shortcutAlt": false,
+					"shortcutKey": "+"
+				},
+				"bDateMoins": {
+					"type": "button",
+					"text": "-",
+					"top": 28,
+					"left": 1067,
+					"width": 18,
+					"height": 16,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/bDateMoins.4dm",
+					"bottom": 44,
+					"fontSize": 8,
+					"shortcutAccel": true,
+					"shortcutControl": false,
+					"shortcutShift": false,
+					"shortcutAlt": false,
+					"shortcutKey": "-"
 				}
 			},
 			"entryOrder": [
@@ -436,11 +474,13 @@
 				"lb_roleListe",
 				"btTrace",
 				"btDiapo",
-				"zLength"
+				"zLength",
+				"bDatePlus",
+				"bDateMoins"
 			]
 		}
 	],
-	"geometryStamp": 875,
+	"geometryStamp": 879,
 	"method": "method.4dm",
 	"editor": {
 		"activeView": "View 1",
