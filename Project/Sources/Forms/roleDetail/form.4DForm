@@ -92,69 +92,75 @@
 				"zQuiID": {
 					"type": "input",
 					"dataSource": "Form:C1466.qui_e.ID",
-					"top": 10,
-					"left": 892,
-					"width": 78,
-					"height": 16,
+					"top": 6,
+					"left": 907,
+					"width": 50,
+					"height": 15,
 					"enterable": false,
 					"fill": "transparent",
 					"borderStyle": "none",
 					"textAlign": "left",
-					"focusable": false
+					"focusable": false,
+					"fontSize": 12
 				},
 				"label5": {
 					"type": "text",
-					"text": "A:",
-					"top": 10,
-					"left": 879,
-					"width": 12,
-					"height": 16
+					"text": "a:",
+					"top": 6,
+					"left": 894,
+					"width": 10,
+					"height": 15,
+					"fontSize": 12
 				},
 				"zPos": {
 					"type": "input",
-					"left": 786,
-					"top": 7,
+					"left": 767,
+					"top": 6,
 					"width": 31,
-					"height": 16,
+					"height": 15,
 					"dataSource": "Form:C1466.posRoleSel_i",
 					"enterable": false,
 					"dataSourceTypeHint": "integer",
 					"focusable": false,
 					"borderStyle": "none",
-					"textAlign": "right"
+					"textAlign": "right",
+					"fontSize": 12
 				},
 				"label6": {
 					"type": "text",
 					"text": "/",
-					"top": 7,
-					"left": 820,
+					"top": 6,
+					"left": 801,
 					"width": 12,
-					"height": 16
+					"height": 15,
+					"fontSize": 12
 				},
 				"zLength": {
 					"type": "input",
-					"left": 828,
-					"top": 7,
+					"left": 809,
+					"top": 6,
 					"width": 31,
-					"height": 16,
+					"height": 15,
 					"dataSource": "Form:C1466.role_es.length",
 					"enterable": false,
 					"dataSourceTypeHint": "integer",
 					"focusable": false,
 					"borderStyle": "none",
-					"textAlign": "left"
+					"textAlign": "left",
+					"fontSize": 12
 				},
 				"zForm_eleCouQui_ID": {
 					"type": "input",
 					"dataSource": "Form:C1466.role_e.ID",
-					"top": 30,
-					"left": 767,
-					"width": 60,
-					"height": 16,
+					"top": 6,
+					"left": 860,
+					"width": 27,
+					"height": 15,
 					"enterable": false,
 					"fill": "transparent",
 					"borderStyle": "none",
-					"textAlign": "left"
+					"textAlign": "left",
+					"fontSize": 12
 				},
 				"label8": {
 					"type": "text",
@@ -249,9 +255,9 @@
 				"btCopier": {
 					"type": "button",
 					"text": "copie(r) remarque",
-					"top": 29,
-					"left": 833,
-					"width": 120,
+					"top": 30,
+					"left": 767,
+					"width": 100,
 					"height": 18,
 					"events": [
 						"onClick"
@@ -280,6 +286,27 @@
 					"shortcutShift": false,
 					"shortcutAlt": false,
 					"shortcutKey": "d"
+				},
+				"label1": {
+					"type": "text",
+					"text": "r:",
+					"top": 6,
+					"left": 846,
+					"width": 10,
+					"height": 15,
+					"fontSize": 12
+				},
+				"zAge": {
+					"type": "input",
+					"dataSource": "Form:C1466.role_e.Age",
+					"top": 31,
+					"left": 873,
+					"width": 56,
+					"height": 18,
+					"enterable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"dataSourceTypeHint": "number"
 				}
 			}
 		},
@@ -1055,18 +1082,6 @@
 						}
 					]
 				},
-				"zAge": {
-					"type": "input",
-					"dataSource": "Form:C1466.qui_e.getAge()",
-					"top": 139,
-					"left": 446,
-					"width": 56,
-					"height": 18,
-					"enterable": false,
-					"fill": "transparent",
-					"borderStyle": "none",
-					"dataSourceTypeHint": "number"
-				},
 				"rolePhoto_ZS1": {
 					"type": "input",
 					"left": 869,
@@ -1230,7 +1245,6 @@
 				"lb_lesQuisDuQuoi",
 				"btModQuoi",
 				"ge",
-				"zAge",
 				"btQui",
 				"btQuoi",
 				"btPg2"
@@ -1331,7 +1345,7 @@
 			}
 		}
 	],
-	"geometryStamp": 734,
+	"geometryStamp": 801,
 	"method": "method.4dm",
 	"editor": {
 		"groups": {

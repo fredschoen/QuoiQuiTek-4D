@@ -25,9 +25,9 @@
 					"type": "button",
 					"text": "(S)auver info qui",
 					"top": 4,
-					"left": 725,
-					"width": 141,
-					"height": 23,
+					"left": 684,
+					"width": 105,
+					"height": 22,
 					"events": [
 						"onClick"
 					],
@@ -46,7 +46,7 @@
 					"type": "button",
 					"text": "Supprimer le qui",
 					"top": 4,
-					"left": 607,
+					"left": 572,
 					"width": 111,
 					"height": 22,
 					"events": [
@@ -60,7 +60,7 @@
 					"top": 4,
 					"left": 16,
 					"width": 70,
-					"height": 24,
+					"height": 22,
 					"events": [
 						"onClick"
 					],
@@ -81,7 +81,7 @@
 					"top": 4,
 					"left": 86,
 					"width": 70,
-					"height": 24,
+					"height": 22,
 					"events": [
 						"onClick"
 					],
@@ -100,9 +100,9 @@
 					"type": "button",
 					"text": "Premier",
 					"top": 4,
-					"left": 158,
-					"width": 70,
-					"height": 24,
+					"left": 156,
+					"width": 60,
+					"height": 22,
 					"events": [
 						"onClick"
 					],
@@ -112,9 +112,9 @@
 					"type": "button",
 					"text": "Dernier",
 					"top": 4,
-					"left": 228,
-					"width": 70,
-					"height": 24,
+					"left": 216,
+					"width": 60,
+					"height": 22,
 					"events": [
 						"onClick"
 					],
@@ -124,7 +124,7 @@
 					"type": "input",
 					"dataSource": "\"(\"+String:C10(Form:C1466.qui_e.ID)+\")\"",
 					"top": 7,
-					"left": 1005,
+					"left": 1027,
 					"width": 30,
 					"height": 16,
 					"enterable": false,
@@ -136,7 +136,7 @@
 				},
 				"zposQuiSel_i": {
 					"type": "input",
-					"left": 953,
+					"left": 975,
 					"top": 7,
 					"width": 20,
 					"height": 16,
@@ -152,13 +152,13 @@
 					"type": "text",
 					"text": "/",
 					"top": 7,
-					"left": 975,
+					"left": 997,
 					"width": 5,
 					"height": 16
 				},
 				"zQuiListelength": {
 					"type": "input",
-					"left": 982,
+					"left": 1004,
 					"top": 7,
 					"width": 20,
 					"height": 16,
@@ -174,9 +174,9 @@
 					"type": "button",
 					"text": "S(e)lectionner le qui",
 					"top": 4,
-					"left": 302,
+					"left": 279,
 					"width": 120,
-					"height": 24,
+					"height": 22,
 					"events": [
 						"onClick"
 					],
@@ -193,9 +193,9 @@
 					"type": "button",
 					"text": "(A)jouter un rôle pour cet qui",
 					"top": 4,
-					"left": 427,
+					"left": 401,
 					"width": 170,
-					"height": 23,
+					"height": 22,
 					"events": [
 						"onClick"
 					],
@@ -209,8 +209,8 @@
 				"btTrace": {
 					"type": "button",
 					"text": "(t)race",
-					"top": 7,
-					"left": 1040,
+					"top": 8,
+					"left": 1061,
 					"width": 35,
 					"height": 15,
 					"events": [
@@ -230,9 +230,9 @@
 					"type": "button",
 					"text": "Quitter",
 					"top": 4,
-					"left": 883,
+					"left": 910,
 					"width": 60,
-					"height": 20,
+					"height": 22,
 					"events": [
 						"onClick"
 					],
@@ -491,6 +491,23 @@
 					"shortcutKey": "r",
 					"method": "mBtCopier",
 					"fontSize": 10
+				},
+				"btDiapo": {
+					"type": "button",
+					"text": "(D)iapo de ses rôles",
+					"top": 4,
+					"left": 789,
+					"width": 120,
+					"height": 22,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/btDiapo.4dm",
+					"shortcutAccel": true,
+					"shortcutControl": false,
+					"shortcutShift": false,
+					"shortcutAlt": false,
+					"shortcutKey": "d"
 				}
 			}
 		},
@@ -816,7 +833,7 @@
 			}
 		}
 	],
-	"geometryStamp": 759,
+	"geometryStamp": 886,
 	"method": "method.4dm",
 	"editor": {
 		"activeView": "View 1",
