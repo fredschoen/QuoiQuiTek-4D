@@ -17,13 +17,271 @@
 		"onClick",
 		"onDoubleClick",
 		"onUnload",
+		"onTimer",
 		"onAfterKeystroke"
 	],
 	"windowTitle": "Détail du Role",
 	"destination": "detailScreen",
 	"pages": [
 		{
-			"objects": {}
+			"objects": {
+				"btSuivant": {
+					"type": "button",
+					"text": "Suiva(n)t",
+					"top": 3,
+					"left": 10,
+					"width": 70,
+					"height": 24,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/btSuivant.4dm",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/RaccourciSuivant"
+					},
+					"shortcutAccel": true,
+					"shortcutControl": false,
+					"shortcutShift": false,
+					"shortcutAlt": false,
+					"shortcutKey": "n"
+				},
+				"btPrecedent": {
+					"type": "button",
+					"text": "(P)récédent",
+					"top": 3,
+					"left": 86,
+					"width": 70,
+					"height": 24,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/btPrecedent.4dm",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/RaccourciPreced"
+					},
+					"shortcutAccel": true,
+					"shortcutControl": false,
+					"shortcutShift": false,
+					"shortcutAlt": false,
+					"shortcutKey": "p"
+				},
+				"btPremier": {
+					"type": "button",
+					"text": "Premier",
+					"top": 3,
+					"left": 158,
+					"width": 70,
+					"height": 24,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/btPremier.4dm"
+				},
+				"btDernier": {
+					"type": "button",
+					"text": "Dernier",
+					"top": 3,
+					"left": 228,
+					"width": 70,
+					"height": 24,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/btDernier.4dm"
+				},
+				"zQuiID": {
+					"type": "input",
+					"dataSource": "Form:C1466.qui_e.ID",
+					"top": 10,
+					"left": 892,
+					"width": 78,
+					"height": 16,
+					"enterable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"textAlign": "left",
+					"focusable": false
+				},
+				"label5": {
+					"type": "text",
+					"text": "A:",
+					"top": 10,
+					"left": 879,
+					"width": 12,
+					"height": 16
+				},
+				"zPos": {
+					"type": "input",
+					"left": 786,
+					"top": 7,
+					"width": 31,
+					"height": 16,
+					"dataSource": "Form:C1466.posRoleSel_i",
+					"enterable": false,
+					"dataSourceTypeHint": "integer",
+					"focusable": false,
+					"borderStyle": "none",
+					"textAlign": "right"
+				},
+				"label6": {
+					"type": "text",
+					"text": "/",
+					"top": 7,
+					"left": 820,
+					"width": 12,
+					"height": 16
+				},
+				"zLength": {
+					"type": "input",
+					"left": 828,
+					"top": 7,
+					"width": 31,
+					"height": 16,
+					"dataSource": "Form:C1466.role_es.length",
+					"enterable": false,
+					"dataSourceTypeHint": "integer",
+					"focusable": false,
+					"borderStyle": "none",
+					"textAlign": "left"
+				},
+				"zForm_eleCouQui_ID": {
+					"type": "input",
+					"dataSource": "Form:C1466.role_e.ID",
+					"top": 30,
+					"left": 767,
+					"width": 60,
+					"height": 16,
+					"enterable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"textAlign": "left"
+				},
+				"label8": {
+					"type": "text",
+					"text": "R(ec):",
+					"top": 30,
+					"left": 728,
+					"width": 30,
+					"height": 15
+				},
+				"btSauver": {
+					"type": "button",
+					"text": "(S)auver",
+					"top": 3,
+					"left": 491,
+					"width": 60,
+					"height": 22,
+					"events": [
+						"onClick"
+					],
+					"defaultButton": true,
+					"method": "ObjectMethods/btSauver.4dm",
+					"shortcutAccel": true,
+					"shortcutControl": false,
+					"shortcutShift": false,
+					"shortcutAlt": false,
+					"shortcutKey": "s",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/RaccourciSauver"
+					},
+					"style": "custom",
+					"borderStyle": "raised"
+				},
+				"btSupprimerRole": {
+					"type": "button",
+					"text": "Supprimer rôle",
+					"top": 4,
+					"left": 564,
+					"width": 90,
+					"height": 21,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/btSupprimerRole.4dm",
+					"style": "custom",
+					"borderStyle": "raised"
+				},
+				"btTrace": {
+					"type": "button",
+					"text": "(t)race",
+					"top": 12,
+					"left": 978,
+					"width": 35,
+					"height": 15,
+					"events": [
+						"onClick"
+					],
+					"style": "custom",
+					"method": "mBtTrace",
+					"borderStyle": "solid",
+					"fontSize": 10,
+					"shortcutAccel": true,
+					"shortcutControl": false,
+					"shortcutShift": false,
+					"shortcutAlt": false,
+					"shortcutKey": "t"
+				},
+				"btQuitter": {
+					"type": "button",
+					"text": "Quitter",
+					"top": 3,
+					"left": 685,
+					"width": 60,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"action": "cancel"
+				},
+				"zMessage": {
+					"type": "input",
+					"left": 11,
+					"top": 29,
+					"width": 749,
+					"height": 16,
+					"dataSource": "Form:C1466.message",
+					"enterable": false,
+					"dataSourceTypeHint": "text",
+					"fill": "#ffff00",
+					"fontWeight": "bold",
+					"textAlign": "center"
+				},
+				"btCopier": {
+					"type": "button",
+					"text": "copie(r) remarque",
+					"top": 29,
+					"left": 833,
+					"width": 120,
+					"height": 18,
+					"events": [
+						"onClick"
+					],
+					"shortcutAccel": true,
+					"shortcutControl": false,
+					"shortcutShift": false,
+					"shortcutAlt": false,
+					"shortcutKey": "r",
+					"method": "mBtCopier",
+					"fontSize": 10
+				},
+				"btDiapo": {
+					"type": "button",
+					"text": "(D)iapo",
+					"top": 4,
+					"left": 298,
+					"width": 70,
+					"height": 24,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/btDiapo.4dm",
+					"shortcutAccel": true,
+					"shortcutControl": false,
+					"shortcutShift": false,
+					"shortcutAlt": false,
+					"shortcutKey": "d"
+				}
+			}
 		},
 		{
 			"objects": {
@@ -141,70 +399,6 @@
 					"width": 56,
 					"height": 18
 				},
-				"btSuivant": {
-					"type": "button",
-					"text": "Suiva(n)t",
-					"top": 3,
-					"left": 10,
-					"width": 70,
-					"height": 24,
-					"events": [
-						"onClick"
-					],
-					"method": "ObjectMethods/btSuivant.4dm",
-					"tooltip": {
-						"$ref": "/SOURCES/tips.json#/RaccourciSuivant"
-					},
-					"shortcutAccel": true,
-					"shortcutControl": false,
-					"shortcutShift": false,
-					"shortcutAlt": false,
-					"shortcutKey": "n"
-				},
-				"btPrecedent": {
-					"type": "button",
-					"text": "(P)récédent",
-					"top": 3,
-					"left": 86,
-					"width": 70,
-					"height": 24,
-					"events": [
-						"onClick"
-					],
-					"method": "ObjectMethods/btPrecedent.4dm",
-					"tooltip": {
-						"$ref": "/SOURCES/tips.json#/RaccourciPreced"
-					},
-					"shortcutAccel": true,
-					"shortcutControl": false,
-					"shortcutShift": false,
-					"shortcutAlt": false,
-					"shortcutKey": "p"
-				},
-				"btPremier": {
-					"type": "button",
-					"text": "Premier",
-					"top": 3,
-					"left": 158,
-					"width": 70,
-					"height": 24,
-					"events": [
-						"onClick"
-					],
-					"method": "ObjectMethods/btPremier.4dm"
-				},
-				"btDernier": {
-					"type": "button",
-					"text": "Dernier",
-					"top": 3,
-					"left": 228,
-					"width": 70,
-					"height": 24,
-					"events": [
-						"onClick"
-					],
-					"method": "ObjectMethods/btDernier.4dm"
-				},
 				"cb_GenreQui": {
 					"type": "combo",
 					"left": 71,
@@ -235,81 +429,6 @@
 						"$ref": "/SOURCES/lists.json#/PaysQui"
 					},
 					"dataSource": "Form:C1466.qui_e.Pays"
-				},
-				"zQuiID": {
-					"type": "input",
-					"dataSource": "Form:C1466.qui_e.ID",
-					"top": 10,
-					"left": 892,
-					"width": 78,
-					"height": 16,
-					"enterable": false,
-					"fill": "transparent",
-					"borderStyle": "none",
-					"textAlign": "left",
-					"focusable": false
-				},
-				"label5": {
-					"type": "text",
-					"text": "A:",
-					"top": 10,
-					"left": 879,
-					"width": 12,
-					"height": 16
-				},
-				"zPos": {
-					"type": "input",
-					"left": 786,
-					"top": 7,
-					"width": 31,
-					"height": 16,
-					"dataSource": "Form:C1466.posRoleSel_i",
-					"enterable": false,
-					"dataSourceTypeHint": "integer",
-					"focusable": false,
-					"borderStyle": "none",
-					"textAlign": "right"
-				},
-				"label6": {
-					"type": "text",
-					"text": "/",
-					"top": 7,
-					"left": 820,
-					"width": 12,
-					"height": 16
-				},
-				"zLength": {
-					"type": "input",
-					"left": 828,
-					"top": 7,
-					"width": 31,
-					"height": 16,
-					"dataSource": "Form:C1466.role_es.length",
-					"enterable": false,
-					"dataSourceTypeHint": "integer",
-					"focusable": false,
-					"borderStyle": "none",
-					"textAlign": "left"
-				},
-				"zForm_eleCouQui_ID": {
-					"type": "input",
-					"dataSource": "Form:C1466.role_e.ID",
-					"top": 30,
-					"left": 767,
-					"width": 60,
-					"height": 16,
-					"enterable": false,
-					"fill": "transparent",
-					"borderStyle": "none",
-					"textAlign": "left"
-				},
-				"label8": {
-					"type": "text",
-					"text": "R(ec):",
-					"top": 30,
-					"left": 728,
-					"width": 30,
-					"height": 15
 				},
 				"label_Pays2": {
 					"type": "text",
@@ -472,29 +591,6 @@
 					"width": 250,
 					"height": 17
 				},
-				"btSauver": {
-					"type": "button",
-					"text": "(S)auver",
-					"top": 3,
-					"left": 491,
-					"width": 60,
-					"height": 22,
-					"events": [
-						"onClick"
-					],
-					"defaultButton": true,
-					"method": "ObjectMethods/btSauver.4dm",
-					"shortcutAccel": true,
-					"shortcutControl": false,
-					"shortcutShift": false,
-					"shortcutAlt": false,
-					"shortcutKey": "s",
-					"tooltip": {
-						"$ref": "/SOURCES/tips.json#/RaccourciSauver"
-					},
-					"style": "custom",
-					"borderStyle": "raised"
-				},
 				"Genre_CB": {
 					"type": "combo",
 					"left": 404,
@@ -645,21 +741,8 @@
 					"width": 30,
 					"height": 16,
 					"enterable": false,
-					"focusable": false
-				},
-				"btSupprimerRole": {
-					"type": "button",
-					"text": "Supprimer rôle",
-					"top": 4,
-					"left": 564,
-					"width": 90,
-					"height": 21,
-					"events": [
-						"onClick"
-					],
-					"method": "ObjectMethods/btSupprimerRole.4dm",
-					"style": "custom",
-					"borderStyle": "raised"
+					"focusable": false,
+					"fill": "transparent"
 				},
 				"lb_lesQuisDuQuoi": {
 					"type": "listbox",
@@ -805,26 +888,6 @@
 					"left": 292,
 					"width": 165,
 					"height": 17
-				},
-				"btTrace": {
-					"type": "button",
-					"text": "(t)race",
-					"top": 24,
-					"left": 1009,
-					"width": 35,
-					"height": 15,
-					"events": [
-						"onClick"
-					],
-					"style": "custom",
-					"method": "mBtTrace",
-					"borderStyle": "solid",
-					"fontSize": 10,
-					"shortcutAccel": true,
-					"shortcutControl": false,
-					"shortcutShift": false,
-					"shortcutAlt": false,
-					"shortcutKey": "t"
 				},
 				"lb_lesQuoisDuQui": {
 					"type": "listbox",
@@ -992,18 +1055,6 @@
 						}
 					]
 				},
-				"btQuitter": {
-					"type": "button",
-					"text": "Quitter",
-					"top": 3,
-					"left": 685,
-					"width": 60,
-					"height": 20,
-					"events": [
-						"onClick"
-					],
-					"action": "cancel"
-				},
 				"zAge": {
 					"type": "input",
 					"dataSource": "Form:C1466.qui_e.getAge()",
@@ -1015,19 +1066,6 @@
 					"fill": "transparent",
 					"borderStyle": "none",
 					"dataSourceTypeHint": "number"
-				},
-				"zMessage": {
-					"type": "input",
-					"left": 11,
-					"top": 29,
-					"width": 749,
-					"height": 16,
-					"dataSource": "Form:C1466.message",
-					"enterable": false,
-					"dataSourceTypeHint": "text",
-					"fill": "#ffff00",
-					"fontWeight": "bold",
-					"textAlign": "center"
 				},
 				"rolePhoto_ZS1": {
 					"type": "input",
@@ -1127,41 +1165,6 @@
 					"shortcutAlt": false,
 					"shortcutKey": "i"
 				},
-				"btCopier": {
-					"type": "button",
-					"text": "copie(r) remarque",
-					"top": 29,
-					"left": 833,
-					"width": 120,
-					"height": 18,
-					"events": [
-						"onClick"
-					],
-					"shortcutAccel": true,
-					"shortcutControl": false,
-					"shortcutShift": false,
-					"shortcutAlt": false,
-					"shortcutKey": "r",
-					"method": "mBtCopier",
-					"fontSize": 10
-				},
-				"btDiapo": {
-					"type": "button",
-					"text": "(D)iapo",
-					"top": 4,
-					"left": 298,
-					"width": 70,
-					"height": 24,
-					"events": [
-						"onClick"
-					],
-					"method": "ObjectMethods/btDiapo.4dm",
-					"shortcutAccel": true,
-					"shortcutControl": false,
-					"shortcutShift": false,
-					"shortcutAlt": false,
-					"shortcutKey": "d"
-				},
 				"btQuoi": {
 					"type": "button",
 					"text": "Qu(o)i",
@@ -1178,6 +1181,23 @@
 					"shortcutShift": false,
 					"shortcutAlt": false,
 					"shortcutKey": "o"
+				},
+				"btPg2": {
+					"type": "button",
+					"text": "Pg 2",
+					"top": 2,
+					"left": 1086,
+					"width": 39,
+					"height": 24,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/btPg2.4dm",
+					"shortcutAccel": true,
+					"shortcutControl": false,
+					"shortcutShift": false,
+					"shortcutAlt": false,
+					"shortcutKey": "2"
 				}
 			},
 			"entryOrder": [
@@ -1209,29 +1229,109 @@
 				"rolePhoto_ZS2",
 				"lb_lesQuisDuQuoi",
 				"btModQuoi",
-				"btSuivant",
-				"btPrecedent",
-				"btPremier",
-				"btDernier",
-				"btSauver",
-				"btSupprimerRole",
-				"zPos",
-				"zLength",
-				"zQuiID",
-				"zForm_eleCouQui_ID",
 				"ge",
-				"btTrace",
-				"btQuitter",
 				"zAge",
-				"zMessage",
 				"btQui",
-				"btCopier",
-				"btDiapo",
-				"btQuoi"
+				"btQuoi",
+				"btPg2"
 			]
+		},
+		{
+			"objects": {
+				"btPg1": {
+					"type": "button",
+					"text": "Pg 1",
+					"top": 2,
+					"left": 1086,
+					"width": 39,
+					"height": 24,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/btPg1.4dm",
+					"shortcutAccel": true,
+					"shortcutControl": false,
+					"shortcutShift": false,
+					"shortcutAlt": false,
+					"shortcutKey": "1"
+				},
+				"rolePhoto_ZS3": {
+					"type": "input",
+					"left": 19,
+					"top": 60,
+					"width": 1075,
+					"height": 544,
+					"dataSourceTypeHint": "picture",
+					"dataSource": "Form:C1466.photoRole_i",
+					"pictureFormat": "proportionalCenter",
+					"events": [
+						"onDoubleClick"
+					],
+					"method": "ObjectMethods/rolePhoto_ZS3.4dm",
+					"sizingX": "grow",
+					"sizingY": "grow"
+				},
+				"bAuto": {
+					"type": "button",
+					"text": "défilementt a(u)to",
+					"top": 28,
+					"left": 966,
+					"width": 90,
+					"height": 18,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/bAuto.4dm",
+					"sizingX": "fixed",
+					"sizingY": "fixed",
+					"shortcutAccel": true,
+					"shortcutControl": false,
+					"shortcutShift": false,
+					"shortcutAlt": false,
+					"shortcutKey": "u",
+					"fontSize": 10
+				},
+				"zInfo1": {
+					"type": "input",
+					"dataSource": "Form:C1466.ticksDiapo_i",
+					"top": 29,
+					"left": 1054,
+					"width": 40,
+					"height": 15,
+					"events": [
+						"onLoad"
+					],
+					"method": "ObjectMethods/zInfo1.4dm",
+					"sizingY": "fixed",
+					"fontSize": 10
+				},
+				"label_age1": {
+					"type": "text",
+					"text": "Age lors du role:",
+					"top": 45,
+					"left": 977,
+					"width": 90,
+					"height": 13,
+					"fontSize": 10,
+					"sizingY": "fixed"
+				},
+				"ge1": {
+					"type": "input",
+					"dataSource": "Form:C1466.role_e.getAge()",
+					"top": 45,
+					"left": 1054,
+					"width": 40,
+					"height": 13,
+					"enterable": false,
+					"focusable": false,
+					"fill": "transparent",
+					"fontSize": 10,
+					"sizingY": "fixed"
+				}
+			}
 		}
 	],
-	"geometryStamp": 677,
+	"geometryStamp": 734,
 	"method": "method.4dm",
 	"editor": {
 		"groups": {

@@ -4,7 +4,7 @@ Case of
 	: (Form event code:C388=On Selection Change:K2:29)
 		Form:C1466.qui_es:=ds:C1482.Qui.query("relThemes.ID_Theme = :1"; Form:C1466.theme_e.ID).orderBy("FullName")
 		Form:C1466.quoi_es:=ds:C1482.Quoi.query("relThemes.ID_Theme = :1"; Form:C1466.theme_e.ID).orderBy("Nom")
-		Form:C1466.role_es:=ds:C1482.Role.query("qui.relThemes.ID_Theme = :1"; Form:C1466.theme_e.ID).orderBy("qui.FullName")
+		Form:C1466.role_es:=ds:C1482.Role.query("qui.relThemes.ID_Theme = :1"; Form:C1466.theme_e.ID).orderBy("qui.FullName, quoi.Date")
 	: (Form event code:C388=On Double Clicked:K2:5) & (Form:C1466.action="POUR_SELECTION") & (Form:C1466.theme_e#Null:C1517)
 		Form:C1466.ID_Theme:=Form:C1466.theme_e.ID
 		Form:C1466.page:=0  // 0 = quitter pour "dialoguer"

@@ -53,7 +53,6 @@ If (Form:C1466.posRoleSel_i>0)
 			Form:C1466.photoQui_i:=Null:C1517
 		End if 
 		
-		FORM GOTO PAGE:C247(1)
 	End if 
 	
 End if 

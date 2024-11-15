@@ -24,39 +24,6 @@
 	"pages": [
 		{
 			"objects": {
-				"RectangleQuoi": {
-					"type": "rectangle",
-					"top": 46,
-					"left": 477,
-					"width": 572,
-					"height": 287,
-					"fill": "#adff2f"
-				},
-				"Texte3": {
-					"type": "text",
-					"text": "Info Quoi",
-					"top": 48,
-					"left": 478,
-					"width": 55,
-					"height": 15,
-					"fill": "#FFFFFF",
-					"borderStyle": "solid"
-				},
-				"RectangleRole": {
-					"type": "rectangle",
-					"top": 46,
-					"left": 10,
-					"width": 462,
-					"height": 288,
-					"fill": "#dda0dd"
-				},
-				"Rectangle": {
-					"type": "rectangle",
-					"top": 46,
-					"left": 10,
-					"width": 52,
-					"height": 16
-				},
 				"btSuivant": {
 					"type": "button",
 					"text": "Suiva(n)t",
@@ -196,6 +163,321 @@
 					"width": 30,
 					"height": 15
 				},
+				"btSauver": {
+					"type": "button",
+					"text": "(S)auver",
+					"top": 3,
+					"left": 491,
+					"width": 60,
+					"height": 22,
+					"events": [
+						"onClick"
+					],
+					"defaultButton": true,
+					"method": "ObjectMethods/btSauver.4dm",
+					"shortcutAccel": true,
+					"shortcutControl": false,
+					"shortcutShift": false,
+					"shortcutAlt": false,
+					"shortcutKey": "s",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/RaccourciSauver"
+					},
+					"style": "custom",
+					"borderStyle": "raised"
+				},
+				"btSupprimer": {
+					"type": "button",
+					"text": "Supprimer rôle",
+					"top": 4,
+					"left": 564,
+					"width": 90,
+					"height": 21,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/btSupprimer.4dm",
+					"style": "custom",
+					"borderStyle": "raised"
+				},
+				"btTrace": {
+					"type": "button",
+					"text": "(t)race",
+					"top": 24,
+					"left": 1009,
+					"width": 35,
+					"height": 15,
+					"events": [
+						"onClick"
+					],
+					"style": "custom",
+					"method": "mBtTrace",
+					"borderStyle": "solid",
+					"fontSize": 10,
+					"shortcutAccel": true,
+					"shortcutControl": false,
+					"shortcutShift": false,
+					"shortcutAlt": false,
+					"shortcutKey": "t"
+				},
+				"zMessage": {
+					"type": "input",
+					"left": 11,
+					"top": 29,
+					"width": 749,
+					"height": 16,
+					"dataSource": "Form:C1466.message",
+					"enterable": false,
+					"dataSourceTypeHint": "text",
+					"fill": "#ffff00",
+					"fontWeight": "bold",
+					"textAlign": "center"
+				},
+				"btQuitter": {
+					"type": "button",
+					"text": "Quitter",
+					"top": 3,
+					"left": 685,
+					"width": 60,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"action": "cancel"
+				},
+				"btCopier": {
+					"type": "button",
+					"text": "copie(r) remarque",
+					"top": 29,
+					"left": 833,
+					"width": 120,
+					"height": 18,
+					"events": [
+						"onClick"
+					],
+					"shortcutAccel": true,
+					"shortcutControl": false,
+					"shortcutShift": false,
+					"shortcutAlt": false,
+					"shortcutKey": "r",
+					"method": "mBtCopier",
+					"fontSize": 10
+				}
+			},
+			"entryOrder": [
+				"btSuivant",
+				"btPrecedent",
+				"btPremier",
+				"btDernier",
+				"btSauver",
+				"btSupprimer",
+				"btQuitter",
+				"zposQuiSel_i",
+				"zQuiListelength",
+				"zQuiID",
+				"zMessage",
+				"zForm_eleCouQui_ID",
+				"btTrace",
+				"btCopier"
+			]
+		},
+		{
+			"objects": {
+				"lb_lesQuisDuQuoi": {
+					"type": "listbox",
+					"dataSource": "Form:C1466.roleDuQuoi_es",
+					"top": 368,
+					"left": 76,
+					"width": 810,
+					"height": 209,
+					"visibility": "visible",
+					"sizingX": "fixed",
+					"sizingY": "grow",
+					"headerHeight": "2em",
+					"listboxType": "collection",
+					"scrollbarHorizontal": "automatic",
+					"scrollbarVertical": "automatic",
+					"resizingMode": "legacy",
+					"method": "ObjectMethods/lb_lesQuisDuQuoi.4dm",
+					"currentItemSource": "Form:C1466.roleDuQuoiSel_e",
+					"events": [
+						"onClick",
+						"onAfterKeystroke"
+					],
+					"currentItemPositionSource": "Form:C1466.posRoleDuQuoi_i",
+					"selectedItemsSource": "",
+					"columns": [
+						{
+							"name": "cNomQuiDuQuoi",
+							"dataSource": "This:C1470.qui.FullName",
+							"width": 250,
+							"enterable": true,
+							"header": {
+								"text": "Nom",
+								"name": "eNomQuiDuQuoi"
+							},
+							"footer": {
+								"name": "1"
+							},
+							"events": [],
+							"method": "",
+							"minWidth": 250
+						},
+						{
+							"name": "cAnneeQuiDuQuoi",
+							"dataSource": "This:C1470.qui.DateNaiss",
+							"width": 80,
+							"enterable": true,
+							"header": {
+								"text": "Annee Naiss",
+								"name": "eAnneeQuiDuQuoi"
+							},
+							"footer": {
+								"name": "2"
+							},
+							"events": [],
+							"method": "",
+							"minWidth": 80,
+							"maxWidth": 80
+						},
+						{
+							"header": {
+								"name": "eDescrRoleQuiDuQuoi",
+								"text": "Role"
+							},
+							"name": "cDescrRoleQuiDuQuoi",
+							"dataSource": "This:C1470.Descr",
+							"footer": {
+								"name": "Pied3"
+							},
+							"events": [],
+							"method": "",
+							"width": 300,
+							"minWidth": 250,
+							"maxWidth": 450
+						},
+						{
+							"name": "cAgeQuiDuQuoi",
+							"dataSource": "This:C1470.getAge()",
+							"width": 63,
+							"enterable": false,
+							"header": {
+								"text": "Age dans quoi",
+								"name": "eAgeQuiDuQuoi"
+							},
+							"footer": {
+								"name": "3"
+							},
+							"events": []
+						},
+						{
+							"name": "cGenreQuiDuQuoi",
+							"dataSource": "This:C1470.qui.Genre",
+							"width": 52,
+							"enterable": true,
+							"header": {
+								"text": "Genre",
+								"name": "eGenreQuiDuQuoi"
+							},
+							"footer": {
+								"name": "4"
+							},
+							"method": "",
+							"events": []
+						},
+						{
+							"name": "cPaysQuiDuQuoi",
+							"dataSource": "This:C1470.qui.Pays",
+							"width": 159,
+							"enterable": true,
+							"header": {
+								"text": "Pays",
+								"name": "ePaysQuiDuQuoi"
+							},
+							"footer": {
+								"name": "5"
+							},
+							"events": [],
+							"method": "",
+							"minWidth": 50
+						}
+					]
+				},
+				"Texte4": {
+					"type": "text",
+					"text": "Tous les rôles du Quoi :",
+					"top": 348,
+					"left": 76,
+					"width": 150,
+					"height": 15
+				},
+				"btAjouterRole": {
+					"type": "button",
+					"text": "(A)jouter un rôle dans ce quoi",
+					"top": 47,
+					"left": 742,
+					"width": 180,
+					"height": 22,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/btAjouterRole.4dm",
+					"shortcutAccel": true,
+					"shortcutControl": false,
+					"shortcutShift": false,
+					"shortcutAlt": false,
+					"shortcutKey": "a"
+				},
+				"btPg2": {
+					"type": "button",
+					"text": "Pg 2",
+					"top": 2,
+					"left": 1086,
+					"width": 39,
+					"height": 24,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/btPg2.4dm",
+					"shortcutAccel": true,
+					"shortcutControl": false,
+					"shortcutShift": false,
+					"shortcutAlt": false,
+					"shortcutKey": "2"
+				},
+				"RectangleQuoi": {
+					"type": "rectangle",
+					"top": 46,
+					"left": 477,
+					"width": 572,
+					"height": 287,
+					"fill": "#adff2f"
+				},
+				"Texte3": {
+					"type": "text",
+					"text": "Info Quoi",
+					"top": 48,
+					"left": 478,
+					"width": 55,
+					"height": 15,
+					"fill": "#FFFFFF",
+					"borderStyle": "solid"
+				},
+				"RectangleRole": {
+					"type": "rectangle",
+					"top": 46,
+					"left": 10,
+					"width": 462,
+					"height": 288,
+					"fill": "#dda0dd"
+				},
+				"Rectangle": {
+					"type": "rectangle",
+					"top": 46,
+					"left": 10,
+					"width": 52,
+					"height": 16
+				},
 				"label_Nom1": {
 					"type": "text",
 					"text": "Nom:",
@@ -291,29 +573,6 @@
 					"left": 541,
 					"width": 123,
 					"height": 16
-				},
-				"btSauver": {
-					"type": "button",
-					"text": "(S)auver",
-					"top": 3,
-					"left": 491,
-					"width": 60,
-					"height": 22,
-					"events": [
-						"onClick"
-					],
-					"defaultButton": true,
-					"method": "ObjectMethods/btSauver.4dm",
-					"shortcutAccel": true,
-					"shortcutControl": false,
-					"shortcutShift": false,
-					"shortcutAlt": false,
-					"shortcutKey": "s",
-					"tooltip": {
-						"$ref": "/SOURCES/tips.json#/RaccourciSauver"
-					},
-					"style": "custom",
-					"borderStyle": "raised"
 				},
 				"Genre_CB": {
 					"type": "combo",
@@ -470,65 +729,6 @@
 					"fill": "#da70d6",
 					"borderStyle": "none"
 				},
-				"btSupprimer": {
-					"type": "button",
-					"text": "Supprimer rôle",
-					"top": 4,
-					"left": 564,
-					"width": 90,
-					"height": 21,
-					"events": [
-						"onClick"
-					],
-					"method": "ObjectMethods/btSupprimer.4dm",
-					"style": "custom",
-					"borderStyle": "raised"
-				},
-				"btTrace": {
-					"type": "button",
-					"text": "(t)race",
-					"top": 24,
-					"left": 1009,
-					"width": 35,
-					"height": 15,
-					"events": [
-						"onClick"
-					],
-					"style": "custom",
-					"method": "mBtTrace",
-					"borderStyle": "solid",
-					"fontSize": 10,
-					"shortcutAccel": true,
-					"shortcutControl": false,
-					"shortcutShift": false,
-					"shortcutAlt": false,
-					"shortcutKey": "t"
-				},
-				"zMessage": {
-					"type": "input",
-					"left": 11,
-					"top": 29,
-					"width": 749,
-					"height": 16,
-					"dataSource": "Form:C1466.message",
-					"enterable": false,
-					"dataSourceTypeHint": "text",
-					"fill": "#ffff00",
-					"fontWeight": "bold",
-					"textAlign": "center"
-				},
-				"btQuitter": {
-					"type": "button",
-					"text": "Quitter",
-					"top": 3,
-					"left": 685,
-					"width": 60,
-					"height": 20,
-					"events": [
-						"onClick"
-					],
-					"action": "cancel"
-				},
 				"iRolePhoto1": {
 					"type": "input",
 					"left": 26,
@@ -555,329 +755,70 @@
 					],
 					"method": "ObjectMethods/iQuiPhoto1.4dm",
 					"pictureFormat": "proportionalCenter"
-				},
-				"btCopier": {
-					"type": "button",
-					"text": "copie(r) remarque",
-					"top": 29,
-					"left": 833,
-					"width": 120,
-					"height": 18,
-					"events": [
-						"onClick"
-					],
-					"shortcutAccel": true,
-					"shortcutControl": false,
-					"shortcutShift": false,
-					"shortcutAlt": false,
-					"shortcutKey": "r",
-					"method": "mBtCopier",
-					"fontSize": 10
-				}
-			},
-			"entryOrder": [
-				"fieldDescrNom",
-				"iRolePhoto1",
-				"field_Nom",
-				"Genre_CB",
-				"paysQuoi_CB",
-				"field_Real",
-				"DomaineQuoi_CB",
-				"field_Annee1",
-				"field_Date",
-				"StockQuoi_CB",
-				"field_Prod",
-				"field_Prod1",
-				"iQuiPhoto1",
-				"field_Info",
-				"btSuivant",
-				"btPrecedent",
-				"btPremier",
-				"btDernier",
-				"btSauver",
-				"btSupprimer",
-				"btQuitter",
-				"zposQuiSel_i",
-				"zQuiListelength",
-				"zQuiID",
-				"zMessage",
-				"zForm_eleCouQui_ID",
-				"btTrace",
-				"ge",
-				"btCopier"
-			]
-		},
-		{
-			"objects": {
-				"lb_lesQuisDuQuoi": {
-					"type": "listbox",
-					"dataSource": "Form:C1466.roleDuQuoi_es",
-					"top": 368,
-					"left": 76,
-					"width": 810,
-					"height": 209,
-					"visibility": "visible",
-					"sizingX": "fixed",
-					"sizingY": "grow",
-					"headerHeight": "2em",
-					"listboxType": "collection",
-					"scrollbarHorizontal": "automatic",
-					"scrollbarVertical": "automatic",
-					"resizingMode": "legacy",
-					"method": "ObjectMethods/lb_lesQuisDuQuoi.4dm",
-					"currentItemSource": "Form:C1466.roleDuQuoiSel_e",
-					"events": [
-						"onClick",
-						"onAfterKeystroke"
-					],
-					"currentItemPositionSource": "Form:C1466.posRoleDuQuoi_i",
-					"selectedItemsSource": "",
-					"columns": [
-						{
-							"name": "cNomQuiDuQuoi",
-							"dataSource": "This:C1470.qui.FullName",
-							"width": 250,
-							"enterable": true,
-							"header": {
-								"text": "Nom",
-								"name": "eNomQuiDuQuoi"
-							},
-							"footer": {
-								"name": "1"
-							},
-							"events": [],
-							"method": "",
-							"minWidth": 250
-						},
-						{
-							"name": "cAnneeQuiDuQuoi",
-							"dataSource": "This:C1470.qui.DateNaiss",
-							"width": 80,
-							"enterable": true,
-							"header": {
-								"text": "Annee Naiss",
-								"name": "eAnneeQuiDuQuoi"
-							},
-							"footer": {
-								"name": "2"
-							},
-							"events": [],
-							"method": "",
-							"minWidth": 80,
-							"maxWidth": 80
-						},
-						{
-							"header": {
-								"name": "eDescrRoleQuiDuQuoi",
-								"text": "Role"
-							},
-							"name": "cDescrRoleQuiDuQuoi",
-							"dataSource": "This:C1470.Descr",
-							"footer": {
-								"name": "Pied3"
-							},
-							"events": [],
-							"method": "",
-							"width": 300,
-							"minWidth": 250,
-							"maxWidth": 450
-						},
-						{
-							"name": "cAgeQuiDuQuoi",
-							"dataSource": "This:C1470.getAge()",
-							"width": 63,
-							"enterable": false,
-							"header": {
-								"text": "Age dans quoi",
-								"name": "eAgeQuiDuQuoi"
-							},
-							"footer": {
-								"name": "3"
-							},
-							"events": []
-						},
-						{
-							"name": "cGenreQuiDuQuoi",
-							"dataSource": "This:C1470.qui.Genre",
-							"width": 52,
-							"enterable": true,
-							"header": {
-								"text": "Genre",
-								"name": "eGenreQuiDuQuoi"
-							},
-							"footer": {
-								"name": "4"
-							},
-							"method": "",
-							"events": []
-						},
-						{
-							"name": "cPaysQuiDuQuoi",
-							"dataSource": "This:C1470.qui.Pays",
-							"width": 159,
-							"enterable": true,
-							"header": {
-								"text": "Pays",
-								"name": "ePaysQuiDuQuoi"
-							},
-							"footer": {
-								"name": "5"
-							},
-							"events": [],
-							"method": "",
-							"minWidth": 50
-						}
-					]
-				},
-				"Texte4": {
-					"type": "text",
-					"text": "Tous les rôles du Quoi :",
-					"top": 348,
-					"left": 76,
-					"width": 150,
-					"height": 15
-				},
-				"btAjouterRole": {
-					"type": "button",
-					"text": "(A)jouter un rôle dans ce quoi",
-					"top": 47,
-					"left": 742,
-					"width": 180,
-					"height": 22,
-					"events": [
-						"onClick"
-					],
-					"method": "ObjectMethods/btAjouterRole.4dm",
-					"shortcutAccel": true,
-					"shortcutControl": false,
-					"shortcutShift": false,
-					"shortcutAlt": false,
-					"shortcutKey": "a"
 				}
 			},
 			"entryOrder": [
 				"lb_lesQuisDuQuoi",
-				"btAjouterRole"
+				"btAjouterRole",
+				"btPg2",
+				"field_Nom",
+				"field_Real",
+				"field_Date",
+				"field_Prod",
+				"Genre_CB",
+				"paysQuoi_CB",
+				"field_Info",
+				"StockQuoi_CB",
+				"DomaineQuoi_CB",
+				"field_Prod1",
+				"field_Annee1",
+				"fieldDescrNom",
+				"ge",
+				"iRolePhoto1",
+				"iQuiPhoto1"
 			]
 		},
 		{
 			"objects": {
-				"lb_lesQuisDuQuoi1": {
-					"type": "listbox",
-					"dataSource": "Form:C1466.roleDuQuoi_es",
-					"top": 386,
-					"left": 76,
-					"width": 810,
-					"height": 191,
-					"visibility": "visible",
-					"sizingX": "fixed",
-					"sizingY": "grow",
-					"headerHeight": "2em",
-					"listboxType": "collection",
-					"scrollbarHorizontal": "automatic",
-					"scrollbarVertical": "automatic",
-					"resizingMode": "legacy",
-					"method": "ObjectMethods/lb_lesQuisDuQuoi1.4dm",
-					"currentItemSource": "Form:C1466.roleDuQuoiSel_e",
+				"btPg1": {
+					"type": "button",
+					"text": "Pg 1",
+					"top": 2,
+					"left": 1086,
+					"width": 39,
+					"height": 24,
 					"events": [
-						"onClick",
-						"onAfterKeystroke"
+						"onClick"
 					],
-					"currentItemPositionSource": "Form:C1466.posRoleDuQuoi_i",
-					"selectedItemsSource": "",
-					"columns": [
-						{
-							"name": "cNomQuiDuQuoi1",
-							"dataSource": "This:C1470.getNom()",
-							"width": 250,
-							"enterable": true,
-							"header": {
-								"text": "Nom",
-								"name": "eNomQuiDuQuoi1"
-							},
-							"footer": {
-								"name": "6"
-							},
-							"events": [],
-							"method": "",
-							"minWidth": 250
-						},
-						{
-							"header": {
-								"name": "eDescrRoleQuiDuQuoi1",
-								"text": "Role"
-							},
-							"name": "cDescrRoleQuiDuQuoi1",
-							"dataSource": "This:C1470.Descr",
-							"footer": {
-								"name": "Pied1"
-							},
-							"events": [],
-							"method": "",
-							"width": 300,
-							"minWidth": 250,
-							"maxWidth": 450
-						},
-						{
-							"name": "cDomaine",
-							"dataSource": "This:C1470.groupe.Domaine",
-							"width": 52,
-							"enterable": true,
-							"header": {
-								"text": "Domaine",
-								"name": "eDomaine"
-							},
-							"footer": {
-								"name": "9"
-							},
-							"method": "",
-							"events": []
-						},
-						{
-							"name": "cGenreQuiDuQuoi2",
-							"dataSource": "This:C1470.groupe.Genre",
-							"width": 52,
-							"enterable": true,
-							"header": {
-								"text": "Genre",
-								"name": "eGenreQuiDuQuoi2"
-							},
-							"footer": {
-								"name": "7"
-							},
-							"method": "",
-							"events": []
-						},
-						{
-							"name": "cPaysQuiDuQuoi1",
-							"dataSource": "This:C1470.groupe.Pays",
-							"width": 159,
-							"enterable": true,
-							"header": {
-								"text": "Pays",
-								"name": "ePaysQuiDuQuoi1"
-							},
-							"footer": {
-								"name": "10"
-							},
-							"events": [],
-							"method": "",
-							"minWidth": 50
-						}
-					]
+					"method": "ObjectMethods/btPg1.4dm",
+					"shortcutAccel": true,
+					"shortcutControl": false,
+					"shortcutShift": false,
+					"shortcutAlt": false,
+					"shortcutKey": "1"
 				},
-				"Texte1": {
-					"type": "text",
-					"text": "groupes dans le quoi",
-					"top": 400,
-					"left": 14,
-					"width": 52,
-					"height": 60
+				"fieldDescrNom1": {
+					"type": "input",
+					"dataSource": "Form:C1466.role_e.Descr",
+					"top": 69,
+					"left": 53,
+					"width": 113,
+					"height": 448
+				},
+				"iRolePhoto2": {
+					"type": "input",
+					"left": 186,
+					"top": 59,
+					"width": 922,
+					"height": 496,
+					"dataSourceTypeHint": "picture",
+					"dataSource": "Form:C1466.photoRole_i",
+					"pictureFormat": "proportionalCenter"
 				}
 			}
 		}
 	],
-	"geometryStamp": 1217,
+	"geometryStamp": 1228,
 	"method": "method.4dm",
 	"editor": {
 		"activeView": "View 2",
@@ -886,6 +827,7 @@
 			"View 1": {},
 			"View 2": {
 				"objects": [
+					"btPg2",
 					"label_Nom1",
 					"field_Nom",
 					"label_Genre",
@@ -908,7 +850,8 @@
 					"field_Prod1",
 					"label_Qualif",
 					"field_Annee1",
-					"iQuiPhoto1"
+					"iQuiPhoto1",
+					"btPg1"
 				]
 			},
 			"View 3": {

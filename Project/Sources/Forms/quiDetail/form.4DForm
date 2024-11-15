@@ -20,7 +20,479 @@
 	"destination": "detailScreen",
 	"pages": [
 		{
-			"objects": {}
+			"objects": {
+				"btSauverQui": {
+					"type": "button",
+					"text": "(S)auver info qui",
+					"top": 4,
+					"left": 725,
+					"width": 141,
+					"height": 23,
+					"events": [
+						"onClick"
+					],
+					"defaultButton": true,
+					"method": "ObjectMethods/btSauverQui.4dm",
+					"shortcutAccel": true,
+					"shortcutControl": false,
+					"shortcutShift": false,
+					"shortcutAlt": false,
+					"shortcutKey": "s",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/RaccourciSauver"
+					}
+				},
+				"btSupprimerQui": {
+					"type": "button",
+					"text": "Supprimer le qui",
+					"top": 4,
+					"left": 607,
+					"width": 111,
+					"height": 22,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/btSupprimerQui.4dm"
+				},
+				"btSuivant": {
+					"type": "button",
+					"text": "Suiva(n)t",
+					"top": 4,
+					"left": 16,
+					"width": 70,
+					"height": 24,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/btSuivant.4dm",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/RaccourciSuivant"
+					},
+					"shortcutAccel": true,
+					"shortcutControl": false,
+					"shortcutShift": false,
+					"shortcutAlt": false,
+					"shortcutKey": "n",
+					"class": ""
+				},
+				"btPrecedent": {
+					"type": "button",
+					"text": "(P)récédent",
+					"top": 4,
+					"left": 86,
+					"width": 70,
+					"height": 24,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/btPrecedent.4dm",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/RaccourciPreced"
+					},
+					"shortcutAccel": true,
+					"shortcutControl": false,
+					"shortcutShift": false,
+					"shortcutAlt": false,
+					"shortcutKey": "p",
+					"class": ""
+				},
+				"btPremier": {
+					"type": "button",
+					"text": "Premier",
+					"top": 4,
+					"left": 158,
+					"width": 70,
+					"height": 24,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/btPremier.4dm"
+				},
+				"btDernier": {
+					"type": "button",
+					"text": "Dernier",
+					"top": 4,
+					"left": 228,
+					"width": 70,
+					"height": 24,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/btDernier.4dm"
+				},
+				"zQuiID": {
+					"type": "input",
+					"dataSource": "\"(\"+String:C10(Form:C1466.qui_e.ID)+\")\"",
+					"top": 7,
+					"left": 1005,
+					"width": 30,
+					"height": 16,
+					"enterable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"textAlign": "left",
+					"focusable": false,
+					"fontSize": 9
+				},
+				"zposQuiSel_i": {
+					"type": "input",
+					"left": 953,
+					"top": 7,
+					"width": 20,
+					"height": 16,
+					"dataSource": "Form:C1466.posQuiSel_i",
+					"enterable": false,
+					"dataSourceTypeHint": "integer",
+					"focusable": false,
+					"borderStyle": "none",
+					"textAlign": "right",
+					"fontSize": 9
+				},
+				"label6": {
+					"type": "text",
+					"text": "/",
+					"top": 7,
+					"left": 975,
+					"width": 5,
+					"height": 16
+				},
+				"zQuiListelength": {
+					"type": "input",
+					"left": 982,
+					"top": 7,
+					"width": 20,
+					"height": 16,
+					"dataSource": "Form:C1466.qui_es.length",
+					"enterable": false,
+					"dataSourceTypeHint": "integer",
+					"focusable": false,
+					"borderStyle": "none",
+					"textAlign": "right",
+					"fontSize": 9
+				},
+				"btSelectionnerQui": {
+					"type": "button",
+					"text": "S(e)lectionner le qui",
+					"top": 4,
+					"left": 302,
+					"width": 120,
+					"height": 24,
+					"events": [
+						"onClick"
+					],
+					"defaultButton": false,
+					"method": "ObjectMethods/btSelectionnerQui.4dm",
+					"class": "selection",
+					"shortcutAccel": true,
+					"shortcutControl": false,
+					"shortcutShift": false,
+					"shortcutAlt": false,
+					"shortcutKey": "e"
+				},
+				"btAjouterRole": {
+					"type": "button",
+					"text": "(A)jouter un rôle pour cet qui",
+					"top": 4,
+					"left": 427,
+					"width": 170,
+					"height": 23,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/btAjouterRole.4dm",
+					"shortcutAccel": true,
+					"shortcutControl": false,
+					"shortcutShift": false,
+					"shortcutAlt": false,
+					"shortcutKey": "a"
+				},
+				"btTrace": {
+					"type": "button",
+					"text": "(t)race",
+					"top": 7,
+					"left": 1040,
+					"width": 35,
+					"height": 15,
+					"events": [
+						"onClick"
+					],
+					"style": "custom",
+					"method": "mBtTrace",
+					"borderStyle": "solid",
+					"fontSize": 10,
+					"shortcutAccel": true,
+					"shortcutControl": false,
+					"shortcutShift": false,
+					"shortcutAlt": false,
+					"shortcutKey": "t"
+				},
+				"btQuitter": {
+					"type": "button",
+					"text": "Quitter",
+					"top": 4,
+					"left": 883,
+					"width": 60,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"action": "cancel"
+				},
+				"label_Nom": {
+					"type": "text",
+					"text": "Nom:",
+					"top": 57,
+					"left": 3,
+					"width": 60,
+					"height": 18,
+					"textAlign": "right"
+				},
+				"zNomQui": {
+					"type": "input",
+					"dataSource": "Form:C1466.qui_e.Nom",
+					"top": 57,
+					"left": 66,
+					"width": 404,
+					"height": 18
+				},
+				"label_Genre1": {
+					"type": "text",
+					"text": "Genre:",
+					"top": 105,
+					"left": 3,
+					"width": 60,
+					"height": 18,
+					"textAlign": "right"
+				},
+				"label_DateNaiss": {
+					"type": "text",
+					"text": "Date naiss:",
+					"top": 130,
+					"left": 3,
+					"width": 60,
+					"height": 18,
+					"textAlign": "right"
+				},
+				"label_Pays": {
+					"type": "text",
+					"text": "Pays:",
+					"top": 105,
+					"left": 199,
+					"width": 70,
+					"height": 18,
+					"textAlign": "right"
+				},
+				"label_AnneeDeces": {
+					"type": "text",
+					"text": "Date décès:",
+					"top": 130,
+					"left": 199,
+					"width": 70,
+					"height": 18,
+					"textAlign": "right"
+				},
+				"zAnneeDeces": {
+					"type": "input",
+					"dataSource": "Form:C1466.DateDeces",
+					"top": 130,
+					"left": 272,
+					"width": 80,
+					"height": 18,
+					"textAlign": "left",
+					"method": "ObjectMethods/zAnneeDeces.4dm",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/dateTexte"
+					},
+					"textFormat": {
+						"$ref": "/SOURCES/filters.json#/dateTexte"
+					},
+					"events": [
+						"onDataChange"
+					]
+				},
+				"cb_GenreQui": {
+					"type": "combo",
+					"left": 66,
+					"top": 105,
+					"width": 100,
+					"height": 22,
+					"events": [
+						"onDataChange"
+					],
+					"dataSource": "Form:C1466.qui_e.Genre",
+					"dataSourceTypeHint": "text",
+					"automaticInsertion": false,
+					"choiceList": {
+						"$ref": "/SOURCES/lists.json#/GenreQui"
+					}
+				},
+				"cb_PaysQui": {
+					"type": "combo",
+					"left": 272,
+					"top": 105,
+					"width": 150,
+					"height": 22,
+					"events": [
+						"onDataChange"
+					],
+					"dataSourceTypeHint": "text",
+					"choiceList": {
+						"$ref": "/SOURCES/lists.json#/PaysQui"
+					},
+					"dataSource": "Form:C1466.qui_e.Pays"
+				},
+				"label_Pays2": {
+					"type": "text",
+					"text": "Domaine:",
+					"top": 153,
+					"left": 3,
+					"width": 60,
+					"height": 18,
+					"textAlign": "right"
+				},
+				"label_Pays3": {
+					"type": "text",
+					"text": "Style:",
+					"top": 153,
+					"left": 199,
+					"width": 70,
+					"height": 18,
+					"textAlign": "right"
+				},
+				"cb_StyleQui": {
+					"type": "combo",
+					"left": 272,
+					"top": 153,
+					"width": 150,
+					"height": 22,
+					"events": [
+						"onDataChange"
+					],
+					"dataSourceTypeHint": "text",
+					"choiceList": {
+						"$ref": "/SOURCES/lists.json#/PaysQui"
+					},
+					"dataSource": "Form:C1466.qui_e.Style"
+				},
+				"label_Rem1": {
+					"type": "text",
+					"text": "Info:",
+					"top": 181,
+					"left": 3,
+					"width": 60,
+					"height": 17,
+					"textAlign": "right"
+				},
+				"zInfo": {
+					"type": "input",
+					"dataSource": "Form:C1466.qui_e.Info",
+					"top": 181,
+					"left": 66,
+					"width": 404,
+					"height": 80
+				},
+				"zAgeQui": {
+					"type": "input",
+					"left": 359,
+					"top": 130,
+					"width": 79,
+					"height": 18,
+					"enterable": false,
+					"dataSource": "Form:C1466.qui_e.getAge()",
+					"borderStyle": "none",
+					"dataSourceTypeHint": "number"
+				},
+				"label_Nom3": {
+					"type": "text",
+					"text": "Prénom:",
+					"top": 80,
+					"left": 3,
+					"width": 60,
+					"height": 18,
+					"textAlign": "right"
+				},
+				"zPreNomQui": {
+					"type": "input",
+					"dataSource": "Form:C1466.qui_e.Prenom",
+					"top": 80,
+					"left": 66,
+					"width": 404,
+					"height": 18
+				},
+				"zDateNaiss": {
+					"type": "input",
+					"dataSource": "Form:C1466.DateNaiss",
+					"top": 130,
+					"left": 68,
+					"width": 80,
+					"height": 18,
+					"dataSourceTypeHint": "text",
+					"events": [
+						"onDataChange"
+					],
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/dateTexte"
+					},
+					"textFormat": {
+						"$ref": "/SOURCES/filters.json#/dateTexte"
+					},
+					"method": "ObjectMethods/zDateNaiss.4dm"
+				},
+				"ld_domaineQui": {
+					"type": "dropdown",
+					"left": 66,
+					"top": 153,
+					"width": 100,
+					"height": 22,
+					"events": [
+						"onLoad",
+						"onDataChange"
+					],
+					"dataSourceTypeHint": "object",
+					"dataSource": "",
+					"method": "ObjectMethods/ld_domaineQui.4dm"
+				},
+				"bParametres": {
+					"type": "button",
+					"text": "Param",
+					"top": 155,
+					"left": 168,
+					"width": 48,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/bParametres.4dm"
+				},
+				"zMessage": {
+					"type": "input",
+					"left": 18,
+					"top": 30,
+					"width": 307,
+					"height": 16,
+					"dataSource": "Form:C1466.message",
+					"enterable": false,
+					"dataSourceTypeHint": "text"
+				},
+				"btCopier": {
+					"type": "button",
+					"text": "copie(r) remarque",
+					"top": 28,
+					"left": 332,
+					"width": 90,
+					"height": 18,
+					"events": [
+						"onClick"
+					],
+					"shortcutAccel": true,
+					"shortcutControl": false,
+					"shortcutShift": false,
+					"shortcutAlt": false,
+					"shortcutKey": "r",
+					"method": "mBtCopier",
+					"fontSize": 10
+				}
+			}
 		},
 		{
 			"objects": {
@@ -192,111 +664,6 @@
 						}
 					]
 				},
-				"label_Nom": {
-					"type": "text",
-					"text": "Nom:",
-					"top": 57,
-					"left": 10,
-					"width": 76,
-					"height": 18,
-					"textAlign": "right"
-				},
-				"zNomQui": {
-					"type": "input",
-					"dataSource": "Form:C1466.qui_e.Nom",
-					"top": 57,
-					"left": 94,
-					"width": 404,
-					"height": 18
-				},
-				"label_Genre1": {
-					"type": "text",
-					"text": "Genre:",
-					"top": 105,
-					"left": 10,
-					"width": 76,
-					"height": 18,
-					"textAlign": "right"
-				},
-				"label_DateNaiss": {
-					"type": "text",
-					"text": "Date naiss:",
-					"top": 130,
-					"left": 10,
-					"width": 76,
-					"height": 18,
-					"textAlign": "right"
-				},
-				"label_Pays": {
-					"type": "text",
-					"text": "Pays:",
-					"top": 105,
-					"left": 227,
-					"width": 70,
-					"height": 18,
-					"textAlign": "right"
-				},
-				"label_AnneeDeces": {
-					"type": "text",
-					"text": "Date décès:",
-					"top": 130,
-					"left": 227,
-					"width": 70,
-					"height": 18,
-					"textAlign": "right"
-				},
-				"zAnneeDeces": {
-					"type": "input",
-					"dataSource": "Form:C1466.DateDeces",
-					"top": 130,
-					"left": 300,
-					"width": 80,
-					"height": 18,
-					"textAlign": "left",
-					"method": "ObjectMethods/zAnneeDeces.4dm",
-					"entryFilter": {
-						"$ref": "/SOURCES/filters.json#/dateTexte"
-					},
-					"textFormat": {
-						"$ref": "/SOURCES/filters.json#/dateTexte"
-					},
-					"events": [
-						"onDataChange"
-					]
-				},
-				"btSauverQui": {
-					"type": "button",
-					"text": "(S)auver info qui",
-					"top": 6,
-					"left": 774,
-					"width": 141,
-					"height": 23,
-					"events": [
-						"onClick"
-					],
-					"defaultButton": true,
-					"method": "ObjectMethods/btSauverQui.4dm",
-					"shortcutAccel": true,
-					"shortcutControl": false,
-					"shortcutShift": false,
-					"shortcutAlt": false,
-					"shortcutKey": "s",
-					"tooltip": {
-						"$ref": "/SOURCES/tips.json#/RaccourciSauver"
-					}
-				},
-				"btSupprimerQui": {
-					"type": "button",
-					"text": "Supprimer le qui",
-					"top": 6,
-					"left": 656,
-					"width": 111,
-					"height": 22,
-					"events": [
-						"onClick"
-					],
-					"method": "ObjectMethods/btSupprimerQui.4dm"
-				},
 				"Texte4": {
 					"type": "text",
 					"text": "roles du qui",
@@ -304,328 +671,6 @@
 					"left": 7,
 					"width": 79,
 					"height": 15
-				},
-				"btSuivant": {
-					"type": "button",
-					"text": "Suiva(n)t",
-					"top": 4,
-					"left": 16,
-					"width": 70,
-					"height": 24,
-					"events": [
-						"onClick"
-					],
-					"method": "ObjectMethods/btSuivant.4dm",
-					"tooltip": {
-						"$ref": "/SOURCES/tips.json#/RaccourciSuivant"
-					},
-					"shortcutAccel": true,
-					"shortcutControl": false,
-					"shortcutShift": false,
-					"shortcutAlt": false,
-					"shortcutKey": "n",
-					"class": ""
-				},
-				"btPrecedent": {
-					"type": "button",
-					"text": "(P)récédent",
-					"top": 3,
-					"left": 86,
-					"width": 70,
-					"height": 24,
-					"events": [
-						"onClick"
-					],
-					"method": "ObjectMethods/btPrecedent.4dm",
-					"tooltip": {
-						"$ref": "/SOURCES/tips.json#/RaccourciPreced"
-					},
-					"shortcutAccel": true,
-					"shortcutControl": false,
-					"shortcutShift": false,
-					"shortcutAlt": false,
-					"shortcutKey": "p",
-					"class": ""
-				},
-				"btPremier": {
-					"type": "button",
-					"text": "Premier",
-					"top": 3,
-					"left": 158,
-					"width": 70,
-					"height": 24,
-					"events": [
-						"onClick"
-					],
-					"method": "ObjectMethods/btPremier.4dm"
-				},
-				"btDernier": {
-					"type": "button",
-					"text": "Dernier",
-					"top": 3,
-					"left": 228,
-					"width": 70,
-					"height": 24,
-					"events": [
-						"onClick"
-					],
-					"method": "ObjectMethods/btDernier.4dm"
-				},
-				"cb_GenreQui": {
-					"type": "combo",
-					"left": 94,
-					"top": 105,
-					"width": 100,
-					"height": 22,
-					"events": [
-						"onDataChange"
-					],
-					"dataSource": "Form:C1466.qui_e.Genre",
-					"dataSourceTypeHint": "text",
-					"automaticInsertion": false,
-					"choiceList": {
-						"$ref": "/SOURCES/lists.json#/GenreQui"
-					}
-				},
-				"cb_PaysQui": {
-					"type": "combo",
-					"left": 300,
-					"top": 105,
-					"width": 150,
-					"height": 22,
-					"events": [
-						"onDataChange"
-					],
-					"dataSourceTypeHint": "text",
-					"choiceList": {
-						"$ref": "/SOURCES/lists.json#/PaysQui"
-					},
-					"dataSource": "Form:C1466.qui_e.Pays"
-				},
-				"zQuiID": {
-					"type": "input",
-					"dataSource": "\"(\"+String:C10(Form:C1466.qui_e.ID)+\")\"",
-					"top": 10,
-					"left": 1052,
-					"width": 30,
-					"height": 16,
-					"enterable": false,
-					"fill": "transparent",
-					"borderStyle": "none",
-					"textAlign": "left",
-					"focusable": false,
-					"fontSize": 9
-				},
-				"zposQuiSel_i": {
-					"type": "input",
-					"left": 987,
-					"top": 10,
-					"width": 20,
-					"height": 16,
-					"dataSource": "Form:C1466.posQuiSel_i",
-					"enterable": false,
-					"dataSourceTypeHint": "integer",
-					"focusable": false,
-					"borderStyle": "none",
-					"textAlign": "right",
-					"fontSize": 9
-				},
-				"label6": {
-					"type": "text",
-					"text": "/",
-					"top": 10,
-					"left": 1013,
-					"width": 12,
-					"height": 16
-				},
-				"zQuiListelength": {
-					"type": "input",
-					"left": 1024,
-					"top": 10,
-					"width": 20,
-					"height": 16,
-					"dataSource": "Form:C1466.qui_es.length",
-					"enterable": false,
-					"dataSourceTypeHint": "integer",
-					"focusable": false,
-					"borderStyle": "none",
-					"textAlign": "right",
-					"fontSize": 9
-				},
-				"btSelectionnerQui": {
-					"type": "button",
-					"text": "S(e)lectionner le qui",
-					"top": 2,
-					"left": 324,
-					"width": 120,
-					"height": 24,
-					"events": [
-						"onClick"
-					],
-					"defaultButton": false,
-					"method": "ObjectMethods/btSelectionnerQui.4dm",
-					"class": "selection",
-					"shortcutAccel": true,
-					"shortcutControl": false,
-					"shortcutShift": false,
-					"shortcutAlt": false,
-					"shortcutKey": "e"
-				},
-				"btAjouterRole": {
-					"type": "button",
-					"text": "(A)jouter un rôle pour cet qui",
-					"top": 4,
-					"left": 464,
-					"width": 180,
-					"height": 23,
-					"events": [
-						"onClick"
-					],
-					"method": "ObjectMethods/btAjouterRole.4dm",
-					"shortcutAccel": true,
-					"shortcutControl": false,
-					"shortcutShift": false,
-					"shortcutAlt": false,
-					"shortcutKey": "a"
-				},
-				"label_Pays2": {
-					"type": "text",
-					"text": "Domaine:",
-					"top": 153,
-					"left": 10,
-					"width": 76,
-					"height": 18,
-					"textAlign": "right"
-				},
-				"label_Pays3": {
-					"type": "text",
-					"text": "Style:",
-					"top": 153,
-					"left": 227,
-					"width": 70,
-					"height": 18,
-					"textAlign": "right"
-				},
-				"cb_StyleQui": {
-					"type": "combo",
-					"left": 300,
-					"top": 153,
-					"width": 150,
-					"height": 22,
-					"events": [
-						"onDataChange"
-					],
-					"dataSourceTypeHint": "text",
-					"choiceList": {
-						"$ref": "/SOURCES/lists.json#/PaysQui"
-					},
-					"dataSource": "Form:C1466.qui_e.Style"
-				},
-				"label_Rem1": {
-					"type": "text",
-					"text": "Info:",
-					"top": 181,
-					"left": 10,
-					"width": 76,
-					"height": 17,
-					"textAlign": "right"
-				},
-				"zInfo": {
-					"type": "input",
-					"dataSource": "Form:C1466.qui_e.Info",
-					"top": 181,
-					"left": 94,
-					"width": 404,
-					"height": 80
-				},
-				"zAgeQui": {
-					"type": "input",
-					"left": 387,
-					"top": 130,
-					"width": 79,
-					"height": 18,
-					"enterable": false,
-					"dataSource": "Form:C1466.qui_e.getAge()",
-					"borderStyle": "none",
-					"dataSourceTypeHint": "number"
-				},
-				"label_Nom3": {
-					"type": "text",
-					"text": "Prénom:",
-					"top": 80,
-					"left": 10,
-					"width": 76,
-					"height": 18,
-					"textAlign": "right"
-				},
-				"zPreNomQui": {
-					"type": "input",
-					"dataSource": "Form:C1466.qui_e.Prenom",
-					"top": 80,
-					"left": 94,
-					"width": 404,
-					"height": 18
-				},
-				"zDateNaiss": {
-					"type": "input",
-					"dataSource": "Form:C1466.DateNaiss",
-					"top": 130,
-					"left": 96,
-					"width": 80,
-					"height": 18,
-					"dataSourceTypeHint": "text",
-					"events": [
-						"onDataChange"
-					],
-					"entryFilter": {
-						"$ref": "/SOURCES/filters.json#/dateTexte"
-					},
-					"textFormat": {
-						"$ref": "/SOURCES/filters.json#/dateTexte"
-					},
-					"method": "ObjectMethods/zDateNaiss.4dm"
-				},
-				"btTrace": {
-					"type": "button",
-					"text": "(t)race",
-					"top": 31,
-					"left": 1054,
-					"width": 35,
-					"height": 15,
-					"events": [
-						"onClick"
-					],
-					"style": "custom",
-					"method": "mBtTrace",
-					"borderStyle": "solid",
-					"fontSize": 10,
-					"shortcutAccel": true,
-					"shortcutControl": false,
-					"shortcutShift": false,
-					"shortcutAlt": false,
-					"shortcutKey": "t"
-				},
-				"zMessage": {
-					"type": "input",
-					"left": 18,
-					"top": 30,
-					"width": 420,
-					"height": 16,
-					"dataSource": "Form:C1466.message",
-					"enterable": false,
-					"dataSourceTypeHint": "text"
-				},
-				"btQuitter": {
-					"type": "button",
-					"text": "Quitter",
-					"top": 8,
-					"left": 917,
-					"width": 60,
-					"height": 20,
-					"events": [
-						"onClick"
-					],
-					"action": "cancel"
 				},
 				"iQuiPhoto1": {
 					"type": "input",
@@ -643,32 +688,6 @@
 					],
 					"method": "ObjectMethods/iQuiPhoto1.4dm",
 					"pictureFormat": "proportionalCenter"
-				},
-				"ld_domaineQui": {
-					"type": "dropdown",
-					"left": 94,
-					"top": 153,
-					"width": 100,
-					"height": 22,
-					"events": [
-						"onLoad",
-						"onDataChange"
-					],
-					"dataSourceTypeHint": "object",
-					"dataSource": "",
-					"method": "ObjectMethods/ld_domaineQui.4dm"
-				},
-				"bParametres": {
-					"type": "button",
-					"text": "Param",
-					"top": 155,
-					"left": 196,
-					"width": 48,
-					"height": 20,
-					"events": [
-						"onClick"
-					],
-					"method": "ObjectMethods/bParametres.4dm"
 				},
 				"List Box": {
 					"type": "listbox",
@@ -729,61 +748,75 @@
 					],
 					"method": "ObjectMethods/bDelTheme.4dm"
 				},
-				"btCopier": {
+				"btPg2": {
 					"type": "button",
-					"text": "copie(r) remarque",
-					"top": 28,
-					"left": 443,
-					"width": 90,
-					"height": 18,
+					"text": "Pg 2",
+					"top": 2,
+					"left": 1086,
+					"width": 39,
+					"height": 24,
 					"events": [
 						"onClick"
 					],
+					"method": "ObjectMethods/btPg2.4dm",
 					"shortcutAccel": true,
 					"shortcutControl": false,
 					"shortcutShift": false,
 					"shortcutAlt": false,
-					"shortcutKey": "r",
-					"method": "mBtCopier",
-					"fontSize": 10
+					"shortcutKey": "2"
 				}
 			},
 			"entryOrder": [
-				"zNomQui",
-				"zPreNomQui",
-				"cb_GenreQui",
-				"cb_PaysQui",
-				"zDateNaiss",
-				"zAnneeDeces",
-				"ld_domaineQui",
-				"bParametres",
-				"cb_StyleQui",
-				"zAgeQui",
-				"zInfo",
 				"iQuiPhoto1",
 				"lb_lesQuoisDuQui",
-				"btSuivant",
-				"btPrecedent",
-				"btPremier",
-				"btDernier",
-				"btSelectionnerQui",
-				"btAjouterRole",
-				"btSupprimerQui",
-				"btSauverQui",
-				"zposQuiSel_i",
-				"zQuiListelength",
-				"zQuiID",
-				"btTrace",
-				"zMessage",
-				"btQuitter",
 				"List Box",
 				"bAddTheme",
 				"bDelTheme",
-				"btCopier"
+				"btPg2"
 			]
+		},
+		{
+			"objects": {
+				"iQuiPhoto2": {
+					"type": "input",
+					"left": 480,
+					"top": 30,
+					"width": 624,
+					"height": 448,
+					"dataSourceTypeHint": "picture",
+					"dataSource": "Form:C1466.photoQui_i",
+					"enterable": true,
+					"focusable": false,
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					],
+					"method": "ObjectMethods/iQuiPhoto2.4dm",
+					"pictureFormat": "proportionalCenter",
+					"sizingX": "grow",
+					"sizingY": "grow"
+				},
+				"btPg1": {
+					"type": "button",
+					"text": "Pg 1",
+					"top": 2,
+					"left": 1086,
+					"width": 39,
+					"height": 24,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/btPg1.4dm",
+					"shortcutAccel": true,
+					"shortcutControl": false,
+					"shortcutShift": false,
+					"shortcutAlt": false,
+					"shortcutKey": "1"
+				}
+			}
 		}
 	],
-	"geometryStamp": 520,
+	"geometryStamp": 759,
 	"method": "method.4dm",
 	"editor": {
 		"activeView": "View 1",

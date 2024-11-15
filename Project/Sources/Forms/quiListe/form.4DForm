@@ -26,7 +26,7 @@
 			"objects": {
 				"Rectangle": {
 					"type": "rectangle",
-					"top": 186,
+					"top": 194,
 					"left": 917,
 					"width": 121,
 					"height": 83,
@@ -207,7 +207,7 @@
 				"Texte": {
 					"type": "text",
 					"text": "pour voir détail: Click ou Flèche droite ",
-					"top": 138,
+					"top": 146,
 					"left": 913,
 					"width": 115,
 					"height": 45
@@ -224,7 +224,7 @@
 					"type": "button",
 					"text": "Appliquer le filtre",
 					"top": 9,
-					"left": 924,
+					"left": 915,
 					"width": 113,
 					"height": 24,
 					"events": [
@@ -269,7 +269,7 @@
 					"type": "button",
 					"text": "(A)jouter un qui",
 					"top": 44,
-					"left": 917,
+					"left": 915,
 					"width": 120,
 					"height": 24,
 					"events": [
@@ -302,7 +302,7 @@
 				"btTrace": {
 					"type": "button",
 					"text": "(t)race",
-					"top": 84,
+					"top": 92,
 					"left": 992,
 					"width": 35,
 					"height": 15,
@@ -322,7 +322,7 @@
 				"fred": {
 					"type": "button",
 					"text": "FullName",
-					"top": 234,
+					"top": 242,
 					"left": 920,
 					"width": 113,
 					"height": 24,
@@ -335,8 +335,8 @@
 				"btQuitter": {
 					"type": "button",
 					"text": "Quitter",
-					"top": 84,
-					"left": 920,
+					"top": 92,
+					"left": 915,
 					"width": 60,
 					"height": 20,
 					"events": [
@@ -414,7 +414,7 @@
 				"FullName_t": {
 					"type": "input",
 					"left": 926,
-					"top": 214,
+					"top": 222,
 					"width": 105,
 					"height": 16,
 					"dataSource": "Form:C1466.FullName_t"
@@ -422,7 +422,7 @@
 				"Texte1": {
 					"type": "text",
 					"text": "FullName:",
-					"top": 195,
+					"top": 203,
 					"left": 923,
 					"width": 75,
 					"height": 15
@@ -430,7 +430,7 @@
 				"btCopier": {
 					"type": "button",
 					"text": "(C)opier",
-					"top": 278,
+					"top": 286,
 					"left": 917,
 					"width": 93,
 					"height": 31,
@@ -448,8 +448,8 @@
 				"btDiapo": {
 					"type": "button",
 					"text": "(D)iapo",
-					"top": 106,
-					"left": 920,
+					"top": 114,
+					"left": 915,
 					"width": 60,
 					"height": 20,
 					"events": [
@@ -461,6 +461,24 @@
 					"shortcutShift": false,
 					"shortcutAlt": false,
 					"shortcutKey": "d"
+				},
+				"btDebut": {
+					"type": "button",
+					"text": "Déb(u)t",
+					"top": 69,
+					"left": 915,
+					"width": 65,
+					"height": 24,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/btDebut.4dm",
+					"defaultButton": true,
+					"shortcutAccel": true,
+					"shortcutControl": false,
+					"shortcutShift": false,
+					"shortcutAlt": false,
+					"shortcutKey": "u"
 				}
 			},
 			"entryOrder": [
@@ -484,11 +502,12 @@
 				"zNbre",
 				"zLength",
 				"btCopier",
-				"btDiapo"
+				"btDiapo",
+				"btDebut"
 			]
 		}
 	],
-	"geometryStamp": 3152,
+	"geometryStamp": 3168,
 	"method": "method.4dm",
 	"editor": {
 		"activeView": "View 1",

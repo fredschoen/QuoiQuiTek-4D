@@ -1,0 +1,2 @@
+//btPg2
+FORM GOTO PAGE:C247(2)

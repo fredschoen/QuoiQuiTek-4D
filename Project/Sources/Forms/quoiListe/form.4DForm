@@ -372,8 +372,8 @@
 				"btTrace": {
 					"type": "button",
 					"text": "(t)race",
-					"top": 296,
-					"left": 917,
+					"top": 298,
+					"left": 922,
 					"width": 35,
 					"height": 15,
 					"events": [
@@ -497,6 +497,24 @@
 					"shortcutShift": false,
 					"shortcutAlt": false,
 					"shortcutKey": "h"
+				},
+				"btDebut": {
+					"type": "button",
+					"text": "Déb(u)t",
+					"top": 269,
+					"left": 920,
+					"width": 65,
+					"height": 25,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/btDebut.4dm",
+					"defaultButton": true,
+					"shortcutAccel": true,
+					"shortcutControl": false,
+					"shortcutShift": false,
+					"shortcutAlt": false,
+					"shortcutKey": "u"
 				}
 			},
 			"entryOrder": [
@@ -520,11 +538,12 @@
 				"zFormquoiListelength",
 				"btCopier",
 				"btDiapo",
-				"hListe"
+				"hListe",
+				"btDebut"
 			]
 		}
 	],
-	"geometryStamp": 3626,
+	"geometryStamp": 3635,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",

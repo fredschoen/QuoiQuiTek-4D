@@ -9,8 +9,8 @@
 	"windowMinHeight": 0,
 	"windowMaxWidth": 32767,
 	"windowMaxHeight": 32767,
-	"rightMargin": 20,
-	"bottomMargin": 20,
+	"rightMargin": 0,
+	"bottomMargin": 0,
 	"events": [
 		"onLoad",
 		"onValidate",
@@ -23,7 +23,254 @@
 	"destination": "detailScreen",
 	"pages": [
 		{
-			"objects": {}
+			"objects": {
+				"btSauverQuoi": {
+					"type": "button",
+					"text": "(S)auver",
+					"top": 5,
+					"left": 343,
+					"width": 66,
+					"height": 24,
+					"events": [
+						"onClick"
+					],
+					"defaultButton": true,
+					"method": "ObjectMethods/btSauverQuoi.4dm",
+					"shortcutAccel": true,
+					"shortcutControl": false,
+					"shortcutShift": false,
+					"shortcutAlt": false,
+					"shortcutKey": "s",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/RaccourciSauver"
+					}
+				},
+				"btAjouterRole": {
+					"type": "button",
+					"text": "(A)jouter un rôle dans ce quoi",
+					"top": 5,
+					"left": 522,
+					"width": 180,
+					"height": 24,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/btAjouterRole.4dm",
+					"shortcutAccel": true,
+					"shortcutControl": false,
+					"shortcutShift": false,
+					"shortcutAlt": false,
+					"shortcutKey": "a"
+				},
+				"btSupprimerQuoi": {
+					"type": "button",
+					"text": "Suprimer le quoi",
+					"top": 5,
+					"left": 411,
+					"width": 106,
+					"height": 24,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/btSupprimerQuoi.4dm",
+					"right": 517
+				},
+				"btSuivant": {
+					"type": "button",
+					"text": "Suiva(n)t",
+					"top": 5,
+					"left": 16,
+					"width": 70,
+					"height": 24,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/btSuivant.4dm",
+					"shortcutAccel": true,
+					"shortcutControl": false,
+					"shortcutShift": false,
+					"shortcutAlt": false,
+					"shortcutKey": "n",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/RaccourciSuivant"
+					}
+				},
+				"btPrecedent": {
+					"type": "button",
+					"text": "(P)récédent",
+					"top": 5,
+					"left": 86,
+					"width": 70,
+					"height": 24,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/btPrecedent.4dm",
+					"shortcutAccel": true,
+					"shortcutControl": false,
+					"shortcutShift": false,
+					"shortcutAlt": false,
+					"shortcutKey": "p",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/RaccourciPreced"
+					}
+				},
+				"btPremier": {
+					"type": "button",
+					"text": "Premier",
+					"top": 5,
+					"left": 158,
+					"width": 70,
+					"height": 24,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/btPremier.4dm"
+				},
+				"btDernier": {
+					"type": "button",
+					"text": "Dernier",
+					"top": 5,
+					"left": 228,
+					"width": 70,
+					"height": 24,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/btDernier.4dm"
+				},
+				"field_ID": {
+					"type": "input",
+					"dataSource": "Form:C1466.quoi_e.ID",
+					"top": 33,
+					"left": 779,
+					"width": 60,
+					"height": 16,
+					"enterable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"textAlign": "left"
+				},
+				"zposQuoiSel_i": {
+					"type": "input",
+					"left": 901,
+					"top": 7,
+					"width": 31,
+					"height": 16,
+					"dataSource": "Form:C1466.posQuoiSel_i",
+					"enterable": false,
+					"dataSourceTypeHint": "integer",
+					"focusable": false,
+					"borderStyle": "none",
+					"textAlign": "right"
+				},
+				"label1": {
+					"type": "text",
+					"text": "/",
+					"top": 7,
+					"left": 939,
+					"width": 12,
+					"height": 16
+				},
+				"zFormquoiListelength": {
+					"type": "input",
+					"left": 952,
+					"top": 7,
+					"width": 31,
+					"height": 16,
+					"dataSource": "Form:C1466.quoi_es.length",
+					"enterable": false,
+					"dataSourceTypeHint": "integer",
+					"focusable": false,
+					"borderStyle": "none",
+					"textAlign": "right"
+				},
+				"btSelectionnerQuoi": {
+					"type": "button",
+					"text": "S(e)lectionner le quoi",
+					"top": 5,
+					"left": 711,
+					"width": 130,
+					"height": 24,
+					"events": [
+						"onClick"
+					],
+					"defaultButton": false,
+					"method": "ObjectMethods/btSelectionnerQuoi.4dm",
+					"class": "selection",
+					"shortcutAccel": true,
+					"shortcutControl": false,
+					"shortcutShift": false,
+					"shortcutAlt": false,
+					"shortcutKey": "e"
+				},
+				"btTrace": {
+					"type": "button",
+					"text": "(t)race",
+					"top": 33,
+					"left": 939,
+					"width": 35,
+					"height": 15,
+					"events": [
+						"onClick"
+					],
+					"style": "custom",
+					"method": "mBtTrace",
+					"borderStyle": "solid",
+					"fontSize": 10,
+					"shortcutAccel": true,
+					"shortcutControl": false,
+					"shortcutShift": false,
+					"shortcutAlt": false,
+					"shortcutKey": "t"
+				},
+				"zMessage": {
+					"type": "input",
+					"left": 19,
+					"top": 33,
+					"width": 650,
+					"height": 16,
+					"dataSource": "Form:C1466.message",
+					"enterable": false,
+					"dataSourceTypeHint": "text"
+				},
+				"btQuitter": {
+					"type": "button",
+					"text": "(Q)uitter",
+					"top": 9,
+					"left": 841,
+					"width": 60,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"action": "cancel",
+					"shortcutAccel": true,
+					"shortcutControl": false,
+					"shortcutShift": false,
+					"shortcutAlt": false,
+					"shortcutKey": "q"
+				},
+				"btCopier": {
+					"type": "button",
+					"text": "copie(r) remarque",
+					"top": 33,
+					"left": 674,
+					"width": 90,
+					"height": 18,
+					"events": [
+						"onClick"
+					],
+					"shortcutAccel": true,
+					"shortcutControl": false,
+					"shortcutShift": false,
+					"shortcutAlt": false,
+					"shortcutKey": "r",
+					"method": "mBtCopier",
+					"fontSize": 10,
+					"action": ""
+				}
+			}
 		},
 		{
 			"objects": {
@@ -237,121 +484,6 @@
 					"width": 250,
 					"height": 18
 				},
-				"btSauverQuoi": {
-					"type": "button",
-					"text": "(S)auver",
-					"top": 5,
-					"left": 343,
-					"width": 66,
-					"height": 24,
-					"events": [
-						"onClick"
-					],
-					"defaultButton": true,
-					"method": "ObjectMethods/btSauverQuoi.4dm",
-					"shortcutAccel": true,
-					"shortcutControl": false,
-					"shortcutShift": false,
-					"shortcutAlt": false,
-					"shortcutKey": "s",
-					"tooltip": {
-						"$ref": "/SOURCES/tips.json#/RaccourciSauver"
-					}
-				},
-				"btAjouterRole": {
-					"type": "button",
-					"text": "(A)jouter un rôle dans ce quoi",
-					"top": 5,
-					"left": 522,
-					"width": 180,
-					"height": 24,
-					"events": [
-						"onClick"
-					],
-					"method": "ObjectMethods/btAjouterRole.4dm",
-					"shortcutAccel": true,
-					"shortcutControl": false,
-					"shortcutShift": false,
-					"shortcutAlt": false,
-					"shortcutKey": "a"
-				},
-				"btSupprimerQuoi": {
-					"type": "button",
-					"text": "Suprimer le quoi",
-					"top": 5,
-					"left": 411,
-					"width": 106,
-					"height": 24,
-					"events": [
-						"onClick"
-					],
-					"method": "ObjectMethods/btSupprimerQuoi.4dm",
-					"right": 517
-				},
-				"btSuivant": {
-					"type": "button",
-					"text": "Suiva(n)t",
-					"top": 5,
-					"left": 16,
-					"width": 70,
-					"height": 24,
-					"events": [
-						"onClick"
-					],
-					"method": "ObjectMethods/btSuivant.4dm",
-					"shortcutAccel": true,
-					"shortcutControl": false,
-					"shortcutShift": false,
-					"shortcutAlt": false,
-					"shortcutKey": "n",
-					"tooltip": {
-						"$ref": "/SOURCES/tips.json#/RaccourciSuivant"
-					}
-				},
-				"btPrecedent": {
-					"type": "button",
-					"text": "(P)récédent",
-					"top": 5,
-					"left": 86,
-					"width": 70,
-					"height": 24,
-					"events": [
-						"onClick"
-					],
-					"method": "ObjectMethods/btPrecedent.4dm",
-					"shortcutAccel": true,
-					"shortcutControl": false,
-					"shortcutShift": false,
-					"shortcutAlt": false,
-					"shortcutKey": "p",
-					"tooltip": {
-						"$ref": "/SOURCES/tips.json#/RaccourciPreced"
-					}
-				},
-				"btPremier": {
-					"type": "button",
-					"text": "Premier",
-					"top": 5,
-					"left": 158,
-					"width": 70,
-					"height": 24,
-					"events": [
-						"onClick"
-					],
-					"method": "ObjectMethods/btPremier.4dm"
-				},
-				"btDernier": {
-					"type": "button",
-					"text": "Dernier",
-					"top": 5,
-					"left": 228,
-					"width": 70,
-					"height": 24,
-					"events": [
-						"onClick"
-					],
-					"method": "ObjectMethods/btDernier.4dm"
-				},
 				"Genre_CB": {
 					"type": "combo",
 					"left": 73,
@@ -398,71 +530,6 @@
 					"width": 60,
 					"height": 17
 				},
-				"field_ID": {
-					"type": "input",
-					"dataSource": "Form:C1466.quoi_e.ID",
-					"top": 33,
-					"left": 779,
-					"width": 60,
-					"height": 16,
-					"enterable": false,
-					"fill": "transparent",
-					"borderStyle": "none",
-					"textAlign": "left"
-				},
-				"zposQuoiSel_i": {
-					"type": "input",
-					"left": 901,
-					"top": 7,
-					"width": 31,
-					"height": 16,
-					"dataSource": "Form:C1466.posQuoiSel_i",
-					"enterable": false,
-					"dataSourceTypeHint": "integer",
-					"focusable": false,
-					"borderStyle": "none",
-					"textAlign": "right"
-				},
-				"label1": {
-					"type": "text",
-					"text": "/",
-					"top": 7,
-					"left": 939,
-					"width": 12,
-					"height": 16
-				},
-				"zFormquoiListelength": {
-					"type": "input",
-					"left": 952,
-					"top": 7,
-					"width": 31,
-					"height": 16,
-					"dataSource": "Form:C1466.quoi_es.length",
-					"enterable": false,
-					"dataSourceTypeHint": "integer",
-					"focusable": false,
-					"borderStyle": "none",
-					"textAlign": "right"
-				},
-				"btSelectionnerQuoi": {
-					"type": "button",
-					"text": "S(e)lectionner le quoi",
-					"top": 5,
-					"left": 711,
-					"width": 130,
-					"height": 24,
-					"events": [
-						"onClick"
-					],
-					"defaultButton": false,
-					"method": "ObjectMethods/btSelectionnerQuoi.4dm",
-					"class": "selection",
-					"shortcutAccel": true,
-					"shortcutControl": false,
-					"shortcutShift": false,
-					"shortcutAlt": false,
-					"shortcutKey": "e"
-				},
 				"label_DateDernVisu": {
 					"type": "text",
 					"text": "DateDernVisu:",
@@ -495,53 +562,6 @@
 					"left": 73,
 					"width": 100,
 					"height": 18
-				},
-				"btTrace": {
-					"type": "button",
-					"text": "(t)race",
-					"top": 33,
-					"left": 939,
-					"width": 35,
-					"height": 15,
-					"events": [
-						"onClick"
-					],
-					"style": "custom",
-					"method": "mBtTrace",
-					"borderStyle": "solid",
-					"fontSize": 10,
-					"shortcutAccel": true,
-					"shortcutControl": false,
-					"shortcutShift": false,
-					"shortcutAlt": false,
-					"shortcutKey": "t"
-				},
-				"zMessage": {
-					"type": "input",
-					"left": 19,
-					"top": 33,
-					"width": 650,
-					"height": 16,
-					"dataSource": "Form:C1466.message",
-					"enterable": false,
-					"dataSourceTypeHint": "text"
-				},
-				"btQuitter": {
-					"type": "button",
-					"text": "(Q)uitter",
-					"top": 9,
-					"left": 841,
-					"width": 60,
-					"height": 20,
-					"events": [
-						"onClick"
-					],
-					"action": "cancel",
-					"shortcutAccel": true,
-					"shortcutControl": false,
-					"shortcutShift": false,
-					"shortcutAlt": false,
-					"shortcutKey": "q"
 				},
 				"lb_lesGroupesDuQuoi": {
 					"type": "listbox",
@@ -709,25 +729,6 @@
 					"shortcutAlt": false,
 					"shortcutKey": "h"
 				},
-				"btCopier": {
-					"type": "button",
-					"text": "copie(r) remarque",
-					"top": 33,
-					"left": 674,
-					"width": 90,
-					"height": 18,
-					"events": [
-						"onClick"
-					],
-					"shortcutAccel": true,
-					"shortcutControl": false,
-					"shortcutShift": false,
-					"shortcutAlt": false,
-					"shortcutKey": "r",
-					"method": "mBtCopier",
-					"fontSize": 10,
-					"action": ""
-				},
 				"List Box": {
 					"type": "listbox",
 					"left": 978,
@@ -792,6 +793,23 @@
 					"method": "ObjectMethods/bDelTheme.4dm",
 					"sizingX": "move",
 					"sizingY": "move"
+				},
+				"btPg2": {
+					"type": "button",
+					"text": "Pg 2",
+					"top": 2,
+					"left": 1086,
+					"width": 39,
+					"height": 24,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/btPg2.4dm",
+					"shortcutAccel": true,
+					"shortcutControl": false,
+					"shortcutShift": false,
+					"shortcutAlt": false,
+					"shortcutKey": "2"
 				}
 			},
 			"entryOrder": [
@@ -811,28 +829,45 @@
 				"lb_lesQuisDuQuoi",
 				"lb_lesGroupesDuQuoi",
 				"Zone de saisie1",
-				"btSuivant",
-				"btPrecedent",
-				"btPremier",
-				"btDernier",
-				"btSauverQuoi",
-				"btSupprimerQuoi",
-				"btAjouterRole",
-				"btSelectionnerQuoi",
-				"btQuitter",
-				"field_ID",
-				"zposQuoiSel_i",
-				"zFormquoiListelength",
-				"btTrace",
-				"zMessage",
-				"btCopier",
 				"List Box",
 				"bAddTheme",
-				"bDelTheme"
+				"bDelTheme",
+				"btPg2"
 			]
+		},
+		{
+			"objects": {
+				"btPg1": {
+					"type": "button",
+					"text": "Pg 1",
+					"top": 2,
+					"left": 1086,
+					"width": 39,
+					"height": 24,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/btPg1.4dm",
+					"shortcutAccel": true,
+					"shortcutControl": false,
+					"shortcutShift": false,
+					"shortcutAlt": false,
+					"shortcutKey": "1"
+				},
+				"Zone de saisie2": {
+					"type": "input",
+					"left": 19,
+					"top": 66,
+					"width": 1093,
+					"height": 496,
+					"dataSourceTypeHint": "picture",
+					"pictureFormat": "proportionalCenter",
+					"dataSource": "Form:C1466.photoQuoi_i"
+				}
+			}
 		}
 	],
-	"geometryStamp": 333,
+	"geometryStamp": 346,
 	"method": "method.4dm",
 	"editor": {
 		"activeView": "View 1",

@@ -157,6 +157,24 @@
 					"focusable": false,
 					"borderStyle": "none",
 					"textAlign": "right"
+				},
+				"btDebut": {
+					"type": "button",
+					"text": "Déb(u)t",
+					"top": 4,
+					"left": 460,
+					"width": 65,
+					"height": 25,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/btDebut.4dm",
+					"defaultButton": true,
+					"shortcutAccel": true,
+					"shortcutControl": false,
+					"shortcutShift": false,
+					"shortcutAlt": false,
+					"shortcutKey": "u"
 				}
 			},
 			"entryOrder": [
@@ -166,11 +184,12 @@
 				"btAjouterGroupe",
 				"btQuitter",
 				"btTrace",
-				"zLength"
+				"zLength",
+				"btDebut"
 			]
 		}
 	],
-	"geometryStamp": 42,
+	"geometryStamp": 44,
 	"method": "method.4dm",
 	"editor": {
 		"activeView": "View 1",
