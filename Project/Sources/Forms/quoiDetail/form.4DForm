@@ -279,8 +279,8 @@
 					"dataSource": "Form:C1466.role_es",
 					"top": 80,
 					"left": 343,
-					"width": 615,
-					"height": 157,
+					"width": 576,
+					"height": 221,
 					"visibility": "visible",
 					"sizingX": "fixed",
 					"sizingY": "fixed",
@@ -566,13 +566,15 @@
 				"Zone de saisie1": {
 					"type": "input",
 					"left": 633,
-					"top": 361,
+					"top": 316,
 					"width": 325,
-					"height": 208,
+					"height": 240,
 					"dataSourceTypeHint": "picture",
 					"fill": "#000000",
 					"pictureFormat": "proportionalCenter",
-					"dataSource": "Form:C1466.photoQuoi_i"
+					"dataSource": "Form:C1466.photoQuoi_i",
+					"sizingX": "grow",
+					"sizingY": "grow"
 				},
 				"ld_domaineQuoi": {
 					"type": "dropdown",
@@ -633,8 +635,8 @@
 				},
 				"List Box": {
 					"type": "listbox",
-					"left": 978,
-					"top": 105,
+					"left": 988,
+					"top": 388,
 					"width": 114,
 					"height": 156,
 					"events": [
@@ -649,7 +651,7 @@
 					"selectedItemsSource": "Form:C1466.relThemeSel_es",
 					"selectionMode": "single",
 					"sizingX": "move",
-					"sizingY": "move",
+					"sizingY": "fixed",
 					"columns": [
 						{
 							"header": {
@@ -671,8 +673,8 @@
 				"bAddTheme": {
 					"type": "button",
 					"text": "+",
-					"top": 78,
-					"left": 980,
+					"top": 361,
+					"left": 990,
 					"width": 27,
 					"height": 20,
 					"events": [
@@ -680,13 +682,13 @@
 					],
 					"method": "ObjectMethods/bAddTheme.4dm",
 					"sizingX": "move",
-					"sizingY": "move"
+					"sizingY": "fixed"
 				},
 				"bDelTheme": {
 					"type": "button",
 					"text": "-",
-					"top": 78,
-					"left": 1065,
+					"top": 361,
+					"left": 1075,
 					"width": 27,
 					"height": 20,
 					"events": [
@@ -694,7 +696,7 @@
 					],
 					"method": "ObjectMethods/bDelTheme.4dm",
 					"sizingX": "move",
-					"sizingY": "move"
+					"sizingY": "fixed"
 				},
 				"btPg2": {
 					"type": "button",
@@ -713,116 +715,43 @@
 					"shortcutAlt": false,
 					"shortcutKey": "2"
 				},
-				"lb_lesPostesDuQuoi": {
+				"lb_quiListe": {
 					"type": "listbox",
-					"dataSource": "Form:C1466.quoi_e.roles.qui.postes.qui",
-					"top": 244,
-					"left": 343,
-					"width": 615,
-					"height": 97,
+					"dataSource": "Form:C1466.roleSel_e.qui.postes.qui",
+					"top": 79,
+					"left": 927,
+					"width": 175,
+					"height": 222,
 					"visibility": "visible",
 					"sizingX": "fixed",
 					"sizingY": "fixed",
-					"headerHeight": "2em",
+					"headerHeight": "1em",
 					"listboxType": "collection",
-					"scrollbarHorizontal": "automatic",
+					"scrollbarHorizontal": "hidden",
 					"scrollbarVertical": "automatic",
 					"resizingMode": "legacy",
-					"currentItemSource": "Form:C1466.quiDePoste_e",
+					"selectedItemsSource": "",
+					"currentItemSource": "Form:C1466.quiDeGroupeSel_e",
 					"events": [
 						"onClick",
 						"onAfterKeystroke"
 					],
-					"currentItemPositionSource": "Form:C1466.quiDePoste_pos",
-					"selectionMode": "single",
+					"method": "ObjectMethods/lb_quiListe.4dm",
+					"currentItemPositionSource": "Form:C1466.posQuiDeGroupeSel_i",
 					"columns": [
 						{
-							"header": {
-								"name": "Role1",
-								"text": "Role"
-							},
-							"name": "DescrRole1",
-							"dataSource": "This:C1470.Descr",
-							"footer": {
-								"name": "Pied1"
-							},
-							"events": [],
-							"method": "",
-							"width": 145
-						},
-						{
-							"name": "AnneeNaiss1",
-							"dataSource": "This:C1470.qui.DateNaiss",
-							"width": 56,
-							"enterable": true,
-							"header": {
-								"text": "Date Naiss",
-								"name": "Entête1"
-							},
-							"footer": {
-								"name": "1"
-							},
-							"events": [],
-							"method": ""
-						},
-						{
-							"name": "AgeDansQuoi1",
-							"dataSource": "This:C1470.getAge()",
-							"width": 56,
+							"name": "c_Nom",
+							"dataSource": "This:C1470.FullName",
+							"width": 150,
 							"enterable": false,
 							"header": {
-								"text": "Age dans quoi",
-								"name": "Entête4"
-							},
-							"footer": {
-								"name": "2"
-							},
-							"events": []
-						},
-						{
-							"name": "Genre1",
-							"dataSource": "This:C1470.qui.Genre",
-							"width": 37,
-							"enterable": true,
-							"header": {
-								"text": "Genre",
-								"name": "3"
-							},
-							"footer": {
-								"name": "4"
-							},
-							"method": "",
-							"events": []
-						},
-						{
-							"name": "Pays2",
-							"dataSource": "This:C1470.qui.Pays",
-							"width": 43,
-							"enterable": true,
-							"header": {
-								"text": "Pays",
-								"name": "5"
-							},
-							"footer": {
-								"name": "6"
-							},
-							"events": [],
-							"method": ""
-						},
-						{
-							"name": "FullName1",
-							"dataSource": "This:C1470.qui.FullName",
-							"width": 120,
-							"enterable": true,
-							"header": {
-								"text": "Qui",
-								"name": "7"
+								"text": "Nom",
+								"name": "eNom",
+								"dataSource": "eNom"
 							},
 							"footer": {
 								"name": "8"
-							},
-							"events": [],
-							"method": ""
+							}
 						}
 					]
 				}
@@ -847,7 +776,7 @@
 				"bAddTheme",
 				"bDelTheme",
 				"btPg2",
-				"lb_lesPostesDuQuoi"
+				"lb_quiListe"
 			]
 		},
 		{
@@ -883,7 +812,7 @@
 			}
 		}
 	],
-	"geometryStamp": 351,
+	"geometryStamp": 385,
 	"method": "method.4dm",
 	"editor": {
 		"activeView": "View 1",
