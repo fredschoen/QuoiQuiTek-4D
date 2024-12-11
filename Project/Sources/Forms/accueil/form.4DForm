@@ -27,7 +27,7 @@
 					"left": 43,
 					"top": 24,
 					"width": 270,
-					"height": 180,
+					"height": 170,
 					"events": [
 						"onClick"
 					],
@@ -48,8 +48,8 @@
 				"bQui": {
 					"type": "button",
 					"text": "Qu(i)",
-					"top": 247,
-					"left": 280,
+					"top": 114,
+					"left": 405,
 					"width": 105,
 					"height": 20,
 					"events": [
@@ -65,8 +65,8 @@
 				"bQuoi": {
 					"type": "button",
 					"text": "Qu(o)i",
-					"top": 247,
-					"left": 155,
+					"top": 121,
+					"left": 135,
 					"width": 105,
 					"height": 20,
 					"events": [
@@ -131,8 +131,8 @@
 				"bGroupe": {
 					"type": "button",
 					"text": "(G)roupe",
-					"top": 247,
-					"left": 405,
+					"top": 222,
+					"left": 155,
 					"width": 105,
 					"height": 20,
 					"events": [
@@ -244,7 +244,7 @@
 			]
 		}
 	],
-	"geometryStamp": 629,
+	"geometryStamp": 633,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",

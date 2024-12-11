@@ -1088,7 +1088,7 @@
 					"top": 60,
 					"width": 185,
 					"height": 160,
-					"dataSourceTypeHint": "picture",
+					"dataSourceTypeHint": "picture","fill": "#000000",
 					"dataSource": "Form:C1466.photoRole_i",
 					"pictureFormat": "proportionalCenter",
 					"events": [
@@ -1102,7 +1102,7 @@
 					"top": 240,
 					"width": 200,
 					"height": 128,
-					"dataSourceTypeHint": "picture",
+					"dataSourceTypeHint": "picture","fill": "#000000",
 					"dataSource": "Form:C1466.photoQui_i",
 					"enterable": true,
 					"focusable": false,
@@ -1119,7 +1119,7 @@
 					"top": 427,
 					"width": 185,
 					"height": 144,
-					"dataSourceTypeHint": "picture",
+					"dataSourceTypeHint": "picture","fill": "#000000",
 					"dataSource": "Form:C1466.photoQuoi_i",
 					"pictureFormat": "proportionalCenter"
 				},
@@ -1275,7 +1275,7 @@
 					"top": 60,
 					"width": 1075,
 					"height": 544,
-					"dataSourceTypeHint": "picture",
+					"dataSourceTypeHint": "picture","fill": "#000000",
 					"dataSource": "Form:C1466.photoRole_i",
 					"pictureFormat": "proportionalCenter",
 					"events": [

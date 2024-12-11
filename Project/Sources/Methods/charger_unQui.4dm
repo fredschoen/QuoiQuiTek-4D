@@ -7,7 +7,8 @@ If (Form:C1466.action="AJOUTER")
 Else 
 	//les info sur le qui sélectionné: pour affichage détail
 	//KO SI ON VIENT DE role_Detail/lb_lesQuisDuQuoi
-	Form:C1466.qui_e:=Form:C1466.qui_es[Form:C1466.posQuiSel_i-1]  //si position=1, alors indice=0
+	$i:=(Form:C1466.posQuiSel_i>0) ? Form:C1466.posQuiSel_i-1 : 0
+	Form:C1466.qui_e:=Form:C1466.qui_es[$i]  //si position=1, alors indice=0
 	Form:C1466.relTheme_es:=Form:C1466.qui_e.relThemes.orderBy("theme.Nom")
 	Form:C1466.DateNaiss:=_f_transfoDateQui_Edit(Form:C1466.qui_e.DateNaiss)
 	Form:C1466.DateDeces:=_f_transfoDateQui_Edit(Form:C1466.qui_e.DateDeces)
@@ -39,3 +40,6 @@ If (Form:C1466.utilisationListe#"DIAPO")
 		OBJECT Get pointer:C1124(Object named:K67:5; "ld_domaineQui")->index:=$i
 	End if 
 End if 
+
+
+OBJECT SET VISIBLE:C603(*; "Groupe_@"; (Form:C1466.qui_e.Genre="G"))

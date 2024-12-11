@@ -694,7 +694,7 @@
 		]
 	},
 	"GenreQui": {
-		"editable": true,
+		"editable": false,
 		"items": [
 			{
 				"text": "M",
@@ -704,6 +704,11 @@
 			{
 				"text": "F",
 				"ref": 2,
+				"editable": true
+			},
+			{
+				"text": "G",
+				"ref": 4,
 				"editable": true
 			}
 		]

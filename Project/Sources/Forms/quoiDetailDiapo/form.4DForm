@@ -189,7 +189,7 @@
 					"top": 3,
 					"width": 571,
 					"height": 448,
-					"dataSourceTypeHint": "picture",
+					"dataSourceTypeHint": "picture","fill": "#000000",
 					"dataSource": "Form:C1466.photoQuoi_i",
 					"pictureFormat": "proportionalCenter",
 					"events": [

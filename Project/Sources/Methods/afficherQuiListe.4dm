@@ -27,10 +27,10 @@ End if
 
 If ($form_o.utilisationListe="AJOUTER_POSTE")
 	If (Count parameters:C259<2)
-		ALERT:C41(Current method name:C684()+": manque $2 (groupeID_ajouterPoste)")
+		ALERT:C41(Current method name:C684()+": manque $2 (quiGroupeID_ajouterPoste)")
 		TRACE:C157
 	Else 
-		$form_o.groupeID_ajouterPoste:=$2
+		$form_o.quiGroupeID_ajouterPoste:=$2
 	End if 
 End if 
 

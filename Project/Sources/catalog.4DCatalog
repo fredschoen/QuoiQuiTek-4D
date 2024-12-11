@@ -85,7 +85,7 @@
 		<table_extra trigger_insert="true" trigger_update="true">
 			<editor_table_info displayable_fields_count="8">
 				<color red="255" green="255" blue="255" alpha="0"/>
-				<coordinates left="439" top="177" width="131" height="224.33203125"/>
+				<coordinates left="444" top="180" width="131" height="224.33203125"/>
 			</editor_table_info>
 		</table_extra>
 	</table>
@@ -96,11 +96,12 @@
 		<field name="Descr" uuid="04DF76D6F746304EB49F4F8F566EEF39" type="10" limiting_length="255" never_null="true" id="4"/>
 		<field name="CreatTS" uuid="8C369C2440A18A4F85D6CB913B5E4ACE" type="10" limiting_length="19" never_null="true" id="5"/>
 		<field name="ModifTS" uuid="134712C0D4734745B475487C9D9F4EEC" type="10" limiting_length="19" never_null="true" id="6"/>
+		<field name="ID_QuiGroupe" uuid="664153844F3E7E4D8BC1F4FE9E755416" type="4" never_null="true" id="7"/>
 		<primary_key field_name="ID" field_uuid="12C98D30D7058942958D3D7D5552264A"/>
 		<table_extra trigger_insert="true" trigger_update="true">
-			<editor_table_info displayable_fields_count="7">
+			<editor_table_info displayable_fields_count="8">
 				<color red="255" green="255" blue="255" alpha="0"/>
-				<coordinates left="253" top="135" width="120" height="208.33203125"/>
+				<coordinates left="253" top="138" width="134" height="220.33203125"/>
 			</editor_table_info>
 		</table_extra>
 	</table>
@@ -269,6 +270,23 @@
 		<related_field kind="destination">
 			<field_ref uuid="7D44AEC0186F8341BF2162AF1B5099CF" name="ID">
 				<table_ref uuid="1AA34083D0527E4F91A17E4D5A70AA8D" name="Quoi"/>
+			</field_ref>
+		</related_field>
+		<relation_extra entry_wildchar="false" entry_create="false" choice_field="0" entry_autofill="false">
+			<editor_relation_info via_point_x="-1" via_point_y="-1" prefers_left="true" smartlink="true">
+				<color red="240" green="240" blue="240" alpha="0"/>
+			</editor_relation_info>
+		</relation_extra>
+	</relation>
+	<relation uuid="05BCEF28FA4D49429F761E0E09743620" name_Nto1="groupe" name_1toN="postes" auto_load_Nto1="false" auto_load_1toN="false" foreign_key="false" state="1">
+		<related_field kind="source">
+			<field_ref uuid="664153844F3E7E4D8BC1F4FE9E755416" name="ID_QuiGroupe">
+				<table_ref uuid="381A3D5B3CB3134294F031C4748A5E5E" name="Poste"/>
+			</field_ref>
+		</related_field>
+		<related_field kind="destination">
+			<field_ref uuid="0527D929F2CBE74A886B87DB09906737" name="ID">
+				<table_ref uuid="7F9A35CDF0EFB6429B6FA24F9D22CD4E" name="Qui"/>
 			</field_ref>
 		</related_field>
 		<relation_extra entry_wildchar="false" entry_create="false" choice_field="0" entry_autofill="false">

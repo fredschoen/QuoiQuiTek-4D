@@ -509,21 +509,50 @@
 					"shortcutAlt": false,
 					"shortcutKey": "d"
 				}
-			}
+			},
+			"entryOrder": [
+				"btSuivant",
+				"btPrecedent",
+				"btPremier",
+				"btDernier",
+				"btSelectionnerQui",
+				"btAjouterRole",
+				"btSupprimerQui",
+				"btSauverQui",
+				"btDiapo",
+				"btQuitter",
+				"zposQuiSel_i",
+				"zQuiID",
+				"btTrace",
+				"zQuiListelength",
+				"zMessage",
+				"btCopier",
+				"zNomQui",
+				"zPreNomQui",
+				"cb_GenreQui",
+				"cb_PaysQui",
+				"zDateNaiss",
+				"zAnneeDeces",
+				"zAgeQui",
+				"ld_domaineQui",
+				"bParametres",
+				"cb_StyleQui",
+				"zInfo"
+			]
 		},
 		{
 			"objects": {
 				"lb_lesQuoisDuQui": {
 					"type": "listbox",
 					"dataSource": "Form:C1466.role_es",
-					"top": 279,
+					"top": 281,
 					"left": 3,
-					"width": 1090,
+					"width": 680,
 					"height": 208,
 					"visibility": "visible",
 					"sizingX": "fixed",
 					"sizingY": "grow",
-					"headerHeight": "2em",
+					"headerHeight": "1em",
 					"listboxType": "collection",
 					"scrollbarHorizontal": "automatic",
 					"scrollbarVertical": "automatic",
@@ -579,7 +608,7 @@
 						{
 							"name": "cQuoiNom",
 							"dataSource": "This:C1470.quoi.Nom",
-							"width": 158,
+							"width": 200,
 							"enterable": true,
 							"header": {
 								"text": "Nom",
@@ -616,47 +645,9 @@
 							}
 						},
 						{
-							"name": "cQuoiProd",
-							"dataSource": "This:C1470.quoi.Prod",
-							"width": 142,
-							"enterable": true,
-							"header": {
-								"text": "Prod",
-								"name": "eProd"
-							},
-							"footer": {
-								"name": "18"
-							}
-						},
-						{
-							"name": "cQuoiReal",
-							"dataSource": "This:C1470.quoi.Real",
-							"width": 169,
-							"enterable": true,
-							"header": {
-								"text": "Real",
-								"name": "eReal"
-							},
-							"footer": {
-								"name": "20"
-							}
-						},
-						{
-							"header": {
-								"name": "eDerniereVisu",
-								"text": "DateDernVisu"
-							},
-							"name": "cQuoiDateDernVisu",
-							"footer": {
-								"name": "Pied2"
-							},
-							"width": 104,
-							"dataSource": "This:C1470.quoi.DateDernVisu"
-						},
-						{
 							"name": "cStock",
 							"dataSource": "This:C1470.quoi.Stock",
-							"width": 62,
+							"width": 53,
 							"enterable": true,
 							"header": {
 								"text": "Stock",
@@ -664,19 +655,6 @@
 							},
 							"footer": {
 								"name": "22"
-							}
-						},
-						{
-							"name": "cQuoiDomaine",
-							"dataSource": "This:C1470.quoi.Domaine",
-							"width": 30,
-							"enterable": true,
-							"header": {
-								"text": "Domaine",
-								"name": "eDomaineQuoi"
-							},
-							"footer": {
-								"name": "24"
 							}
 						}
 					]
@@ -691,11 +669,12 @@
 				},
 				"iQuiPhoto1": {
 					"type": "input",
-					"left": 554,
+					"left": 498,
 					"top": 30,
-					"width": 423,
+					"width": 479,
 					"height": 240,
 					"dataSourceTypeHint": "picture",
+					"fill": "#000000",
 					"dataSource": "Form:C1466.photoQui_i",
 					"enterable": true,
 					"focusable": false,
@@ -704,7 +683,8 @@
 						"onDataChange"
 					],
 					"method": "ObjectMethods/iQuiPhoto1.4dm",
-					"pictureFormat": "proportionalCenter"
+					"pictureFormat": "proportionalCenter",
+					"sizingX": "grow"
 				},
 				"List Box": {
 					"type": "listbox",
@@ -723,6 +703,7 @@
 					"currentItemSource": "Form:C1466.relTheme_e",
 					"selectedItemsSource": "Form:C1466.relThemeSel_es",
 					"selectionMode": "single",
+					"sizingX": "move",
 					"columns": [
 						{
 							"header": {
@@ -751,7 +732,8 @@
 					"events": [
 						"onClick"
 					],
-					"method": "ObjectMethods/bAddTheme.4dm"
+					"method": "ObjectMethods/bAddTheme.4dm",
+					"sizingX": "move"
 				},
 				"bDelTheme": {
 					"type": "button",
@@ -763,7 +745,8 @@
 					"events": [
 						"onClick"
 					],
-					"method": "ObjectMethods/bDelTheme.4dm"
+					"method": "ObjectMethods/bDelTheme.4dm",
+					"sizingX": "move"
 				},
 				"btPg2": {
 					"type": "button",
@@ -781,6 +764,123 @@
 					"shortcutShift": false,
 					"shortcutAlt": false,
 					"shortcutKey": "2"
+				},
+				"Groupe_lb_quiListe": {
+					"type": "listbox",
+					"dataSource": "Form:C1466.qui_e.postes.qui",
+					"top": 281,
+					"left": 692,
+					"width": 448,
+					"height": 179,
+					"visibility": "visible",
+					"sizingX": "fixed",
+					"sizingY": "grow",
+					"headerHeight": "1em",
+					"listboxType": "collection",
+					"scrollbarHorizontal": "hidden",
+					"scrollbarVertical": "automatic",
+					"resizingMode": "legacy",
+					"selectedItemsSource": "",
+					"currentItemSource": "Form:C1466.quiDeGroupeSel_e",
+					"events": [
+						"onClick",
+						"onAfterKeystroke"
+					],
+					"method": "ObjectMethods/Groupe_lb_quiListe.4dm",
+					"currentItemPositionSource": "Form:C1466.posQuiDeGroupeSel_i",
+					"columns": [
+						{
+							"name": "c_Nom",
+							"dataSource": "This:C1470.Nom",
+							"width": 150,
+							"enterable": false,
+							"header": {
+								"text": "Nom",
+								"name": "eNom",
+								"dataSource": "eNom"
+							},
+							"footer": {
+								"name": "8"
+							}
+						},
+						{
+							"name": "c_PreNom",
+							"dataSource": "This:C1470.Prenom",
+							"width": 117,
+							"enterable": false,
+							"header": {
+								"text": "Prénom",
+								"name": "ePrenom",
+								"dataSource": "ePrenom"
+							},
+							"footer": {
+								"name": "7"
+							}
+						},
+						{
+							"name": "cGenre1",
+							"dataSource": "This:C1470.Genre",
+							"width": 26,
+							"enterable": false,
+							"header": {
+								"text": "G",
+								"name": "eGenre",
+								"dataSource": "eGenre"
+							},
+							"footer": {
+								"name": "5"
+							},
+							"maxWidth": 99
+						},
+						{
+							"name": "cAnneeNaiss1",
+							"dataSource": "This:C1470.DateNaiss",
+							"width": 80,
+							"enterable": false,
+							"header": {
+								"text": "Date Naiss",
+								"name": "eDateNaiss",
+								"dataSource": "eDateNaiss"
+							},
+							"footer": {
+								"name": "3"
+							},
+							"maxWidth": 100
+						},
+						{
+							"name": "cDateDeces",
+							"dataSource": "This:C1470.DateDeces",
+							"width": 80,
+							"enterable": false,
+							"header": {
+								"text": "Deces",
+								"name": "eDateDeces",
+								"dataSource": "eDateDeces"
+							},
+							"footer": {
+								"name": "34"
+							},
+							"maxWidth": 100
+						}
+					]
+				},
+				"Groupe_btAjouterPoste": {
+					"type": "button",
+					"text": "A)jouter un poste à ce (g)roupe",
+					"top": 465,
+					"left": 815,
+					"width": 180,
+					"height": 24,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Groupe_btAjouterPoste.4dm",
+					"shortcutAccel": true,
+					"shortcutControl": false,
+					"shortcutShift": false,
+					"shortcutAlt": false,
+					"shortcutKey": "g",
+					"sizingY": "move"
 				}
 			},
 			"entryOrder": [
@@ -789,7 +889,9 @@
 				"List Box",
 				"bAddTheme",
 				"bDelTheme",
-				"btPg2"
+				"btPg2",
+				"Groupe_lb_quiListe",
+				"Groupe_btAjouterPoste"
 			]
 		},
 		{
@@ -801,6 +903,7 @@
 					"width": 624,
 					"height": 448,
 					"dataSourceTypeHint": "picture",
+					"fill": "#000000",
 					"dataSource": "Form:C1466.photoQui_i",
 					"enterable": true,
 					"focusable": false,
@@ -833,7 +936,7 @@
 			}
 		}
 	],
-	"geometryStamp": 886,
+	"geometryStamp": 986,
 	"method": "method.4dm",
 	"editor": {
 		"activeView": "View 1",

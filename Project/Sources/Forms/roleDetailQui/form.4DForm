@@ -681,7 +681,7 @@
 					"top": 97,
 					"width": 280,
 					"height": 192,
-					"dataSourceTypeHint": "picture",
+					"dataSourceTypeHint": "picture","fill": "#000000",
 					"dataSource": "Form:C1466.photoRole_i",
 					"pictureFormat": "proportionalCenter"
 				},
@@ -691,7 +691,7 @@
 					"top": 69,
 					"width": 312,
 					"height": 208,
-					"dataSourceTypeHint": "picture",
+					"dataSourceTypeHint": "picture","fill": "#000000",
 					"dataSource": "Form:C1466.photoQui_i",
 					"enterable": true,
 					"focusable": false,
@@ -792,7 +792,7 @@
 					"top": 66,
 					"width": 964,
 					"height": 432,
-					"dataSourceTypeHint": "picture",
+					"dataSourceTypeHint": "picture","fill": "#000000",
 					"dataSource": "Form:C1466.photoRole_i",
 					"pictureFormat": "proportionalCenter"
 				},
