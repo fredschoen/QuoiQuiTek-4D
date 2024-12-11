@@ -745,7 +745,7 @@
 							"width": 150,
 							"enterable": false,
 							"header": {
-								"text": "Nom",
+								"text": "Membre du groupe",
 								"name": "eNom",
 								"dataSource": "eNom"
 							},

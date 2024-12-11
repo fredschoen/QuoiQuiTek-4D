@@ -7,5 +7,5 @@ If (Form:C1466.action="AJOUTER")
 Else 
 	afficherQuiListe("AJOUTER_ROLE"; Form:C1466.quoi_e.ID)
 	//raffraichir l'écran détail
-	charger_unQuoi
+	charger_unQuoi(Current form name:C1298)
 End if 

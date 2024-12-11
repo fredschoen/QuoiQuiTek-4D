@@ -1,5 +1,6 @@
 //%attributes = {}
-// charger_unQuoi
+// charger_unQuoi(Current form name)
+#DECLARE($currentFormName : Text)
 var $img_i : Picture
 
 If (Form:C1466.action="AJOUTER")
@@ -58,7 +59,7 @@ If (OBJECT Get pointer:C1124(Object named:K67:5; "ld_domaineQuoi")#Null:C1517)  
 	End if 
 End if 
 
-
-
-LISTBOX SELECT ROW:C912(*; "lb_lesQuisDuQuoi"; 1; lk replace selection:K53:1)
-OBJECT SET SCROLL POSITION:C906(*; "lb_lesQuisDuQuoi"; 1)
+If ($currentFormName="quoiDetail")
+	LISTBOX SELECT ROW:C912(*; "lb_lesQuisDuQuoi"; 1; lk replace selection:K53:1)
+	OBJECT SET SCROLL POSITION:C906(*; "lb_lesQuisDuQuoi"; 1)
+End if 
