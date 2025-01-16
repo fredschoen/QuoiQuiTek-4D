@@ -1088,7 +1088,8 @@
 					"top": 60,
 					"width": 185,
 					"height": 160,
-					"dataSourceTypeHint": "picture","fill": "#000000",
+					"dataSourceTypeHint": "picture",
+					"fill": "#000000",
 					"dataSource": "Form:C1466.photoRole_i",
 					"pictureFormat": "proportionalCenter",
 					"events": [
@@ -1102,7 +1103,8 @@
 					"top": 240,
 					"width": 200,
 					"height": 128,
-					"dataSourceTypeHint": "picture","fill": "#000000",
+					"dataSourceTypeHint": "picture",
+					"fill": "#000000",
 					"dataSource": "Form:C1466.photoQui_i",
 					"enterable": true,
 					"focusable": false,
@@ -1119,7 +1121,8 @@
 					"top": 427,
 					"width": 185,
 					"height": 144,
-					"dataSourceTypeHint": "picture","fill": "#000000",
+					"dataSourceTypeHint": "picture",
+					"fill": "#000000",
 					"dataSource": "Form:C1466.photoQuoi_i",
 					"pictureFormat": "proportionalCenter"
 				},
@@ -1271,11 +1274,12 @@
 				},
 				"rolePhoto_ZS3": {
 					"type": "input",
-					"left": 19,
-					"top": 60,
-					"width": 1075,
-					"height": 544,
-					"dataSourceTypeHint": "picture","fill": "#000000",
+					"left": 4,
+					"top": 2,
+					"width": 1121,
+					"height": 624,
+					"dataSourceTypeHint": "picture",
+					"fill": "#000000",
 					"dataSource": "Form:C1466.photoRole_i",
 					"pictureFormat": "proportionalCenter",
 					"events": [
@@ -1345,7 +1349,7 @@
 			}
 		}
 	],
-	"geometryStamp": 801,
+	"geometryStamp": 805,
 	"method": "method.4dm",
 	"editor": {
 		"groups": {

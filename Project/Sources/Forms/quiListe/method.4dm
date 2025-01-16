@@ -5,11 +5,7 @@ $AfficherListeVide_b:=False:C215
 Case of 
 		
 	: (Form event code:C388=On Unload:K2:2)
-		CONFIRM:C162("sortir du détail du qui ?")
-		If (OK=1)
-			Form:C1466.page:=0
-			CANCEL:C270
-		End if 
+		confirmerSortieForm("sortir du détail du qui ?")
 		
 	: (Form event code:C388=On Load:K2:1)
 		If (Undefined:C82(Form:C1466.action))
