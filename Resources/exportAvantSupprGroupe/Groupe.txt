@@ -1,0 +1,270 @@
+Groupe	ID	Nom	Genre	Pays	Domaine	CreatTS	ModifTS	Info	
+Groupe	3	The Clash				2024-11-30T09:10:44		
+Groupe	2	Rolling Stones	Rock	Angl	MUS	2024-11-30T09:10:44		
+Groupe	4	I Three	Reggae		MUS	2024-11-30T09:10:44		
+Groupe	5	ACDC				2024-11-30T09:10:44	20/08/2023 23:44:09	
+Groupe	6	Beatles			MUS	2024-11-30T09:10:44		
+Groupe	7	Big Soul			MUS	2024-11-30T09:10:44		
+Groupe	15	Archive			MUS	2024-11-30T09:10:44		
+Groupe	9	Bonobo			MUS	2024-11-30T09:10:44		
+Groupe	10	Darkside			MUS	2024-11-30T09:10:44		
+Groupe	11	De La Soul			MUS	2024-11-30T09:10:44		
+Groupe	12	Fanga			MUS	2024-11-30T09:10:44		
+Groupe	13	Faultline			MUS	2024-11-30T09:10:44		
+Groupe	14	La Rumeur			MUS	2024-11-30T09:10:44		
+Groupe	16	Buffalo Springfield			MUS	2024-11-30T09:10:44		
+Groupe	17	Culture			MUS	2024-11-30T09:10:44		
+Groupe	18	Dexys Midnight Runners			MUS	2024-11-30T09:10:44		
+Groupe	19	Earth, Wind & Fire			MUS	2024-11-30T09:10:44		
+Groupe	20	Flamin' Groovies			MUS	2024-11-30T09:10:44		
+Groupe	21	Freerange Records Colour Series			MUS	2024-11-30T09:10:44		
+Groupe	22	Fugazi			MUS	2024-11-30T09:10:44		
+Groupe	23	Genesis			MUS	2024-11-30T09:10:44		
+Groupe	24	Iron Butterfly			MUS	2024-11-30T09:10:44		
+Groupe	25	Iron Maiden			MUS	2024-11-30T09:10:44		
+Groupe	26	Jethro Tull			MUS	2024-11-30T09:10:44		
+Groupe	27	Ministère A.M.E.R			MUS	2024-11-30T09:10:44		
+Groupe	28	Moussu T			MUS	2024-11-30T09:10:44		
+Groupe	29	New York Dolls			MUS	2024-11-30T09:10:44		
+Groupe	30	Orange Blossom			MUS	2024-11-30T09:10:44		
+Groupe	31	Rage Against the Machine			MUS	2024-11-30T09:10:44		
+Groupe	32	Savages			MUS	2024-11-30T09:10:44		
+Groupe	33	Sister Sledge			MUS	2024-11-30T09:10:44		
+Groupe	34	Sonic Youth			MUS	2024-11-30T09:10:44		
+Groupe	35	The Abyssinians			MUS	2024-11-30T09:10:44		
+Groupe	36	The Last Skeptik			MUS	2024-11-30T09:10:44		
+Groupe	37	The New Mastersounds			MUS	2024-11-30T09:10:44		
+Groupe	38	The Robert Cray Band			MUS	2024-11-30T09:10:44		
+Groupe	39	The Spencer Davis Group			MUS	2024-11-30T09:10:44		
+Groupe	40	The Stranglers			MUS	2024-11-30T09:10:44		
+Groupe	41	Africano			MUS	2024-11-30T09:10:44		
+Groupe	42	Afro-Cuban All Stars			MUS	2024-11-30T09:10:44		
+Groupe	43	Airbourne			MUS	2024-11-30T09:10:44		
+Groupe	44	Altanta Soul			MUS	2024-11-30T09:10:44		
+Groupe	45	Ange			MUS	2024-11-30T09:10:44		
+Groupe	46	Anstam			MUS	2024-11-30T09:10:44		
+Groupe	47	Arctic Monkeys			MUS	2024-11-30T09:10:44		
+Groupe	48	Asian Dub Foundation			MUS	2024-11-30T09:10:44		
+Groupe	49	Assassin			MUS	2024-11-30T09:10:44		
+Groupe	50	BB Brunes			MUS	2024-11-30T09:10:44		
+Groupe	51	Beastie Boys			MUS	2024-11-30T09:10:44		
+Groupe	52	Bee Gees			MUS	2024-11-30T09:10:44		
+Groupe	53	Berrurier noir			MUS	2024-11-30T09:10:44		
+Groupe	54	Bijou			MUS	2024-11-30T09:10:44		
+Groupe	55	Black Eyed Peas			MUS	2024-11-30T09:10:44		
+Groupe	56	Black Milk			MUS	2024-11-30T09:10:44		
+Groupe	57	Black Sabbath			MUS	2024-11-30T09:10:44		
+Groupe	58	Black Uhuru			MUS	2024-11-30T09:10:44		
+Groupe	59	Blondie			MUS	2024-11-30T09:10:44		
+Groupe	60	Blue Oyster Cult			MUS	2024-11-30T09:10:44		
+Groupe	61	Brain Damage			MUS	2024-11-30T09:10:44		
+Groupe	62	Breakbot			MUS	2024-11-30T09:10:44		
+Groupe	63	Buena Vista Social Club			MUS	2024-11-30T09:10:44		
+Groupe	64	Cabaret Voltaire			MUS	2024-11-30T09:10:44		
+Groupe	65	Cactus			MUS	2024-11-30T09:10:44		
+Groupe	66	Can			MUS	2024-11-30T09:10:44		
+Groupe	67	Canned Heat			MUS	2024-11-30T09:10:44		
+Groupe	68	Chemical Brothers			MUS	2024-11-30T09:10:44		
+Groupe	69	Chic			MUS	2024-11-30T09:10:44		
+Groupe	70	Chicago			MUS	2024-11-30T09:10:44		
+Groupe	71	Clarika			MUS	2024-11-30T09:10:44		
+Groupe	72	Cocteau Twins			MUS	2024-11-30T09:10:44		
+Groupe	73	ColdPlay			MUS	2024-11-30T09:10:44		
+Groupe	74	Creedence Clearwater Revival			MUS	2024-11-30T09:10:44		
+Groupe	75	Daft Punk			MUS	2024-11-30T09:10:44		
+Groupe	76	Death in Vegas			MUS	2024-11-30T09:10:44		
+Groupe	77	Deep Purple			MUS	2024-11-30T09:10:44		
+Groupe	78	Deftones			MUS	2024-11-30T09:10:44		
+Groupe	79	Depeche Mode			MUS	2024-11-30T09:10:44		
+Groupe	80	Devo			MUS	2024-11-30T09:10:44		
+Groupe	81	Dimmu Borgir			MUS	2024-11-30T09:10:44		
+Groupe	82	DJ-Kicks			MUS	2024-11-30T09:10:44		
+Groupe	83	Dogs			MUS	2024-11-30T09:10:44		
+Groupe	84	Doors			MUS	2024-11-30T09:10:44		
+Groupe	85	Dr Feelgood			MUS	2024-11-30T09:10:44		
+Groupe	86	Eagles			MUS	2024-11-30T09:10:44		
+Groupe	87	Echo and The Bunnymen			MUS	2024-11-30T09:10:44		
+Groupe	88	Eurythmics			MUS	2024-11-30T09:10:44		
+Groupe	89	Evanescence			MUS	2024-11-30T09:10:44		
+Groupe	90	Fatboy Slim			MUS	2024-11-30T09:10:44		
+Groupe	91	FFF			MUS	2024-11-30T09:10:44		
+Groupe	92	Fishbone			MUS	2024-11-30T09:10:44		
+Groupe	93	Food's Gold			MUS	2024-11-30T09:10:44		
+Groupe	94	Franz Ferdinand			MUS	2024-11-30T09:10:44		
+Groupe	95	Funkadelic Brain			MUS	2024-11-30T09:10:44		
+Groupe	96	Furtwängler			MUS	2024-11-30T09:10:44		
+Groupe	97	Garbage			MUS	2024-11-30T09:10:44		
+Groupe	98	Georgio			MUS	2024-11-30T09:10:44		
+Groupe	99	Gladiators			MUS	2024-11-30T09:10:44		
+Groupe	100	Godsmack			MUS	2024-11-30T09:10:44		
+Groupe	101	GoGo Penguin			MUS	2024-11-30T09:10:44		
+Groupe	102	Gong			MUS	2024-11-30T09:10:44		
+Groupe	103	Gotan Project			MUS	2024-11-30T09:10:44		
+Groupe	104	Grandmaster Flash			MUS	2024-11-30T09:10:44		
+Groupe	105	Groove Armada			MUS	2024-11-30T09:10:44		
+Groupe	106	Groundation			MUS	2024-11-30T09:10:44		
+Groupe	107	Hooded Fang			MUS	2024-11-30T09:10:44		
+Groupe	108	Hot Tuna			MUS	2024-11-30T09:10:44		
+Groupe	109	IAM			MUS	2024-11-30T09:10:44		
+Groupe	110	Inmates			MUS	2024-11-30T09:10:44		
+Groupe	111	Inxs			MUS	2024-11-30T09:10:44		
+Groupe	112	Israel Vibration			MUS	2024-11-30T09:10:44		
+Groupe	113	Jad Wio			MUS	2024-11-30T09:10:44		
+Groupe	114	Jazzanova			MUS	2024-11-30T09:10:44		
+Groupe	115	Jefferson Airplane			MUS	2024-11-30T09:10:44		
+Groupe	116	Joy Division			MUS	2024-11-30T09:10:44		
+Groupe	117	Killing Joke			MUS	2024-11-30T09:10:44		
+Groupe	118	King Crimson			MUS	2024-11-30T09:10:44		
+Groupe	119	Kings Of Leon			MUS	2024-11-30T09:10:44		
+Groupe	120	Kool And The Gang			MUS	2024-11-30T09:10:44		
+Groupe	121	La Souris Déglingué			MUS	2024-11-30T09:10:44		
+Groupe	122	La Souterraine			MUS	2024-11-30T09:10:44		
+Groupe	123	Le Peuple De L'Herbe			MUS	2024-11-30T09:10:44		
+Groupe	124	Le Rosenberg Trio			MUS	2024-11-30T09:10:44		
+Groupe	125	Led Zeppelin			MUS	2024-11-30T09:10:44		
+Groupe	126	Les Belles Lurettes			MUS	2024-11-30T09:10:44		
+Groupe	127	Les Blerots de Ravel			MUS	2024-11-30T09:10:44		
+Groupe	128	Les Rita Mitsouko			MUS	2024-11-30T09:10:44		
+Groupe	129	LFO			MUS	2024-11-30T09:10:44		
+Groupe	130	LMFAO			MUS	2024-11-30T09:10:44		
+Groupe	131	Lofofora			MUS	2024-11-30T09:10:44		
+Groupe	132	Louise Attaque			MUS	2024-11-30T09:10:44		
+Groupe	133	Madness			MUS	2024-11-30T09:10:44		
+Groupe	134	Madrugada			MUS	2024-11-30T09:10:44		
+Groupe	135	Magazine			MUS	2024-11-30T09:10:44		
+Groupe	136	Magma			MUS	2024-11-30T09:10:44		
+Groupe	137	Malted Milk			MUS	2024-11-30T09:10:44		
+Groupe	138	Marquis De Sade			MUS	2024-11-30T09:10:44		
+Groupe	139	Mass Hysteria			MUS	2024-11-30T09:10:44		
+Groupe	140	Massilia Sound System			MUS	2024-11-30T09:10:44		
+Groupe	141	Massive Attack			MUS	2024-11-30T09:10:44		
+Groupe	142	MC5			MUS	2024-11-30T09:10:44		
+Groupe	143	Metallica			MUS	2024-11-30T09:10:44		
+Groupe	144	Metric			MUS	2024-11-30T09:10:44		
+Groupe	145	MGMT			MUS	2024-11-30T09:10:44		
+Groupe	146	Mickey3d			MUS	2024-11-30T09:10:44		
+Groupe	147	Mississippi Heat			MUS	2024-11-30T09:10:44		
+Groupe	148	Moving Units			MUS	2024-11-30T09:10:44		
+Groupe	149	Muse			MUS	2024-11-30T09:10:44		
+Groupe	150	New Order			MUS	2024-11-30T09:10:44		
+Groupe	151	Niagara			MUS	2024-11-30T09:10:44		
+Groupe	152	Nightmares on Wax			MUS	2024-11-30T09:10:44		
+Groupe	153	Nirvana			MUS	2024-11-30T09:10:44		
+Groupe	154	Noir Désir			MUS	2024-11-30T09:10:44		
+Groupe	155	NTM			MUS	2024-11-30T09:10:44		
+Groupe	156	Oasis			MUS	2024-11-30T09:10:44		
+Groupe	157	Oberkampf			MUS	2024-11-30T09:10:44		
+Groupe	158	OMD			MUS	2024-11-30T09:10:44		
+Groupe	159	Oscar and the Wolf			MUS	2024-11-30T09:10:44		
+Groupe	160	Outcaste			MUS	2024-11-30T09:10:44		
+Groupe	161	Paris combo			MUS	2024-11-30T09:10:44		
+Groupe	162	Parliament			MUS	2024-11-30T09:10:44		
+Groupe	163	Pere Ubu			MUS	2024-11-30T09:10:44		
+Groupe	164	Pigalle			MUS	2024-11-30T09:10:44		
+Groupe	165	Pink Floyd			MUS	2024-11-30T09:10:44		
+Groupe	166	Pixies			MUS	2024-11-30T09:10:44		
+Groupe	167	Pogues			MUS	2024-11-30T09:10:44		
+Groupe	168	Portishead			MUS	2024-11-30T09:10:44		
+Groupe	169	Pretenders			MUS	2024-11-30T09:10:44		
+Groupe	170	Pretty Eyes			MUS	2024-11-30T09:10:44		
+Groupe	171	Primal Scream			MUS	2024-11-30T09:10:44		
+Groupe	172	Queen			MUS	2024-11-30T09:10:44		
+Groupe	173	Raggasonic			MUS	2024-11-30T09:10:44		
+Groupe	174	Ramones			MUS	2024-11-30T09:10:44		
+Groupe	175	Raoul Petite			MUS	2024-11-30T09:10:44		
+Groupe	176	Red Hot Chili Pepers			MUS	2024-11-30T09:10:44		
+Groupe	177	REM			MUS	2024-11-30T09:10:44		
+Groupe	178	Roxy Music			MUS	2024-11-30T09:10:44		
+Groupe	179	Sade			MUS	2024-11-30T09:10:44		
+Groupe	180	Santana			MUS	2024-11-30T09:10:44		
+Groupe	181	Scorpion			MUS	2024-11-30T09:10:44		
+Groupe	182	Scorpions			MUS	2024-11-30T09:10:44		
+Groupe	183	Shaka Ponk			MUS	2024-11-30T09:10:44		
+Groupe	184	Silent Poets			MUS	2024-11-30T09:10:44		
+Groupe	185	Simple Minds			MUS	2024-11-30T09:10:44		
+Groupe	186	Simply Red			MUS	2024-11-30T09:10:44		
+Groupe	187	Sinead O Connor			MUS	2024-11-30T09:10:44		
+Groupe	188	Sinsemila			MUS	2024-11-30T09:10:44		
+Groupe	189	Siouxsie and the Banshees			MUS	2024-11-30T09:10:44		
+Groupe	190	Sisters of Mercy			MUS	2024-11-30T09:10:44		
+Groupe	191	Sly et The Family Stone			MUS	2024-11-30T09:10:44		
+Groupe	192	Soldat Louis			MUS	2024-11-30T09:10:44		
+Groupe	193	Soldout			MUS	2024-11-30T09:10:44		
+Groupe	194	Soulwax			MUS	2024-11-30T09:10:44		
+Groupe	195	Sparks			MUS	2024-11-30T09:10:44		
+Groupe	196	Special			MUS	2024-11-30T09:10:44		
+Groupe	197	Spice Girls			MUS	2024-11-30T09:10:44		
+Groupe	198	St. Petersburg String Quartet			MUS	2024-11-30T09:10:44		
+Groupe	199	Steel Pulse			MUS	2024-11-30T09:10:44		
+Groupe	200	Steely Dan			MUS	2024-11-30T09:10:44		
+Groupe	201	Steppenwolf			MUS	2024-11-30T09:10:44		
+Groupe	202	Sugarhill Gang			MUS	2024-11-30T09:10:44		
+Groupe	203	Suicide			MUS	2024-11-30T09:10:44		
+Groupe	204	Sun Ra			MUS	2024-11-30T09:10:44		
+Groupe	205	T Rex			MUS	2024-11-30T09:10:44		
+Groupe	206	Talking Heads			MUS	2024-11-30T09:10:44		
+Groupe	207	Tangerine Dream			MUS	2024-11-30T09:10:44		
+Groupe	208	Taxi Girl			MUS	2024-11-30T09:10:44		
+Groupe	209	Telephone			MUS	2024-11-30T09:10:44		
+Groupe	210	Television			MUS	2024-11-30T09:10:44		
+Groupe	211	Ten Years After			MUS	2024-11-30T09:10:44		
+Groupe	212	Tetes Raides			MUS	2024-11-30T09:10:44		
+Groupe	213	Texas			MUS	2024-11-30T09:10:44		
+Groupe	214	The B-52's			MUS	2024-11-30T09:10:44		
+Groupe	215	The Blues Brothers			MUS	2024-11-30T09:10:44		
+Groupe	216	The Commitments			MUS	2024-11-30T09:10:44		
+Groupe	217	The Cramps			MUS	2024-11-30T09:10:44		
+Groupe	218	The Cranberries			MUS	2024-11-30T09:10:44		
+Groupe	219	The Cure			MUS	2024-11-30T09:10:44		
+Groupe	220	The Divine Comedy			MUS	2024-11-30T09:10:44		
+Groupe	221	The Ethiopians			MUS	2024-11-30T09:10:44		
+Groupe	222	The Faboulous Troubadour			MUS	2024-11-30T09:10:44		
+Groupe	223	The Fabulous Thunderbirds			MUS	2024-11-30T09:10:44		
+Groupe	224	The Fleshtones			MUS	2024-11-30T09:10:44		
+Groupe	225	The Go-Go s			MUS	2024-11-30T09:10:44		
+Groupe	226	The Go! Team			MUS	2024-11-30T09:10:44		
+Groupe	227	The Gun Club			MUS	2024-11-30T09:10:44		
+Groupe	228	The Jam			MUS	2024-11-30T09:10:44		
+Groupe	229	The Kills			MUS	2024-11-30T09:10:44		
+Groupe	230	The Kooks			MUS	2024-11-30T09:10:44		
+Groupe	231	The Lords of Altamont			MUS	2024-11-30T09:10:44		
+Groupe	232	The Mamas and the Papas			MUS	2024-11-30T09:10:44		
+Groupe	233	The Penelopes			MUS	2024-11-30T09:10:44		
+Groupe	234	The Police			MUS	2024-11-30T09:10:44		
+Groupe	235	The Pretty Things			MUS	2024-11-30T09:10:44		
+Groupe	236	The Prodigy			MUS	2024-11-30T09:10:44		
+Groupe	237	The Servant			MUS	2024-11-30T09:10:44		
+Groupe	238	The Sex Pistols			MUS	2024-11-30T09:10:44		
+Groupe	239	The Shoes			MUS	2024-11-30T09:10:44		
+Groupe	240	The Small Faces			MUS	2024-11-30T09:10:44		
+Groupe	241	The Smiths			MUS	2024-11-30T09:10:44		
+Groupe	242	The Staple Singers			MUS	2024-11-30T09:10:44		
+Groupe	243	The Stlye Council			MUS	2024-11-30T09:10:44		
+Groupe	244	The Supremes			MUS	2024-11-30T09:10:44		
+Groupe	245	The Temper Trap			MUS	2024-11-30T09:10:44		
+Groupe	246	The Temptations			MUS	2024-11-30T09:10:44		
+Groupe	247	The Trammps			MUS	2024-11-30T09:10:44		
+Groupe	248	The Undertones			MUS	2024-11-30T09:10:44		
+Groupe	249	The Verve			MUS	2024-11-30T09:10:44		
+Groupe	250	The Volunteered Slaves			MUS	2024-11-30T09:10:44		
+Groupe	251	The White Stripes			MUS	2024-11-30T09:10:44		
+Groupe	252	The Who			MUS	2024-11-30T09:10:44		
+Groupe	253	Third World			MUS	2024-11-30T09:10:44		
+Groupe	254	Tindersticks			MUS	2024-11-30T09:10:44		
+Groupe	255	Tom Tom Club			MUS	2024-11-30T09:10:44		
+Groupe	256	Trio Beyond			MUS	2024-11-30T09:10:44		
+Groupe	257	Trust			MUS	2024-11-30T09:10:44		
+Groupe	258	U2			MUS	2024-11-30T09:10:44		
+Groupe	259	Ultravox			MUS	2024-11-30T09:10:44		
+Groupe	260	Urban dub			MUS	2024-11-30T09:10:44		
+Groupe	261	Wailing Souls			MUS	2024-11-30T09:10:44		
+Groupe	262	Warpaint			MUS	2024-11-30T09:10:44		
+Groupe	263	Wax Tailor			MUS	2024-11-30T09:10:44		
+Groupe	264	Weather Report			MUS	2024-11-30T09:10:44		
+Groupe	265	West Coast Hip Hop			MUS	2024-11-30T09:10:44		
+Groupe	266	White Lies			MUS	2024-11-30T09:10:44		
+Groupe	267	Woodkid			MUS	2024-11-30T09:10:44		
+Groupe	268	Yes			MUS	2024-11-30T09:10:44		
+Groupe	269	Zebda			MUS	2024-11-30T09:10:44		
+Groupe	270	ZZ Top			MUS	2024-11-30T09:10:44		
+Groupe	271	The Strokes	Rock		MUS	2024-11-30T09:10:44	2023-12-01T11:23:59	The Strokes|Julian Casablancas|Nick Valensi|Albert Hammond Jr|Nikolai Fraiture|Fabrizio Moretti

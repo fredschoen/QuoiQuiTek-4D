@@ -1,2 +1,0 @@
-//btAppliquerFiltre
-charger_LesGroupes

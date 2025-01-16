@@ -48,10 +48,10 @@
 				"bQui": {
 					"type": "button",
 					"text": "Qu(i)",
-					"top": 114,
-					"left": 405,
-					"width": 105,
-					"height": 20,
+					"top": 155,
+					"left": 384,
+					"width": 140,
+					"height": 30,
 					"events": [
 						"onClick"
 					],
@@ -60,15 +60,17 @@
 					"shortcutControl": false,
 					"shortcutShift": false,
 					"shortcutAlt": false,
-					"shortcutKey": "i"
+					"shortcutKey": "i",
+					"fontSize": 14,
+					"fontWeight": "bold"
 				},
 				"bQuoi": {
 					"type": "button",
 					"text": "Qu(o)i",
-					"top": 121,
-					"left": 135,
-					"width": 105,
-					"height": 20,
+					"top": 155,
+					"left": 105,
+					"width": 140,
+					"height": 30,
 					"events": [
 						"onClick"
 					],
@@ -77,15 +79,17 @@
 					"shortcutControl": false,
 					"shortcutShift": false,
 					"shortcutAlt": false,
-					"shortcutKey": "o"
+					"shortcutKey": "o",
+					"fontSize": 14,
+					"fontWeight": "bold"
 				},
 				"bRole": {
 					"type": "button",
 					"text": "(R)ole",
-					"top": 273,
-					"left": 155,
-					"width": 105,
-					"height": 20,
+					"top": 214,
+					"left": 57,
+					"width": 140,
+					"height": 30,
 					"events": [
 						"onClick"
 					],
@@ -94,7 +98,9 @@
 					"shortcutControl": false,
 					"shortcutShift": false,
 					"shortcutAlt": false,
-					"shortcutKey": "r"
+					"shortcutKey": "r",
+					"fontSize": 14,
+					"fontWeight": "bold"
 				},
 				"btTrace": {
 					"type": "button",
@@ -128,23 +134,6 @@
 					],
 					"action": "cancel"
 				},
-				"bGroupe": {
-					"type": "button",
-					"text": "(G)roupe",
-					"top": 222,
-					"left": 155,
-					"width": 105,
-					"height": 20,
-					"events": [
-						"onClick"
-					],
-					"method": "ObjectMethods/bGroupe.4dm",
-					"shortcutAccel": true,
-					"shortcutControl": false,
-					"shortcutShift": false,
-					"shortcutAlt": false,
-					"shortcutKey": "g"
-				},
 				"bExportPhotos": {
 					"type": "button",
 					"text": "Export Photos",
@@ -161,7 +150,7 @@
 					"type": "button",
 					"text": "(P)aramètres",
 					"top": 273,
-					"left": 405,
+					"left": 281,
 					"width": 105,
 					"height": 20,
 					"events": [
@@ -189,10 +178,10 @@
 				"bTheme": {
 					"type": "button",
 					"text": "(T)heme",
-					"top": 273,
-					"left": 280,
-					"width": 105,
-					"height": 20,
+					"top": 214,
+					"left": 196,
+					"width": 140,
+					"height": 30,
 					"events": [
 						"onClick"
 					],
@@ -201,7 +190,9 @@
 					"shortcutControl": false,
 					"shortcutShift": false,
 					"shortcutAlt": false,
-					"shortcutKey": "t"
+					"shortcutKey": "t",
+					"fontSize": 14,
+					"fontWeight": "bold"
 				},
 				"bExportData": {
 					"type": "button",
@@ -231,7 +222,6 @@
 			"entryOrder": [
 				"bQuoi",
 				"bQui",
-				"bGroupe",
 				"bRole",
 				"bTheme",
 				"bParametres",
@@ -244,7 +234,7 @@
 			]
 		}
 	],
-	"geometryStamp": 633,
+	"geometryStamp": 652,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",
