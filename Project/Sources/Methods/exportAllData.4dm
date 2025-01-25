@@ -4,10 +4,12 @@
 
 var $fileName_t : Text
 var $exportFile_f : 4D:C1709.File
+var $exportFolder_fd : 4D:C1709.Folder
 var $tableName_t; $fieldName_t; $fieldValue_t; $fileContent_t : Text
 var $tableNumber_i; $fieldNumber_i : Integer
-
-$exportFolder_fd:=Folder:C1567(fk resources folder:K87:11).folder("export")
+var $txt : Text
+$txt:=String:C10(Year of:C25(Current date:C33))+String:C10(Month of:C24(Current date:C33); "-00")+String:C10(Day of:C23(Current date:C33); "-00_")+Replace string:C233(String:C10(Current time:C178); ":"; ".")
+$exportFolder_fd:=Folder:C1567(fk resources folder:K87:11).folder("Export QQt "+$txt)
 If (Not:C34($exportFolder_fd.exists))
 	$exportFolder_fd.create()
 End if 
