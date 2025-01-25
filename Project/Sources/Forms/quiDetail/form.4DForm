@@ -833,9 +833,24 @@
 							"maxWidth": 99
 						},
 						{
+							"name": "cAge",
+							"dataSource": "This:C1470.getAge()",
+							"width": 40,
+							"enterable": false,
+							"header": {
+								"text": "Age",
+								"name": "eAge1",
+								"dataSource": "eAge"
+							},
+							"footer": {
+								"name": "1"
+							},
+							"maxWidth": 60
+						},
+						{
 							"name": "cAnneeNaiss1",
 							"dataSource": "This:C1470.DateNaiss",
-							"width": 80,
+							"width": 60,
 							"enterable": false,
 							"header": {
 								"text": "Date Naiss",
@@ -845,12 +860,12 @@
 							"footer": {
 								"name": "3"
 							},
-							"maxWidth": 100
+							"maxWidth": 80
 						},
 						{
 							"name": "cDateDeces",
 							"dataSource": "This:C1470.DateDeces",
-							"width": 80,
+							"width": 60,
 							"enterable": false,
 							"header": {
 								"text": "Deces",
@@ -860,7 +875,7 @@
 							"footer": {
 								"name": "34"
 							},
-							"maxWidth": 100
+							"maxWidth": 80
 						}
 					]
 				},
@@ -881,6 +896,19 @@
 					"shortcutAlt": false,
 					"shortcutKey": "g",
 					"sizingY": "move"
+				},
+				"btQui": {
+					"type": "button",
+					"text": "!",
+					"top": 470,
+					"left": 1021,
+					"width": 27,
+					"height": 15,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/btQui.4dm",
+					"sizingY": "move"
 				}
 			},
 			"entryOrder": [
@@ -891,7 +919,8 @@
 				"bDelTheme",
 				"btPg2",
 				"Groupe_lb_quiListe",
-				"Groupe_btAjouterPoste"
+				"Groupe_btAjouterPoste",
+				"btQui"
 			]
 		},
 		{
@@ -936,7 +965,7 @@
 			}
 		}
 	],
-	"geometryStamp": 986,
+	"geometryStamp": 992,
 	"method": "method.4dm",
 	"editor": {
 		"activeView": "View 1",
