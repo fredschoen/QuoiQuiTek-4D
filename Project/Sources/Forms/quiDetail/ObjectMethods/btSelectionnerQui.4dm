@@ -3,13 +3,13 @@
 
 Case of 
 	: (Form:C1466.utilisationListe="AJOUTER_POSTE")
-		If (Form:C1466.quiGroupeID_ajouterPoste=Null:C1517)
+		If (Form:C1466.quoiID_ajouterRole=Null:C1517)
 			ALERT:C41("Form.quiGroupeID_ajouterPoste=null")
 			TRACE:C157
 		Else 
 			CONFIRM:C162("voulez-vous ajouter ce qui au groupe ?")
 			If (OK=1)
-				ajouterPoste(Form:C1466.qui_e.ID; Form:C1466.quiGroupeID_ajouterPoste)
+				ajouterPoste(Form:C1466.qui_e.ID; Form:C1466.quoiID_ajouterRole)
 				ACCEPT:C269
 			End if 
 		End if 

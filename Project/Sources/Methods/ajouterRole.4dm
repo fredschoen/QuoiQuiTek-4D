@@ -20,11 +20,7 @@ var $status_o : Object
 var $role_e : cs:C1710.RoleEntity
 
 $role_e:=ds:C1482.Role.new()
-If ($utilisationListe="AJOUTER_ROLE")
-	$role_e.ID_Qui:=$ID_Acteur_i
-Else 
-	$role_e.ID_Groupe:=$ID_Acteur_i
-End if 
+$role_e.ID_Qui:=$ID_Acteur_i
 
 $role_e.ID_Quoi:=$ID_Quoi_i
 $status_o:=$role_e.save()

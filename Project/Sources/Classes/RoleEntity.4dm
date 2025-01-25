@@ -34,8 +34,6 @@ Function getNom->$nom : Text
 	Case of 
 		: (This:C1470.ID_Qui>0)
 			$nom:=This:C1470.qui.FullName
-		: (This:C1470.ID_Groupe>0)
-			$nom:=This:C1470.groupe.Nom
 		Else 
 			$nom:="<ko>"
 	End case 
