@@ -39,3 +39,5 @@ userPreferences.frede/preferences.4DPreferences
 userPreferences.frede/formWindowPositions.json
 Project/Sources/settings.4DSettings
 Resources/Export**
+*.4BL
+*.WinMerge
