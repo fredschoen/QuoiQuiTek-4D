@@ -122,9 +122,9 @@
 					"shortcutAlt": false,
 					"shortcutKey": "t"
 				},
-				"btQuitter": {
+				"btFermer": {
 					"type": "button",
-					"text": "Quitter",
+					"text": "Fermer",
 					"top": 366,
 					"left": 493,
 					"width": 60,
@@ -227,14 +227,14 @@
 				"bParametres",
 				"bExportPhotos",
 				"bSauvegarder",
-				"btQuitter",
+				"btFermer",
 				"btTrace",
 				"bExportData",
 				"bImportData"
 			]
 		}
 	],
-	"geometryStamp": 652,
+	"geometryStamp": 653,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",
