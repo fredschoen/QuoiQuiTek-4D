@@ -681,7 +681,8 @@
 					"top": 97,
 					"width": 280,
 					"height": 192,
-					"dataSourceTypeHint": "picture","fill": "#000000",
+					"dataSourceTypeHint": "picture",
+					"fill": "#000000",
 					"dataSource": "Form:C1466.photoRole_i",
 					"pictureFormat": "proportionalCenter"
 				},
@@ -691,7 +692,8 @@
 					"top": 69,
 					"width": 312,
 					"height": 208,
-					"dataSourceTypeHint": "picture","fill": "#000000",
+					"dataSourceTypeHint": "picture",
+					"fill": "#000000",
 					"dataSource": "Form:C1466.photoQui_i",
 					"enterable": true,
 					"focusable": false,
@@ -749,7 +751,9 @@
 			"entryOrder": [
 				"fieldDescrNom",
 				"rolePhoto_ZS1",
+				"btQui",
 				"iQuiPhoto1",
+				"btAjouterRole",
 				"zQuiNom",
 				"zQuiPrenom",
 				"cb_DomaineQui",
@@ -760,11 +764,9 @@
 				"cb_StyleQui",
 				"zInfo",
 				"lb_lesQuoisDuQui",
+				"btPg2",
 				"ge",
-				"zAgeQui",
-				"btAjouterRole",
-				"btQui",
-				"btPg2"
+				"zAgeQui"
 			]
 		},
 		{
@@ -792,7 +794,8 @@
 					"top": 66,
 					"width": 964,
 					"height": 432,
-					"dataSourceTypeHint": "picture","fill": "#000000",
+					"dataSourceTypeHint": "picture",
+					"fill": "#000000",
 					"dataSource": "Form:C1466.photoRole_i",
 					"pictureFormat": "proportionalCenter"
 				},

@@ -735,7 +735,8 @@
 					"top": 99,
 					"width": 390,
 					"height": 224,
-					"dataSourceTypeHint": "picture","fill": "#000000",
+					"dataSourceTypeHint": "picture",
+					"fill": "#000000",
 					"dataSource": "Form:C1466.photoRole_i",
 					"pictureFormat": "proportionalCenter"
 				},
@@ -745,7 +746,8 @@
 					"top": 69,
 					"width": 294,
 					"height": 192,
-					"dataSourceTypeHint": "picture","fill": "#000000",
+					"dataSourceTypeHint": "picture",
+					"fill": "#000000",
 					"dataSource": "Form:C1466.photoQuoi_i",
 					"enterable": true,
 					"focusable": false,
@@ -758,24 +760,24 @@
 				}
 			},
 			"entryOrder": [
-				"lb_lesQuisDuQuoi",
-				"btAjouterRole",
-				"btPg2",
+				"fieldDescrNom",
+				"iRolePhoto1",
 				"field_Nom",
-				"field_Real",
-				"field_Date",
-				"field_Prod",
 				"Genre_CB",
 				"paysQuoi_CB",
-				"field_Info",
-				"StockQuoi_CB",
+				"field_Real",
 				"DomaineQuoi_CB",
-				"field_Prod1",
 				"field_Annee1",
-				"fieldDescrNom",
-				"ge",
-				"iRolePhoto1",
-				"iQuiPhoto1"
+				"field_Date",
+				"StockQuoi_CB",
+				"field_Prod",
+				"field_Prod1",
+				"field_Info",
+				"iQuiPhoto1",
+				"lb_lesQuisDuQuoi",
+				"btPg2",
+				"btAjouterRole",
+				"ge"
 			]
 		},
 		{
@@ -811,7 +813,8 @@
 					"top": 59,
 					"width": 922,
 					"height": 496,
-					"dataSourceTypeHint": "picture","fill": "#000000",
+					"dataSourceTypeHint": "picture",
+					"fill": "#000000",
 					"dataSource": "Form:C1466.photoRole_i",
 					"pictureFormat": "proportionalCenter"
 				}

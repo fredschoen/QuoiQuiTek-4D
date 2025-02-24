@@ -146,7 +146,7 @@
 			</editor_table_info>
 		</table_extra>
 	</table>
-	<relation uuid="CB09C89AD05F40F9B927543F1D0AC6FD" name_Nto1="qui" name_1toN="roles" state="1" integrity="delete">
+	<relation uuid="CB09C89AD05F40F9B927543F1D0AC6FD" name_Nto1="qui" name_1toN="roles" auto_load_Nto1="false" auto_load_1toN="false" foreign_key="false" state="1" integrity="delete">
 		<related_field kind="source">
 			<field_ref uuid="33B70CCC0843DE429F0B0C50D132DFE5" name="ID_Qui">
 				<table_ref uuid="36E36289CCCA4644A71A1D2676364BB1" name="Role"/>
@@ -163,7 +163,7 @@
 			</editor_relation_info>
 		</relation_extra>
 	</relation>
-	<relation uuid="4F2CA3DD61884D058D3BCE5C6336FDDB" name_Nto1="quoi" name_1toN="roles" state="1" integrity="delete">
+	<relation uuid="4F2CA3DD61884D058D3BCE5C6336FDDB" name_Nto1="quoi" name_1toN="roles" auto_load_Nto1="false" auto_load_1toN="false" foreign_key="false" state="1" integrity="delete">
 		<related_field kind="source">
 			<field_ref uuid="224E05CCD982514682542710BE59B128" name="ID_Quoi">
 				<table_ref uuid="36E36289CCCA4644A71A1D2676364BB1" name="Role"/>
@@ -180,7 +180,7 @@
 			</editor_relation_info>
 		</relation_extra>
 	</relation>
-	<relation uuid="CCE17664BBA924479E9EF4C08B5150A5" name_Nto1="qui" name_1toN="postes" state="1" integrity="delete">
+	<relation uuid="CCE17664BBA924479E9EF4C08B5150A5" name_Nto1="qui" name_1toN="postes" auto_load_Nto1="false" auto_load_1toN="false" foreign_key="false" state="1" integrity="delete">
 		<related_field kind="source">
 			<field_ref uuid="4C7F0C9CA313B84F8E7DD83637E45835" name="ID_Qui">
 				<table_ref uuid="381A3D5B3CB3134294F031C4748A5E5E" name="Poste"/>
@@ -197,7 +197,7 @@
 			</editor_relation_info>
 		</relation_extra>
 	</relation>
-	<relation uuid="FCD28C17845D6C4FA0F747DAA323615D" name_Nto1="theme" name_1toN="relThemes" state="1">
+	<relation uuid="FCD28C17845D6C4FA0F747DAA323615D" name_Nto1="theme" name_1toN="relThemes" auto_load_Nto1="false" auto_load_1toN="false" foreign_key="false" state="1">
 		<related_field kind="source">
 			<field_ref uuid="26F16E77B091124D9602A94C150787BF" name="ID_Theme">
 				<table_ref uuid="03A69CF54402E54A8FE6F8303ED5C537" name="RelTheme"/>
@@ -214,7 +214,7 @@
 			</editor_relation_info>
 		</relation_extra>
 	</relation>
-	<relation uuid="884C70B5BDDBDA4EB59B7F2BA903AA13" name_Nto1="qui" name_1toN="relThemes" state="1">
+	<relation uuid="884C70B5BDDBDA4EB59B7F2BA903AA13" name_Nto1="qui" name_1toN="relThemes" auto_load_Nto1="false" auto_load_1toN="false" foreign_key="false" state="1">
 		<related_field kind="source">
 			<field_ref uuid="A99D4E7D45F2D04D902F62E03A886399" name="ID_Qui">
 				<table_ref uuid="03A69CF54402E54A8FE6F8303ED5C537" name="RelTheme"/>
@@ -231,7 +231,7 @@
 			</editor_relation_info>
 		</relation_extra>
 	</relation>
-	<relation uuid="64672590B0081048BD31E1B5658F968E" name_Nto1="quoi" name_1toN="relThemes" state="1">
+	<relation uuid="64672590B0081048BD31E1B5658F968E" name_Nto1="quoi" name_1toN="relThemes" auto_load_Nto1="false" auto_load_1toN="false" foreign_key="false" state="1">
 		<related_field kind="source">
 			<field_ref uuid="0C24F9C1357D2047BD146B65D4E5173C" name="ID_Quoi">
 				<table_ref uuid="03A69CF54402E54A8FE6F8303ED5C537" name="RelTheme"/>
@@ -248,7 +248,7 @@
 			</editor_relation_info>
 		</relation_extra>
 	</relation>
-	<relation uuid="05BCEF28FA4D49429F761E0E09743620" name_Nto1="groupe" name_1toN="postes" state="1">
+	<relation uuid="05BCEF28FA4D49429F761E0E09743620" name_Nto1="groupe" name_1toN="postes" auto_load_Nto1="false" auto_load_1toN="false" foreign_key="false" state="1">
 		<related_field kind="source">
 			<field_ref uuid="664153844F3E7E4D8BC1F4FE9E755416" name="ID_QuiGroupe">
 				<table_ref uuid="381A3D5B3CB3134294F031C4748A5E5E" name="Poste"/>
