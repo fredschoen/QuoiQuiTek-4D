@@ -449,7 +449,7 @@
 					"type": "rectangle",
 					"top": 46,
 					"left": 477,
-					"width": 572,
+					"width": 648,
 					"height": 287,
 					"fill": "#adff2f"
 				},
@@ -608,8 +608,8 @@
 					"type": "input",
 					"left": 485,
 					"top": 264,
-					"width": 551,
-					"height": 65,
+					"width": 628,
+					"height": 64,
 					"dataSource": "Form:C1466.quoi_e.Info"
 				},
 				"label_Info": {
@@ -743,9 +743,9 @@
 				"iQuiPhoto1": {
 					"type": "input",
 					"left": 742,
-					"top": 69,
-					"width": 294,
-					"height": 192,
+					"top": 52,
+					"width": 370,
+					"height": 205,
 					"dataSourceTypeHint": "picture",
 					"fill": "#000000",
 					"dataSource": "Form:C1466.photoQuoi_i",
@@ -757,6 +757,18 @@
 					],
 					"method": "ObjectMethods/iQuiPhoto1.4dm",
 					"pictureFormat": "proportionalCenter"
+				},
+				"btQuoi": {
+					"type": "button",
+					"text": "!",
+					"top": 222,
+					"left": 706,
+					"width": 27,
+					"height": 15,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/btQuoi.4dm"
 				}
 			},
 			"entryOrder": [
@@ -777,7 +789,8 @@
 				"lb_lesQuisDuQuoi",
 				"btPg2",
 				"btAjouterRole",
-				"ge"
+				"ge",
+				"btQuoi"
 			]
 		},
 		{
@@ -821,7 +834,7 @@
 			}
 		}
 	],
-	"geometryStamp": 1228,
+	"geometryStamp": 1244,
 	"method": "method.4dm",
 	"editor": {
 		"activeView": "View 2",
@@ -854,6 +867,7 @@
 					"label_Qualif",
 					"field_Annee1",
 					"iQuiPhoto1",
+					"btQuoi",
 					"btPg1"
 				]
 			},

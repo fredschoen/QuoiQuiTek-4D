@@ -7,14 +7,14 @@ Case of
 		Form:C1466.quoi_es:=Form:C1466.quoi_es.orderBy("Nom desc")
 		
 	: (eDomaine=1)
-		Form:C1466.quoi_es:=Form:C1466.quoi_es.orderBy("Domaine, Genre")
+		Form:C1466.quoi_es:=Form:C1466.quoi_es.orderBy("Domaine, Genre, Pays, Nom")
 	: (eDomaine=2)
-		Form:C1466.quoi_es:=Form:C1466.quoi_es.orderBy("Domaine desc, Genre desc")
+		Form:C1466.quoi_es:=Form:C1466.quoi_es.orderBy("Domaine desc, Genre desc, Pays desc, Nom desc")
 		
 	: (eGenre=1)
-		Form:C1466.quoi_es:=Form:C1466.quoi_es.orderBy("Genre")
+		Form:C1466.quoi_es:=Form:C1466.quoi_es.orderBy("Genre, Pays, Nom")
 	: (eGenre=2)
-		Form:C1466.quoi_es:=Form:C1466.quoi_es.orderBy("Genre desc")
+		Form:C1466.quoi_es:=Form:C1466.quoi_es.orderBy("Genre desc, Pays desc, Nom desc")
 		
 	: (ePays=1)
 		Form:C1466.quoi_es:=Form:C1466.quoi_es.orderBy("Pays, Nom")

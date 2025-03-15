@@ -754,6 +754,18 @@
 							}
 						}
 					]
+				},
+				"btQui": {
+					"type": "button",
+					"text": "!",
+					"top": 61,
+					"left": 1075,
+					"width": 27,
+					"height": 15,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/btQui.4dm"
 				}
 			},
 			"entryOrder": [
@@ -776,7 +788,8 @@
 				"bAddTheme",
 				"bDelTheme",
 				"btPg2",
-				"lb_quiListe"
+				"lb_quiListe",
+				"btQui"
 			]
 		},
 		{
@@ -812,7 +825,7 @@
 			}
 		}
 	],
-	"geometryStamp": 385,
+	"geometryStamp": 388,
 	"method": "method.4dm",
 	"editor": {
 		"activeView": "View 1",
