@@ -217,6 +217,18 @@
 						"onClick"
 					],
 					"method": "ObjectMethods/bImportData.4dm"
+				},
+				"bExportDataLibOff": {
+					"type": "button",
+					"text": "Export Data pour LibOff",
+					"top": 363,
+					"left": 218,
+					"width": 150,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/bExportDataLibOff.4dm"
 				}
 			},
 			"entryOrder": [
@@ -230,11 +242,12 @@
 				"btFermer",
 				"btTrace",
 				"bExportData",
-				"bImportData"
+				"bImportData",
+				"bExportDataLibOff"
 			]
 		}
 	],
-	"geometryStamp": 653,
+	"geometryStamp": 657,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",
