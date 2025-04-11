@@ -10,7 +10,6 @@ $status_o:=$quoi_e.save()
 
 If (Not:C34($status_o.success))
 	ALERT:C41($status_o.statusText)
-	TRACE:C157
 	return 
 End if 
 

@@ -34,15 +34,23 @@ Else
 			
 	End case 
 	
-	If ($typeCritere="texte")
-		//encadrer le critère texte (début et fin)
-		$valeurCritere:="'"+$valeurCritere+"@'"
-	Else 
-		//numerique: 0 par defaut
-		C_LONGINT:C283($Annee)
-		$Annee:=Num:C11($valeurCritere)
-		$valeurCritere:=String:C10($Annee)
-	End if 
+	$operateurCritere:=" "+$operateurCritere+" "
+	Case of 
+		: ($typeCritere="date")
+			Case of 
+				: (Length:C16($valeurCritere)=4)
+					$valeurCritere:=$valeurCritere+"/01/01"
+				: (Length:C16($valeurCritere)=6)
+					$valeurCritere:=$valeurCritere+"/07"
+				Else 
+					$valeurCritere:=$valeurCritere
+			End case 
+			
+		Else 
+			//texte:
+			//encadrer le critère texte (début et fin)
+			$valeurCritere:="'"+$valeurCritere+"@'"
+	End case 
 	
 	//separateur d'argument de la phrase du query
 	C_TEXT:C284($separateur)

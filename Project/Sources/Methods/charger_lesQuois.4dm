@@ -10,7 +10,7 @@ $texteQuery:=$texteQuery+_f_traduireArgQuery("Pays"; "texte"; Form:C1466.critere
 $texteQuery:=$texteQuery+_f_traduireArgQuery("Stock"; "texte"; Form:C1466.critereQuoiListe.Stock; Length:C16($texteQuery))
 $texteQuery:=$texteQuery+_f_traduireArgQuery("Real"; "texte"; Form:C1466.critereQuoiListe.Real; Length:C16($texteQuery))
 $texteQuery:=$texteQuery+_f_traduireArgQuery("Date"; "texte"; Form:C1466.critereQuoiListe.Date; Length:C16($texteQuery))
-$texteQuery:=$texteQuery+_f_traduireArgQuery("DateDernVisu"; "texte"; Form:C1466.critereQuoiListe.DateDernVisu; Length:C16($texteQuery))
+$texteQuery:=$texteQuery+_f_traduireArgQuery("DateDernVisu"; "date"; Form:C1466.critereQuoiListe.DateDernVisu; Length:C16($texteQuery))
 $texteQuery:=$texteQuery+_f_traduireArgQuery("Domaine"; "texte"; Form:C1466.critereQuoiListe.Domaine; Length:C16($texteQuery))
 $texteQuery:=$texteQuery+_f_traduireArgQuery("Qualif"; "texte"; Form:C1466.critereQuoiListe.Qualif; Length:C16($texteQuery))
 

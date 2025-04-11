@@ -189,7 +189,8 @@
 					"top": 3,
 					"width": 571,
 					"height": 448,
-					"dataSourceTypeHint": "picture","fill": "#000000",
+					"dataSourceTypeHint": "picture",
+					"fill": "#000000",
 					"dataSource": "Form:C1466.photoQuoi_i",
 					"pictureFormat": "proportionalCenter",
 					"events": [
@@ -259,9 +260,9 @@
 					"width": 90,
 					"height": 96
 				},
-				"btQui": {
+				"btQuoi": {
 					"type": "button",
-					"text": "Qu(i)",
+					"text": "Qu(o)i",
 					"top": 394,
 					"left": 3,
 					"width": 41,
@@ -269,12 +270,12 @@
 					"events": [
 						"onClick"
 					],
-					"method": "ObjectMethods/btQui.4dm",
+					"method": "ObjectMethods/btQuoi.4dm",
 					"shortcutAccel": true,
 					"shortcutControl": false,
 					"shortcutShift": false,
 					"shortcutAlt": false,
-					"shortcutKey": "i"
+					"shortcutKey": "o"
 				},
 				"btMaxMin": {
 					"type": "button",
@@ -349,14 +350,14 @@
 				"btTrace",
 				"zPos",
 				"zLength",
-				"btQui",
+				"btQuoi",
 				"btMaxMin",
 				"btFiltrePhoto",
 				"field_Date"
 			]
 		}
 	],
-	"geometryStamp": 979,
+	"geometryStamp": 980,
 	"method": "method.4dm",
 	"editor": {
 		"activeView": "View 1",
