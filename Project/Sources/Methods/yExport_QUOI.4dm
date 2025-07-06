@@ -15,15 +15,15 @@ var $Quoi_es : cs:C1710.QuoiSelection
 $rc:=Char:C90(Carriage return:K15:38)
 $tab:=Char:C90(Tab:K15:37)
 If ($1=Null:C1517)
-	$nomLog:=System folder:C487(Desktop:K41:16)+"_QuoiQuitek"+Folder separator:K24:12+"log.txt"
+	$nomLog:=System folder:C487(Desktop:K41:16)+"_QuoiQuitek"+Folder separator:K24:12+"log.csv"
 Else 
-	$nomLog:=$1+"log.txt"
+	$nomLog:=$1+"log.csv"
 End if 
 $nbrEnrExport:=0
 If ($1=Null:C1517)
-	$nomDefaut:=System folder:C487(Desktop:K41:16)+"_QuoiQuitek"+Folder separator:K24:12+"QUOI.txt"
+	$nomDefaut:=System folder:C487(Desktop:K41:16)+"_QuoiQuitek"+Folder separator:K24:12+"QUOI.csv"
 Else 
-	$nomDefaut:=$1+"QUOI.txt"
+	$nomDefaut:=$1+"QUOI.csv"
 End if 
 //$nom:=Demander("Nom du fichier à créer :"; $nomDefaut)
 $nom:=$nomDefaut

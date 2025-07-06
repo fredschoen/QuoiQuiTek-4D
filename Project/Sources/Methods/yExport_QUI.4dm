@@ -17,7 +17,7 @@ $nbrEnrExport:=0
 If ($1=Null:C1517)
 	$nomDefaut:=System folder:C487(Desktop:K41:16)+"_Quoiquitek"+Folder separator:K24:12+"Qui.csv"
 Else 
-	$nomDefaut:=$1+"Qui.txt"
+	$nomDefaut:=$1+"Qui.csv"
 End if 
 //$nom:=Demander("Nom du fichier à créer :"; $nomDefaut)
 $nom:=$nomDefaut

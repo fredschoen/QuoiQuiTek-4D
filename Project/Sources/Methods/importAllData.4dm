@@ -30,7 +30,7 @@ For ($tableNumber_i; 1; Get last table number:C254)
 	End if 
 	//une table
 	$tableName_t:=Table name:C256($tableNumber_i)
-	$fileName_t:=$tableName_t+".txt"
+	$fileName_t:=$tableName_t+".csv"
 	
 	$importFile_f:=$exportFolder_fd.file($fileName_t)
 	If (Not:C34($importFile_f.exists))

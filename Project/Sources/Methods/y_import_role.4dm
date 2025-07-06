@@ -7,9 +7,9 @@ C_OBJECT:C1216($status; $enregAjout)
 C_TEXT:C284($nomlog; $texteLog)
 $rc:=Char:C90(Carriage return:K15:38)
 $tab:=Char:C90(Tab:K15:37)
-$nomLog:="C:\\_testFred\\log.txt"
+$nomLog:="C:\\_testFred\\log.csv"
 $ID_Max:=0
-$nomDefaut:="C:\\_testFred\\Roleb.txt"
+$nomDefaut:="C:\\_testFred\\Roleb.csv"
 
 C_LONGINT:C283($nbreEnregImport)
 $nbreEnregImport:=0

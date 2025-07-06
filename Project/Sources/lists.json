@@ -279,104 +279,110 @@
 				"collapsed": true
 			},
 			{
-				"text": "Rockeuse black",
+				"text": "Rockeuse",
 				"ref": 47,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "Rom",
+				"text": "Rockeuse black",
 				"ref": 48,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "Salsa",
+				"text": "Rom",
 				"ref": 49,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "Schoen",
+				"text": "Salsa",
 				"ref": 50,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "sculpt",
+				"text": "Schoen",
 				"ref": 51,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "serie",
+				"text": "sculpt",
 				"ref": 52,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "SF",
+				"text": "serie",
 				"ref": 53,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "Ska",
+				"text": "SF",
 				"ref": 54,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "Soul",
+				"text": "Ska",
 				"ref": 55,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "Sport",
+				"text": "Soul",
 				"ref": 56,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "Street",
+				"text": "Sport",
 				"ref": 57,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "Techno",
+				"text": "Street",
 				"ref": 58,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "Terre",
+				"text": "Techno",
 				"ref": 59,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "Thom",
+				"text": "Terre",
 				"ref": 60,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "Variétés",
+				"text": "Thom",
 				"ref": 61,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "Western",
+				"text": "Variétés",
 				"ref": 62,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "World",
+				"text": "Western",
 				"ref": 63,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "World",
+				"ref": 64,
 				"editable": true,
 				"collapsed": true
 			}
@@ -861,188 +867,194 @@
 				"collapsed": true
 			},
 			{
-				"text": "Hong",
+				"text": "Hon",
 				"ref": 23,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "Hong Hong",
+				"text": "Hong",
 				"ref": 24,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "Ind",
+				"text": "Hong Hong",
 				"ref": 25,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "Irl",
+				"text": "Ind",
 				"ref": 26,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "Isra",
+				"text": "Irl",
 				"ref": 27,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "Ita",
+				"text": "Isra",
 				"ref": 28,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "Italien",
+				"text": "Ita",
 				"ref": 29,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "Jamaica",
+				"text": "Italien",
 				"ref": 30,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "Mar",
+				"text": "Jamaica",
 				"ref": 31,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "Maroc",
+				"text": "Mar",
 				"ref": 32,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "Mex",
+				"text": "Maroc",
 				"ref": 33,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "Nedl",
+				"text": "Mex",
 				"ref": 34,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "Nigeria",
+				"text": "Nedl",
 				"ref": 35,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "Palest",
+				"text": "Nigeria",
 				"ref": 36,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "pol",
+				"text": "Palest",
 				"ref": 37,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "Port",
+				"text": "pol",
 				"ref": 38,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "Quebec",
+				"text": "Port",
 				"ref": 39,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "Rock",
+				"text": "Quebec",
 				"ref": 40,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "Rom",
+				"text": "Rock",
 				"ref": 41,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "Rus",
+				"text": "Rom",
 				"ref": 42,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "Serb",
+				"text": "Rus",
 				"ref": 43,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "Somalie",
+				"text": "Serb",
 				"ref": 44,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "Suede",
+				"text": "Somalie",
 				"ref": 45,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "Sui",
+				"text": "Suede",
 				"ref": 46,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "turq",
+				"text": "Sui",
 				"ref": 47,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "Ukr",
+				"text": "turq",
 				"ref": 48,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "US",
+				"text": "Ukr",
 				"ref": 49,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "Venezuela",
+				"text": "US",
 				"ref": 50,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "Viet",
+				"text": "Venezuela",
 				"ref": 51,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "Yougo",
+				"text": "Viet",
 				"ref": 52,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "µ",
+				"text": "Yougo",
 				"ref": 53,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "µ",
+				"ref": 54,
 				"editable": true,
 				"collapsed": true
 			}

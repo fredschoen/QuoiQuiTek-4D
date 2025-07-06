@@ -10,18 +10,28 @@ For each ($qui_e; $qui_es)
 	$nbrLus_i:=$nbrLus_i+1
 	$majEnreg_b:=False:C215
 	
-	If (Length:C16($qui_e.DateNaiss)>0)
-		$Old:=$qui_e.DateNaiss
-		$qui_e.DateNaiss:=Replace string:C233($qui_e.DateNaiss; "-"; "")
-		If ($Old#$qui_e.DateNaiss)
-			$majEnreg_b:=True:C214
+	If (False:C215)
+		If (Length:C16($qui_e.DateNaiss)>0)
+			$Old:=$qui_e.DateNaiss
+			$qui_e.DateNaiss:=Replace string:C233($qui_e.DateNaiss; "-"; "")
+			If ($Old#$qui_e.DateNaiss)
+				$majEnreg_b:=True:C214
+			End if 
 		End if 
 	End if 
 	
-	If (Length:C16($qui_e.DateDeces)>0)
-		$Old:=$qui_e.DateDeces
-		$qui_e.DateDeces:=Replace string:C233($qui_e.DateDeces; "-"; "")
-		If ($Old#$qui_e.DateDeces)
+	If (False:C215)
+		If (Length:C16($qui_e.DateDeces)>0)
+			$qui_e.DateDeces:=Replace string:C233($qui_e.DateDeces; "-"; "")
+			If ($Old#$qui_e.DateDeces)
+				$majEnreg_b:=True:C214
+			End if 
+		End if 
+	End if 
+	
+	If (True:C214)
+		If (Length:C16($qui_e.Info)>1000)
+			$qui_e.Info:=Substring:C12($qui_e.Info; 1; 1000)
 			$majEnreg_b:=True:C214
 		End if 
 	End if 

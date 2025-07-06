@@ -1,7 +1,7 @@
 //%attributes = {}
 // exportAllData
 //
-
+#DECLARE($avecNomTable : Boolean)
 var $fileName_t : Text
 var $exportFile_f : 4D:C1709.File
 var $exportFolder_fd : 4D:C1709.Folder
@@ -19,8 +19,10 @@ For ($tableNumber_i; 1; Get last table number:C254)
 		$fileContent_t:=""
 		$tableName_t:=Table name:C256($tableNumber_i)
 		//1ère ligne = nom de la table + liste des champs
-		$fileContent_t+=$tableName_t
-		$fileContent_t+=Char:C90(Tab:K15:37)
+		If ($avecNomTable)
+			$fileContent_t+=$tableName_t
+			$fileContent_t+=Char:C90(Tab:K15:37)
+		End if 
 		//liste des champs
 		For ($fieldNumber_i; 1; Get last field number:C255($tableNumber_i))
 			If (Is field number valid:C1000($tableNumber_i; $fieldNumber_i))
@@ -33,7 +35,10 @@ For ($tableNumber_i; 1; Get last table number:C254)
 		$es:=ds:C1482[$tableName_t].all()
 		For each ($e; $es)
 			$fileContent_t+=Char:C90(Carriage return:K15:38)
-			$fileContent_t+=$tableName_t
+			If ($avecNomTable)
+				$fileContent_t+=$tableName_t
+				$fileContent_t+=Char:C90(Tab:K15:37)
+			End if 
 			For ($fieldNumber_i; 1; Get last field number:C255($tableNumber_i))
 				If (Is field number valid:C1000($tableNumber_i; $fieldNumber_i))
 					$fieldName_t:=Field name:C257($tableNumber_i; $fieldNumber_i)
@@ -45,13 +50,13 @@ For ($tableNumber_i; 1; Get last table number:C254)
 						$fieldValue_t:=Replace string:C233($fieldValue_t; Char:C90(Tab:K15:37); "^")
 					End if 
 					
-					$fileContent_t+=Char:C90(Tab:K15:37)
 					$fileContent_t+=String:C10($fieldValue_t)
+					$fileContent_t+=Char:C90(Tab:K15:37)
 				End if 
 			End for 
 		End for each 
 		
-		$fileName_t:=$tableName_t+".txt"
+		$fileName_t:=$tableName_t+".csv"
 		
 		$exportFile_f:=$exportFolder_fd.file($fileName_t)
 		$exportFile_f.setText($fileContent_t)

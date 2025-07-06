@@ -24,7 +24,7 @@ If (OK=1)
 	yExport_QUI($nomRepertoire)
 	yExport_ROLE($nomRepertoire)
 	
-	ALERT:C41("Export terminé"+Char:C90(Carriage return:K15:38)+"cf. "+$nomRepertoire+"log.txt")
+	ALERT:C41("Export terminé"+Char:C90(Carriage return:K15:38)+"cf. "+$nomRepertoire+"log.csv")
 	
 End if 
 

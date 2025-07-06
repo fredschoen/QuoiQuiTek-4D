@@ -1,1 +1,3 @@
-exportAllData()
+// accueil.bExportData
+//
+exportAllData(True:C214)

@@ -218,9 +218,9 @@
 					],
 					"method": "ObjectMethods/bImportData.4dm"
 				},
-				"bExportDataLibOff": {
+				"bExportDataSansNomTable": {
 					"type": "button",
-					"text": "Export Data pour LibOff",
+					"text": "Export Data (sans Nom Table)",
 					"top": 363,
 					"left": 218,
 					"width": 150,
@@ -228,7 +228,7 @@
 					"events": [
 						"onClick"
 					],
-					"method": "ObjectMethods/bExportDataLibOff.4dm"
+					"method": "ObjectMethods/bExportDataSansNomTable.4dm"
 				}
 			},
 			"entryOrder": [
@@ -243,11 +243,11 @@
 				"btTrace",
 				"bExportData",
 				"bImportData",
-				"bExportDataLibOff"
+				"bExportDataSansNomTable"
 			]
 		}
 	],
-	"geometryStamp": 657,
+	"geometryStamp": 658,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",
