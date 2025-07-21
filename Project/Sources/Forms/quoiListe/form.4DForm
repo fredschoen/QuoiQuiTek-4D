@@ -138,7 +138,7 @@
 						},
 						{
 							"name": "cDate",
-							"width": 60,
+							"width": 82,
 							"enterable": false,
 							"header": {
 								"text": "Date",
@@ -168,7 +168,7 @@
 						},
 						{
 							"name": "cReal",
-							"width": 119,
+							"width": 87,
 							"enterable": false,
 							"header": {
 								"text": "Real",
@@ -228,7 +228,7 @@
 					"type": "button",
 					"text": "(F)iltrer",
 					"top": 26,
-					"left": 885,
+					"left": 912,
 					"width": 60,
 					"height": 18,
 					"events": [
@@ -256,14 +256,14 @@
 					"type": "input",
 					"left": 556,
 					"top": 26,
-					"width": 55,
-					"height": 18,
+					"width": 78,
+					"height": 16,
 					"dataSource": "Form:C1466.critereQuoiListe.Date",
-					"bottom": 44
+					"bottom": 42
 				},
 				"zCritereReal": {
 					"type": "input",
-					"left": 659,
+					"left": 686,
 					"top": 26,
 					"width": 107,
 					"height": 18,
@@ -272,7 +272,7 @@
 				},
 				"zDateDernVisu": {
 					"type": "input",
-					"left": 774,
+					"left": 801,
 					"top": 26,
 					"width": 68,
 					"height": 18,
@@ -283,7 +283,7 @@
 					"type": "button",
 					"text": "+",
 					"top": 26,
-					"left": 846,
+					"left": 873,
 					"width": 20,
 					"height": 18,
 					"events": [
@@ -301,7 +301,7 @@
 					"type": "button",
 					"text": "-",
 					"top": 26,
-					"left": 865,
+					"left": 892,
 					"width": 20,
 					"height": 18,
 					"events": [
@@ -330,7 +330,7 @@
 				},
 				"zCritereAnnee2": {
 					"type": "input",
-					"left": 614,
+					"left": 641,
 					"top": 26,
 					"width": 38,
 					"height": 18,
@@ -421,7 +421,7 @@
 				},
 				"zFormquoiListelength": {
 					"type": "input",
-					"left": 954,
+					"left": 981,
 					"top": 24,
 					"width": 31,
 					"height": 16,
@@ -543,7 +543,7 @@
 			]
 		}
 	],
-	"geometryStamp": 3635,
+	"geometryStamp": 3664,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",

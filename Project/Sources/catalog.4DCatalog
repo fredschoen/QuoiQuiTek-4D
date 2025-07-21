@@ -15,13 +15,16 @@
 		<field name="Info" uuid="EA2D51B243B04D4CA0DA6425FE90F554" type="10" never_null="true" id="10"/>
 		<field name="DateDernVisu" uuid="174F3C522464E7498A51F1F3E79B0BCD" type="8" never_null="true" id="11"/>
 		<field name="Qualif" uuid="EDFC268B6F24424694B8CE014976C7ED" type="10" limiting_length="10" never_null="true" id="12"/>
+		<field name="Date_AAAA" uuid="154F279385115C4B9CA2AF6B9B3AB3C6" type="3" never_null="true" id="13"/>
 		<field name="CreatTS" uuid="7A2CF25E62700B4F8FC20F46A3E0540C" type="10" limiting_length="19" never_null="true" id="14" hide_in_REST="true"/>
 		<field name="ModifTS" uuid="F9D2CBE84792DC468DCFCC80CEF52CCD" type="10" limiting_length="19" never_null="true" id="15"/>
+		<field name="Date_MM" uuid="AB0B07848474034EBA755BF1A055AF58" type="3" never_null="true" id="16"/>
+		<field name="Date_JJ" uuid="F7F96D3AB1E34C4587442E910C6AB577" type="3" never_null="true" id="17"/>
 		<primary_key field_name="ID" field_uuid="7D44AEC0186F8341BF2162AF1B5099CF"/>
 		<table_extra output_form="Sortie" input_form="Entree" trigger_update="true" trigger_insert="true">
-			<editor_table_info displayable_fields_count="14">
+			<editor_table_info displayable_fields_count="16">
 				<color red="255" green="255" blue="255" alpha="0"/>
-				<coordinates left="849" top="19" width="140" height="344.33203125"/>
+				<coordinates left="849" top="9" width="140" height="387.33203125"/>
 			</editor_table_info>
 		</table_extra>
 	</table>
@@ -67,7 +70,7 @@
 		<table_extra output_form="Sortie" input_form="Entree" trigger_update="true" trigger_insert="true">
 			<editor_table_info displayable_fields_count="11">
 				<color red="255" green="255" blue="255" alpha="0"/>
-				<coordinates left="628" top="4" width="130" height="291.33203125"/>
+				<coordinates left="455" top="66" width="130" height="291.33203125"/>
 			</editor_table_info>
 		</table_extra>
 	</table>

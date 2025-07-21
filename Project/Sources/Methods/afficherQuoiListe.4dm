@@ -5,7 +5,6 @@ var $form_o : Object
 var $1 : Text
 var $2 : Integer
 
-C_OBJECT:C1216($form_o)
 $form_o:=New object:C1471
 $form_o.action:="INIT"  // chargement initial
 $form_o.page:=1

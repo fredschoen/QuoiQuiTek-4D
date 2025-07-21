@@ -11,15 +11,6 @@ $role_es:=ds:C1482.Role.all()
 For each ($role_e; $role_es)
 	$x:=Folder:C1567(fk data folder:K87:12).platformPath+"Photos"+Folder separator:K24:12+"r"+String:C10($role_e.ID; "0000000")+".png"
 	
-	If (Picture size:C356($role_e.Photo)>0)
-		WRITE PICTURE FILE:C680($x; $role_e.Photo)
-		$nbrMaj_i:=$nbrMaj_i+1
-		//Else 
-		//If (Test path name($x)=Is a document)
-		//DELETE DOCUMENT($x)
-		//End if 
-	End if 
-	
 	$nbrLus_i:=$nbrLus_i+1
 	
 End for each 
