@@ -3,7 +3,7 @@
 //
 var $importFile_f : 4D:C1709.File
 var $fileName_t; $fileContent_t; $line_t; $fieldName_t; $fieldType_t; $fieldValue_t : Text
-var $line_c; $column_c; $columnName_c : Collection
+var $line_c; $columnValue_c; $columnName_c : Collection
 var $lineNumber_i; $columnNumber_i; $tableNumber_i; $ID_Max_i : Integer
 var $tableToSearch_p : Pointer
 
@@ -14,10 +14,18 @@ If (ok=1)
 End if 
 
 //sauvegarde
-BACKUP:C887
+CONFIRM:C162("sauvegarde ?"; "OUI"; "NON")
+If (ok=1)
+	BACKUP:C887
+End if 
+
+$rep:=Request:C163("Nom du répertoire d'export/import :"; "Export QQt 2025-07-21_22.07.46")
+If ($rep="")
+	return 
+End if 
 
 //repertoire de l'import
-$exportFolder_fd:=Folder:C1567(fk resources folder:K87:11).folder("export")
+$exportFolder_fd:=Folder:C1567(fk resources folder:K87:11).folder($rep)
 If (Not:C34($exportFolder_fd.exists))
 	ALERT:C41($exportFolder_fd.platformPath+"inexistant")
 	return 
@@ -40,7 +48,7 @@ For ($tableNumber_i; 1; Get last table number:C254)
 	
 	ds:C1482[$tableName_t].all().drop()
 	
-	$fileContent_t:=$importFile_f.getText()
+	$fileContent_t:=Replace string:C233($importFile_f.getText(); Char:C90(Line feed:K15:40); "")
 	
 	$line_c:=Split string:C1554($fileContent_t; Char:C90(Carriage return:K15:38))
 	
@@ -55,40 +63,47 @@ For ($tableNumber_i; 1; Get last table number:C254)
 			continue
 		End if 
 		
-		//éclater en colonnes
-		$column_c:=Split string:C1554($line_t; Char:C90(Tab:K15:37))
 		
 		//mémoriser tous les noms de colonnes (=ligne 1)
 		If ($lineNumber_i=1)
-			$columnName_c:=$column_c
+			//éclater en colonnes (noms champs)
+			$columnName_c:=Split string:C1554($line_t; Char:C90(Tab:K15:37))
 			continue
 		End if 
+		
+		//éclater en colonnes (valeurs)
+		$columnValue_c:=Split string:C1554($line_t; Char:C90(Tab:K15:37))
 		
 		$tableName_t:=Table name:C256($tableNumber_i)
 		$e:=ds:C1482[$tableName_t].new()
 		$columnNumber_i:=0
 		
-		For each ($column_t; $column_c)
+		For each ($columnValue_t; $columnValue_c)
 			//un champs d'une ligne
 			$columnNumber_i+=1
 			If ($columnNumber_i=1)  //col 1 = nom table
 				continue
 			End if 
 			$fieldName_t:=$columnName_c[$columnNumber_i-1]
+			
+			If ($fieldName_t="")  //derniere colonne: vide
+				continue
+			End if 
+			
 			$fieldType_t:=ds:C1482[$tableName_t][$fieldName_t].type  //="number"
 			
 			Case of 
 				: ($fieldType_t="number")
-					$e[$fieldName_t]:=Num:C11($column_t)
+					$e[$fieldName_t]:=Num:C11($columnValue_t)
 				: ($fieldType_t="date")
-					$e[$fieldName_t]:=Date:C102($column_t)
+					$e[$fieldName_t]:=Date:C102($columnValue_t)
 				Else 
 					//décoder les caractères spéciaux (tab et cr)
 					If ($fieldValue_t="Le Bison") & ($fieldName_t="Info")
 						TRACE:C157
 					End if 
 					
-					$fieldValue_t:=Replace string:C233($column_t; "|"; Char:C90(Carriage return:K15:38))
+					$fieldValue_t:=Replace string:C233($columnValue_t; "|"; Char:C90(Carriage return:K15:38))
 					$fieldValue_t:=Replace string:C233($fieldValue_t; "^"; Char:C90(Tab:K15:37))
 					$e[$fieldName_t]:=$fieldValue_t
 			End case 

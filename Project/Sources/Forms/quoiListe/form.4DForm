@@ -40,7 +40,7 @@
 					"type": "listbox",
 					"top": 52,
 					"left": 12,
-					"width": 900,
+					"width": 910,
 					"height": 518,
 					"visibility": "visible",
 					"sizingX": "fixed",
@@ -168,7 +168,7 @@
 						},
 						{
 							"name": "cReal",
-							"width": 87,
+							"width": 62,
 							"enterable": false,
 							"header": {
 								"text": "Real",
@@ -194,16 +194,18 @@
 						},
 						{
 							"header": {
-								"name": "eProd",
-								"text": "Prod"
+								"name": "eDate_AAAA",
+								"text": "AAAA"
 							},
-							"name": "cProd",
-							"dataSource": "This:C1470.Prod",
+							"name": "cDate_AAAA",
+							"dataSource": "This:C1470.Date_AAAA",
 							"footer": {
 								"name": "Pied2"
 							},
-							"width": 60,
-							"enterable": false
+							"width": 100,
+							"enterable": false,
+							"dataSourceTypeHint": "number",
+							"numberFormat": "### ### ### ##0"
 						}
 					]
 				},
@@ -211,7 +213,7 @@
 					"type": "text",
 					"text": "pour voir détail: Click ou Flèche droite",
 					"top": 133,
-					"left": 917,
+					"left": 924,
 					"width": 100,
 					"height": 60
 				},
@@ -228,7 +230,7 @@
 					"type": "button",
 					"text": "(F)iltrer",
 					"top": 26,
-					"left": 912,
+					"left": 919,
 					"width": 60,
 					"height": 18,
 					"events": [
@@ -265,14 +267,14 @@
 					"type": "input",
 					"left": 686,
 					"top": 26,
-					"width": 107,
-					"height": 18,
+					"width": 70,
+					"height": 16,
 					"dataSource": "Form:C1466.critereQuoiListe.Real",
-					"bottom": 44
+					"bottom": 42
 				},
 				"zDateDernVisu": {
 					"type": "input",
-					"left": 801,
+					"left": 761,
 					"top": 26,
 					"width": 68,
 					"height": 18,
@@ -319,7 +321,7 @@
 					"type": "button",
 					"text": "test",
 					"top": 186,
-					"left": 917,
+					"left": 924,
 					"width": 100,
 					"height": 25,
 					"events": [
@@ -373,7 +375,7 @@
 					"type": "button",
 					"text": "(t)race",
 					"top": 298,
-					"left": 922,
+					"left": 929,
 					"width": 35,
 					"height": 15,
 					"events": [
@@ -393,7 +395,7 @@
 					"type": "button",
 					"text": "Quitter",
 					"top": 79,
-					"left": 917,
+					"left": 924,
 					"width": 100,
 					"height": 25,
 					"events": [
@@ -405,7 +407,7 @@
 					"type": "button",
 					"text": "(A)jouter un quoi",
 					"top": 52,
-					"left": 917,
+					"left": 924,
 					"width": 100,
 					"height": 25,
 					"events": [
@@ -421,7 +423,7 @@
 				},
 				"zFormquoiListelength": {
 					"type": "input",
-					"left": 981,
+					"left": 988,
 					"top": 24,
 					"width": 31,
 					"height": 16,
@@ -436,7 +438,7 @@
 					"type": "button",
 					"text": "(C)opier",
 					"top": 213,
-					"left": 917,
+					"left": 924,
 					"width": 100,
 					"height": 25,
 					"events": [
@@ -454,7 +456,7 @@
 					"type": "button",
 					"text": "(D)iapo",
 					"top": 107,
-					"left": 917,
+					"left": 924,
 					"width": 100,
 					"height": 25,
 					"events": [
@@ -485,7 +487,7 @@
 					"type": "button",
 					"text": "(h)liste",
 					"top": 242,
-					"left": 918,
+					"left": 925,
 					"width": 100,
 					"height": 25,
 					"events": [
@@ -502,7 +504,7 @@
 					"type": "button",
 					"text": "Déb(u)t",
 					"top": 269,
-					"left": 920,
+					"left": 927,
 					"width": 65,
 					"height": 25,
 					"events": [
@@ -543,7 +545,7 @@
 			]
 		}
 	],
-	"geometryStamp": 3664,
+	"geometryStamp": 3788,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",
