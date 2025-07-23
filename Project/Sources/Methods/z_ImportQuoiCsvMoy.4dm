@@ -1,5 +1,5 @@
 //%attributes = {}
-// z_ImportQuiCsvMoy
+// z_ImportQuoiCsvMoy
 //
 var $quoi_e : cs:C1710.QuoiEntity
 var $importFile_f : 4D:C1709.File
@@ -42,3 +42,4 @@ For each ($line_t; $line_c)
 		TRACE:C157
 	End if 
 End for each 
+ALERT:C41("ok")

@@ -42,3 +42,4 @@ For each ($line_t; $line_c)
 		TRACE:C157
 	End if 
 End for each 
+ALERT:C41("ok")

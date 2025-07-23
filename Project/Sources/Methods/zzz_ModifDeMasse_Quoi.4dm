@@ -10,9 +10,13 @@ $quoi_es:=ds:C1482.Quoi.all().orderBy("Date")
 
 For each ($quoi_e; $quoi_es)
 	
+	$nbrLus_i:=$nbrLus_i+1
+	
 	$l:=Length:C16($quoi_e.Date)
 	Case of 
-		: ($l=4)
+		: ($l=0)
+			continue
+		: ($l<5)
 			$quoi_e.Date_AAAA:=Num:C11($quoi_e.Date)
 		: ($l=5)
 			$quoi_e.Date_AAAA:=Num:C11($quoi_e.Date)
@@ -30,7 +34,7 @@ For each ($quoi_e; $quoi_es)
 			$quoi_e.Date:=String:C10($quoi_e.Date_AAAA; "0000")+"-"+String:C10($quoi_e.Date_MM; "00")+"-"+String:C10($quoi_e.Date_JJ; "00")
 		: ($quoi_e.Date_MM>0)
 			$quoi_e.Date:=String:C10($quoi_e.Date_AAAA; "0000")+"-"+String:C10($quoi_e.Date_MM; "00")
-		: ($quoi_e.Date_JJ>0)
+		: ($quoi_e.Date_AAAA>0)
 			$quoi_e.Date:=String:C10($quoi_e.Date_AAAA; "0000")
 		Else 
 			$quoi_e.Date:=""
@@ -45,7 +49,6 @@ For each ($quoi_e; $quoi_es)
 		TRACE:C157
 	End if 
 	
-	$nbrLus_i:=$nbrLus_i+1
 	
 End for each 
 
