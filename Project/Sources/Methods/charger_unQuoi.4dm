@@ -42,8 +42,12 @@ If (OBJECT Get pointer:C1124(Object named:K67:5; "ld_domaineQuoi")#Null:C1517)  
 	//1. stock
 	//1.1. liste complète 
 	If ((Form:C1466.action#"AJOUTER") & (Form:C1466.quoi_e.Domaine>""))
-		$storageStockQuoi_o:=Storage:C1525.stockQuoi.query("type is :1"; Form:C1466.quoi_e.Domaine)[0]
-		$storageStockQuoiValues_c:=$storageStockQuoi_o.values
+		var $c : Collection
+		$c:=Storage:C1525.stockQuoi.query("type is :1"; Form:C1466.quoi_e.Domaine)
+		If ($c.length>0)
+			$storageStockQuoi_o:=$c[0]
+			$storageStockQuoiValues_c:=$storageStockQuoi_o.values
+		End if 
 		OBJECT Get pointer:C1124(Object named:K67:5; "ld_stockQuoi")->values:=$storageStockQuoiValues_c
 		//1.2. position dans la liste
 		$i:=Storage:C1525.stockQuoi.indexOf(Form:C1466.quoi_e.Domaine)
