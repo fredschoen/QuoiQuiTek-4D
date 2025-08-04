@@ -1,6 +1,6 @@
 //bParametre
 afficherParametreListe()
-initStorageValueLists()
+
 
 //recharger la liste
 OBJECT Get pointer:C1124(Object named:K67:5; "ld_domaineQuoi")->values:=Storage:C1525.domaineQuoi

@@ -47,7 +47,13 @@ End use
 $stockQuoi_c:=New collection:C1472
 For each ($domaineQuoi_t; $domaineQuoi_c)
 	If ($domaineQuoi_t#"")
-		$stockQuoiListe_t:=ds:C1482.Parametre.query("Nom = :1 and Niv1 = :2"; "stockQuoi"; $domaineQuoi_t).first().Niv2
+		$es:=ds:C1482.Parametre.query("Nom = :1 and Niv1 = :2"; "stockQuoi"; $domaineQuoi_t)
+		If ($es.length>0)
+			$stockQuoiListe_t:=$es.first().Niv2
+		Else 
+			$stockQuoiListe_t:=""
+		End if 
+		
 		$stockQuoiTmp_c:=Split string:C1554($stockQuoiListe_t; ";")
 		//$stockQuoi_c.push(New object("type"; $domaineQuoi_t; "values"; New collection($stockQuoiTmp_c)))
 		$stockQuoi_c.push(New object:C1471("type"; $domaineQuoi_t; "values"; $stockQuoiTmp_c))
