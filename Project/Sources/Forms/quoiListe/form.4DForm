@@ -137,19 +137,45 @@
 							"textAlign": "center"
 						},
 						{
-							"name": "cDate",
-							"width": 82,
-							"enterable": false,
 							"header": {
-								"text": "Date",
-								"name": "eDate",
-								"dataSource": "eDate"
+								"name": "eDate_AAAA",
+								"text": "AAAA"
 							},
+							"name": "cDate_AAAA",
+							"dataSource": "This:C1470.Date_AAAA",
 							"footer": {
-								"name": "1"
+								"name": "Pied2"
 							},
-							"dataSource": "This:C1470.Date",
-							"textAlign": "left"
+							"width": 90,
+							"enterable": false,
+							"dataSourceTypeHint": "number",
+							"numberFormat": "### ### ### ##0"
+						},
+						{
+							"header": {
+								"name": "Entête2",
+								"text": "M",
+								"dataSource": "This:C1470.Date_MM"
+							},
+							"name": "Colonne2",
+							"width": 20,
+							"footer": {
+								"name": "Pied4"
+							},
+							"dataSource": "This:C1470.Date_MM"
+						},
+						{
+							"header": {
+								"name": "Entête1",
+								"text": "JJ",
+								"dataSource": "This:C1470.Date_JJ"
+							},
+							"name": "Colonne1",
+							"width": 20,
+							"footer": {
+								"name": "Pied3"
+							},
+							"dataSource": "This:C1470.Date_JJ"
 						},
 						{
 							"name": "cQual",
@@ -191,21 +217,6 @@
 								"name": "Pied7"
 							},
 							"enterable": false
-						},
-						{
-							"header": {
-								"name": "eDate_AAAA",
-								"text": "AAAA"
-							},
-							"name": "cDate_AAAA",
-							"dataSource": "This:C1470.Date_AAAA",
-							"footer": {
-								"name": "Pied2"
-							},
-							"width": 100,
-							"enterable": false,
-							"dataSourceTypeHint": "number",
-							"numberFormat": "### ### ### ##0"
 						}
 					]
 				},
@@ -258,14 +269,14 @@
 					"type": "input",
 					"left": 556,
 					"top": 26,
-					"width": 78,
+					"width": 88,
 					"height": 16,
 					"dataSource": "Form:C1466.critereQuoiListe.Date",
 					"bottom": 42
 				},
 				"zCritereReal": {
 					"type": "input",
-					"left": 686,
+					"left": 733,
 					"top": 26,
 					"width": 70,
 					"height": 16,
@@ -274,7 +285,7 @@
 				},
 				"zDateDernVisu": {
 					"type": "input",
-					"left": 761,
+					"left": 808,
 					"top": 26,
 					"width": 68,
 					"height": 18,
@@ -284,15 +295,15 @@
 				"bAnneePlus": {
 					"type": "button",
 					"text": "+",
-					"top": 26,
-					"left": 873,
+					"top": 25,
+					"left": 646,
 					"width": 20,
 					"height": 18,
 					"events": [
 						"onClick"
 					],
 					"method": "anneePlus",
-					"bottom": 44,
+					"bottom": 43,
 					"shortcutAccel": true,
 					"shortcutControl": false,
 					"shortcutShift": false,
@@ -302,15 +313,15 @@
 				"bAnneeMoins": {
 					"type": "button",
 					"text": "-",
-					"top": 26,
-					"left": 892,
+					"top": 25,
+					"left": 665,
 					"width": 20,
 					"height": 18,
 					"events": [
 						"onClick"
 					],
 					"method": "anneeMoins",
-					"bottom": 44,
+					"bottom": 43,
 					"shortcutAccel": true,
 					"shortcutControl": false,
 					"shortcutShift": false,
@@ -332,7 +343,7 @@
 				},
 				"zCritereAnnee2": {
 					"type": "input",
-					"left": 641,
+					"left": 688,
 					"top": 26,
 					"width": 38,
 					"height": 18,
@@ -545,7 +556,7 @@
 			]
 		}
 	],
-	"geometryStamp": 3788,
+	"geometryStamp": 3850,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",

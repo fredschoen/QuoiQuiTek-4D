@@ -46,6 +46,8 @@ Else
 					$valeurCritere:=$valeurCritere
 			End case 
 			
+		: ($typeCritere="entier")
+			$valeurCritere:=$valeurCritere
 		Else 
 			//texte:
 			//encadrer le critère texte (début et fin)

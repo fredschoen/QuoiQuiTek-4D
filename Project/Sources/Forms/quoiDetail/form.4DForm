@@ -452,12 +452,12 @@
 					"width": 60,
 					"height": 18
 				},
-				"field_Date": {
+				"field_Date_AAAA": {
 					"type": "input",
-					"dataSource": "Form:C1466.quoi_e.Date",
+					"dataSource": "Form:C1466.quoi_e.Date_AAAA",
 					"top": 233,
 					"left": 73,
-					"width": 100,
+					"width": 44,
 					"height": 18
 				},
 				"label_Domaine": {
@@ -766,6 +766,22 @@
 						"onClick"
 					],
 					"method": "ObjectMethods/btQui.4dm"
+				},
+				"field_Date_MM": {
+					"type": "input",
+					"dataSource": "Form:C1466.quoi_e.Date_MM",
+					"top": 233,
+					"left": 123,
+					"width": 33,
+					"height": 18
+				},
+				"field_Date_JJ": {
+					"type": "input",
+					"dataSource": "Form:C1466.quoi_e.Date_JJ",
+					"top": 233,
+					"left": 162,
+					"width": 33,
+					"height": 18
 				}
 			},
 			"entryOrder": [
@@ -777,7 +793,7 @@
 				"ld_stockQuoi",
 				"bParametres",
 				"field_Real",
-				"field_Date",
+				"field_Date_AAAA",
 				"field_Annee1",
 				"field_Prod",
 				"field_Prod1",
@@ -789,7 +805,9 @@
 				"bDelTheme",
 				"btPg2",
 				"lb_quiListe",
-				"btQui"
+				"btQui",
+				"field_Date_MM",
+				"field_Date_JJ"
 			]
 		},
 		{
@@ -825,7 +843,7 @@
 			}
 		}
 	],
-	"geometryStamp": 388,
+	"geometryStamp": 499,
 	"method": "method.4dm",
 	"editor": {
 		"activeView": "View 1",
