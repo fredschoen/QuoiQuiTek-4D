@@ -229,6 +229,26 @@
 						"onClick"
 					],
 					"method": "ObjectMethods/bExportDataSansNomTable.4dm"
+				},
+				"btDoc": {
+					"type": "button",
+					"text": "(d)Doc",
+					"top": 342,
+					"left": 6,
+					"width": 35,
+					"height": 14,
+					"events": [
+						"onClick"
+					],
+					"style": "custom",
+					"method": "ObjectMethods/btDoc.4dm",
+					"borderStyle": "solid",
+					"fontSize": 10,
+					"shortcutAccel": true,
+					"shortcutControl": false,
+					"shortcutShift": false,
+					"shortcutAlt": false,
+					"shortcutKey": "d"
 				}
 			},
 			"entryOrder": [
@@ -243,11 +263,12 @@
 				"btTrace",
 				"bExportData",
 				"bImportData",
-				"bExportDataSansNomTable"
+				"bExportDataSansNomTable",
+				"btDoc"
 			]
 		}
 	],
-	"geometryStamp": 658,
+	"geometryStamp": 664,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",
