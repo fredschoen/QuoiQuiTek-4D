@@ -220,7 +220,7 @@
 				},
 				"bExportDataSansNomTable": {
 					"type": "button",
-					"text": "Export Data (sans Nom Table)",
+					"text": "Export Data (pour Nodejs)",
 					"top": 363,
 					"left": 218,
 					"width": 150,
