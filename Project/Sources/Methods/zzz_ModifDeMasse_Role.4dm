@@ -9,7 +9,7 @@ var $nbrLus_i : Integer
 $role_es:=ds:C1482.Role.all()
 
 For each ($role_e; $role_es)
-	$x:=Folder:C1567(fk data folder:K87:12).platformPath+"Photos"+Folder separator:K24:12+"r"+String:C10($role_e.ID; "0000000")+".png"
+	$x:=Folder:C1567(fk data folder:K87:12).platformPath+"Photos"+Folder separator:K24:12+"r"+String:C10($role_e.ID; "0000000")+"-001"+".png"
 	
 	$nbrLus_i:=$nbrLus_i+1
 	

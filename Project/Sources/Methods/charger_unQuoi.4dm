@@ -14,7 +14,7 @@ Else
 	Form:C1466.message:="Info sur '"+Form:C1466.quoi_e.Nom+"'"
 	
 	//photo
-	$x:=Folder:C1567(fk data folder:K87:12).platformPath+"Photos"+Folder separator:K24:12+"o"+String:C10(Form:C1466.quoi_e.ID; "0000000")+".png"
+	$x:=Folder:C1567(fk data folder:K87:12).platformPath+"Photos"+Folder separator:K24:12+"o"+String:C10(Form:C1466.quoi_e.ID; "0000000")+"-001"+".png"
 	READ PICTURE FILE:C678($x; $img_i)
 	If (OK=1)
 		Form:C1466.photoQuoi_i:=$img_i

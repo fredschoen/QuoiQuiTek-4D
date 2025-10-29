@@ -41,8 +41,8 @@
 	"3.Outils": {
 		"methods": [
 			"_ListeChamps4D",
+			"zzz_creerQuiEtRoleReal1",
 			"zzz_f_apellant",
-			"zzz_ModifDeMasse_Quoi",
 			"zzzViderPourPublier"
 		]
 	},

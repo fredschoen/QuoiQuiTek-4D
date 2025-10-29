@@ -13,7 +13,7 @@ If (Form:C1466.posRoleSel_i>0)
 	Form:C1466.quoi_e:=Form:C1466.role_e.quoi
 	
 	//photo du role
-	$x:=Folder:C1567(fk data folder:K87:12).platformPath+"Photos"+Folder separator:K24:12+"r"+String:C10(Form:C1466.role_e.ID; "0000000")+".png"
+	$x:=Folder:C1567(fk data folder:K87:12).platformPath+"Photos"+Folder separator:K24:12+"r"+String:C10(Form:C1466.role_e.ID; "0000000")+"-001"+".png"
 	READ PICTURE FILE:C678($x; $img_i)
 	If (OK=1)
 		Form:C1466.photoRole_i:=$img_i
@@ -22,7 +22,7 @@ If (Form:C1466.posRoleSel_i>0)
 	End if 
 	
 	//photo du quoi
-	$x:=Folder:C1567(fk data folder:K87:12).platformPath+"Photos"+Folder separator:K24:12+"o"+String:C10(Form:C1466.role_e.quoi.ID; "0000000")+".png"
+	$x:=Folder:C1567(fk data folder:K87:12).platformPath+"Photos"+Folder separator:K24:12+"o"+String:C10(Form:C1466.role_e.quoi.ID; "0000000")+"-001"+".png"
 	READ PICTURE FILE:C678($x; $img_i)
 	If (OK=1)
 		Form:C1466.photoQuoi_i:=$img_i
@@ -45,7 +45,7 @@ If (Form:C1466.posRoleSel_i>0)
 		Form:C1466.roleDuQuoi_es:=Form:C1466.quoi_e.roles.orderBy("qui.DateNaiss")
 		Form:C1466.message:="'"+Form:C1466.qui_e.FullName+"'"+" dans '"+Form:C1466.quoi_e.Nom+"' ("+String:C10(Form:C1466.quoi_e.Date)+")"
 		//photo du qui
-		$x:=Folder:C1567(fk data folder:K87:12).platformPath+"Photos"+Folder separator:K24:12+"i"+String:C10(Form:C1466.qui_e.ID; "0000000")+".png"
+		$x:=Folder:C1567(fk data folder:K87:12).platformPath+"Photos"+Folder separator:K24:12+"i"+String:C10(Form:C1466.qui_e.ID; "0000000")+"-001"+".png"
 		READ PICTURE FILE:C678($x; $img_i)
 		If (OK=1)
 			Form:C1466.photoQui_i:=$img_i

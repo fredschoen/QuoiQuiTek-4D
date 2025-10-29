@@ -13,7 +13,7 @@ If ($status_o.success)
 	Form:C1466.action:="MODIFIER"  // inutile: pour role on est toujours en "modifier"
 	
 	//ajouter, modifier ou supprimer le fichier photo
-	$x:=Folder:C1567(fk data folder:K87:12).platformPath+"Photos"+Folder separator:K24:12+"r"+String:C10($role_e.ID; "0000000")+".png"
+	$x:=Folder:C1567(fk data folder:K87:12).platformPath+"Photos"+Folder separator:K24:12+"r"+String:C10($role_e.ID; "0000000")+"-001"+".png"
 	If (Picture size:C356($photoRole_i)>0)
 		WRITE PICTURE FILE:C680($x; $photoRole_i)
 		If (OK=0)

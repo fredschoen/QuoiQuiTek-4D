@@ -24,7 +24,7 @@ If ($status_o.success)
 	End if 
 	
 	//ajouter, modifier ou supprimer le fichier photo
-	$x:=Folder:C1567(fk data folder:K87:12).platformPath+"Photos"+Folder separator:K24:12+"i"+String:C10($qui_e.ID; "0000000")+".png"
+	$x:=Folder:C1567(fk data folder:K87:12).platformPath+"Photos"+Folder separator:K24:12+"i"+String:C10($qui_e.ID; "0000000")+"-001"+".png"
 	If (Picture size:C356($photoQui_i)>0)
 		WRITE PICTURE FILE:C680($x; $photoQui_i)
 		If (OK=0)

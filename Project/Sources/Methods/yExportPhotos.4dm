@@ -21,7 +21,7 @@ For each ($f; $collection)
 End for each 
 $qui_es:=ds:C1482.Qui.all().orderBy("ID")
 For each ($qui_e; $qui_es)
-	$fileFrom:=File:C1566(Folder:C1567(fk data folder:K87:12).path+"Photos/i"+String:C10($qui_e.ID; "0000000")+".png")
+	$fileFrom:=File:C1566(Folder:C1567(fk data folder:K87:12).path+"Photos/i"+String:C10($qui_e.ID; "0000000")+"-001"+".png")
 	
 	If ($fileFrom.exists)
 		$fileFrom.copyTo($folderTo; $qui_e.FullName+".png")
@@ -36,7 +36,7 @@ For each ($f; $collection)
 End for each 
 $quoi_es:=ds:C1482.Quoi.all().orderBy("ID")
 For each ($quoi_e; $quoi_es)
-	$fileFrom:=File:C1566(Folder:C1567(fk data folder:K87:12).path+"Photos/o"+String:C10($qui_e.ID; "0000000")+".png")
+	$fileFrom:=File:C1566(Folder:C1567(fk data folder:K87:12).path+"Photos/o"+String:C10($qui_e.ID; "0000000")+"-001"+".png")
 	If ($fileFrom.exists)
 		$fileFrom.copyTo($folderTo; $quoi_e.Nom+".png")
 	End if 
@@ -50,7 +50,7 @@ For each ($f; $collection)
 End for each 
 $role_es:=ds:C1482.Role.all().orderBy("ID")
 For each ($role_e; $role_es)
-	$fileFrom:=File:C1566(Folder:C1567(fk data folder:K87:12).path+"Photos/r"+String:C10($role_e.ID; "0000000")+".png")
+	$fileFrom:=File:C1566(Folder:C1567(fk data folder:K87:12).path+"Photos/r"+String:C10($role_e.ID; "0000000")+"-001"+".png")
 	If ($fileFrom.exists)
 		$nomOK:=$role_e.qui.FullName+"_dans_"+$role_e.quoi.Nom+".png"
 		$nomOK:=Change string:C234($nomOK; "_"; Position:C15("/"; $nomOK))

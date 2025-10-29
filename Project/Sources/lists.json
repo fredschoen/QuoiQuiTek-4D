@@ -1362,14 +1362,20 @@
 				"collapsed": true
 			},
 			{
-				"text": "MUS",
+				"text": "LIVR",
 				"ref": 5,
 				"editable": true,
 				"collapsed": true
 			},
 			{
-				"text": "VISU",
+				"text": "MUS",
 				"ref": 6,
+				"editable": true,
+				"collapsed": true
+			},
+			{
+				"text": "VISU",
+				"ref": 7,
 				"editable": true,
 				"collapsed": true
 			}
